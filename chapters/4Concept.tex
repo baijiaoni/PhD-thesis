@@ -1,4 +1,31 @@
 \section{Basic procedure of the B2B transfer system for FAIR}
+ Fig.~\ref{2method} illustrates two different possible scenarios for the B2B transfer. The top part shows the chronological steps of the frequency beating method, while the bottom part shows the steps of the phase shift method. The synchronization window must take into account the kicker delay in cables and electronics, as well as the kicker preparation time. The trigger signal must consider the kicker delay compensation.
+The emergency kickers can be triggered at any time during the acceleration cycle by the MPS3. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kicker. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{2method.jpg}
+   \caption{The procedure for the B2B transfer within one acceleration cycle}
+   \label{2method}
+\end{figure}
+The B2B transfer process basically needs to follow six steps:
+\begin{enumerate}
+\item The DM announces the B2B transfer and freezes the beam-phase loop, when required.
+\item The two synchrotrons measure the rf phase locally.
+\item The source synchrotron gathers the measured rf phase from the target synchrotron.
+\item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
+For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved at the target synchrotron.
+\item Trigger signal is generated for the kickers with the delay compensation.
+\item Kicker electronics fire the kickers.
+\end{enumerate}
+Fig.~\ref{Topology} shows the topology of the B2B transfer system.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{Topology.jpg}
+   \caption{The topology of the B2B transfer system}
+   \label{Topology}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Functional blocks and responsibilities}
 
 

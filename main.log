@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.6)  14 JUL 2016 17:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.6)  22 JUL 2016 18:02
 entering extended mode
 **F:/办公资料/GSI/Report/毕业论文材料/Disputation*-*Jbai/PhD-thesis/m
 ain.tex
@@ -645,135 +645,152 @@ hapters/1Introduction.tex") [3
 Kapitel 2.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/2Background.tex" [4
+hapters/2Background.tex"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+ ("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+ [4
 
-]
-
-LaTeX Warning: Reference `?' on page 5 undefined on input line 18.
-
-
-LaTeX Warning: Reference `?' on page 5 undefined on input line 18.
-
-
-LaTeX Warning: Reference `eq:adiabatic' on page 5 undefined on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-[5]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\phi' on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-[6]
-Overfull \hbox (11.67946pt too wide) in alignment at lines 116--120
- [][][] []
+] [5] [6]
+Overfull \hbox (3.77225pt too wide) in paragraph at lines 162--165
+\OT1/cmr/m/n/12 Now, the re-la-ti-on-ship bet-ween the ra-te of change in mo-me
+n-tum of a par-tic-le, dp(t)/dt,
  []
 
+[7]
 
-Overfull \hbox (15.43852pt too wide) in alignment at lines 128--136
- [][][] []
- []
+LaTeX Warning: Reference `eq:adiabatic' on page 8 undefined on input line 230.
 
-<images/phase_shift.jpg, id=387, 1372.12625pt x 653.44125pt>
-File: images/phase_shift.jpg Graphic file (type jpg)
+[8]
 
-<use images/phase_shift.jpg>
-Package pdftex.def Info: images/phase_shift.jpg used on input line 144.
-(pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 144--145
- [][] 
- []
-
-<images/phase_shift2.jpg, id=389, 1372.12625pt x 653.44125pt>
-File: images/phase_shift2.jpg Graphic file (type jpg)
-
-<use images/phase_shift2.jpg>
-Package pdftex.def Info: images/phase_shift2.jpg used on input line 151.
-(pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 151--152
- [][] 
- []
+LaTeX Warning: Reference `eq:RtoF' on page 9 undefined on input line 239.
 
 
-LaTeX Warning: Citation `SIS18' on page 7 undefined on input line 174.
-
-[7] [8 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/phase_shift.jpg> <F:/办公资料/GSI/Report/毕业论文材料/Dis
-putation - Jbai/PhD-thesis/images/phase_shift2.jpg>]
-
-LaTeX Warning: Citation `SIS18_man' on page 9 undefined on input line 177.
+LaTeX Warning: Reference `eq:bucketsizeR' on page 9 undefined on input line 239
+.
 
 
-LaTeX Warning: Citation `J-PARC' on page 9 undefined on input line 183.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 247.
 
 
-LaTeX Warning: Citation `SIS18_man' on page 9 undefined on input line 212.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\phi' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 256.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 256.
+
+
+LaTeX Warning: Reference `phaseshift' on page 9 undefined on input line 267.
 
 [9]
-Overfull \hbox (10.82245pt too wide) in paragraph at lines 234--234
+
+LaTeX Warning: Reference `eq:pFR' on page 10 undefined on input line 276.
+
+[10] [11] [12] <images/syc_ext_inj.jpg, id=452, 1024.82875pt x 607.26875pt>
+File: images/syc_ext_inj.jpg Graphic file (type jpg)
+
+<use images/syc_ext_inj.jpg>
+Package pdftex.def Info: images/syc_ext_inj.jpg used on input line 381.
+(pdftex.def)             Requested size: 455.24408pt x 269.75653pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 381--382
+ [][] 
+ []
+
+[13 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+s/images/syc_ext_inj.jpg>]
+Overfull \hbox (10.82245pt too wide) in paragraph at lines 391--391
  |[]\OT1/cmr/bx/n/17.28 Prerequisites/boundary con-di-ti-ons for the B2B
  []
 
-)
 
 Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
  Make it at least 27.85004pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[14] [15] <images/local_cavity_syn.png, id=470, 494.59781pt x 428.35031pt>
+File: images/local_cavity_syn.png Graphic file (type png)
+
+<use images/local_cavity_syn.png>
+Package pdftex.def Info: images/local_cavity_syn.png used on input line 425.
+(pdftex.def)             Requested size: 455.24408pt x 394.26353pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 425--426
+ [][] 
+ []
+
+<images/ref_rf_dis.png, id=472, 715.17188pt x 697.10437pt>
+File: images/ref_rf_dis.png Graphic file (type png)
+
+<use images/ref_rf_dis.png>
+Package pdftex.def Info: images/ref_rf_dis.png used on input line 431.
+(pdftex.def)             Requested size: 455.24408pt x 443.74132pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 431--432
+ [][] 
+ []
+
+[16]) [17 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD
+-thesis/images/local_cavity_syn.png>] [18 <F:/办公资料/GSI/Report/毕业论
+文材料/Disputation - Jbai/PhD-thesis/images/ref_rf_dis.png>]
 Kapitel 3.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/3Firstconcept.tex") [11
+hapters/3Firstconcept.tex") [19
 
 ]
 Kapitel 4.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/4Concept.tex") [12
+hapters/4Concept.tex" <images/2method.jpg, id=498, 596.98032pt x 572.1375pt>
+File: images/2method.jpg Graphic file (type jpg)
 
-]
+<use images/2method.jpg>
+Package pdftex.def Info: images/2method.jpg used on input line 6.
+(pdftex.def)             Requested size: 455.24408pt x 436.3044pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 6--7
+ [][] 
+ []
+
+<images/Topology.jpg, id=501, 872.25874pt x 569.12625pt>
+File: images/Topology.jpg Graphic file (type jpg)
+
+<use images/Topology.jpg>
+Package pdftex.def Info: images/Topology.jpg used on input line 23.
+(pdftex.def)             Requested size: 455.24408pt x 297.03287pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 23--24
+ [][] 
+ []
+
+) [20
+
+] [21 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-the
+sis/images/2method.jpg>] [22 <F:/办公资料/GSI/Report/毕业论文材料/Dis
+putation - Jbai/PhD-thesis/images/Topology.jpg>]
 Kapitel 5.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
@@ -790,324 +807,325 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-
-LaTeX Warning: Reference `4cases' on page 13 undefined on input line 10.
-
-
-Underfull \vbox (badness 1348) has occurred while \output is active []
-
- [13
+[23
 
 ]
-<images/4case.png, id=449, 1029.09468pt x 490.08093pt>
+Overfull \hbox (11.67946pt too wide) in alignment at lines 60--64
+ [][][] []
+ []
+
+
+Overfull \hbox (15.43852pt too wide) in alignment at lines 72--80
+ [][][] []
+ []
+
+<images/4case.png, id=535, 1029.09468pt x 490.08093pt>
 File: images/4case.png Graphic file (type png)
  <use images/4case.png>
-Package pdftex.def Info: images/4case.png used on input line 54.
+Package pdftex.def Info: images/4case.png used on input line 84.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 54--55
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 84--85
  [][] 
  []
 
-<images/1st_derivation.png, id=451, 1029.09468pt x 490.08093pt>
+<images/1st_derivation.png, id=537, 1029.09468pt x 490.08093pt>
 File: images/1st_derivation.png Graphic file (type png)
 
 <use images/1st_derivation.png>
-Package pdftex.def Info: images/1st_derivation.png used on input line 61.
+Package pdftex.def Info: images/1st_derivation.png used on input line 91.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 61--62
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 66.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
-("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
-
-
-LaTeX Warning: Reference `radial&moment' on page 14 undefined on input line 70.
-
-
-
-LaTeX Warning: Reference `radial&moment' on page 14 undefined on input line 70.
-
-
-<images/Radial.png, id=455, 1029.09468pt x 490.08093pt>
+<images/Radial.png, id=543, 1029.09468pt x 490.08093pt>
 File: images/Radial.png Graphic file (type png)
 
 <use images/Radial.png>
-Package pdftex.def Info: images/Radial.png used on input line 73.
+Package pdftex.def Info: images/Radial.png used on input line 103.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 73--74
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-<images/moment.png, id=457, 1029.09468pt x 490.08093pt>
+<images/moment.png, id=545, 1029.09468pt x 490.08093pt>
 File: images/moment.png Graphic file (type png)
 
 <use images/moment.png>
-Package pdftex.def Info: images/moment.png used on input line 79.
+Package pdftex.def Info: images/moment.png used on input line 109.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 79--80
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 109--110
  [][] 
  []
 
-[14 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+[24 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
 s/images/4case.png (PNG copy)>]
 
-LaTeX Warning: Reference `?' on page 15 undefined on input line 86.
+LaTeX Warning: Reference `?' on page 25 undefined on input line 116.
 
-<images/synch_phase.png, id=470, 1029.09468pt x 490.08093pt>
+<images/synch_phase.png, id=557, 1029.09468pt x 490.08093pt>
 File: images/synch_phase.png Graphic file (type png)
 
 <use images/synch_phase.png>
-Package pdftex.def Info: images/synch_phase.png used on input line 89.
+Package pdftex.def Info: images/synch_phase.png used on input line 119.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 89--90
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 119--120
  [][] 
  []
 
-[15 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+[25 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
 s/images/1st_derivation.png (PNG copy)> <F:/办公资料/GSI/Report/毕业论�
-�材料/Disputation - Jbai/PhD-thesis/images/Radial.png (PNG copy)>]
-<images/bucket_size.png, id=482, 1029.09468pt x 490.08093pt>
+�材料/Disputation - Jbai/PhD-thesis/images/Radial.png (PNG copy)>] [26 <F:/�
+�公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/images/m
+oment.png (PNG copy)> <F:/办公资料/GSI/Report/毕业论文材料/Disputatio
+n - Jbai/PhD-thesis/images/synch_phase.png (PNG copy)>]
+<images/bucket_size.png, id=577, 1029.09468pt x 490.08093pt>
 File: images/bucket_size.png Graphic file (type png)
 
 <use images/bucket_size.png>
-Package pdftex.def Info: images/bucket_size.png used on input line 102.
+Package pdftex.def Info: images/bucket_size.png used on input line 132.
 (pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 102--103
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 132--133
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `?' on page 27 undefined on input line 139.
 
- [16 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
-is/images/moment.png (PNG copy)> <F:/办公资料/GSI/Report/毕业论文材料
-/Disputation - Jbai/PhD-thesis/images/synch_phase.png (PNG copy)>]
-<images/Calculation_symble.jpg, id=494, 796.9775pt x 519.9425pt>
+<images/adiabaticity2.png, id=583, 1029.09468pt x 490.08093pt>
+File: images/adiabaticity2.png Graphic file (type png)
+
+<use images/adiabaticity2.png>
+Package pdftex.def Info: images/adiabaticity2.png used on input line 145.
+(pdftex.def)             Requested size: 455.24408pt x 216.80284pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 145--146
+ [][] 
+ []
+
+[27 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+s/images/bucket_size.png (PNG copy)>]
+<images/Calculation_symble.jpg, id=599, 796.9775pt x 519.9425pt>
 File: images/Calculation_symble.jpg Graphic file (type jpg)
 
 <use images/Calculation_symble.jpg>
-Package pdftex.def Info: images/Calculation_symble.jpg used on input line 120.
+Package pdftex.def Info: images/Calculation_symble.jpg used on input line 196.
 (pdftex.def)             Requested size: 455.24408pt x 296.99707pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 120--121
- [][] 
- []
-
-[17 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
-s/images/bucket_size.png (PNG copy)>] [18 <F:/办公资料/GSI/Report/毕业论
-文材料/Disputation - Jbai/PhD-thesis/images/Calculation_symble.jpg>]
-<images/phase_shift_synch_window_cal.jpg, id=518, 1593.955pt x 1543.7675pt>
-File: images/phase_shift_synch_window_cal.jpg Graphic file (type jpg)
-
-<use images/phase_shift_synch_window_cal.jpg>
-Package pdftex.def Info: images/phase_shift_synch_window_cal.jpg used on input 
-line 155.
-(pdftex.def)             Requested size: 369.88582pt x 358.2391pt.
- [19 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
-is/images/phase_shift_synch_window_cal.jpg>] [20]
-<images/frequency_beating_synch_window_cal.jpg, id=556, 796.9775pt x 671.50874p
-t>
-File: images/frequency_beating_synch_window_cal.jpg Graphic file (type jpg)
- <use images/frequency_beating_synch_window_cal.jpg>
-Package pdftex.def Info: images/frequency_beating_synch_window_cal.jpg used on 
-input line 235.
-(pdftex.def)             Requested size: 256.0748pt x 215.75813pt.
- [21 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
-is/images/frequency_beating_synch_window_cal.jpg>]
-Overfull \hbox (27.0594pt too wide) detected at line 277
-[] []
- []
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 278.
-
-[22] <images/network_setup.jpg, id=584, 1127.21124pt x 569.12625pt>
-File: images/network_setup.jpg Graphic file (type jpg)
-
-<use images/network_setup.jpg>
-Package pdftex.def Info: images/network_setup.jpg used on input line 300.
-(pdftex.def)             Requested size: 455.24408pt x 229.85223pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 300--301
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 306.
-
-
-Overfull \hbox (107.47893pt too wide) in paragraph at lines 311--320
- [] 
- []
-
-[23] [24 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-
-thesis/images/network_setup.jpg>]
-<images/kicker.jpg, id=599, 980.91469pt x 854.44218pt>
-File: images/kicker.jpg Graphic file (type jpg)
- <use images/kicker.jpg>
-Package pdftex.def Info: images/kicker.jpg used on input line 343.
-(pdftex.def)             Requested size: 455.24408pt x 396.54228pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 343--344
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 349.
-
-[25] <images/kicker_SIS100.jpg, id=612, 751.30687pt x 406.51875pt>
-File: images/kicker_SIS100.jpg Graphic file (type jpg)
-
-<use images/kicker_SIS100.jpg>
-Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 369.
-(pdftex.def)             Requested size: 455.24408pt x 246.32608pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 369--370
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 374.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
-is/images/kicker.jpg>] [27 <F:/办公资料/GSI/Report/毕业论文材料/Dispu
-tation - Jbai/PhD-thesis/images/kicker_SIS100.jpg>]
-<images/schematic_setup.jpg, id=626, 1059.96pt x 819.06pt>
-File: images/schematic_setup.jpg Graphic file (type jpg)
-
-<use images/schematic_setup.jpg>
-Package pdftex.def Info: images/schematic_setup.jpg used on input line 406.
-(pdftex.def)             Requested size: 455.24408pt x 351.7765pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 406--407
- [][] 
- []
-
-<images/testsetup_text.jpg, id=629, 7612.44pt x 4079.24pt>
-File: images/testsetup_text.jpg Graphic file (type jpg)
-
-<use images/testsetup_text.jpg>
-Package pdftex.def Info: images/testsetup_text.jpg used on input line 415.
-(pdftex.def)             Requested size: 455.24408pt x 243.93466pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 415--416
- [][] 
- []
-
-<images/flow_chart.jpg, id=632, 2086.79625pt x 982.67125pt>
-File: images/flow_chart.jpg Graphic file (type jpg)
-
-<use images/flow_chart.jpg>
-Package pdftex.def Info: images/flow_chart.jpg used on input line 424.
-(pdftex.def)             Requested size: 455.24408pt x 214.37402pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 424--425
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
 [28 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
-s/images/schematic_setup.jpg>]
-<images/test_result.png, id=643, 1190.94937pt x 492.33937pt>
+s/images/adiabaticity2.png (PNG copy)>]
+Underfull \vbox (badness 3168) has occurred while \output is active []
+
+ [29 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
+is/images/Calculation_symble.jpg>]
+<images/phase_shift_synch_window_cal.jpg, id=625, 1593.955pt x 1543.7675pt>
+File: images/phase_shift_synch_window_cal.jpg Graphic file (type jpg)
+
+<use images/phase_shift_synch_window_cal.jpg>
+Package pdftex.def Info: images/phase_shift_synch_window_cal.jpg used on input 
+line 231.
+(pdftex.def)             Requested size: 369.88582pt x 358.2391pt.
+ [30] [31 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD
+-thesis/images/phase_shift_synch_window_cal.jpg>]
+<images/frequency_beating_synch_window_cal.jpg, id=664, 796.9775pt x 671.50874p
+t>
+File: images/frequency_beating_synch_window_cal.jpg Graphic file (type jpg)
+ <use images/frequency_beating_synch_window_cal.jpg>
+Package pdftex.def Info: images/frequency_beating_synch_window_cal.jpg used on 
+input line 311.
+(pdftex.def)             Requested size: 256.0748pt x 215.75813pt.
+ [32]
+Overfull \hbox (27.0594pt too wide) detected at line 353
+[] []
+ []
+
+[33 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+s/images/frequency_beating_synch_window_cal.jpg>]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 354.
+
+[34] <images/network_setup.jpg, id=700, 1127.21124pt x 569.12625pt>
+File: images/network_setup.jpg Graphic file (type jpg)
+
+<use images/network_setup.jpg>
+Package pdftex.def Info: images/network_setup.jpg used on input line 376.
+(pdftex.def)             Requested size: 455.24408pt x 229.85223pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 376--377
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 382.
+
+
+Overfull \hbox (107.47893pt too wide) in paragraph at lines 387--396
+ [] 
+ []
+
+
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+ [35 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
+is/images/network_setup.jpg>] [36] <images/kicker.jpg, id=716, 980.91469pt x 85
+4.44218pt>
+File: images/kicker.jpg Graphic file (type jpg)
+
+<use images/kicker.jpg>
+Package pdftex.def Info: images/kicker.jpg used on input line 419.
+(pdftex.def)             Requested size: 455.24408pt x 396.54228pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 419--420
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 425.
+
+
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+ [37 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
+is/images/kicker.jpg>] <images/kicker_SIS100.jpg, id=728, 751.30687pt x 406.518
+75pt>
+File: images/kicker_SIS100.jpg Graphic file (type jpg)
+
+<use images/kicker_SIS100.jpg>
+Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 445.
+(pdftex.def)             Requested size: 455.24408pt x 246.32608pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 445--446
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 450.
+
+[38 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+s/images/kicker_SIS100.jpg>]
+<images/schematic_setup.jpg, id=738, 1059.96pt x 819.06pt>
+File: images/schematic_setup.jpg Graphic file (type jpg)
+
+<use images/schematic_setup.jpg>
+Package pdftex.def Info: images/schematic_setup.jpg used on input line 482.
+(pdftex.def)             Requested size: 455.24408pt x 351.7765pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 482--483
+ [][] 
+ []
+
+<images/testsetup_text.jpg, id=741, 7612.44pt x 4079.24pt>
+File: images/testsetup_text.jpg Graphic file (type jpg)
+
+<use images/testsetup_text.jpg>
+Package pdftex.def Info: images/testsetup_text.jpg used on input line 491.
+(pdftex.def)             Requested size: 455.24408pt x 243.93466pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 491--492
+ [][] 
+ []
+
+[39]
+
+LaTeX Warning: Text page 40 contains only floats.
+
+
+Underfull \vbox (badness 1297) has occurred while \output is active []
+
+ [40 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thes
+is/images/schematic_setup.jpg> <F:/办公资料/GSI/Report/毕业论文材料/D
+isputation - Jbai/PhD-thesis/images/testsetup_text.jpg>]
+<images/flow_chart.jpg, id=756, 2086.79625pt x 982.67125pt>
+File: images/flow_chart.jpg Graphic file (type jpg)
+
+<use images/flow_chart.jpg>
+Package pdftex.def Info: images/flow_chart.jpg used on input line 500.
+(pdftex.def)             Requested size: 455.24408pt x 214.37402pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 500--501
+ [][] 
+ []
+
+<images/test_result.png, id=759, 1190.94937pt x 492.33937pt>
 File: images/test_result.png Graphic file (type png)
 
 <use images/test_result.png>
-Package pdftex.def Info: images/test_result.png used on input line 435.
+Package pdftex.def Info: images/test_result.png used on input line 511.
 (pdftex.def)             Requested size: 455.24408pt x 188.19522pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 435--436
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 511--512
  [][] 
  []
 
-<images/SCU_intern.jpg, id=648, 697.10437pt x 478.03593pt>
+<images/SCU_intern.jpg, id=764, 697.10437pt x 478.03593pt>
 File: images/SCU_intern.jpg Graphic file (type jpg)
 
 <use images/SCU_intern.jpg>
-Package pdftex.def Info: images/SCU_intern.jpg used on input line 444.
+Package pdftex.def Info: images/SCU_intern.jpg used on input line 520.
 (pdftex.def)             Requested size: 455.24408pt x 312.17851pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 444--445
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 520--521
  [][] 
  []
 
-[29 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
-s/images/testsetup_text.jpg> <F:/办公资料/GSI/Report/毕业论文材料/Dis
-putation - Jbai/PhD-thesis/images/flow_chart.jpg>]) [30 <F:/办公资料/GSI/Re
-port/毕业论文材料/Disputation - Jbai/PhD-thesis/images/test_result.png>]
-[31 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
-s/images/SCU_intern.jpg>]
+[41 <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesi
+s/images/flow_chart.jpg> <F:/办公资料/GSI/Report/毕业论文材料/Disputa
+tion - Jbai/PhD-thesis/images/test_result.png>]) [42 <F:/办公资料/GSI/Repor
+t/毕业论文材料/Disputation - Jbai/PhD-thesis/images/SCU_intern.jpg>]
 Kapitel 6.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/6Existing.tex") [32
+hapters/6Existing.tex") [43
 
 ]
 Kapitel 7.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/7SummaryAusblick.tex") [33
+hapters/7SummaryAusblick.tex") [44
 
 ]
 Kapitel 8.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/8Acknowledgement.tex") [34
+hapters/8Acknowledgement.tex") [45
 
 ]
 Kapitel 9.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/References.tex") [35
+hapters/References.tex" [46
 
 ]
-Anhang A.
+Underfull \hbox (badness 4699) in paragraph at lines 9--12
+[]\OT1/cmr/m/n/12 D. Beck, \OT1/cmr/m/it/12 In-ter-face to Bu-TiS\OT1/cmr/m/n/1
+2 , []$\OT1/cmtt/m/n/12 https : / / www-[]acc . gsi . de / wiki / Timing /$
+ []
 
-("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/appendix.tex") [36
-
-]
-Anhang B.
-
-("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/appendixB.tex") [37
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+[47
 
 ]
-Anhang C.
-
-("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/appendixC.tex")
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
- [38
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\m
 ain.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6EF8D9A8264884F343CF03D696AD7914;5445.
+(rerunfilecheck)             Checksum: BEB8A83260676572014E74168DF7788E;5354.
 
 
 LaTeX Warning: There were undefined references.
@@ -1115,30 +1133,32 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
- ) 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
+ ) ) 
 Here is how much of TeX's memory you used:
- 7235 strings out of 493921
- 106040 string characters out of 3147279
- 203518 words of memory out of 3000000
- 10220 multiletter control sequences out of 15000+200000
- 10365 words of font info for 37 fonts, out of 3000000 for 9000
+ 7332 strings out of 493921
+ 106996 string characters out of 3147279
+ 203777 words of memory out of 3000000
+ 10267 multiletter control sequences out of 15000+200000
+ 10881 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,43p,1426b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
-b><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (38 pages, 7015701 bytes).
+ 29i,15n,43p,1499b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.
+pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (47 pages, 7432205 bytes).
 PDF statistics:
- 781 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
- 706 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 914 PDF objects out of 1000 (max. 8388607)
+ 235 named destinations out of 1000 (max. 500000)
+ 726 words of extra memory for PDF output out of 10000 (max. 10000000)
 

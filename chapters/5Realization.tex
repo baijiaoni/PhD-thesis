@@ -1,51 +1,81 @@
-\section{Investigation from the beam dynamics view for the RF phase adjustment of $U^{28+}$ for SIS18}
+\section{Investigation from the beam dynamics view for two synchronization methods of $U^{28+}$ for SIS18}
 This section analyzes the phase shift and frequency beating methods from the beam-dynamics viewpoint for the synchronization of SIS18 with SIS100. In this chapter, the revolution frequency of SIS18 and SIS100 are denoted by $f_{h=1}^{SIS18}$ and $f_{h=1}^{SIS100}$ and the RF frequency by $f_{h=2}^{SIS18}$ and $f_{h=10}^{SIS100}$. Since SIS18 and SIS100 harmonic number is 2 and 10, the relationship between these frequencies is $f_{h=2}^{SIS18}=2f_{h=1}^{SIS18}$ and $f_{h=10}^{SIS100}=10f_{h=1}^{SIS100}$.
 
-To achieve a required phase shift, the RF frequency is modulated away from that required by the bending magnetic field or the guide field. Let $\Delta \phi_{shift}$ be the phase shift to be achieved and $\Delta f(t)$ the RF frequency variation to accomplish it; then,
+To achieve a required phase shift, the RF frequency is modulated away from the norminal value. Let $\Delta \phi_{shift}$ be the phase shift to be achieved and $\Delta f(t)$ the RF frequency variation to accomplish it; then,
 \begin{equation}
-\Delta \phi_{shift}= 2\pi \int_{t_1}^{t_1+T} \Delta f(t)dt \label{phase_integration}
+\Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f(t)dt \label{phase_integration}
 \end{equation}
-where T is the period of frequency modulation and $t_1$ is the time at which the modulation begins. To make the frequency modulation effective, the radial loop must be turned off just before the modulation begins. 
+where T is the period of frequency modulation and $t_1$ is the time at which the modulation begins. To make the frequency modulation effective, the stabilization system must be frozen before the modulation begins. 
 
-I consider here the following four examples of frequency modulation; rectangle modulation (Case (1)), triangular modulation (Case (2)), biased sinusoidal modulation (Case (3)) and parabola modulation (Case (4)). All of these manipulations must be performed adiabatically. So I make use the maximum time derivative of rf frequency f during the acceleration ramp as the reference, df/dt=64Hz/ms. Here we assume the phase shift must be achieved within 7ms. These frequency modulations are shown in Fig.~\ref{4cases}. All the four modulations give the same phase shift, $\Delta \phi_{shift}=\pi$, which is
+I consider here the following four examples of frequency modulation; Case (1) rectangle modulation, Case (2) triangular modulation, Case (3) biased sinusoidal modulation and Case (4) parabola modulation. In order to gaurantee the adiabaticity of these manipulations, I make use the maximum time derivative of rf frequency during the acceleration ramp as the reference, df/dt=64Hz/ms. Here we assume the phase shift must be achieved within 7ms. These frequency modulations are shown in Fig.~\ref{4case}. All the four modulations give the same phase shift, $\Delta \phi_{shift}=\pi$, which is
 proved by substituting each form of $\Delta f(t)$ into eq.~\ref{phase_integration} and performing integration. Fig.~\ref{1st_derivation} shows the time derivation of four rf freuquency modulatons.
 
-Case (1)
-\begin{eqnarray}\label{case1}
-\Delta f(t)=
+%Case (1)
+%\begin{eqnarray}\label{case1}
+%\Delta f(t)=
+%\begin{cases}
+%50(t-t_1), &t_1< t\le t_1+2ms\cr
+%100, &t_1+2ms < t \le t_1+5ms \cr
+%-50(t-t_1) + 7\times 50, &t_1+5ms < t\le t_1+7ms
+%\end{cases}
+%\end{eqnarray}
+%
+%Case (2)
+%\begin{eqnarray}\label{case2}
+%\Delta f(t)=
+%\begin{cases}
+%\frac {500}{3.5 \times 3.5}(t-t_1), &t_1< t\le t_1+3.5ms\cr
+%-\frac {500}{3.5 \times 3.5}(t-t_1) +7
+%\times \frac {500}{3.5 \times 3.5}, &t_1+3.5ms < t \le t_1+7ms 
+%\end{cases}
+%\end{eqnarray}
+%
+%Case (3)
+%\begin{eqnarray}\label{case3}
+%\Delta f(t)=
+%\frac {1000}{7 \times 2} (1-cos(\frac{2\pi}{7}\times (t-t_1)), &t_1 < t\le t_1+7ms
+%\end{eqnarray}
+%
+%Case (4)
+%\begin{eqnarray}\label{case4}
+%\Delta f(t)=
+%\begin{cases}
+%30(t-t_1)^2, &t_1< t\le t_1+1ms\cr
+%30+ 60((t-t_1)-1), &t_1+1ms< t\le t_1+2.5ms\cr
+%30(5-((t-t_1)-3.5)^2), &t_1+2.5ms< t\le t_1+4.5ms\cr
+%
+%30+60(6-(t-t_1)), &t_1+4.5ms< t\le t_1+6ms\cr
+%30(7-(t-t_1))^2, &t_1+6ms< t\le t_1+7ms
+%\end{cases}
+%\end{eqnarray}
+
+Case (1) 
+\begin{eqnarray}\Delta f_{rf}(t)=
 \begin{cases}
-50(t-t_1), &t_1< t\le t_1+2ms\cr
-100, &t_1+2ms < t \le t_1+5ms \cr
--50(t-t_1) + 7\times 50, &t_1+5ms < t\le t_1+7ms
+50Hz/ms \times (t-t_0) &t_0+0<t\le t_0+2ms\cr  100Hz &t_0+2<t\le t_0+5ms \cr 100Hz-50Hz/ms \times (t-t_0) &t_0+5ms<t\le t_0+7ms\cr 
 \end{cases}
 \end{eqnarray}
 
-Case (2)
-\begin{eqnarray}\label{case2}
-\Delta f(t)=
+Case (2) 
+\begin{eqnarray}\Delta f_{rf}(t)=
 \begin{cases}
-\frac {500}{3.5 \times 3.5}(t-t_1), &t_1< t\le t_1+3.5ms\cr
--\frac {500}{3.5 \times 3.5}(t-t_1) +7
-\times \frac {500}{3.5 \times 3.5}, &t_1+3.5ms < t \le t_1+7ms 
+\frac{10^3}{7\times 3.5}Hz/ms \times (t-t_0) &t_0+0<t\le t_0+3.5ms\cr  \frac{10^3}{7}Hz-{\frac{10^3}{7\times 3.5}Hz/ms}\times {(t-t_0-3.5ms)} &t_0+3.5ms<t\le t_0+7ms \cr 
 \end{cases}
 \end{eqnarray}
 
-Case (3)
-\begin{eqnarray}\label{case3}
-\Delta f(t)=
-\frac {1000}{7 \times 2} (1-cos(\frac{2\pi}{7}\times (t-t_1)), &t_1 < t\le t_1+7ms
+Case (3) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\frac{10^3}{14}Hz \times (1-cos(\frac{2\pi}{7} rad/ms\times (t-t_0))) &t_0+0<t\le t_0+7ms\cr  
 \end{eqnarray}
 
-Case (4)
-\begin{eqnarray}\label{case4}
-\Delta f(t)=
+Case (4) 
+\begin{eqnarray}\Delta f_{rf}(t)=
 \begin{cases}
-30(t-t_1)^2, &t_1< t\le t_1+1ms\cr
-30+ 60((t-t_1)-1), &t_1+1ms< t\le t_1+2.5ms\cr
-30(5-((t-t_1)-3.5)^2), &t_1+2.5ms< t\le t_1+4.5ms\cr
-
-30+60(6-(t-t_1)), &t_1+4.5ms< t\le t_1+6ms\cr
-30(7-(t-t_1))^2, &t_1+6ms< t\le t_1+7ms
+30Hz/ms^2 \times (t-t_0)^2 &t_0+0<t\le t_0+1ms\cr  
+30Hz + 60Hz/ms\times (t-t_0 -1ms) &t_0+1ms<t\le t_0+2.5ms\cr 
+30Hz/ms^2 \times [5ms-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
+30Hz + 60Hz/ms\times (6ms-t-t_0) &t_0+4.5ms<t\le t_0+6ms\cr  
+30Hz/ms^2 \times [7ms-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
 \end{cases}
 \end{eqnarray}
 
@@ -63,11 +93,11 @@ Case (4)
    \label{1st_derivation}
 \end{figure}
 
-\subsubsection{Longitudinal dynamic analysis for the simulation}
+\subsection{Longitudinal dynamic analysis for the simulation}
 \begin{itemize}
 \item Average radial excursion and the relative momentum shift
 
-The average radial excursion and the relative momentum shift are calculated for the four kinds of RF frequency modulations by eq.~(\ref{eq:phaseR}) and eq.~(\ref{eq:phaseP}), see Fig.~\ref{radial&moment}(a) and Fig.~\ref{radial&moment}(b). The momentum modulation and radial excursion of four cases are much smaller than the maximum momentum modulation $\pm 0.008$ and maximum radial excursion $\pm 2.4\times10^{-4}$ of SIS18.
+The average radial excursion and the relative momentum shift are calculated for the four kinds of RF frequency modulations by eq.~(\ref{eq:phaseR}) and eq.~(\ref{eq:phaseP}), see Fig.~\ref{radial} and Fig.~\ref{moment}. The momentum modulation and radial excursion of four cases are much smaller than the maximum momentum modulation $\pm 0.008$ and maximum radial excursion $\pm 2.4\times10^{-4}$ of SIS18. From the view point of the average radial excursion and the relative momentum shift, four cases of RF frequency modulations are available.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{Radial.png}
@@ -83,7 +113,7 @@ The average radial excursion and the relative momentum shift are calculated for 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Synchronous phase
 
-The rf frequency modulations make the synchronous phase deviate from the original one. Fig.~\ref{synch_phase} shows the changes in synchronous phase, $\Delta \phi_s$ (t), caused by RF frequency modulations for four cases, calculated by introducing values into eq.~(\ref{?}). For case (1), jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. The jumps in $\Delta \phi_s(t)$ are dangerous for beam to follow. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continous.
+The RF frequency modulations make the synchronous phase deviate from the norminal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in synchronous phase, $\Delta \phi_s$ (t), caused by RF frequency modulations for four cases, calculated by introducing values into eq.~(\ref{?}). For case (1), jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. The jumps in $\Delta \phi_s(t)$ are dangerous for beam to follow. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continous.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{synch_phase.png}
@@ -106,15 +136,57 @@ The bucket area factor $\alpha_b (\phi_s) $ varies during rf frequency modulatio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \item Adiabaticity
 
+By substituting the values of $d\Delta \phi_s(t)/dt$ obtained from Fig.~\ref{synch_phase} and the other appropriate values into eq.~\ref{?}, we can calculate the adiabaticity parameter, $\varepsilon$, for the case (3) and (4), see Fig.~\ref{adiabaticity2}. For the case (1) and (2), however, we cannot calculate $d\psi_s( t )/dt$  directly from $\psi_s(t)$  shown in Fig.~\ref{synch_phase}, because $\psi_s(t)$ changes discontinuously. 
 
+For case (4), the maximum of $\varepsilon$, 0.000059, occurs at 1ms, 2.5ms, 4.5ms and 6ms. Form Fig.~\ref{synch_phase}, we could see the change of the synchronous phase $d\Delta \phi_s(t)/dt$  is big but smoothly at these time points. For case (3), the maximum of $\varepsilon$ is 0.000030.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{adiabaticity2.png}
+   \caption{Adiabaticity parameter estimation for case (3) and (4)}
+   \label{adiabaticity2}
+\end{figure}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Transverse dynamics analysis for the simulations}
+\subsection{Transverse dynamics analysis for the simulations}
+From Fig.~\ref{moment}, we could get the maximum momentum shift for four cases. The maximum value of $\Delta p/p$ is around $4.17 \times 10^{-6}$ at 3.5ms for Cases (2) and (3), around $4.38 \times 10^{-6}$ at 7.5ms for Case (4) and around $2.92 \times 10^{-6}$ from 2ms to 5ms for Case (1). For SIS18, the chromaticity $Q_x$ and $Q_y$ is 4.17 and 3.4. Substituting chromaticity and maximum momentum shift into eq. ~\ref{eq:chromaticity}. We could get the chromatic tune shift during rf modulations for four cases. 
 
+Case (1) 
+\begin{equation}
+\Delta Q_x = 4.17 \times 2.92 \times 10^{-6}=1.22 \times 10^{-5}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 2.92 \times 10^{-6}=9.92 \times 10^{-6} 
+\end{equation}
+
+Case (2) and (3)
+\begin{equation}
+\Delta Q_x = 4.17 \times 4.17 \times 10^{-6}=1.74 \times 10^{-5}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 4.17 \times 10^{-6}=1.42 \times 10^{-5} 
+\end{equation}
+
+Case (4) 
+\begin{equation}
+\Delta Q_x = 4.17 \times 4.38 \times 10^{-6}=1.83 \times 10^{-5}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 4.38 \times 10^{-6}=1.49 \times 10^{-5} 
+\end{equation}
+
+The chromatic tune shift for four cases are significantly small.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Longitudinal dynamics analysis of the frequenncy beating for SIS18}
--technische Daten (Länge, Durchmesser,...)
-- Strahlführungskomponenten
---Solenoid-Steerer-Kombination (Funktion, Platzierung, Aufbau)
+For the frequency beating method, the RF frequency detuning at the $U^{28}$ $200MeV/\mu$ extraction energy is 200Hz. Then $\Delta f/f$ is $1.27 \times 10^{-4}$.Substituting $\Delta f/f$ into eq. ~\ref{eq:eq4} and eq. ~\ref{eq:eq5}, we could get the radial excursion and the magnetic field change.
+\begin{equation}
+\frac{\Delta{R}}{R} = - \frac{\Delta{f}}{f}= -1.27 \times 10^{-4}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{B}}{B}=\frac{\Delta{f}}{f}{\gamma_t}^2=1.27 \times 10^{-4} \times {5.8^2} = 4.27 \times 10^{-3}
+\end{equation}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GMT systematic investigation for the B2B transfer system}
 \subsection{Calculation of the synchronization window and its uncertainty}

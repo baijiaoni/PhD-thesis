@@ -1,0 +1,244 @@
+\section{Introduction of the bunch to bucket transfer}
+- Aufbau des Protoneninjektors, Nutzen, zu erreichende Werte, FAIR Vorgaben
+\subsection{Phase difference between two RF systems}
+
+\subsection{Synchronization of two RF systems}
+The B2B transfer means that one bunch of particles, circulating inside the source synchrotron, is transferred into the center of a bucket of the target synchrotron. For the proper transfer, the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment is usually named  as ``synchronization``. 
+There are usually two methods available for the synchronization process, the phase shift method and the frequency beating method. Both methods provide a time frame for the B2B transfer, within which a bunch could be transferred into a bucket with the center mismatch at least better than 1$^\circ$. The time frame is called the synchronization window. 
+
+\subsubsection{Phase shift method}
+
+At a scheduled time well before ejection, the phase advance between the beam in the source synchrotron and a reference bucket in the target synchrotron are measured with respect to the phase of a common Synchronization Reference Signal, which is synchronously distributed to the source and target synchrotrons. Based on the measured phase advance, the  Reference Radio Frequency (RF) Signals of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with the buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
+
+Fig. 1 shows the synchronization window for the phase shift method. The top and bottom RF signals are respectively from the source and target synchrotrons. For the phase shift method two RF signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The compensation of the time-of-flight is not drawn here. The red dashed line shows the end of the phase shift process and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with the corresponding buckets.  
+
+A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
+
+\subsubsubsection{Longitudinal dynamics analysis}
+We now consider how the radial position and momentum of the beam react when the RF frequency is changed from a nominal value. Since the magnetic field is not affected by the frequency change, we can assume $\Delta{B}$ = 0; then, we obtain the relation between $\Delta$f(t)/f and $\Delta$dR(t)/R or $\Delta$dp(t)/p. 
+
+\begin{equation}
+\label{eq:phaseR}
+\frac{\Delta{f}}{f} =({\frac{\gamma_t^2}{\gamma^2}-1}) \frac{\Delta{R}}{R}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{f}}{f} = (\frac{1}{\gamma^2}-\frac{1}{\gamma_t^2})\frac{\Delta{p}}{p}
+\label{eq:phaseP}
+\end{equation}
+
+\subsubsubsection{Transverse dynamics analysis}
+
+The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity.
+
+\begin{equation}
+\Delta{Q} = Q^`\frac{\Delta{p}}{p}
+\label{eq:chromaticity}
+\end{equation} 
+
+\subsubsubsection{Adiabaticity analysis}
+$\omega_s(t)$ is the small-amplitude synchrotron frequency given by
+\begin{equation}
+\omega_s(t) =[{-\frac{\eta(t)h\omega_{rev}^2(t)eV(t)cos{\phi_s(t)}}{2\pi\beta^2(t)E(t)}}]^{1/2}
+\label{eq:synchfreq}
+\end{equation} 
+
+A process is called “adiabatic” when the RF parameters are changed slowly enough for the longitudinal emittance to be preserved. The condition that the parameters are slowly varying can be expressed by
+\begin{equation}
+\varepsilon=\frac{1}{\omega_s^2(t)}|\frac{d\omega_s(t)}{dt}| \ll 1
+\label{eq:adiabaticity}
+\end{equation} 
+
+Compared with $\phi_s(t)$, all of the other variables change very slowly. $\phi_s(t)=\phi_{s0}(t)+\Delta\phi_s(t)$. $\phi_{s0}(t)$ is the synchronous phase in the operation with no frequency modulation, and $\Delta \phi_s(t)$ is the change in the synchronous phase, which originates from the frequency modulation. From Eq.~(\ref{eq:adiabatic}) and Eq.~(\ref{eq:synchfreq}), we can write the adiabaticity parameter $\varepsilon$, as follows:
+\begin{equation}
+\varepsilon \approx \frac{1}{2\omega_{s0}(t)}|tan\phi_{s}(t)\frac{d\phi_s(t)}{dt}|
+\label{eq:derivation}
+\end{equation} 
+
+Eq.~(\ref{eq:derivation}) clearly shows that $\phi_s(t)$ and $d\phi_s(t)/dt$ play important roles for the adiabaticity when the frequency is modulated. Now let us deduce the the frequency requirement corresponding to these two factors. 
+
+\subsubsection{$\phi_s(t)$}
+At the flattop, the bucket is a stationary bucket with $\phi_s(t)=0$. During the frequeny modulation process, the bucket becomes a running bucket with $\Delta\phi_s(t)\ne0$. The ratio of bucket areas of a running bucket to a stationary bucket is bucket area factor $\alpha(\phi_s)$. Generally, the bucket area factor during the frequency modulation should be bigger than 80\% in order for bunches to be preserved.
+A basic rf cavity requirement for beam acceleration rate is
+\begin{equation}
+Vsin\phi_s=2\pi R_0\rho\dot{B} 
+\label{eq:bucktsizeB}
+\end{equation} 
+
+\begin{equation}
+Vsin\phi_s=\frac{2\pi \rho _0}{\alpha_p}(\frac{R(t)}{R_0})^{\frac{1}{\alpha_p}-1}B\dot R 
+\label{eq:bucketsizeR}
+\end{equation}
+
+$R(t)/ R_0\approx 1$. From Eq.~(\ref{eq:phaseR}), we could get the following equation.
+\begin{equation}
+\frac{\dot R}{R_0}(\frac{\gamma_t^2}{\gamma^2}-1)=\frac{\dot f}{f_0} 
+\label{eq:RtoF}
+\end{equation}
+
+substituting Eq.~(\ref{eq:RtoF}) into Eq.~(\ref{eq:bucketsizeR})
+\begin{equation}
+Vsin\phi_s=\frac{2\pi R_0 \rho B}{(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\frac{\dot f}{f} 
+\label{eq:bucketsizeF}
+\end{equation}
+
+The bucket area factor is determined by the synchronous phase change $\Delta\phi_s$. Based on Eq.~(\ref{eq:bucketsizeF}), we know that $\dot f$ is important for the bucket size.
+
+\subsubsubsection{$d\phi_s(t)/ dt$}
+
+\begin{equation}
+Vcos\phi_s\frac{d\phi_s}{dt}=\frac{2\pi R_0 \rho B}{(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\frac{\ddot f}{f} 
+\label{eq:bucketsizeF}
+\end{equation}
+
+Based on the adiabaticity Eq.~(\ref{eq:adiabaticity}), $d\phi_s(t)/ dt$ must be existing. So $\ddot f$ must be existing. It means that  $\dot f$  must be continuous.
+
+\subsubsection{Examples of RF frequency modulation for 200Mev $U^{28+}$ SIS18}
+To achieve a required phase shift, the RF frequency is modulated away from that required by the bending magnetic field. Let $\Delta \phi$ be the phase shift to be achieved and $\Delta f_{rf}(t)$ the RF frequency variation to accomplish it; then,
+
+\begin{equation}
+\Delta \phi=2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt 
+\label{eq:phaseshift}
+\end{equation}
+
+where T is the period of frequency modulation and $t_0$ is the time at which the modulation begins.
+
+We have to introduce a phase shift of up to $\pm \pi$  [rad] in the RF phase. This is the worstcase scenario, and in practice, the phase shift might be much less.
+We consider here the following four examples of frequency modulation; simple frequency-offset modulation (Case (1)), triangular modulation (Case (2)), sinusoidal modulation (Case (3)) and parabola modulation (Case (4)), (see Fig.~\ref{phaseshift}(a)).Here we make use of the maximum $\dot f$ 64 Hz/ms during the $1^{st}$ stage of rf ramp to guarantee the 90$\%$ bucket area factor.
+Case (1) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+50Hz/ms \times (t-t_0) &t_0+0<t\le t_0+2ms\cr  100Hz &t_0+2<t\le t_0+5ms \cr 100Hz-50Hz/ms \times (t-t_0) &t_0+5ms<t\le t_0+7ms\cr 
+\end{cases}
+\end{eqnarray}
+
+Case (2) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+\frac{10^3}{7\times 3.5}Hz/ms \times (t-t_0) &t_0+0<t\le t_0+3.5ms\cr  \frac{10^3}{7}Hz-{\frac{10^3}{7\times 3.5}Hz/ms}\times {(t-t_0-3.5ms)} &t_0+3.5ms<t\le t_0+7ms \cr 
+\end{cases}
+\end{eqnarray}
+
+Case (3) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\frac{10^3}{14}Hz \times (1-cos(\frac{2\pi}{7} rad/ms\times (t-t_0))) &t_0+0<t\le t_0+7ms\cr  
+\end{eqnarray}
+
+Case (4) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+30Hz/ms^2 \times (t-t_0)^2 &t_0+0<t\le t_0+1ms\cr  
+30Hz + 60Hz/ms\times (t-t_0 -1ms) &t_0+1ms<t\le t_0+2.5ms\cr 
+30Hz/ms^2 \times [5ms-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
+30Hz + 60Hz/ms\times (6ms-t-t_0) &t_0+4.5ms<t\le t_0+6ms\cr  
+30Hz/ms^2 \times [7ms-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
+\end{cases}
+\end{eqnarray}
+
+All the four modulations realize the same phase shift $\Delta \phi = 180^\circ $ (see Fig.~\ref{phaseshift}(8) within T=7ms . 
+
+By Eq.~(\ref{eq:phaseR}) and Eq.~(\ref{eq:phaseP}) we could get the average radial excursion and relative momentum shift. (see Fig.~\ref{phaseshift}(2) and Fig.~\ref{phaseshift}(3)), which are much smaller than the maximum momentum modulation $\pm 0.008$ and maximum radial excursion $\pm 2.4\times10^{-4}$. Fig.~\ref{phaseshift}(6) shows the changes in synchronous phase caused by four RF frequency modulations.
+
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=160mm]{phase_shift.jpg}
+   \caption{ (1) RF frequency modulations, (2) average radial excursions, (3) relative momentum shifts, (4) effects of guide-field error on dp(t)/p(t), (5) effects of guide-field error on dR(t), (6) changes in synchronous phase, (7) ratio of a running bucket to a stationary bucket and (8) Phase ramp.}
+   \label{phaseshift}
+\end{figure}
+
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=160mm]{phase_shift2.jpg}
+   \caption{ (1)  Adiabaticity parameter estimation for case 3 and 4, (2)  adiabaticity parameter estimation for case 1 and 2, (3) $\dot f$of four cases, (4)  Synchronous phase, (5) $\ddot f$ of case 3 and 4 and (6)  $\ddot f$ of case 1 and 2.}
+   \label{phaseshift2}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Frequency beating method}
+The frequency beating method uses the effect of two RF signals of slightly different frequencies, perceived as periodic variations in phase difference whose rate is the difference between the two frequencies. The RF frequency of the source or the target or both synchrotrons is detuned long before the ejection, then the difference between the phase of the bunch/bucket and the phase of the Synchronization Reference Signal is measured. Based on the measured phase, the synchronization is realized when the phase difference of the two RF frequencies corresponds to the ideal phase difference ($\Delta \theta = 0^\circ$). The $\Delta \theta$ is the mismatch between the bunch center and the corresponding bucket center. Because of the slightly different RF frequencies, a mismatch between the bunch and bucket centers exists. In principle, the B2B transfer requirement for FAIR allows a bunch to bucket center mismatch of $1^\circ$, which brings a symmetric time frame with respect to the time
+of the ideal phase difference, resulting in the maximum synchronization window for the frequency beating method, drawn in yellow (see Fig. 2). The compensation of the time-of-flight is not drawn. The red dashed line shows the time for the expected phase difference.
+During the detune processThe RF reference frequency is detuned at the end of the ramp. During the detune process, the magnetic field and radius excursion react and the momentum is not affected.
+\subsubsection{Longitudinal dynamics analysis 2-3 Seiten}
+For the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency change, namely $\Delta$p = 0; then the general relation between the radial excursion and RF frequency change Eq.~(\ref{eq:eq2}) reduces to Eq.~(\ref{eq:eq4}) and the general relation between the magnetic field change and RF frequency change Eq.~(\ref{eq:eq3}) reduces to Eq.~(\ref{eq:eq5}).
+
+\begin{equation}
+\frac{\Delta{f}}{f} = - \frac{\Delta{R}}{R}
+\label{eq:eq4}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{f}}{f} =  \frac{1}{{\gamma_t}^2}\times{\frac{\Delta{B}}{B}}
+\label{eq:eq5}
+\end{equation}
+
+\subsubsection{Example of frequency beating method for SIS18 and SIS100 1 Seite}
+Because the circumference ratio of the large machine to the small machine is a perfect integer, the rf frequency at the flattop of SIS18 is same as that of SIS100. So the first step for the bunch to bucket transfer is the RF frequency de-tune. In order to realize the frequency beating between two synchrotrons, the RF frequency of the source synchrotron or the target synchrotron or both synchrotrons can be de-tuned. It means that the particles on the de-tuned synchrotron run at an average radius different by $\bigtriangleup$R from the designed orbit R. For the synchronization of the SIS18 and the SIS100, we will de-tune the RF frequency on the SIS18. The SIS18 operates with a cycle length of 520ms, harmonic number of 2 ( h = 2 ), and RF frequency of approximately 0.43 MHz at injection and approximately 1.57 MHz at ejection for the $U^{28+}$~\cite{SIS18}. During nominal operation, the SIS18 forms two bunches from the beam injected at 11.4 MeV/$\mu$ and accelerates them up to 200 MeV/$\mu$. From the SIS18, 4 batches, each of 2 bunches, are transferred at  maximum 10ms intervals to the SIS100. The harmonic number of the SIS100 is 10 and the SIS100 RF frequency is fixed at approximately 1.57 MHz during the
+injection period to simplify the RF control system and to avoid perturbing batches already transferred.
+
+  This RF frequency de-tune is done accompanying with the RF ramp. Accepting to decentre the orbit by 8mm for the SIS18~\cite{SIS18_man}: 
+
+\begin{equation}
+\frac{\bigtriangleup{R}}{R}\approx{2.4}{\times}10^{-4}\label{eq1}
+\end{equation}
+
+  We know the basic differential relations among the fractional change in the RF frequency f, the fractional change in the momentum p, the fractional change in the bending magnetic field B and the fractional change in the radius R as follows ~\cite{J-PARC}.
+
+
+\begin{equation}
+\label{eq:eq2}
+\frac{\Delta{f}}{f} ={\frac{1}{\gamma^2}}{\frac{\Delta{p}}{p}} - \frac{\Delta{R}}{R}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{f}}{f} = (\frac{1}{\gamma^2}-\frac{1}{\gamma_t^2})\frac{\Delta{p}}{p}+{\frac{1}{\gamma_t^2}}{\frac{\Delta{B}}{B}}
+\label{eq:eq3}
+\end{equation}
+
+
+where $\gamma$ is the relativistic factor, which measures the total particle energy, E, in
+units of the particle rest energy, $E_0$; $\gamma_t$ is the transition gamma; $\bigtriangleup{f}$ and  $\bigtriangleup{B}$ are the frequency and  bending magnetic field deviation for the frequency de-tune;  $\bigtriangleup{p}$ is the momentum deviation.
+
+In our case of the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency change, namely $\Delta$p = 0; then the general relation between the radial excursion and RF frequency change Eq.~(\ref{eq:eq2}) reduces to Eq.~(\ref{eq:eq4}) and the general relation between the magnetic field change and RF frequency change Eq.~(\ref{eq:eq3}) reduces to Eq.~(\ref{eq:eq5}).
+
+\begin{equation}
+\frac{\Delta{f}}{f} = - \frac{\Delta{R}}{R}
+\label{eq:eq4}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{f}}{f} =  \frac{1}{{\gamma_t}^2}\times{\frac{\Delta{B}}{B}}
+\label{eq:eq5}
+\end{equation}
+
+From these equations, the RF frequency and the magnetic field change at the $U^{28+}$  extraction energy 200MeV/u~\cite{SIS18_man} ($\gamma_t$ = 5.8) are 
+
+\begin{equation}
+\frac{\Delta{f}}{f} = -{2.4}{\times}10^{-4}
+\label{eq6}
+\end{equation}
+
+\begin{equation}\frac{\Delta{B}}{B} = -{8.1}{\times}10^{-3}\label{eq5}
+\end{equation}
+
+where the maximum RF frequency de-tune is approximate to 370 Hz at 1.57 MHz for the $U^{28+}$. In this paper, we assume Rf frequency de-tune for the SIS18 equals to 200 Hz for the sake of simplicity. The beating period is 5ms.
+
+
+\subsubsubsection{Frequency beating method for SIS18 and ESR 2-3 Seiten}
+Because the circumference ratio of the ESR injection orbit to the SIS18 designed orbit is not a perfect integer, two machines begin beating automatically. He 
+
+
+\subsection{Bucket label}
+\subsection{Synchronization of the extraction and injection kicker}
+\subsection{Beam indication for the beam instrumentation}
+
+
+\section{Prerequisites/boundary conditions for the B2B transfer system}
+- Aufbau des Protoneninjektors, Nutzen, zu erreichende Werte, FAIR Vorgaben
+\subsection{LLRF system}
+\subsection{Accelerator control system}
+\subsubsection{BuTiS}
+\subsubsection{GMT}
+\subsubsection{FESA}
+\subsubsection{SM}
+
+

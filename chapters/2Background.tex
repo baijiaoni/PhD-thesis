@@ -1,11 +1,127 @@
 \section{Introduction of the bunch to bucket transfer}
-- Aufbau des Protoneninjektors, Nutzen, zu erreichende Werte, FAIR Vorgaben
+
+\begin{itemize}
+\item Energy match
+
+The 'magnetic rigidity' of a beam is defined as the following:
+\begin{equation}
+	\label{eq:energy}
+	B\rho =\frac{p}{e}
+\end{equation}
+where p is the magnitude of the particle momentum, e is the charge of the particle, B is magnetic field, and $\rho$ is the bending radius of a particle immersed in a magnetic field B. The ratio of p to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field.
+
+The bunch is transferred from the source to the target machine with the same energy. So the beam has the same momentum and velocity for both machines. According to eq. ~\ref{eq:energy}, the magenetic rigidity of two machines must be matched:
+
+\begin{equation}
+	\label{eq:rigidity}
+	B_{src}\rho_{src} =B_{trg}\rho_{trg}
+\end{equation}
+Besides, the rf frequency of two machines must meet the following relation.
+\begin{equation}
+	\label{eq:velocity}
+	C_{src}\frac{f_{rf}^{src}}{h^{src}} = \beta c=C_{trg}\frac{f_{rf}^{trg}}{h^{trg}}
+\end{equation}
+
+\item RF synchronization
+
+For the proper B2B transfer, the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment is termed ''synchronization''. 
+\begin{equation}
+	\label{eq:rf_frequency}
+	\frac{f_{rf}^{src}}{f_{rf}^{trg}} = \frac{C_{trg}h^{src}}{C_{src}h^{trg}}
+\end{equation}
+
+The synchronization can be achieved by an azimuthal positioning of the bunch in the source machine or the bucket in the target machine. This is so-called ''phase shift method''. When two rf frequencies are slightly different, they are beating, perceived as periodic variations in phase difference whose rate is the difference between the two frequencies. The synchronization can be automatically achieved. This is so-called ''frequency beating method''.
+
+\item Bucket synchronization 
+
+Fast extraction can only proceed when the required bucket comes. The extraction must be correctly synchronized with respect to a reference signal at the following frequency, which is called bucket marker.
+\begin{equation}
+	\label{eq:bucket_label}
+	\frac{f_{rf}^{src}}{p} = \frac{f_{rf}^{trg}}{q}
+\end{equation}
+
+\item Extraction and injection synchronization 
+
+Bunch fast extraction must happen exactly one ''time of flight'' before the required bucket of the target machine passes the injection region. The injection kicker must kick when the bucket passes passess the injection region.  
+\begin{equation}
+	\label{eq:ext_tof_inj}
+	t_{ext}^{src}+t_{tof} = t_{inj}^{trg}
+\end{equation}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase difference between two RF systems}
 
+For the RF synchronization between two machines, the fist step is to measure the phase difference between two RF systems.   
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Synchronization of two RF systems}
 The B2B transfer means that one bunch of particles, circulating inside the source synchrotron, is transferred into the center of a bucket of the target synchrotron. For the proper transfer, the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment is usually named  as ``synchronization``. 
 There are usually two methods available for the synchronization process, the phase shift method and the frequency beating method. Both methods provide a time frame for the B2B transfer, within which a bunch could be transferred into a bucket with the center mismatch at least better than 1$^\circ$. The time frame is called the synchronization window. 
 
+For both methods, the accompanying beam dynamics must be taken into consideration. Of the four variables, the revolution frequency f(t), the bending magnetic-field B(t), the momentum of particle p(t) and the orbit radius R(t), only two are independent.  This leads to four very useful differential relations. The momentum of particle is given by
+\begin{equation}
+\label{eq:momentum}
+p(t)=e\rho_0 [\frac {R(t)}{R_0}]^{1/\alpha_p }B(t) 
+\end{equation}
+
+where e is the charge of particle; $\rho_0$ , the nominal bending radius; $R_0$, its nominal value; ; and $\alpha_p$, the momentum compaction factor. From eq. ~\ref{eq:momentum}, the first-order total differential of p(t) is given as
+
+\begin{equation}
+\label{eq:1st_momentum}
+dp(t)=\frac{e\rho_0}{\alpha_p (R_0)^{1/\alpha_p}}B(t)R(t)^{1/\alpha_p-1}dR(t)+ e\rho_0 [\frac {R(t)}{R_0}]^{1/\alpha_p }B(t)dB(t) 
+\end{equation}
+
+Dividing both sides of eq. ~\ref{eq:1st_momentum} by p(t), we obtain
+\begin{equation}
+\label{eq:pRB}
+\frac{dp(t)}{p(t)}={\gamma_t^2}\frac{\Delta{R}}{R}+\frac{\Delta{B}}{B} 
+\end{equation}
+
+Now, for circular accelerators, the following general relation holds
+\begin{equation}
+\label{eq:frequency}
+f(t)=\frac{\upsilon(t)}{2\pi R(t)} 
+\end{equation}
+where $\upsilon(t)$ is its velocity. The total differential of f(t) is given by
+
+\begin{equation}
+\label{eq:1st_frequency}
+df(t)=\frac{1}{2\pi}[\frac{d\upsilon(t)}{R(t)}- \frac{\upsilon(t)}{R^2(t)}dR(t)]
+\end{equation}
+
+Dividing both sides of eq. ~\ref{eq:1st_frequency} by f(t) yields
+\begin{equation}
+\label{eq:fvr}
+\frac{df(t)}{f(t)}=\frac{d\upsilon(t)}{\upsilon(t)}- \frac{dR(t)}{R(t)}
+\end{equation}
+
+The fractional change in $\upsilon(t)$ is related to the fractional change in p(t):
+\begin{equation}
+\label{eq:pv}
+\frac{dp(t)}{p(t)}=\gamma^2(t)\frac{d\upsilon(t)}{\upsilon(t)}
+\end{equation}
+where $\gamma(t)$  is the relativistic factor, which measures the total particle energy, E(t), in units of the particle rest energy, $E_0$. Solving $d\upsilon(t)/\upsilon(t)$ from eq. ~\ref{eq:pv} and substituting it into eq. ~\ref{eq:fvr} yields
+
+\begin{equation}
+\label{eq:fPR}
+\frac{df(t)}{f(t)} ={\gamma^2(t)}\frac{dp(t)}{p(t)}-\frac{dR(t)}{R(t)} 
+\end{equation}
+
+Replacing dp(t)/p(t) in eq.~\ref{eq:fPR} with eq.~\ref{eq:pRB}, we have
+\begin{equation}
+\label{eq:fBR}
+\frac{df(t)}{f(t)} ={\gamma^2(t)}\frac{dB(t)}{B(t)}+[\frac{\gamma_t^2}{\gamma^2(t)}-1]\frac{dR(t)}{R(t)} 
+\end{equation}
+
+where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$. In the same way,solving dR(t)/R(t) from eq. ~\ref{eq:pRB} and substituting it into eq. ~\ref{eq:fPR}, we obtain
+\begin{equation}
+\label{eq:fPB}
+\frac{df(t)}{f(t)} =(\frac{1}{\gamma^2(t)}-\frac{1}{\gamma_t^2}) \frac{dp(t)}{p(t)}+\frac{1}{\gamma_t^2}\frac{dB(t)}{B(t)} 
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Phase shift method}
 
 At a scheduled time well before ejection, the phase advance between the beam in the source synchrotron and a reference bucket in the target synchrotron are measured with respect to the phase of a common Synchronization Reference Signal, which is synchronously distributed to the source and target synchrotrons. Based on the measured phase advance, the  Reference Radio Frequency (RF) Signals of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with the buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
@@ -14,19 +130,21 @@ Fig. 1 shows the synchronization window for the phase shift method. The top and 
 
 A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
 
-\subsubsubsection{Longitudinal dynamics analysis}
-We now consider how the radial position and momentum of the beam react when the RF frequency is changed from a nominal value. Since the magnetic field is not affected by the frequency change, we can assume $\Delta{B}$ = 0; then, eq. ~(\ref{?}  and eq.~(\ref{?} respectively reduce to
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsubsection{Radial excursion and momentum shift due to frequency modulation}
+For the phase shift method, the magnetic field is not affected by the frequency modulation, so $\Delta{B}$ = 0. By substituting $\Delta{B}$ = 0 into eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB}, we could get respectively the accompanying radial excursion and momentum shift    by the frequency modulation.
 
 \begin{equation}
 \label{eq:phaseR}
 \frac{\Delta{f}}{f} =({\frac{\gamma_t^2}{\gamma^2}-1}) \frac{\Delta{R}}{R}
 \end{equation}
-
+and
 \begin{equation}
 \frac{\Delta{f}}{f} = (\frac{1}{\gamma^2}-\frac{1}{\gamma_t^2})\frac{\Delta{p}}{p}
 \label{eq:phaseP}
 \end{equation}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsubsection{Transverse dynamics analysis}
 
 The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity.
@@ -35,7 +153,67 @@ The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process caus
 \Delta{Q} = Q^`\frac{\Delta{p}}{p}
 \label{eq:chromaticity}
 \end{equation} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsubsection{Shift of synchronous phase}
+The synchronous phase deviates from $0^\circ$ during the frequency modulation. From the expression of the particle momentum, p(t), given in eq. ~\ref{eq:momentum}, the time derivative of p(t) can be written as
+\begin{equation}
+\frac {dp(t)}{dt} = \frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}
+\label{eq:momentum/t}
+\end{equation} 
+Now, the relationship between the rate of change in momentum of a particle, dp(t)/dt,
+and the force applied on it, F(t), is governed by Newton’s second law:
+\begin{equation}
+\frac {dp(t)}{dt} = F(t)
+\label{eq:Newton}
+\end{equation} 
+F(t) is given by the product of the accelerating electric field, E(t), and the
+charge of particle, e. Substituting dp(t)/dt given in eq. ~\ref{eq:momentum/t} and F(t) = eE(t) into eq.~\ref{eq:Newton}, we have
+\begin{equation}
+ \frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}=eE(t)
+\label{eq:f=eq}
+\end{equation} 
 
+From this equation, we obtain the expression of energy gain in one turn,
+\begin{equation}
+2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}]=eV(t)sin[\phi_{s0}(t)+\Delta \phi_s(t)]
+\label{eq:energy_cycle}
+\end{equation} 
+where V(t) is the RF accelerating voltage per turn; $\phi_{s0}$, the synchronous phase in the
+operation with no frequency modulation; and $\phi_{s}(t)$, the change in the synchronous phase originating from the rf frequency modulation.
+
+The magnetic field is not affected by the frequency change, we can assume dB(t)/dt = 0. Before the synchronizaiton, it is a stationary bucket with the synchronous phase $0^\circ$. Then, eq.~\ref{eq:energy_cycle} reduce to
+\begin{equation}
+2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}]=eV(t)sin[\Delta \phi_s(t)]
+\label{eq:energy_cycle_noB}
+\end{equation} 
+
+Solving  $\Delta \phi_{s}(t)$  from eq.~\ref{eq:energy_cycle_noB}, we have
+\begin{equation}
+\Delta \phi_{s}(t)=sin^{-1}[{\frac{2\pi \rho_0 B}{\alpha_pV}(\frac{R(t)}{R_0})^{1/\alpha_p-1}\frac{dR(t)}{dt}}]
+\label{eq:delta_phase}
+\end{equation} 
+From eq.~\ref{eq:delta_phase}, we know that $\Delta \phi_{s}(t)$ is only determined by dR(t)/dt during the frequency modulation.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsubsection{Bucket area factor}
+At the flattop, the bucket is a stationary bucket with $\phi_s(t)=0$. During the frequeny modulation process, the bucket becomes a running bucket with $\Delta\phi_s(t)\ne0$. The ratio of bucket areas of a running bucket to a stationary bucket is bucket area factor $\alpha(\Delta \phi_s)$. During the rf frequency modulation, the bucket area factor during the frequency modulation should be bigger than 80\% in order for bunches to be preserved.
+The bucket area factor could be estimated by ~\cite{bucket_factor}
+\begin{equation}
+\alpha_b(\Delta\phi_s)\approx(1-sin(\Delta \phi_s))(1+sin(\Delta \phi_s))
+\label{eq:buckt_area_factor}
+\end{equation} 
+
+%\begin{equation}
+%Vsin\phi_s=\frac{2\pi \rho _0}{\alpha_p}(\frac{R(t)}{R_0})^{\frac{1}{\alpha_p}-1}B\dot R 
+%\label{eq:bucketsizeR}
+%\end{equation}
+%
+%$R(t)/ R_0\approx 1$. From Eq.~(\ref{eq:phaseR}), we could get the following equation.
+%\begin{equation}
+%\frac{\dot R}{R_0}(\frac{\gamma_t^2}{\gamma^2}-1)=\frac{\dot f}{f_0} 
+%\label{eq:RtoF}
+%\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsubsection{Adiabaticity analysis}
 $\omega_s(t)$ is the small-amplitude synchrotron frequency given by
 \begin{equation}
@@ -55,26 +233,8 @@ Compared with $\phi_s(t)$, all of the other variables change very slowly. $\phi_
 \label{eq:derivation}
 \end{equation} 
 
-Eq.~(\ref{eq:derivation}) clearly shows that $\phi_s(t)$ and $d\phi_s(t)\backslash dt$ play important roles for the adiabaticity when the frequency is modulated. Now let us deduce the the frequency requirement corresponding to these two factors. 
+Eq.~(\ref{eq:derivation}) clearly shows that $\phi_s(t)$ and $d\phi_s(t)/dt$ play important roles for the adiabaticity when the frequency is modulated. Now let us deduce the the frequency requirement corresponding to these two factors. 
 
-\subsubsection{$\phi_s(t)$}
-At the flattop, the bucket is a stationary bucket with $\phi_s(t)=0$. During the frequeny modulation process, the bucket becomes a running bucket with $\Delta\phi_s(t)\ne0$. The ratio of bucket areas of a running bucket to a stationary bucket is bucket area factor $\alpha(\phi_s)$. Generally, the bucket area factor during the frequency modulation should be bigger than 80\% in order for bunches to be preserved.
-A basic rf cavity requirement for beam acceleration rate is
-\begin{equation}
-Vsin\phi_s=2\pi R_0\rho\dot{B} 
-\label{eq:bucktsizeB}
-\end{equation} 
-
-\begin{equation}
-Vsin\phi_s=\frac{2\pi \rho _0}{\alpha_p}(\frac{R(t)}{R_0})^{\frac{1}{\alpha_p}-1}B\dot R 
-\label{eq:bucketsizeR}
-\end{equation}
-
-$R(t)/ R_0\approx 1$. From Eq.~(\ref{eq:phaseR}), we could get the following equation.
-\begin{equation}
-\frac{\dot R}{R_0}(\frac{\gamma_t^2}{\gamma^2}-1)=\frac{\dot f}{f_0} 
-\label{eq:RtoF}
-\end{equation}
 
 substituting Eq.~(\ref{eq:RtoF}) into Eq.~(\ref{eq:bucketsizeR})
 \begin{equation}
@@ -105,60 +265,15 @@ where T is the period of frequency modulation and $t_0$ is the time at which the
 
 We have to introduce a phase shift of up to $\pm \pi$  [rad] in the RF phase. This is the worstcase scenario, and in practice, the phase shift might be much less.
 We consider here the following four examples of frequency modulation; simple frequency-offset modulation (Case (1)), triangular modulation (Case (2)), sinusoidal modulation (Case (3)) and parabola modulation (Case (4)), (see Fig.~\ref{phaseshift}(a)).Here we make use of the maximum $\dot f$ 64 Hz/ms during the $1^{st}$ stage of rf ramp to guarantee the 90$\%$ bucket area factor.
-Case (1) 
-\begin{eqnarray}\Delta f_{rf}(t)=
-\begin{cases}
-50Hz/ms \times (t-t_0) &t_0+0<t\le t_0+2ms\cr  100Hz &t_0+2<t\le t_0+5ms \cr 100Hz-50Hz/ms \times (t-t_0) &t_0+5ms<t\le t_0+7ms\cr 
-\end{cases}
-\end{eqnarray}
 
-Case (2) 
-\begin{eqnarray}\Delta f_{rf}(t)=
-\begin{cases}
-\frac{10^3}{7\times 3.5}Hz/ms \times (t-t_0) &t_0+0<t\le t_0+3.5ms\cr  \frac{10^3}{7}Hz-{\frac{10^3}{7\times 3.5}Hz/ms}\times {(t-t_0-3.5ms)} &t_0+3.5ms<t\le t_0+7ms \cr 
-\end{cases}
-\end{eqnarray}
-
-Case (3) 
-\begin{eqnarray}\Delta f_{rf}(t)=
-\frac{10^3}{14}Hz \times (1-cos(\frac{2\pi}{7} rad/ms\times (t-t_0))) &t_0+0<t\le t_0+7ms\cr  
-\end{eqnarray}
-
-Case (4) 
-\begin{eqnarray}\Delta f_{rf}(t)=
-\begin{cases}
-30Hz/ms^2 \times (t-t_0)^2 &t_0+0<t\le t_0+1ms\cr  
-30Hz + 60Hz/ms\times (t-t_0 -1ms) &t_0+1ms<t\le t_0+2.5ms\cr 
-30Hz/ms^2 \times [5ms-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
-30Hz + 60Hz/ms\times (6ms-t-t_0) &t_0+4.5ms<t\le t_0+6ms\cr  
-30Hz/ms^2 \times [7ms-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
-\end{cases}
-\end{eqnarray}
-
-All the four modulations realize the same phase shift $\Delta \phi = 180^\circ $ (see Fig.~\ref{phaseshift}(8) within T=7ms . 
-
-By Eq.~(\ref{eq:phaseR}) and Eq.~(\ref{eq:phaseP}) we could get the average radial excursion and relative momentum shift. (see Fig.~\ref{phaseshift}(2) and Fig.~\ref{phaseshift}(3)), which are much smaller than the maximum momentum modulation $\pm 0.008$ and maximum radial excursion $\pm 2.4\times10^{-4}$. Fig.~\ref{phaseshift}(6) shows the changes in synchronous phase caused by four RF frequency modulations.
-
-\begin{figure}[!htb]
-   \centering
-   \includegraphics*[width=160mm]{phase_shift.jpg}
-   \caption{ (1) RF frequency modulations, (2) average radial excursions, (3) relative momentum shifts, (4) effects of guide-field error on dp(t)/p(t), (5) effects of guide-field error on dR(t), (6) changes in synchronous phase, (7) ratio of a running bucket to a stationary bucket and (8) Phase ramp.}
-   \label{phaseshift}
-\end{figure}
-
-\begin{figure}[!htb]
-   \centering
-   \includegraphics*[width=160mm]{phase_shift2.jpg}
-   \caption{ (1)  Adiabaticity parameter estimation for case 3 and 4, (2)  adiabaticity parameter estimation for case 1 and 2, (3) $\dot f$of four cases, (4)  Synchronous phase, (5) $\ddot f$ of case 3 and 4 and (6)  $\ddot f$ of case 1 and 2.}
-   \label{phaseshift2}
-\end{figure}
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Frequency beating method}
-Einführung in die Arbeitsweise des 4-grids, .
-..
-\subsubsection{Longitudinal dynamics analysis 2-3 Seiten}
-For the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency change, namely $\Delta$p = 0; then the general relation between the radial excursion and RF frequency change Eq.~(\ref{eq:eq2}) reduces to Eq.~(\ref{eq:eq4}) and the general relation between the magnetic field change and RF frequency change Eq.~(\ref{eq:eq3}) reduces to Eq.~(\ref{eq:eq5}).
+The frequency beating method uses the effect of two RF signals of slightly different frequencies, perceived as periodic variations in phase difference whose rate is the difference between the two frequencies. The RF frequency of the source or the target or both synchrotrons is detuned long before the ejection, then the difference between the phase of the bunch/bucket and the phase of the Synchronization Reference Signal is measured. Based on the measured phase, the synchronization is realized when the phase difference of the two RF frequencies corresponds to the ideal phase difference ($\Delta \theta = 0^\circ$). The $\Delta \theta$ is the mismatch between the bunch center and the corresponding bucket center. Because of the slightly different RF frequencies, a mismatch between the bunch and bucket centers exists. In principle, the B2B transfer requirement for FAIR allows a bunch to bucket center mismatch of $1^\circ$, which brings a symmetric time frame with respect to the time
+of the ideal phase difference, resulting in the maximum synchronization window for the frequency beating method, drawn in yellow (see Fig. 2). The compensation of the time-of-flight is not drawn. The red dashed line shows the time for the expected phase difference.
+During the detune processThe RF reference frequency is detuned at the end of the ramp. During the detune process, the magnetic field and radius excursion react and the momentum is not affected.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsubsection{Longitudinal dynamics analysis}
+For the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency change, namely $\Delta$p = 0; then the general relation between the radial excursion and RF frequency change Eq.~(\ref{eq:pFR}) reduces to Eq.~(\ref{eq:eq4}) and the general relation between the magnetic field change and RF frequency change Eq.~(\ref{eq:pRB}) reduces to Eq.~(\ref{eq:eq5}).
 
 \begin{equation}
 \frac{\Delta{f}}{f} = - \frac{\Delta{R}}{R}
@@ -227,17 +342,100 @@ Because the circumference ratio of the ESR injection orbit to the SIS18 designed
 
 
 \subsection{Bucket label}
+After synchronization, the bunch is synchronized to an arbitrary RF bucket. For the proper injection, we must know which buckets are already filled and which buckets should be filled by next injection cycle. So a reproduced signal at the target revolution frequency is used as the bucket marker, which labels bucket 1 of the target synchrotron. The SM knows the bucket pattern and a proper bucket offset will be applied on each injection cycle to the bucket marker. 
 \subsection{Synchronization of the extraction and injection kicker}
-\subsection{Beam indication for the beam instrumentation}
+For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. Because the beam of two rings are synchronized with each other, the extraction and injection are synchronized indirectly. Thyratrons are used for kicker systems at FAIR accelerator. 
+\begin{itemize}
+	\item Extraction kicker
+		
+Here we discuss that all bunches are extracted by one time extraction kick. The flattop is at least one revolution period. The fall time is not constrained. If there is no empty RF bucket of the ring, the rise time of the extraction kicker must be shorter than the bunch gap. If there is at least one empty RF bucket, the rise of the magnetic field could be achieved within the gap of the empty RF buckets. 
 
+	\item Injectin kicker
+
+For multi-batch injection, the rise time of the injection kicker must be shorter than the bunch gap. The flattop is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the bunch gap. If at least one bucket is kept empty, the fall of the magnetic field could be achieved within the gap of the empty RF buckets. If the ring needs only one time injection, the rise time is not constrained. The flattop determined by the length of the bunches to be injected. The fall time must be shorter than the bunch gap or the gap of the empty RF buckets. 
+
+\end{itemize}
+
+For FAIR project, there are several different type of kicker system. Here we introduce SIS18 extraction, SIS100 injection and extracion/emergency kicker system.
+
+The SIS100 extraction kicker system is used for the regular extraction and the emergency extraction by bipolar operation. It consists of eight kicker magnets. Each magnet is placed between the two cable capacitors. Both cable capacitors will be charged at the same time with a high voltage DC power supply. The polarity of the magnetic field changes with the direction of the discharge current, which are controled by two thyratron switches. One polarity directs the beam into the extraction channel, the other polarity directs the beam into an underground beam dump for an emergency case. The system produces rectangular pulses with different polarities of the kicker field.
+
+The SIS18 extraction and SIS100 injection kicker have the monopolar operation. Two cable capacitors will be charged at the same time with a high voltage DC power supply. By closing the main switch the capacitor is being discharged via the kicker magnet, which produces a rectangular kicker pulse. The pulse length can be modified by closing the dump switch in correlation with the main switch. 
+
+Fig.~\ref{syc_ext_inj} shows the synchronization of the SIS18 extraction and SIS100 injection kicker for $U^28+$ B2B transfer. Four batches of $U^28+$ at 200 MeV/u are injected into eight
+out of ten buckets of SIS100. Each batch consists of two bunches. The 9th and 10th bucket may be used as bunch gap for the emergency kick. The SIS18 revolution frequency marker and SIS100 bucket markers represent time when the SIS18 bunch 1 (1st) and SIS100 bucket 1 ($\sharp$1) passes by the virtual RF cavity, which is a virtual position in the synchrotron to which the Reference RF Signal corresponds. In Fig.~\ref{syc_ext_inj}, the numbers correspond to the
+consideration of following factors for the synchronization:
+\begin{itemize}
+\item Bucket pattern ($delay_{bucket}$. E.g. $delay_{bucket}$ = One SIS18 revolution period. Bucket 3 and 4 will be filled)
+\item Compensation of Time-of-flight (TOF)
+\item Distance between the virtual RF cavity and the extraction/injection position ($t_{src}$ and $t_{trg}$).
+\item Extraction and injection kicker delays ($D_{ext}$ and $D_{inj}$)
+\end{itemize}
+After the synchronization, the phase difference between the SIS18 and the SIS100 revolution frequency markers equals to the sum of tsrc, ttrg and TOF. The extraction kicker will be triggered by the extraction kick delay compensation, Th=1SIS1 00 +
+Th=1SIS18 -TOF - ttrg - Dext and the injection kicker will be triggered by the injection kick
+delay compensation, Th=1SIS1 00 + Th=1SIS1 8 - ttrg - Dinj. See Fig. 9. Both extraction and
+injection kick delay compensation values are provided by the SM.
+ 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{syc_ext_inj.jpg}
+   \caption{Synchronization of the SIS18 extraction and SIS100 injection kicker}
+   \label{syc_ext_inj}
+\end{figure}
+
+\subsection{Beam indication for the beam instrumentation}
+In order to observe the particle beams and measure related parameters for accelerators and transfer lines, the beam instrumentation equipments must be synchronized and triggered within he beam schedule. For the B2B transfer, the data acquisition for the beam instrumentation equipments should be triggered before the bunch is extracted. But they should not be triggered too early because of the limitation of sampling time. So a pre-trigger is necessary, which indicates that the bunch will be extracted soon, much shorter than the sampling time limitation. For the beam instrumentation system at FAIR, the data acquisition is at a sampling rate of 1GS/s and the upper bound sampling time is 100us. 
+
+The beginning of the synchronizaiton window is used for the pre-trigger. 
 
 \section{Prerequisites/boundary conditions for the B2B transfer system}
-- Aufbau des Protoneninjektors, Nutzen, zu erreichende Werte, FAIR Vorgaben
-\subsection{LLRF system}
-\subsection{Accelerator control system}
+For the FAIR accelerator complex, synchronization of the B2B transfer will be
+realized by the FAIR control system and the Low-Level RF
+(LLRF) system. For the synchronization of LLRF system, the GMT system is complemented and linked to the Bunchphase Timing System (BuTiS). 
+\subsection{FAIR control system}
+The FAIR control system takes advantage of collaborations with CERN in using proven framework solutions like FESA, LSA, White Rabbit, etc. It consists of the equipment layer, middle layer and application layer. The equipment layer consists of equipment interfaces, GMT and software representations of the equipment
+(FESA)Front-End System Architecture. The middle layer provides service functionality both to the equipment layer and the application layer through the IP control system network. LSA is used for the Settings Management. The application layer combines the applications for operators as GUI applications or command line tools. The application layer and the middle layer only request what the FAIR accelerator complex should do and transmit set values to the equipment layer. The actual beam production is controlled by the GMT. The GMT system is synchronized to BuTiS. The SM supplies the schedule for the timing master by LSA.
+
 \subsubsection{BuTiS}
+Bunch Phase Timing System (BuTiS) serves as a campus-wide clocks distribution system with subnanosecond resolution and stability over distances of several hundred meters while maintaining 100ps per km timing stability. Two BuTiS reference clocks 10 MHz and 200 MHz and a trigger identification pulse at 100 kHz are generated centrally in the BuTiS center. A star-shaped optical fiber distribution network transfers these signals to BuTiS receivers all over the FAIR campus. A BuTiS receiver and a local reference synthesizer are installed in each supply room to produce the BuTiS reference clocks, which are in phase. For this purpose, a measurement setup in the BuTiS center continuously measures the optical signal transmission delay between the BuTiS center and the different BuTiS receivers. This measurement information is used to shift the phases of the signals generated in each local reference synthesizer for the delay compensation. The main task of BuTiS is the supply of the reference clock signals for Reference RF Signals in each rf supply rooms.
+
 \subsubsection{GMT}
+The GMT is contained in the equipment layer. The main tasks of the GMT system are time synchronization of more than 2000 Front-End Controllers (FEC) with nanosecond accuracy, distribution of timing messages and subsequent generation of real-time actions by the nodes of the timing system. The GMT consists of the Timing Master (TM) and the White Rabbit (WR) timing network and integrates nodes. The timing master's interface to the upper layers, e.g. online schedule monitor, is modeled as a FESA device. The timing master is a logical device, containing the data master (DM), the clock master (CM) and the management master (MM). The data master receives a schedule for the operation of the FAIR accelerator complex from the Settings Management and provides the real-time scheduler by broadcasting messages to the WR timing network, which will be received and executed by the corresponding node at the designated time. The clock master is a dedicated White Rabbit switch. It is the topmost switch layer of the WR timing network and provides the grandmaster clock which is distributed to all other nodes in the timing network. The clock master derives its clock and timestamps from the BuTiS clocks. All active components including receiver nodes and switches are registered to the management master. The management master monitor and manage the active components of the GMT system.
+
 \subsubsection{FESA}
+The real-time front-end software architecture FESA is a framework used to fully integrate the large amount of front-end equipments into the FAIR accelerator control system. FESA was developed by CERN and has already been implemented into the CERN control system. FESA develops FESA classes, the equipment-type specific front-end software. For a specific type of equipments, a FESA class implementation accesses to the control interface of the equipments. The FESA class models the equipment as device, so the FESA output is called device class. One device class can instanciate several devices and thus generally handles several independent pieces of equipments.  FESA provides JAVA based graphical user interfaces (GUI) to design, deploy, instantiate and test the device classes. The FEC use FESA to implement generic and equipment specific functions in form of the device classes. Interaction with the equipment is synchronized with the GMT system. 
+
+FESA (Frontend Software Architecture) [5] is a framework developed at CERN and is now developed further in collaboration with GSI for the FAIR project. It is a toolbox to model abstract device objects where equipment’s process variables (sensors and actuators) are represented as properties. The specific equipment access is implemented in C++ by the developer and is linked by the toolchain
+to the device model to build a so called FESA class (Fig. 4). Then, one or more FESA classes are linked to the run-time core to build an x86-Linux executable. The
+FESA classes provide a uniform interface via the objectproperty model and a common middle-ware to the upper layers. The device properties are set and read using synchronous or asynchronous access methods (subscription). For time multiplexed operation of the accelerators, the FESA framework supports defining multiplexed properties. Before an accelerator schedule is started the setting properties of FESA classes are pre-supplied by LSA [6] for all scheduled beams with specific settings accordingly. At runtime, FESA’s real time software actions are triggered by timing events, the actual beam specific data is then selected based on information carried by the timing event message and send to the equipment. For the FAIR project the necessary interaction with the timing receiver is realized in a
+lab-specific timing library of the FESA framework.
+
+
 \subsubsection{SM}
+The SM is located in the middle layer of the control system. It supports off-line generation of machine settings, sending these settings to all involved devices,
+and programming the schedule of the timing system. The SM uses the LSA (LHC Software Architecture) framework, which originates at CERN and is now developed further in collaboration with GSI for the FAIR project. The settings management is based on a physics model for accelerator optics, parameter space and overall relations between parameters and between accelerators. A standardized API allows accessing data in a common way as basis for generic client applications for all accelerators. Using the LSA-API, trim-applications can coherently modify machine settings. E.g. the service generates timing constraints (e.g. ramp curve) as well as the equipment’s data settings (e.g. field) for all devices derived from physics parameters (e.g. beam energy). For FAIR the framework is extended to model the overall schedule of all accelerators. Beams are described as Beam Production
+Chains to allow a description from beam-source to beamtarget for settings organization and data correlation.
+
+\subsection{LLRF system}
+The FAIR low-level rf (LLRF) system shall be usable in the existing machines SIS18 and experimental storage ring (ESR) as well as in the FAIR synchrotrons SIS100 and SIS300 and in the storage rings collector ring (CR), new experimental storage ring (NESR), and accumulator ring (RESR).It supports fast ramp rates and large frequency span for the accleration of a variety of ion species, It supports different RF manipulations, including operation at different harmonic numbers, barrier bucket generation and bunch compression. 
+
+Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (CCS). A DSP-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the reference RF signal. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{local_cavity_syn.png}
+   \caption{Local Cavity Synchronization}
+   \label{local_cavity_syn}
+\end{figure}
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{ref_rf_dis.png}
+   \caption{Reference RF Signal Distribution}
+   \label{ref_rf_dis}
+\end{figure}
+The Reference RF Signal distribution shown in Fig.~\ref{ref_rf_dis} is located in each supply room. The Reference RF Signals in different supply rooms are synchronized by the BuTiS. BuTiS 200MHz and 100kHz clock signals are received by BuTiS receivers in different supply rooms in phase. In Fig.~\ref{ref_rf_dis}, a number of Group DDS units are located in each supply room, which are synchronized to BuTiS local reference. The Group DDS signals can be routed to the different cavity systems by a Switch Matrix. All cavities in a synchrotron could be providing with the same Group DDS signal. The cavities at different harmonic numbers could be realized by using Group DDS signals with different harmonic numbers. The Group DDS concept allows to synchronize a variety of cavities in a very flexible way. 
+
+All the cavities of SIS18 are driven from one supply room. The SIS100 cavities will be gathered in three acceleration sections, each of them is
+driven by a dedicated supply room. 
+
 
 
