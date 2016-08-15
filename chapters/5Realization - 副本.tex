@@ -1,0 +1,730 @@
+This chapter concentrates on the realization and systematic investigation of the B2B transfer system. Both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic viewpoint. The GMT and kicker systematic considerations of the B2B transfer are investigated. Besides, the test setup from the timing aspect is built. All the analysis are based on $U^{28+}$ B2B transfer from SIS18 to SIS100.
+\section{Investigation of two synchronization methods for $U^{28+}$ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }
+This section analyzes the phase shift and frequency beating methods from the beam-dynamics viewpoint for the synchronization of SIS18 with SIS100. In this chapter, the circumference of SIS18 and SIS100 are denoted by $C_{SIS18}$ and $C_{SIS100}$, the revolution frequency by $f_{h=1}^{SIS18}$ and $f_{h=1}^{SIS100}$ and the rf frequency by $f_{h=2}^{SIS18}$ and $f_{h=10}^{SIS100}$. Since SIS18 and SIS100 harmonic number are 2 and 10, the relationship between the revolution and rf frequencies are $f_{h=2}^{SIS18}=2f_{h=1}^{SIS18}$ and $f_{h=10}^{SIS100}=10f_{h=1}^{SIS100}$. Since $C_{SIS100}$ is five times as long as $C_{SIS18}$, we could get the relation  $f_{h=1}^{SIS18}$=5$f_{h=1}^{SIS100}$ and $f_{h=10}^{SIS100}$=$f_{h=2}^{SIS18}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Phase shift method}
+To achieve a required phase shift, the RF frequency is modulated away from the norminal value for a period of time and modulated back. Let $\Delta \phi_{shift}$ be the phase shift to be achieved and $\Delta f(t)$ the RF frequency variation to accomplish it; then,
+\begin{equation}
+\Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f(t)dt \label{phase_integration}
+\end{equation}
+where T is the period of frequency modulation and $t_1$ is the time at which the modulation begins. To make the frequency modulation effective, the stabilization system, beam-phase loop, must be frozen before the modulation begins. 
+
+The following four examples of frequency modulation are analyzed. Case (1) rectangle modulation, Case (2) triangular modulation, Case (3) sinusoidal modulation and Case (4) parabolic modulation. Here I assume the phase shift must be achieved within 7ms. These frequency modulations are shown in Fig.~\ref{4case}. All the four modulations give the same phase shift, $\Delta \phi_{shift}=\pi$, which is
+proved by substituting each form of $\Delta f_{rf}(t)$ into eq.~\ref{phase_integration} and performing integration. Fig.~\ref{1st_derivation} shows the time derivation of four rf freuquency modulatons, which are smaller than the maximum time derivative of rf frequency during the acceleration ramp 64Hz/ms for the adiabaticity consideration. The acceleration ramp is an adiabatical process.
+
+%Case (1)
+%\begin{eqnarray}\label{case1}
+%\Delta f(t)=
+%\begin{cases}
+%50(t-t_1), &t_1< t\le t_1+2ms\cr
+%100, &t_1+2ms < t \le t_1+5ms \cr
+%-50(t-t_1) + 7\times 50, &t_1+5ms < t\le t_1+7ms
+%\end{cases}
+%\end{eqnarray}
+%
+%Case (2)
+%\begin{eqnarray}\label{case2}
+%\Delta f(t)=
+%\begin{cases}
+%\frac {500}{3.5 \times 3.5}(t-t_1), &t_1< t\le t_1+3.5ms\cr
+%-\frac {500}{3.5 \times 3.5}(t-t_1) +7
+%\times \frac {500}{3.5 \times 3.5}, &t_1+3.5ms < t \le t_1+7ms 
+%\end{cases}
+%\end{eqnarray}
+%
+%Case (3)
+%\begin{eqnarray}\label{case3}
+%\Delta f(t)=
+%\frac {1000}{7 \times 2} (1-cos(\frac{2\pi}{7}\times (t-t_1)), &t_1 < t\le t_1+7ms
+%\end{eqnarray}
+%
+%Case (4)
+%\begin{eqnarray}\label{case4}
+%\Delta f(t)=
+%\begin{cases}
+%30(t-t_1)^2, &t_1< t\le t_1+1ms\cr
+%30+ 60((t-t_1)-1), &t_1+1ms< t\le t_1+2.5ms\cr
+%30(5-((t-t_1)-3.5)^2), &t_1+2.5ms< t\le t_1+4.5ms\cr
+%
+%30+60(6-(t-t_1)), &t_1+4.5ms< t\le t_1+6ms\cr
+%30(7-(t-t_1))^2, &t_1+6ms< t\le t_1+7ms
+%\end{cases}
+%\end{eqnarray}
+
+Case (1) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+50Hz/ms \times (t-t_0) &t_0+0<t\le t_0+2ms\cr  100Hz &t_0+2<t\le t_0+5ms \cr 100Hz-50Hz/ms \times (t-t_0) &t_0+5ms<t\le t_0+7ms\cr 
+\end{cases}
+\end{eqnarray}
+
+Case (2) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+\frac{10^3}{7\times 3.5}Hz/ms \times (t-t_0) &t_0+0<t\le t_0+3.5ms\cr  \frac{10^3}{7}Hz-{\frac{10^3}{7\times 3.5}Hz/ms}\times {(t-t_0-3.5ms)} &t_0+3.5ms<t\le t_0+7ms \cr 
+\end{cases}
+\end{eqnarray}
+
+Case (3) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\frac{10^3}{14}Hz \times (1-cos(\frac{2\pi}{7} rad/ms\times (t-t_0))) &t_0+0<t\le t_0+7ms\cr  
+\end{eqnarray}
+
+Case (4) 
+\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{cases}
+30Hz/ms^2 \times (t-t_0)^2 &t_0+0<t\le t_0+1ms\cr  
+30Hz + 60Hz/ms\times (t-t_0 -1ms) &t_0+1ms<t\le t_0+2.5ms\cr 
+30Hz/ms^2 \times [5ms-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
+30Hz + 60Hz/ms\times (6ms-t-t_0) &t_0+4.5ms<t\le t_0+6ms\cr  
+30Hz/ms^2 \times [7ms-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
+\end{cases}
+\end{eqnarray}
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{4case.png}
+   \caption{Examples of RF frequency modulation.}
+   \label{4case}
+\end{figure}
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{1st_derivation.png}
+   \caption{Time derivation of four modulations}
+   \label{1st_derivation}
+\end{figure}
+\subsubsection{Longitudinal dynamic analysis for the simulation}
+In this section, the average radial excursion, the relative momentum shift, synchronous phase, bucket size and adiabaticity of four rf frequency modulations are analyzed. 
+\begin{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Average radial excursion
+
+The average radial excursion is calculated for the four cases of rf frequency modulations by eq.~(\ref{eq:phaseR}). Fig.~\ref{radial} shows the calculation result. The maximum average radial excursion of case (1) is $2.93\times10^{-6}$ at the flat of the frequency modulation and that of case (2), case (3) and case (4) are $ 4.17\times10^{-6}$, $4.18\times 10^{-6}$ and $4.38\times 10^{-6}$ at the midpoint 3.5ms of the frequency modulations. The maximum tolerent radial excursion of SIS18 is $\pm 2.4\times10^{-4}$. From the view point of the average radial excursion, four cases of rf frequency modulations are available.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{Radial.png}
+   \caption{Average radial excursions for four cases.}
+   \label{radial}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Relative momentum shift
+
+The relative momentum shift is calculated for the four cases of rf frequency modulations by eq.~(\ref{eq:phaseP}). Fig.~\ref{moment} shows the calculation result. The maximum relative momentum modulation of case (1) is $9.83\times 10^{-5}$ at the flat of the frequency modulation and that of case (2), case (3) and case (4) are $1.38 \times10^{-4}$, $1.40\times 10^{-4}$ and $1.48\times 10^{-4}$ at the midpoint 3.5ms of the frequency modulations. The maximum tolerent relative momentum shift of SIS18 is $\pm 0.008$. From the view point of the relative momentum shift, four cases of rf frequency modulations are available.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{moment.png}
+   \caption{Relative momentum shifts for four cases.}
+   \label{moment}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item Synchronous phase
+
+The rf frequency modulations make the synchronous phase deviate from the norminal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase, $\Delta \phi_s$ (t). It is calculated by introducing values into eq.~(\ref{?}). For case (1), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continous. The phase jumps are dangerous for the beam to follow. From the view point of the synchronous phase, four cases of rf frequency modulations are available.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{synch_phase.png}
+   \caption{Changes in synchronous phase for four cases}
+   \label{synch_phase}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\item Bucket size
+
+The bucket area factor $\alpha_b (\phi_s) $ varies during rf frequency modulations. Before the modulations, the synchronous phase $\phi_s=0^\circ$ and  $\alpha_b(0^\circ) = 1$. By introducing the changes in synchronous phase into eq.~(\ref{factor}), we get the ratio of bucket areas of a running bucket to the stationary bucket for four cases, see Fig.~(\ref{bucket_size}).
+\begin{equation}
+\alpha_b (\phi_s) \approx (1-sin \phi_s)(1-sin \phi_s)\label{factor}
+\end{equation}
+
+ The running bucket size is lager than 88$\%$ of the stationary bucket for case (1). The running bucket size is lager than 90$\%$ of the stationary bucket for case (2). The running bucket size is lager than 86$\%$ of the stationary bucket for case (3) and (4). From the viewpoint of the bucket size, four rf frequency modulations are available.  
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{bucket_size.png}
+   \caption{Ratio of bucket areas of a running bucket to the stationary bucket for four cases}
+   \label{bucket_size}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\item Adiabaticity
+
+By substituting the values of $d\Delta \phi_s(t)/dt$ obtained from Fig.~\ref{synch_phase} and the other appropriate values into eq.~\ref{?}, we can calculate the adiabaticity parameter, $\varepsilon$, for the case (3) and (4), see Fig.~\ref{adiabaticity2}. For the case (1) and (2), however, we cannot calculate $d\Delta \phi_s(t)/dt$ from $d\Delta \phi_s(t)$  shown in Fig.~\ref{synch_phase}, because $d\Delta \phi_s(t)$ changes discontinuously. 
+
+For case (4), the maximum of $\varepsilon$, 0.000059, occurs at 1ms, 2.5ms, 4.5ms and 6ms. Form Fig.~\ref{synch_phase}, we could see the change of the synchronous phase $d\Delta \phi_s(t)/dt$  is big but smoothly at these time points. For case (3), the maximum of $\varepsilon$ is 0.000030. So the frequency modulation is adiabatical for case (3) and (4).
+
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{adiabaticity2.png}
+   \caption{Adiabaticity parameter estimation for case (3) and (4)}
+   \label{adiabaticity2}
+\end{figure}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Transverse dynamics analysis for the simulations}
+From Fig.~\ref{moment}, we could get the maximum momentum shift for four cases, $9.83 \times 10^{-5}$, $1.38 \times 10^{-4}$, $1.40 \times 10^{-4}$ and $1.48 \times 10^{-4}$. For SIS18, the chromaticity $Q_x$ and $Q_y$ is 4.17 and 3.4. Substituting chromaticity and maximum momentum shift into eq. ~\ref{eq:chromaticity}. We could get the chromatic tune shift during rf modulations for four cases. 
+
+Case (1) 
+\begin{equation}
+\Delta Q_x = 4.17 \times 9.83 \times 10^{-5}=4.10 \times 10^{-4}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 9.83 \times 10^{-5}=3.34 \times 10^{-4} 
+\end{equation}
+
+Case (2)
+\begin{equation}
+\Delta Q_x = 4.17 \times 1.38 \times 10^{-4}=5.75 \times 10^{-4}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 1.38 \times 10^{-4}=4.69 \times 10^{-4} 
+\end{equation}
+
+Case (3)
+\begin{equation}
+\Delta Q_x = 4.17 \times 1.40 \times 10^{-4}=5.84 \times 10^{-4}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 1.40 \times 10^{-4}=4.76 \times 10^{-4} 
+\end{equation}
+
+Case (4) 
+\begin{equation}
+\Delta Q_x = 4.17 \times 1.48 \times 10^{-4}=6.17 \times 10^{-4}
+\end{equation}
+\begin{equation}
+\Delta Q_y = 3.4 \times 1.48 \times 10^{-4}=5.03 \times 10^{-4} 
+\end{equation}
+
+The chromatic tune shift for four cases are significantly small, which could be negligible.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Frequency beating method}
+In the case of the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency detune, namely $\Delta p = 0$, So the frequency beating method has no influence on the transverse dynamics.
+
+\subsubsection{Longitudinal dynamics analysis of the frequenncy beating for SIS18}
+For the frequency beating method, the rf frequency de-tune is done accompanying with
+the RF ramp. Accepting to decentre the orbit by 8mm for the SIS18 
+\begin{equation}
+\frac{\Delta{R}}{R} = \pm 2.4 \times 10^{-4}
+\end{equation}
+From eq. ~\ref{eq:eq4} and and eq. ~\ref{eq:eq5}, the RF frequency and the magnetic field change at the $U^{28+}$ extraction energy 200MeV/u ($\gamma_t$ = 5.8) are
+\begin{equation}
+\frac{\Delta{f}}{f} = \pm 2.4 \times 10^{-4}
+\end{equation}
+
+\begin{equation}
+\frac{\Delta{B}}{B}=\frac{\Delta{f}}{f}{\gamma_t}^2 = \pm 8.1 \times 10^{-3}
+\end{equation}
+
+where the maximum RF frequency de-tune is approximate to 370 Hz at 1.57 MHz for the $U^{ 28+}$. Fig.~\ref{sis18_ramp} shows the rf frequency derivation during the rf ramp. In the simulation, I assume that the rf frequency is detuned at 0.2756s with $6.08 \times 10^{6}$Hz/s, see blue rectangle in Fig.~\ref{sis18_ramp}, and the rf frequency detune is 200 Hz for the sake of simplicity. SIS18 needs approximate 33us to reach 200Hz with  $6.08 \times 10^{6}$Hz/s.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{sis18_ramp.jpg}
+   \caption{RF frequency derivation of the $U^{28+}$ rf ramp}
+   \label{sis18_ramp}
+\end{figure}
+
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=160mm]{detune_ramp.jpg}
+%   \caption{$U^{28+}$ rf detune during the rf ramp}
+%   \label{detune_ramp}
+%\end{figure}
+
+From eq.~\ref{} and eq.~\ref{}, we could get the corresponding radial excursion and the magnetic field change during the detune process, see Fig.~\ref{detune_R} and Fig.~\ref{detune_B}. The maximum radial excursion is $-1.27 \times 10^{-4}$ at 33us of the rf detune process. The maximum magnetic field change is $4.3 \times 10^{-3}$ at 33us of the rf detune process.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{detune_R.jpg}
+   \caption{Radial excursion during the rf detune}
+   \label{detune_R}
+\end{figure}
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{detune_B.jpg}
+   \caption{Magnetic field change during the rf detune}
+   \label{detune_B}
+\end{figure}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{GMT systematic investigation for the B2B transfer system}
+GMT system plays a very important role for the B2B transfer system. It is responsible for the data collection, merging and redistribution. The main task of the data merging is the calculation of the synchronization window. Because of the propagation of uncertainty of the measurement and the rf frequency adjustment, the uncertainty of the synchronization window must be taken into consideration. The data collection and redistribution make use of the WR network, so the measurement of the WR network delay   is necessary. 
+
+\subsection{Calculation of the synchronization window}
+Principally speaking, the synchronization window is a time frame within which the bunch could be injected into the correct bucket with the bunch to bucket center mismatch better than 1$^\circ$. In fact, two SIS100 revolution periods is enough for the correct bucket selection, achieving much preciser injection. The beginning of the synchronization window denotes by $WIN_{start}$. The synchronization window is within the range [$WIN_{start}$ , $WIN_{start}$  + 2 $\times T_{rev}^{SIS100}$]. $T_{rev}^{SIS100}$is the revolution period of SIS100, which equals to 6.359 us for U$^{28+}$ at 200Mev/u. The probable range of alignment is within this window, within which two rf reference signals have change to align with each other. The middle of the probable range of alignment is called the best estimation of alignment. The probable rang of alignment is casued by the uncertainties in the phase advance prediction and rf frequency modulation. The phase advance prediction module extropolates the rf phase $\psi_{h=1}^{SIS100}$ for SIS100 rf h=1 signal and $\psi_{h=1/5}^{SIS18}$ for SIS18 rf h=1/5 signal at $t_{\psi}$. The more time is spent for the phase advance prediction, the better the predicted phase will be. More details about the phase advance measurement and phase advance prediction modules, please see Tibo's thesis. Fig.~\ref{Calculation_symble} illustrates some basic definition of symbols for the calculation. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{Calculation_symble.jpg}
+   \caption{The illustration of symbols for SIS100}
+   \label{Calculation_symble}
+\end{figure}
+$\phi_{h=2}^{SIS18}$and $\phi_{h=10}^{SIS100}$ are individual rf phase of SIS18 and SIS100 rf refefrence signals at $t_{\psi}$. The relationship between $\phi_{h=2}^{SIS18}$, $\phi_{h=10}^{SIS100}$ and $\psi_{h=1/5}^{SIS18}$, $\psi_{h=1}^{SIS100}$ are given by eq.~\ref{SIS18_phase} and eq.~\ref{SIS100_phase}. 
+
+\begin{equation}
+\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}}{360^\circ}\times {T_{h=1/5}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\times {360^\circ} \label{SIS18_phase}
+\end{equation}
+\begin{equation}
+\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}}{360^\circ}\times {T_{h=1}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\times {360^\circ} \label{SIS100_phase}
+\end{equation}
+substituting $T_{h=2}^{SIS18}\times 10=T_{h=1/5}^{SIS18}$, $T_{h=10}^{SIS100}\times 10=T_{h=1}^{SIS100}$ into eq.\ref{SIS18_phase} and eq.\ref{SIS100_phase} yields
+ \begin{equation}
+\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}\times 10}{360^\circ}\times {T_{h=2}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\times {360^\circ} \label{SIS18_phase1}
+\end{equation}
+\begin{equation}
+\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}\times 10}{360^\circ}\times {T_{h=10}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\times {360^\circ} \label{SIS100_phase1}
+\end{equation}
+
+\begin{itemize}
+\item Uncertainty of the predicted phase
+
+The jitter of the predicted phase is 100ps, so we could calculate the uncertainty of the predicted phase, $\psi_{h=1/5}^{SIS18}$ and $\psi_{h=1}^{SIS100}$, from the time to phase domain. 
+\begin{equation} 
+\delta t_\psi= 100ps
+\label{jitter_measure_t}
+\end{equation}
+\begin{equation} 
+\delta \psi_{h=1/5}^{SIS18}=\delta\psi_{h=1}^{SIS100}=
+\frac {100ps}{1/157kHz} \times {360^{\circ}}\approx 0.006^\circ
+\label{jitter_measure_p}
+\end{equation}
+ 
+Based on the eq.~\ref{jitter_measure_p}, the uncertainty of the phase at the rf reference frequencies is calculated. 
+
+\begin{equation}
+\begin{aligned}
+\delta \phi_{h=2}^{SIS18} = \sqrt {(\frac{\partial \phi_{h=2}^{SIS18}}{\partial \psi_{h=2}^{SIS18}} \delta \psi_{h=2}^{SIS18})^2}=\sqrt {(10 \times \delta \psi_{h=2}^{SIS18})^2}=0.06^\circ
+\label{phi_jitter1}
+\end{aligned}
+\end{equation}
+\begin{equation}
+\delta \phi_{h=10}^{SIS100} = \sqrt {(\frac{\partial \phi_{h=10}^{SIS100}}{\partial \psi_{h=1}^{SIS100}} \delta \psi_{h=10}^{SIS100})^2}=\sqrt {(10 \times \delta \psi_{h=10}^{SIS100})^2}=0.06^\circ
+\label{phi_jitter2}
+\end{equation}
+
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{phase_shift_synch_window_cal.jpg}
+   \caption{Scenarios for the phase shift method}
+   \label{phase_shift}
+\end{figure}
+\item Uncertainty of the rf frequency modulation
+
+For the rf frequency modulation, the jitter is $0.2^\circ$ at 5.4MHz. We calculate the jitter in time domain, see eq.~\ref{freq_jitter_t}.
+\begin{equation}
+\delta \Delta f_{(t)} = \frac{0.2^\circ}{360^\circ} \times {\frac{1}{5.4MHz}}=100ps
+\label{freq_jitter_t}
+\end{equation}
+%
+%The precision of the rf frequency is 0.05Hz. 
+%\begin{equation}
+%\delta \Delta f = 0.05Hz
+%\label{freq_jitter_f}
+%\end{equation}
+
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Synchronization time for the phase shift method and its uncertainty}
+Different relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ has different required phase adjustment for SIS18. Fig.~\ref{phase_shift} illustrates all scenarios of their relation and the requried phase adjustment for each scenario. We would like to introduce a phase shift of up to $\pm 180^\circ$. The blue and red line represents the phase of SIS100 and SIS18 rf reference signal. The clockwise arrow from the SIS18 to SIS100 rf phase reprents the negative phase adjustment for SIS18 and the anticlockwise represents the positive phase adjustment. The required phase adjustment of SIS18 is denoted by $\Delta \phi_{shift}$.
+\begin{itemize}
+    \item $\phi_{h=10}^{SIS100}\in [0,90^\circ)$, see Fig.~\ref{frequency_beating} (a).
+
+	\begin{itemize}
+		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
+    \begin{equation}
+			\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
+    \end{equation}
+    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
+    \begin{equation}
+			\Delta \phi_{shift}= 360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
+    \end{equation}
+	\end{itemize}
+    \item  $\phi_{h=10}^{SIS100}\in [90,180^\circ)$, see Fig.~\ref{frequency_beating} (b). 
+
+	\begin{itemize}
+		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (b). The phase adjustment is
+	    \begin{equation}		
+\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
+    \end{equation}
+    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (b).  The phase adjustment is
+    \begin{equation}			
+\Delta \phi_{shift}=360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
+    \end{equation}
+	\end{itemize}
+    \item $\phi_{h=10}^{SIS100}\in [180,270^\circ)$, see Fig.~\ref{frequency_beating} (c). The phase adjustment is
+
+	\begin{itemize}
+		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
+    \begin{equation}			
+\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
+    \end{equation}
+    		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
+    \begin{equation}			
+\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}
+    \end{equation}
+	\end{itemize}
+    \item $\phi_{h=10}^{SIS100}\in [270,360^\circ)$, see Fig.~\ref{frequency_beating} (d).
+
+	\begin{itemize}
+		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (d). The phase adjustment is 
+	    \begin{equation}	
+\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}	
+    \end{equation}
+    		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $ , which denotes by the white semicircle in Fig.~\ref{frequency_beating} (d). 
+    \begin{equation}			
+\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
+    \end{equation}
+	\end{itemize}
+\end{itemize}
+
+The phase adjustment is achieved by the phase shfit method within the upper bound time, $T_{phase\underline shift}^{upper\underline bound}$. For the $U^{28}$ B2B transfer from SIS18 to SIS100, we assume that $T_{phase\underline shift}^{upper\underline bound}$ equals to 7ms, which means that the phase shift $\Delta \phi_{shift}$ is achieved within 7ms.  The beginning of the synchronization window is expressed by 
+
+\begin{equation}
+WIN_{start} = t_{\psi} + T_{phase\underline shift}^{upper\underline bound} \label{Phase_win}
+\end{equation}
+The uncertainty in the phase prediction $\delta t_{\psi}$ is 100ps, see eq.~\ref{jitter_measure_t}. The phase shift uncertainy $\delta \Delta \phi_{phase}$ is casued by the rf frequency modulation, whose jitter is 100ps, see eq.~\ref{freq_jitter_t}. The phase shift uncertainy equals to the uncertainty in the phase shift upper bound time, $\delta T_{phase\underline shift}^{upper\underline bound}$ = 100ps. Both cause an uncertainty in the $WIN_{start}$.
+\begin{equation}
+\begin{aligned}
+\delta WIN_{start} =\sqrt {(\frac {\partial WIN_{start}}{\partial t_{\psi}}\delta t_{\psi})^2 + (\frac {\partial WIN_{start}}{\partial T_{phase\underline shift}^{upper\underline bound}}\delta T_{phase\underline shift}^{upper\underline bound})^2} \\
+ =\sqrt {(\delta t_{\psi})^2+(T_{phase\underline shift}^{upper\underline bound})^2} =\sqrt { 100ps^2+100ps^2}\approx 140ps \label{Phase_uncertainty}
+\end{aligned}
+\end{equation}
+
+The synchronization window uncertainty of the phase shift method is about 140ps, which could be negligible. So the synchronization window is [$WIN_{start}$, $WIN_{start}$ + 2 * 6.359us] for $U^{28+}$ B2B transfer from SIS18 to SIS100.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{ Synchronization time for the frequency beating method and its uncertainty}
+Fig.~\ref{frequency_beating} illustrates two scenarios for the frequency beating method. The frequency beating method can only achieve positive phase adjustment, which is denoted by $\Delta \phi_{adjustment}$. E.q.~\ref{sync_time} shows the synchronization time $\Delta  t$ required for the phase adjustment of $\Delta \phi_{adjustment}$.
+\begin{equation}
+	 \Delta t = \frac {\Delta \phi_{adjustment}}{{360^\circ} \times {\Delta f}} \label {sync_time}
+   \end{equation}
+where $\Delta f$ is the beating frequency.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=90mm]{frequency_beating_synch_window_cal.jpg}
+   \caption{Two scenarios for the frequency beating method}
+   \label{frequency_beating}
+\end{figure}
+
+According to the relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$, there are two scenarios, see Fig.~\ref{frequency_beating}.
+\begin{itemize}
+    \item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$
+	\begin{equation}
+	 \Delta \phi_{adjustment} = \phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}\label {great}
+   \end{equation}
+   Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{great}, we have
+	\begin{equation}
+	 \Delta t = \frac {\phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}}{{360^\circ} \times {\Delta f}} \label {beating_time}
+   \end{equation}
+	\begin{equation}
+	 WIN_{start} = t_{\psi} + \Delta t =t_{\psi} +\frac {\phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}}{{360^\circ} \times {\Delta f}} \label {beating_win_1}
+   \end{equation}
+     \item  $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$
+	\begin{equation}
+	 \Delta \phi_{adjustment} = 360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100}) \label {less}
+   \end{equation}
+  Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{less}, we have
+	\begin{equation}
+	 \Delta t = \frac {360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \times {\Delta f}} \label {beating_time}
+   \end{equation}
+	\begin{equation}
+	 WIN_{start} = t_{\psi} + \Delta t =t_{\psi} +\frac {360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \times {\Delta f}} \label {beating_win_2}
+   \end{equation}
+\end{itemize}
+Based on these two scenarios, we could deduce the formula for the beginning time of the synchronization window. 
+	\begin{equation}
+	 WIN_{start} = t_{\psi}+ \Delta t =t_{\psi} +\frac {{\Delta n} \times {360^\circ} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \times {\Delta f}} \label {beating_win_2}
+   \end{equation}
+where $\bigtriangleup{n}$ equals 0 when  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ and equals 1 when  $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$.
+
+The uncertainty of the synchronization window is the result of the propagation of
+uncertainties of the phase prediction and rf frequency detune, see eq.~\ref{beating_uncertainty}. Because the rf frequency detune has the long term stability, $\int\delta \Delta f$=0, the uncertainty caused by rf frequency detune is 0. The uncertainty of the phase prediction $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ is $0.06^\circ$, see eq.~\ref{phi_jitter1} and eq.~\ref{phi_jitter2}. $\Delta$f is 200Hz. The maximum ${\Delta n} \times {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})$ is $2\pi$.
+\begin{equation}
+\begin{aligned}
+\delta WIN_{start} =\sqrt {(\frac {\partial WIN_{start}}{\partial \phi_{h=2}^{SIS18}}\delta \phi_{h=2}^{SIS18})^2 + (\frac {\partial WIN_{start}}{\partial \phi_{h=10}^{SIS100}}\delta \phi_{h=10}^{SIS100})^2+(\frac {\partial WIN_{start}}{\partial \Delta f}\delta \Delta f)^2} \\
+ =\sqrt {(\frac{-1}{{2\pi} \times {\Delta f}}\delta \phi_{h=2}^{SIS18})^2+(\frac{1}{{2\pi} \times {\Delta f}}\delta \phi_{h=10}^{SIS100})^2+(-\frac{{\Delta n} \times {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{2\pi} \times {\Delta f}^2}\delta \Delta f)^2} \\
+\le \sqrt {(\frac{-1}{{2\pi} \times {200}}0.06^\circ)^2+(\frac{1}{{2\pi} \times {200}}0.06^\circ)^2+0}\\
+\approx 1.178us \label{beating_uncertainty}
+\end{aligned}
+\end{equation}
+From eq.~\ref{beating_uncertainty} we could get the uncertainty of the synchronizatin window is 1.178us, so the synchronization window is [$WIN_{start} – 1.178us, WIN_{start} + 1.178us + 2 * 6.359us$].
+\subsubsection{Calculation the synchronization window and its accuracy}
+In the last section, we get the alignment margin, within which the two rf frequency signals will be perfectly aligned with each other. The synchronization window is used to select the revolution frequency marker for the extraction and injection kicker firing, which is closest to the alignment margin. The reference beginning of the synchronization window is half revolution period before the selected revolution frequency marker, see Fig.~\ref{accuracy_syn_win}. The blue and organce rectangles represent two scenarios of the alignment margin. The 2nd revolution frequency marker is the closest one to the alignment margin. The reference beginning of the synchronziation window aligns with the negative zero crossing point of the revolution signal.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{accuracy_syn_win.jpg}
+   \caption{The synchronization window and its accuracy}
+   \label{accuracy_syn_win}
+\end{figure}
+
+For SIS100 the rf phase of the revolution frequency is $\psi_{h=1}^{SIS100}$ at $t_{\psi}$. We could calculate the rf phase at the start of the alignment margin, $\Delta t_{s\_ align \_ margin}$ + $t_{\psi}$.
+\begin{equation}
+\begin{aligned}
+\psi_{s\_ align \_ margin}=\frac{(\Delta t_{s\_ align \_ margin}- \frac{360^\circ-\psi_{h=1}^{SIS100}}{360^\circ} \times {T_{h=1}^{SIS100}}) \mod T_{h=1}^{SIS100}}{T_{h=1}^{SIS100}}\times {360^\circ} 
+\label{phase_after_syn}
+\end{aligned}
+\end{equation}
+
+For the calculation of the reference beginning of the synchronization window, there are two scenarios. $\Delta t_{ref \_ correct}$ is the time correction for the start of the alignment margin to the reference beginning of the synchronzation window.
+\begin{itemize}
+\item $\psi_{s\_ align \_ margin}\in [0^\circ,180^\circ)$, the orange rectangle in Fig.~\ref{accuracy_syn_win}
+\begin{equation}
+\begin{aligned}
+\Delta t_{ref \_ correct}=\frac{\psi_{s\_ align \_ margin}}{360^\circ}\times T_{h=1}^{SIS100}+\frac{T_{h=1}^{SIS100}}{2}
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+WIN_{start}=t_{\psi}+\Delta t_{s\_ align \_ margin}-\Delta t_{ref \_ correct}
+\end{aligned}
+\end{equation}
+
+
+\item $\psi_{s\_ align \_ margin}\in [180^\circ,360^\circ)$, the blue rectangle in Fig.~\ref{accuracy_syn_win}
+
+\begin{equation}
+\begin{aligned}
+\Delta t_{ref \_ correct}=\frac{\psi_{s\_ align \_ margin}-180^\circ}{360^\circ}\times T_{h=1}^{SIS100}
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+WIN_{start}=t_{\psi}+\Delta t_{s\_ align \_ margin}-\Delta t_{ref \_ correct}
+\end{aligned}
+\end{equation}
+
+\end{itemize}
+
+The actual beginning of the synchronizatin window is impossible to be exactly at the reference beginning of the synchronization window because of the precision and trueness. The precision is defined as the closeness of agreement between the actual beginning of the synchronization window of different SCUs and the trueness as the closeness of agreement between the average actual beginning of different SCUs and the reference value. The precision comes from the ramdom error, e.g. IO port TTL signal .... The trueness is the systematic error, e.g. FPGA process time. The accuracy is defined as the closeness of agreement between the observed beginning and the reference beginning of the synchronization window, which is the sum of the precision and trueness. Because the B2B transfer system is used for all FAIR project, we must find the most stringent accuracy requirement. The shortest revolution period of the target machine is 433ns, which comes from RIB transfer from CR to HESR. We keep 10ns as safty margin, which means that the actual beginning is not allowed 10ns before and after the revolution frequency marker. So the accuracy of the beginning of the synchronization window is 
+\begin{equation}
+\begin{aligned}
+Accuracy=\frac{433-10 \times 2}{2}\approx \pm 200ns
+\end{aligned}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{WR network latency measurement}
+The WR network latency measurement is achieved by the Xena traffic generator, which offers a new class of professional Layer 2-3 Gigabit Ethernet test platform. It performs high-precision performance measurement of throughput, latency, jitter, loss, sequence and mis-ordering errors.
+
+Measurement setup is shown in Fig.~\ref{network_setup}. One Xena traffic generator is used in order to measure the frame latency, jitter and packet loss for WR network. For the measurement, Xena traffic generator sends the traffic streams with a unique stream ID for identifying latency, jitter and packet loss. 
+
+A Virtual Local Area Network (VLAN) is a group of FECs in the WR network that is logically segmented by function or application, without regard to the physical
+locations of the FECs. For the WR network for FAIR, four VLANs are applied. 
+
+\begin{itemize}
+    \item DM VLAN 
+		\begin{itemize}
+			\item Broadcast
+
+All FECs in the WR network are assigned to the DM broadcast VLAN, within which the DM forwards broadcast timing telegrams downwards to all FECs. The available average bandwidth for this VLAN corresponds to a rate of 100 Mbps. But the traffic is not evenly distributed across all destinations. DM bursts 60 messages at the ahead 500us interval of a message schedule. Burst is a group of consecutive packets with shorter interpacket gaps than packets arriving before or after the burst of packets. The burst speed is 12 packets per 100us.
+ 			\item Unicast
+
+The timing telegrams sent from the source B2B SCU upwards to the DM are unicast packets within DM unicast VLAN. 2 packets are send within 10 millisecond synchronization period. The maximum repetition frequency is of the $U^{28+}$ supercycle, 2.82Hz. So the average bandwidth is 6 packets per second. Besides, DM sends 10Mbps unicast traffic to FECs at the burst speed of 3 packets per 300us.
+		\end{itemize}
+	\item B2B VLAN
+
+All SCUs for the B2B transfer are assigned to the B2B VLAN. The specified VLAN for the B2B transfer could reduce the traffic of the WR network. All B2B related telegrams are broadcasted in this VLAN in the form of the timing telegram. 10 packets are send within 10 millisecond synchronization period. The average bandwidth is 28 packets per second for the $U^{28+}$ supercycle.
+	\item Low priority VLAN
+
+This VLAN is used for other applications. The available average bandwidth for this VLAN corresponds to a rate of 10 Mbps. It broadcasts packets with random length. 
+\end{itemize}
+
+    In Fig.~\ref{network_setup}, the port connected with the red optical fiber sends packets in the DM VLAN, the port connected with the yellow optical fiber sends packets in the B2B VLAN and the port connected with the blue optical fiber sends packets in the low priority VLAN. Four WR switches are used in the test setup. Xena traffic generator sends traffic directly to the first WR and forth switches. All WR switches send packets back to Xena traffic generator via the black connection, which achives the latency, jitter and packet loss measurement for each layer switch. The length of all optical fiber in the test is 5 meter, whose latency could be ignored. Because the latency of the optical fiber with 1310 nm wavelength is about 204 m/$\mu$s, the latency for 5 meters is about 25ns.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{network_setup.jpg}
+   \caption{Schematic of the network setup}
+   \label{network_setup}
+\end{figure}
+
+Table~\ref{wr_network_delay} shows the packet latency and jitter measurement result of the different number of WR switches via the Xena traffic generator. The test lasts for 17 hours and there exists no packet loss. The latency for the B2B related packet in the B2B VLAN is about 60 $\mu$s, the sum of 29.816$\mu$s and 27.109$\mu$s, for each WR switch. The latency for the B2B related packet in the DM unicast VLAN is about 30 $\mu$s, the sum of 16.270$\mu$s and 13.590$\mu$s, for each WR switch. For the safty consideration, we assume that the latency of the B2B related packet is 80 $\mu$s for each WR switch. 
+\begin{table}[]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{The latency of the WR switch}
+\label{wr_network_delay}
+\begin{center}
+    \begin{tabular}{ | c | c | c | c | c | }
+    \hline
+     \tabincell{c}{Number of \\WR switches} & \tabincell{c}{DM broadcast VLAN\\Max delay $\pm$ jitter} & \tabincell{c}{DM unicast VLAN\\Max delay $\pm$ jitter} &\tabincell{c}{ B2B VLAN\\Max delay $\pm$ jitter} &\tabincell{c}{ Low priority VLAN\\Max delay $\pm$ jitter} \\ \hline
+   1 & 16.270us$\pm$13.590us & 16.126us$\pm$13.398us & 29.816us$\pm$27.109us & 33.838us$\pm$31.086us \\ \hline
+    2 & 17.825us$\pm$13.807us & 17.825us$\pm$13.590us & 32.074us$\pm$27.157us & 38.320us$\pm$33.066us \\ \hline
+   3 & 20.688us$\pm$13.951us & 20.616us$\pm$13.783us & 34.792us$\pm$27.133us & 40.845us$\pm$32.954us \\ \hline
+    4 & 23.502us$\pm$14.192us & 23.358us$\pm$13.879us & 38.167us$\pm$26.722us & 44.526us$\pm$32.737us \\ 
+    \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+For the B2B transfer system, the maximum tolerant latency for the B2B related packets in the B2B VLAN and DM unicast VLAN is 500$\mu$s. The delay is decided by the number of WR switches and the length of the optical fiber. For an optical fiber with 2km length, the delay is about 2km/(204m/$\mu$s)$\approx$10 $\mu$s. The number of WR switches plays a more important role in the delay. Maximum 500$\mu$s/80$\mu$s $\approx$ 5 WR switches are available bewteen the B2B source SCU and B2B target SCU, between B2B source SCU and source trigger SCU and between B2B source SCU and target trigger SCU and bewteen the B2B source SCU and DM. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kicker systematic investigation for the B2B transfer system}
+The SIS18 extraction kicker consists of 9 kicker units. In the existing topology, 5 kicker units are installed in the 1st crate and the other 4 units are in the 2nd crate. The width of each kicker unit is 0.25m and the distance between two kicker units is 0.09m. The distance between two crates is 19.167m. SIS100 injection kicker consists of 6 kicker units, which are equally located. The width of each kicker unit is 0.22m and the distance between two units is 0.23m. For the B2B transfer, the rise time of SIS18 extraction kicker and SIS100 injection kicker unit are 90ns and 1/20 of the revolution period. The rise time of these kickers must fit within the bunch gap, 25$\%$ of rf reference period. The bunch gap is denoted by G. All the analysis in this section dose not consider the jitter of the kicker trigger signal. Here we are discussing about the following possibilities. 
+\begin{itemize}
+    \item For SIS18, whether the kicker units in the 2nd crate could be fired a fixed delay after the firing of the kicker units in the 1st crate for ion beams over the whole range of stable isotopes. 
+    \item For SIS100, whether the kicker units could be fired instantaneously. 
+\end{itemize} 
+
+\subsection{SIS18 extraction kicker units}
+Here we take three ion beams, $H^+, U^{28} and U^{73+}$, to check the possibiliy, because the boundary ion species have the most stringent requirements. Fig.~\ref{kicker} shows three scenarios of the firing delay between two crates. Beam is firstly kicked by kicker units in the 1st crate and than kicked by the units in the 2nd crate to the transfer line. The yellow and red ellipse represents the position of the bunches, when the kicker units in the 1st and 2nd crate are fired. The number in the ellipse is used to tell different bunches. The head of the bunch is at the right side. The bunch 2 is firstly kicked. Here we assume that the kicker units in the same crate are triggered instantaneous. d denotes the distance between two crates. L denotes the distance from the leftmost to the rightmost kicker unit. D denotes the sum distance of d and the 2nd crate. d equals to 19.167 meter. L equals to 22.047m = d + 9$\times 0.25m + 7\times$ 0.09m. D equals to 20.437m = d + 4$\times 0.25m + 3\times$ 0.09m.
+
+Fig.~\ref{kicker} (a) is the easiest scenario. The kicker units in the 1st crate are fired when the tail of the bunch 1 passes by the 1st crate completely. The kicker units in the 2nd crate are fired when the tail of the bunch 1 passes by the 2nd crate completely. The delay for the firing two crates in this scenario is D/$\beta$c. 
+
+Fig.~\ref{kicker} (b) shows the scenario of the maximum delay between the firing of two crates. The kicker units in the 1st crate are fired when the tail of the bunch 1 passes by the 1st crate completely. The kicker units in the 2nd crate are fired 90ns before the head of the bunch 2 passes by it. The delay equals to G+d/$\beta$c-90ns.
+
+Fig.~\ref{kicker} (c) shows the scenario of the minimum delay. The kicker units in the 1st crate are fired 90ns before the head of the bunch 2 passes by it. The kicker units in the 2nd crate are fired when the bunch 1 pases by the 2nd crate. The delay is L/$\beta$c-G+90ns.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{kicker.jpg}
+   \caption{Three scenarios for the delay of SIS18 extraction kicker}
+   \label{kicker}
+\end{figure}
+
+Table~\ref{kicker_delay} shows delay for three scenarios and related peremeters. The fixed delay is determined primarily by the boundary delay range from $H^+, U^{28} and U^{73+}$ beams, the delay range for other heavy ion species beams must be contained in these boundary range. According to the result, a fixed delay is available for firing kicker units in two crate for different beams. e.g. 80ns.   
+\begin{table}[]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{The delay for firing two crates of SIS18 extraction kicker}
+\label{kicker_delay}
+\begin{center}
+    \begin{tabular}{ | c | c | c | c | c | c | c | }
+    \hline
+    Beam & $\beta$ &  \tabincell{c}{time\\ L/$\beta$c } &\tabincell{c}{bunch gap \\ G } & \tabincell{c}{minimum delay \\ L/$\beta$c-G+90ns} & \tabincell{c}{delay \\ D/$\beta$c} & \tabincell{c}{maximum delay \\ G+d/$\beta$c-90ns}\\ \hline
+    $H^+$ & 0.982 &75ns &  184ns & 0ns & 69ns & 163ns  \\ \hline
+    $U^{28}$ &0.568 & 130ns &  159ns & 61ns &120ns & 189ns \\ \hline
+    $U^{73+}$ & 0.872 & 84ns & 104ns & 70ns & 78ns & 92ns \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+\subsection{SIS100 injection kicker units}
+Two bunches from SIS18 will be continuously injected into one RF bucket after the other in SIS100. See Fig.~\ref{kicker_SIS100}. The yellow ellipse represents the circulating bunch in SIS100 and the red one represents the bunch to be injected. The head of the bunch is at the left side. The preparasion of the SIS100 injection kicker must be done during the bunch gap and it must be established for at least one SIS18 revolution period. For the instantaneous firing, all kicker units are fired only if the tail of the circulating bunch passes the leftmost kicker unit. The kicker pass time is the time needed for the tail of a bunch to pass from the rightmost unit to the leftmost kicker unit. The rise time of the kicker unit is 1/20 of the revolution period. Therefor the preparation time is the sum of the kicker pass time and rise time. The distance from the rightmost to the leftmost kicker unit is 3.79m, 6 $\times 0.22m + 5 \times $0.23m. If the preparation time is shorter than bunch gap, all kicker units could be fired instantaneous. Table~\ref{kicker_SIS100} shows the preparation time for $H^+, U^{28} and U^{73+}$ beams and their bunch gap. The preparation time is much shorter than the bunch gap. So the kicker units could be fired instantaneous. 
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{kicker_SIS100.jpg}
+   \caption{SIS100 injection kicker}
+   \label{kicker_SIS100}
+\end{figure}
+
+\begin{table}[]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{The delay for firing SIS00 injection kicker}
+\label{kicker_SIS100}
+\begin{center}
+    \begin{tabular}{ | c | c | c | c | c | c  |}
+    \hline
+    Beam & $\beta$ &  \tabincell{c}{kicker pass\\ time L/$\beta$c} & \tabincell{c}{Rise time \\ 1/20$\times T_{rev}^{SIS100}$}& \tabincell{c}{Preparasion time \\ L/$\beta$c+1/20$\times T_{rev}^{SIS100}$} & \tabincell{c}{bunch gap \\ 2.25$\times T_{rev}^{SIS100}$}\\ \hline
+    $H^+$     & 0.982 & 3ns  &  184ns & 187ns & 828ns   \\ \hline
+    $U^{28}$  & 0.568 & 22ns &  318ns   & 333ns  & 1431ns  \\ \hline
+    $U^{73+}$ & 0.872 & 15ns &   207ns & 222ns &  932ns \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Test setup for the data collection, merging and redistribution of the B2B transfer system}
+
+In this section, the test setup for the B2B transfer system is described, focusing only on the timing aspects.  
+
+\subsection{Test requirement}
+The test setup achieves the following functional requirement.
+\begin{itemize}
+\item[-] After receiving the B2B beginning event, both the B2B source and target SCUs collect predicted phase equivalent data. The equivalence is a timestamp for the zero crossing point of the simulated RF reference signal. 
+\item[-] The B2B target SCU transfers the telegram containing the timestamp to the B2B source SCU.
+\item[-] After receving the data, the B2B source SCU calculats the synchronization window.
+\item[-] The B2B source SCU sends the telegram containing the beginning of the synchronization window to the WR network.
+\item[-] After receving the telegram, the trigger SCU produces TTL output indicating the synchronization window. 
+\end{itemize}
+
+\subsection{Test setup introduction}
+Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two MODEL DS345 Synthesized Function Generators are used, which are with the frequency accuracy of $\pm$5ppm of the selected frequency to simulate RF reference signals of SIS18 and SIS100. DS345 of SIS18 is directly triggered by the 10MHz of BuTiS receiver and DS345 of SIS100 is triggered by DS345 of SIS18. So both DS345s are synchronized to BuTiS. The B2B source SCU, B2B target SCU and trigger SCU are connected to the same WR switch, which connects to the WR network. PC is used as a DM to produce the B2B beginning event. Besides, it monitors the status of the B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of the two simulated RF reference signals within the synchronization window provided by the trigger SCU.   
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{schematic_setup.jpg}
+   \caption{Schematic of the test setup}
+   \label{setup}
+\end{figure}
+
+Fig.~\ref{testsetup_text} shows the front and back view of the test setup. DS345 of SIS18 produces the sine wave of 1.572200MHz frequency for the B2B source SCU. DS345 of SIS100 produces the sine wave of 1.572MHz for the B2B target SCU. So the beating frequency is 200Hz and the synchronization period is 5ms. 
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{testsetup_text.jpg}
+   \caption{Test setup}
+   \label{testsetup_text}
+\end{figure}
+
+\subsection{B2B transfer system firmware and time constraints}
+
+The B2B source, B2B target and trigger SCUs have different firmware running on their soft CPU, LM32. Fig.~\ref{flow_chart} shows the flow chart of these firmware. The firmware are activated by the B2B beginning event, $CMD\_START\_B2B$, which indicates the source and target synchrotrons of the B2B transfer. The test setup realizes part of the functions of the firmware.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{flow_chart.jpg}
+   \caption{Flow chart of the firmware for B2B related SCUs.}
+   \label{flow_chart}
+\end{figure}
+
+\begin{itemize}
+\item Firmware for the B2B source SCU
+
+This firmware is the core program of the B2B transfer system. It is responsible for the following funtions.
+ 	\begin{itemize}
+ 		\item Calculation of the synchronization window, the phase shift/jump value and the phase correction value and transferring the values to the corresponding modules. 
+		\item Check whether the telegram $TGM\_PHASE\_TIME$ , $TGM\_ KICKER\_TRIGGER\_TIME\_S$ and $TGM\_KICKER\_TRIGGER\_TIME\_T$ within a specified timeout interval.
+		\item Check whether the values are within the proper range, the predicted phase and the required phase correction must be in the range of $0^\circ$ to $360^\circ$ and the required phase shift in the range of $-180^\circ$ to $180^\circ$.
+		\item Check whether the beginning synchronization window is at least in 2ms after the $CMD\_START\_B2B$.
+		\item Evaluate the B2B transfer status. The status is SUCCESS, if the trigger time $<$ the firing time of the source trigger SCU, the trigger time $<$ the firing time of the target trigger SCU and the firing time of the B2B source SCU $<$ the firing time of the B2B target SCU. Or the status is FAILURE.
+		\item Sending telegrams to the WR network, $TGM\_SYNCH\_WIN$ indicates the beginning of the synchronization window and $TGM\_B2B\_STATUS$ indicates the status of the B2B transfer system.
+
+If one of the above mentioned checks fails, an ERROR telegram, $TGM\_B2B\_ERROR$ will be sent to the WR network, indicating the source of the error.
+	\end{itemize}
+\item Firmware for the B2B target SCU
+
+After activation, the B2B target SCU reads the predicted phase from the PAP module and sends $TGM\_PHASE\_TIME$ to the B2B source SCU via the WR network.
+
+\item Firmware for the trigger SCU
+
+After activation, it waits for the telegram $TGM\_ SYNCH\_ WIN$ to indicate the synchronization window for the further kicker trigger usage. After the beam extraction/injection, it gets the triggering and firing time and sends them  to the B2B source SCU via the WR network by $TGM\_KICKER\_ TRIGGER\_ TIME\_ S/ TGM\_KICKER\_ TRIGGER\_ TIME\_ T$.  
+\end{itemize}
+
+For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the B2B transfer system. The $CMD\_START\_B2B$ is executed at $t_{B2B}$. The B2B source SCU sends the telegram $TGM\_SYNCH\_WIN$ at about $t_{B2B}$+1ms, including 500us phase prediction time, maximum 500us $TGM\_PHASE\_TIME$ transfer delay on the WR network and about 1us calculation time. The trigger SCU receives $TGM\_SYNCH\_WIN$ at about $t_{B2B}$+1.5ms, the extra 0.5ms mainly comes from the telegram $TGM\_SYNCH\_WIN$ transfer delay on the WR network. The beginning of the synchronizatin window must be at least 2ms later than $t_{B2B}$, because the $TGM\_SYNCH\_WIN$ must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer uses maximum 500us and the transfer from the DM to BI needs another 500us. For the collection kicker and firing time in the trigger SCU, there is no hard real time requirement. So we assume that the collection should be done before $t_{B2B}$+12ms, 2ms longer than the maximum B2B transfer required time 10ms. The B2B source SCU should receive the $TGM\_KICKER\_ TRIGGER\_ TIME\_ S/ TGM\_KICKER\_ TRIGGER\_ TIME\_ T$ before $t_{B2B}$+13ms.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{flow_chart_time.jpg}
+   \caption{The time constraints of the B2B transfer system}
+   \label{time_constraint}
+\end{figure}
+
+
+
+\subsection{Test result}
+Fig.~\ref{test_result} shows the result of the B2B programs on SCUs of the test setup. The left back shell shows the status of the program on the B2B source SCU, the right back shell shows the status of the program on the B2B target SCU and the front one shows the status of the Trigger SCU.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{test_result.png}
+   \caption{The result of the test setup}
+   \label{test_result}
+\end{figure}
+??? run the program agian with the modification, $event\_ name(CMD)$ and timestamp. revolution number should not divide 2
+
+
+After both B2B source and targe SCUs receive the $CMD\_START\_B2B$ telegram, they trigger another unit to get the timestamp of the next zero corssing point of the DS345 sine waves. Because of the non-real time of the program running on LM32 and the usage of the wb bus, the triggerings are not simultaneous, namely the B2B source and target SCU do not get the timestamp of the adjacent zero crossing points of two RF simulated sine signals in Fig.~\ref{test_result}. All timestamp are shown in the format of Greenwich Mean Time (GMT). The timestamp got by the B2B source SCU is Thu, Jan 8, 1970 , 21:07:27 0.445405856 second and the timestamp got by the B2B target SCU is Thu, Jan 8, 1970, 21:07:27 0.445364560 second. The time difference between two timestamps is 41.296us. The difference between timestamps of the adjacent zero crossing points, 592ns, is the remainder resulting from 41.296us dividing SIS18 revolution period 0.636051us. Based on eq. ~\ref{syn_time} and eq. ~\ref{syn_num}, 
+\begin{equation}
+\begin{aligned}
+\frac{T^{SIS18}_{h=2}}{5ms}=\frac{592ns}{\Delta t}
+\label {syn_time}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+\frac{\Delta t}{T^{SIS18}_{h=1}}=3634
+\label {syn_num}
+\end{aligned}
+\end{equation}
+we could get the synchronization time $\Delta t$, 4.622818ms and the number of the SIS18 revolution period 3634. For the reality of the B2B transfer, LM32 reads the predicted phase from the PAP module via SCU bus when it receives the B2B start event. The asynchronous reading is only caused by the non-real time LM32 program, which is around 1us. For the PAP module, the predicted phase is constant for 10us.          
+
+
+
