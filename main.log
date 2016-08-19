@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.6)  16 AUG 2016 00:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.6)  18 AUG 2016 17:45
 entering extended mode
 **F:/办公资料/GSI/Report/毕业论文材料/Disputation*-*Jbai/PhD-thesis/m
 ain.tex
@@ -531,7 +531,381 @@ Package: ulem 2012/05/18
 ("D:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen135
 )
-\c@subsubsubsection=\count116
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen136
+\extrarowheight=\dimen137
+\NC@list=\toks27
+\extratabsurround=\skip59
+\backup@length=\skip60
+)
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+\everycr=\toks28
+\minrowclearance=\skip61
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
+Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
+L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count116
+)
+L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
+L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
+L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
+L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
+L3 Module: l3str 2014/08/24 v5368 L3 Strings
+L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
+L3 Module: l3int 2014/09/14 v5421 L3 Integers
+\c_max_int=\count117
+\l_tmpa_int=\count118
+\l_tmpb_int=\count119
+\g_tmpa_int=\count120
+\g_tmpb_int=\count121
+L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
+L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
+\g__prg_map_int=\count122
+L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
+L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
+L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
+L3 Module: l3msg 2014/08/24 v5358 L3 Messages
+L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
+\l_iow_line_count_int=\count123
+\l__iow_target_count_int=\count124
+\l__iow_current_line_int=\count125
+\l__iow_current_word_int=\count126
+\l__iow_current_indentation_int=\count127
+L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
+\c_zero_dim=\dimen138
+\c_max_dim=\dimen139
+\l_tmpa_dim=\dimen140
+\l_tmpb_dim=\dimen141
+\g_tmpa_dim=\dimen142
+\g_tmpb_dim=\dimen143
+\c_zero_skip=\skip62
+\c_max_skip=\skip63
+\l_tmpa_skip=\skip64
+\l_tmpb_skip=\skip65
+\g_tmpa_skip=\skip66
+\g_tmpb_skip=\skip67
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2014/08/23 v5354 L3 Key-value interfaces
+\g__keyval_level_int=\count128
+\l_keys_choice_int=\count129
+L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
+\c__fp_leading_shift_int=\count130
+\c__fp_middle_shift_int=\count131
+\c__fp_trailing_shift_int=\count132
+\c__fp_big_leading_shift_int=\count133
+\c__fp_big_middle_shift_int=\count134
+\c__fp_big_trailing_shift_int=\count135
+\c__fp_Bigg_leading_shift_int=\count136
+\c__fp_Bigg_middle_shift_int=\count137
+\c__fp_Bigg_trailing_shift_int=\count138
+L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
+\c_empty_box=\box34
+\l_tmpa_box=\box35
+\l_tmpb_box=\box36
+\g_tmpa_box=\box37
+\g_tmpb_box=\box38
+L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen144
+\l__coffin_offset_x_dim=\dimen145
+\l__coffin_offset_y_dim=\dimen146
+\l__coffin_x_dim=\dimen147
+\l__coffin_y_dim=\dimen148
+\l__coffin_x_prime_dim=\dimen149
+\l__coffin_y_prime_dim=\dimen150
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\l__coffin_display_coffin=\box45
+\l__coffin_display_coord_coffin=\box46
+\l__coffin_display_pole_coffin=\box47
+\l__coffin_display_offset_dim=\dimen151
+\l__coffin_display_x_dim=\dimen152
+\l__coffin_display_y_dim=\dimen153
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen154
+\l__box_bottom_dim=\dimen155
+\l__box_left_dim=\dimen156
+\l__box_right_dim=\dimen157
+\l__box_top_new_dim=\dimen158
+\l__box_bottom_new_dim=\dimen159
+\l__box_left_new_dim=\dimen160
+\l__box_right_new_dim=\dimen161
+\l__box_internal_box=\box48
+\l__coffin_bounding_shift_dim=\dimen162
+\l__coffin_left_corner_dim=\dimen163
+\l__coffin_right_corner_dim=\dimen164
+\l__coffin_bottom_corner_dim=\dimen165
+\l__coffin_top_corner_dim=\dimen166
+\l__coffin_scaled_total_height_dim=\dimen167
+\l__coffin_scaled_width_dim=\dimen168
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3unicode-data.d
+ef
+File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
+File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count139
+))
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.
+sty
+Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count140
+\l__xparse_m_args_int=\count141
+\l__xparse_mandatory_args_int=\count142
+\l__xparse_processor_int=\count143
+\l__xparse_v_nesting_int=\count144
+)
+Package: siunitx 2014/09/27 v2.6b A comprehensive (SI) units package
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3key
+s2e.sty
+Package: l3keys2e 2014/09/15 v5423 LaTeX2e option processing using LaTeX3 keys
+)
+Variant \tl_if_blank:VTF already defined; not changing it on line 50
+\l__siunitx_tmp_box=\box49
+\l__siunitx_tmp_dim=\dimen169
+\l__siunitx_tmp_int=\count145
+Variant \prop_get:NVNT already defined; not changing it on line 372
+Variant \prop_get:NVNF already defined; not changing it on line 373
+Variant \prop_get:NVNTF already defined; not changing it on line 374
+\l__siunitx_number_mantissa_length_int=\count146
+\l__siunitx_number_uncert_length_int=\count147
+\l__siunitx_round_int=\count148
+\l__siunitx_process_decimal_int=\count149
+\l__siunitx_process_uncertainty_int=\count150
+\l__siunitx_process_fixed_int=\count151
+\l__siunitx_process_integer_min_int=\count152
+\l__siunitx_process_precision_int=\count153
+\l__siunitx_group_min_int=\count154
+\l__siunitx_angle_marker_box=\box50
+\l__siunitx_angle_unit_box=\box51
+\l__siunitx_angle_marker_dim=\dimen170
+\l__siunitx_angle_unit_dim=\dimen171
+\l__siunitx_unit_int=\count155
+\l__siunitx_unit_denominator_int=\count156
+\l__siunitx_unit_numerator_int=\count157
+\l__siunitx_unit_prefix_int=\count158
+\l__siunitx_unit_prefix_base_int=\count159
+\l__siunitx_unit_prefix_gram_int=\count160
+\l__siunitx_number_product_int=\count161
+\c__siunitx_one_fill_skip=\skip68
+\l__siunitx_table_unit_align_skip=\skip69
+\l__siunitx_table_exponent_dim=\dimen172
+\l__siunitx_table_integer_dim=\dimen173
+\l__siunitx_table_mantissa_dim=\dimen174
+\l__siunitx_table_marker_dim=\dimen175
+\l__siunitx_table_result_dim=\dimen176
+\l__siunitx_table_uncert_dim=\dimen177
+\l__siunitx_table_fill_pre_dim=\dimen178
+\l__siunitx_table_fill_post_dim=\dimen179
+\l__siunitx_table_fill_mid_dim=\dimen180
+\l__siunitx_table_pre_box=\box52
+\l__siunitx_table_post_box=\box53
+\l__siunitx_table_mantissa_box=\box54
+\l__siunitx_table_result_box=\box55
+\l__siunitx_table_number_align_skip=\skip70
+\l__siunitx_table_text_align_skip=\skip71
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7166.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7169.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7172.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7175.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7178.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7181.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7184.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7199.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7207.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7215.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7223.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7234.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7245.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7256.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7259.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7271.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7282.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7329.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
+. 7331.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7333.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7335.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
+. 7337.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7338.
+.................................................
+\g__file_internal_ior=\read1
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tr
+anslator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tr
+anslator-language-mappings.tex)))
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count162
+\lst@gtempboxa=\box56
+\lst@token=\toks29
+\lst@length=\count163
+\lst@currlwidth=\dimen181
+\lst@column=\count164
+\lst@pos=\count165
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count166
+\lst@lineno=\count167
+\lst@maxwidth=\dimen184
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count168
+\lst@skipnumbers=\count169
+\lst@framebox=\box57
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+\c@subsubsubsection=\count170
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\m
 ain.aux"
@@ -548,36 +922,39 @@ LaTeX Warning: Label `eq:eq5' multiply defined.
 LaTeX Warning: Label `beating_win_2' multiply defined.
 
 
+LaTeX Warning: Label `num_switch_b' multiply defined.
+
+
 LaTeX Warning: Label `kicker_SIS100' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
  (C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
-\scratchdimen=\dimen136
-\scratchbox=\box34
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count120
-\MPscratchDim=\dimen137
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count171
+\scratchdimen=\dimen185
+\scratchbox=\box58
+\nofMPsegments=\count172
+\nofMParguments=\count173
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count174
+\MPscratchDim=\dimen186
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
+\everyMPtoPDFconversion=\toks31
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -613,30 +990,115 @@ LaTeX Font Info:    ... okay on input line 57.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 57.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring OFF on input line 111.
 ("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count177
 )
-LaTeX Info: Redefining \ref on input line 57.
-LaTeX Info: Redefining \pageref on input line 57.
-LaTeX Info: Redefining \nameref on input line 57.
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\m
 ain.out")
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\m
 ain.out")
 \@outlinefile=\write3
- <images/university.jpg, id=267, 284.5029pt x 155.01915pt>
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ ("D:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\di
+cts\translator-basic-dictionary\translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviat
+ions.cfg
+File: siunitx-abbreviations.cfg 2014/09/27 v2.6b siunitx: Abbreviated units
+)
+\c@lstlisting=\count178
+\c__siunitx_mathsf_int=\count179
+\c__siunitx_mathtt_int=\count180
+ <images/university.jpg, id=275, 284.5029pt x 155.01915pt>
 File: images/university.jpg Graphic file (type jpg)
 
 <use images/university.jpg>
-Package pdftex.def Info: images/university.jpg used on input line 59.
+Package pdftex.def Info: images/university.jpg used on input line 113.
 (pdftex.def)             Requested size: 284.5022pt x 155.01877pt.
  [1
 
@@ -652,20 +1114,20 @@ sity.jpg>] [2
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\m
 ain.toc" [5
 
-])
-\tf@toc=\write4
-
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[6])
+\tf@toc=\write4
+ [7]
 Kapitel 1.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/1Introduction.tex") [7
+hapters/1Introduction.tex") [8
 
 ]
 Kapitel 2.
@@ -678,25 +1140,25 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [8
+ [9
 
-] [9] [10]
+] [10] [11]
 Overfull \hbox (3.77225pt too wide) in paragraph at lines 162--165
 \OT1/cmr/m/n/12 Now, the re-la-ti-on-ship bet-ween the ra-te of change in mo-me
 n-tum of a par-tic-le, dp(t)/dt,
  []
 
-[11]
-
-LaTeX Warning: Reference `eq:adiabatic' on page 12 undefined on input line 230.
-
-
 [12]
 
-LaTeX Warning: Reference `eq:RtoF' on page 13 undefined on input line 239.
+LaTeX Warning: Reference `eq:adiabatic' on page 13 undefined on input line 230.
 
 
-LaTeX Warning: Reference `eq:bucketsizeR' on page 13 undefined on input line 23
+[13]
+
+LaTeX Warning: Reference `eq:RtoF' on page 14 undefined on input line 239.
+
+
+LaTeX Warning: Reference `eq:bucketsizeR' on page 14 undefined on input line 23
 9.
 
 
@@ -728,13 +1190,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 256.
 
 
-LaTeX Warning: Reference `phaseshift' on page 13 undefined on input line 267.
+LaTeX Warning: Reference `phaseshift' on page 14 undefined on input line 267.
 
-[13]
+[14]
 
-LaTeX Warning: Reference `eq:pFR' on page 14 undefined on input line 276.
+LaTeX Warning: Reference `eq:pFR' on page 15 undefined on input line 276.
 
-[14] [15] [16] <images/syc_ext_inj.jpg, id=510, 1024.82875pt x 607.26875pt>
+[15] [16] [17] <images/syc_ext_inj.jpg, id=523, 1024.82875pt x 607.26875pt>
 File: images/syc_ext_inj.jpg Graphic file (type jpg)
 
 <use images/syc_ext_inj.jpg>
@@ -745,7 +1207,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 381--382
  [][] 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -757,13 +1219,7 @@ Overfull \hbox (10.82245pt too wide) in paragraph at lines 391--391
  |[]\OT1/cmr/bx/n/17.28 Prerequisites/boundary con-di-ti-ons for the B2B
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
- Make it at least 27.85004pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18] [19] <images/local_cavity_syn.png, id=528, 494.59781pt x 428.35031pt>
+[19] [20] <images/local_cavity_syn.png, id=541, 494.59781pt x 428.35031pt>
 File: images/local_cavity_syn.png Graphic file (type png)
 
 <use images/local_cavity_syn.png>
@@ -774,7 +1230,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 425--426
  [][] 
  []
 
-<images/ref_rf_dis.png, id=530, 715.17188pt x 697.10437pt>
+<images/ref_rf_dis.png, id=543, 715.17188pt x 697.10437pt>
 File: images/ref_rf_dis.png Graphic file (type png)
 
 <use images/ref_rf_dis.png>
@@ -785,32 +1241,32 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 431--432
  [][] 
  []
 
-[20]) [21pdfTeX warning (ext4): destination with the same identifier (name{figu
+[21]) [22pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.69 \chapter
-             {First idea on the B2B transfer system} <F:/办公资料/GSI/Repor
-t/毕业论文材料/Disputation - Jbai/PhD-thesis/images/local_cavity_syn.png>
-] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2
-.3}) has been already used, duplicate ignored
+l.123 \chapter
+              {First idea on the B2B transfer system} <F:/办公资料/GSI/Repo
+rt/毕业论文材料/Disputation - Jbai/PhD-thesis/images/local_cavity_syn.png
+>] [23pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.69 \chapter
-             {First idea on the B2B transfer system} <F:/办公资料/GSI/Repor
-t/毕业论文材料/Disputation - Jbai/PhD-thesis/images/ref_rf_dis.png>]
+l.123 \chapter
+              {First idea on the B2B transfer system} <F:/办公资料/GSI/Repo
+rt/毕业论文材料/Disputation - Jbai/PhD-thesis/images/ref_rf_dis.png>]
 Kapitel 3.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/3Firstconcept.tex") [23
+hapters/3Firstconcept.tex") [24
 
 ]
 Kapitel 4.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/4Concept.tex" <images/2method.jpg, id=555, 596.98032pt x 572.1375pt>
+hapters/4Concept.tex" <images/2method.jpg, id=568, 596.98032pt x 572.1375pt>
 File: images/2method.jpg Graphic file (type jpg)
 
 <use images/2method.jpg>
@@ -821,7 +1277,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-<images/Topology.jpg, id=558, 872.25874pt x 569.12625pt>
+<images/Topology.jpg, id=571, 872.25874pt x 569.12625pt>
 File: images/Topology.jpg Graphic file (type jpg)
 
 <use images/Topology.jpg>
@@ -832,23 +1288,23 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 23--24
  [][] 
  []
 
-) [24
+) [25
 
-] [25pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+] [26pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 \chapter
-             {Realization and systematic investigation of the B2B transfer s...
+l.127 \chapter
+              {Realization and systematic investigation of the B2B transfer ...
  <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
-mages/2method.jpg>] [26pdfTeX warning (ext4): destination with the same identif
+mages/2method.jpg>] [27pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.73 \chapter
-             {Realization and systematic investigation of the B2B transfer s...
+l.127 \chapter
+              {Realization and systematic investigation of the B2B transfer ...
  <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
 mages/Topology.jpg>]
 Kapitel 5.
@@ -867,7 +1323,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
 
-[27
+[28
 
 ]
 Overfull \hbox (11.67946pt too wide) in alignment at lines 62--66
@@ -879,7 +1335,7 @@ Overfull \hbox (15.43852pt too wide) in alignment at lines 74--82
  [][][] []
  []
 
-<images/4case.png, id=591, 1029.09468pt x 490.08093pt>
+<images/4case.png, id=604, 1029.09468pt x 490.08093pt>
 File: images/4case.png Graphic file (type png)
  <use images/4case.png>
 Package pdftex.def Info: images/4case.png used on input line 86.
@@ -889,7 +1345,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 86--87
  [][] 
  []
 
-<images/1st_derivation.png, id=593, 1029.09468pt x 490.08093pt>
+<images/1st_derivation.png, id=606, 1029.09468pt x 490.08093pt>
 File: images/1st_derivation.png Graphic file (type png)
 
 <use images/1st_derivation.png>
@@ -900,7 +1356,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-<images/Radial.png, id=597, 1029.09468pt x 490.08093pt>
+<images/Radial.png, id=610, 1029.09468pt x 490.08093pt>
 File: images/Radial.png Graphic file (type png)
 
 <use images/Radial.png>
@@ -911,7 +1367,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
-<images/moment.png, id=601, 1029.09468pt x 490.08093pt>
+<images/moment.png, id=614, 1029.09468pt x 490.08093pt>
 File: images/moment.png Graphic file (type png)
 
 <use images/moment.png>
@@ -923,16 +1379,16 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 117--118
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (27.85004pt): 
- Make it at least 42.8603pt.
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+ Make it at least 28.3603pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
+[29]
 
-LaTeX Warning: Reference `?' on page 29 undefined on input line 124.
+LaTeX Warning: Reference `?' on page 30 undefined on input line 124.
 
-<images/synch_phase.png, id=615, 1029.09468pt x 490.08093pt>
+<images/synch_phase.png, id=628, 1029.09468pt x 490.08093pt>
 File: images/synch_phase.png Graphic file (type png)
 
 <use images/synch_phase.png>
@@ -943,7 +1399,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -961,7 +1417,7 @@ ion - Jbai/PhD-thesis/images/4case.png (PNG copy)> <F:/办公资料/GSI/Report/
  copy)>]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -976,7 +1432,7 @@ l.132 \item B
              ucket size <F:/办公资料/GSI/Report/毕业论文材料/Disputat
 ion - Jbai/PhD-thesis/images/Radial.png (PNG copy)> <F:/办公资料/GSI/Report
 /毕业论文材料/Disputation - Jbai/PhD-thesis/images/moment.png (PNG copy)>
-] <images/bucket_size.png, id=633, 1029.09468pt x 490.08093pt>
+] <images/bucket_size.png, id=647, 1029.09468pt x 490.08093pt>
 File: images/bucket_size.png Graphic file (type png)
 
 <use images/bucket_size.png>
@@ -988,9 +1444,9 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 143--144
  []
 
 
-LaTeX Warning: Reference `?' on page 31 undefined on input line 150.
+LaTeX Warning: Reference `?' on page 32 undefined on input line 150.
 
-<images/adiabaticity2.png, id=639, 1029.09468pt x 490.08093pt>
+<images/adiabaticity2.png, id=653, 1029.09468pt x 490.08093pt>
 File: images/adiabaticity2.png Graphic file (type png)
 
 <use images/adiabaticity2.png>
@@ -1001,14 +1457,14 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
+[32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.165 
        <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/synch_phase.png (PNG copy)>] [32pdfTeX warning (ext4): destination 
+esis/images/synch_phase.png (PNG copy)>] [33pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.5.6}) has been already used, duplicate ig
 nored
 
@@ -1024,7 +1480,13 @@ l.177 \end{equation}
                      <F:/办公资料/GSI/Report/毕业论文材料/Disputation
  - Jbai/PhD-thesis/images/bucket_size.png (PNG copy)> <F:/办公资料/GSI/Repo
 rt/毕业论文材料/Disputation - Jbai/PhD-thesis/images/adiabaticity2.png (P
-NG copy)>] <images/sis18_ramp.png, id=664, 1029.09468pt x 471.26062pt>
+NG copy)>]
+Overfull \hbox (5.30176pt too wide) in paragraph at lines 203--203
+ |[]\OT1/cmr/bx/n/12 Longitudinal dy-na-mics ana-ly-sis of the fre-quen-cy bea-
+ting for SIS18| 
+ []
+
+<images/sis18_ramp.png, id=677, 1029.09468pt x 471.26062pt>
 File: images/sis18_ramp.png Graphic file (type png)
 
 <use images/sis18_ramp.png>
@@ -1035,7 +1497,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 221--222
  [][] 
  []
 
-[33] <images/alignment.jpg, id=683, 986.68625pt x 519.9425pt>
+[34] <images/alignment.jpg, id=696, 986.68625pt x 519.9425pt>
 File: images/alignment.jpg Graphic file (type jpg)
 
 <use images/alignment.jpg>
@@ -1046,7 +1508,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 243--244
  [][] 
  []
 
-<images/Calculation_symble.jpg, id=686, 796.9775pt x 519.9425pt>
+<images/Calculation_symble.jpg, id=699, 796.9775pt x 519.9425pt>
 File: images/Calculation_symble.jpg Graphic file (type jpg)
 
 <use images/Calculation_symble.jpg>
@@ -1057,14 +1519,14 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 253--254
  [][] 
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.258 
        <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/sis18_ramp.png (PNG copy)>] [35pdfTeX warning (ext4): destination w
+esis/images/sis18_ramp.png (PNG copy)>] [36pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.5.9}) has been already used, duplicate ign
 ored
 
@@ -1073,21 +1535,21 @@ ored
 l.286 \end{equation}
                      <F:/办公资料/GSI/Report/毕业论文材料/Disputation
  - Jbai/PhD-thesis/images/alignment.jpg>]
-<images/phase_shift_synch_window_cal.jpg, id=712, 1593.955pt x 1543.7675pt>
+<images/phase_shift_synch_window_cal.jpg, id=725, 1593.955pt x 1543.7675pt>
 File: images/phase_shift_synch_window_cal.jpg Graphic file (type jpg)
 
 <use images/phase_shift_synch_window_cal.jpg>
 Package pdftex.def Info: images/phase_shift_synch_window_cal.jpg used on input 
 line 304.
 (pdftex.def)             Requested size: 369.88582pt x 358.2391pt.
- [36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.328 \begin{itemize}
                       <F:/办公资料/GSI/Report/毕业论文材料/Disputatio
-n - Jbai/PhD-thesis/images/Calculation_symble.jpg>] [37pdfTeX warning (ext4): d
+n - Jbai/PhD-thesis/images/Calculation_symble.jpg>] [38pdfTeX warning (ext4): d
 estination with the same identifier (name{figure.5.11}) has been already used, 
 duplicate ignored
 
@@ -1095,15 +1557,15 @@ duplicate ignored
                                                   \fi \fi 
 l.345 	    \begin{equation}
                             <F:/办公资料/GSI/Report/毕业论文材料/Disp
-utation - Jbai/PhD-thesis/images/phase_shift_synch_window_cal.jpg>] [38]
-<images/frequency_beating_synch_window_cal.jpg, id=764, 796.9775pt x 671.50874p
+utation - Jbai/PhD-thesis/images/phase_shift_synch_window_cal.jpg>] [39]
+<images/frequency_beating_synch_window_cal.jpg, id=777, 796.9775pt x 671.50874p
 t>
 File: images/frequency_beating_synch_window_cal.jpg Graphic file (type jpg)
  <use images/frequency_beating_synch_window_cal.jpg>
 Package pdftex.def Info: images/frequency_beating_synch_window_cal.jpg used on 
 input line 402.
 (pdftex.def)             Requested size: 256.0748pt x 215.75813pt.
- [39pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1119,7 +1581,7 @@ Overfull \hbox (27.0594pt too wide) detected at line 441
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 442.
 
-<images/accuracy_syn_win.jpg, id=787, 986.68625pt x 519.9425pt>
+<images/accuracy_syn_win.jpg, id=800, 986.68625pt x 519.9425pt>
 File: images/accuracy_syn_win.jpg Graphic file (type jpg)
 
 <use images/accuracy_syn_win.jpg>
@@ -1130,7 +1592,7 @@ Overfull \hbox (28.45274pt too wide) in paragraph at lines 449--450
  [][] 
  []
 
-[40] [41pdfTeX warning (ext4): destination with the same identifier (name{figur
+[41] [42pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.5.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1138,274 +1600,386 @@ e.5.13}) has been already used, duplicate ignored
 l.497 \end{equation}
                      <F:/办公资料/GSI/Report/毕业论文材料/Disputation
  - Jbai/PhD-thesis/images/accuracy_syn_win.jpg>]
-<images/GSI_use_case.jpg, id=814, 722.7pt x 542.025pt>
-File: images/GSI_use_case.jpg Graphic file (type jpg)
+Underfull \hbox (badness 10000) in paragraph at lines 501--501
+[]$\OT1/cmtt/m/n/10 http : / / www . xenanetworks . com / wp-[]content / upload
+s / Measuring _ Frame _ latency _ Variation .$
+ []
 
-<use images/GSI_use_case.jpg>
-Package pdftex.def Info: images/GSI_use_case.jpg used on input line 527.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 506.
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [43]
+<images/GSI_use_case.png, id=849, 722.7pt x 542.025pt>
+File: images/GSI_use_case.png Graphic file (type png)
+
+<use images/GSI_use_case.png>
+Package pdftex.def Info: images/GSI_use_case.png used on input line 543.
 (pdftex.def)             Requested size: 455.24408pt x 341.4362pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 527--528
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 543--544
  [][] 
  []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 534.
-
-
-Overfull \hbox (29.10057pt too wide) in paragraph at lines 539--563
- [] 
- []
-
-[42] [43pdfTeX warning (ext4): destination with the same identifier (name{table
-.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.571     \item F
-                 rame loss rate for B2B Unicast frames]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 592.
-
-
-Overfull \hbox (107.47893pt too wide) in paragraph at lines 597--606
- [] 
- []
-
-[44pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.608 
-       <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/GSI_use_case.jpg>] [45pdfTeX warning (ext4): destination with the s
-ame identifier (name{table.5.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.620 
-      ] <images/kicker.jpg, id=843, 980.91469pt x 854.44218pt>
-File: images/kicker.jpg Graphic file (type jpg)
-
-<use images/kicker.jpg>
-Package pdftex.def Info: images/kicker.jpg used on input line 629.
-(pdftex.def)             Requested size: 455.24408pt x 396.54228pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 629--630
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 635.
-
-[46pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.652 
-      ] <images/kicker_SIS100.jpg, id=855, 751.30687pt x 406.51875pt>
-File: images/kicker_SIS100.jpg Graphic file (type jpg)
-
-<use images/kicker_SIS100.jpg>
-Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 655.
-(pdftex.def)             Requested size: 455.24408pt x 246.32608pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 655--656
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 660.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
-15}) has been already used, duplicate ignored
+ [44pdfTeX warning (ext4): destination with the same identifier (name{table.5.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.679 \subsection{Test requirement}
-                                    <F:/办公资料/GSI/Report/毕业论文材
-料/Disputation - Jbai/PhD-thesis/images/kicker.jpg>] [48pdfTeX warning (ext4):
- destination with the same identifier (name{figure.5.16}) has been already used
-, duplicate ignored
+l.547 B
+       ased on the mentioned traffic, the measurement setup is built, see Fi...
+]
+Overfull \hbox (20.15106pt too wide) in paragraph at lines 554--577
+ [] 
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.686 \item[-]
-               After receving the telegram, the trigger SCU produces TTL out...
-pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}) h
-as been already used, duplicate ignored
+<images/packet_loss.png, id=860, 1676.2625pt x 807.015pt>
+File: images/packet_loss.png Graphic file (type png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.686 \item[-]
-               After receving the telegram, the trigger SCU produces TTL out...
- <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
-mages/kicker_SIS100.jpg>]
-<images/schematic_setup.jpg, id=869, 1059.96pt x 819.06pt>
-File: images/schematic_setup.jpg Graphic file (type jpg)
+<use images/packet_loss.png>
+Package pdftex.def Info: images/packet_loss.png used on input line 586.
+(pdftex.def)             Requested size: 455.24408pt x 219.1653pt.
 
-<use images/schematic_setup.jpg>
-Package pdftex.def Info: images/schematic_setup.jpg used on input line 694.
-(pdftex.def)             Requested size: 455.24408pt x 351.7765pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 694--695
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 586--587
  [][] 
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.602 F
+       ig. ~\ref{average_latency_jitter} shows the test result for the avera...
+ <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
+mages/GSI_use_case.png>] [46pdfTeX warning (ext4): destination with the same id
+entifier (name{table.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.603 
+      ] <images/average_latency_jitter.png, id=877, 1638.12pt x 808.01875pt>
+File: images/average_latency_jitter.png Graphic file (type png)
+
+<use images/average_latency_jitter.png>
+Package pdftex.def Info: images/average_latency_jitter.png used on input line 6
+06.
+(pdftex.def)             Requested size: 455.24408pt x 224.55458pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 606--607
+ [][] 
+ []
+
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.614 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+5.16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.614 
+       <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
+esis/images/packet_loss.png> <F:/办公资料/GSI/Report/毕业论文材料/Dis
+putation - Jbai/PhD-thesis/images/average_latency_jitter.png>]
+<images/Max_latency_jitter.png, id=888, 1711.39375pt x 834.11626pt>
+File: images/Max_latency_jitter.png Graphic file (type png)
+
+<use images/Max_latency_jitter.png>
+Package pdftex.def Info: images/Max_latency_jitter.png used on input line 617.
+(pdftex.def)             Requested size: 455.24408pt x 221.87978pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 617--618
+ [][] 
+ []
+
+<images/Avg_latency_jitter_unicast.png, id=890, 1439.3775pt x 483.8075pt>
+File: images/Avg_latency_jitter_unicast.png Graphic file (type png)
+
+<use images/Avg_latency_jitter_unicast.png>
+Package pdftex.def Info: images/Avg_latency_jitter_unicast.png used on input li
+ne 635.
+(pdftex.def)             Requested size: 455.24408pt x 153.02028pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 635--636
+ [][] 
+ []
+
+<images/Max_latency_jitter_unicast.png, id=892, 1439.3775pt x 483.8075pt>
+File: images/Max_latency_jitter_unicast.png Graphic file (type png)
+
+<use images/Max_latency_jitter_unicast.png>
+Package pdftex.def Info: images/Max_latency_jitter_unicast.png used on input li
+ne 646.
+(pdftex.def)             Requested size: 455.24408pt x 153.02028pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 646--647
+ [][] 
+ []
+
+
+Overfull \hbox (20.30588pt too wide) in paragraph at lines 665--671
+ [] 
+ []
+
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.700 
+l.673 
        <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/schematic_setup.jpg>]
-<images/testsetup_text.jpg, id=880, 7612.44pt x 4079.24pt>
-File: images/testsetup_text.jpg Graphic file (type jpg)
-
-<use images/testsetup_text.jpg>
-Package pdftex.def Info: images/testsetup_text.jpg used on input line 703.
-(pdftex.def)             Requested size: 455.24408pt x 243.93466pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 703--704
- [][] 
- []
-
-<images/flow_chart.jpg, id=883, 2086.79625pt x 982.67125pt>
-File: images/flow_chart.jpg Graphic file (type jpg)
-
-<use images/flow_chart.jpg>
-Package pdftex.def Info: images/flow_chart.jpg used on input line 713.
-(pdftex.def)             Requested size: 455.24408pt x 214.37402pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 713--714
- [][] 
- []
-
-
-Overfull \hbox (110.20453pt too wide) in paragraph at lines 724--725
-[]\OT1/cmr/m/n/12 Check whe-ther the te-le-gram $\OML/cmm/m/it/12 TGM[]PHASE[]T
-IME$ \OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 TGM[]KICKER[]TRIGGER[]TIME[]S$
- []
-
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-8}) has been already used, duplicate ignored
+esis/images/Max_latency_jitter.png>] [49pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.5.18}) has been already used, duplicate ignor
+ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.728 		\item S
-               ending telegrams to the WR network, $TGM\_SYNCH\_WIN$ indicat...
- <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
-mages/testsetup_text.jpg>]
-Overfull \hbox (59.68pt too wide) in paragraph at lines 730--731
-[]\OT1/cmr/m/n/12 If one of the abo-ve men-tio-ned checks fails, an ER-ROR te-l
-e-gram, $\OML/cmm/m/it/12 TGM[]B\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 B[]ERROR$
- []
-
-
-Overfull \hbox (251.72617pt too wide) in paragraph at lines 738--739
-\OT1/cmr/m/n/12 the B2B sour-ce SCU via the WR net-work by $\OML/cmm/m/it/12 TG
-M[]KICKER[]TRIGGER[]TIME[]S=TGM[]KICKER[]TRIGGER[]TIME[]T$\OT1/cmr/m/n/12 . 
- []
-
-<images/flow_chart_time.jpg, id=892, 2086.79625pt x 1362.08875pt>
-File: images/flow_chart_time.jpg Graphic file (type jpg)
-
-<use images/flow_chart_time.jpg>
-Package pdftex.def Info: images/flow_chart_time.jpg used on input line 744.
-(pdftex.def)             Requested size: 455.24408pt x 297.14561pt.
-
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 744--745
- [][] 
- []
-
-
-Overfull \hbox (23.01132pt too wide) in paragraph at lines 741--748
-\OT1/cmr/m/n/12 Fig.  []5.20[] shows the ti-me cons-traint of the B2B trans-fer
- sys-tem. The $\OML/cmm/m/it/12 CMD[]START[]B\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 
-B$
- []
-
-
-Overfull \hbox (78.26645pt too wide) in paragraph at lines 741--748
-\OT1/cmr/m/n/12 at about $\OML/cmm/m/it/12 t[]$\OT1/cmr/m/n/12 +1ms, in-clu-din
-g 500us pha-se pre-dic-ti-on ti-me, ma-xi-mum 500us $\OML/cmm/m/it/12 TGM[]PHAS
-E[]TIME$
- []
-
-
-Overfull \hbox (13.9075pt too wide) in paragraph at lines 741--748
-$\OML/cmm/m/it/12 TGM[]KICKER[]TRIGGER[]TIME[]S=TGM[]KICKER[]TRIGGER[]TIME[]T$ 
-\OT1/cmr/m/n/12 be-
- []
-
-[51pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
-9}) has been already used, duplicate ignored
+l.680 		\begin{equation}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.5.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.748 
-       <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
-esis/images/flow_chart.jpg>]
-<images/test_result.png, id=901, 1190.94937pt x 492.33937pt>
-File: images/test_result.png Graphic file (type png)
+l.680 		\begin{equation}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{table.5.3}) has been already used, duplicate ignored
 
-<use images/test_result.png>
-Package pdftex.def Info: images/test_result.png used on input line 756.
-(pdftex.def)             Requested size: 455.24408pt x 188.19522pt.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.680 		\begin{equation}
+                         <F:/办公资料/GSI/Report/毕业论文材料/Disputa
+tion - Jbai/PhD-thesis/images/Avg_latency_jitter_unicast.png> <F:/办公资料/
+GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/images/Max_latency_
+jitter_unicast.png>] [50]
+<images/kicker.jpg, id=925, 980.91469pt x 854.44218pt>
+File: images/kicker.jpg Graphic file (type jpg)
+ <use images/kicker.jpg>
+Package pdftex.def Info: images/kicker.jpg used on input line 716.
+(pdftex.def)             Requested size: 455.24408pt x 396.54228pt.
 
-Overfull \hbox (28.45274pt too wide) in paragraph at lines 756--757
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 716--717
  [][] 
  []
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 722.
+
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.764 \begin{equation}
-                       <F:/办公资料/GSI/Report/毕业论文材料/Disputati
-on - Jbai/PhD-thesis/images/flow_chart_time.jpg>]) [53pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.5.21}) has been already used, d
-uplicate ignored
+l.739 
+       <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
+esis/images/kicker.jpg>]
+<images/kicker_SIS100.jpg, id=936, 751.30687pt x 406.51875pt>
+File: images/kicker_SIS100.jpg Graphic file (type jpg)
+
+<use images/kicker_SIS100.jpg>
+Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 742.
+(pdftex.def)             Requested size: 455.24408pt x 246.32608pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 742--743
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 747.
+
+
+Overfull \hbox (2.29826pt too wide) in paragraph at lines 752--759
+ [] 
+ []
+
+[52pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.75 \chapter
-             {Existing transfer system and the transfer system of the FAIR a...
+l.766 \subsection{Test functional requirement}
+                                              pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.5.21}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.766 \subsection{Test functional requirement}
+                                               <F:/办公资料/GSI/Report/毕�
+��论文材料/Disputation - Jbai/PhD-thesis/images/kicker_SIS100.jpg>]
+<images/schematic_setup.jpg, id=945, 1059.96pt x 819.06pt>
+File: images/schematic_setup.jpg Graphic file (type jpg)
+
+<use images/schematic_setup.jpg>
+Package pdftex.def Info: images/schematic_setup.jpg used on input line 780.
+(pdftex.def)             Requested size: 455.24408pt x 351.7765pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 780--781
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53pdfTeX warning (ext4): destination with the same identifier (name{table.5.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.784 
+      ] <images/testsetup_text.jpg, id=957, 7612.44pt x 4079.24pt>
+File: images/testsetup_text.jpg Graphic file (type jpg)
+
+<use images/testsetup_text.jpg>
+Package pdftex.def Info: images/testsetup_text.jpg used on input line 791.
+(pdftex.def)             Requested size: 455.24408pt x 243.93466pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 791--792
+ [][] 
+ []
+
+[54pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.800 \begin{itemize}
+                      <F:/办公资料/GSI/Report/毕业论文材料/Disputatio
+n - Jbai/PhD-thesis/images/schematic_setup.jpg>]
+<images/flow_chart_src.jpg, id=969, 2086.79625pt x 1210.5225pt>
+File: images/flow_chart_src.jpg Graphic file (type jpg)
+
+<use images/flow_chart_src.jpg>
+Package pdftex.def Info: images/flow_chart_src.jpg used on input line 804.
+(pdftex.def)             Requested size: 455.24408pt x 264.08076pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 804--805
+ [][] 
+ []
+
+[55pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.816 		\item[-]
+                Step 5. It sends the timing frame TGM\_SYNCH\_WIN and TGM\_P...
  <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
-mages/test_result.png>]
+mages/testsetup_text.jpg>]
+Overfull \hbox (80.48738pt too wide) in paragraph at lines 816--817
+[]\OT1/cmr/m/n/12 Step 5. It sends the ti-ming fra-me TGM[]SYNCH[]WIN and TGM[]
+PHASE[]CORRECTION
+ []
+
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.820 
+       <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-th
+esis/images/flow_chart_src.jpg>]
+<images/flow_chart_trg.jpg, id=985, 2086.79625pt x 1210.5225pt>
+File: images/flow_chart_trg.jpg Graphic file (type jpg)
+
+<use images/flow_chart_trg.jpg>
+Package pdftex.def Info: images/flow_chart_trg.jpg used on input line 826.
+(pdftex.def)             Requested size: 455.24408pt x 264.08076pt.
+
+Overfull \hbox (28.45274pt too wide) in paragraph at lines 826--827
+ [][] 
+ []
+
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.846 		\item[-]
+                Step 6. It sends the TGM\_KICKER\_TIME\_S timing frame to th...
+ <F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/i
+mages/flow_chart_trg.jpg>] [58]
+<images/flow_chart_time.jpg, id=1001, 2238.3625pt x 1475.5125pt>
+File: images/flow_chart_time.jpg Graphic file (type jpg)
+
+<use images/flow_chart_time.jpg>
+Package pdftex.def Info: images/flow_chart_time.jpg used on input line 857.
+(pdftex.def)             Requested size: 682.86613pt x 450.13197pt.
+
+
+LaTeX Warning: Float too large for page by 64.67395pt on input line 860.
+
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.861 \end{landscape}
+                      <F:/办公资料/GSI/Report/毕业论文材料/Disputatio
+n - Jbai/PhD-thesis/images/flow_chart_time.jpg>]
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 868.
+
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 868.
+
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 869--870
+[][][][][] 
+ []
+
+
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 893--894
+[][][][][] 
+ []
+
+
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 904--905
+[][][][][] 
+ []
+
+[60
+
+
+]) [61]
 Kapitel 6.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/6Existing.tex") [54
+hapters/6Existing.tex") [62
 
 ]
 Kapitel 7.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/7SummaryAusblick.tex") [55
+hapters/7SummaryAusblick.tex") [63
 
 ]
 Kapitel 8.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/8Acknowledgement.tex") [56
+hapters/8Acknowledgement.tex") [64
 
 ]
 Kapitel 9.
 
 ("F:\办公资料\GSI\Report\毕业论文材料\Disputation - Jbai\PhD-thesis\c
-hapters/References.tex" [57
+hapters/References.tex" [65
 
 ]
 Underfull \hbox (badness 4699) in paragraph at lines 9--12
@@ -1414,7 +1988,7 @@ Underfull \hbox (badness 4699) in paragraph at lines 9--12
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-[58
+[66
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
@@ -1424,7 +1998,7 @@ ain.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ADF644DF4CB5676DFE621273F3DF0D18;6119.
+(rerunfilecheck)             Checksum: 50F2F2248D2D97CF6D71790D60D0239E;6315.
 
 
 LaTeX Warning: There were undefined references.
@@ -1435,30 +2009,34 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) ) 
 Here is how much of TeX's memory you used:
- 7567 strings out of 493921
- 110295 string characters out of 3147279
- 215701 words of memory out of 3000000
- 10448 multiletter control sequences out of 15000+200000
- 12352 words of font info for 45 fonts, out of 3000000 for 9000
+ 18101 strings out of 493921
+ 337508 string characters out of 3147279
+ 536129 words of memory out of 3000000
+ 20812 multiletter control sequences out of 15000+200000
+ 17183 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,15n,43p,1540b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><D:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (58 pages, 9377309 bytes).
+ 34i,22n,51p,10466b,1533s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Gilgil\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\tcrm1200.pk><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb>
+Output written on main.pdf (66 pages, 10299002 bytes).
 PDF statistics:
- 1066 PDF objects out of 1200 (max. 8388607)
- 272 named destinations out of 1000 (max. 500000)
- 820 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1234 PDF objects out of 1440 (max. 8388607)
+ 337 named destinations out of 1000 (max. 500000)
+ 891 words of extra memory for PDF output out of 10000 (max. 10000000)
 
