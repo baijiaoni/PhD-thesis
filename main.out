@@ -1,68 +1,72 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.1.1}{FAIR project }{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Beam transfer systems of the FAIR accelerator}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Theoretical background}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Introduction of the bunch to bucket transfer}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.1.1}{Phase difference between two RF systems}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.2}{Synchronization of two RF systems}{section.2.1}% 7
-\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Phase shift method}{subsection.2.1.2}% 8
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.1}{Radial excursion and momentum shift due to frequency modulation}{subsubsection.2.1.2.1}% 9
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.2}{Transverse dynamics analysis}{subsubsection.2.1.2.1}% 10
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.3}{Shift of synchronous phase}{subsubsection.2.1.2.1}% 11
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.4}{Bucket area factor}{subsubsection.2.1.2.1}% 12
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.5}{Adiabaticity analysis}{subsubsection.2.1.2.1}% 13
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.1.6}{ds\(t\)/ dt}{subsubsection.2.1.2.1}% 14
-\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Examples of RF frequency modulation for 200Mev U28+ SIS18}{subsection.2.1.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.1.2.3}{Frequency beating method}{subsection.2.1.2}% 16
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.3.1}{Longitudinal dynamics analysis}{subsubsection.2.1.2.3}% 17
-\BOOKMARK [3][-]{subsubsection.2.1.2.4}{Example of frequency beating method for SIS18 and SIS100 1 Seite}{subsection.2.1.2}% 18
-\BOOKMARK [4][-]{subsubsubsection.2.1.2.4.1}{Frequency beating method for SIS18 and ESR 2-3 Seiten}{subsubsection.2.1.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.1.3}{Bucket label}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.4}{Synchronization of the extraction and injection kicker}{section.2.1}% 21
-\BOOKMARK [2][-]{subsection.2.1.5}{Beam indication for the beam instrumentation}{section.2.1}% 22
-\BOOKMARK [1][-]{section.2.2}{Prerequisites/boundary conditions for the B2B transfer system}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.1}{FAIR control system}{section.2.2}% 24
-\BOOKMARK [3][-]{subsubsection.2.2.1.1}{BuTiS}{subsection.2.2.1}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.1.2}{GMT}{subsection.2.2.1}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.1.3}{FESA}{subsection.2.2.1}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.1.4}{SM}{subsection.2.2.1}% 28
-\BOOKMARK [2][-]{subsection.2.2.2}{LLRF system}{section.2.2}% 29
-\BOOKMARK [0][-]{chapter.3}{First idea on the B2B transfer system}{}% 30
-\BOOKMARK [1][-]{section.3.1}{Data acquisition from two synchrotrons}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.2}{Coarse synchronization}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.3}{Fine synchronization}{chapter.3}% 33
-\BOOKMARK [0][-]{chapter.4}{Concept of the B2B transfer system}{}% 34
-\BOOKMARK [1][-]{section.4.1}{Basic procedure of the B2B transfer system for FAIR}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.2}{Functional blocks and responsibilities}{chapter.4}% 36
-\BOOKMARK [0][-]{chapter.5}{Realization and systematic investigation of the B2B transfer system}{}% 37
-\BOOKMARK [1][-]{section.5.1}{Investigation of two synchronization methods for U28+ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.1.1}{Phase shift method}{section.5.1}% 39
-\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Longitudinal dynamic analysis for the simulation}{subsection.5.1.1}% 40
-\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Transverse dynamics analysis for the simulations}{subsection.5.1.1}% 41
-\BOOKMARK [2][-]{subsection.5.1.2}{Frequency beating method}{section.5.1}% 42
-\BOOKMARK [3][-]{subsubsection.5.1.2.1}{Longitudinal dynamics analysis of the frequency beating for SIS18}{subsection.5.1.2}% 43
-\BOOKMARK [1][-]{section.5.2}{GMT systematic investigation for the B2B transfer system}{chapter.5}% 44
-\BOOKMARK [2][-]{subsection.5.2.1}{Calculation of the synchronization window}{section.5.2}% 45
-\BOOKMARK [3][-]{subsubsection.5.2.1.1}{The best estimate of alignment and the probable range of alignment for the phase shift method}{subsection.5.2.1}% 46
-\BOOKMARK [3][-]{subsubsection.5.2.1.2}{The best estimate of alignment and the probable range of alignment for the frequency beating method}{subsection.5.2.1}% 47
-\BOOKMARK [3][-]{subsubsection.5.2.1.3}{Calculation the synchronization window and its accuracy}{subsection.5.2.1}% 48
-\BOOKMARK [2][-]{subsection.5.2.2}{Measurement of the WR network for the B2B transfer}{section.5.2}% 49
-\BOOKMARK [3][-]{subsubsection.5.2.2.1}{WR network test setup}{subsection.5.2.2}% 50
-\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Frame loss rate test result for B2B frames}{subsection.5.2.2}% 51
-\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Latency and jitter test result for B2B frames}{subsection.5.2.2}% 52
-\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Result and conclusion}{subsection.5.2.2}% 53
-\BOOKMARK [1][-]{section.5.3}{Kicker systematic investigation for the B2B transfer system}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.3.1}{SIS18 extraction kicker units}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.2}{SIS100 injection kicker units}{section.5.3}% 56
-\BOOKMARK [1][-]{section.5.4}{Test setup for the data collection, merging and redistribution of the B2B transfer system}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.4.1}{Test functional requirement}{section.5.4}% 58
-\BOOKMARK [2][-]{subsection.5.4.2}{Test setup}{section.5.4}% 59
-\BOOKMARK [2][-]{subsection.5.4.3}{The firmware of the B2B transfer system}{section.5.4}% 60
-\BOOKMARK [2][-]{subsection.5.4.4}{The time constraints of the B2B transfer system}{section.5.4}% 61
-\BOOKMARK [2][-]{subsection.5.4.5}{Test result}{section.5.4}% 62
-\BOOKMARK [0][-]{chapter.6}{Existing transfer system and the transfer system of the FAIR accelerators}{}% 63
-\BOOKMARK [1][-]{section.6.1}{Existing transfer from SIS18 to ESR}{chapter.6}% 64
-\BOOKMARK [1][-]{section.6.2}{B2B transfer from SIS18 to ESR to CRYRING}{chapter.6}% 65
-\BOOKMARK [0][-]{chapter.7}{Summary}{}% 66
-\BOOKMARK [0][-]{chapter.8}{Acknowledgement}{}% 67
-\BOOKMARK [0][-]{chapter.9}{References}{}% 68
+\BOOKMARK [1][-]{section.0.1}{List of Acronyms}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.1.1}{FAIR project }{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Beam transfer systems of the FAIR accelerator}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Theoretical background}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Introduction of the basic priciples for the B2B transfer}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Energy match}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.2}{Loop freeze}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.3}{Phase difference between two RF systems}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.4}{RF synchronization}{section.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.4.1}{Phase shift method}{subsection.2.1.4}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.4.2}{Frequency beating method}{subsection.2.1.4}% 12
+\BOOKMARK [2][-]{subsection.2.1.5}{Bucket label}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.6}{Synchronization of the extraction and injection kicker}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.7}{Beam indication for the beam instrumentation}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{Infrastructures for the B2B transfer system}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{FAIR control system}{section.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{BuTiS}{subsection.2.2.1}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{GMT}{subsection.2.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.1.3}{FESA}{subsection.2.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.1.4}{SM}{subsection.2.2.1}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{LLRF system}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.3}{MPS system}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{U28+ beam from SIS18 to SIS100}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{First idea on the B2B transfer system}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Data acquisition from two synchrotrons}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Coarse synchronization}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Fine synchronization}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{Synchronization of the extraction and injection kicker}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{Beam indication for the beam instrumentation}{section.3.3}% 30
+\BOOKMARK [0][-]{chapter.4}{Concept of the B2B transfer system}{}% 31
+\BOOKMARK [1][-]{section.4.1}{Realization of the basic B2B principles}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.1.1}{RF difference between two RF system}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.2}{RF synchronization}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.3}{Bucket label}{section.4.1}% 35
+\BOOKMARK [2][-]{subsection.4.1.4}{Synchronization of the extraction and injection kicker}{section.4.1}% 36
+\BOOKMARK [2][-]{subsection.4.1.5}{Beam indication for the beam instrumentation}{section.4.1}% 37
+\BOOKMARK [1][-]{section.4.2}{Basic procedure of the B2B transfer system for FAIR}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.3}{Description of the U28+ B2B process from SIS18 to SIS100 with the phase shift method}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.4}{Description of the U28+ B2B process from SIS18 to SIS100 with the frequency beating method}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Realization and systematic investigation of the B2B transfer system}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Investigation of two synchronization methods for U28+ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.1.1}{Phase shift method}{section.5.1}% 43
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{Longitudinal dynamic analysis for the simulation}{subsection.5.1.1}% 44
+\BOOKMARK [3][-]{subsubsection.5.1.1.2}{Transverse dynamics analysis for the simulations}{subsection.5.1.1}% 45
+\BOOKMARK [2][-]{subsection.5.1.2}{Frequency beating method}{section.5.1}% 46
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{Longitudinal dynamics analysis of the frequency beating for SIS18}{subsection.5.1.2}% 47
+\BOOKMARK [1][-]{section.5.2}{GMT systematic investigation for the B2B transfer system}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.2.1}{Calculation of the synchronization window}{section.5.2}% 49
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{The best estimate of alignment and the probable range of alignment for the phase shift method}{subsection.5.2.1}% 50
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{The best estimate of alignment and the probable range of alignment for the frequency beating method}{subsection.5.2.1}% 51
+\BOOKMARK [3][-]{subsubsection.5.2.1.3}{Calculation the synchronization window and its accuracy}{subsection.5.2.1}% 52
+\BOOKMARK [2][-]{subsection.5.2.2}{Measurement of the WR network for the B2B transfer}{section.5.2}% 53
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{WR network test setup}{subsection.5.2.2}% 54
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Frame loss rate test result for B2B frames}{subsection.5.2.2}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Latency and jitter test result for B2B frames}{subsection.5.2.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Result and conclusion}{subsection.5.2.2}% 57
+\BOOKMARK [1][-]{section.5.3}{Kicker systematic investigation for the B2B transfer system}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.3.1}{SIS18 extraction kicker units}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.2}{SIS100 injection kicker units}{section.5.3}% 60
+\BOOKMARK [1][-]{section.5.4}{Test setup for the data collection, merging and redistribution of the B2B transfer system}{chapter.5}% 61
+\BOOKMARK [2][-]{subsection.5.4.1}{Test functional requirement}{section.5.4}% 62
+\BOOKMARK [2][-]{subsection.5.4.2}{Test setup}{section.5.4}% 63
+\BOOKMARK [2][-]{subsection.5.4.3}{The firmware of the B2B transfer system}{section.5.4}% 64
+\BOOKMARK [2][-]{subsection.5.4.4}{The time constraints of the B2B transfer system}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.5}{Test result}{section.5.4}% 66
+\BOOKMARK [0][-]{chapter.6}{Existing transfer system and the transfer system of the FAIR accelerators}{}% 67
+\BOOKMARK [1][-]{section.6.1}{Existing transfer from SIS18 to ESR}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.2}{B2B transfer from SIS18 to ESR to CRYRING}{chapter.6}% 69
+\BOOKMARK [0][-]{chapter.7}{Summary}{}% 70
+\BOOKMARK [0][-]{chapter.8}{Acknowledgement}{}% 71
+\BOOKMARK [0][-]{chapter.9}{References}{}% 72

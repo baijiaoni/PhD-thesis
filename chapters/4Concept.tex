@@ -1,22 +1,36 @@
-\section{Basic procedure of the B2B transfer system for FAIR}
- Fig.~\ref{2method} illustrates two different possible scenarios for the B2B transfer. The top part shows the chronological steps of the frequency beating method, while the bottom part shows the steps of the phase shift method. The synchronization window must take into account the kicker delay in cables and electronics, as well as the kicker preparation time. The trigger signal must consider the kicker delay compensation.
-The emergency kickers can be triggered at any time during the acceleration cycle by the MPS3. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kicker. 
+
 \begin{figure}[!htb]
    \centering   
-   \includegraphics*[width=160mm]{2method.jpg}
-   \caption{The procedure for the B2B transfer within one acceleration cycle}
-   \label{2method}
+   \includegraphics*[width=160mm]{ext_inj_kicker.png}
+   \caption{The illustration of $U^{28+}$ B2B transfer from SIS18 to SIS100.}
+   \label{ext_inj_kicker}
 \end{figure}
-The B2B transfer process basically needs to follow six steps:
-\begin{enumerate}
-\item The DM announces the B2B transfer and freezes the beam-phase loop, when required.
-\item The two synchrotrons measure the rf phase locally.
-\item The source synchrotron gathers the measured rf phase from the target synchrotron.
-\item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
-For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved at the target synchrotron.
-\item Trigger signal is generated for the kickers with the delay compensation.
-\item Kicker electronics fire the kickers.
-\end{enumerate}
+
+For the proper B2B transfer, the position of the bunch and bucket and the firing of the extraction and injection kicker must be precisly controlled. Fig.~\ref{ext_inj_kicker} illustrates the $U^{28+}$ B2B transfer from SIS18 to SIS100. Before we explain the requirements of the B2B transfer system, some basic factors and their symbols are introduced.
+
+\begin{itemize}
+\item[-] Bucket pattern ($d_{pattern}$, e.g. $d_{pattern}$ = One SIS18 revolution period. Bucket 3 and 4 will be filled).
+\item[-] Compensation of Time-of-flight (\gls{TOF}). 
+\item[-] Distance between the virtual RF cavity and the extraction/injection position  ($t_{src}$ and $t_{trg}$). 
+\item[-] Extraction and injection kicker delays ($D_{ext}$ and $D_{inj}$).
+\end{itemize}
+
+In Fig.~\ref{ext_inj_kicker}, the SIS18 and SIS100 revolution frequency marker indicate the start of the first bunch and the first bucket. The extraction and injection kicker firing are time delay on the first bars of the SIS100 revolution frequency marker at SIS18 and SIS100, which are called extraction kicker delay and injecton kicker delay. The mentioned four factors are considered on the second bars of the SIS100 revolution frequency marker. After the RF synchronization, the phase difference between the SIS18 and the SIS100 revolution frequency markers equals to the sum of $t_{src}$, $t_{trg}$ and TOF.   
+\begin{itemize}
+\item Extraction kick
+
+For the injection of the bucket 3 and 4, the extraction kicker delay for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18}$, see \textcircled{1} at the SIS100 revolution frequency marker at SIS18. The extraction kicker must be fired TOF time eariler as the bucket passes the virtual RF cavity, so the extraction kicker delay is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - TOF$, see \textcircled{2}. The extraction kicker must be fired $t_{trg}$ time eariler as the bucket passes the virtual RF cavity, so the extraction kicker delay is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - TOF - t_{trg}$, see \textcircled{3}. The extraction kicker must be fired $D_{ext}$ time eariler for the kicker preparasion, so the extraction kicker delay is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - TOF - t_{trg} - D_{ext}$, see \textcircled{4}.
+
+\item Injection kick
+
+For the injection of the bucket 3 and 4, the injection kicker delay for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18}$, see \textcircled{1} at the SIS100 revolution frequency marker at SIS100. The injection kicker  must be fired $t_{trg}$ time eariler as the bucket passes the virtual RF cavity, so the injection kicker delay is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} -  t_{trg}$, see \textcircled{3}. The injection kicker must be fired $D_{inj}$ time eariler for the kicker preparasion, so the injection kicker delay is $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - t_{trg} - D_{inj}$, see \textcircled{4}.
+\end{itemize}
+
+In order to realize the B2B transfer above, we specify how the basic B2B principles are realized for FAIR in Sec. 4.1. The standard procedure is defined and described in Sec. 4.2. The Sec. 4.3 and 4.4 describe the $U^{28+}$ B2B process from SIS18 to SIS100 with both synchronization methods. 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Realization of the basic B2B principles}
+In this section, I will explain how the basic B2B principles are realized based on the FAIR control system and LLRF system.
 Fig.~\ref{Topology} shows the topology of the B2B transfer system.
 \begin{figure}[!htb]
    \centering   
@@ -24,8 +38,158 @@ Fig.~\ref{Topology} shows the topology of the B2B transfer system.
    \caption{The topology of the B2B transfer system}
    \label{Topology}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase difference %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{RF difference between two RF system}
+In order to get the phase difference between two RF systems, we make use of a shared reference signal at both source and target synchrotrons, which is called a Synchronization Reference Signal. It is with the fixed frequency and always in the same phase at two synchrotrons. It is a sine wave, whose frequency is a multiple of the BuTiS T0 \SI{100}{kHz} and whose zero-crossing is aligned with T0 edges in order to ensure the synchronization of the Synchronization Reference Signal in different synchrotrons. Fig.~\ref{phase_prediction} shows the realization of the phase difference between two RF systems. Fig.~\ref{phase_prediction} (a) and (b) illustrate the phase measurement and prediction in the source and target synchrotrons. The red sine waves in Fig.~\ref{phase_prediction} (a) and (b) represents the Synchronization Reference Signals (\SI{100}{kHz}) in two synchrotrons and the black waves the Reference RF signals (\SI{200}{kHz}). The phase difference $\Delta \varphi1$ between the Reference RF Signal and the Synchronization Reference Signal is measured at the source synchrotrons and $\Delta \varphi2$ at the target synchrotron. The phase measurement is performed synchronously to an internal clock, which is represented by the blue dots. Based on a series of the phase difference measurements, the phase difference at T0 edges $\psi1$ and $\psi2$ are predicted in every synchrotron, which is represented by the red diamonds in Fig.~\ref{phase_prediction}. More details about the phase measurement and phase prediction, please see Tibo's thesis. Becasue the phase prediction is synchronized with T0 clocks and the Synchronization Reference Signal's phase is $0^\circ$ aligns at T0 edges, $\psi1$ and $\psi2$ are the phase of the Reference RF Signals. In order to get the phase difference between two rf systems $\psi1$ - $\psi2$, the phase of the target synchrotron is transferred to the source synchrotron. 
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{phase_prediction.jpg}
+   \caption{The realization of the phase difference between two synchrotrons}
+   \label{phase_prediction}
+\end{figure}
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RF synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{RF synchronization}
+The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. 2.1.3.
+\begin{itemize}
+\item RF synchronization with the phase shift method
+
+Eq.~\ref{phase} gives the relation between the required phase shift and the frequency modulation. 
+\begin{equation}
+\Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f(t)dt \label{phase}
+\end{equation}
+The required phase shift is determined by the frequency offset $\Delta f$ and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. 2.1.3.1. We introduce a phase shift of up to $\pm 180^\circ$ in the phase shift for FAIR. With the two criteria, a normalized frequency modulation profile $f_{normalized}$ for $180^\circ$ can be precalculated. The actual frequency modulation profile $f_{actual}$ is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The B2B transfer system for FAIR uses the fixed duration of the frequency modulation. 
+\begin{equation}
+\frac{\Delta\phi}{180^\circ}= \frac{f_{actual}}{f_{normalized}} \label{actual_profile}
+\end{equation}
+
+Fig.~\ref{normalized_profile} shows the normalized and actual frequency modulation profiles and the corresponding phase shift. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green is $1/3f_{normalized}$ with $60^\circ$. The Reference RF Signal is phase shifted by means of either frequency (Fig.~\ref{normalized_profile} (a)) or phase (Fig.~\ref{normalized_profile} (b)) modulation. The phase shifted Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cvities on the synchrotron.
+                       
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{normalized_profile.png}
+   \caption{The normalized frequency modulation profile and the actual profile}
+   \label{normalized_profile}
+\end{figure}  
+
+A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
+
+\item RF synchronization with the frequency beating method
+
+The ratio of the circumference between many pair of machines in FIAR is not a perfect integer, e.g. SIS18 and ESR (injection orbit), SIS100 and CR, CR and HESR. so the RF synchronization is automatically with the frequency beating method. For the pairs with the perfect interger ratio of the circumference, e.g. SIS18 and SIS100, we detune the rf frequency of the source synchrotron by modifying the magnetic field and radial excursion to get the frequency beating.
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bucket label}
+The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter is used for the emergency kick of SIS100. 
+
+\begin{itemize}
+\item Bucket label for the normal extraction and injection
+
+For the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the $U^{28+}$ bucket label of SIS100.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{bucket_label.jpg}
+   \caption{The realization of the bucket label for the normal extraction and injection.}
+   \label{bucket_label}
+\end{figure}  
+\begin{itemize}
+\item[-] Step 1. Frequency correction
+
+A signal with the same frequency as the Reference RF Signal at the flattop of the target synchrotron (e.g. RF revolution frequency of SIS100) is produced, which is called the reproduced signal. For the B2B transfer system for FAIR, the zero-crossing of the reproduced signal alwasys indicates the start of the 1st bucket.
+\item[-] Step 2. Phase correction
+
+For the phase synchronization with the bucket, the bucket label signal must do phase correction at a specified T0 edge.
+
+\item[-] Step 3. Bucket label
+
+The SM manages the bucket pattern with the parameter of $d_{pattern}$ on the reproduced signal. In Fig.~\ref{bucket_label}, the 3rd and 4th buckets will be filled with $d_{pattern}$.
+\end{itemize}
+
+\item Bunch gap label for the emergency extraction
+
+Only for SIS100 emergency procedure, the bunch gap label is important during the whole acceleration cycle. There are two steps for the realization of the bunch gap label, see Fig.~\ref{Emergency_label}.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{Emergency_label.jpg}
+   \caption{The realization of the bunch gap for the emergency extraction.}
+   \label{Emergency_label}
+\end{figure} 
+
+\begin{itemize}
+\item[-] Step 1. The reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal in frequency and phase.
+\item[-] Step 2. Bunch gap label
+
+The SM informs the bunch gap with the parameter of $d_{pattern}$ on the reproduced signal during the whole acceleration cycle. In Fig.~\ref{Emergency_label}, the 9th and 10th buckets services as the bunch gap. The $d_{pattern}$ is with variable value, which is preloaded from the SM and applied to the reproduced signal on T0 edges.
+
+\end{itemize}
+
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Functional blocks and responsibilities}
+\subsection{Synchronization of the extraction and injection kicker}
+For the normal B2B extraction/injection, the synchronization window is a gating signal, within which the first reproduced signal will be selected. The extration and injection kicker are synchronized with the bunch and bucket by the extration and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} -TOF - t_{trg} - D_{ext}$ and the injection kicker will be triggered by the injection kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - t_{trg} - D_{inj}$, see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are provided by the SM. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
+
+For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{h=1}^{SIS100} + d_{pattern} - t_{emg} - D_{emg}$. $t_{emg}$ is the distance between the virtual RF cavity and the emergency extraction position and $D_{emg}$ the emergency kicker delay.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Beam indication for the beam instrumentation}
+
+Two timing frames will be send from the source synchrotron to the DM.
+\begin{itemize}
+\item[-] Timing frame $TGM\_SYNCH\_WIN$
+
+This time frame indicates the start of the synchronization window for the beam instrumentation.
+
+\item[-] Timing frame $TGM\_B2B\_STATUS$
+
+The source synchrotron is responsible for examining the status of the B2B transfer system and transferring the status and the actual beam injection time to the DM by $TGM\_B2B\_STATUS$. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, The source synchrotron shall do simple checking based on the extraction/injection trigger time, the actual beam extraction/injection kick time. E.g. Source trigger time $<$ actual beam extraction time.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
+\section{Basic procedure of the B2B transfer system for FAIR}
+Fig.~\ref{2method} illustrates the basic prodedure of the B2B transfer with two different synchronization scenarios. The top part shows the chronological steps with the frequency beating method, while the bottom part shows the steps with the phase shift method. The emergency kickers can be triggered at any time during the acceleration cycle by the MPS. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kicker. 
+
+The B2B transfer process basically needs to follow six steps:
+\begin{enumerate}
+\item The DM announces the B2B transfer and freezes the beam-phase loop, when required.
+\item The two synchrotrons measure the rf phase locally.
+\item The source synchrotron gathers the measured rf phase from the target synchrotron.
+\item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
+For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved at the target synchrotron.
+\item The trigger signal is generated for the kickers with the delay compensation.
+\item The kicker electronics fire the kickers.
+\end{enumerate}
+
+\begin{figure}[H]
+   \centering   
+   \includegraphics*[width=185mm]{2method.jpg}
+   \caption{The procedure for the B2B transfer within one acceleration cycle. Shown are the frequency beating method (blue, top) and the phase shift method (green, bottom).}
+   \label{2method}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Description of the $U^{28+}$ B2B process from SIS18 to SIS100 with the phase shift method}
+Here the $U^{28+}$ at \SI{200}{meV/\atomicmassunit} B2B transfer from SIS18 to SIS100 will be described in detail. Fig.~\ref{18to100Phase} shows one SIS18 $U^{28+}$ super cycle. It consists of four SIS18 cycles. Each cycle produces two bunches. From SIS18, four cycles of the $U^{28+}$, each of two bunches, are injected into eight out of ten buckets of SIS100. In each SIS18 cycle, the beam is accelerated to the top energy after injection. At the RF flattop, the synchronization is implemented with the phase shift method by modulating rf frequency. 
+The ratio of the SIS100 circumference to the SIS18 circumference is 5. The harmonic number for SIS100 is 10 and for SIS18 is 2. At the flattop, the RF cavity frequency of SIS18 is \SI{1.572}{MHz} as that of SIS100, so the phase difference between two RF signals is almost constant. To perform the B2B transfer, this phase difference must be corrected to compensate for the required phase difference by phase shift. The frequency ramp at the start and end of the SIS18 frequency modulation must be performed adiabatically. Here we use a parabola rf frequency modulation, more details please see Sec. 5.1.1.  Then the time for a phase shift of  $180^\circ$ is \SI{7}{\ms}.
+\begin{figure}[H]
+   \centering   
+   \includegraphics*[width=160mm]{18to100Phase.png}
+   \caption{The B2B transfer inside one SIS18 $U^{28+}$ Super Cycle with the phase shift method.}
+   \label{18to100Phase}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Description of the $U^{28+}$ B2B process from SIS18 to SIS100 with the frequency beating method}
+For the frequency beating method of the $U^{28+}$ at \SI{200}{meV/\atomicmassunit} B2B transfer from SIS18 to SIS100, we assume to detune \SI{200}{Hz} for the SIS18 rf signal during the acceleration ramp. The beating frequency is \SI{200}{Hz} and the synchronization period is \SI{5}{\ms}.
+
+Fig.~\ref{18to100freq} illustrates the standard synchronization process with the frequency beating method. In order to guarantee that eight sequential buckets will be filled by eight bunches.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{18to100freq.png}
+   \caption{The B2B transfer inside one SIS18 $U^{28+}$ Super Cycle with the frequency beating method.}
+   \label{18to100freq}
+\end{figure}

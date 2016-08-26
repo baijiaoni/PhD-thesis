@@ -3,3 +3,41 @@
 \section{Fine synchronization}
 
 
+After the synchronization, the bunch is synchronized to an arbitrary RF bucket. For the proper injection, we must know which buckets are already filled and which buckets should be filled by next injection cycle. So a reproduced signal at the target revolution frequency is used as the bucket marker, which labels bucket 1 of the target synchrotron. The SM knows the bucket pattern and a proper bucket offset will be applied on each injection cycle to the bucket marker. 
+Fast extraction can only proceed when the required bucket comes. The extraction must be correctly synchronized with respect to a reference signal at the following frequency, which is called bucket marker.
+
+\subsection{Synchronization of the extraction and injection kicker}
+
+ Because the beam of two rings are synchronized with each other, the extraction and injection are synchronized indirectly. Thyratrons are used for kicker systems at FAIR accelerator.
+
+For FAIR project, there are several different type of kicker system. Here we introduce SIS18 extraction, SIS100 injection and extracion/emergency kicker system.
+
+The SIS100 extraction kicker system is used for the regular extraction and the emergency extraction by bipolar operation. It consists of eight kicker magnets. Each magnet is placed between the two cable capacitors. Both cable capacitors will be charged at the same time with a high voltage DC power supply. The polarity of the magnetic field changes with the direction of the discharge current, which are controled by two thyratron switches. One polarity directs the beam into the extraction channel, the other polarity directs the beam into an underground beam dump for an emergency case. The system produces rectangular pulses with different polarities of the kicker field.
+
+The SIS18 extraction and SIS100 injection kicker have the monopolar operation. Two cable capacitors will be charged at the same time with a high voltage DC power supply. By closing the main switch the capacitor is being discharged via the kicker magnet, which produces a rectangular kicker pulse. The pulse length can be modified by closing the dump switch in correlation with the main switch. 
+
+Fig.~\ref{syc_ext_inj} shows the synchronization of the SIS18 extraction and SIS100 injection kicker for $U^{28+}$ B2B transfer. Four batches of $U^{28+}$ at 200 MeV/u are injected into eight out of ten buckets of SIS100. Each batch consists of two bunches. The 9th and 10th bucket may be used as bunch gap for the emergency kick. The SIS18 revolution frequency marker and SIS100 bucket markers represent time when the SIS18 bunch 1 (1st) and SIS100 bucket 1 ($\sharp$1) passes by the virtual RF cavity, which is a virtual position in the synchrotron to which the Reference RF Signal corresponds. In Fig.~\ref{syc_ext_inj}, the numbers correspond to the
+consideration of following factors for the synchronization:
+\begin{itemize}
+\item Bucket pattern ($delay_{bucket}$. E.g. $delay_{bucket}$ = One SIS18 revolution period. Bucket 3 and 4 will be filled)
+\item Compensation of Time-of-flight (TOF)
+\item Distance between the virtual RF cavity and the extraction/injection position ($t_{src}$ and $t_{trg}$).
+\item Extraction and injection kicker delays ($D_{ext}$ and $D_{inj}$)
+\end{itemize}
+After the synchronization, the phase difference between the SIS18 and the SIS100 revolution frequency markers equals to the sum of tsrc, ttrg and TOF. The extraction kicker will be triggered by the extraction kick delay compensation, Th=1SIS1 00 +
+Th=1SIS18 -TOF - ttrg - Dext and the injection kicker will be triggered by the injection kick
+delay compensation, Th=1SIS1 00 + Th=1SIS1 8 - ttrg - Dinj. See Fig. 9. Both extraction and
+injection kick delay compensation values are provided by the SM.
+ 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{syc_ext_inj.jpg}
+   \caption{Synchronization of the SIS18 extraction and SIS100 injection kicker}
+   \label{syc_ext_inj}
+\end{figure}
+
+\subsection{Beam indication for the beam instrumentation}
+
+For the beam instrumentation system at FAIR, the data acquisition is at a sampling rate of 1GS/s and the upper bound sampling time is 100us. 
+
+The beginning of the synchronizaiton window is used for the pre-trigger. 
