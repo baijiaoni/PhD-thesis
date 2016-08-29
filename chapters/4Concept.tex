@@ -91,8 +91,13 @@ A particular case of the B2B synchronization occurs, when the target synchrotron
 The ratio of the circumference between many pair of machines in FIAR is not a perfect integer, e.g. SIS18 and ESR (injection orbit), SIS100 and CR, CR and HESR. so the RF synchronization is automatically with the frequency beating method. For the pairs with the perfect interger ratio of the circumference, e.g. SIS18 and SIS100, we detune the rf frequency of the source synchrotron by modifying the magnetic field and radial excursion to get the frequency beating.
 
 \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Calculation%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{WR network}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WR network %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{WR network}
+
+The B2B related timing fames are transferred via the WR network between different B2B related SCUs. More details about the B2B timing frames, please see Appendix A.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Status check %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{B2B transfer status check}
 The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
@@ -126,10 +131,10 @@ For the bucket label for the normal extraction and injection, three steps are ne
 \begin{itemize}
 \item[-] Step 1. Frequency correction
 
-A signal with the same frequency as the Reference RF Signal at the flattop of the target synchrotron (e.g. RF revolution frequency of SIS100) is produced, which is called the reproduced signal. For the B2B transfer system for FAIR, the zero-crossing of the reproduced signal alwasys indicates the start of the 1st bucket.
+A signal with the same frequency as the Reference RF Signal at the flattop of the target synchrotron (e.g. RF revolution frequency of SIS100) is produced by the Signal Reproduction \gls{SR module}, which is called the reproduced signal. For the B2B transfer system for FAIR, the zero-crossing of the reproduced signal alwasys indicates the start of the 1st bucket.
 \item[-] Step 2. Phase correction
 
-For the phase synchronization with the bucket, the bucket label signal must do phase correction at a specified T0 edge.
+For the phase synchronization with the bucket, the bucket label signal must do phase correction at a specified T0 edge. The phase correction value, $\psi1 - \psi2$, is calculated by the B2B source SCU and transferred by the timing frame TGM\_PHASE\_CORRECTION to the \gls{glos:trigger_scu}. Than the Trigger SCU gives the phase correction value to the SR module.
 
 \item[-] Step 3. Bucket label
 
@@ -158,15 +163,15 @@ The SM informs the bunch gap with the parameter of $d_{pattern}$ on the reproduc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Synchronization of the extraction and injection kicker}
-For the normal B2B extraction/injection, the synchronization window is a gating signal, within which the first reproduced signal will be selected. The extration and injection kicker are synchronized with the bunch and bucket by the extration and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} -TOF - t_{trg} - D_{ext}$ and the injection kicker will be triggered by the injection kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - t_{trg} - D_{inj}$, see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are provided by the SM. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
+For the normal B2B extraction/injection, the synchronization window is a gating signal, within which the first reproduced signal will be selected by the Trigger Decision (\gls{TD}) moudle. The extration and injection kicker are synchronized with the bunch and bucket by the extration and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} -\gls{TOF} - t_{trg} -$ \gls{symb:ext_pre} and the injection kicker will be triggered by the injection kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - t_{trg} -$ \gls{symb:inj_pre}, see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the Trigger SCU. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
 
-For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{h=1}^{SIS100} + d_{pattern} - t_{emg} - D_{emg}$. $t_{emg}$ is the distance between the virtual RF cavity and the emergency extraction position and $D_{emg}$ the emergency kicker delay.
+For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{h=1}^{SIS100} + d_{pattern} - t_{emg} - D_{emg}$. $t_{emg}$ is the distance between the virtual RF cavity and the emergency extraction position and $D_{emg}$ the emergency kicker delay. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the Trigger SCU. When the emergency signal is low, the emergency kicker will be triggered by the TD module.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Beam indication for the beam instrumentation}
 
-Two timing frames will be send from the source synchrotron to the DM.
+Two timing frames will be send from the B2B source SCU to the DM.
 \begin{itemize}
 \item[-] Timing frame $TGM\_SYNCH\_WIN$
 
@@ -174,7 +179,7 @@ This time frame indicates the start of the synchronization window for the beam i
 
 \item[-] Timing frame $TGM\_B2B\_STATUS$
 
-The source synchrotron is responsible for examining the status of the B2B transfer system and transferring the status and the actual beam injection time to the DM by $TGM\_B2B\_STATUS$. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, The source synchrotron shall do simple checking based on the extraction/injection trigger time, the actual beam extraction/injection kick time. E.g. Source trigger time $<$ actual beam extraction time.
+The time frame $TGM\_B2B\_STATUS$ indicates the status of the B2B transfer system and the actual beam injection time. 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
