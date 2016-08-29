@@ -39,8 +39,8 @@ Fig.~\ref{Topology} shows the topology of the B2B transfer system.
    \label{Topology}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase difference %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{RF difference between two RF system}
-In order to get the phase difference between two RF systems, we make use of a shared reference signal at both source and target synchrotrons, which is called a Synchronization Reference Signal. It is with the fixed frequency and always in the same phase at two synchrotrons. It is a sine wave, whose frequency is a multiple of the BuTiS T0 \SI{100}{kHz} and whose zero-crossing is aligned with T0 edges in order to ensure the synchronization of the Synchronization Reference Signal in different synchrotrons. Fig.~\ref{phase_prediction} shows the realization of the phase difference between two RF systems. Fig.~\ref{phase_prediction} (a) and (b) illustrate the phase measurement and prediction in the source and target synchrotrons. The red sine waves in Fig.~\ref{phase_prediction} (a) and (b) represents the Synchronization Reference Signals (\SI{100}{kHz}) in two synchrotrons and the black waves the Reference RF signals (\SI{200}{kHz}). The phase difference $\Delta \varphi1$ between the Reference RF Signal and the Synchronization Reference Signal is measured at the source synchrotrons and $\Delta \varphi2$ at the target synchrotron. The phase measurement is performed synchronously to an internal clock, which is represented by the blue dots. Based on a series of the phase difference measurements, the phase difference at T0 edges $\psi1$ and $\psi2$ are predicted in every synchrotron, which is represented by the red diamonds in Fig.~\ref{phase_prediction}. More details about the phase measurement and phase prediction, please see Tibo's thesis. Becasue the phase prediction is synchronized with T0 clocks and the Synchronization Reference Signal's phase is $0^\circ$ aligns at T0 edges, $\psi1$ and $\psi2$ are the phase of the Reference RF Signals. In order to get the phase difference between two rf systems $\psi1$ - $\psi2$, the phase of the target synchrotron is transferred to the source synchrotron. 
+\subsection{RF phase difference between two RF system}
+In order to get the phase difference between two RF systems, we make use of a shared reference signal at both source and target synchrotrons, which is called a \gls{glos:Syn_ref_signal}. It is with the fixed frequency and always in the same phase at two synchrotrons. It is a sine wave, whose frequency is a multiple of the BuTiS T0 \SI{100}{kHz} and whose zero-crossing is aligned with T0 edges in order to ensure the synchronization of the Synchronization Reference Signal in different synchrotrons. Fig.~\ref{phase_prediction} shows the realization of the phase difference between two RF systems. Fig.~\ref{phase_prediction} (a) and (b) illustrate the phase measurement and prediction in the source and target synchrotrons. The red sine waves in Fig.~\ref{phase_prediction} (a) and (b) represents the Synchronization Reference Signals (\SI{100}{kHz}) in two synchrotrons and the black waves the Reference RF signals (e.g. \SI{200}{kHz}) from the \gls{glos:group_DDS}. The phase difference $\Delta \varphi1$ between the Reference RF Signal and the Synchronization Reference Signal is measured by the Phase Advance Measurement (\gls{PAM}) Module at the source synchrotrons and $\Delta \varphi2$ at the target synchrotron. The phase measurement is performed synchronously to an internal clock, which is represented by the blue dots. Based on a series of the phase difference measurements, the phase difference at any T0 edge $\psi1$ and $\psi2$ could be predicted in every synchrotron by the Phase Advance Prediction (\gls{PAP}) Module, which is represented by the red diamonds in Fig.~\ref{phase_prediction}. For more details about the implementation and realization of the PAP and PAM modules, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR``. Becasue the phase prediction is synchronized with T0 clocks and the Synchronization Reference Signal's phase is $0^\circ$ at T0 edges, $\psi1$ and $\psi2$ are the phase of the Reference RF Signals. In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, the phase of the target synchrotron is transferred by the \gls{B2B_t_SCU} to the \gls{B2B_s_SCU} at the source synchrotron via the WR network. The B2B source and target SCUs are installed in the source and target synchrotrons locally. The transfer of the phase is by the \gls{glos:timing_frame} TGM\_PHASE\_TIME, see Appendix A.
 
 \begin{figure}[!htb]
    \centering   
@@ -49,7 +49,15 @@ In order to get the phase difference between two RF systems, we make use of a sh
    \label{phase_prediction}
 \end{figure}
 
- 
+ %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Rf phase difference synchronous to the absolute timestamp}
+Both B2B source and target SCUs coud get the timestamp of every BuTiS T0 edge. When they receive the timing frame CMD\_START\_B2B at T0 edge, they need maximum \SI{1}{\us} to inform the PAP modules to start the phase prediction respectively. The PAP modules use e.g. \SI{500}{\us} for the prediction and updates the predicted phase every T0 edge. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the predicted phase from the PAP modules and they also get the BuTiS T0 edge timestamp which corresponds to the predicted phase. Then the rf phase difference between two rf systems and the corresponding timestamp are known. Fig.~\ref{phase_diff_syn_time} shows the synchronization of the rf phase difference to the timestamp.
+ \begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{phase_diff_syn_time.jpg}
+   \caption{The synchronization of the rf phase difference to the timestamp}
+   \label{phase_diff_syn_time}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RF synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RF synchronization}
 The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. 2.1.3.
@@ -60,12 +68,14 @@ Eq.~\ref{phase} gives the relation between the required phase shift and the freq
 \begin{equation}
 \Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f(t)dt \label{phase}
 \end{equation}
-The required phase shift is determined by the frequency offset $\Delta f$ and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. 2.1.3.1. We introduce a phase shift of up to $\pm 180^\circ$ in the phase shift for FAIR. With the two criteria, a normalized frequency modulation profile $f_{normalized}$ for $180^\circ$ can be precalculated. The actual frequency modulation profile $f_{actual}$ is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The B2B transfer system for FAIR uses the fixed duration of the frequency modulation. 
+The required phase shift is determined by the frequency offset $\Delta f$ and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. 2.1.3.1. We introduce a phase shift of up to $\pm 180^\circ$ in the phase shift for FAIR. With the two criteria, a normalized frequency modulation profile \gls{symb:phase_shift_actual} for $180^\circ$ can be precalculated. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The required phase shift, $\psi1$ - $\psi2$ - ($t_{src}$+TOF+$t_{trg}$)$\pm$ $180^\circ$, is calculated by the B2B source SCU.
 \begin{equation}
-\frac{\Delta\phi}{180^\circ}= \frac{f_{actual}}{f_{normalized}} \label{actual_profile}
+\frac{\psi1 - \psi2 - (t_{src}+TOF+t_{trg})\pm 180^\circ}{180^\circ}= \frac{f_{actual}}{f_{normalized}} \label{actual_profile}
 \end{equation}
 
-Fig.~\ref{normalized_profile} shows the normalized and actual frequency modulation profiles and the corresponding phase shift. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green is $1/3f_{normalized}$ with $60^\circ$. The Reference RF Signal is phase shifted by means of either frequency (Fig.~\ref{normalized_profile} (a)) or phase (Fig.~\ref{normalized_profile} (b)) modulation. The phase shifted Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cvities on the synchrotron.
+Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency modulation profiles and the corresponding phase shift. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green is $1/3f_{normalized}$ with $60^\circ$. 
+
+The B2B source SCU sends the required phase shift to the Phase Shift Module (\gls{PSM}), which controls the phase shift of the Reference RF Signal of Group DDS by means of either frequency (Fig.~\ref{normalized_profile} (a)) or phase (Fig.~\ref{normalized_profile} (b)) modulation. The Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cvities on the synchrotron. For more details about the implementation and realization of the PSM modules, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR``.
                        
 \begin{figure}[!htb]
    \centering   
@@ -74,14 +84,31 @@ Fig.~\ref{normalized_profile} shows the normalized and actual frequency modulati
    \label{normalized_profile}
 \end{figure}  
 
-A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
+A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible). In this case, the B2B source SCU sends the timing frame TGM\_PHASE\_JUMP to the B2B target SCU, which contains the required phase jump. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS of the target synchrotron. 
 
 \item RF synchronization with the frequency beating method
 
 The ratio of the circumference between many pair of machines in FIAR is not a perfect integer, e.g. SIS18 and ESR (injection orbit), SIS100 and CR, CR and HESR. so the RF synchronization is automatically with the frequency beating method. For the pairs with the perfect interger ratio of the circumference, e.g. SIS18 and SIS100, we detune the rf frequency of the source synchrotron by modifying the magnetic field and radial excursion to get the frequency beating.
 
-
 \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WR network %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{WR network}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Status check %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{B2B transfer status check}
+The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
+
+
+% For each beam production chain, the B2B related SCUs will be configured by FESA.
+
+
+%It is capable of receiving the values (kicker delay for extraction kicker of the source synchrotron, kicker delay for injection kicker of the target synchrotron, time-of-flight, rf frequencies of the source and target synchrotrons, the upper bound time for the phase shift of the source synchrotron) from the SM by FESA classes via the accelerator network (see Appendix 3).
+%It calculates the synchronization window, taking kicker delays into consideration and transfers the beginning timestamp of the synchronization window (TGM_SYNCH_WIN) to the DM and the source and target Trigger SCUs via the WR network. The TGM_SYNCH_WIN could also be used for the triggering of the bunch rotation of both machines (e.g. SIS100 and CR) with a specified advance. 
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bucket label}
 The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter is used for the emergency kick of SIS100. 
