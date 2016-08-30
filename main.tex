@@ -305,7 +305,7 @@ sort=symbollambda, type=symbolslist
 name=$f_{actual}$ ,
 description={Actual rf freqnecy modulation profile},
 sort=symbollambda, type=symbolslist
-} v
+} 
 \newglossaryentry{symb:phase_shift_normalized}{
 name=$f_{normalized}$ ,
 description={Normalized rf freqnecy modulation profile},
@@ -319,6 +319,31 @@ sort=symbollambda, type=symbolslist
 \newglossaryentry{symb:inj_pre}{
 name=$D_{inj}$ ,
 description={Rising time of the injection kicker of SIS100},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:bucket_pattern}{
+name=$d_{pattern}$ ,
+description={Delay compensation for the specified bucket pattern},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:tsrc}{
+name=$t_{src}$,
+description={Delay compensation between the virtual cavity and the extraction position},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:ttrg}{
+name=$t_{trg}$,
+description={Delay compensation between the virtual cavity and the injection position},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:temg}{
+name=$t_{emg}$,
+description={Delay compensation between the virtual RF cavity and the emergency extraction position},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:Demg}{
+name=$D_{emg}$,
+description={Rising time of the extraction kicker of SIS100},
 sort=symbollambda, type=symbolslist
 }
 %Befehle für Abbreviation
@@ -426,10 +451,6 @@ description={Heavy Ion Synchrotron - SchwerIonen Synchrotron (18 Tm magnetic rig
 name={SIS100},
 description={Heavy Ion Synchrotron - SchwerIonen Synchrotron (100 Tm magnetic rigidity)},type=abbreslist
 }
-\newglossaryentry{TOF}{
-name={TOF},
-description={Time-of-flight},type=abbreslist
-}
 \newglossaryentry{VLAN}{
 name={VLAN},
 description={Virtual Local Area Network},type=abbreslist
@@ -466,14 +487,6 @@ description={Central Processing Unit},type=abbreslist
 name={PAP},
 description={Phase Advance Prediction},type=abbreslist
 }
-\newglossaryentry{B2B_s_SCU}{
-name={B2B source SCU},
-description={Bunch-to-Bucket source Scalable Control Unit},type=abbreslist
-}
-\newglossaryentry{B2B_t_SCU}{
-name={B2B target SCU},
-description={Bunch-to-Bucket target Scalable Control Unit},type=abbreslist
-}
 
 \newglossaryentry{PSM}{
 name={PSM},
@@ -491,6 +504,18 @@ description={Signal Reproduction},type=abbreslist
 name={TD},
 description={Trigger Decision},type=abbreslist
 }
+\newglossaryentry{FID}{
+name={FID},
+description={Format ID},type=abbreslist
+}
+\newglossaryentry{GID}{
+name={GID},
+description={Group ID},type=abbreslist
+}
+\newglossaryentry{BPID}{
+name={BPID},
+description={Beam Process ID},type=abbreslist
+}
 
 
 %Befehle für Glossary
@@ -506,7 +531,7 @@ name={Group DDS},
 description={DDS module that generates an Reference RF Signal for a group of cavities}
 }
 \newglossaryentry{glos:timing_frame}{
-name={Timing frame},
+name={timing frame},
 description={A specified ethernet frame with 110 byte frame length, which contains one or more timing message}
 }
 
@@ -528,7 +553,7 @@ description={Closeness of agreement between the actual start of the synchronizat
 name={trueness},
 description={Closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window}
 }
-\newglossaryentry{glos:Frame_loss_rate}{
+\newglossaryentry{glos:frame_loss_rate}{
 name={Frame loss rate},
 description={The ratio of the number of the lost frames to the number of the theoretic received frames of a tested port}
 }
@@ -543,15 +568,24 @@ description={The absolute value of the difference between the latency of two con
 
 \newglossaryentry{glos:broadcast}{
 name={broadcast},
-description={-------------------------------------}
+description={The frame is intended to be received and processed by every timing node on the WR network}
 }
 \newglossaryentry{glos:unicast}{
 name={unicast},
-description={-------------------------------------}
+description={The frame is intended to be received and processed by a specified timing node on the WR network}
 }
 \newglossaryentry{glos:trigger_scu}{
 name={Trigger SCU},
 description={Production of the trigger signal for kicker electronics}
+}
+
+\newglossaryentry{glos:B2B_s_SCU}{
+name={B2B source SCU},
+description={B2B master: data collection, calculation and distribution for the B2B transfer system}
+}
+\newglossaryentry{glos:B2B_t_SCU}{
+name={B2B target SCU},
+description={Collection the predicted phase of the target synchrotron and transfer it to the source synchrotron}
 }
 
 \lstset{tabsize=4, %
