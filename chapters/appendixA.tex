@@ -1,25 +1,45 @@
-\section{B2B frames}
+\section{B2B timing frames}
+\begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{frames for the B2B transfer system}
+\caption{B2B timing frames}
 \label{requirement}
 \begin{center}
-    \begin{tabular}{ | c | c | c | c | c | c | c | c | c |}
+    \begin{tabular}{ | c | c | c | c | c | c |}
     \hline
-     	No & Fram Name & Event ID & Priority & Source & Destination & Content & Discription \\ \hline
-1&	CMD\_START\_B2B&	&7&	DM&	Source and target B2B SCU&	64 bits timestamp &Begin of the B2B transfer process\\ \hline
-2&	TGM\_PHASE\_TIME&	&6&	Target B2B SCU&	Source B2B SCU&	16 bits phase advance and 64 bits slop&	Transfer of the phase advance and the slop \\ \hline
-3&	TGM\_SYNCH\_WIN&	&6	&Source B2B SCU&DM, source and target Trigger SCUs	&64 bits timestamp	&Indication the start of the synchronization window\\ \hline
-4&	TGM\_PHASE\_CORRECTION&&6&	Source B2B SCU&	Source Trigger SCU	&16 bits phase correction&	Target revolution frequency reproduction\\ \hline
-5&	TGM\_KICKER\_TRIGGER\_TIME\_S&&6&Source Trigger SCU	&Source B2B SCU&	64 bits timestamp&	The time of extraction trigger signal\\ \hline
-6&	TGM\_KICKER\_TRIGGER\_TIME\_T&	&6&	Target Trigger SCU&	Source B2B SCU&	64 bits timestamp&	The time of the injection trigger signal\\ \hline
-7&	TGM\_KICK\_EXE\_S&	&			6&Source Kicker SCU&Source B2B SCU&	64 bits timestamp& 	Actual beam extraction time \\ \hline
-8&	TGM\_KICK\_EXE\_T&	&			6&	Target Kicker SCU&	Source B2B SCU	&64 bits timestamp	&Actual beam injection time \\ \hline
-9&	TGM\_B2B\_STATUS&&6	&Source B2B SCU&	DM	&64 bits timestamp + 1 bit&	The actual beam extraction time and the status of the B2B system  \\ \hline
-10&	CMD\_SYNCH\_WIN&	&7&	DM&	Beam Instrumentation (BI)&64 bits timestamp&	Indication the start of the synchronization window\\ \hline
-11&	CMD\_KICK\_TIME\_S&	&7	&	DM	&BI	64 bits timestamp + 1 bit	&	The actual beam extraction time and  the status of the B2B system \\ \hline
-12	&	TGM\_PHASE\_JUMP&&6&Source B2B SCU&Target B2B SCU&16 bits the expected jumped phase&	Indication the jumped phase for the empty target machine\\ \hline
+\rowcolor[gray]{0.5}
+     	No & Fram Name & Event ID & Priority & Source & Destination \\ \hline
+1&	CMD\_START\_B2B&	&7&	DM&	Source and B2B target SCU\\ \hline
+2&	TGM\_PHASE\_TIME&	&6&	B2B target SCU&	B2B source SCU	\\ \hline
+3&	TGM\_SYNCH\_WIN&	&6	&B2B source SCU&DM, source and target Trigger SCUs	\\ \hline
+4&	CMD\_SYNCH\_WIN&	&7&	DM&	Beam Instrumentation (BI)\\ \hline
+5	&	TGM\_PHASE\_JUMP&&6&B2B source SCU&B2B target SCU\\ \hline
+6&	TGM\_PHASE\_CORRECTION&&6&	B2B source SCU&	Source Trigger SCU	\\ \hline
+
+7&	TGM\_KICKER\_TRIGGER\_TIME\_S&&6&Source Trigger SCU	&B2B source SCU\\ \hline
+8&	TGM\_KICKER\_TRIGGER\_TIME\_T&	&6&	Target Trigger SCU&	B2B source SCU\\ \hline
+
+9&	TGM\_B2B\_STATUS&&6	&B2B source SCU&	DM	\\ \hline
+
+10&	CMD\_B2B\_STATUS&	&7	&	DM	&BI \\ \hline
+
+\rowcolor[gray]{0.5}
+No&	\multicolumn{3}{c|}{Content}&\multicolumn{2}{c|}{Discription}\\ \hline
+1&	\multicolumn{3}{c|}{64 bits timestamp} &\multicolumn{2}{c|}{Begin of the B2B transfer process}\\ \hline
+2&	\multicolumn{3}{c|}{16 bits phase advance and 64 bits slop}&	\multicolumn{2}{c|}{Transfer of the phase advance and the slop} \\ \hline
+3&	\multicolumn{3}{c|}{64 bits timestamp}	&\multicolumn{2}{c|}{Indication the start of the synchronization window}\\ \hline
+4&	\multicolumn{3}{c|}{64 bits timestamp} &	\multicolumn{2}{c|}{Indication the start of the synchronization window}\\ \hline
+5&	\multicolumn{3}{c|}{16 bits the expected jumped phase} &	\multicolumn{2}{c|}{Indication the jumped phase for the empty target machine}\\ \hline
+6&	\multicolumn{3}{c|}{16 bits phase correction} &	\multicolumn{2}{c|}{Target revolution frequency reproduction}\\ \hline
+
+7&	\multicolumn{3}{c|}{2 $\times$ 64 bits timestamp} &\multicolumn{2}{c|}{ Timestamps of trigger and firing of extraction kicker}\\ \hline
+8&	\multicolumn{3}{c|}{2 $\times$ 64 bits timestamp} &	\multicolumn{2}{c|}{Timestamps of trigger and firing of injection kicker}\\ \hline
+
+9&	\multicolumn{3}{c|}{64 bits timestamp + 1 bit}&	\multicolumn{2}{c|}{The actual beam extraction time and the status of the B2B system}  \\ \hline
+
+10& \multicolumn{3}{c|}{64 bits timestamp + 1 bit}	&	\multicolumn{2}{c|}{The actual beam extraction time and the status of the B2B system} \\ \hline
 
     \end{tabular}
 \end{center}
 \end{table}
+\end{landscape} 

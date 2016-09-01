@@ -71,13 +71,13 @@ Case (3)
 \end{eqnarray}
 
 Case (4) 
-\begin{eqnarray}\Delta f_{rf}(t)=
+\begin{eqnarray}\Delta f_{rf}(t)= \frac{20}{21}\times
 \begin{cases}
 30Hz/ms^2 \times (t-t_0)^2 &t_0+0<t\le t_0+1ms\cr  
 30Hz + 60Hz/ms\times (t-t_0 -1ms) &t_0+1ms<t\le t_0+2.5ms\cr 
-30Hz/ms^2 \times [5ms-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
-30Hz + 60Hz/ms\times (6ms-t-t_0) &t_0+4.5ms<t\le t_0+6ms\cr  
-30Hz/ms^2 \times [7ms-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
+30Hz/ms^2 \times [5ms^2-(t-t_0-3.5ms)^2] &t_0+2.5ms<t\le t_0+4.5ms\cr  
+30Hz + 60Hz/ms\times [6ms-(t-t_0)] &t_0+4.5ms<t\le t_0+6ms\cr  
+30Hz/ms^2 \times [7ms^2-(t-t_0)]^2 &t_0+6ms<t\le t_0+7ms\cr  
 \end{cases}
 \end{eqnarray}
 
@@ -158,7 +158,7 @@ Tab. \ref{momentum excursion} shows the maximum relative momentum shift and the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Synchronous phase
 
-The rf frequency modulations make the synchronous phase deviate from the nominal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase, $\Delta \phi_s$ (t). It is calculated by substituting values into eq.~\ref{eq:delta_phase}. For case (1), the phase jumps in \gls{symb:syn_phase} appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous. The phase jumps endanger the beam stability. From the view point of the synchronous phase, four cases of rf frequency modulations are available.
+The rf frequency modulations make the synchronous phase deviate from the nominal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase, $\Delta \phi_s$ (t). It is calculated by substituting values into eq.~\ref{eq:delta_phase}. For case (1), the phase jumps in \gls{symb:syn_phase} appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous. The phase jumps endanger the beam stability. Hence, only case (3) and (4) are applicable.
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{synch_phase.png}
@@ -196,12 +196,12 @@ Tab. \ref{bucket size} shows the minimum bucket area factor for four cases. For 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \item Adiabaticity
 
-By substituting the values of $d\Delta \phi_s(t)/dt$ obtained from Fig.~\ref{synch_phase} and the other appropriate values into eq.~\ref{?}, we can calculate the adiabaticity parameter, $\varepsilon$, for the case (3) and (4), see Fig.~\ref{adiabaticity2}. For the case (1) and (2), however, we cannot calculate $d\Delta \phi_s(t)/dt$ from $d\Delta \phi_s(t)$  shown in Fig.~\ref{synch_phase}, because $d\Delta \phi_s(t)$ changes discontinuously. 
+By substituting the values of $d\Delta \phi_s(t)/dt$ obtained from Fig.~\ref{synch_phase} and the other appropriate values into eq.~\ref{eq:derivation}, we can calculate the adiabaticity parameter, $\varepsilon$, for the case (3) and (4), see Fig.~\ref{adiabaticity2}.  Because $d\Delta \phi_s(t)$ changes discontinuously for case (1) and (2), this abrupt change gives rise to a coherent bunch oscillation at a synchrotron frequency, resulting in emittance dilution. So the rf frequency modulations of case (1) and (2) are not applicable.
 
-For case (4), the maximum of \gls{symb:adia}, 0.000059, occurs at 1ms, 2.5ms, 4.5ms and 6ms. Form Fig.~\ref{synch_phase}, we could see the change of the synchronous phase $d\Delta \phi_s(t)/dt$  is big but smoothly at these time points. For case (3), the maximum of $\varepsilon$ is 0.000030. So the frequency modulation is adiabatical for case (3) and (4).
+For case (4), the maximum of \gls{symb:adia}, 0.000059, occurs at 1ms, 2.5ms, 4.5ms and 6ms. From Fig.~\ref{synch_phase}, we could see the change of the synchronous phase $d\Delta \phi_s(t)/dt$  is big but smoothly at these time points. For case (3), the maximum of $\varepsilon$ is 0.000030. So the frequency modulation is adiabatical for case (3) and (4).
 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{adiabaticity2.png}
    \caption{Adiabaticity parameter estimation of case (3) and (4)}
@@ -210,7 +210,7 @@ For case (4), the maximum of \gls{symb:adia}, 0.000059, occurs at 1ms, 2.5ms, 4.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Transverse dynamics analysis for the simulations}
-For SIS18, the chromaticity \gls{symb:chromaticity_x} and \gls{symb:chromaticity_y} is 4.17 and 3.4. Substituting chromaticity and maximum momentum shift (see. Tab. \ref{momentum excursion}) into eq. ~\ref{eq:chromaticity}. We could get the chromatic tune shift \gls{symb:c_chromaticity_x} and \gls{symb:c_chromaticity_y} during rf modulations for four cases. 
+For SIS18, the chromaticity \gls{symb:chromaticity_x} and \gls{symb:chromaticity_y} is 4.17 and 3.4. Substituting chromaticity and maximum momentum shift (see. Tab. \ref{momentum excursion}) into eq. ~\ref{eq:chromaticity}. The chromatic tune shift \gls{symb:c_chromaticity_x} and \gls{symb:c_chromaticity_y} during rf modulations for four cases can be calculated. 
 
 Case (1) 
 \begin{equation}
@@ -289,7 +289,7 @@ From eq.~\ref{eq:eq4} and eq.~\ref{eq:eq5}, we could get the corresponding radia
 GMT system plays a very important role for the B2B transfer system. It is responsible for the data collection, merging and redistribution. The main task of the data merging is the calculation of the synchronization window, within which the bunch could be injected into the correct bucket with the bunch to bucket center mismatch better than 1$^\circ$. The data collection and redistribution make use of the WR network, so the measurement of the WR network latency is necessary. 
 
 \subsection{Calculation of the synchronization window}
-According to the predicted phase advance, we could calculate the fine time for the alignment of two RF Reference Signals for both the phase shift and frequency beating methods. This time is called ``best estimate of alignment`` and denoted by $t_{best}$, see Fig. ~\ref{alignment}. Because of the uncertainty of the phase advance prediction and rf frequency modulation, the fine alignment lies between \gls{symb:best_align} - $\delta t_{best}$ and $t_{best}$ + $\delta t_{best}$. \gls{symb:probable_aligh} is called the uncertainty of the alignment and [$t_{best}$ - $\delta t_{best}$, $t_{best}$ + $\delta t_{best}$] is called ``probable range of alignment``. In Sec.5.2.1.1 and Sec.5.2.1.2, the calculation of the best estimation of alignment and the probable range of alignment for the phase shift and frequency beating method will be explained. The probable range of alignment is within the synchronization window. For the correct selection of the same revolution frequency marker at different SCUs, the start of the synchronization  window must be properly calculated. In Sec. 5.2.1.3, the calculation of the synchronization window will be explained. 
+According to the predicted phase advance, we could calculate the fine time for the alignment of two RF Reference Signals for both the phase shift and frequency beating methods. This time is called ``best estimate of alignment`` and denoted by $t_{best}$, see Fig. ~\ref{alignment}. Because of the \gls{glos:uncertainty} of the phase advance prediction and rf frequency modulation, the fine alignment lies between \gls{symb:best_align} - $\delta t_{best}$ and $t_{best}$ + $\delta t_{best}$. \gls{symb:probable_aligh} is called the uncertainty of the alignment and [$t_{best}$ - $\delta t_{best}$, $t_{best}$ + $\delta t_{best}$] is called ``probable range of alignment``. In Sec.5.2.1.1 and Sec.5.2.1.2, the calculation of the best estimation of alignment and the probable range of alignment for the phase shift and frequency beating method will be explained. The probable range of alignment is within the synchronization window. For the correct selection of the same revolution frequency marker at different SCUs, the start of the synchronization  window must be properly calculated. In Sec. 5.2.1.3, the calculation of the synchronization window will be explained. 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{alignment.jpg}
@@ -483,7 +483,7 @@ Based on these two scenarios, we could deduce the formula for the best estimate 
    \end{equation}
 where $\bigtriangleup{n}$ equals 0 when  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ and equals 1 when  $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$.
 
-The uncertainty of the alignment is the result of the propagation of uncertainties of the phase prediction and rf frequency detune, see eq.~\ref{beating_uncertainty}. Because the rf frequency detune has the long term stability, $\int\delta \Delta f$=0, the uncertainty caused by rf frequency detune is 0. The uncertainty of the phase prediction $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ is $0.06^\circ$, see eq.~\ref{phi_jitter1} and eq.~\ref{phi_jitter2}. $\Delta$f is 200Hz. The maximum ${\Delta n} \times {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})$ is $2\pi$.
+The uncertainty of the alignment is the result of the \gls{glos:error_pro} of uncertainties of the phase prediction and rf frequency detune, see eq.~\ref{beating_uncertainty}. Because the rf frequency detune has the long term stability, $\int\delta \Delta f$=0, the uncertainty caused by rf frequency detune is 0. The uncertainty of the phase prediction $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ is $0.06^\circ$, see eq.~\ref{phi_jitter1} and eq.~\ref{phi_jitter2}. $\Delta$f is 200Hz. The maximum ${\Delta n} \times {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})$ is $2\pi$.
 \begin{equation}
 \begin{aligned}
 \delta t_{best} =\sqrt {(\frac {\partial t_{best}}{\partial \phi_{h=2}^{SIS18}}\delta \phi_{h=2}^{SIS18})^2 + (\frac {\partial t_{best}}{\partial \phi_{h=10}^{SIS100}}\delta \phi_{h=10}^{SIS100})^2+(\frac {\partial t_{best}}{\partial \Delta f}\delta \Delta f)^2} \\
@@ -587,7 +587,7 @@ The requirements for the B2B Broadcast and Unicast traffic are summarized in Tab
 \end{center}
 \end{table}
 
-A Virtual Local Area Network (\gls{VLAN}) is a group of FECs in the \gls{WR} network that is logically segmented by function or application, without regard to the physical locations of the FECs. For the WR network for FAIR, three VLANs with different priorities are applied according to the importance of the traffic. 
+For the WR network for FAIR, three VLANs with different priorities are applied according to the importance of the traffic. 
 
 \subsubsection{WR network test setup}
 
@@ -597,34 +597,35 @@ A Virtual Local Area Network (\gls{VLAN}) is a group of FECs in the \gls{WR} net
    \caption{The WR network test setup}
    \label{GSI_use_case.jpg}
 \end{figure}
-Based on the mentioned traffic, the measurement setup is built, see Fig.~\ref{GSI_use_case.jpg}. Four WR switches are connected to the port 1 to 18 of the Xena traffic generator. All ports of four WR switches are assigned to three VLANs, VLAN 5, VLAN 6 and VLAN 7. Tab. ~\ref{test_setup_network} shows the bandwidth, VLAN, VLAN priority and usage of the traffic of each Xena port in details.
+Based on the mentioned traffic, the measurement setup is built, see Fig.~\ref{GSI_use_case.jpg}. Four WR switches are connected to the port 1 to 18 of the Xena traffic generator. All ports of four WR switches are assigned to three VLANs, VLAN 5, VLAN 6 and VLAN 7. Tab. ~\ref{test_setup_network} shows the bandwidth, VLAN, VLAN priority and usage of the traffic of each Xena port in details. The test is running for 14 hours.
 \renewcommand{\multirowsetup}{\centering} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The traffic of Xena ports}
+\caption{The connection between Xena ports and WR switches}
 \label{test_setup_network}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
     \hline
+	  \rowcolor[gray]{0.5}
      \tabincell{c}{Switch} & \tabincell{c}{Xena \\ Port} & \tabincell{c}{Traffic} &\tabincell{c}{ VLAN} &\tabincell{c}{Priority} &\tabincell{c}{Usage}\\ \hline
-       \tabincell{c}{WR switch \\ 1} & Port 1 & \SI{100}{Mbit/s} 110bytes & 7 & 7 & DM Broadcast \\ \hline
-		\tabincell{c}{WR switch \\ 1} & Port 2 & Rx traffic &  &  &  \\ \hline
-		\tabincell{c}{WR switch \\ 1} & Port 3 &\SI{10}{Mbit/s} 110bytes & 7 & 7 & DM Unicast \\ \hline
-   		\tabincell{c}{WR switch \\ 1} & Port 4 & Rx traffic &  &  &  \\ \hline
-		\tabincell{c}{WR switch \\ 1} & Port 5 & Rx traffic &  &  &  \\ \hline
-		\tabincell{c}{WR switch \\ 1} & Port 6 & \SI{1}{Mbit/s} 64 - 1518 bytes & 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-   \tabincell{c}{WR switch \\ 2} & Port 7 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-	\tabincell{c}{WR switch \\ 2} & Port 8 & Rx traffic &  &  & \\ \hline
-	\tabincell{c}{WR switch \\ 2} & Port 9 & Rx traffic &  &  & \\ \hline
-   \tabincell{c}{WR switch \\ 2} & Port 10 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-	\tabincell{c}{WR switch \\ 3} & Port 11 & Rx traffic &  &  & \\ \hline
-	\tabincell{c}{WR switch \\ 3} & Port 12 & Rx traffic &  &  & \\ \hline
-   \tabincell{c}{WR switch \\ 3} & Port 13 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-	\tabincell{c}{WR switch \\ 3} & Port 14 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-	\tabincell{c}{WR switch \\ 4} & Port 15 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
-   \tabincell{c}{WR switch \\ 4} & Port 16 & \SI{26.5}{kbit/s} 110bytes & 6 & 6 & B2B Broadcast \\ \hline
-	\tabincell{c}{WR switch \\ 4} & Port 17 & \SI{5.5}{kbit/s} 110bytes & 7 & 7 & B2B Unicast \\ \hline
-	\tabincell{c}{WR switch \\ 4} & Port 18 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
+       \multirow{6}*{{\tabincell{c}{WR switch \\ 1}}}& Port 1 & \SI{100}{Mbit/s} 110bytes & 7 & 7 & DM Broadcast \\ \cline{2-6}
+		 &Port 2 & Rx traffic &  &  &  \\ \cline{2-6}
+		 &Port 3 &\SI{10}{Mbit/s} 110bytes & 7 & 7 & DM Unicast \\ \cline{2-6}
+   		 &Port 4 & Rx traffic &  &  &  \\ \cline{2-6}
+		 &Port 5 & Rx traffic &  &  &  \\ \cline{2-6}
+		 &Port 6 & \SI{1}{Mbit/s} 64 - 1518 bytes & 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
+    \multirow{4}*{{\tabincell{c}{WR switch \\ 2}}}& Port 7 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \cline{2-6}
+	& Port 8 & Rx traffic &  &  & \\ \cline{2-6}
+	& Port 9 & Rx traffic &  &  & \\ \cline{2-6}
+   & Port 10 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
+	\multirow{4}*{{\tabincell{c}{WR switch \\ 3}}}& Port 11 & Rx traffic &  &  & \\ \cline{2-6}
+	& Port 12 & Rx traffic &  &  & \\ \cline{2-6}
+   & Port 13 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \cline{2-6}
+	& Port 14 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
+	\multirow{4}*{{\tabincell{c}{WR switch \\ 4}}}& Port 15 & \SI{1}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \cline{2-6}
+   & Port 16 & \SI{26.5}{kbit/s} 110bytes & 6 & 6 & B2B Broadcast \\ \cline{2-6}
+	& Port 17 & \SI{5.5}{kbit/s} 110bytes & 7 & 7 & B2B Unicast \\ \cline{2-6}
+	& Port 18 & \SI{2}{Mbit/s} 64 - 1518 bytes& 5 & 5 &  \tabincell{c}{Management \\ Broadcast} \\ \hline
     
     \end{tabular}
 \end{center}
@@ -634,7 +635,7 @@ Based on the mentioned traffic, the measurement setup is built, see Fig.~\ref{GS
 
 The frame loss rate of the stream from port 17 to port 1 is measured for the B2B Unicast frames. The frame loss rate of the stream from port 16 to other ports is measured for the B2B Broadcast frame. Fig. ~\ref{packet_loss} shows the test result for both traffics. For the B2B Broadcast frames, the frame loss rate of each port is \SI{0}{\percent}. For the B2B Unicast frames, the frame loss rate of port 1 is \SI{0}{\percent}. So there is no B2B frame loss of the test WR network. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{packet_loss.png}
    \caption{The frame loss rate for B2B Broadcast and B2B Unicast frames}
@@ -659,7 +660,7 @@ Fig. ~\ref{average_latency_jitter} shows the test result for the average latency
    \caption{The average latency and jitter for B2B Broadcast frames}
    \label{average_latency_jitter}
 \end{figure}
-\begin{table}[!htb]
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{The average latency and jitter of the B2B Broadcast frames}
 \label{avg latency jitter}
@@ -684,7 +685,7 @@ Fig. ~\ref{Max_latency_jitter} shows the test result for the maximum latency and
    \caption{The maximum latency and jitter for B2B Broadcast frames}
    \label{Max_latency_jitter}
 \end{figure}
-\begin{table}[!htb]
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{The maximum latency and jitter of the B2B Broadcast frames}
 \label{max latency jitter}
@@ -708,7 +709,7 @@ For the B2B unicast frames, the latency and jitter of the stream from port 16 to
 
 For the B2B Unicast frames, 4 WR switch network has approximate \SI{11}{\us} average latency and \SI{0}{\us} average jitter. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{Avg_latency_jitter_unicast.png}
    \caption{The average latency and jitter for B2B Unicast frames}
@@ -719,7 +720,7 @@ For the B2B Unicast frames, 4 WR switch network has approximate \SI{11}{\us} ave
 
 For the B2B unicast frames, 4 WR switch network has approximate \SI{23}{\us} maximum latency and \SI{13}{\us} maximum jitter.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{Max_latency_jitter_unicast.png}
    \caption{The maximum latency and jitter for B2B Unicast frames}
@@ -744,7 +745,7 @@ Tab. ~\ref{result} shows the result of the test. The frame loss rate and latency
     \hline
      \tabincell{c}{} & \tabincell{c}{Frame \\ Loss Rate} & \tabincell{c}{Average \\Latency }&\tabincell{c}{Maximum \\Latency}& \tabincell{c}{Average \\Jitter}&\tabincell{c}{Maximum \\Jitter } \\ \hline
        \tabincell{c}{B2B \\ Broadcast} &  \SI{0}{\percent} & \SI{6}{\us}/switch & \SI{28}{\us}/switch &  \SI{0}{\us}/switch & \SI{25}{\us}/switch\\ \hline
-		\tabincell{c}{B2B \\ Unicast} 	 & \SI{0}{\percent} & \tabincell{c}{\SI{11}{\us}/4switch \\ \SI{3}{\us}/switch}& \tabincell{c}{\SI{23}{\us}/4switch\\\SI{6}{\us}/switch}&  \tabincell{c}{\SI{0}{\us}/4switch\\\SI{0}{\us}/4switch} & \tabincell{c}{\SI{13}{\us}/4switch\\\SI{4}{\us}/switch}\\ \hline
+		\tabincell{c}{B2B \\ Unicast} 	 & \SI{0}{\percent} & \tabincell{c}{\SI{11}{\us}/4switch \\ \SI{3}{\us}/switch}& \tabincell{c}{\SI{23}{\us}/4switch\\\SI{6}{\us}/switch}&  \tabincell{c}{\SI{0}{\us}/4switch\\\SI{0}{\us}/switch} & \tabincell{c}{\SI{13}{\us}/4switch\\\SI{4}{\us}/switch}\\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -789,15 +790,15 @@ Fig.~\ref{kicker} (b) shows the scenario of the maximum delay between the firing
 
 Fig.~\ref{kicker} (c) shows the scenario of the minimum delay. The kicker units in the 1st crate are fired 90ns before the head of the bunch 2 passes by it. The kicker units in the 2nd crate are fired when the bunch 1 passes by the 2nd crate. The delay is L/\gls{symb:b}\gls{symb:c}-G+90ns.
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{kicker.jpg}
    \caption{Three scenarios for the delay of SIS18 extraction kicker}
    \label{kicker}
 \end{figure}
 
-Table~\ref{kicker_delay} shows delay for three scenarios and related parameters. The fixed delay is determined primarily by the boundary delay range from $H^+, U^{28} and U^{73+}$ beams, the delay range for other heavy ion species beams must be contained in these boundary range. According to the result, a fixed delay is available for firing kicker units in two crate for different beams. e.g. 80ns.   
-\begin{table}[]
+Tab. ~\ref{kicker_delay} shows delay for three scenarios and related parameters. The fixed delay is determined primarily by the boundary delay range from $H^+, U^{28} and U^{73+}$ beams, the delay range for other heavy ion species beams must be contained in these boundary range. According to the result, a fixed delay is available for firing kicker units in two crate for different beams. e.g. 80ns.   
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{The delay for firing two crates of SIS18 extraction kicker}
 \label{kicker_delay}
@@ -813,16 +814,16 @@ Table~\ref{kicker_delay} shows delay for three scenarios and related parameters.
 \end{table}
 
 \subsection{SIS100 injection kicker units}
-Two bunches from SIS18 will be continuously injected into two RF buckets after the other in SIS100. See Fig.~\ref{kicker_SIS100}. The yellow ellipse represents the circulating bunch in SIS100 and the red one represents the bunch to be injected. The head of the bunch is at the left side. The preparation of the SIS100 injection kicker must be done during the bunch gap and it must be established for at least one SIS18 revolution period. For the instantaneous firing, all kicker units are fired only if the tail of the circulating bunch passes the leftmost kicker unit. The kicker pass time is the time needed for the tail of a bunch to pass from the rightmost unit to the leftmost kicker unit. The rise time of the kicker unit is 1/20 of the revolution period. Therefor the preparation time is the sum of the kicker pass time and rise time. The distance from the rightmost to the leftmost kicker unit is 3.79m, 6 $\times 0.22m + 5 \times $0.23m. If the preparation time is shorter than bunch gap, all kicker units could be fired instantaneous. Table~\ref{kicker_SIS100} shows the preparation time for $H^+, U^{28} and U^{73+}$ beams and their bunch gap. The preparation time is much shorter than the bunch gap. So the kicker units could be fired instantaneous. 
+Two bunches from SIS18 will be continuously injected into two RF buckets after the other in SIS100. See Fig.~\ref{kicker_SIS100}. The yellow ellipse represents the circulating bunch in SIS100 and the red one represents the bunch to be injected. The head of the bunch is at the left side. The preparation of the SIS100 injection kicker must be done during the bunch gap and it must be established for at least one SIS18 revolution period. For the instantaneous firing, all kicker units are fired only if the tail of the circulating bunch passes the leftmost kicker unit. The kicker pass time is the time needed for the tail of a bunch to pass from the rightmost unit to the leftmost kicker unit. The rise time of the kicker unit is 1/20 of the revolution period. Therefor the preparation time is the sum of the kicker pass time and rise time. The distance from the rightmost to the leftmost kicker unit is 3.79m, 6 $\times 0.22m + 5 \times $0.23m. If the preparation time is shorter than bunch gap, all kicker units could be fired instantaneous. Tab. ~\ref{kicker_SIS100} shows the preparation time for $H^+, U^{28} and U^{73+}$ beams and their bunch gap. The preparation time is much shorter than the bunch gap. So the kicker units could be fired instantaneous. 
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{kicker_SIS100.jpg}
    \caption{SIS100 injection kicker}
    \label{kicker_SIS100}
 \end{figure}
 
-\begin{table}[]
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{The delay for firing SIS00 injection kicker}
 \label{kicker_SIS100}
@@ -880,7 +881,7 @@ The B2B source, B2B target and trigger SCUs have different firmware running on t
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{flow_chart_src.jpg}
-   \caption{Flow chart of the firmware for B2B source SCU. Step is represented as S in the figure.}
+   \caption{Flow chart of the firmware for B2B source SCU. Step is represented as `S` in the figure.}
    \label{flow_chart_src}
 \end{figure}
 
@@ -896,11 +897,11 @@ The firmware for the B2B source SCU is the core program of the B2B transfer syst
 		\item[-]Step 7. It waits for the timing frame TGM\_KICKER\_TIME\_S from the source trigger SCU and TGM\_KICKER\_TIME\_T from the target trigger SCU, which contains the extraction/injection kicker trigger and firing timestamp. When it does not receive the timing frames within a specified timeout interval, it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the timeout error of the frame.
 		\item[-]Step 8. When it receives the timing frames mentioned in the step 7 within a specified timeout interval, it checks the B2B transfer status and sends TGM\_B2B\_STATUS to the WR network and goes to the step 1. The B2B transfer is successful, if all of the following checks are correct. Or the B2B transfer is failure. 
 \begin{itemize}
-	\item Trigger time $<$ the firing time of the extraction kicker of the source synchrotron
+	\item Trigger time $<$ firing time of the extraction kicker of the source synchrotron
 
-	\item Trigger time $<$ the firing time of the injection kicker of the target synchrotron
+	\item Trigger time $<$ firing time of the injection kicker of the target synchrotron
 
-	\item Firing time of the extraction kicker $<$ the firing time of the injection kicker
+	\item Firing time of the extraction kicker $<$ firing time of the injection kicker
 \end{itemize}
  
 

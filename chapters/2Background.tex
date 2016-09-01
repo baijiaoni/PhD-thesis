@@ -370,7 +370,36 @@ The \gls{FAIR} control system takes advantage of collaborations with CERN in usi
 Bunch Phase Timing System (BuTiS)~\cite{moritz_butisdevelopment_2006}~\cite{zipfel_recent_2011} serves as a campus-wide clocks distribution system with subnanosecond resolution and stability over distances of several hundred meters while maintaining 100ps per km timing stability. Two BuTiS reference clocks 10 MHz and 200 MHz and a trigger identification pulse at 100 kHz are generated centrally in the BuTiS center. A star-shaped optical fiber distribution network transfers these signals to BuTiS receivers all over the FAIR campus. A BuTiS receiver and a local reference synthesizer are installed in each supply room to produce the BuTiS reference clocks, which are in phase. For this purpose, a measurement setup in the BuTiS center continuously measures the optical signal transmission delay between the BuTiS center and the different BuTiS receivers. This measurement information is used to shift the phases of the signals generated in each local reference synthesizer for the delay compensation. The main task of BuTiS is the supply of the reference clock signals for \gls{glos:Rrf} in each rf supply rooms.
 
 \subsubsection{GMT}
-The GMT~\cite{beck_new_2012} is contained in the equipment layer. The main tasks of the GMT system are time synchronization of more than 2000 Front-End Controllers (\gls{FEC}) with nanosecond accuracy, distribution of timing messages and subsequent generation of real-time actions by the nodes of the timing system. The GMT consists of the Timing Master (\gls{TM}) and the White Rabbit (WR) timing network and integrates nodes. The timing master's interface to the upper layers, e.g. online schedule monitor, is modeled as a FESA device. The timing master is a logical device, containing the data master (\gls{DM}), the clock master (\gls{CM}) and the management master (\gls{MM}). The data master receives a schedule for the operation of the FAIR accelerator complex from the Settings Management and provides the real-time scheduler by broadcasting messages to the WR timing network, which will be received and executed by the corresponding node at the designated time. The clock master is a dedicated White Rabbit switch. It is the topmost switch layer of the WR timing network and provides the grandmaster clock which is distributed to all other nodes in the timing network. The clock master derives its clock and timestamps from the BuTiS clocks. All active components including receiver nodes and switches are registered to the management master. The management master monitor and manage the active components of the GMT system.
+The GMT~\cite{beck_new_2012} is contained in the equipment layer. The main tasks of the GMT system are time synchronization of more than 2000 Front-End Controllers (\gls{FEC}) with nanosecond accuracy, distribution of timing messages and subsequent generation of real-time actions by the nodes of the timing system. The GMT consists of the Timing Master (\gls{TM}) and the White Rabbit (WR) timing network and integrates nodes. The timing master's interface to the upper layers, e.g. online schedule monitor, is modeled as a FESA device. The timing master is a logical device, containing the data master (\gls{DM}), the clock master (\gls{CM}) and the management master (\gls{MM}). The data master receives a schedule for the operation of the FAIR accelerator complex from the Settings Management and provides the real-time scheduler by broadcasting timing messages to the WR timing network, which will be received and executed by the corresponding node at the designated time. The clock master is a dedicated White Rabbit switch. It is the topmost switch layer of the WR timing network and provides the grandmaster clock and timestamps which are distributed to all other nodes in the timing network. The clock master derives its clock from the BuTiS clocks and timestamps distributed are phase locked to BuTiS clocks. The GMT could deliver BuTiS T0 and c2 clocks signals on any nodes and nodes are capable to timestamp clock edges. All active components including receiver nodes and switches are registered to the management master. The management master monitor and manage the active components of the GMT system.
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{Timing_message.jpg}
+   \caption{The format of the timing message.}
+   \label{Timing_message}
+\end{figure}
+Fig. ~\ref{Timing_message} shows the format of the timing message. 
+The timing message contains 
+\begin{itemize}
+	\item WB Addr (\SI{32}{bit}): Wishbone address to which on the node the data shall be written.
+	\item Payload (\SI{256}{bit})
+		\begin{itemize}
+			\item EventID (\SI{64}{bit}): Index of the schedule step.
+		\begin{itemize}
+			\item Format ID (FID) (\SI{4}{bit}): Serves to distinguish between different formats of the timing message.
+			\item Group ID (GID)(\SI{12}{bit}): Identifies a group of equipment, such as a synchrotron or a transfer line.
+			\item Event No (EVTNO) (\SI{12}{bit}): Specifies a command to be executed.
+			\item Sequence ID (SID) (\SI{12}{bit}): A sequence is analogous to the concept of a ``virtual accelerator``. 
+			\item Beam Process ID (BPID) (\SI{14}{bit}): A beam process defines a process which must not be interrupted, e.g. a acceleration ramp. 
+			\item Reserved (\SI{10}{bit})
+		\end{itemize}
+			\item Param (\SI{64}{bit}): An additional parameter with event specific meaning.
+			\item TEF (\SI{32}{bit}): Timing Extension Field containing fine delay information and other data.
+			\item Reserved (\SI{32}{bit}): 
+			\item Timestamp (\SI{64}{bit}): In units of \SI{8}{\ns} clock cycles since 1 January 1970.
+		\end{itemize}
+\end{itemize}
+A timing message is sent across the WR network, so it must be contained in the ethernet frame. An ethernet frame including one timing message has a length of \SI{110}{byte}, which is called the timing frame in this document.
 
 \subsubsection{FESA}
 The real-time front-end software architecture \gls{FESA}~\cite{hoffmann_fesafront-end_2008} is a framework used to fully integrate the large amount of front-end equipments into the FAIR accelerator control system. FESA was developed by CERN and has already been implemented into the CERN control system. FESA develops FESA classes, the equipment-type specific front-end software. For a specific type of equipments, a FESA class implementation accesses to the control interface of the equipments. The FESA class models the equipment as device, so the FESA output is called device class. One device class can instanciate several devices and thus generally handles several independent pieces of equipments.  FESA provides JAVA based graphical user interfaces (GUI) to design, deploy, instantiate and test the device classes. The FEC use FESA to implement generic and equipment specific functions in form of the device classes. Interaction with the equipment is synchronized with the GMT system. 
