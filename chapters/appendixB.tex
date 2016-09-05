@@ -1,0 +1,44 @@
+\section{Parameters for the B2B transfer from SIS18 to ESR}
+\begin{landscape} 
+\begin{table}[!htb]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{B2B timing frames}
+\label{requirement}
+\begin{center}
+    \begin{tabular}{ | c | c | c | c | c | c |}
+    \hline
+\rowcolor[gray]{0.5}
+     	 &  & \multicolumn{2}{c|}{Proton/Heavy Ion} & \multicolumn{2}{c|}{Heavy Ion} \\ \hline
+		 & Unit &	SIS18 Extraction & ESR Injection & SIS18 Extraction &	ESR Injection\\ \hline
+Design orbit &	m &	 216.72&108.36&	216.72&108.36	\\ \hline
+Injection orbit &	m &	 216.72&108.36+0.15&	216.72&108.36+0.15	\\ \hline
+$C_{SIS18}:C_{ESR}$&	&	\multicolumn{2}{c|}{1.997}&\multicolumn{2}{c|}{1.997}	\\ \hline
+Extraction kinetic energy&	\SI{}{\meV/\atomicmassunit}&	400&&	30&	\\ \hline
+Injection kinetic energy&	\SI{}{\meV/\atomicmassunit}&	&400&	&30	\\ \hline
+RF harmonic&	&1&1&4&2	\\ \hline
+RF frequency&\SI{}{\MHz}&	0.989756&1.976777&1.373201&1.371302	\\ \hline
+RF period&\SI{}{\us}&	1.010350&0.505874&0.728226&0.729234\\ \hline
+Revolution frequency&\SI{}{\MHz}&	0.989756&1.976777&0.343300&0.685651\\ \hline
+Revolution period&\SI{}{\us}&	1.010350&0.505874&2.912903&1.458468\\ \hline
+$\Delta p/p$ compared with design orbit&	&&1$\%$&&1$\%$\\ \hline
+$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
+$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
+Slip factor&	&-0.480	&-0.310&	-0.909&	-0.759\\ \hline
+Transition Energy&	&10	&2.357&	5.8&	2.357\\ \hline
+Compaction factor &	&0.010&0.18	&0.030&0.18	\\ \hline
+$\beta$&	&0.715&0.715	&0.248&0.248	\\ \hline
+$\gamma$&	&1.429&1.429	&1.032&1.032	\\ \hline
+	&	&\multicolumn{2}{c|}{Accumulation beam in injection orbit orbit}	&\multicolumn{2}{c|}{Accumulation beam in injection orbit orbit} \\ \hline
+\multicolumn{6}{c|}{Frequency beating method} \\ \hline
+&	&$f_{rf}/2 $ = \SI{0.494194}{\MHz}+ \SI{684}{\Hz} & $f_{rf}/4$  = \SI{0.494194}{\MHz} & $f_{rf}/6$  = \SI{0.228550}{\MHz}+ \SI{317}{\Hz} & $f_{rf}/6$  = \SI{0.228550}{\MHz}\\ \hline
+Beating frequency&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{684}{\Hz}}&\multicolumn{2}{c|}{\SI{317}{\Hz}}\\ \hline
+Synchronization period&\SI{}{\ms}&\multicolumn{2}{c|}{1.461988}&\multicolumn{2}{c|}{3.154574}\\ \hline
+Synchronization window&\SI{}{\us}&\multicolumn{2}{c|}{1.010350}&\multicolumn{2}{c|}{2.912903}\\ \hline
+Mismatch&degree&\multicolumn{2}{c|}{$\pm 0.12^\circ$}&\multicolumn{2}{c|}{$\pm 0.17^\circ$}\\ \hline
+\multicolumn{6}{c|}{Phase shift method} \\ \hline
+$\Delta R/R$ for RF frequency match&&\multicolumn{2}{c|}{0.2$\%$}&\multicolumn{2}{c|}{0.1$\%$} \\ \hline
+\multicolumn{6}{c|}{For SIS18, it is impossible to change the orbit to match the RF frequency within the radius excursion range. So the phase shift method could not be implemented} \\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+\end{landscape} 

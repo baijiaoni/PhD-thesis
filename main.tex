@@ -366,6 +366,12 @@ name=$\psi2$,
 description={Phase difference between the Reference RF Signal and the Synchronization Reference Signal of the target synchrotron at BuTiS T0 edges, predicted by PAP module},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:beating_freq}{
+name=$\Delta f$,
+description={Beating frequency},
+sort=symbollambda, type=symbolslist
+}
+
 %Befehle für Abbreviation
 \newglossaryentry{TOF}
 {
@@ -552,6 +558,19 @@ description={Internet Protocol},type=abbreslist
 
 % Generate the glossary
 \makenoidxglossaries
+\newglossaryentry{glos:bunch}{
+name={bunch},
+description={Collection of particles captured within one RF bucket}
+}
+\newglossaryentry{glos:bucket}{
+name={bucket},
+description={The RF system provides longitudinal focusing which constrains the particle motion in the longitudinal phase space to a confined region called the RF bucket}
+}
+\newglossaryentry{glos:tune}{
+name={tune},
+description={Number of particle trajectory oscillations during one revolution in the ring (transverse and longitudinal)}
+}
+
 \newglossaryentry{glos:uncertainty}{
 name={uncertainty},
 description={A non-negative parameter characterizing the dispersion of the values attributed to a measured quantity}
@@ -796,6 +815,8 @@ description={Collection the predicted phase of the target synchrotron and transf
 \input{chapters/3Firstconcept}
 \chapter{Concept of the B2B transfer system}
 \input{chapters/4Concept}
+\chapter{Application of the B2B transfer system for FAIR accelerators}
+\input{chapters/Application}
 \chapter{Realization and systematic investigation of the B2B transfer system}
 \input{chapters/5Realization}
 \chapter{Existing transfer system and the transfer system of the FAIR accelerators}
