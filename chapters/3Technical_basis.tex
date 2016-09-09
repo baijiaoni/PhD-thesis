@@ -1,0 +1,102 @@
+
+For the FAIR accelerator complex, synchronization of the B2B transfer will be realized by the FAIR control system and the Low-Level RF (LLRF) system. For the synchronization of LLRF system, the GMT system is complemented and linked to the Bunchphase Timing System (BuTiS). 
+\section{FAIR control system}
+The \gls{FAIR} control system takes advantage of collaborations with CERN in using proven framework solutions like Front-End System Architecture (\gls{FESA}), LHC Software Architecture (\gls{LSA}), White Rabbit (\gls{WR}), etc. It consists of the equipment layer, middle layer and application layer. The equipment layer consists of equipment interfaces, GMT and software representations of the equipment FESA. The middle layer provides service functionality both to the equipment layer and the application layer through the IP control system network. LSA is used for the Settings Management. The application layer combines the applications for operators as GUI applications or command line tools. The application layer and the middle layer only request what the FAIR accelerator complex should do and transmit set values to the equipment layer. The actual beam production is controlled by the GMT. The GMT system is synchronized to BuTiS. The \gls{SM} supplies the schedule for the GMT by LSA.
+
+\subsection{BuTiS}
+Bunch Phase Timing System (BuTiS)~\cite{moritz_butisdevelopment_2006}~\cite{zipfel_recent_2011} serves as a campus-wide clocks distribution system with subnanosecond resolution and stability over distances of several hundred meters while maintaining 100ps per km timing stability. Two BuTiS reference clocks T0 10 MHz and C2 200 MHz and a trigger identification pulse at 100 kHz are generated centrally in the BuTiS center. A star-shaped optical fiber distribution network transfers these signals to BuTiS receivers all over the FAIR campus. A BuTiS receiver and a local reference synthesizer are installed in each supply room to produce the BuTiS reference clocks, which are in phase. For this purpose, a measurement setup in the BuTiS center continuously measures the optical signal transmission delay between the BuTiS center and the different BuTiS receivers. This measurement information is used to shift the phases of the signals generated in each local reference synthesizer for the delay compensation. The main task of BuTiS is the supply of the reference clock signals for \gls{glos:Rrf} in each rf supply rooms.
+
+\subsection{GMT}
+The GMT~\cite{beck_new_2012} is contained in the equipment layer. The main tasks of the GMT system are time synchronization of more than 2000 Front-End Controllers (\gls{FEC}) with nanosecond accuracy, distribution of timing messages and subsequent generation of real-time actions by the nodes of the timing system. The GMT consists of the Timing Master (\gls{TM}), the White Rabbit (WR) timing network and integrates nodes. e.g. SCU. The timing master's interface to the upper layers, e.g. online schedule monitor, is modeled as a FESA device. The timing master is a logical device, containing the data master (\gls{DM}), the clock master (\gls{CM}) and the management master (\gls{MM}). The data master receives a schedule for the operation of the FAIR accelerator complex from the Settings Management and provides the real-time scheduler by broadcasting timing messages to the WR timing network, which will be received and executed by the corresponding node at the designated time. The clock master is a dedicated White Rabbit switch. It is the topmost switch layer of the WR timing network and provides the grandmaster clock and timestamps which are distributed to all other nodes in the timing network. The clock master derives its clock from the BuTiS clocks and timestamps distributed are phase locked to BuTiS clocks. The GMT could deliver BuTiS T0 and C2 clocks to any nodes and nodes are capable to timestamp clock edges. All active components including receiver nodes and switches are registered to the management master. The management master monitor and manage the active components of the GMT system.
+
+Fig. ~\ref{Timing_message} shows the format of the timing message. 
+\begin{figure}[H]
+   \centering   
+   \includegraphics*[width=160mm]{Timing_message.jpg}
+   \caption{The format of the timing message.}
+   \label{Timing_message}
+\end{figure}
+The timing message contains 
+\begin{itemize}
+	\item WB Addr (\SI{32}{bit}): Wishbone address to which on the node the data shall be written.
+	\item Payload (\SI{256}{bit})
+		\begin{itemize}
+			\item EventID (\SI{64}{bit}): Index of the schedule step.
+		\begin{itemize}
+			\item Format ID (FID) (\SI{4}{bit}): Serves to distinguish between different formats of the timing message.
+			\item Group ID (GID)(\SI{12}{bit}): Identifies a group of equipment, such as a synchrotron or a transfer line.
+			\item Event No (EVTNO) (\SI{12}{bit}): Specifies a command to be executed.
+			\item Sequence ID (SID) (\SI{12}{bit}): A sequence is analogous to the concept of a ``virtual accelerator``. 
+			\item Beam Process ID (BPID) (\SI{14}{bit}): A beam process defines a process which must not be interrupted, e.g. a acceleration ramp. 
+			\item Reserved (\SI{10}{bit})
+		\end{itemize}
+			\item Param (\SI{64}{bit}): An additional parameter with event specific meaning.
+			\item TEF (\SI{32}{bit}): Timing Extension Field containing fine delay information and other data.
+			\item Reserved (\SI{32}{bit}): 
+			\item Timestamp (\SI{64}{bit}): In units of \SI{8}{\ns} clock cycles since 1 January 1970.
+		\end{itemize}
+\end{itemize}
+A timing message is sent across the WR network, so it must be contained in the ethernet frame. An ethernet frame including one timing message has a length of \SI{110}{byte}, which is called the timing frame in this document.
+
+\subsection{FESA}
+The real-time front-end software architecture \gls{FESA}~\cite{hoffmann_fesafront-end_2008} is a framework used to fully integrate the large amount of front-end equipments into the FAIR accelerator control system. FESA was developed by CERN and has already been implemented into the CERN control system. FESA develops FESA classes, the equipment-type specific front-end software. For a specific type of equipments, a FESA class implementation accesses to the control interface of the equipments. The FESA class models the equipment as device, so the FESA output is called device class. One device class can instanciate several devices and thus generally handles several independent pieces of equipments.  FESA provides JAVA based graphical user interfaces (GUI) to design, deploy, instantiate and test the device classes. The FEC use FESA to implement generic and equipment specific functions in form of the device classes. Interaction with the equipment is synchronized with the GMT system. 
+
+FESA (Frontend Software Architecture) is a framework developed at CERN and is now developed further in collaboration with GSI for the FAIR project. It is a toolbox to model abstract device objects where equipment’s process variables (sensors and actuators) are represented as properties. The specific equipment access is implemented in C++ by the developer and is linked by the toolchain
+to the device model to build a so called FESA class (Fig. 4). Then, one or more FESA classes are linked to the run-time core to build an x86-Linux executable. The
+FESA classes provide a uniform interface via the objectproperty model and a common middle-ware to the upper layers. The device properties are set and read using synchronous or asynchronous access methods (subscription). For time multiplexed operation of the accelerators, the FESA framework supports defining multiplexed properties. Before an accelerator schedule is started the setting properties of FESA classes are pre-supplied by LSA [6] for all scheduled beams with specific settings accordingly. At runtime, FESA’s real time software actions are triggered by timing events, the actual beam specific data is then selected based on information carried by the timing event message and send to the equipment. For the FAIR project the necessary interaction with the timing receiver is realized in a
+lab-specific timing library of the FESA framework.
+
+
+\subsection{SM}
+The \gls{SM} is located in the middle layer of the control system. It supports off-line generation of synchrotron settings, sending these settings to all involved devices,
+and programming the schedule of the timing system. The SM uses the LSA (LHC Software Architecture) framework, which originates at CERN and is now developed further in collaboration with GSI for the FAIR project. The settings management is based on a physics model for accelerator optics, parameter space and overall relations between parameters and between accelerators. A standardized API allows accessing data in a common way as basis for generic client applications for all accelerators. Using the LSA-API, trim-applications can coherently modify synchrotron settings. E.g. the service generates timing constraints (e.g. ramp curve) as well as the equipment’s data settings (e.g. field) for all devices derived from physics parameters (e.g. beam energy). For FAIR the framework is extended to model the overall schedule of all accelerators. Beams are described as Beam Production
+Chains to allow a description from beam-source to beamtarget for settings organization and data correlation.
+
+\section{LLRF system}
+The FAIR low-level rf (\gls{LLRF})~\cite{klingbeil_new_2011} system shall be usable in the existing synchrotrons SIS18 and experimental storage ring (\gls{ESR}) as well as in the FAIR synchrotrons SIS100 and SIS300 and in the storage rings collector ring (\gls{CR}), new experimental storage ring (\gls{NESR}), and accumulator ring (\gls{RESR}).It supports fast ramp rates and large frequency span for the accleration of a variety of ion species, It supports different RF manipulations, including operation at different harmonic numbers, barrier bucket generation and bunch compression. 
+
+Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (\gls{CCS}). A \gls{DSP}-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the Reference RF signal. This process is called beam-phase loop.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{local_cavity_syn.png}
+   \caption{Local Cavity Synchronization}
+   \label{local_cavity_syn}
+\end{figure}
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{ref_rf_dis.png}
+   \caption{Reference RF Signal Distribution}
+   \label{ref_rf_dis}
+\end{figure}
+The Reference RF Signal distribution shown in Fig.~\ref{ref_rf_dis} is located in each supply room. The virtual RF cavity is a virtual position in the synchrotron to which the Reference RF Signal corresponds. The Reference RF Signals in different supply rooms are synchronized by the BuTiS. BuTiS 200MHz and 100kHz clock signals are received by BuTiS receivers in different supply rooms in phase. In Fig.~\ref{ref_rf_dis}, a number of Group DDS units are located in each supply room, which are synchronized to BuTiS local reference. The Group DDS signals can be routed to the different cavity systems by a Switch Matrix. All cavities in a synchrotron could be providing with the same Group DDS signal. The cavities at different harmonic numbers could be realized by using Group DDS signals with different harmonic numbers. The Group DDS concept allows to synchronize a variety of cavities in a very flexible way. 
+
+All the cavities of SIS18 are driven from one supply room. The SIS100 cavities will be gathered in three acceleration sections, each of them is driven by a dedicated supply room. 
+
+\section{\gls{MPS} system}
+emergency kick
+
+
+\section{Comparison}
+
+Based on the FAIR existing infrastructures, the B2B transfer system for FAIR are unique from other existing B2B transfer systems. The difference is the phase difference between two synchrotrons are achived based on the 
+use for all transfer, complicated situation flexible
+
+
+
+%\section{$U^{28+}$ beam from SIS18 to SIS100}
+%
+%In this document, we use $U^{28+}$ B2B transfer from SIS18 to SIS100 as an example. So the supercycle of $U^{28+}$ beam of SIS18 and stacking of $U^{28+}$ beam of SIS100 are introduced in this section. 
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=160mm]{SIS18-100-U28.jpg}
+%   \caption{$U^{28+}$ beam from SIS18 to SIS100}
+%   \label{SIS18-100-U28}
+%\end{figure}
+%
+%In Fig.~\ref{ref_rf_dis}, SIS100 is operated at harmonic number 10, it holds 10 buckets in total, indicated by the row of ellipses in the lower part of the figure. SIS18 is operated at harmonic number 2. The beam is accumulated using four consecutive injections of two bunches each from SIS18 into different buckets. These four consecutive cycles are called super cycle. When the injection from SIS18 is completed, 8 neighb ouring buckets in SIS100 are filled. The bucket pattern is defined as the rules of the bucket filling. After that the complete beam of SIS100 is compressed in a single bunch at harmonic number 2.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{main}
+\bibliographystyle{plain}
+
+

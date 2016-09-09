@@ -1,33 +1,33 @@
 For the proper B2B transfer, the position of the bunch and bucket and the firing of the extraction and injection kicker must be precisely controlled. Before we explain the functionalities of the B2B transfer system, some basic concepts and their symbols are introduced.
 
 \begin{itemize}
-\item[-] Bucket pattern ($d_{pattern}$).
-\item[-] Compensation of Time-of-flight (\gls{TOF}). 
-\item[-] Distance between the virtual RF cavity and the extraction/injection position  (\gls{symb:tsrc} and \gls{symb:ttrg}). 
-\item[-] Extraction and injection kicker delays (\gls{symb:ext_pre} and \gls{symb:inj_pre}).
+\item[-] Bucket pattern \gls{symb:bucket_pattern}.
+\item[-] Time-Of-Flight (\gls{TOF}) between two synchrotrons \gls{symb:two_TOF}. 
+\item[-] Time-Of-Flight between the virtual RF cavity and the extraction/injection kicker, \gls{symb:tsrc} and \gls{symb:ttrg}. 
+\item[-] Extraction and injection kicker delays, \gls{symb:ext_pre} and \gls{symb:inj_pre}.
 \end{itemize}
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
-   \includegraphics*[width=160mm]{ext_inj_kicker.png}
-   \caption{The illustration of $U^{28+}$ B2B transfer from SIS18 to SIS100.}
+   \includegraphics*[width=160mm]{syc_ext_inj.jpg}
+   \caption{The illustration of B2B transfer from SIS18 to SIS100.}
    \label{ext_inj_kicker}
 \end{figure}
-Fig.~\ref{ext_inj_kicker} illustrates the $U^{28+}$ B2B transfer from SIS18 to SIS100. The SIS18 and SIS100 revolution frequency marker indicate the time when the first bunch and the first bucket pass by the virtual cavity. The extraction and injection kicker firing are time delay on the first bars of the SIS100 revolution frequency marker at SIS18 and SIS100, which are called extraction and injection kicker delay compensation. The mentioned four factors are considered on the second bars of the SIS100 revolution frequency marker. After the RF synchronization, the phase difference between the SIS18 and SIS100 revolution frequency markers equals to the sum of $t_{src}$, $t_{trg}$ and TOF.   
+Fig.~\ref{ext_inj_kicker} illustrates B2B transfer from SIS18 to SIS100. The SIS18 and SIS100 revolution frequency marker indicate the time when the first bunch or the first bucket pass by the RF virtual cavity (black bars named $1^{st}$ and $\sharp1$). The extraction and injection kicker firing are time delay on the first bars of the SIS100 revolution frequency marker at SIS18 and SIS100, which are called extraction and injection kicker delay compensation (red lighting bolts). The mentioned four instances of time are related to the second bars of the SIS100 revolution frequency marker. After the RF synchronization, the time difference between the SIS18 and SIS100 revolution frequency markers is represented by \gls{symb:diff_sync}, e.g. \gls{symb:diff_sync}=$t_{v\_ext}+t_{TOF}+t_{v\_inj}$ for $U^{28+}$ and $H^{+}$ odd bucket injection,  \gls{symb:diff_sync}=$t_{v\_ext}+t_{TOF}+t_{v\_inj}- T_{rf}^{100}$ for $H^{+}$ even bucket injection, more details about the user case from SIS18 to SIS100, please see Sec.\ref{sec:cir_no_int} and \ref{sec:cir_no_int1}. 
 \begin{itemize}
 \item Extraction kick
 
-For the injection into the proper buckets, e.g. bucket 3 and 4, the extraction kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + d_{pattern}$, where $d_{pattern} = T_{h=1}^{SIS18}$, see \textcircled{1} at the SIS100 revolution frequency marker at SIS18. The extraction kicker must be fired TOF time earlier as the bucket passes the virtual RF cavity, so the extraction kicker delay compensation is $T_{h=1}^{SIS100} + d_{pattern} - TOF$, see \textcircled{2}. The extraction kicker must be fired $t_{trg}$ time earlier as the bucket passes the virtual RF cavity, so the extraction kicker delay compensation is $T_{h=1}^{SIS100} + d_{pattern} - TOF - t_{trg}$, see \textcircled{3}. The extraction kicker must be fired $D_{ext}$ time earlier for the kicker preparation, so the extraction kicker delay compensation is $T_{h=1}^{SIS100} + d_{pattern} - TOF - t_{trg} - D_{ext}$, see \textcircled{4}. The extraction kicker is fired by the red bar of the SIS100 revolution frequency marker at SIS18.
+In order to inject into the proper buckets, the extraction kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + t_{pattern}$, see gray gear at the SIS100 revolution frequency marker at SIS18. For example, when two $U^{28+}$ bunches of SIS18 are to be injected into the bucket $\sharp3$ and $\sharp4$ of SIS100, $t_{pattern} =1 \times T_{h=1}^{SIS18}$. The extraction kicker must be fired $t_{v\_inj}+t_{TOF}+t_{ext}$ earlier as the bucket passes the virtual RF cavity, so the extraction kicker delay compensation is $T_{h=1}^{SIS100} + t_{pattern} - (t_{TOF} + t_{v\_inj} + t_{ext})$, see red lighting bolt at the SIS100 revolution frequency marker at SIS18. 
 
 \item Injection kick
 
-For the injection of the bucket 3 and 4, the injection kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + d_{pattern}$, where $d_{pattern}$ = $T_{h=1}^{SIS18}$, see \textcircled{1} at the SIS100 revolution frequency marker at SIS100. The injection kicker  must be fired $t_{trg}$ time earlier as the bucket passes the virtual RF cavity, so the injection kicker delay compensation is $T_{h=1}^{SIS100} + d_{pattern} -  t_{trg}$, see \textcircled{3}. The injection kicker must be fired $D_{inj}$ time earlier for the kicker preparation, so the injection kicker delay compensation is $T_{h=1}^{SIS100} + d_{pattern} - t_{trg} - D_{inj}$, see \textcircled{4}. The injection kicker is fired by the red bar of the SIS100 revolution frequency marker at SIS100.
+With the consideration of the \gls{bucket_pattern}, the injection kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{h=1}^{SIS100} + t_{pattern}$, see gray gear at the SIS100 revolution frequency marker at SIS100. The injection kicker must be fired $t_{v\_inj}+t_{inj}$ time earlier as the bucket passes the virtual RF cavity, so the injection kicker delay compensation is $T_{h=1}^{SIS100} + t_{pattern} - (t_{v\_inj} + t_{inj})$, see red lighting bolt at the SIS100 revolution frequency marker at SIS100.
 \end{itemize}
 
 In order to realize the B2B transfer above, the standard procedure is defined and described in Sec. 4.1. The Sec. 4.2 and 4.3 describe the $U^{28+}$ B2B process from SIS18 to SIS100 with both synchronization methods. We specify how the basic B2B functionalities are realized for FAIR in Sec. 4.4. In Sec. 4.5, the data flow of the B2B transfer system is described. The development of the concept of the B2B transfer system is a cooperation work with colleagues from LLRF and \gls{CSCO} departments. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
 \section{Basic procedure of the B2B transfer system for FAIR}
 
-Fig.~\ref{2method} illustrates the basic procedure of the B2B transfer with two different synchronization scenarios. The top part shows the chronological steps with the frequency beating method, while the bottom part shows the steps with the phase shift method. The emergency kickers can be triggered at any time during the acceleration cycle by the MPS. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kicker. 
+Fig.~\ref{2method} illustrates the basic procedure of the B2B transfer with two different synchronization scenarios. The top part shows the chronological steps with the frequency beating method, while the bottom part shows the steps with the phase shift method. The emergency kickers can be triggered at any time during the acceleration cycle by the MPS. The purple region shows the valid time for the emergency kicker. The yellow region shows the synchronization window. 
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{2method.jpg}
@@ -41,7 +41,7 @@ The B2B transfer process basically needs to follow six steps:
 \item The two synchrotrons measure the rf phase locally.
 \item The source synchrotron gathers the measured rf phase from the target synchrotron.
 \item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
-For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved at the target synchrotron.
+For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved by the method of the phase jump at the target synchrotron for simplicities sake.
 \item The trigger signal is generated for the kickers with the delay compensation.
 \item The kicker electronics fire the kickers.
 \end{enumerate}
@@ -103,7 +103,7 @@ Both B2B source and target SCUs could get the timestamp of every BuTiS T0 edge. 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RF synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RF synchronization}
-The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. 2.1.3.
+The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}.
 \begin{itemize}
 \item RF synchronization with the phase shift method
 
@@ -111,7 +111,7 @@ Eq.~\ref{phase} gives the relation between the required phase shift and the freq
 \begin{equation}
 \Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase}
 \end{equation}
-The required phase shift is determined by the frequency offset $\Delta f_{rf}$ and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. 2.1.3.1. We introduce a phase shift of up to $\pm 180^\circ$ in the phase shift for FAIR. A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The required phase shift, \gls{symb:pha_shift}, is calculated by the B2B source SCU.
+The required phase shift is determined by the frequency offset $\Delta f_{rf}$ and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. \ref{two_sync_methods} at page \pageref{3_criteria}. We introduce a phase shift of up to $\pm 180^\circ$ in the phase shift for FAIR. A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The required phase shift, \gls{symb:pha_shift}, is calculated by the B2B source SCU.
 \begin{equation}
 \frac{\Delta \phi_{shift}}{180^\circ}= \frac{f_{actual}}{f_{normalized}} \label{actual_profile}
 \end{equation}
@@ -135,19 +135,21 @@ The ratio of the circumference between many pair of machines in FIAR is not a pe
 
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Status check %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{B2B transfer status check}
-The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Calculation%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Coarse synchronization}
 % For each beam production chain, the B2B related SCUs will be configured by FESA.
 
-The B2B source SCU is capable of receiving the values (kicker delay for extraction kicker of the source synchrotron, kicker delay for injection kicker of the target synchrotron, TOF, rf frequencies of the source and target synchrotrons, the upper bound time for the phase shift of the source synchrotron) from the SM by FESA classes via the accelerator network. The B2B source SCU calculates the synchronization window, taking kicker delays into consideration and transfers the timestamp of the start of the synchronization window, TGM\_SYNCH\_WIN, to the DM and the source and target Trigger SCUs via the WR network. The TGM\_SYNCH\_WIN could also be used for the triggering of the bunch rotation of both machines (e.g. SIS100 and CR) with a specified advance. 
+The coarse synchronization is achived by the synchronization window with a certain length. Within this window, the bunch is injected into the bucket with the center mismatch smaller than the upper bound\footnote{Upper bound of the mismatch is $1^\circ$ for FAIR accelerators}. The length of the synchronization window \gls{symb:syn_win_length} is two times the period of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the mismatch between the bunch and bucket center within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum mismatch \gls{symb:mismatch} with the synchronization window is calculated by 
+\begin{equation}
+\frac{T_sync\_win}{1/\Delta f}= \frac{\Delta \theta}{360^\circ}
+\end{equation}
+
+The B2B source SCU is capable of receiving the values (kicker delay for extraction kicker of the source synchrotron, kicker delay for injection kicker of the target synchrotron, $t_{TOF}$, rf frequencies of the source and target synchrotrons, the upper bound time for the phase shift of the source synchrotron) from the SM by FESA classes via the accelerator network. The B2B source SCU calculates the synchronization window, taking kicker delays into consideration and transfers the timestamp of the start of the synchronization window, TGM\_SYNCH\_WIN, to the DM and the source and target Trigger SCUs via the WR network. The TGM\_SYNCH\_WIN could also be used for the triggering of the bunch rotation of both machines (e.g. SIS100 and CR) with a specified advance. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bucket label}
+\label{sec:bucket_label}
 The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter is used for the emergency kick of SIS100. 
 
 \begin{itemize}
@@ -195,9 +197,9 @@ The SM informs the bunch gap with the parameter of $d_{pattern}$ on the reproduc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Fine synchronization of the extraction and injection kicker}
-For the normal B2B extraction/injection, the synchronization window is a gating signal, which is received by the source and target Trigger SCUs from the WR network by TGM\_SYNCH\_WIN. Within this window, the first reproduced signal will be selected by the Trigger Decision (\gls{TD}) module . The extraction and injection kicker are synchronized with the bunch and bucket by the extraction and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} -\gls{TOF} - t_{trg} -$ \gls{symb:ext_pre} and the injection kicker will be triggered by the injection kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - t_{trg} -$ \gls{symb:inj_pre}, see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the selected reproduced signal by TD module. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
+For the normal B2B extraction/injection, the synchronization window is a gating signal, which is received by the source and target Trigger SCUs from the WR network by TGM\_SYNCH\_WIN. Within this window, the first reproduced signal will be selected by the Trigger Decision (\gls{TD}) module . The extraction and injection kicker are synchronized with the bunch and bucket by the extraction and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker will be triggered by the injection kick delay compensation, $T_{h=1}^{SIS100} + T_{h=1}^{SIS18} - (t_{v\_inj}+$ \gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the selected reproduced signal by TD module. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
 
-For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{h=1}^{SIS100} + d_{pattern} - t_{emg} - D_{emg}$, where \gls{symb:temg} is the time delay between the virtual RF cavity and the emergency extraction position and \gls{symb:Demg} the emergency kicker delay. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the selected reproduced signal by TD module. Only when the emergency signal is valid, the emergency kicker will be triggered by the TD module.
+For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{h=1}^{SIS100} + t_{pattern} - t_{v\_emg} - t_{emg}$, where \gls{symb:temg} is the time delay between the virtual RF cavity and the emergency extraction position and \gls{symb:Demg} the emergency kicker delay. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the selected reproduced signal by TD module. Only when the emergency signal is valid, the emergency kicker will be triggered by the TD module.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -232,6 +234,10 @@ Besides, the SCUs for the B2B transfer are assigned to the B2B \gls{VLAN}. The s
    \label{Telegram_network}
 \end{figure}  
 \end{landscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Status check %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{B2B transfer status check}
+The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data/Signal flow of the B2B transfer system}
 In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Before the synchronization, the beam-phase loop should be frozen. 

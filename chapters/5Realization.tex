@@ -1,6 +1,6 @@
 This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. Both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic viewpoint. The \gls{GMT} and kicker systematic considerations of the B2B transfer are investigated. Besides, the test setup from the timing aspect is built. All the analysis are based on $U^{28+}$ B2B transfer from SIS18 to SIS100.
 \section{Investigation of two synchronization methods for $U^{28+}$ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }
-This section analyzes the phase shift and frequency beating methods from the beam-dynamics viewpoint for the synchronization of SIS18 with SIS100. In this chapter, the circumference of SIS18 and SIS100 are denoted by \gls{symb:C18} and \gls{symb:C100}, the revolution frequency by \gls{symb:18h1} and \gls{symb:100h1} and the rf frequency by \gls{symb:18h2} and \gls{symb:100h10}. Since SIS18 and SIS100 harmonic number are 2 and 10, the relationship between the revolution and rf frequencies are $f_{h=2}^{SIS18}=2f_{h=1}^{SIS18}$ and $f_{h=10}^{SIS100}=10f_{h=1}^{SIS100}$. Since $C_{SIS100}$ is five times as long as $C_{SIS18}$, we could get the relation  $f_{h=1}^{SIS18}$=5$f_{h=1}^{SIS100}$ and $f_{h=10}^{SIS100}$=$f_{h=2}^{SIS18}$.
+This section analyzes the phase shift and frequency beating methods from the beam-dynamics viewpoint for the synchronization of SIS18 with SIS100. In this chapter, the circumference of SIS18 and SIS100 are denoted by $C^{SIS18}$ and $C^{SIS100}$, the revolution frequency by $f_{h=1}^{SIS18}$ and $f_{h=1}^{SIS100}$ and the rf frequency by $f_{h=2}^{SIS18}$ and $f_{h=10}^{SIS100}$. Since SIS18 and SIS100 harmonic number are 2 and 10, the relationship between the revolution and rf frequencies are $f_{h=2}^{SIS18}=2f_{h=1}^{SIS18}$ and $f_{h=10}^{SIS100}=10f_{h=1}^{SIS100}$. Since $C^{SIS100}$ is five times as long as $C^{SIS18}$, we could get the relation  $f_{h=1}^{SIS18}$=5$f_{h=1}^{SIS100}$ and $f_{h=10}^{SIS100}$=$f_{h=2}^{SIS18}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase shift method}
 To achieve a required phase shift, the \gls{RF} frequency is modulated away from the nominal value for a period of time and modulated back. Let \gls{symb:pha_shift} be the phase shift to be achieved and \gls{symb:freq_modulation} the RF frequency variation to accomplish it; then,
@@ -209,7 +209,7 @@ For case (4), the maximum of \gls{symb:adia}, 0.000059, occurs at 1ms, 2.5ms, 4.
 \end{figure}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Transverse dynamics analysis for the simulations}
+\subsubsection{Transverse dynamics analysis for the simulation}
 For SIS18, the chromaticity \gls{symb:chromaticity_x} and \gls{symb:chromaticity_y} is 4.17 and 3.4. Substituting chromaticity and maximum momentum shift (see. Tab. \ref{momentum excursion}) into eq. ~\ref{eq:chromaticity}. The chromatic \gls{glos:tune} shift \gls{symb:c_chromaticity_x} and \gls{symb:c_chromaticity_y} during rf modulations for four cases can be calculated. 
 
 Case (1) 
@@ -750,7 +750,7 @@ Tab. ~\ref{result} shows the result of the test. The frame loss rate and latency
 \end{center}
 \end{table}
 
-For the B2B transfer system, the upper bound latency of the frames in the B2B Broadcast and B2B Unicast traffic is \SI{500}{\us}, see Sec.5.2.2. The latency of the WR network is decided by the layers of WR switches and the length of the optical fiber. The latency of the optical fiber is about \SI{204}{\meter/\us} and the longest distance in the FAIR campus is around \SI{2}{\kilo\meter}, so the latency of a \SI{2}{\kilo\meter} optical fiber is about \SI{10}{\us}. The layers of WR switches play a more important role in the latency. 
+For the B2B transfer system, the upper bound latency of the frames in the B2B Broadcast and B2B Unicast traffic is \SI{500}{\us}, see Tab.\ref{requirement}. The latency of the WR network is decided by the layers of WR switches and the length of the optical fiber. The latency of the optical fiber is about \SI{204}{\meter/\us} and the longest distance in the FAIR campus is around \SI{2}{\kilo\meter}, so the latency of a \SI{2}{\kilo\meter} optical fiber is about \SI{10}{\us}. The layers of WR switches play a more important role in the latency. 
 
 \begin{itemize}
     \item B2B Broadcast

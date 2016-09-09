@@ -1,44 +1,275 @@
-\section{Parameters for the B2B transfer from SIS18 to ESR}
-\begin{landscape} 
-\begin{table}[!htb]
+\section{Parameters for the B2B transfer from SIS18 to SIS100}
+
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{B2B timing frames}
-\label{requirement}
-\begin{center}
-    \begin{tabular}{ | c | c | c | c | c | c |}
+ 
+    \begin{longtable}{ | c | c | c | c | c | c |}
     \hline
-\rowcolor[gray]{0.5}
+\rowcolor[gray]{0.8}
+     	 &  & \multicolumn{2}{c|}{Proton} & \multicolumn{2}{c|}{Heavy Ion} \\ \hline
+		 & Unit &	SIS18 Ext\tablefootnote{Ext: Extraction} & SIS100 Inj\tablefootnote{Inj: Injection} & SIS18 Ext &SIS100 Inj\\ \hline
+Design orbit &	m &	 216.72&1083.6&	216.72&1083.6	\\ \hline
+Inj orbit &	m &	 216.72&1083.6&	216.72&1083.6	\\ \hline
+$C_{SIS18}:C_{SIS100}$&	&	\multicolumn{2}{c|}{5}&\multicolumn{2}{c|}{5}	\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	4000&&	200&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	&4000&	&200	\\ \hline
+Cavity h&	&1&10(1$\times 4$)&2&10(2$\times 4$)	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	1.359&2.718&1.572&1.572	\\ \hline
+$T_{rf}$&\SI{}{\us}&	0.736&0.368&0.636&0.636\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	1.359&0.272&0.786&0.157\\ \hline
+$T_{rev}$&\SI{}{\us}&	0.736&3.678&1.272&6.359\\ \hline
+Max $\Delta p/p$&	&$\pm0.008$&$\pm0.01$&$\pm0.008$&$\pm0.01$\\ \hline
+$\Delta R/R$&	&$\pm0.8\times10^{-4}$&&$\pm2.4\times10^{-4}$&\\ \hline
+Slip factor\tablefootnote{Frequency slip factor is defined as $\eta=\alpha_p-\frac{1}{\gamma^2}$}&	&-0.026	&&	-0.647&	\\ \hline
+\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&10	&      &5.8&\\ \hline
+\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.010&	&0.030&	\\ \hline
+$\beta$&	&0.982&0.982&0.568&0.568\\ \hline
+$\gamma$&	&5.294&5.294	&1.215&1.215\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{Injection\\ four times}}	&\multicolumn{2}{c|}{\tabincell{c}{Injection\\ four times}} \\ \hline
+%----------------------------------------------
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Frequency beating method} \\ \hline
+&\SI{}{\MHz}	&\tabincell{c}{$f_{rf}+\Delta f $ =\\1.359\\+ 200Hz} & \tabincell{c}{$f_{rf}$  =\\1.359}& \tabincell{c}{$f_{rf}+\Delta f$ =\\1.572\\+200Hz}& \tabincell{c}{$f_{rf}$  =\\1.572}\\ \hline
+\tabincell{c}{Beating\\frequency}&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{200}{\Hz}}&\multicolumn{2}{c|}{\SI{200}{\Hz}}\\ \hline
+\tabincell{c}{Synchronization\\ period}&\SI{}{\ms}&\multicolumn{2}{c|}{5}&\multicolumn{2}{c|}{5}\\ \hline
+\tabincell{c}{Synchronization \\window}&\SI{}{\us}&\multicolumn{2}{c|}{\tabincell{c}{$2\times T_{rev}^{SIS100}$\\=7.356}}&\multicolumn{2}{c|}{\tabincell{c}{$2\times T_{rev}^{SIS100}$\\=12.718}}\\ \hline
+Mismatch&degree&\multicolumn{2}{c|}{$\pm 0.3^\circ$}&\multicolumn{2}{c|}{$\pm 0.5^\circ$}\\ \hline
+%----------------------------------------------
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Phase shift method} \\ \hline
+%\tabincell{c}{$\Delta R/R$ for RF \\frequency match}&&\multicolumn{2}{c|}{0.2$\%$}&\multicolumn{2}{c|}{0.1$\%$} \\ \hline
+%\multicolumn{6}{|c|}{\tabincell{c}{For SIS18, it is impossible to change the orbit to match the RF frequency \\within the radius excursion range. So the phase shift method could \\not be implemented}} \\ \hline
+	\caption{Parameters for the B2B transfer from SIS18 to SIS100}
+	\label{18to100}
+\end{longtable}
+% 
+% 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parameters for the B2B transfer from SIS18 to ESR}
+%\begin{landscape} 
+
+%\newcommand{\tabincell}[2]{\begin{longtable}{@{}#1@{}}#2\end{longtable}}
+
+
+% 
+    \begin{longtable}{ | c | c | c | c | c | c |}
+    \hline
+		\rowcolor[gray]{0.8}
      	 &  & \multicolumn{2}{c|}{Proton/Heavy Ion} & \multicolumn{2}{c|}{Heavy Ion} \\ \hline
-		 & Unit &	SIS18 Extraction & ESR Injection & SIS18 Extraction &	ESR Injection\\ \hline
+		 & Unit &	SIS18 Ext & ESR Inj & SIS18 Ext &	ESR Inj\\ \hline
 Design orbit &	m &	 216.72&108.36&	216.72&108.36	\\ \hline
-Injection orbit &	m &	 216.72&108.36+0.15&	216.72&108.36+0.15	\\ \hline
+Inj orbit &	m &	 216.72&\tabincell{c}{108.36\\+0.15}&	216.72&\tabincell{c}{108.36\\+0.15}	\\ \hline
 $C_{SIS18}:C_{ESR}$&	&	\multicolumn{2}{c|}{1.997}&\multicolumn{2}{c|}{1.997}	\\ \hline
-Extraction kinetic energy&	\SI{}{\meV/\atomicmassunit}&	400&&	30&	\\ \hline
-Injection kinetic energy&	\SI{}{\meV/\atomicmassunit}&	&400&	&30	\\ \hline
-RF harmonic&	&1&1&4&2	\\ \hline
-RF frequency&\SI{}{\MHz}&	0.989756&1.976777&1.373201&1.371302	\\ \hline
-RF period&\SI{}{\us}&	1.010350&0.505874&0.728226&0.729234\\ \hline
-Revolution frequency&\SI{}{\MHz}&	0.989756&1.976777&0.343300&0.685651\\ \hline
-Revolution period&\SI{}{\us}&	1.010350&0.505874&2.912903&1.458468\\ \hline
-$\Delta p/p$ compared with design orbit&	&&1$\%$&&1$\%$\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	400 & &30&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	&400&	&30	\\ \hline
+Cavity h&	&1&1&4&2	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	0.989756&1.976777&1.373201&1.371302	\\ \hline$T_{rf}$&\SI{}{\us}&	1.010350&0.505874&0.728226&0.729234\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	0.989756&1.976777&0.343300&0.685651\\ \hline
+$T_{rev}$&\SI{}{\us}&	1.010350&0.505874&2.912903&1.458468\\ \hline
+\tabincell{c}{$\Delta p/p$ compared \\with design orbit}&	&&1$\%$&&1$\%$\\ \hline
 $\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
-$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
+%$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
 Slip factor&	&-0.480	&-0.310&	-0.909&	-0.759\\ \hline
-Transition Energy&	&10	&2.357&	5.8&	2.357\\ \hline
-Compaction factor &	&0.010&0.18	&0.030&0.18	\\ \hline
+\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&10	&2.357&	5.8&	2.357\\ \hline
+\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.010&0.18	&0.030&0.18	\\ \hline
 $\beta$&	&0.715&0.715	&0.248&0.248	\\ \hline
 $\gamma$&	&1.429&1.429	&1.032&1.032	\\ \hline
-	&	&\multicolumn{2}{c|}{Accumulation beam in injection orbit orbit}	&\multicolumn{2}{c|}{Accumulation beam in injection orbit orbit} \\ \hline
-\multicolumn{6}{c|}{Frequency beating method} \\ \hline
-&	&$f_{rf}/2 $ = \SI{0.494194}{\MHz}+ \SI{684}{\Hz} & $f_{rf}/4$  = \SI{0.494194}{\MHz} & $f_{rf}/6$  = \SI{0.228550}{\MHz}+ \SI{317}{\Hz} & $f_{rf}/6$  = \SI{0.228550}{\MHz}\\ \hline
-Beating frequency&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{684}{\Hz}}&\multicolumn{2}{c|}{\SI{317}{\Hz}}\\ \hline
-Synchronization period&\SI{}{\ms}&\multicolumn{2}{c|}{1.461988}&\multicolumn{2}{c|}{3.154574}\\ \hline
-Synchronization window&\SI{}{\us}&\multicolumn{2}{c|}{1.010350}&\multicolumn{2}{c|}{2.912903}\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{Accumulation beam\\ in injection orbit}}	&\multicolumn{2}{c|}{\tabincell{c}{Accumulation beam \\in injection orbit}} \\ \hline
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Frequency beating method} \\ \hline
+&\SI{}{\kHz}	&\tabincell{c}{$f_{rf}/2 $ =\\494.194\\+ 684Hz} & \tabincell{c}{$f_{rf}/4$  =\\494.194}& \tabincell{c}{$f_{rf}/6$ =\\228.550\\+317Hz}& \tabincell{c}{$f_{rf}/3$  =\\228.550}\\ \hline
+\tabincell{c}{Beating\\frequency}&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{684}{\Hz}}&\multicolumn{2}{c|}{\SI{317}{\Hz}}\\ \hline
+\tabincell{c}{Synchronization\\ period}&\SI{}{\ms}&\multicolumn{2}{c|}{1.461988}&\multicolumn{2}{c|}{3.154574}\\ \hline
+\tabincell{c}{Synchronization \\window}&\SI{}{\us}&\multicolumn{2}{c|}{1.010350}&\multicolumn{2}{c|}{2.912903}\\ \hline
 Mismatch&degree&\multicolumn{2}{c|}{$\pm 0.12^\circ$}&\multicolumn{2}{c|}{$\pm 0.17^\circ$}\\ \hline
-\multicolumn{6}{c|}{Phase shift method} \\ \hline
-$\Delta R/R$ for RF frequency match&&\multicolumn{2}{c|}{0.2$\%$}&\multicolumn{2}{c|}{0.1$\%$} \\ \hline
-\multicolumn{6}{c|}{For SIS18, it is impossible to change the orbit to match the RF frequency within the radius excursion range. So the phase shift method could not be implemented} \\ \hline
-    \end{tabular}
-\end{center}
-\end{table}
-\end{landscape} 
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Phase shift method} \\ \hline
+\tabincell{c}{$\Delta R/R$ for RF \\frequency match}&&\multicolumn{2}{c|}{0.2$\%$}&\multicolumn{2}{c|}{0.1$\%$} \\ \hline
+\multicolumn{6}{|c|}{\tabincell{c}{For SIS18, it is impossible to change the orbit to match the RF frequency \\within the radius excursion range. So the phase shift method could \\not be implemented}} \\ \hline
+\caption{Parameters for the B2B transfer from SIS18 to ESR}
+\label{18toESR}
+    \end{longtable}
+% 
+% 
+%\end{landscape} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parameters for the B2B transfer from SIS18 to ESR via FRS}
+%\begin{landscape} 
+
+%\newcommand{\tabincell}[2]{\begin{longtable}{@{}#1@{}}#2\end{longtable}}
+
+ 
+    \begin{longtable}{ | c | c | c | c | }
+    \hline
+\rowcolor[gray]{0.8}
+     	 &  & Heavy Ion Beam & Rare Isotope Beam \\ \hline
+		 & Unit &	SIS18 Ext & ESR Inj \\ \hline
+Design orbit &	m &	 216.72&108.36	\\ \hline
+Inj orbit &	m &	 216.72&\tabincell{c}{108.36\\+0.15}\\ \hline
+$C_{SIS18}:C_{ESR}$&	&	\multicolumn{2}{c|}{1.997}	\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	400&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	&400	\\ \hline
+Cavity h&	&1&1	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	1.076965&1.976777	\\ \hline
+$T_{rf}$&\SI{}{\us}&	0.928535&0.505874\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	1.076965&1.976777\\ \hline
+$T_{rev}$&\SI{}{\us}&	0.928535&0.505874\\ \hline
+\tabincell{c}{$\Delta p/p$ compared \\with design orbit}&	&&1$\%$\\ \hline
+$\Delta R/R$&	&&0.138$\%$\\ \hline
+%$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
+Slip factor&	&-0.366	&-0.310\\ \hline
+\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&5.8	&2.357\\ \hline
+\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.030&0.18	\\ \hline
+$\beta$&	&0.778&0.715	\\ \hline
+$\gamma$&	&1.590&1.429	\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{Accumulation beam\\ in injection orbit}}	 \\ \hline
+\rowcolor[gray]{0.8}
+\multicolumn{4}{|c|}{Frequency beating method} \\ \hline
+&\SI{}{\kHz}	&\tabincell{c}{$f_{rf}/5 $ =\\219.642\\- 4249Hz} & \tabincell{c}{$f_{rf}/9$  =\\219.642}\\ \hline
+\tabincell{c}{Beating\\frequency}&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{4249}{\Hz}}\\ \hline
+\tabincell{c}{Synchronization\\ period}&\SI{}{\ms}&\multicolumn{2}{c|}{0.235349}\\ \hline
+\tabincell{c}{Synchronization \\window}&\SI{}{\us}&\multicolumn{2}{c|}{$2\times 9\times T_{rev}^{ESR}$=????}\\ \hline
+Mismatch&degree&\multicolumn{2}{c|}{$\pm ???^\circ$}\\ \hline
+\rowcolor[gray]{0.8}
+\multicolumn{4}{|c|}{Phase shift method} \\ \hline
+\tabincell{c}{$\Delta R/R$ for RF \\frequency match}&&\multicolumn{2}{c|}{2$\%$}\\ \hline
+\multicolumn{4}{|c|}{\tabincell{c}{For SIS18, it is impossible to change the orbit to match the RF frequency \\within the radius excursion range. So the phase shift method could \\not be implemented}} \\ \hline
+\caption{Parameters for the B2B transfer from SIS18 to ESR via FRS}
+\label{18toESRvia FRS}
+    \end{longtable}
+ 
+ 
+%\end{landscape} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parameters for the B2B transfer from ESR to CRYRING}
+%\begin{landscape} 
+
+%\newcommand{\tabincell}[2]{\begin{longtable}{@{}#1@{}}#2\end{longtable}}
+
+ 
+    \begin{longtable}{ | c | c | c | c | c | c |}
+    \hline
+\rowcolor[gray]{0.8}
+     	 &  & \multicolumn{2}{c|}{Proton/Antiproton} & \multicolumn{2}{c|}{Heavy Ion} \\ \hline
+		 & Unit &	ESR Ext & CRYRING Inj & ESR Ext &	CRYRING Inj\\ \hline
+Design orbit &	m &	 108.36&54.17&	108.36&54.17	\\ \hline
+Ext orbit &	m &	\tabincell{c}{108.36\\+0.15}&&\tabincell{c}{108.36\\+0.15}&	\\ \hline
+$C_{ESR}:C_{CRYRING}$&	&	\multicolumn{2}{c|}{2}&\multicolumn{2}{c|}{2}	\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	30 & &4-10&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	&30&	&4-10\\ \hline
+Cavity h&	&1&1&1&1	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	0.686&1.372&0.254-0.401&0.508-0.802	\\ \hline
+$T_{rf}$&\SI{}{\us}&	1.458&0.729&3.932-2.494&1.966-1.247\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	0.686&1.372&0.254-0.401&0.508-0.802	\\ \hline
+$T_{rev}$&\SI{}{\us}&	1.458&0.729&3.932-2.494&1.966-1.247\\ \hline
+
+%$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
+Slip factor&	&-0.759	&&	&	\\ \hline
+\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&2.357	&&	2.357&	\\ \hline
+\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.18&&0.18&	\\ \hline
+$\beta$&	&0.248&0.248	&0.092-0.145&0.092-0.145	\\ \hline
+$\gamma$&	&1.032&1.032	&1.004-1.011&1.004-1.011\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{One time\\ injection}}	&\multicolumn{2}{c|}{\tabincell{c}{One time\\ injection}} \\ \hline
+
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Phase shift method} \\ \hline
+\multicolumn{6}{|c|}{There is no beam in CRYRING, so the phase jump of CRYRING is preferred.} \\ \hline
+    \caption{Parameters for the B2B transfer from ESR to CRYRING}
+	\label{ESRtoCRYRING}
+\end{longtable}
+ 
+ 
+%\end{landscape} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parameters for the B2B transfer from CR to HESR}
+%\begin{landscape} 
+%\newcommand{\tabincell}[2]{\begin{longtable}{@{}#1@{}}#2\end{longtable}}
+ 
+    \begin{longtable}{ | c | c | c | c | c | c |}
+    \hline
+\rowcolor[gray]{0.8}
+     	 &  & \multicolumn{2}{c|}{Antiproton} & \multicolumn{2}{c|}{Rare Isotope Beam} \\ \hline
+		 & Unit &	CR Ext & HESR Inj & CR Ext &	HESR Inj\\ \hline
+Design orbit &	m &	 221.45&575&	221.45&575	\\ \hline
+$C_{ESR}:C_{CRYRING}$&	&	\multicolumn{2}{c|}{2.6}&\multicolumn{2}{c|}{2.6}	\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\GeV/\atomicmassunit}&	3 & &0.74&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\GeV/\atomicmassunit}&	&3&	&0.74\\ \hline
+Cavity h&	&1&1&1&1	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	1.317&0.507&1.125&0.433	\\ \hline
+$T_{rf}$&\SI{}{\us}&	0.759&1.972&0.889&2.309\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	1.317&0.507&1.125&0.433\\ \hline
+$T_{rev}$&\SI{}{\us}&	0.759&1.972&0.889&2.309\\ \hline
+Max $\Delta p/p$ &	& $\pm3\%$& &$\pm1.5\%$&\\ \hline
+Slip factor&	&-0.011	&&0.178	&	\\ \hline
+\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&3.85&&	2.711&	\\ \hline
+\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.067&&&	\\ \hline
+$\beta$&	&0.972&0.972	&0.830&0.830	\\ \hline
+$\gamma$&	&	4.221&	4.221	&1.794&1.794\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{100 times Injection\\per 10 seconds }}	&\multicolumn{2}{c|}{\tabincell{c}{100 times Injection\\per 10 seconds}} \\ \hline
+
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Frequency beating method ??????} \\ \hline
+&\SI{}{\kHz}	&\tabincell{c}{$f_{rf}/2 $ =\\494.194\\+ 684Hz} & \tabincell{c}{$f_{rf}/4$  =\\494.194}& \tabincell{c}{$f_{rf}/6$ =\\228.550\\+317Hz}& \tabincell{c}{$f_{rf}/3$  =\\228.550}\\ \hline
+\tabincell{c}{Beating\\frequency}&\SI{}{\Hz}&\multicolumn{2}{c|}{\SI{684}{\Hz}}&\multicolumn{2}{c|}{\SI{317}{\Hz}}\\ \hline
+\tabincell{c}{Synchronization\\ period}&\SI{}{\ms}&\multicolumn{2}{c|}{1.461988}&\multicolumn{2}{c|}{3.154574}\\ \hline
+\tabincell{c}{Synchronization \\window}&\SI{}{\us}&\multicolumn{2}{c|}{1.010350}&\multicolumn{2}{c|}{2.912903}\\ \hline
+Mismatch&degree&\multicolumn{2}{c|}{$\pm 0.12^\circ$}&\multicolumn{2}{c|}{$\pm 0.17^\circ$}\\ \hline
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Phase shift method} \\ \hline
+\tabincell{c}{$\Delta R/R$ for RF \\frequency match}&&\multicolumn{2}{c|}{0.2$\%$}&\multicolumn{2}{c|}{0.1$\%$} \\ \hline
+\multicolumn{6}{|c|}{\tabincell{c}{The beam in CR is stochastic cooling and electrons exist during the B2B process.\\ The phase shift method doesn’t work. The remove of electrodes is about 100 ms. }} \\ \hline
+\caption{Parameters for the B2B transfer from CR to HESR}
+\label{ESRtoCRYRING}
+    \end{longtable}
+ 
+ 
+%\end{landscape} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Parameters for the B2B transfer from SIS100 to CR}
+%\begin{landscape} 
+
+%\newcommand{\tabincell}[2]{\begin{longtable}{@{}#1@{}}#2\end{longtable}}
+
+ 
+    \begin{longtable}{ | c | c | c | c | c | c |}
+    \hline
+\rowcolor[gray]{0.8}
+     	 &  & \multicolumn{2}{c|}{Proton$\rightarrow$ Antiprotron} & \multicolumn{2}{c|}{Heavy Ion$\rightarrow$ RIB} \\ \hline
+		 & Unit &	SIS100 Ext & CR Inj & SIS100 Ext &	CR Inj\\ \hline
+Design orbit &	m &	 1083.6&221.45&	1083.6&221.45	\\ \hline
+$C_{ESR}:C_{CRYRING}$&	&	\multicolumn{2}{c|}{4.893}&\multicolumn{2}{c|}{4.893}	\\ \hline
+\tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\GeV/\atomicmassunit}&	28.8 & &1.5&	\\ \hline
+\tabincell{c}{Inj kinetic\\ energy}&	\SI{}{\GeV/\atomicmassunit}&	&3&	&0.74\\ \hline
+Cavity h&	&5(1 bunch)&1&2(1 bunch)&1	\\ \hline
+$f_{rf}$&\SI{}{\MHz}&	1.345&1.318&0.460&1.125	\\ \hline
+$T_{rf}$&\SI{}{\us}&	0.743&0.759&2.176&0.889\\ \hline
+$f_{rev}$&\SI{}{\MHz}&	0.269&1.318&0.230&1.125\\ \hline
+$T_{rev}$&\SI{}{\us}&	3.716&0.759&4.352&0.889\\ \hline
+%Max $\Delta p/p$ &	& $\pm3\%$& &$\pm1.5\%$&\\ \hline
+%Slip factor&	&-0.011	&&0.178	&	\\ \hline
+%\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&3.85&&	2.711&	\\ \hline
+%\tabincell{c}{Compaction\\factor $\alpha_p$} &	&0.067&&&	\\ \hline
+$\beta$&	&0.999&0.972&0.924&0.830\\ \hline
+$\gamma$&	&	31.918&	4.221	&2.610&1.794\\ \hline
+	&	&\multicolumn{2}{c|}{\tabincell{c}{One time\\ injection}}	&\multicolumn{2}{c|}{\tabincell{c}{One time\\ injection}} \\ \hline
+
+\rowcolor[gray]{0.8}
+\multicolumn{6}{|c|}{Phase shift method} \\ \hline
+\multicolumn{6}{|c|}{There is no beam in CR, so the phase jump of CR is preferred.} \\ \hline
+\caption{Parameters for the B2B transfer from from SIS100 to CR}
+\label{100toCR}
+    \end{longtable}
+ 
+ 
+%\end{landscape} 

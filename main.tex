@@ -2,7 +2,8 @@
 \usepackage[english]{babel}
 
 \usepackage[nopostdot,  style=super, nonumberlist, toc]{glossaries}
-
+\usepackage{tablefootnote}
+\usepackage{supertabular}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{ngerman}
@@ -34,26 +35,58 @@
 \newglossary[slg]{symbolslist}{syi}{syg}{List of symbols}
 \newglossary[slg]{abbreslist}{syi}{syg}{List of Abbreviations}
 %Befehle für Symbole
-\newglossaryentry{symb:C18}{
-name=$C_{SIS18}$,
-description={Circumference of the designed orbit of SIS18},
+\newglossaryentry{symb:C_param}{
+name=$C^{X}$,
+description={X=l, Circumference of the designed orbit of large synchrotron; X=s, Circumference of the designed orbit of small synchrotron
+},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:C100}{
-name=$C_{SIS100}$,
-description={Circumference of the designed orbit of SIS100},
+
+%\newglossaryentry{symb:C18}{
+%name=$C^{SIS18}$,
+%description={Circumference of the designed orbit of SIS18},
+%sort=symbolpi, type=symbolslist
+%}
+%\newglossaryentry{symb:C100}{
+%name=$C^{SIS100}$,
+%description={Circumference of the designed orbit of SIS100},
+%sort=symbolpi, type=symbolslist
+%}
+\newglossaryentry{symb:rev_freq}{
+name=$f_{rev}^{X} $,
+description={oder $f_{h=1}^{X}$. X=l, Revolution frequency of large synchrotron; X=s, Revolution frequency of small synchrotron},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:18h1}{
-name=$f_{h=1}^{SIS18}$,
-description={RF cavity revolution frequency of SIS18},
+\newglossaryentry{symb:cavity_freq}{
+name=$f_{rf}^{X}$,
+description={oder $f_{h=cavity harmonic}^{X}$.  X=l, Cavity frequency of large synchrotron; X=s, Cavity frequency of small synchrotron},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:18h2}{
-name=$f_{h=2}^{SIS18}$,
-description={RF cavity driving frequency of SIS18},
+\newglossaryentry{symb:harmonic_param}{
+name=$h^X$,
+description={X=l, Cavity harmonic of large synchrotron; X=s, Cavity harmonic of small synchrotron},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:integer}{
+name=$\kappa$,
+description={Integer},
 sort=symbolpi, type=symbolslist
 }
+\newglossaryentry{symb:decimal}{
+name=$\lambda$,
+description={Decimal},
+sort=symbolpi, type=symbolslist
+}
+%\newglossaryentry{symb:18h1}{
+%name=$f_{h=1}^{SIS18}$,
+%description={RF cavity revolution frequency of SIS18},
+%sort=symbolpi, type=symbolslist
+%}
+%\newglossaryentry{symb:18h2}{
+%name=$f_{h=2}^{SIS18}$,
+%description={RF cavity driving frequency of SIS18},
+%sort=symbolpi, type=symbolslist
+%}
 \newglossaryentry{symb:period_18h1}{
 name=$T_{h=1}^{SIS18}$,
 description={Period of the rf cavity revolution frequency of SIS18},
@@ -64,16 +97,16 @@ name=$T_{h=2}^{SIS18}$,
 description={Period of the rf cavity driving frequency of SIS18},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:100h1}{
-name=$f_{h=1}^{SIS100}$,
-description={RF cavity revolution frequency of SIS100},
-sort=symbolpi, type=symbolslist
-}
-\newglossaryentry{symb:100h10}{
-name=$f_{h=10}^{SIS100}$,
-description={RF cavity driving frequency of SIS100},
-sort=symbolpi, type=symbolslist
-}
+%\newglossaryentry{symb:100h1}{
+%name=$f_{h=1}^{SIS100}$,
+%description={RF cavity revolution frequency of SIS100},
+%sort=symbolpi, type=symbolslist
+%}
+%\newglossaryentry{symb:100h10}{
+%name=$f_{h=10}^{SIS100}$,
+%description={RF cavity driving frequency of SIS100},
+%sort=symbolpi, type=symbolslist
+%}
 \newglossaryentry{symb:period_100h1}{
 name=$T_{h=1}^{SIS100}$,
 description={Period of RF cavity revolution frequency of SIS100},
@@ -312,38 +345,59 @@ description={Normalized rf frequency modulation profile, preloaded from SM},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:ext_pre}{
-name=$D_{ext}$ ,
+name=$t_{ext}$ ,
 description={Extraction kicker delay},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:inj_pre}{
-name=$D_{inj}$ ,
+name=$t_{inj}$ ,
 description={Injection kicker delay},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:diff_sync}{
+name=$t_{diff\_sync}$ ,
+description={Time difference between rf systems of two synchrotrons after the synchronization},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:two_TOF}{
+name=$t_{TOF}$,
+description={Time-of-Flight between two synchrotrons},
+sort=symbollambda, type=symbolslist
+}
+
 \newglossaryentry{symb:bucket_pattern}{
-name=$d_{pattern}$ ,
+name=$t_{pattern}$ ,
 description={Time delay for a specified bucket pattern},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:tsrc}{
-name=$t_{src}$,
+name=$t_{v\_ext}$,
 description={Time corresponds to the distance between the virtual RF cavity driving signals and the extraction position of the source synchrotron},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:ttrg}{
-name=$t_{trg}$,
+name=$t_{v\_inj}$,
 description={Time corresponds to the distance between the virtual RF cavity driving signals and the injection position of the target synchrotron},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:temg}{
-name=$t_{emg}$,
+name=$t_{v\_emg}$,
 description={Time corresponds to the distance between the virtual RF cavity and the emergency extraction position of SIS100},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:Demg}{
-name=$D_{emg}$,
+name=$t_{emg}$,
 description={Extraction kicker delay of SIS100},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:mismatch}{
+name=$\Delta \theta$,
+description={Mismatch between the bunch and bucket center},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:syn_win_length}{
+name=$T_sync\_win$,
+description={Length of the synchronization window},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:phase_diff_s}{
@@ -441,7 +495,7 @@ description={Front-End software Architecture},type=abbreslist
 }
 \newglossaryentry{LSA}{
 name={LSA},
-description={Front-End software Architecture},type=abbreslist
+description={LHC Software Architecture},type=abbreslist
 }
 \newglossaryentry{HESR}{
 name={HESR},
@@ -558,6 +612,18 @@ description={Internet Protocol},type=abbreslist
 
 % Generate the glossary
 \makenoidxglossaries
+\newglossaryentry{glos:bucket_pattern}{
+name={bucket pattern},
+description={Rules for the buckets to be filled}
+}
+\newglossaryentry{glos:cir_ratio}{
+name={circumference ratio},
+description={Ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron}
+}
+\newglossaryentry{glos:har_ratio}{
+name={harmonic ratio},
+description={Cavity harmonic ratio of the large synchrotron to that of the small synchrotron}
+}
 \newglossaryentry{glos:bunch}{
 name={bunch},
 description={Collection of particles captured within one RF bucket}
@@ -644,6 +710,10 @@ description={B2B master: data collection, calculation and distribution for the B
 \newglossaryentry{glos:B2B_t_SCU}{
 name={B2B target SCU},
 description={Collection the predicted phase of the target synchrotron and transfer it to the source synchrotron}
+}
+\newglossaryentry{glos:machine_cycle}{
+name={machine cycle},
+description={One complete operation cycle of a machine, i.e. injection, ramp up, flattop, ejection and ramp down}
 }
 
 \lstset{tabsize=4, %
@@ -811,16 +881,18 @@ description={Collection the predicted phase of the target synchrotron and transf
 \input{chapters/1Introduction}
 \chapter{Theoretical background}
 \input{chapters/2Background}
-\chapter{First idea on the B2B transfer system}
-\input{chapters/3Firstconcept}
+%\chapter{First idea on the B2B transfer system}
+%\input{chapters/3Firstconcept}
+\chapter{Technical basis for the B2B transfer system}
+\input{chapters/3Technical_basis}
 \chapter{Concept of the B2B transfer system}
 \input{chapters/4Concept}
 \chapter{Application of the B2B transfer system for FAIR accelerators}
 \input{chapters/Application}
 \chapter{Realization and systematic investigation of the B2B transfer system}
 \input{chapters/5Realization}
-\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
-\input{chapters/6Existing}
+%\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
+%\input{chapters/6Existing}
 \chapter{Summary}
 \input{chapters/7SummaryAusblick}
 \chapter{Acknowledgement}
@@ -829,9 +901,9 @@ description={Collection the predicted phase of the target synchrotron and transf
 %\chapter{References}
 %\input{chapters/References}
 \appendix
-\chapter{Formelzeichen}
+\chapter{B2B timing frames}
 \input{chapters/appendixA}
-\chapter{List of Tables}
+\chapter{Parameters of B2B transfer for FAIR accelerator pairs}
 \input{chapters/appendixB}
 \chapter{List of Figures}
 \input{chapters/appendixC}
