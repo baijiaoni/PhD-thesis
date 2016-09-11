@@ -54,15 +54,15 @@ Chains to allow a description from beam-source to beamtarget for settings organi
 
 \section{LLRF system}
 The FAIR low-level rf (\gls{LLRF})~\cite{klingbeil_new_2011} system shall be usable in the existing synchrotrons SIS18 and experimental storage ring (\gls{ESR}) as well as in the FAIR synchrotrons SIS100 and SIS300 and in the storage rings collector ring (\gls{CR}), new experimental storage ring (\gls{NESR}), and accumulator ring (\gls{RESR}).It supports fast ramp rates and large frequency span for the accleration of a variety of ion species, It supports different RF manipulations, including operation at different harmonic numbers, barrier bucket generation and bunch compression. 
-
-Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (\gls{CCS}). A \gls{DSP}-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the Reference RF signal. This process is called beam-phase loop.
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
-   \includegraphics*[width=160mm]{local_cavity_syn.png}
+   \includegraphics*[width=110mm]{local_cavity_syn.png}
    \caption{Local Cavity Synchronization}
    \label{local_cavity_syn}
 \end{figure}
-\begin{figure}[!htb]
+Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (\gls{CCS}). A \gls{DSP}-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the Reference RF signal. This process is called beam-phase loop.
+
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{ref_rf_dis.png}
    \caption{Reference RF Signal Distribution}
@@ -78,9 +78,11 @@ emergency kick
 
 \section{Comparison}
 
-Based on the FAIR existing infrastructures, the B2B transfer system for FAIR are unique from other existing B2B transfer systems. The difference is the phase difference between two synchrotrons are achived based on the 
-use for all transfer, complicated situation flexible
+Based on the FAIR existing infrastructures, the B2B transfer system for FAIR are unique from other existing B2B transfer systems. The uniqueness is the phase difference between two rf systems of the source and target synchrotrons are achived based on the campus distributed reference signals with picosecond precision, which are in phase and have same frequency. The campus distributed reference signals are synchronized with BuTiS T0 clock. They are named Synchronization Reference Signal in this document. The phase difference between the Synchroniyation Reference Signal and the rf signal of the rf system is measured locally and transferred from one synchrotron to another via the WR network. The existing B2B transfer system for CERN measures the phase difference between two synchrotrons by the direct cable transfer of the rf signal of one synchrotron to another synchrotron. The phase measurement between two rf systems of the B2B transfer system for FAIR is more stable and precise, which is less influenced by the external environment, e.g. temperature influence on the direct cable connection. It does not constraint by the distance between two synchrotrons.
 
+Besides, the B2B transfer system for FAIR is more flexible, which supports various complex beam transfer for FAIR.  It is capable to transfer different species beam from one machine cycle to another.  It is capable to parallel transfer beam through FAIR accelerators. It is capable to transfer the beam between two synchrotrons via FRS or Super FRS. 
+
+It coordinates with the MPS system, which protects SIS100/SIS300 from unacceptable failure or situation. E.g. beam position is out of tolerance, rf cavity failure and so on. If the inhibit signal from MPS is off, the B2B transfer extraction and injection kickers will be fired. If the inhibit signal is on, the injection and extraction kickers will be blocked for firing.  When the emergency signal from MPS is indicated, the beam is capable to be kicked to the beam dump at any time during the B2B transfer process.
 
 
 %\section{$U^{28+}$ beam from SIS18 to SIS100}
