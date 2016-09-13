@@ -8,23 +8,22 @@ Due to the ratio of the circumference of the injection/extraction orbit and the 
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | c | c|}
     \hline
-	\tabincell{c}{Circumference\\ratio} & & \tabincell{c}{Harmonic\\ ratio} &  $f_{rf}^{l}/f_{rf}^{s}$& Bucket label&\tabincell{c}{Frqeuency beating\\Two frequencies\tablefootnote{Two slightly different frequencies}}& \tabincell{c}{Frqeuency beating\\Mismatch\tablefootnote{Bunch and bucket center mismatch}} & Phase shift method\\ \hline
-     	\multirow{2}*{{\tabincell{c}{$C^l/C^s=\kappa$ \\Integer}}} & & $h^l/h^s=\kappa$ & $\frac{h^l}{h^s\times \kappa}$=1 & $f_{rf}^{l} or f_{rf}^{s}$&$f_{rf}^{l}$ and $f_{rf}^{s}+\Delta f$ &$\frac{2T_{rev}^{l}}{1/\Delta f}\times360^\circ$ or $\frac{2T_{rev}^{s}}{1/\Delta f}\times360^\circ$& \\ \cline{2-8}
-
-& &$h^l/h^s\neq\kappa$ &$\frac{h^l}{h^s\times \kappa}$ & $\frac{f_{rf}^{l}}{h^l} or \frac{f_{rf}^{s}}{h^s\times \kappa}$ & $\frac{f_{rf}^{l}}{h^l} and \frac{f_{rf}^{s}}{h^s\times \kappa}+\Delta f$ &$\frac{2\times h^l \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ or $\frac{2\times (h^s\times \kappa)\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$& \\ \hline
+	&\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{RF cavity\\frequency ratio \\$f_{rf}^{l}/f_{rf}^{s}$\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}$}}& \tabincell{c}{Bucket label\\(large or small is \\target synchrotron)}&\tabincell{c}{Frequency beating\\Two slightly \\different frequencies}& \tabincell{c}{Frqeuency beating\\Mismatch\tablefootnote{Bunch and bucket center mismatch}\\(large or small is \\target synchrotron)} \\ \hline
+    Type A & \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l}{h^s\times \kappa}$\\ \\ $Y=GCD(h^l,h^s\times \kappa)$\tablefootnote{Greatest Common Divider}} & $\frac{f_{rf}^{l}}{h^l/Y} or \frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$ & \tabincell{c}{$\frac{f_{rf}^{l}}{h^l/Y} and \frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}+\Delta f$\\  or\\ $\frac{f_{rf}^{l}}{h^l/Y}+\Delta f and \frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$}&\tabincell{c}{$\pm\frac{1}{2}\times\frac{2\times (h^l/Y) \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ \\ or\\ $\pm\frac{1}{2}\times\frac{2\times ([(h^s\times \kappa)/Y])\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$}\\ \hline
 											
-     	\multirow{2}*{\tabincell{c}{$C^l/C^s=$\\ $\iota+ \lambda$ \\Not Integer}}&\tabincell{c}{$\iota+ \lambda$ \\close to integer\\($\iota$ is integer)} & $\frac{h^l}{h^s\times (\iota+ \lambda)}$& $\frac{f_{rf}^{l}}{h^l} or \frac{f_{rf}^{s}}{h^s\times \iota}$ & $\frac{f_{rf}^{l}}{h^l} and \frac{f_{rf}^{s}}{h^s\times \iota}$ &$\frac{2\times h^l \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ or $\frac{2\times (h^s\times \iota)\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$&  \\ \cline{2-8}
+     Type B & 	\tabincell{c}{$C^l/C^s=\iota+ \lambda$ \\ or \\ $f{rev}^{s}/f{rev}^{l}\tablefootnote{The extraction and injection beam have different energy because of the target, e.g. FRS, Pbar}=\iota+ \lambda$\\close to integer\\($\iota$ is integer) }&\tabincell{c}{$\frac{h^l}{h^s\times (\iota+ \lambda)}$\\ \\ $Y=GCD(h^l,h^s\times \iota)$} & $\frac{f_{rf}^{l}}{h^l/Y} or \frac{f_{rf}^{s}}{(h^s\times \iota)/Y}$ & $\frac{f_{rf}^{l}}{h^l/Y} and \frac{f_{rf}^{s}}{(h^s\times \iota)/Y}$ & \tabincell{c}{$\pm\frac{1}{2}\times \frac{2\times (h^l/Y) \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ \\ or \\ $\pm\frac{1}{2}\times\frac{2\times [(h^s\times \iota)/Y]\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$}  \\ \hline
 
 
- &\multirow{1}*{\tabincell{c}{$\iota+ \lambda$ \\far away from integer\\($\iota$ is expressed by $\frac{m}{n}$)}} & $\frac{h^l}{h^s \times (m/n+ \lambda)}\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}=\frac{h^l}{h^s (m/n+\lambda)}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}$}$ &$\frac{f_{rf}^{l}}{h^l\times n} or \frac{f_{rf}^{s}}{h^s\times m}$ & $\frac{f_{rf}^{l}}{h^l\times n} and \frac{f_{rf}^{s}}{h^s\times m}$ &$\frac{2\times (h^l\times n) \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ or $\frac{2\times (h^s\times m)\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$&  \\ \hline
- 
+ Type C &\tabincell{c}{$C^l/C^s=\iota+ \lambda$ \\ or \\ $f{rev}^{s}/f{rev}^{l}=\iota+ \lambda$\\far away from integer\\($\iota$ is expressed by $\frac{m}{n}$)}&\tabincell{c}{ $\frac{h^l}{h^s \times (m/n+ \lambda)}\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}=\frac{h^l}{h^s (m/n+\lambda)}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}$}$\\ \\ \tabincell{c}{Y=GCD\\$(h^l\times n,h^s \times m)$}}&$\frac{f_{rf}^{l}}{(h^l\times n)/Y} or \frac{f_{rf}^{s}}{(h^s\times m)/Y}$ & $\frac{f_{rf}^{l}}{(h^l\times n)/Y} and \frac{f_{rf}^{s}}{(h^s\times m)/Y}$ & \tabincell{c}{$\pm\frac{1}{2}\times\frac{2\times[(h^l\times n)/Y] \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ \\ or \\ $\pm\frac{1}{2}\times\frac{2\times [(h^s\times m)/Y]\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$}  \\ \hline
+
+\multicolumn{6}{c}{\tabincell{c}{The phase shift could be implemented either for the large or small synchrotron. \\  When the target synchrotron is empty, the phase jump is implemented for the target synchrotron.}} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
 \end{landscape} 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -33,20 +32,19 @@ Due to the ratio of the circumference of the injection/extraction orbit and the 
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | c | c |}
     \hline
-	\tabincell{c}{Circumference\\ratio} & & \tabincell{c}{Harmonic\\ ratio} & $C^l/C^s$ &$h^l$ & $h^s$ &  $f_{rf}^{l}/f_{rf}^{s}$\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}$} & User case of FAIR accelerators\\ \hline
-     	\multirow{3}*{{\tabincell{c}{$C^l/C^s=\kappa$ \\Integer}}} & & $h^l/h^s=\kappa$ & 5& 10 & 2 & $\frac{h^l}{h^s\times \kappa}=\frac{10}{2\times 5}=1$ & $U^{28+}$ \tabincell{c}{B2B transfer \\from SIS18 to SIS100} \\ \cline{2-8}
-& &\multirow{2}*{$h^l/h^s\neq\kappa$} & 5& 10 & 1 & $\frac{h^l}{h^s\times \kappa}=\frac{10}{1\times 5}=2$ &\tabincell{c}{$H^{+}$ B2B transfer \\from SIS18 to SIS100} \\ \cline{4-8}
-											& & & 2& 1 & 1 & $\frac{h^l}{h^s\times \kappa}=\frac{1}{1\times 2}=\frac{1}{2}$ &\tabincell{c}{B2B transfer\\ from ESR to CRYRING} \\ \hline
-     	\multirow{6}*{\tabincell{c}{$C^l/C^s=$\\ $\iota+ \lambda$ \\Not Integer}}&\multirow{3}*{\tabincell{c}{$\iota+ \lambda$ \\close to integer\\($\iota$ is integer)}}  & &2-0.003& 4&1 & $\frac{h^l}{h^s\times (\iota+ \lambda)}=\frac{4}{1\times (2-0.003)}$ & \tabincell{c}{h=4 B2B transfer \\from SIS18 to ESR} \\ \cline{3-8}
- 								  &	  & &2-0.003& 1&1 &$\frac{h^l}{h^s\times (\iota+ \lambda)}=\frac{1}{1\times (2-0.003)}$ & \tabincell{c}{h=1 B2B transfer\\ from SIS18 to ESR}\\ \cline{3-8}
- 									&  & &1+0.021\tablefootnote{}& 5&1 &$\frac{f_{rf}^{Ext}}{f_{rf}^{Inj}}=\iota+ \lambda=1+0.021$ & \tabincell{c}{$H^{+}$ B2B transfer\\ from SIS100 to CR -----} \\ \cline{2-8}
+	\tabincell{c}{Type} &  $C^l/C^s$ &$\frac{ f_{rev}^{l}}{ f_{rev}^{s}}$&$h^l$ & $h^s$ &  $f_{rf}^{l}/f_{rf}^{s}$\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}$} & User case of FAIR accelerators\\ \hline
+     	\multirow{3}*{A} &  5&& 10 & 2 & $\frac{h^l}{h^s\times \kappa}=\frac{10}{2\times 5}=1$ & $U^{28+}$ \tabincell{c}{B2B transfer \\from SIS18 to SIS100} \\ \cline{2-7}
+& 5&& 10 & 1 & $\frac{h^l}{h^s\times \kappa}=\frac{10}{1\times 5}=2$ &\tabincell{c}{$H^{+}$ B2B transfer \\from SIS18 to SIS100} \\ \cline{2-7}
+											&5 && 2& 1  & $\frac{h^l}{h^s\times \kappa}=\frac{1}{1\times 2}=\frac{1}{2}$ &\tabincell{c}{B2B transfer\\ from ESR to CRYRING} \\ \hline
+     	\multirow{3}*{B}&2-0.003& &4&1 & $\frac{h^l}{h^s\times (\iota+ \lambda)}=\frac{4}{1\times (2-0.003)}$ & \tabincell{c}{h=4 B2B transfer \\from SIS18 to ESR} \\ \cline{2-7}
+ 								  	  &2-0.003&& 1&1 &$\frac{h^l}{h^s\times (\iota+ \lambda)}=\frac{1}{1\times (2-0.003)}$ & \tabincell{c}{h=1 B2B transfer\\ from SIS18 to ESR}\\ \cline{2-7}
+ 									&&5-0.104& 5&1 &$\frac{f_{rf}^{Ext}}{f_{rf}^{Inj}}=\iota+ \lambda=1+0.021$ & \tabincell{c}{$H^{+}$ B2B transfer\\ from SIS100 to CR -----} \\ \hline
 
- &\multirow{3}*{\tabincell{c}{$\iota+ \lambda$ \\far away from integer\\($\iota$ is expressed by $\frac{m}{n}$)}}
-											& & 2.5-0.054& 2&1 & $\frac{f_{rf}^{Inj}}{f_{rf}^{Ext}}=\frac{m}{n}+ \lambda=\frac{5}{2}-0.054$ & \tabincell{c}{RIB B2B transfer \\from SIS100 to CR----} \\ \cline{3-8}
+  	\multirow{3}*{C}& &5-0.104& 2&1 & $\frac{f_{rf}^{Inj}}{f_{rf}^{Ext}}=\frac{m}{n}+ \lambda=\frac{5}{2}-0.054$ & \tabincell{c}{RIB B2B transfer \\from SIS100 to CR----} \\ \cline{2-7}
 %										&	& &2.6-0.003& 1&1 &$\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}=\frac{h^l}{h^s (m/n+\lambda}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}$}=\frac{1\times 5}{1 \times 13- 1\times 0.003\times 5}$ &\tabincell{c}{B2B transfer\\ from CR to HESR} \\ \hline
-&	& &2.6-0.003& 1&1 &$\frac{h^l}{h^s \times (m/n+ \lambda)}\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}=\frac{h^l}{h^s (m/n+\lambda)}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}$}=\frac{1}{1 \times (13/5-0.003)}$ &\tabincell{c}{B2B transfer\\ from CR to HESR} \\ \cline{3-8}
+& 2.6-0.003& &1&1 &$\frac{h^l}{h^s \times (m/n+ \lambda)}\tablefootnote{$\frac{f_rf^{l}}{f_{rf}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{rev}^{s}}=\frac{h^l C^{s}}{h^s C_l}=\frac{h^l}{h^s (m/n+\lambda)}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}$}=\frac{1}{1 \times (13/5-0.003)}$ &\tabincell{c}{B2B transfer\\ from CR to HESR} \\ \cline{2-7}
 
-&& & 1.8+0.048& 1&1 & $\frac{f_{rf}^{Inj}}{f_{rf}^{Ext}}=\frac{m}{n}+ \lambda=\frac{9}{5}+0.048$ & \tabincell{c}{B2B transfer \\from SIS18 to ESR via FRS---} \\ \hline
+ &&1.8+0.048& 1&1 & $\frac{f_{rf}^{Inj}}{f_{rf}^{Ext}}=\frac{m}{n}+ \lambda=\frac{9}{5}+0.048$ & \tabincell{c}{B2B transfer \\from SIS18 to ESR via FRS---} \\ \hline
  
 
 %\begin{center}
