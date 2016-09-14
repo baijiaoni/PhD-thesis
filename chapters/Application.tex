@@ -91,7 +91,7 @@ Diving eq.~\ref{rf_freq_l_int} by eq.~\ref{rf_freq_s_int}, we get
 \end{equation}
 We assume Y is the GCD of $h^l$ and $h^s \times \kappa$.
 
-Tab.~\ref{Cir ratio integer} shows the rules for the calculation of the bucket label, the length of the synchronization window and the mismatch between the bunch and bucket center. 
+Tab.~\ref{Cir ratio integer} shows the formulas for the bucket label signal, two slightly different frequencies, the length of the synchronization window and the bunch and bucket center mismatch.
 %Here we assume $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}<f_{rev}^{s}$, if $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}>=f_{rev}^{s}$, the bucket lable is with $f_{rev}^{s}$, the $h^s\times \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{s}$ is replaced by $f_{rev}^{s}$. We assume $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, if $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}$, the bucket lable is with $f_{rev}^{l}$ and the $h^l/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{l}$ is replaced by $f_{rev}^{l}$.
 
 \begin{table}[!htb]
@@ -102,10 +102,28 @@ Tab.~\ref{Cir ratio integer} shows the rules for the calculation of the bucket l
     \begin{tabular}{ | c | c | c |}
     \hline
 	&  \tabincell{c}{large synchrotron is\\target synchrotron}& \tabincell{c}{small synchrotron is\\target synchrotron} \\ \hline
-   Bucket label & $\frac{f_{rf}^{l}}{h^l/Y}$\tablefootnote{Here we assume $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, if $\frac{f_{rf}^{l}}{h^l/Y}>f_{rev}^{l}$, the bucket lable is with $f_{rev}^{l}$} & $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$\tablefootnote{Here we assume $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}<f_{rev}^{s}$, if $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}>f_{rev}^{s}$, the bucket lable is with $f_{rev}^{s}$} \\ \hline
+   Bucket label & $\frac{f_{rf}^{l}}{h^l/Y}$ & $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$ \\ \hline
 	\tabincell{c}{Different\\ frequencies} & \multicolumn{2}{c|}{$\frac{f_{rf}^{l}}{h^l/Y}$ and $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}+\Delta f$ or $\frac{f_{rf}^{l}}{h^l/Y}+\Delta f$ and $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$}\\ \hline
 	\tabincell{c}{Synchronization\\ window}& $2\times (h^l/Y) \times T_{rf}^{l}$ & $2\times [(h^s\times \kappa)/Y]\times T_{rf}^{s}$\\ \hline
 	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2\times (h^l/Y) \times T_{rf}^{l}}{1/\Delta f}\times360^\circ$ & $\pm\frac{1}{2}\times\frac{2\times [(h^s\times \kappa)/Y]\times T_{rf}^{s}}{1/\Delta f}\times360^\circ$\\ \hline
+    \end{tabular}
+\end{center}
+\end{table}
+
+The formulas in Tab.~\ref{Cir ratio integer} is based on the assumption that $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets. If  $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}>=f_{rev}^{s}$, the period of the frequency for beating is shorter than the revolution period, which could not be used for the bucket indication. So does for the small synchrotron. In this case, we have the formulas in Tab.~\ref{Cir ratio integerII}.
+
+\begin{table}[!htb]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{Circumference ratio is an ideal integer}
+\label{Cir ratio integerII}
+\begin{center}
+    \begin{tabular}{ | c | c | c |}
+    \hline
+	&  \tabincell{c}{large synchrotron is\\target synchrotron}& \tabincell{c}{small synchrotron is\\target synchrotron} \\ \hline
+   Bucket label & $f_{rev}^{l}$ & $f_{rev}^{s}$ \\ \hline
+	\tabincell{c}{Different\\ frequencies} & \multicolumn{2}{c|}{$\frac{f_{rf}^{l}}{h^l/Y}$ and $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}+\Delta f$ or $\frac{f_{rf}^{l}}{h^l/Y}+\Delta f$ and $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}$}\\ \hline
+	\tabincell{c}{Synchronization\\ window}& $2\times T_{rev}^{l}$ & $2\times T_{rev}^{s}$\\ \hline
+	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2\times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ & $\pm\frac{1}{2}\times\frac{2\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$\\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -130,7 +148,7 @@ Substituting eq.~\ref{harmonic_1_int} into eq.~\ref{rf_freq_ratio}, the followin
 
 In this scenario, the rf cavity frequencies of two synchrotrons are same. For the RF synchronization, both phase shift and frequency beating methods are applicable for the small or large synchrotrons. There is no difference of the implementation of two methods either on the large or small synchrotron, because they implement their species dependent rf frequency modulation profiles for a same required phase shift and same frequency dutune for the frequency beating method. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. With the phase shift method, the phase advance between two synchrotrons is a constant, so the synchronization window is ideally infinitely long, within which two synchrotrons remain perfect synchronized. Bunches can be transferred at any time within the window.
 
-Substituting Y into equations in Tab.~\ref{Cir ratio integer}, we get the rules for the calculation of the bucket label, the length of the synchronization window and the mismatch between the bunch and bucket center when the circumference ratio is an ideal integer and the harmonic ratio equals to the circumference ratio.
+There exists $\frac{f_{rf}^{l}}{h^l/Y}=\frac{f_{rf}^{SIS100}}{10/1}>=f_{rev}^{l}=\frac{f_{rf}^{SIS100}}{10}$, so substituting values into equations in Tab.~\ref{Cir ratio integerII}, we get the rules for the calculation of the bucket label, the length of the synchronization window and the mismatch between the bunch and bucket center when the circumference ratio is an ideal integer and the harmonic ratio equals to the circumference ratio.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Synchronization when the circumference ratio is an ideal integer and the harmonic ratio equals to the circumference ratio}
@@ -140,7 +158,7 @@ Substituting Y into equations in Tab.~\ref{Cir ratio integer}, we get the rules 
     \hline
 	&  \tabincell{c}{large synchrotron is\\target synchrotron}& \tabincell{c}{small synchrotron is\\target synchrotron} \\ \hline
    Bucket label & $f_{rev}^{l}$ & $f_{rev}^{s}$  \\ \hline
-	\tabincell{c}{Different\\ frequencies} & \multicolumn{2}{c|}{$f_{rf}^{l} and f_{rf}^{s}+\Delta f$ or $f_{rf}^{l}+\Delta f and f_{rf}^{s}$}\\ \hline
+	\tabincell{c}{Different\\ frequencies} & \multicolumn{2}{c|}{$f_{rf}^{l}$ and $f_{rf}^{s}+\Delta f$ or $f_{rf}^{l}+\Delta f and f_{rf}^{s}$}\\ \hline
 	\tabincell{c}{Synchronization\\ window}& $2\times T_{rev}^{l}$ & $2\times T_{rev}^{s}$\\ \hline
 	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2 \times T_{rev}^{l}}{1/\Delta f}\times360^\circ$ & $\pm\frac{1}{2}\times\frac{2\times T_{rev}^{s}}{1/\Delta f}\times360^\circ$\\ \hline
     \end{tabular}
@@ -152,13 +170,13 @@ The user case of the $U^{28+}$ B2B transfer from SIS18 to SIS100 is this scenari
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Synchronization of $U^{28+}$ B2B transfer from SIS18 to SIS100}
-\label{Cir ratio integer}
+\label{tab:U18to100}
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
 	&  \tabincell{c}{large synchrotron (SIS100) is target synchrotron} \\ \hline
    Bucket label & $f_{rev}^{SIS100}$  \\ \hline
-	\tabincell{c}{Different\\ frequencies} & $f_{rf}^{SIS18}+200Hz and f_{rf}^{SIS100}$\\ \hline
+	\tabincell{c}{Different\\ frequencies} & $f_{rf}^{SIS18}+200Hz$ and $f_{rf}^{SIS100}$\\ \hline
 	\tabincell{c}{Synchronization\\ window}& $2\times T_{rev}^{SIS100}=\SI{1.272}{us}$\\ \hline
 	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2 \times T_{rev}^{SIS100}}{1/200}\times360^\circ=\pm0.05^\circ$\\ \hline
     \end{tabular}
@@ -212,7 +230,8 @@ Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into contino
 \frac{f_{rf}^{SIS100}}{f_{rf}^{SIS18}}= \frac {h^{SIS100}}{h^{SIS18} \times \kappa}= \frac{10}{1 \times 5}=\frac{2}{1}
 \end{equation}
 
-For the frequency beating method, the frequency detune is preferred for SIS18 becuase of $h^{SIS100} > h^{SIS18} \times \kappa$. Here we assume \SI{200}{Hz} frequency detune of SIS18. The GCD of $h^{SIS100}=10$ and $h^{SIS18} \times \kappa=5$  is 5.
+For the frequency beating method, the frequency detune is preferred for SIS18 becuase of $h^{SIS100} > h^{SIS18} \times \kappa$. Here we assume \SI{200}{Hz} frequency detune of SIS18. The GCD of $h^{SIS100}=10$ and $h^{SIS18} \times \kappa=1\times 5$  is 5.
+There exists $\frac{f_{rf}^{l}}{h^l/Y}=\frac{f_{rf}^{SIS100}}{10/5}>=f_{rev}^{l}=\frac{f_{rf}^{SIS100}}{10}$, so substituting values into equations in Tab.~\ref{Cir ratio integerII}, we get the rules for the calculation of the bucket label, the length of the synchronization window and the mismatch between the bunch and bucket center when the circumference ratio is an ideal integer and the harmonic ratio equals to the circumference ratio.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -252,8 +271,9 @@ Only one bunch is injected into one bucket of CRYRING. The large synchrotron is 
 \end{equation}
 
 For the RF synchronization, the phase jump for CRYRING is preferred, because CRYRING is empty before the injection. The 1/2 CRYRING revolution frequency marker works for the bucket label. The phase difference between the ESR and 1/2 CRYRING revolution frequency markers equals to $t_{src}$+$t_{trg}$+$t_{TOF}$ after the synchronization. 
-For the frequency beating method, the frequency detune is preferred for ESR becuase of $h^{ESR} < h^{CRYRING} \times \kappa$. Here we assume \SI{200}{Hz} frequency detune for \SI{30}{MeV/\atomicmassunit} proton of ESR. The GCD of $h^{ESR}=1$ and $h^{CRYRING} \times \kappa=2$ is 1, namely Y=1.
+For the frequency beating method, the frequency detune is preferred for ESR becuase of $h^{ESR} < h^{CRYRING} \times \kappa$. Here we assume \SI{200}{Hz} frequency detune for \SI{30}{MeV/\atomicmassunit} proton of ESR. The GCD of $h^{ESR}=1$ and $h^{CRYRING} \times \kappa=1\times 2$ is 1, namely Y=1.
 
+There exists $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}=\frac{f_{rf}^{CRYRING}}{(1\times 2)/Y}< f_{rev}^{s}=f_{rf}^{CRYRING}\times 1$, so substituting values into equations in Tab.~\ref{Cir ratio integer}, we get the rules for the calculation of the bucket label, the length of the synchronization window and the mismatch between the bunch and bucket center when the circumference ratio is an ideal integer and the harmonic ratio equals to the circumference ratio.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Synchronization of B2B transfer from ESR to CRYRING}
@@ -262,10 +282,10 @@ For the frequency beating method, the frequency detune is preferred for ESR becu
     \begin{tabular}{ | c | c | }
     \hline
 	&  small synchrotron (CRYRING) is target synchrotron \\ \hline
-   Bucket label & $1/2f_{rev}^{CRYRING}$  \\ \hline
+   Bucket label & $1/2f_{rf}^{CRYRING}$  \\ \hline
 	\tabincell{c}{Different\\ frequencies} & $f_{rf}^{ESR}+200Hz$ and $\frac{f_{rf}^{CRYRING}}{2}$\\ \hline
-	\tabincell{c}{Synchronization\\ window}& $2\times (2\times T_{rev}^{CRYRING})=\SI{2.916}{us}$ \\ \hline
-	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2\times 2\times T_{rev}^{CRYRING}}{1/200}\times360^\circ=\pm0.10^\circ$\\ \hline
+	\tabincell{c}{Synchronization\\ window}& $2\times (2\times T_{rf}^{CRYRING})=\SI{2.916}{us}$ \\ \hline
+	\tabincell{c}{Center\\ mismatch}&$\pm\frac{1}{2}\times\frac{2\times 2\times T_{rf}^{CRYRING}}{1/200}\times360^\circ=\pm0.10^\circ$\\ \hline
     \end{tabular}
 \end{center}
 \end{table}
