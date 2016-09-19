@@ -29,10 +29,10 @@ where C is the circumference of the synchrotron, h the harmonic number of the rf
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
 
-
+In order to guarantee the calculation for the synchronization to be correct, the related loop must be frozen during the B2B transfer, ......
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase difference between two RF systems}
-
+\label{sec:phase_diff}
 For the RF synchronization between two synchrotrons, the prerequisite is to know the phase difference between two independent RF systems. 
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,7 +57,7 @@ dp(t)=\frac{e\rho_0}{\alpha_p (R_0)^{1/\alpha_p}}B(t)R(t)^{1/\alpha_p-1}dR(t)+ e
 Dividing both sides of eq. ~\ref{eq:1st_momentum} by p(t), we obtain
 \begin{equation}
 \label{eq:pRB}
-\frac{dp(t)}{p(t)}={\gamma_t^2}\frac{\Delta{R}}{R}+\frac{\Delta{B}}{B} 
+\frac{dp(t)}{p(t)}={\gamma_t^2}\frac{dR(t)}{R(t)}+\frac{dB(t)}{B(t)} 
 \end{equation}
 
 Now, for circular accelerators, the following general relation holds
@@ -96,7 +96,7 @@ Replacing dp(t)/p(t) in eq.~\ref{eq:fPR} with eq.~\ref{eq:pRB}, we have
 \frac{df(t)}{f(t)} ={\gamma^2(t)}\frac{dB(t)}{B(t)}+[\frac{\gamma_t^2}{\gamma^2(t)}-1]\frac{dR(t)}{R(t)} 
 \end{equation}
 
-where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$. In the same way,solving dR(t)/R(t) from eq. ~\ref{eq:pRB} and substituting it into eq. ~\ref{eq:fPR}, we obtain
+where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$. In the same way, solving dR(t)/R(t) from eq. ~\ref{eq:pRB} and substituting it into eq. ~\ref{eq:fPR}, we obtain
 \begin{equation}
 \label{eq:fPB}
 \frac{df(t)}{f(t)} =(\frac{1}{\gamma^2(t)}-\frac{1}{\gamma_t^2}) \frac{dp(t)}{p(t)}+\frac{1}{\gamma_t^2}\frac{dB(t)}{B(t)} 
@@ -105,7 +105,7 @@ where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\ga
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase shift method}
 
-Based on the phase difference, the rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
+Based on the phase difference on \ref{sec:phase_diff}, the rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
 
 \begin{figure}[!htb]
    \centering   
@@ -114,7 +114,7 @@ Based on the phase difference, the rf system of the source or target or both syn
    \label{phase_shift}
 \end{figure}
 
-Fig. 1 illustrates the phase shift method. The top and bottom RF signals are respectively from the source and target synchrotrons. For the phase shift method two RF signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The compensation of the time-of-flight is not drawn here. The red dashed line shows the end of the phase shift process and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with the random buckets.  
+Fig. 1 illustrates the phase shift method. The top and bottom RF signals are respectively from the source and target synchrotrons. For the phase shift method two RF signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The time-of-flight between the bunch and bucket is compensated here. The red dashed line shows the end of the phase shift process and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with the random buckets.  
 
 A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
 
@@ -123,7 +123,7 @@ Now we analyze the rf frequency modulation of the phase shift from the the beam 
 \begin{itemize}
 	\item Radial excursion and momentum shift due to rf frequency modulation
 
-For the phase shift method, the magnetic field is not affected by the frequency modulation, so $\Delta{B}$ = 0. By substituting $\Delta{B}$ = 0 into eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB}, we could get respectively the accompanying radial excursion and momentum shift    by the frequency modulation.
+For the phase shift method, the magnetic field is not affected by the frequency modulation, so $\Delta{B}$ = 0. By substituting $\Delta{B}$ = 0 into eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB}, we could get respectively the accompanying radial excursion and momentum shift by the frequency modulation.
 
 \begin{equation}
 \label{eq:phaseR}
@@ -138,7 +138,7 @@ and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\item Transverse dynamics analysis
 
-The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity.
+The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity of the machine.
 
 \begin{equation}
 \Delta{Q} = Q^`\frac{\Delta{p}}{p}
@@ -346,7 +346,7 @@ For the proper B2B transfer, the extraction and injection kickers must be synchr
 \begin{itemize}
 	\item Extraction kicker
 		
-Here we discuss that all bunches are extracted by one time extraction kick. The flattop is at least one revolution period. The fall time is not constrained. If there is no empty RF bucket of the ring, the rise time of the extraction kicker must be shorter than the bunch gap. If there is at least one empty RF bucket, the rise of the magnetic field could be achieved within the gap of the empty RF buckets. 
+Here we discuss that all bunches are extracted by one time extraction kick. The flattop is at least with the length of the bunches to be injected. The fall time is not constrained. If there is no empty RF bucket of the ring, the rise time of the extraction kicker must be shorter than the bunch gap. If there is at least one empty RF bucket, the rise of the magnetic field could be achieved within the gap of the empty RF buckets. 
 
 	\item Injectin kicker
 
