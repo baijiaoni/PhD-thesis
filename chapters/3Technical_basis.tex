@@ -60,7 +60,10 @@ The FAIR low-level rf (\gls{LLRF})~\cite{klingbeil_new_2011} system shall be usa
    \caption{Local Cavity Synchronization}
    \label{local_cavity_syn}
 \end{figure}
-Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (\gls{CCS}). A \gls{DSP}-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the Reference RF signal. This process is called beam-phase loop.
+Cavities are driven from a supply room by a Reference RF Signal. Fig.~\ref{local_cavity_syn} shows the typical cavity system with a Reference RF Signal. The cavity gets the RF signal from a local Cavity DDS (Direct Digital Synthesizer) unit, which receives RF Frequency Ramps from the Central Control System (\gls{CCS}). A \gls{DSP}-System (Digital Signal Processor) measures the phase between the Reference RF Signal and the gap voltage of the cavity. In the DSP system, a closed-loop control algorithm is implemented which generates frequency corrections for the local Cavity DDS. In this way, it is ensured that the phase of the gap voltage follows the phase of the Reference RF signal. This process is called local synchronization loop.                                                                                     
+
+In order to damp longitudinal rigid dipole oscillations, the beam phase feedbak loop is used. The phase difference between the beam signal and the Reference RF Signal is fed back via an FIR filter. The beam signal is obtained by a fast current transformer (FCT) or a beam position monitor (BPM). The filter output serves as a frequency change in the cavities resulting in a phase shift of the gap voltage~\cite{baudrenghien_low-level_2010}. The bunch-by-bunch longitudinal rf feedback loop generates a correction voltage in dedicated feedback cavities for a specified bunch~\cite{gros_s_bunch-by-bunch_2015}.
+
 
 \begin{figure}[H]
    \centering   
@@ -73,10 +76,8 @@ The Reference RF Signal distribution shown in Fig.~\ref{ref_rf_dis} is located i
 All the cavities of SIS18 are driven from one supply room. The SIS100 cavities will be gathered in three acceleration sections, each of them is driven by a dedicated supply room. 
 
 \section{\gls{MPS} system}
-The Fast Beam Abort System (FBAS) protects SIS100 and subsequent accelerators or experiments from
-damage by mislead beams, uncontrolled radioactive contamination and so on. Thereby, the
-individual equipment is assumed self-protecting. Therefore, it triggers accelerator safety critical actions, such as an emergency beam dump, a shutdown of magnets or a beam injection
-inhibit. In case of relevant equipment failures or other inappropriate equipment states, a MPS signal has to originate from this equipment. MPS propagates these signals by a proprietary net and combines them with the machine state or operator interventions. These signals must be processed to ensure the timeliness of the triggered actions. The entering of a safe equipment state is subordinate to a FBAS action.
+The Fast Beam Abort System (FBAS) protects SIS100 and subsequent accelerators or experiments from damage by mislead beams, uncontrolled radioactive contamination and so on. Thereby, the individual equipment is assumed self-protecting, which could triggers accelerator safety critical actions, such as an emergency beam dump, a shutdown of magnets or a beam injection
+inhibit. In case of relevant equipment failures or other inappropriate equipment states, a MPS signal stems from this equipment. MPS propagates these signals by a proprietary net and combines them with the machine state or operator interventions. These signals must be processed to ensure the timeliness of the triggered actions. The entering of a safe equipment state is subordinate to a FBAS action~\cite{Marku_fair_FBAS}.
 
 
 \section{Comparison}

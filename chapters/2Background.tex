@@ -29,7 +29,8 @@ where C is the circumference of the synchrotron, h the harmonic number of the rf
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
 
-In order to guarantee the calculation for the synchronization to be correct, the related loop must be frozen during the B2B transfer, ......
+During the B2B transfer process, feedback loops for the deviations correction of the particles from reference states (e.g. position and velocity) must switch off or freezen. E.g. Beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gros_s_bunch-by-bunch_2015}.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase difference between two RF systems}
 \label{sec:phase_diff}
@@ -358,7 +359,7 @@ For multi-batch injection, the rise time of the injection kicker must be shorter
 In order to observe the beams and measure related parameters for accelerators and transfer lines, the beam instrumentation (\gls{BI}) equipments must be synchronized and triggered within the beam schedule. For the B2B transfer, the data acquisition for the beam instrumentation equipments should be triggered before the bunch is extracted. Sometimes they should not be triggered too early because of the limitation of sampling time. So a pre-trigger is necessary, which indicates that the bunch will be extracted/injected soon. 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \bibliography{main}
 \bibliographystyle{plain}
 

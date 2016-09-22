@@ -37,7 +37,7 @@ Fig.~\ref{2method} illustrates the basic procedure of the B2B transfer with two 
 
 The B2B transfer process basically needs to follow six steps:
 \begin{enumerate}
-\item The DM announces the B2B transfer and freezes the beam-phase loop, when required.
+\item The DM announces the B2B transfer and freezes the beam phase feedback loop, when required.
 \item The two synchrotrons measure the rf phase locally.
 \item The source synchrotron gathers the measured rf phase from the target synchrotron.
 \item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
@@ -240,7 +240,7 @@ Besides, the SCUs for the B2B transfer are assigned to the B2B \gls{VLAN}. The s
 The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data/Signal flow of the B2B transfer system}
-In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Before the synchronization, the beam-phase loop should be frozen. 
+In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Before the synchronization, the feedback loop, e.g. beam phase feedback loop and bunch-to-bunch feedback loop, should be frozen. 
 
 \begin{enumerate}
 \item The DM sends the timing frame CMD\_START\_B2B for the B2B transfer. 

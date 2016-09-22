@@ -1,4 +1,5 @@
 \documentclass[12pt,twoside]{report}
+
 \usepackage[english]{babel}
 
 \usepackage[nopostdot,  style=super, nonumberlist, toc]{glossaries}
@@ -22,6 +23,9 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{acronym}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{cv}
+
 
 % Generate the glossary
 \makenoidxglossaries
@@ -32,7 +36,7 @@
 \setacronymstyle{long-short}
 
 %Ein eigenes Symbolverzeichnis erstellen
-\newglossary[slg]{symbolslist}{syi}{syg}{List of symbols}
+\newglossary[slg]{symbolslist}{syi}{syg}{List of Symbols}
 
 \newglossary[slg]{abbreslist}{syi}{syg}{List of Abbreviations}
 %Befehle für Symbole
@@ -802,23 +806,62 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 
 
 \graphicspath{ {images/} }
+\begin{document}
+\pagenumbering{roman}
+\begin{center}
+\thispagestyle{empty}
 
-\title{
-	{Development of the timing system for the Bunch-to-Bucket transfer between the FAIR accelerators }\\
-	{\large Institution Name}\\
-	{\includegraphics{university.jpg}}
-}
-\author{Jiaoni Bai}
-\date{11th March 2017}
+    \vspace{6cm}
+	 \LARGE \textbf{\uppercase{Development of the timing system for the Bunch-to-Bucket transfer between the FAIR accelerators }}
+	 \vspace{2cm}
+	%Thesis title
+
+	{ \normalsize Vom Fachbereich\\
+	Institut für Angewandte Physik\\
+	der Goethe-Universit$\ddot{a}$t, Frankfurt am Main\\
+	zur Erlangung des akademischen Grades\\
+	eines Doktor der Naturwissenschaften\\
+	genehmigte Dissertation\par}
+    \vspace{2cm}
+	%Author's name
+    {\normalsize Von \par}
+    \LARGE \textbf{ Jiaoni Bai}\\
+    {\normalsize geboren am 9. November 1986 in China \par}
+    \vspace{2cm}
+	\normalsize
+	% referent
+	\begin{align*}
+		 Referent:\: &Dr. D.Ondreka and Dr. D.Beck \\
+		 Korreferent:\: &Prof. Dr. O.Kester\\
+		 Tag der Einreichung:\: &\\
+		 Tag der m\ddot{u}ndlichen Pr\ddot{u}fung:\: & March, 2017\\
+\end{align*}
+	%Date
+    \vspace{2cm}
+    {\normalsize Darmstadt 2016}
+\end{center}
 
 \renewcommand{\labelitemii}{$\bullet$}
 
-\begin{document}
+\clearpage
+\vspace*{\fill}
+\begin{center}
+\begin{minipage}{.8\textwidth}
+I would like to dedicate this dissertation to my dear parents,\\ loving husband and good friends ...
+\end{minipage}
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
 
-\maketitle
-\chapter*{Zusammenfassung}
-\chapter*{Widmung}
-\chapter*{Deklaration}
+\chapter*{Acknowledgement}
+\input{chapters/Acknowledgement}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{chapters/Abstract}
+\chapter*{Kurzfassung}
+\input{chapters/Kurzfassung}
+
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -882,7 +925,7 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
-
+\pagenumbering{arabic}
 \chapter{Introduction}
 \input{chapters/1Introduction}
 \chapter{Theoretical background}
@@ -899,10 +942,9 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 \input{chapters/5Realization}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
-\chapter{Summary}
+\chapter{Conclusion and outlook}
 \input{chapters/7SummaryAusblick}
-\chapter{Acknowledgement}
-\input{chapters/8Acknowledgement}
+
 
 %\chapter{References}
 %\input{chapters/References}
@@ -916,4 +958,9 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 \bibliography{main}
 \bibliographystyle{plain}
 
+\chapter*{Curriculum Vitae}
+\input{chapters/Curriculum_Vitae}
+
+
 \end{document}
+
