@@ -23,8 +23,11 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{acronym}
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage{cv}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\usepackage{natbib}
+
 
 
 % Generate the glossary
@@ -802,11 +805,12 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
-
-
-
 \graphicspath{ {images/} }
+
+
+
 \begin{document}
+
 \pagenumbering{roman}
 \begin{center}
 \thispagestyle{empty}
@@ -955,12 +959,17 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/appendixB}
 \chapter{List of Figures}
 \input{chapters/appendixC}
-\bibliography{main}
+
 \bibliographystyle{plain}
+\bibliography{reference}
 
-\chapter*{Curriculum Vitae}
-\input{chapters/Curriculum_Vitae}
 
+\chapter{}
+\includepdf[pages=-,pagecommand={}]{chapters/publication.pdf}
+
+\chapter*{}
+\includepdf[pages=-,pagecommand={}]{chapters/CV.pdf}
+%\includepdf{chapters/CV.pdf}
 
 \end{document}
 

@@ -111,7 +111,7 @@ Diving eq.~\ref{rf_freq_l_int} by eq.~\ref{rf_freq_s_int}, we get
 Y is defined as the \gls{GCD} of $h^l$ and $h^s \times \kappa$.
 
 Tab.~\ref{Sync_ratio_int} shows the formulas for the frequency of the bucket label signal, two slightly different frequencies for beating, the length of the synchronization window and the bunch and bucket center mismatch in this scenario.
-%Here we assume $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}<f_{rev}^{s}$, if $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}>=f_{rev}^{s}$, the bucket lable is with $f_{rev}^{s}$, the $h^s\times \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{s}$ is replaced by $f_{rev}^{s}$. We assume $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, if $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}$, the bucket lable is with $f_{rev}^{l}$ and the $h^l/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{l}$ is replaced by $f_{rev}^{l}$.
+%Here we assume $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}<f_{rev}^{s}$, if $\frac{f_{rf}^{s}}{(h^s\times \kappa)/Y}>=f_{rev}^{s}$, the bucket label is with $f_{rev}^{s}$, the $h^s\times \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{s}$ is replaced by $f_{rev}^{s}$. We assume $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, if $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}$, the bucket label is with $f_{rev}^{l}$ and the $h^l/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{rf}^{l}$ is replaced by $f_{rev}^{l}$.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -129,7 +129,7 @@ Tab.~\ref{Sync_ratio_int} shows the formulas for the frequency of the bucket lab
 \end{center}
 \end{table}
 
-The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolutuion period. If $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}$, the period of the frequency for beating is shorter than the revolution period, which could not be used for the bucket indication. So does for the small synchrotron. In this case, we have the formulas in Tab.~\ref{Syn_rev_ratio_int}.
+The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{rf}^{l}}{h^l/Y}<f_{rev}^{l}$, namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}$, the period of the frequency for beating is shorter than the revolution period, which could not be used for the bucket indication. So does for the small synchrotron. In this case, we have the formulas in Tab.~\ref{Syn_rev_ratio_int}.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -185,7 +185,7 @@ There exists $\frac{f_{rf}^{l}}{h^l/Y}>=f_{rev}^{l}={f_{rf}^{l}}{h^l}$, so the f
 %\end{table}
 
 \subsubsection{User case of the $U^{28+}$ B2B transfer from SIS18 to SIS100}
-The user case of the $U^{28+}$ B2B transfer from SIS18 to SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continous eight out of ten buckets of SIS100. Each batch consists of two bunches. The large synchroton is SIS100 and the small one SIS18. $\kappa=5$, $h^{SIS100}=10$ and $h^{SIS18}=2$, so it complies with eq.~\ref{harmonic_1_int}. 
+The user case of the $U^{28+}$ B2B transfer from SIS18 to SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of SIS100. Each batch consists of two bunches. The large synchroton is SIS100 and the small one SIS18. $\kappa=5$, $h^{SIS100}=10$ and $h^{SIS18}=2$, so it complies with eq.~\ref{harmonic_1_int}. 
 %The GCD of $h^{SIS100}=10$ and $h^{SIS18} \times \kappa=2\times 5=10$ is 10. 
 Substituting $h^l$, $h^s$, $\kappa$, $f_{rf}^{X}$, $f_{rev}^{X}$ and Y into formulas in Tab.~\ref{Syn_rev_ratio_int}, the synchronization of $U^{28+}$ B2B transfer from SIS18 to SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that SIS18 is detuned with \SI{200}{Hz} for the frequency beating method. 
 \begin{table}[!htb]
@@ -235,7 +235,7 @@ For the frequency beating method, from eq.~\ref{rf_freq_ratio}, we get
 \begin{equation}
 \frac{f_{rf}^{l}}{h^l}= \frac{f_{rf}^{s}}{h^s \times \kappa} 
 \end{equation}
-If we detune $\Delta f$ for $\frac{f_{rf}^{l}}{h^l}$ of the large synchrotron, the rf cavity frequency $ f_{rf}^{l}$ must detune $\Delta f \times h^l$. If we detune $\Delta f$ for $\frac{f_{rf}^{s}}{h^s \times \kappa}$ of the small synchrotron, the rf cavity frequency $ f_{rf}^{s}$ must detune $\Delta f \times (h^s \times \kappa)$. According to the realtion between $h^l$ and $h^s \times \kappa$, we have the following two cases.
+If we detune $\Delta f$ for $\frac{f_{rf}^{l}}{h^l}$ of the large synchrotron, the rf cavity frequency $ f_{rf}^{l}$ must detune $\Delta f \times h^l$. If we detune $\Delta f$ for $\frac{f_{rf}^{s}}{h^s \times \kappa}$ of the small synchrotron, the rf cavity frequency $ f_{rf}^{s}$ must detune $\Delta f \times (h^s \times \kappa)$. According to the relation between $h^l$ and $h^s \times \kappa$, we have the following two cases.
 \begin{itemize}
 	\item $h^l > h^s \times \kappa \rightarrow \Delta f \times h^l > \Delta f \times (h^s \times \kappa)$ 
 
@@ -246,7 +246,7 @@ The frequency detune for the rf cavity frequency of the large synchrotron is sma
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{User case of the $H^{+}$ B2B transfer from SIS18 to SIS100}
-Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continous four out of ten buckets of SIS100. Each batch consists of one bunch. The large synchrotron is SIS100 and the small one SIS18. $\kappa=5$, $h^{SIS100}=10$ and $h^{SIS18}=1$. Substituting these values into eq.~\ref{rf_freq_ratio}, we get
+Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continuous four out of ten buckets of SIS100. Each batch consists of one bunch. The large synchrotron is SIS100 and the small one SIS18. $\kappa=5$, $h^{SIS100}=10$ and $h^{SIS18}=1$. Substituting these values into eq.~\ref{rf_freq_ratio}, we get
 \begin{equation}
 \frac{f_{rf}^{SIS100}}{f_{rf}^{SIS18}}= \frac {h^{SIS100}}{h^{SIS18} \times \kappa}= \frac{10}{1 \times 5}=\frac{2}{1}
 \end{equation}
@@ -358,7 +358,7 @@ In eq.~\ref{close_to_interger_3}, $h^s\times\lambda $ is much smaller than $h^s 
 
 %The slightly different frequencies are $\frac{f_{rf}^{s}}{(h^s \times \iota)/Y}$ and $\frac{f_{rf}^{l}}{h^l/Y}$ and the beating frequency is the difference between $\frac{f_{rf}^{s}}{(h^s \times \iota)/Y}$ and $\frac{f_{rf}^{l}}{h^l/Y}$. If the small synchrotron is the target synchrotron, $\frac{f_{rf}^{s}}{(h^s \times \iota)/Y}$ works as for the bucket label, or $\frac{f_{rf}^{l}}{h^l/Y}$ works for the bucket label. 
 
-Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is close to an ideal interger when the beam passes some target (e.g. FRS, Pbar) between two synchrotrons. The ratio between the revolution frequencies can be expressed as
+Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is close to an ideal integer when the beam passes some target (e.g. FRS, Pbar) between two synchrotrons. The ratio between the revolution frequencies can be expressed as
 \begin{equation} 
 \frac{f_{rev}^{s}}{f_{rev}^{l}}=\iota+ \lambda\label{close_to_interger1}
 \end{equation}
@@ -388,11 +388,11 @@ In fact, two slightly different frequencies could be fraction (between 1/Y and 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{User case of h=4 B2B transfer from SIS18 to ESR} 
-Continous two of four bunches are injected into one bucket of the injection orbit of ESR. The beam is accumulated in ESR. The large synchrotron is SIS18 and the small one is ESR. $h^{SIS18}=4$ and $h^{ESR}=1$. Subsitituting the circumference of SIS18 and ESR into eq.~\ref{circumference_ratio_noint}, we get
+Continuous two of four bunches are injected into one bucket of the injection orbit of ESR. The beam is accumulated in ESR. The large synchrotron is SIS18 and the small one is ESR. $h^{SIS18}=4$ and $h^{ESR}=1$. Substituting the circumference of SIS18 and ESR into eq.~\ref{circumference_ratio_noint}, we get
 \begin{equation}
 \frac{C^l}{C^s}=\iota + \lambda =2-0.003
 \end{equation}
-Subsitituting $h^{SIS18}$, $h^{ESR}$, $\iota$ and $\lambda$ into eq.~\ref{close_to_interger_3}, we get
+Substituting $h^{SIS18}$, $h^{ESR}$, $\iota$ and $\lambda$ into eq.~\ref{close_to_interger_3}, we get
 \begin{equation}
 \frac {f_{rf}^{SIS18}}{f_{rf}^{ESR}}= \frac{h^{SIS18}}{h^{ESR} \times (\iota+ \lambda)}=\frac {4}{1 \times(2-0.003)}
 \end{equation}
@@ -425,14 +425,14 @@ the previously stacked beam. The barrier voltages are switched on and moved away
 After the synchronization, the phase difference between the 1/2 SIS18 and ESR cavity rf frequency markers depends on the accumulation method.
 
 %Put it to the next section!!!
-%When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy depedent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{rf}^{SIS18}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{rf}^{ESR}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. More details, please see Appendix \ref{sec:18toESRviaFRS}. The 1/9 ESR revolution frequency marker works for the bucket label. After the synchronization, the phase difference between the 1/5 SIS18 and 1/9 ESR revolution frequency markers depends on the accumulation method. 
+%When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy dependent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{rf}^{SIS18}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{rf}^{ESR}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. More details, please see Appendix \ref{sec:18toESRviaFRS}. The 1/9 ESR revolution frequency marker works for the bucket label. After the synchronization, the phase difference between the 1/5 SIS18 and 1/9 ESR revolution frequency markers depends on the accumulation method. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{User case of h=1 B2B transfer from SIS18 to ESR} 
-One bunch is injected into one bucket of the injection orbit of ESR. The beam is accumulated in ESR. The large synchrotron is SIS18 and the small one is ESR. $h^{SIS18}=1$ and $h^{ESR}=1$. Subsitituting the circumference of SIS18 and ESR into eq.~\ref{circumference_ratio_noint}, we get
+One bunch is injected into one bucket of the injection orbit of ESR. The beam is accumulated in ESR. The large synchrotron is SIS18 and the small one is ESR. $h^{SIS18}=1$ and $h^{ESR}=1$. Substituting the circumference of SIS18 and ESR into eq.~\ref{circumference_ratio_noint}, we get
 \begin{equation}
 \frac{C^l}{C^s}=\iota + \lambda =2-0.003
 \end{equation}
-Subsitituting $h^{SIS18}$, $h^{ESR}$, $\iota$ and $\lambda$ into eq.~\ref{close_to_interger_3}, we get
+Substituting $h^{SIS18}$, $h^{ESR}$, $\iota$ and $\lambda$ into eq.~\ref{close_to_interger_3}, we get
 \begin{equation}
 \frac {f_{rf}^{SIS18}}{f_{rf}^{ESR}}= \frac{h^l}{h^s \times (\iota+ \lambda)}=\frac {1}{1 \times(2-0.003)}
 \end{equation}
@@ -603,7 +603,7 @@ Eq.~\ref{close_to_interger1} is expressed as
 
 The GCD of $h^{HESR}\times n=1\times5=5$ and $h^{CR} \times m=1\times 13=13$ is 1, namely Y=1. Substituting $h^l$, $h^s$, m, n, $\lambda$ and Y into formulas in Tab.~\ref{Cir ratio away from integer}, the synchronization of B2B transfer from CR to HESR is obtained. Tab.~\ref{tab:CRtoHESR} shows two operations for antiproton and RIB.
 
-%The B2B transfer from CR to HESR is impossible to be achieved by the frequency beating method because there exist no slightly different frequencies between two cavity rf frequencies. Besides, the bunch is stochastic cooling by electrons in CR. So only the phase shift for HESR is the only synchroniyation method. 
+%The B2B transfer from CR to HESR is impossible to be achieved by the frequency beating method because there exist no slightly different frequencies between two cavity rf frequencies. Besides, the bunch is stochastic cooling by electrons in CR. So only the phase shift for HESR is the only synchronization method. 
 
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -661,7 +661,7 @@ The GCD of $h^{SIS18}\times n=1\times5=5$ and $h^s \times m=1\times 9=9$ is 1, n
 
 More parameters about the B2B transfer from SIS18 to ESR via FRS, please see Appendix \ref{sec:18toESRvia FRS}.
 
-\section{Summary of the synchronization for differenct scenarioes}
+\section{Summary of the synchronization for different scenarios}
 In this section, all the synchronization methods are summarized in Tab.~\ref{B2B_transfer_rule}.
 \begin{landscape} 
 \begin{table}[!htb]

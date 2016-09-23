@@ -1,0 +1,123 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\nopagenumbers
+\usepackage{bibentry}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, lipsum, bibentry}
+\usepackage[margin=3cm]{geometry}
+ 
+\title{\bfseries\Huge Tom T. Texblog}
+\author{texblog+cv@gmail.com}
+\date{}
+ 
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+ 
+
+\begin{filecontents}{publication.bib}
+
+@article{bai_bunch_2015,
+	title = {{BUNCH} {TO} {BUCKET} {TRANSFER} {SYSTEM} {FOR} {FAIR}},
+	url = {http://icalepcs.synchrotron.org.au/papers/wepgf119.pdf},
+	urldate = {2016-09-23},
+	author = {Bai, J. and Ferrand, T. and Beck, D. and Bär, R. and Kester, O. and Ondreka, D. and Prados, C. and Terpstra, W.},
+	year = {2015},
+	file = {[PDF] synchrotron.org.au:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\G38R62RF\\Bai et al. - 2015 - BUNCH TO BUCKET TRANSFER SYSTEM FOR FAIR.pdf:application/pdf}
+}
+
+@article{ferrand_system_B2B,
+	title = {System {Simulation} of {Bunch}-to-{Bucket} {Transfer} {Between} {Synchrotrons}},
+	url = {http://repository.gsi.de/record/184160/files/FG-GENERAL-28.pdf},
+	urldate = {2016-09-23},
+	author = {Ferrand, T. and Bai, J.},
+	file = {[PDF] gsi.de:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\8FJRG2F2\\Ferrand and Bai - System Simulation of Bunch-to-Bucket Transfer Betw.pdf:application/pdf}
+}
+
+@article{bai_first_B2B,
+	title = {{FIRST} {IDEA} {ON} {BUNCH} {TO} {BUCKET} {TRANSFER} {FOR} {FAIR}},
+	url = {http://accelconf.web.cern.ch/AccelConf/PCaPAC2014/papers/fpo024.pdf},
+	urldate = {2016-09-23},
+	author = {Bai, J. and Beck, D. and Bär, R. and Ondreka, D. and Ferrand, T. and Kreider, M. and Prados, C. and Rauch, S. and Terpstra, W. and Zweig, M.},
+	file = {[PDF] cern.ch:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\GTG7PPUU\\Bai et al. - FIRST IDEA ON BUNCH TO BUCKET TRANSFER FOR FAIR.pdf:application/pdf}
+}
+
+@article{jiao-ni_modified_2013,
+	title = {Modified read-out system of the beam phase measurement system for {CSNS}},
+	volume = {37},
+	url = {http://iopscience.iop.org/article/10.1088/1674-1137/37/10/107004/meta},
+	number = {10},
+	urldate = {2016-09-23},
+	journal = {Chinese physics C},
+	author = {Jiao-Ni, Bai and Lei, Zeng and Biao, Wang and Peng, Li and Fang, Li and Tao-Guang, Xu and Zi-Gao, Li},
+	year = {2013},
+	pages = {107004},
+	file = {Snapshot:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\IEB9A7XZ\\meta.html:text/html}
+}
+
+@article{bai_development_2013,
+	title = {The {Development} of {Timing} {Control} {System} for {RFQ}},
+	url = {http://inspirehep.net/record/1364282?ln=de},
+	abstract = {Timing control system based on VME configuration is developed to meet the need of 3.5 MeV RFQ. An EPICS driver is provided to control its work. The timing control system satisfies request after examination. In the future, it will be used in the machine running. This paper introduces the Timing control hardware, VME interface, EPICS driver for Timing control system and MEDM operator interface. Bai, Jiaoni; Xiao, Shuai; Xu, Taoguang; Zeng, Lei},
+	urldate = {2016-09-23},
+	author = {Bai, Jiaoni and Xiao, Shuai and Xu, Taoguang and Zeng, Lei},
+	year = {2013},
+	pages = {THPB081},
+	file = {Full Text PDF:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\QX45773N\\Bai et al. - 2013 - The Development of Timing Control System for RFQ.pdf:application/pdf;Snapshot:C\:\\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.default\\zotero\\storage\\GIPXJ9UC\\1364282.html:text/html}
+}
+\end{filecontents}
+ 
+\begin{document}
+
+
+ 
+ 
+\bibliographystyle{plain}
+\nobibliography{publication}
+ 
+\section*{Publications}
+\begin{tabular}{L!{\VRule}R}
+
+2015&\bibentry{bai_bunch_2015}\\
+	 &\bibentry{ferrand_system_B2B}\\[5pt]
+2014&\bibentry{bai_first_B2B}\\
+2013&\bibentry{jiao-ni_modified_2013}\\[5pt]
+2012&\bibentry{bai_development_2013}\\[5pt]
+\end{tabular}
+
+ 
+\end{document}

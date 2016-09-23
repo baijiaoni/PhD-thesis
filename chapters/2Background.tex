@@ -1,4 +1,4 @@
-Transfering bunches of particles from a synchrotron into specified buckets of another synchrotron has several underlying basic priciples. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must first of all match that of the target synchrotron. Principally speaking, every synchrotron has its independent RF system. Then the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment between two RF systems is termed ''RF synchronization''. For the correct bucket injection, the filled buckets and the bucket to be filled must be marked. The bunch fast extraction must happen exactly one ''time of flight'' before the required bucket of the target synchrotron passes the injection region. The injection kicker must kick when the bucket passes the injection region.  In this chapter, all of the B2B basic priciples will be explained.  
+Transferring bunches of particles from a synchrotron into specified buckets of another synchrotron has several underlying basic principles. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must first of all match that of the target synchrotron. Principally speaking, every synchrotron has its independent RF system. Then the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment between two RF systems is termed ''RF synchronization''. For the correct bucket injection, the filled buckets and the bucket to be filled must be marked. The bunch fast extraction must happen exactly one ''time of flight'' before the required bucket of the target synchrotron passes the injection region. The injection kicker must kick when the bucket passes the injection region.  In this chapter, all of the B2B basic principles will be explained.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Energy match}
 
@@ -9,7 +9,7 @@ The bunch coordinates in the longitudinal phase plane of the source synchrotron,
 \end{equation}
 where p(t) is the magnitude of the particle momentum, e is the charge of the particle, B(t) is magnetic field, and $\rho_0$ is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field.
 
-The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magenetic rigidity of two synchrotrons must be matched:
+The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be matched:
 
 \begin{equation}
 	\label{eq:rigidity}
@@ -174,7 +174,7 @@ From this equation, we obtain the expression of energy gain in one turn,
 where V(t) is the RF accelerating voltage per turn; $\phi_{s0}$, the synchronous phase in the
 operation with no frequency modulation; and $\Delta\phi_{s}(t)$, the change in the synchronous phase originating from the rf frequency modulation.
 
-The magnetic field is not affected by the frequency change, we can assume dB(t)/dt = 0. Before the synchronizaiton, it is a stationary bucket with the synchronous phase $0^\circ$. Then, eq.~\ref{eq:energy_cycle} reduce to
+The magnetic field is not affected by the frequency change, we can assume dB(t)/dt = 0. Before the synchronization, it is a stationary bucket with the synchronous phase $0^\circ$. Then, eq.~\ref{eq:energy_cycle} reduce to
 \begin{equation}
 2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}]=eV(t)sin[\Delta \phi_s(t)]
 \label{eq:energy_cycle_noB}
@@ -189,7 +189,7 @@ From eq.~\ref{eq:delta_phase}, we know that $\Delta \phi_{s}(t)$ is only determi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Bucket area factor
 
-At the flattop, the bucket is a stationary bucket with $\phi_{s0}(t)=0$. During the frequeny modulation process, the bucket becomes a running bucket with $\Delta\phi_s(t)\ne0$. The ratio of bucket areas of a running bucket to a stationary bucket is bucket area factor $\alpha(\Delta \phi_s)$. 
+At the flattop, the bucket is a stationary bucket with $\phi_{s0}(t)=0$. During the frequency modulation process, the bucket becomes a running bucket with $\Delta\phi_s(t)\ne0$. The ratio of bucket areas of a running bucket to a stationary bucket is bucket area factor $\alpha(\Delta \phi_s)$. 
 The bucket area factor could be estimated by ~\cite{lee_accelerator_2011}.
 \begin{equation}
 \alpha_b(\Delta\phi_s)\approx(1-sin(\Delta \phi_s))(1+sin(\Delta \phi_s))
@@ -233,7 +233,7 @@ Vsin\phi_s=\frac{2\pi R_0 \rho B}{f_0(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}[
 \label{eq:bucketsizeF}
 \end{equation}
 
-Because $(R(t)-R_0)/R_0$ is about $10^{-4}$, $[1+\frac{\Delta R}{R_0}]^{(\frac{1}{\alpha_p}-1)}\approx 1$. We can get the realtion between df(t)/dt and $\phi_s$ from eq.~\ref{eq:bucketsizeF}.
+Because $(R(t)-R_0)/R_0$ is about $10^{-4}$, $[1+\frac{\Delta R}{R_0}]^{(\frac{1}{\alpha_p}-1)}\approx 1$. We can get the relation between df(t)/dt and $\phi_s$ from eq.~\ref{eq:bucketsizeF}.
 \begin{equation}
 Vsin\phi_s=\frac{2\pi R_0 \rho B}{f_0(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\frac{df(t)}{dt} 
 \label{eq:dotf}
@@ -241,17 +241,17 @@ Vsin\phi_s=\frac{2\pi R_0 \rho B}{f_0(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\
 
 From eq.~\ref{eq:buckt_area_factor}, we know that the bucket area factor is determined by the synchronous phase change $\Delta\phi_s$. Based on eq.~\ref{eq:dotf}, we know that df(t)/dt is important for the bucket size.
 
-In oerder to get the relation between $d\phi_s(t)/dt$ and the frequency modulation, we get the time derivative of eq.~\ref{eq:dotf}
+In order to get the relation between $d\phi_s(t)/dt$ and the frequency modulation, we get the time derivative of eq.~\ref{eq:dotf}
 
 \begin{equation}
 Vcos\phi_s\frac{d\phi_s}{dt}=\frac{2\pi R_0 \rho B}{f_0(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\frac{df(t)/dt}{dt} 
 \label{eq:2dotf}
 \end{equation}
 \label{3_criteria}
-Based on the adiabaticity eq.~(\ref{eq:derivation}), $d\phi_s(t)/ dt$ must be existing and small enough. So $\frac{df(t)/dt}{dt}$ must be existing and small enough. It means that df(t)/dt and $\phi_s(t)$ must be continuous. In a word, there are three constraits for the rf frequncy modulation.
+Based on the adiabaticity eq.~(\ref{eq:derivation}), $d\phi_s(t)/ dt$ must be existing and small enough. So $\frac{df(t)/dt}{dt}$ must be existing and small enough. It means that df(t)/dt and $\phi_s(t)$ must be continuous. In a word, there are three constraints for the rf frequency modulation.
 \begin{itemize}
 \item[-] The df(t)/dt of the rf frequency modulation must be small enough to guarantee the bucket size.
-\item[-] The df(t)/dt of the rf frequency modulation must be continous to guarantee the continuous synchronous phase.
+\item[-] The df(t)/dt of the rf frequency modulation must be continuous to guarantee the continuous synchronous phase.
 \item[-] The df(t)/dt/dt of the rf frequency modulation must be small enough to guarantee the change of the synchronous phase slow enough for the beam to follow.
 \end{itemize}
 
@@ -360,7 +360,7 @@ In order to observe the beams and measure related parameters for accelerators an
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\bibliography{main}
-\bibliographystyle{plain}
+%\bibliography{main}
+%\bibliographystyle{plain}
 
 

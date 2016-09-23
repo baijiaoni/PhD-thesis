@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\nopagenumbers
+\usepackage{bibentry}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jiaoni} % Your first name
+\familyname{Bai} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{R$\ddot{o}$mergasse 10}{64291 Darmstadt, Germany}
+\mobile{(49) 017682537175}
+\phone{(49)  6159 71 3126}
+\email{baijiaoni1314@gmail.com}
+%\homepage{staff.org.edu jsmith}{staff.org.edu$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"I am a slow walker, but I never stop walking." - Jiaoni Bai}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2013--Now}{Doctoral Study}{Goethe University, Frankfurt am Main}{Germany}{\textit{}}{}  % Arguments not required can be left empty
+
+\cventry{2010--2013}{Master of Engineering Study in Computer Technology}{Institute of High Energy Physics, Chinese Academy of Sciences}{China}{\textit{GPA -- 8.0}}{}
+\cventry{2006--2010}{Bachelor of Engineering Study in Medical Informatics Engineering}{Southern Medical University}{China}{\textit{GPA -- 9.0}}{}
+
+
+\section{PhD Thesis}
+
+\cvitem{Title}{\emph{Development of the timing system for the Bunch-to-Bucket transfer between the FAIR accelerators at GSI Helmholtz Centre for Heavy Ion Research GmbH}}
+
+\cvitem{Professor}{Prof. Oliver Kester}
+\cvitem{Supervisors}{Dr. Dietrich Beck and Dr. David Ondreka}
+\cvitem{Description}{
+\begin{itemize}
+	\item Development of the Bunch-to-Bucket transfer system
+	\item Programming work on FPGA
+	\item Measurement of the White Rabbit network performance
+\end{itemize}}
+
+\section{Master Thesis}
+
+\cvitem{Title}{\emph{The development of EPICS driver for customized VME hardwares}}
+\cvitem{Supervisor}{Taoguang Xu}
+\cvitem{Description}{
+\begin{itemize}
+	\item Development of the software interface between EPICS and VME hardware
+	\item Development of the operator controlling and monitoring interfaces by MEDM
+hardware
+	\item VxWorks program for Motorola VME board MVME5100
+\end{itemize}}
+
+
+\section{Bachelor Thesis}
+
+\cvitem{Title}{\emph{The CCD performance test and analysis}}
+\cvitem{Description}{
+\begin{itemize}
+	\item Investigation of the influence factors for CCD
+	\item Test how these factors influence CCD 
+\end{itemize}}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Experience}
+%
+%\subsection{Vocational}
+%
+%\cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+%\newline{}\newline{}
+%Detailed achievements:
+%\begin{itemize}
+%\item Learned how to make amazing coffee
+%\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+%\begin{itemize}
+%\item Paper jam
+%\item Software issues:
+%\begin{itemize}
+%\item Word not sending the correct data to printer
+%\item Windows trying to print in letter format
+%\end{itemize}
+%\item Coffee spilled inside printer
+%\end{itemize}
+%\item Broke the office record for number of kitten pictures in cubicle
+%\end{itemize}}
+%
+%%------------------------------------------------
+%
+%\cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+%
+%%------------------------------------------------
+%
+%\subsection{Miscellaneous}
+%
+%\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2012}{Won ``Scholarship of the head of the Institute of High Energy Physics, CAS`` for master thesis}
+\cvitem{2007}{Won second prize of ``Mathematical Contest in Modeling in Southern Medical University``}
+
+%----------------------------------------------------------------------------------------
+%	Key SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Key skills}
+
+\cvitem{Intermediate}{Network engineering, Bash shell script and Visual Basic programming}
+\cvitem{Advanced}{VHDL program for Altera FPGAs, C, Accelerator technology and beam dynamics, VxWorks programming and EPICS}
+
+%----------------------------------------------------------------------------------------
+%	Computer SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer literacy}
+
+\cvitem{Basic applications}{Windows, Linux (Ubuntu/Debian), Microsoft Office and LaTeX}
+\cvitem{Engineering applications}{Altera Quartus and Matlab}
+\cvitem{Art design application}{Photoshop and Corel VideoStudio}
+\cvitem{Web design}{Dreamweaver}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Mandarin Chinese}{Mothertongue}{}
+\cvitemwithcomment{English}{Good written and spoken}{}
+\cvitemwithcomment{German}{Goethe-Zertifikat B2}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+%
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+
+
+
+\end{document}

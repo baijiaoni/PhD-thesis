@@ -41,7 +41,7 @@ The B2B transfer process basically needs to follow six steps:
 \item The two synchrotrons measure the rf phase locally.
 \item The source synchrotron gathers the measured rf phase from the target synchrotron.
 \item The source synchrotron calculates the synchronization window with the kicker delay and sends it to both synchrotrons and to the DM. Besides, it reproduces the bucket label signal at the source synchrotron.
-For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved by the method of the phase jump at the target synchrotron for simplicities sake.
+For the phase shift method, the source synchrotron generally achieves the phase shift. But when the target synchrotron is empty, the phase shift is achieved by the method of the phase jump at the target synchrotron for simplicity's sake.
 \item The trigger signal is generated for the kickers with the delay compensation.
 \item The kicker electronics fire the kickers.
 \end{enumerate}
@@ -131,7 +131,7 @@ A particular case of the B2B synchronization occurs, when the target synchrotron
 
 \item RF synchronization with the frequency beating method
 
-The ratio of the circumference between many pair of machines in FIAR is not a perfect integer, e.g. SIS18 and ESR (injection orbit), SIS100 and CR, CR and HESR. so the RF synchronization is automatically with the frequency beating method. For the pairs with the perfect integer ratio of the circumference, e.g. SIS18 and SIS100, the rf frequency of the source synchrotron is detuned by modifying the magnetic field and radial excursion to get the frequency beating.
+The ratio of the circumference between many pair of machines in FAIR is not a perfect integer, e.g. SIS18 and ESR (injection orbit), SIS100 and CR, CR and HESR. so the RF synchronization is automatically with the frequency beating method. For the pairs with the perfect integer ratio of the circumference, e.g. SIS18 and SIS100, the rf frequency of the source synchrotron is detuned by modifying the magnetic field and radial excursion to get the frequency beating.
 
 \end{itemize}
 
@@ -140,7 +140,7 @@ The ratio of the circumference between many pair of machines in FIAR is not a pe
 \subsection{Coarse synchronization}
 % For each beam production chain, the B2B related SCUs will be configured by FESA.
 
-The coarse synchronization is achived by the synchronization window with a certain length. Within this window, the bunch is injected into the bucket with the center mismatch smaller than the upper bound\footnote{Upper bound of the mismatch is $1^\circ$ for FAIR accelerators}. The length of the synchronization window \gls{symb:syn_win_length} is two times the period of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the mismatch between the bunch and bucket center within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum mismatch \gls{symb:mismatch} with the synchronization window is calculated by 
+The coarse synchronization is achieved by the synchronization window with a certain length. Within this window, the bunch is injected into the bucket with the center mismatch smaller than the upper bound\footnote{Upper bound of the mismatch is $1^\circ$ for FAIR accelerators}. The length of the synchronization window \gls{symb:syn_win_length} is two times the period of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the mismatch between the bunch and bucket center within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum mismatch \gls{symb:mismatch} with the synchronization window is calculated by 
 \begin{equation}
 \frac{T_sync\_win}{1/\Delta f}= \frac{\Delta \theta}{360^\circ}
 \end{equation}
