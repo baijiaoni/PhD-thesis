@@ -26,7 +26,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 
 
 
@@ -957,17 +957,19 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/appendixA}
 \chapter{Parameters of B2B transfer for FAIR accelerator pairs}
 \input{chapters/appendixB}
-\chapter{List of Figures}
-\input{chapters/appendixC}
 
-\bibliographystyle{plain}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\bibliographystyle{unsrtnat}
 \bibliography{reference}
 
-
-\chapter{}
+\addcontentsline{toc}{chapter}{Publications}
+\renewcommand\chaptername{Publications}
+\pagestyle{empty}
 \includepdf[pages=-,pagecommand={}]{chapters/publication.pdf}
 
-\chapter*{}
+\renewcommand\chaptername{}
+\pagestyle{empty}
 \includepdf[pages=-,pagecommand={}]{chapters/CV.pdf}
 %\includepdf{chapters/CV.pdf}
 
