@@ -2,12 +2,12 @@ Transferring bunches of particles from a synchrotron into specified buckets of a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Energy match}
 
-The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled. The target synchrotron has to center the bucket on the desired orbit~\footnote {Design orbit or injection orbit}, according to the energy of the bunch. This requirement guarantees the energy match between the bunch and bucket. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
+The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The target synchrotron has to center the bucket on the desired orbit~\footnote {Design orbit or injection orbit}, according to the energy of the bunch. This requirement guarantees the energy match between the bunch and bucket. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
 \begin{equation}
 	\label{eq:energy}
 	B(t)\rho_0 =\frac{p(t)}{e}
 \end{equation}
-where p(t) is the magnitude of the particle momentum, e is the charge of the particle, B(t) is magnetic field, and $\rho_0$ is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field.
+where p(t) is the magnitude of the particle momentum, e is the charge of the particle, B(t) is magnetic field, and $\rho_0$ is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
 
 The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be matched:
 
@@ -18,18 +18,18 @@ The bunch is transferred from the source to the target synchrotron with the same
 
 Where the superscript of the symbol denotes the synchrotron, ``src`` represents the source synchrotron and ``trg`` the target synchrotron.
 
-Besides, the rf frequency of two synchrotrons must meet the following relation.
+Besides, the rf frequency of two synchrotrons must meet the following relation ~\cite{garoby_timing_1984}.
 \begin{equation}
 	\label{eq:velocity}
 	C^{src}\frac{f_{rf}^{src}(t)}{h^{src}} = \beta c=C^{trg}\frac{f_{rf}^{trg}(t)}{h^{trg}}
 \end{equation}
 
-where C is the circumference of the synchrotron, h the harmonic number of the rf signal and $f_{rf}$ denotes the rf frequency at the harmonic number h, $\beta$  the fraction of the particle velocity to the lightspeed.
+where C is the circumference of the synchrotron, h the harmonic number of the rf signal and $f_{rf}$ denotes the cavity rf frequency, $\beta$  the fraction of the particle velocity to the lightspeed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
 
-During the B2B transfer process, feedback loops for the deviations correction of the particles from reference states (e.g. position and velocity) must switch off or freezen. E.g. Beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gros_s_bunch-by-bunch_2015}.
+During the B2B transfer process, feedback loops for the deviations correction of the particles from reference states (e.g. position and velocity) must switch off or freezen. E.g. Beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gross_bunch-by-bunch_2015}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase difference between two RF systems}
@@ -40,15 +40,15 @@ For the RF synchronization between two synchrotrons, the prerequisite is to know
 \section{RF synchronization}
 \label{two_sync_methods}
 
-There are usually two methods available for the synchronization process. The synchronization is achieved by an azimuthal positioning of the bunch in the source synchrotron or the bucket in the target synchrotron. This is so-called ''phase shift method''. When two rf frequencies are slightly different, they are beating, perceived as periodic variations in phase difference, whose rate is the difference between the two frequencies. The synchronization is automatically achieved. This is so-called ''frequency beating method''. Both methods provide a time frame for the B2B transfer, within which a bunch could be transferred into a bucket with the center mismatch at least better than 1$^\circ$. The time frame is called the synchronization window. 
+There are usually two methods available for the synchronization process. The synchronization is achieved by an azimuthal positioning of the bunch in the source synchrotron or the bucket in the target synchrotron. This is so-called ''phase shift method''. When two rf frequencies are slightly different, they are beating, perceived as periodic variations in phase difference, whose rate is the difference between the two frequencies. The synchronization is automatically achieved. This is so-called ''frequency beating method''. Both methods provide a time frame for the B2B transfer, within which a bunch could be transferred into a bucket with the bunch-to-bucket center mismatch smaller than the upper bound. The time frame is called ``synchronization window``. 
 
-For both methods, the accompanying beam dynamics must be taken into consideration. Of the four variables, the revolution frequency f(t), B(t), p(t) and the orbit radius R(t), only two are independent.  This leads to four very useful differential relations. The momentum of particle is given by
+For both methods, the accompanying beam dynamics must be taken into consideration. The momentum of particle is given by 
 \begin{equation}
 \label{eq:momentum}
 p(t)=e\rho_0 [\frac {R(t)}{R_0}]^{1/\alpha_p }B(t) 
 \end{equation}
 
-where $R_0$ is its nominal value; and $\alpha_p$, the momentum compaction factor. From eq. ~\ref{eq:momentum}, the first-order total differential of p(t) is given as
+where $R_0$ is its nominal value, R(t) the orbit radius and $\alpha_p$, the momentum compaction factor. From eq. ~\ref{eq:momentum}, the first-order total differential of p(t) is given as
 
 \begin{equation}
 \label{eq:1st_momentum}
@@ -66,7 +66,7 @@ Now, for circular accelerators, the following general relation holds
 \label{eq:frequency}
 f(t)=\frac{\upsilon(t)}{2\pi R(t)} 
 \end{equation}
-where $\upsilon(t)$ is its velocity. The total differential of f(t) is given by
+where f(t) is the revolution frequency and $\upsilon(t)$ the velocity. The total differential of f(t) is given by
 
 \begin{equation}
 \label{eq:1st_frequency}
@@ -103,10 +103,12 @@ where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\ga
 \frac{df(t)}{f(t)} =(\frac{1}{\gamma^2(t)}-\frac{1}{\gamma_t^2}) \frac{dp(t)}{p(t)}+\frac{1}{\gamma_t^2}\frac{dB(t)}{B(t)} 
 \end{equation}
 
+Of the four variables, f(t), B(t), p(t) and R(t), only two are independent. This leads to four very useful differential relations, eq. ~\ref{eq:pRB}, eq. ~\ref{eq:fPR}, eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB} ~\cite{ezura_beam-dynamics_2008, bovet_selection_1970}. 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase shift method}
 
-Based on the phase difference on \ref{sec:phase_diff}, the rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
+Based on the phase difference on Sec. \ref{sec:phase_diff}, the rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
 
 \begin{figure}[!htb]
    \centering   
@@ -139,7 +141,7 @@ and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\item Transverse dynamics analysis
 
-The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity of the machine.
+The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity of the machine ~\cite{holzer_introduction_2013}.
 
 \begin{equation}
 \Delta{Q} = Q^`\frac{\Delta{p}}{p}
@@ -239,7 +241,7 @@ Vsin\phi_s=\frac{2\pi R_0 \rho B}{f_0(\frac{1}{\gamma}^2-\frac{1}{\gamma_t}^2)}\
 \label{eq:dotf}
 \end{equation}
 
-From eq.~\ref{eq:buckt_area_factor}, we know that the bucket area factor is determined by the synchronous phase change $\Delta\phi_s$. Based on eq.~\ref{eq:dotf}, we know that df(t)/dt is important for the bucket size.
+From eq.~\ref{eq:buckt_area_factor}, we know that the bucket area factor is determined by the synchronous phase change $\Delta\phi_s$. Based on eq.~\ref{eq:dotf}, we know the synchronous phase $\Delta\phi_s$ is determined by df(t)/dt, so df(t)/dt is important for the bucket size.
 
 In order to get the relation between $d\phi_s(t)/dt$ and the frequency modulation, we get the time derivative of eq.~\ref{eq:dotf}
 
@@ -274,7 +276,7 @@ The RF frequency is detuned at the end of the ramp. During the rf frequency detu
 \begin {itemize}
 \item Longitudinal dynamics analysis
 
-Because the momentum is not affected by the frequency change, namely $\Delta$p = 0, the general relation between the radial excursion and RF frequency change eq.~(\ref{eq:fPR}) reduces to eq.~(\ref{eq:eq4}) and the general relation between the magnetic field change and RF frequency change eq.~(\ref{eq:pRB}) reduces to eq.~(\ref{eq:eq5}).
+Because the momentum is not affected by the frequency change, namely $\Delta$p = 0, the general relation between the radial excursion and RF frequency change eq.~\ref{eq:fPR} reduces to eq.~\ref{eq:eq4} and the general relation between the magnetic field change and RF frequency change eq.~\ref{eq:pRB} reduces to eq.~\ref{eq:eq5}.
 
 \begin{equation}
 \frac{\Delta{f}}{f} = - \frac{\Delta{R}}{R}
@@ -342,7 +344,7 @@ After the synchronization, the bunch is synchronized to an arbitrary RF bucket. 
 %\end{equation}
 
 \section{Synchronization of the extraction and injection kicker}
-For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam.
+For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. The kicker time consists of the rise time, flat-top and fall time ~\cite{udo_injection_2014}.
  
 \begin{itemize}
 	\item Extraction kicker
@@ -351,12 +353,12 @@ Here we discuss that all bunches are extracted by one time extraction kick. The 
 
 	\item Injectin kicker
 
-For multi-batch injection, the rise time of the injection kicker must be shorter than the bunch gap. The flattop is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the bunch gap. If at least one bucket is kept empty, the fall of the magnetic field could be achieved within the gap of the empty RF buckets. If the ring needs only one time injection, the rise time is not constrained. The flattop determined by the length of the bunches to be injected. The fall time must be shorter than the bunch gap or the gap of the empty RF buckets. 
+For multi-\gls{glos:batch} injection, the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. The flat-top is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the bunch gap. If at least one bucket is kept empty, the fall of the magnetic field could be achieved within the gap of the empty RF buckets. If the ring needs only one time injection, the rise time is not constrained. The flat-top determined by the length of the bunches to be injected. The fall time must be shorter than the bunch gap or the gap of the empty RF buckets. 
 
 \end{itemize}
 
 \section{Beam indication for the beam instrumentation}
-In order to observe the beams and measure related parameters for accelerators and transfer lines, the beam instrumentation (\gls{BI}) equipments must be synchronized and triggered within the beam schedule. For the B2B transfer, the data acquisition for the beam instrumentation equipments should be triggered before the bunch is extracted. Sometimes they should not be triggered too early because of the limitation of sampling time. So a pre-trigger is necessary, which indicates that the bunch will be extracted/injected soon. 
+In order to observe the beams and measure related parameters for accelerators and transfer lines ~\cite{forck_lecture_2011}, the beam instrumentation (\gls{BI}) equipments must be synchronized and triggered within the beam schedule. For the B2B transfer, the data acquisition for the beam instrumentation equipments should be triggered before the bunch is extracted. They should not be triggered too early because of the limitation of sampling time. So a pre-trigger is necessary, which indicates that the bunch will be extracted/injected soon. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
