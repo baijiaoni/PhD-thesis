@@ -7,7 +7,7 @@ The bunch coordinates in the longitudinal phase plane of the source synchrotron,
 	\label{eq:energy}
 	B(t)\rho_0 =\frac{p(t)}{e}
 \end{equation}
-where p(t) is the magnitude of the particle momentum, e is the charge of the particle, B(t) is magnetic field, and $\rho_0$ is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
+where p(t) is the magnitude of the particle momentum, \gls{symb:e} is the charge of the particle, B(t) is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
 
 The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be matched:
 
@@ -24,7 +24,7 @@ Besides, the rf frequency of two synchrotrons must meet the following relation ~
 	C^{src}\frac{f_{rf}^{src}(t)}{h^{src}} = \beta c=C^{trg}\frac{f_{rf}^{trg}(t)}{h^{trg}}
 \end{equation}
 
-where C is the circumference of the synchrotron, h the harmonic number of the rf signal and $f_{rf}$ denotes the cavity rf frequency, $\beta$  the fraction of the particle velocity to the lightspeed.
+where C is the circumference of the synchrotron, h the harmonic number of the rf signal and $f_{rf}$ denotes the cavity rf frequency, \gls{symb:b} the fraction of the particle velocity to the lightspeed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
@@ -48,7 +48,7 @@ For both methods, the accompanying beam dynamics must be taken into consideratio
 p(t)=e\rho_0 [\frac {R(t)}{R_0}]^{1/\alpha_p }B(t) 
 \end{equation}
 
-where $R_0$ is its nominal value, R(t) the orbit radius and $\alpha_p$, the momentum compaction factor. From eq. ~\ref{eq:momentum}, the first-order total differential of p(t) is given as
+where $R_0$ is its nominal value, \gls{symb:R} the orbit radius, \gls{symb:B} the magnetic field and \gls{symb:mom_comp}, the momentum compaction factor. From eq. ~\ref{eq:momentum}, the first-order total differential of \gls{symb:P} is given as
 
 \begin{equation}
 \label{eq:1st_momentum}
@@ -66,7 +66,7 @@ Now, for circular accelerators, the following general relation holds
 \label{eq:frequency}
 f(t)=\frac{\upsilon(t)}{2\pi R(t)} 
 \end{equation}
-where f(t) is the revolution frequency and $\upsilon(t)$ the velocity. The total differential of f(t) is given by
+where \gls{symb:f} is the revolution frequency and \gls{symb:velocity} the velocity. The total differential of f(t) is given by
 
 \begin{equation}
 \label{eq:1st_frequency}
@@ -84,7 +84,7 @@ The fractional change in $\upsilon(t)$ is related to the fractional change in p(
 \label{eq:pv}
 \frac{dp(t)}{p(t)}=\gamma^2(t)\frac{d\upsilon(t)}{\upsilon(t)}
 \end{equation}
-where $\gamma(t)$  is the relativistic factor, which measures the total particle energy, E(t), in units of the particle rest energy, $E_0$. Solving $d\upsilon(t)/\upsilon(t)$ from eq. ~\ref{eq:pv} and substituting it into eq. ~\ref{eq:fvr} yields
+where \gls{symb:relative_fac} is the relativistic factor, which measures the total particle energy, \gls{symb:total_energy}, in units of the particle rest energy, \gls{symb:rest_energy}. Solving $d\upsilon(t)/\upsilon(t)$ from eq. ~\ref{eq:pv} and substituting it into eq. ~\ref{eq:fvr} yields
 
 \begin{equation}
 \label{eq:fPR}
@@ -97,11 +97,17 @@ Replacing dp(t)/p(t) in eq.~\ref{eq:fPR} with eq.~\ref{eq:pRB}, we have
 \frac{df(t)}{f(t)} ={\gamma^2(t)}\frac{dB(t)}{B(t)}+[\frac{\gamma_t^2}{\gamma^2(t)}-1]\frac{dR(t)}{R(t)} 
 \end{equation}
 
-where $\gamma_t$ is the transition gamma, which is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$. In the same way, solving dR(t)/R(t) from eq. ~\ref{eq:pRB} and substituting it into eq. ~\ref{eq:fPR}, we obtain
+where \gls{symb:transition_energy} is the transition gamma, which is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$. In the same way, solving dR(t)/R(t) from eq. ~\ref{eq:pRB} and substituting it into eq. ~\ref{eq:fPR}, we obtain
 \begin{equation}
 \label{eq:fPB}
 \frac{df(t)}{f(t)} =(\frac{1}{\gamma^2(t)}-\frac{1}{\gamma_t^2}) \frac{dp(t)}{p(t)}+\frac{1}{\gamma_t^2}\frac{dB(t)}{B(t)} 
 \end{equation}
+where \gls{symb:slip_fac} is the phase-slip factor defined as
+\begin{equation}
+\label{eq:phse_slip}
+\eta(t) =\frac{1}{\gamma^2(t)}-\frac{1}{\gamma_t^2}=\alpha_p-\frac{1}{\gamma_t^2}
+\end{equation}
+
 
 Of the four variables, f(t), B(t), p(t) and R(t), only two are independent. This leads to four very useful differential relations, eq. ~\ref{eq:pRB}, eq. ~\ref{eq:fPR}, eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB} ~\cite{ezura_beam-dynamics_2008, bovet_selection_1970}. 
 
@@ -156,7 +162,7 @@ The synchronous phase deviates from $0^\circ$ during the frequency modulation. F
 \label{eq:momentum/t}
 \end{equation} 
 Now, the relationship between the rate of change in momentum of a particle, dp(t)/dt,
-and the force applied on it, F(t), is governed by Newton’s second law:
+and the force applied on it, \gls{symb:force}, is governed by Newton’s second law:
 \begin{equation}
 \frac {dp(t)}{dt} = F(t)
 \label{eq:Newton}
@@ -173,7 +179,7 @@ From this equation, we obtain the expression of energy gain in one turn,
 2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}]=eV(t)sin[\phi_{s0}(t)+\Delta \phi_s(t)]
 \label{eq:energy_cycle}
 \end{equation} 
-where V(t) is the RF accelerating voltage per turn; $\phi_{s0}$, the synchronous phase in the
+where \gls{symb:voltage} is the RF accelerating voltage per turn; $\phi_{s0}$, the synchronous phase in the
 operation with no frequency modulation; and $\Delta\phi_{s}(t)$, the change in the synchronous phase originating from the rf frequency modulation.
 
 The magnetic field is not affected by the frequency change, we can assume dB(t)/dt = 0. Before the synchronization, it is a stationary bucket with the synchronous phase $0^\circ$. Then, eq.~\ref{eq:energy_cycle} reduce to
@@ -201,7 +207,7 @@ The bucket area factor could be estimated by ~\cite{lee_accelerator_2011}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Adiabaticity analysis
 
-$\omega_s(t)$ is the small-amplitude synchrotron frequency given by
+\gls{symb:syn_freq} is the small-amplitude synchrotron frequency given by
 \begin{equation}
 \omega_s(t) =[{-\frac{\eta(t)h\omega_{rev}^2(t)eV(t)cos{\phi_s(t)}}{2\pi\beta^2(t)E(t)}}]^{1/2}
 \label{eq:synchfreq}
@@ -213,7 +219,7 @@ A process is called “adiabatic” when the RF parameters are changed slowly en
 \label{eq:adiabaticity}
 \end{equation} 
 
-Compared with $\phi_s(t)$, all of the other variables change very slowly. $\phi_s(t)=\phi_{s0}(t)+\Delta\phi_s(t)$. From eq.~(\ref{eq:adiabaticity}) and eq.~(\ref{eq:synchfreq}), we can write the adiabaticity parameter $\varepsilon$, as follows~\cite{ezura_beam-dynamics_2008}:
+Compared with $\phi_s(t)$, all of the other variables change very slowly. $\phi_s(t)=\phi_{s0}(t)+\Delta\phi_s(t)$. From eq.~(\ref{eq:adiabaticity}) and eq.~(\ref{eq:synchfreq}), we can write the adiabaticity parameter \gls{symb:adiabaticity}, as follows~\cite{ezura_beam-dynamics_2008}:
 \begin{equation}
 \varepsilon \approx \frac{1}{2\omega_{s0}(t)}|tan\phi_{s}(t)\frac{d\phi_s(t)}{dt}|
 \label{eq:derivation}

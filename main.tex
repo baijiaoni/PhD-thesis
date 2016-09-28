@@ -45,7 +45,7 @@
 %Befehle für Symbole
 \newglossaryentry{symb:C_param}{
 name=$C^{X}$,
-description={X=l, Circumference of the designed orbit of large synchrotron; X=s, Circumference of the designed orbit of small synchrotron
+description={X=l, Circumference of the injection/extraction orbit of large synchrotron; X=s, Circumference of the injection/extraction orbit of small synchrotron
 },
 sort=symbolpi, type=symbolslist
 }
@@ -67,7 +67,7 @@ sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:cavity_freq}{
 name=$f_{rf}^{X}$,
-description={oder $f_{h=cavity harmonic}^{X}$.  X=l, Cavity frequency of large synchrotron; X=s, Cavity frequency of small synchrotron},
+description={oder $f_{h=cavity\_harmonic}^{X}$.  X=l, Cavity frequency of large synchrotron; X=s, Cavity frequency of small synchrotron},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:harmonic_param}{
@@ -77,7 +77,7 @@ sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:integer}{
 name=$\kappa$,
-description={Integer},
+description={Integer, m and n are also integer},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:decimal}{
@@ -95,6 +95,22 @@ sort=symbolpi, type=symbolslist
 %description={RF cavity driving frequency of SIS18},
 %sort=symbolpi, type=symbolslist
 %}
+\newglossaryentry{symb:GCD}{
+name=Y,
+description={Greatest common divisor},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:period_rf}{
+name=$T_{rf}^{X}$,
+description={Period of the cavity frequency of machine X},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:period_rev}{
+name=$T_{rev}^{X}$,
+description={Period of the revolution period of machine X},
+sort=symbolpi, type=symbolslist
+}
+
 \newglossaryentry{symb:period_18h1}{
 name=$T_{h=1}^{SIS18}$,
 description={Period of the rf cavity revolution frequency of SIS18},
@@ -160,29 +176,25 @@ name=$\phi_s$,
 description={Synchronous phase},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:adia}{
-name=$\varepsilon$,
-description={Adiabaticity parameter},
-sort=symbollambda, type=symbolslist
-}
+
 \newglossaryentry{symb:chromaticity_x}{
 name=$Q_x$,
-description={Horizontal chromaticity of SIS18},
+description={Horizontal chromaticity},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:chromaticity_y}{
 name=$Q_y$,
-description={Vertical chromaticity of SIS18},
+description={Vertical chromaticity},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:c_chromaticity_x}{
 name=$\Delta Q_x$,
-description={Horizontal chromatic tune shift of SIS18 due to the rf frequency modulation},
+description={Horizontal chromatic tune shift due to the rf frequency modulation},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:c_chromaticity_y}{
 name=$\Delta Q_y$,
-description={Vertical chromatic tune shift of SIS18 due to the rf frequency modulation},
+description={Vertical chromatic tune shift due to the rf frequency modulation},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:radius}{
@@ -190,9 +202,30 @@ name=$\frac{\Delta{R}}{R}$,
 description={Ratio between the excursive radius and the designed radius},
 sort=symbollambda, type=symbolslist
 }
+
+
+
+
+\newglossaryentry{symb:adiabaticity}{
+name=$\varepsilon$,
+description={Adiabaticity parameter},
+sort=symbollambda, type=symbolslist
+}
+
+
+\newglossaryentry{symb:syn_freq}{
+name=$\omega_s(t)$,
+description={Small-amplitude synchrotron frequency},
+sort=symbollambda, type=symbolslist
+}
 \newglossaryentry{symb:freq}{
 name=$\frac{\Delta{f}}{f}$,
 description={Ratio between the modulated frequency and the normalized frequency},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:voltage}{
+name=V(t),
+description={RF accelerating voltage},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:mgenetic}{
@@ -205,14 +238,34 @@ name=$\gamma_t$,
 description={Transition energy},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:relative_fac}{
+name=$\gamma(t)$,
+description={Relativistic factor, which measures the total particle energy, E(t), in units of the particle rest energy, $E_0$},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:force}{
+name=F(t),
+description={Force},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:total_energy}{
+name= E(t),
+description={Total particle energy},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:rest_energy}{
+name=$E_0$,
+description={Particle rest energy},
+sort=symbollambda, type=symbolslist
+}
 \newglossaryentry{symb:best_align}{
 name=$t_{best}$,
-description={Best estimate of alignment of zero crossing points of Reference RF Signals of SIS18 and SIS100},
+description={Best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:probable_aligh}{
 name=$\delta t_{best}$,
-description={Uncertainty of the best estimate of alignment of zero crossing points of Reference RF Signals of SIS18 and SIS100},
+description={Uncertainty of the best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:harmonic}{
@@ -332,6 +385,11 @@ name=$\beta$,
 description={Relative speed to the speed of light},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:velocity}{
+name=$\upsilon(t)$,
+description={Velocity of particle},
+sort=symbollambda, type=symbolslist
+}
 \newglossaryentry{symb:t_b2b}{
 name=$t_{B2B}$,
 description={Start time of the B2B transfer},
@@ -433,7 +491,47 @@ name=$\Delta f$,
 description={Beating frequency},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:R}{
+name=R(t),
+description={Orbit radius. $R_0$ the nominal value},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:P}{
+name=p(t),
+description={Particle momentum},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:f}{
+name=f(t),
+description={Revolution frequency},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:B}{
+name=B(t),
+description={Magnetic field},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:slip_fac}{
+name=$\eta(t)$,
+description={Phase-slip factor},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:e}{
+name=e,
+description={Charge of the particle},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:mom_comp}{
+name=$\alpha_p$,
+description={Momentum compaction factor},
+sort=symbollambda, type=symbolslist
+}
 
+\newglossaryentry{symb:bending_rad}{
+name=$\rho_0$,
+description={Bending radius of a particle immersed in a magnetic field B},
+sort=symbollambda, type=symbolslist
+}
 %Befehle für Abbreviation
 \newglossaryentry{GCD}
 {
@@ -453,6 +551,10 @@ description={Bunch to Bucket},type=abbreslist
 \newglossaryentry{GMT}{
 name={GMT},
 description={General Machine Timing},type=abbreslist
+}
+\newglossaryentry{API}{
+name={API},
+description={Application Programming Interface},type=abbreslist
 }
 \newglossaryentry{BuTiS}{
 name={BuTiS},
@@ -666,6 +768,7 @@ description={Graphical  User Interface},type=abbreslist
 
 % Generate the glossary
 \makenoidxglossaries
+
 \newglossaryentry{glos:bucket_pattern}{
 name={bucket pattern},
 description={Rules for the buckets to be filled}
@@ -673,6 +776,10 @@ description={Rules for the buckets to be filled}
 \newglossaryentry{glos:cir_ratio}{
 name={circumference ratio},
 description={Ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron}
+}
+\newglossaryentry{glos:rev_ratio}{
+name={revolution frequency ratio},
+description={Ratio of the revolution frequency of the small to that of the large synchrotrons}
 }
 \newglossaryentry{glos:har_ratio}{
 name={harmonic ratio},
@@ -707,6 +814,14 @@ description={Signal generated by the Group DDS and delivered to an individual RF
 \newglossaryentry{glos:group_DDS}{
 name={Group DDS},
 description={DDS module that generates an Reference RF Signal for a group of cavities}
+}
+\newglossaryentry{glos:cavity_DDS}{
+name={Cavity DDS},
+description={Cavity DDS provides RF signal for cavities}
+}
+\newglossaryentry{glos:vit_DDS}{
+name={virtual RF cavity},
+description={A virtual position around the ring, to which the Reference RF Signal corresponds}
 }
 \newglossaryentry{glos:timing_frame}{
 name={timing frame},
@@ -776,6 +891,14 @@ description={SIS100 batch: Train of 4 $\times$ 2 $U^{28+}$ bunches injected into
 \newglossaryentry{glos:bunch_gap}{
 name={bunch gap},
 description={Area without any bunches in the bunch train that fits the time required for building up the nominal field of the kicker}
+}
+\newglossaryentry{glos:best_align}{
+name={best estimate of alignment},
+description={Fine time for the alignment of two RF Reference Signals}
+}
+\newglossaryentry{glos:pro_align}{
+name={probable range of alignment},
+description={Range within which the fine alignment lies because of the propagation of the uncertainty}
 }
 
 \lstset{tabsize=4, %
@@ -987,11 +1110,11 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\input{chapters/3Firstconcept}
 \chapter{Technical basis for the B2B transfer system}
 \input{chapters/3Technical_basis}
-\chapter{Concept of the B2B transfer system}
+\chapter{Concept of the B2B transfer system for FAIR}
 \input{chapters/4Concept}
 \chapter{Application of the B2B transfer system for FAIR accelerators}
 \input{chapters/Application}
-\chapter{Realization and systematic investigation of the B2B transfer system}
+\chapter{Realization and systematic investigation of the B2B transfer system for FAIR}
 \input{chapters/5Realization}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
