@@ -1,0 +1,343 @@
+\begin{thebibliography}{48}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bai and Ferrand(2016)]{bai_concept_2016}
+Jiaoni Bai and Thibault Ferrand.
+\newblock Concept of the {FAIR} {Bunch} {To} {Bucket} {Transfer} {System},
+  2016.
+
+\bibitem[Wiedemann(2015)]{wiedemann_particle_2015}
+Helmut Wiedemann.
+\newblock \emph{Particle {Accelerator} {Physics}}.
+\newblock Springer, July 2015.
+\newblock ISBN 978-3-319-18317-6.
+\newblock Google-Books-ID: oR0\_CgAAQBAJ.
+
+\bibitem[_ac()]{_accelerators_????}
+Accelerators for {Society}.
+\newblock URL
+  \url{http://www.accelerators-for-society.org/about-accelerators/index.php?id=21#linac}.
+
+\bibitem[Barbalat(1994)]{barbalat_applications_1994}
+Oscar Barbalat.
+\newblock Applications of particle accelerators.
+\newblock Technical report, CERN, 1994.
+\newblock URL \url{http://cds.cern.ch/record/260280/files/P00021907.pdf}.
+
+\bibitem[Eschke(2005)]{eschke_international_2005}
+Jürgen Eschke.
+\newblock International {Facility} for {Antiproton} and {Ion} {Research}
+  ({FAIR}) at {GSI}, {Darmstadt}.
+\newblock \emph{Journal of Physics G: Nuclear and Particle Physics},
+  31\penalty0 (6):\penalty0 S967, 2005.
+\newblock URL
+  \url{http://iopscience.iop.org/article/10.1088/0954-3899/31/6/041/meta}.
+
+\bibitem[_fa(2011)]{_fair_2011}
+{FAIR} - {Facility} for {Antiproton} and {Ion} {Research}, May 2011.
+\newblock URL \url{https://www.gsi.de//forschungbeschleuniger/fair.htm}.
+
+\bibitem[Spiller and Franchetti(2006)]{spiller_fair_2006}
+P.~Spiller and G.~Franchetti.
+\newblock The {FAIR} accelerator project at {GSI}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A},
+  561\penalty0 (2):\penalty0 305--309, 2006.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0168900206000507}.
+
+\bibitem[Steck et~al.(2008)Steck, Bär, Blell, Dimopoulou, Dolinskii, Forck,
+  Franzke, Gorda, Gostishchev, Jandewerth, and {others}]{steck_advanced_2008}
+M.~Steck, R.~Bär, U.~Blell, C.~Dimopoulou, A.~Dolinskii, P.~Forck, B.~Franzke,
+  O.~Gorda, V.~Gostishchev, U.~Jandewerth, and {others}.
+\newblock Advanced {Design} of the {FAIR} {Storage} {Ring} {Complex}.
+\newblock In \emph{In {Proc}. of {EPAC}}, 2008.
+\newblock URL
+  \url{https://accelconf.web.cern.ch/AccelConf/PAC2009/papers/fr1gri03.pdf}.
+
+\bibitem[Baudrenghien(2010)]{baudrenghien_low-level_2010}
+P.~Baudrenghien.
+\newblock Low-level {RF}.
+\newblock 13\penalty0 (14):\penalty0 15, 2010.
+\newblock URL
+  \url{https://cas.web.cern.ch/cas/Denmark-2010/Writeups/Baudrenghien.docx}.
+
+\bibitem[Garoby(1984)]{garoby_timing_1984}
+R~Garoby.
+\newblock Timing aspect of bunch transfer between circular machines. {State} of
+  the art in the {PS} complex, {PS}/{RF}.
+\newblock Technical report, Note 84-6, 17 December 84, 1984.
+
+\bibitem[Barletta()]{barletta_overview_????}
+Harms Barletta.
+\newblock Overview on {Magnetic} fields.
+\newblock URL \url{http://uspas.fnal.gov/materials/12MSU/xverse_dynamics.pdf}.
+
+\bibitem[Grieser(2015)]{grieser_beam_2015}
+Jochen~Michael Grieser.
+\newblock \emph{Beam phase feedback in a heavy-ion synchrotron with
+  dual-harmonic cavity system}.
+\newblock PhD thesis, Technical University Darmstadt, 2015.
+\newblock URL \url{http://tuprints.ulb.tu-darmstadt.de/4634/}.
+
+\bibitem[Gross et~al.(2015)Gross, Hartel, Laier, Lens, Ningel, Schäfer,
+  Zipfel, and Klingbeil]{gross_bunch-by-bunch_2015}
+K.~Gross, U.~Hartel, U.~Laier, D.~Lens, K.~P. Ningel, S.~Schäfer, B.~Zipfel,
+  and H.~Klingbeil.
+\newblock Bunch-by-{Bunch} {Longitudinal} {RF} {Feedback} for {Beam}
+  {Stabilization} at {FAIR}.
+\newblock \emph{In Proc. of IPAC}, 2015.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/AccelConf/IPAC2015/papers/mopha021.pdf}.
+
+\bibitem[Ezura et~al.(2008)Ezura, YOSHII, TAMURA, and
+  SCHNASE]{ezura_beam-dynamics_2008}
+Eizi Ezura, Masahito YOSHII, Fumihiko TAMURA, and Alexander SCHNASE.
+\newblock Beam-{Dynamics} {View} of {RF} {Phase} {Adjustment} for
+  {Synchronizing} {J}-{PARC} {RCS} with {MR} or {MLF}, 2008.
+\newblock URL \url{http://ccdb5fs.kek.jp/tiff/2008/0826/0826001.pdf}.
+
+\bibitem[Bovet et~al.(1970)Bovet, Gouiran, Reich, and
+  Gumowski]{bovet_selection_1970}
+Claude Bovet, Robert Gouiran, Karl~Helmut Reich, and Igor Gumowski.
+\newblock A selection of formulae and data useful for the design of {AG}
+  synchrotrons.
+\newblock Technical report, CERN, 1970.
+\newblock URL \url{http://cds.cern.ch/record/280305}.
+
+\bibitem[Holzer(2013)]{holzer_introduction_2013}
+B.~J. Holzer.
+\newblock Introduction to transverse beam dynamics.
+\newblock \emph{CERN Yellow Report}, 2013.
+\newblock URL \url{http://arxiv.org/abs/1404.0923}.
+
+\bibitem[Lee(2011)]{lee_accelerator_2011}
+S~Y Lee.
+\newblock \emph{Accelerator {Physics}}.
+\newblock WORLD SCIENTIFIC, Singapore, 3 edition, November 2011.
+\newblock ISBN 978-981-4374-94-1 978-981-4374-95-8.
+\newblock URL \url{http://www.worldscientific.com/worldscibooks/10.1142/8335}.
+
+\bibitem[Udo(2014)]{udo_injection_2014}
+Blell Udo.
+\newblock Injection and {Extraction} {Components} of {SIS} 100 / 300, 2014.
+
+\bibitem[Forck(2011)]{forck_lecture_2011}
+Peter Forck.
+\newblock Lecture {Notes} on {Beam} {Instrumentation} and {Diagnostics}, 2011.
+\newblock URL
+  \url{https://scholar.google.de/scholar?q=Lecture+Notes+on+Beam+Instrumentation+and+Diagnostics&btnG=&hl=de&as_sdt=0%2C5}.
+
+\bibitem[Hoffmann(2008)]{hoffmann_fesafront-end_2008}
+T.~Hoffmann.
+\newblock {FESA}–{The} front-{End} {Software} architecture at {FAIR}.
+\newblock \emph{PCaPAC08}, 2008.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/AccelConf/pc08/papers/wep007.pdf}.
+
+\bibitem[Huhmann et~al.(2013)Huhmann, Bär, Beck, Fitzek, Fröhlich, Hechler,
+  Krause, and Thieme]{huhmann_fair_2013}
+Ralf Huhmann, Ralph~C. Bär, Dietrich~Hans Beck, Jutta Fitzek, Günther
+  Fröhlich, Ludwig Hechler, Udo Krause, and Matthias Thieme.
+\newblock The {FAIR} control system–{System} architecture and first
+  implementations.
+\newblock ICALEPCS, 2013.
+\newblock URL \url{http://epaper.kek.jp/ICALEPCS2013/papers/moppc097.pdf}.
+
+\bibitem[Beck et~al.(2012)Beck, Bar, Kreider, Prados, Rauch, Terpstra, and
+  Zweig]{beck_new_2012}
+Dietrich Beck, R.~Bar, Mathias Kreider, Cesar Prados, Stefan Rauch, Wesley
+  Terpstra, and Marcus Zweig.
+\newblock The new {White} {Rabbit} based timing system for the {FAIR} facility.
+\newblock \emph{PCaPAC}, 2012.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/Accelconf/pcapac2012/papers/fria01.pdf}.
+
+\bibitem[Moritz(2006)]{moritz_butisdevelopment_2006}
+Peter Moritz.
+\newblock {BuTiS}–{Development} of a {Bunchphase} {Timing} {System}.
+\newblock \emph{GSI Scientific Report}, 2006.
+\newblock URL
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.162.1765&rep=rep1&type=pdf}.
+
+\bibitem[Zipfel et~al.(2011)Zipfel, Moritz, and {others}]{zipfel_recent_2011}
+B.~Zipfel, P.~Moritz, and {others}.
+\newblock Recent {Progress} on the {Technical} {Realization} of the {Bunch}
+  {Phase} {Timing} {System} {BuTiS}.
+\newblock \emph{Proc. IPAC}, pages 418--420, 2011.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/accelconf/ipac2011/papers/mopc145.pdf}.
+
+\bibitem[Beck et~al.()Beck, Kreider, Prados, Terpstra, Rauch, and
+  Zweig]{beck_general_????}
+Dietrich Beck, Mathias Kreider, Cesar Prados, Wesley Terpstra, Stefan Rauch,
+  and Marcus Zweig.
+\newblock The {General} {Machine} {Timing} {System} for {FAIR} and {GSI}.
+\newblock URL
+  \url{https://www-acc.gsi.de/wiki/pub/Timing/TimingSystemDocuments/GMT_Description_v3-1.pdf}.
+
+\bibitem[Beck(2015)]{beck_timing_2015}
+Dietrich Beck.
+\newblock Timing {Messages} of {GMT} system for {FAIR}, 2015.
+\newblock URL \url{https://www-acc.gsi.de/wiki/Timing/TimingSystemEvent}.
+
+\bibitem[Klingbeil et~al.(2011)Klingbeil, Laier, Ningel, Schäfer, Thielmann,
+  and Zipfel]{klingbeil_new_2011}
+Harald Klingbeil, Ulrich Laier, Klaus-Peter Ningel, Stefan Schäfer, Christof
+  Thielmann, and Bernhard Zipfel.
+\newblock New digital low-level rf system for heavy-ion synchrotrons.
+\newblock \emph{Physical Review Special Topics - Accelerators and Beams},
+  14\penalty0 (10), October 2011.
+\newblock ISSN 1098-4402.
+\newblock \doi{10.1103/PhysRevSTAB.14.102802}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevSTAB.14.102802}.
+
+\bibitem[Mandakovic()]{mandakovic_fair_????}
+Marko Mandakovic.
+\newblock {FAIR} {Fast} {Beam} {Abort} {System}.
+\newblock URL
+  \url{https://fair-wiki.gsi.de/foswiki/pub/FC2WG/FairC2WGMinutes/20151021_Fast_Beam_Abort_System_Mandakovic.pdf}.
+
+\bibitem[Ferrand et~al.(2015)Ferrand, Klingbeil, and
+  Damerau]{ferrand_synchronization_2015}
+Thibault Ferrand, Harald Klingbeil, and Heiko Damerau.
+\newblock Synchronization of {Synchrotrons} for bunch-to-bucket {Transfers}.
+\newblock Technical report, 2015.
+\newblock URL \url{http://cds.cern.ch/record/2053285}.
+
+\bibitem[Bai et~al.(2015)Bai, Ferrand, Beck, Bär, Kester, Ondreka, Prados, and
+  Terpstra]{bai_bunch_2015}
+J.~Bai, T.~Ferrand, D.~Beck, R.~Bär, O.~Kester, D.~Ondreka, C.~Prados, and
+  W.~Terpstra.
+\newblock {BUNCH} {TO} {BUCKET} {TRANSFER} {SYSTEM} {FOR} {FAIR}.
+\newblock In \emph{{ICALEPCS}}, 2015.
+\newblock URL \url{http://icalepcs.synchrotron.org.au/papers/wepgf119.pdf}.
+
+\bibitem[Ferrand and Bai(2014)]{ferrand_system_2014}
+T.~Ferrand and J.~Bai.
+\newblock System {Simulation} of {Bunch}-to-{Bucket} {Transfer} {Between}
+  {Synchrotrons}.
+\newblock \emph{GSI Scientific Report}, 2014.
+\newblock URL
+  \url{http://repository.gsi.de/record/184160/files/FG-GENERAL-28.pdf}.
+
+\bibitem[Ferrand and Bai(2015)]{ferrand_system_2015}
+T.~Ferrand and J.~Bai.
+\newblock {SYSTEM} {DESIGN} {FOR} {A} {DETERMINISTIC} {BUNCH}-{TO}-{BUCKET}
+  {TRANSFER}.
+\newblock In \emph{{IPAC}}, 2015.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/AccelConf/IPAC2015/papers/wepma024.pdf}.
+
+\bibitem[Thieme et~al.(2013)Thieme, Panschow, and Rauch]{thieme_scu_2013}
+Matthias Thieme, Wolfgang Panschow, and Stefan Rauch.
+\newblock {SCU} system goes productive.
+\newblock \emph{GSI Scientific Report}, 2013.
+\newblock URL \url{http://repository.gsi.de/record/68061/files/FG-CS-07.pdf}.
+
+\bibitem[Beck et~al.(2011)Beck, Bar, Kreider, Prados, Rauch, Terpstra, Zweig,
+  and Fleck]{beck_white_2011}
+D.~Beck, R.~Bar, M.~Kreider, C.~Prados, S.~Rauch, W.~Terpstra, M.~Zweig, and
+  T.~Fleck.
+\newblock White {Rabbit} {Technology} as {Basis} for the {FAIR} {Timing}
+  {System}.
+\newblock \emph{GSI Scientific Report}, 2011.
+\newblock URL
+  \url{https://www-acc.gsi.de/wiki/pub/Timing/TimingSystemDocuments/PHN-ACC-RD-45.pdf}.
+
+\bibitem[Liebermann and Ondreka(2013{\natexlab{a}})]{liebermann_fair_2013}
+H.~Liebermann and D.~Ondreka.
+\newblock {FAIR} and {GSI} {Reference} {Cycles} for {SIS}18,
+  2013{\natexlab{a}}.
+
+\bibitem[Liebermann and Ondreka(2013{\natexlab{b}})]{liebermann_sis100_2013}
+H.~Liebermann and D.~Ondreka.
+\newblock {SIS}100 {Cycles}, 2013{\natexlab{b}}.
+
+\bibitem[Herfurth et~al.(2013)Herfurth, Brauning-Demian, Enders, Danared, and
+  {others}]{herfurth_low_2013}
+F.~Herfurth, A.~Brauning-Demian, W.~Enders, H.~Danared, and {others}.
+\newblock The low energy storage ring {CRYRING}@ {ESR}.
+\newblock \emph{Proc. of COOL2013 (Murren, Switzerland)}, 2013.
+\newblock URL
+  \url{https://accelconf.web.cern.ch/accelconf/COOL2013/papers/thpm1ha01.pdf}.
+
+\bibitem[Lestinsky et~al.(2015)Lestinsky, Bräuning-Demian, Danared, Engström,
+  Enders, Fedotova, Franzke, Heinz, Herfurth, Källberg, and
+  {others}]{lestinsky_cryring_2015}
+M.~Lestinsky, A.~Bräuning-Demian, H{\textbackslash}a~akan Danared,
+  M.~Engström, W.~Enders, S.~Fedotova, B.~Franzke, A.~Heinz, F.~Herfurth,
+  A.~Källberg, and {others}.
+\newblock {CRYRING}@ {ESR}: present status and future research.
+\newblock \emph{Physica Scripta}, 2015\penalty0 (T166):\penalty0 014075, 2015.
+\newblock URL
+  \url{http://iopscience.iop.org/article/10.1088/0031-8949/2015/T166/014075/meta}.
+
+\bibitem[Steck et~al.(2011)Steck, Dimopoulou, Franzke, Gorda, Katayama, Nolden,
+  Schreiber, Möhl, Stassen, FZJ, and {others}]{steck_demonstration_2011}
+M.~Steck, C.~Dimopoulou, B.~Franzke, O.~Gorda, T.~Katayama, F.~Nolden,
+  G.~Schreiber, Germany~D. Möhl, Switzerland~R. Stassen, H.~Stockhorst FZJ,
+  and {others}.
+\newblock Demonstration of {Longitudinal} {Stacking} in the {ESR} with
+  {Barrier} {Buckets} and {Stochastic} {Cooling}.
+\newblock page 140, Alushta, Ukraine, 2011.
+\newblock URL
+  \url{http://accelconf.web.cern.ch/AccelConf/COOL2011/papers/proceed.pdf#page=150}.
+
+\bibitem[Smirnov et~al.(2009)Smirnov, Krestnikov, Meshkov, and
+  {others}]{smirnov_particle_2009}
+A.~V. Smirnov, D.~A. Krestnikov, I.~N. Meshkov, and {others}.
+\newblock Particle accumulation with a barrier bucket {RF} system.
+\newblock In \emph{{COOL}}, 2009.
+
+\bibitem[Toelle et~al.(2007)Toelle, Bongardt, Dietrich, Esser, Felden, Greven,
+  Hansen, Klehr, Lehrach, Lorentz, and {others}]{toelle_hesr_2007}
+R.~Toelle, K.~Bongardt, J.~Dietrich, F.~Esser, O.~Felden, R.~Greven, G.~Hansen,
+  F.~Klehr, A.~Lehrach, B.~Lorentz, and {others}.
+\newblock {HESR} at {FAIR}: {Status} of technical planning.
+\newblock In \emph{{PAC}07}, 2007.
+\newblock URL \url{http://epaper.kek.jp/p07/PAPERS/TUPAN024.PDF}.
+
+\bibitem[Bai12 et~al.(2014)Bai12, Bär, Beck, Ferrand13, Kreider, Ondreka,
+  Prados, Rauch, Terpstra, and Zweig]{bai12_first_2014}
+J.~Bai12, R.~Bär, D.~Beck, T.~Ferrand13, M.~Kreider, D.~Ondreka, C.~Prados,
+  S.~Rauch, W.~Terpstra, and M.~Zweig.
+\newblock First {Idea} on {Bunch} to {Bucket} {Transfer} for {FAIR}.
+\newblock 2014.
+\newblock URL \url{http://epaper.kek.jp/PCaPAC2014/posters/fpo024_poster.pdf}.
+
+\bibitem[Taylor(1982)]{taylor_introduction_1982}
+John~R. Taylor.
+\newblock An introduction to error analysis: {The} study of uncertainty in
+  physical measurements.
+\newblock \emph{Mill Valley, CA: Anonymous University Science Books}, page
+  71ep, 1982.
+
+\bibitem[Ferrand()]{ferrand_development_????}
+Thibault Ferrand.
+\newblock \emph{Development of the {LLRF} system for a deterministic
+  {Bunch}-to-{Bucket} transfer for {FAIR}}.
+\newblock PhD thesis, Technical University Darmstadt.
+
+\bibitem[Laier(2011)]{laier_funktional-spezifikation_2011}
+U.~Laier.
+\newblock Funktional-{Spezifikation} {DDS}, 2011.
+
+\bibitem[_st()]{_statistical_????}
+Statistical and numerical tools in astrophysics {I}. {Accuracy} and precision.
+\newblock URL \url{http://www.astro.lu.se/Education/utb/ASTM11/lecture2.pdf}.
+
+\bibitem[Prados and Bai(2016)]{prados_testing_2016}
+Cesar Prados and Jiaoni Bai.
+\newblock Testing the {WR} {Network} of the {FAIR} {General} {Machine} {Timing}
+  {System}, 2016.
+
+\bibitem[_ca(2012)]{_calculating_2012}
+Calculating {Optical} {Fiber} {Latency}, 2012.
+\newblock URL
+  \url{http://www.m2optics.com/blog/bid/70587/Calculating-Optical-Fiber-Latency}.
+
+\end{thebibliography}

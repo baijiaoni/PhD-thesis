@@ -2,7 +2,7 @@ Transferring bunches of particles from a synchrotron into specified buckets of a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Energy match}
 
-The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The target synchrotron has to center the bucket on the desired orbit~\footnote {Design orbit or injection orbit}, according to the energy of the bunch. This requirement guarantees the energy match between the bunch and bucket. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
+The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
 \begin{equation}
 	\label{eq:energy}
 	B(t)\rho_0 =\frac{p(t)}{e}
@@ -114,7 +114,15 @@ Of the four variables, f(t), B(t), p(t) and R(t), only two are independent. This
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase shift method}
 
-Based on the phase difference on Sec. \ref{sec:phase_diff}, the rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved.
+The rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the expected phase difference. 
+
+Eq.~\ref{phase1} gives the relation between the required phase shift \gls{symb:pha_shift} and the frequency modulation. 
+\begin{equation}
+\Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase1}
+\end{equation}
+The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation T. For the RF synchronization, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented. 
+
+After the phase shift, the bunches of the source synchrotron are synchronized with random buckets of the target synchrotron. Theoretically the synchronization window is infinitely long by the phase shift method. The beam feedback loop on the rf system is frozen or switched off during the B2B transfer, the beam is stable for short time, e.g. \SI{10}{ms}. So the bunch must be transferred as early as possible. Besides, the length of the synchronization window equals to a sequence of all buckets, which gaurantees the possibility to transfer bunch into all buckets. The phase shift process must be performed adiabatically for the longitudinal emittance to be preserved. 
 
 \begin{figure}[!htb]
    \centering   
@@ -123,7 +131,16 @@ Based on the phase difference on Sec. \ref{sec:phase_diff}, the rf system of the
    \label{phase_shift}
 \end{figure}
 
-Fig. 1 illustrates the phase shift method. The top and bottom RF signals are respectively from the source and target synchrotrons. For the phase shift method two RF signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The time-of-flight between the bunch and bucket is compensated here. The red dashed line shows the end of the phase shift process and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with the random buckets.  
+
+Fig.~\ref{phase_shift} illustrates the phase shift method. The first and second sinusoidal signals are RF signals respectively from the source and target synchrotrons. For the phase shift method two RF signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The time-of-flight between the bunch and bucket is compensated here. The red dashed line shows the end of the phase shift process ($\Delta \phi_{shift}=0^\circ$) and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with the random buckets. The triangle frequency modulation is used as an example for the phase shift. Based on eq. ~\ref{phase1}, the area of the triangle equals to $\Delta \phi_{shift}/2\pi$, see eq. ~\ref{area}. The base of the triangle is T, the height of the triangle is determined by eq. ~\ref{height}.  
+
+\begin{equation}
+\frac{\Delta \phi_{shift}}{2\pi}=\frac{1}{2}TH \label{area}
+\end{equation}
+
+\begin{equation}
+H= \frac{\Delta \phi_{shift}}{\pi T}\label{height}
+\end{equation}
 
 A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. Phase jump is possible).
 
@@ -132,15 +149,46 @@ Now we analyze the rf frequency modulation of the phase shift from the the beam 
 \begin{itemize}
 	\item Radial excursion and momentum shift due to rf frequency modulation
 
-For the phase shift method, the magnetic field is not affected by the frequency modulation, so $\Delta{B}$ = 0. By substituting $\Delta{B}$ = 0 into eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB}, we could get respectively the accompanying radial excursion and momentum shift by the frequency modulation.
+\begin{equation}
+f(t)=\frac{\beta c}{2\pi R(t)} \label{freq_phase}
+\end{equation}
+The differential of eq. ~\ref{freq_phase} is
+\begin{equation}
+\frac{df(t)}{f(t)}=\frac{d\beta(t)}{\beta(t)}-\frac{dR(t)}{R(t)} \label{dfreq_phase}
+\end{equation}
+The beam momentum and its differential are related to $\beta$ and $d\beta$ as follows: 
+\begin{equation}
+p=\gamma \beta m_0c
+\end{equation}
+
+\begin{equation}
+(\frac{p}{m_0c})^2=\frac{\beta^2}{1-\beta^2}
+\end{equation}
+
+\begin{equation}
+(\frac{dp(t)}{p(t)})^2=\gamma^2\frac{d\beta(t)}{\beta(t)}
+\end{equation}
+Substituting $d\beta(t)/\beta(t)$ into eq. ~\ref{dfreq_phase}, we get 
+\begin{equation}
+\frac{df(t)}{f(t)}=\frac{1}{\gamma^2}\frac{dp(t)}{p(t)}-\frac{dR(t)}{R(t)}\label{f_p_r}
+\end{equation} 
+
+For the constant magnetic field, a particle will have a different orbit, if it is slightly shifted in momentum. The “momentum compaction factor” is defined as:
+\begin{equation}
+\alpha_p=\frac{dR(t)/R(t)}{dp(t)/p(t)}\label{mom_com}
+\end{equation} 
+
+The transition gamma \gls{symb:transition_energy} is related to $\alpha_p$ as $\gamma_t=1/\sqrt{\alpha_p}$.
+
+Substituting eq. ~\ref{mom_com} into eq. ~\ref{f_p_r}, we get respectively the accompanying radial excursion and momentum shift by the frequency modulation.
 
 \begin{equation}
 \label{eq:phaseR}
-\frac{\Delta{f}}{f} =({\frac{\gamma_t^2}{\gamma^2}-1}) \frac{\Delta{R}}{R}
+\frac{\Delta{f(t)}}{f(t)} =({\frac{\gamma_t^2}{\gamma^2}-1}) \frac{\Delta{R(t)}}{R(t)}
 \end{equation}
 and
 \begin{equation}
-\frac{\Delta{f}}{f} = (\frac{1}{\gamma^2}-\frac{1}{\gamma_t^2})\frac{\Delta{p}}{p}
+\frac{\Delta{f(t)}}{f(t)} = (\frac{1}{\gamma^2}-\frac{1}{\gamma_t^2})\frac{\Delta{p(t)}}{p(t)}
 \label{eq:phaseP}
 \end{equation}
 
@@ -268,7 +316,7 @@ Based on the adiabaticity eq.~(\ref{eq:derivation}), $d\phi_s(t)/ dt$ must be ex
 
 \subsection{Frequency beating method}
 
-The frequency beating method uses the effect of two RF signals of slightly different frequencies, perceived as periodic variations in phase difference whose rate is the difference between the two frequencies. The RF frequency of the source or the target or both synchrotrons is detuned long before the ejection, then the difference between the phase of the bunch and bucket is measured. Based on the measured phase, the synchronization is realized when the phase difference of the two RF frequencies corresponds to the ideal phase difference ($\Delta \theta = 0^\circ$). The $\Delta \theta$ is the mismatch between the bunch center and the corresponding bucket center. Because of the slightly different RF frequencies, a mismatch between the bunch and bucket centers exists. In principle, the B2B transfer requirement for FAIR allows a bunch to bucket center mismatch of $1^\circ$, which brings a symmetric time frame with respect to the time of the ideal phase difference, resulting in the maximum synchronization window for the frequency beating method, drawn in yellow, see Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the expected phase difference.
+The frequency beating method uses the effect of two RF signals of slightly different frequencies, perceived as periodic variations in phase difference whose rate is the difference between the two frequencies. The RF frequency of the source or the target or both synchrotrons is detuned long before the ejection, then the difference between the phase of the bunch and bucket is measured. Based on the measured phase, the synchronization is realized when the phase difference of the two RF frequencies corresponds to the ideal phase difference ($\Delta \theta = 0^\circ$). The $\Delta \theta$ is the mismatch between the bunch center and the corresponding bucket center. Because of the slightly different RF frequencies, a mismatch between the bunch and bucket centers exists. In principle, the B2B transfer requirement for FAIR allows a bunch to bucket center mismatch of $\pm1^\circ$, which brings a symmetric time frame with respect to the time of the ideal phase difference This is called the maximum synchronization window, drawn in yellow, see Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the expected phase difference.
 
 \begin{figure}[!htb]
    \centering   
@@ -276,18 +324,59 @@ The frequency beating method uses the effect of two RF signals of slightly diffe
    \caption{The illustration of the frequency beating method.}
    \label{frequency_beat}
 \end{figure}
+\begin{itemize}
+\item
+For one bunch to one bucket injection per B2B transfer, the bunch is ``perfectly`` injected into the center of the bucket. The ``perfect`` injection does not mean that the bunch-to-bucket center mismatch $\Delta \theta$ is $0^\circ$. It means the smallest mismatch with regard to other injection. The ``perfect`` injection is determined by the beating speed and the initial phase difference between these two signals. The maximum initial phase difference $\Delta \varphi$ is calculated by eq. ~\ref{mis_match}.
+\begin{equation}
+\frac{|1/(f_1-f_2)|}{360^\circ} = \frac{1/f_1}{\Delta \varphi}\label{mis_match}
+\end{equation}
+Where $f_1$ and $f_2$ are two slightly different RF frequencies, the beating frequency is expressed as $f_1$-$f_2$.
 
-The RF frequency is detuned at the end of the ramp. During the rf frequency detune process, the magnetic field and radius excursion react and the momentum is not affected for the energy match.
+When the inital phase difference is $0^\circ$, the ``perfect`` injection is with the mismatch $\Delta \theta$ = $0^\circ$.
+
+When the inital phase difference is slightly less than $\Delta \varphi$, the ``perfect`` injection is with the mismatch $\Delta \theta$ slightly less than $\Delta \varphi$.
+
+\item 
+For multi bunch to multi bucket injection per B2B transter, only one bunch is ``perfectly`` injected into the corresponding bucket, which is represented by the yellow dot in Fig. ~\ref{frequency_beat}. Other bunchs on both side of this bunch (red dots) are injected into their corresponding buckets with the mismatch due to two slightly differenct frequencies. The maximum synchronization window is determined by the maximum tolerent bunch-to-bucket center mismatch $\pm 1^\circ$, see eq. ~\ref{max_mis_match}.
+\begin{equation}
+\frac{|1/(f_1-f_2)|}{360^\circ} = \frac{T_{sync\_win}}{1^\circ-(-1^\circ)}\label{max_mis_match}
+\end{equation}
+
+\end{itemize}
+
+The RF frequency is detuned at the end of the ramp. During the RF frequency detune process, the magnetic field and radius excursion react to the frequency detune in order gaurantee the energy match.
 
 \begin {itemize}
 \item Longitudinal dynamics analysis
 
-Because the momentum is not affected by the frequency change, namely $\Delta$p = 0, the general relation between the radial excursion and RF frequency change eq.~\ref{eq:fPR} reduces to eq.~\ref{eq:eq4} and the general relation between the magnetic field change and RF frequency change eq.~\ref{eq:pRB} reduces to eq.~\ref{eq:eq5}.
-
+Because the momentum should not affected by the frequency change, namely $\Delta p(t)$=0, we can get the general relation between the radial excursion and RF frequency change by substituting $\Delta p(t)$=0 into eq. ~\ref {f_p_r}.
 \begin{equation}
 \frac{\Delta{f}}{f} = - \frac{\Delta{R}}{R}
 \label{eq:eq4}
 \end{equation}
+
+
+Taking differentials of both sides of eq. ~\ref{eq:energy} gives
+\begin{equation}
+\frac{\Delta\rho}{\rho} = \frac{\Delta{p(t)}}{p(t)}-\frac{\Delta{B(t)}}{B(t)}\label{rho_p_B}
+\end{equation}
+
+The relation between $\Delta \rho/\rho$ and $\Delta R(t)/R(t)$ is
+\begin{equation}
+\frac{\Delta\rho}{\rho} = \gamma_t^2 \frac{\Delta{R(t)}}{R(t)} \label{rho_R}
+\end{equation}
+
+Substituting eq.~\ref{rho_R} into eq. ~\ref{rho_p_B}, we could get 
+\begin{equation}
+\gamma_t^2 \frac{\Delta R(t)}{R(t)} = \frac{\Delta p(t)}{p(t)}-\frac{\Delta{B(t)}}{B(t)}\label{r_p_B}
+\end{equation}
+
+Substituting $\Delta p$ = 0 into eq. ~\ref{r_p_B}, we get
+\begin{equation}
+\gamma_t^2 \frac{\Delta R(t)}{R(t)} = \frac{\Delta{B(t)}}{B(t)}\label{rb}
+\end{equation}
+
+Substituting eq. ~\ref{rb} into eq. ~\ref{eq:eq5}, we get the general relation between the magnetic field change and RF frequency change.
 
 \begin{equation}
 \frac{\Delta{f}}{f} =  \frac{1}{{\gamma_t}^2}\times{\frac{\Delta{B}}{B}}
@@ -342,7 +431,7 @@ Because the momentum is not affected by the frequency change, namely $\Delta$p =
 
 
 \section{Bucket label}
-After the synchronization, the bunch is synchronized to an arbitrary RF bucket. For the proper injection, we must know which buckets are already filled and which buckets should be filled by next injection cycle. The fast extraction can only proceed when the required bucket comes. 
+After the synchronization, all bunches are synchronized to all RF buckets. For the proper injection, we must know which buckets are already filled and which buckets should be filled by next injection cycle. The fast extraction can only proceed when the required bucket comes. 
 %The extraction must be correctly synchronized with respect to a reference signal at the following frequency, which is called bucket marker.
 %\begin{equation}
 %	\label{eq:bucket_label}
@@ -350,16 +439,21 @@ After the synchronization, the bunch is synchronized to an arbitrary RF bucket. 
 %\end{equation}
 
 \section{Synchronization of the extraction and injection kicker}
-For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. The kicker time consists of the rise time, flat-top and fall time ~\cite{udo_injection_2014}.
+
+Kicker magnets (or kickers) are dipole magnets, which are used to rapidly switch a particle beam between two paths\footnote{\url{https://en.wikipedia.org/wiki/Injection_kicker_magnets}}. After switching on, a kicker needs a certain period of time to reach a stable magnetic field. This period is called ``rise time``.  It must maintain a stable magnetic field for some minimum time, which is called ``flat-top``. When the kicker is switched off, it needs also a certain period of time to reduce to zero magnetic field. This period is called ``fall time``. The kicker time consists of the rise time, flat-top and fall time ~\cite{udo_injection_2014}. For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. 
+
  
 \begin{itemize}
 	\item Extraction kicker
-		
-Here we discuss that all bunches are extracted by one time extraction kick. The flattop is at least with the length of the bunches to be injected. The fall time is not constrained. If there is no empty RF bucket of the ring, the rise time of the extraction kicker must be shorter than the bunch gap. If there is at least one empty RF bucket, the rise of the magnetic field could be achieved within the gap of the empty RF buckets. 
 
-	\item Injectin kicker
+An extraction kicker diverts a circulating beam to leave a synchrotron. Most commonly, an extraction kick is used to eject all bunches. If there is no empty RF bucket of the synchrotron, the rise time of the extraction kicker must be shorter than the area, which are without any bunches in a bunch train. It is called ``bunch gap``. If there is at least one empty RF bucket, the rise of the magnetic field could be achieved within the gap of the empty RF buckets. The flattop has at least the length of all bunches to be extracted and the fall time is not constrained. 
+		  
 
-For multi-\gls{glos:batch} injection, the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. The flat-top is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the bunch gap. If at least one bucket is kept empty, the fall of the magnetic field could be achieved within the gap of the empty RF buckets. If the ring needs only one time injection, the rise time is not constrained. The flat-top determined by the length of the bunches to be injected. The fall time must be shorter than the bunch gap or the gap of the empty RF buckets. 
+	\item Injection kicker
+
+An injection kicker merges one beam into a circulating beam in a synchrotron. As soon as the tail of the circulating bunch has passed the kicker, the magenetic field is switched on. The magnet must then be switched off in time in order not to affect the head of the next coming bunch in the synchrotron.
+
+For multi-\gls{glos:batch} injection, the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. The flat-top is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the remaining time until the next circulating bunch passes the kicker. If the synchrotron needs only one time injection, the rise time is not constrained. The flat-top determined by the length of the bunches to be injected. The fall time must not exceed the bunch gap or the gap of the empty RF buckets. 
 
 \end{itemize}
 

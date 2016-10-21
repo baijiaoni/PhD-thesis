@@ -287,10 +287,10 @@ From eq.~\ref{eq:eq4} and eq.~\ref{eq:eq5}, we could get the corresponding radia
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GMT systematic investigation for the B2B transfer system}
-GMT system plays a very important role for the B2B transfer system. It is responsible for the data collection, merging and redistribution. The main task of the data merging is the calculation of the synchronization window, within which the bunch could be injected into the correct bucket with the bunch to bucket center mismatch smaller than the upper bound. The data collection and redistribution make use of the WR network, so the measurement of the WR network latency is necessary. 
+The B2B transfer system makes use of certain aspects of the GMT system to realize the data collection, merging and redistribution. The main task of the data merging is the calculation of the synchronization window, within which the bunch could be injected into the correct bucket with the bunch to bucket center mismatch smaller than the upper bound. The data collection and redistribution make use of the WR network, so the measurement of the WR network latency is necessary. 
 
 \subsection{Calculation of the synchronization window}
-According to the phase difference between two synchrotrons, the fine time for the alignment of two RF Reference Signals for both the phase shift and frequency beating methods can be calculated. This time is called ``\gls{glos:best_align}`` and denoted by $t_{best}$, see Fig. ~\ref{alignment}. Because of the \gls{glos:uncertainty} ~\cite{taylor_introduction_1982} of the phase advance prediction and rf frequency modulation, the fine alignment lies between \gls{symb:best_align} - $\delta t_{best}$ and $t_{best}$ + $\delta t_{best}$, where \gls{symb:probable_aligh} is the uncertainty of the alignment. [$t_{best}$ - $\delta t_{best}$, $t_{best}$ + $\delta t_{best}$] is called ``\gls{glos:pro_align}``. In Sec.6.2.1.1 and Sec.6.2.1.2, the calculation of the best estimation of alignment and the probable range of alignment for the phase shift and frequency beating method will be explained. The probable range of alignment is within the synchronization window. For the correct selection of the same revolution frequency marker at different SCUs, the start of the synchronization  window must be properly calculated. In Sec. 6.2.1.3, the calculation of the synchronization window will be explained. 
+According to the phase difference between two synchrotrons, the fine time for the alignment of two Reference RF Signals for both the phase shift and frequency beating methods can be calculated. This time is called ``\gls{glos:best_align}`` and denoted by $t_{best}$, see Fig. ~\ref{alignment}. Because of the \gls{glos:uncertainty} ~\cite{taylor_introduction_1982} of the phase advance prediction and rf frequency modulation, the fine alignment lies between \gls{symb:best_align} - $\delta t_{best}$ and $t_{best}$ + $\delta t_{best}$, where \gls{symb:probable_aligh} is the uncertainty of the alignment. [$t_{best}$ - $\delta t_{best}$, $t_{best}$ + $\delta t_{best}$] is called ``\gls{glos:pro_align}``. In Sec. 6.2.1.1 and Sec. 6.2.1.2, the calculation of the best estimation of alignment and the probable range of alignment for the phase shift and frequency beating method will be explained. The probable range of alignment is within the synchronization window. For the correct selection of the same revolution frequency marker at different SCUs, the start of the synchronization  window must be properly calculated. In Sec. 6.2.1.3, the calculation of the synchronization window will be explained. 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{alignment.jpg}
@@ -371,7 +371,7 @@ For the rf frequency modulation, the uncertainty is $0.2^\circ$ at 5.4MHz ~\cite
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{The best estimate of alignment and the probable range of alignment for the phase shift method}
-Different relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ requires different phase adjustment for SIS18. Fig.~\ref{phase_shift} illustrates all scenarios of their relation and the required phase adjustment for each scenario. We would like to introduce a phase shift of up to $\pm 180^\circ$. The blue and red line represents the phase of SIS100 and SIS18 RF Reference Signal. The clockwise arrow from the SIS18 to SIS100 rf phase represents   the negative phase adjustment for SIS18 and the anticlockwise represents the positive phase adjustment. The required phase adjustment of SIS18 is denoted by $\Delta \phi_{shift}$.
+Different relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ requires different phase adjustment for SIS18. Fig.~\ref{phase_shift} illustrates all scenarios of their relation and the required phase adjustment for each scenario. We would like to introduce a phase shift of up to $\pm 180^\circ$. The blue and red line represents the phase of SIS100 and SIS18 Reference RF Signal. The clockwise arrow from the SIS18 to SIS100 rf phase represents the negative phase adjustment for SIS18 and the anticlockwise represents the positive phase adjustment. The required phase adjustment of SIS18 is denoted by $\Delta \phi_{shift}$.
 
 
 \begin{itemize}
@@ -544,16 +544,16 @@ WIN_{start}= t_{best}- \delta t_{best}-\Delta t_{win \_correct}
 
 \end{itemize}
 
-The actual start of the synchronization window is impossible to be exactly at the best estimate of the start of the synchronization window because of the precision and trueness~\cite{_statistical_????}. The \gls{glos:precision} is defined as the closeness of agreement between the actual start of the synchronization window of different SCUs and the \gls{glos:trueness} as the closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window. The precision comes from the random error, e.g. IO port \gls{TTL} signal rising osillation. The trueness is the systematic error, e.g. FPGA process time. The \gls{glos:accuracy} is defined as the closeness of agreement between the observed start and the best estimate of the start of the synchronization window, which is the sum of the precision and trueness. The B2B transfer system will be used for many transfers for FAIR. Therefore, we have to find the most stringent accuracy requirement. The shortest revolution period of the target machine is \SI{433}{\ns}, which comes from RIB transfer from CR to HESR. We keep 10ns as a forbidden range, which means that the actual start is not allowed \SI{10}{\ns} before and after the revolution frequency marker. The green region in Fig.~\ref{accuracy_syn_win} represents the safty margin for the start of the synchronization window. So the accuracy of the start of the synchronization window is 
+The actual start of the synchronization window is impossible to be exactly at the best estimate of the start of the synchronization window because of the precision and trueness~\cite{_statistical_????}. The \gls{glos:precision} is defined as the closeness of agreement between the actual start of the synchronization window of different SCUs and the \gls{glos:trueness} as the closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window. The precision comes from the random error, e.g. IO port \gls{TTL} signal rising osillation. The trueness is the systematic error, e.g. FPGA process time. The \gls{glos:accuracy} is defined as the closeness of agreement between the observed start and the best estimate of the start of the synchronization window, which is the sum of the precision and trueness. The B2B transfer system will be used for many transfers for FAIR. Therefore, we have to find the most stringent accuracy requirement. The shortest revolution period of the target machine is \SI{433}{\ns}, which comes from RIB transfer from CR to HESR. We keep 10ns as a forbidden range, which means that the actual start is not allowed \SI{10}{\ns} before and after the revolution frequency marker. The green region in Fig.~\ref{accuracy_syn_win} represents the safty margin for the start of the synchronization window. So the accuracy of the start of the synchronization window must meet the requirement calculated by eq. ~\ref{accu}.
 \begin{equation}
 \begin{aligned}
-Accuracy=\pm\frac{433-10 \times 2}{2}\approx \pm \SI{200}{\ns}
+Accuracy=\pm\frac{433-10 \times 2}{2}\approx \pm \SI{200}{\ns}\label{accu}
 \end{aligned}
 \end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Measurement of the WR network for the B2B transfer}
-GMT system implements the tree WR network topology. The WR network measurement is achieved by the Xena traffic generator \footnote{\url{http://xenanetworks.com/layer-2-3-platform/}}, which offers a new class of professional Layer 2-3 Gigabit Ethernet test platform. It is used to measure the \gls{glos:frame_loss_rate}\footnote{The ratio of the number of the lost frames to the number of the theoretic received frames of a tested port.}, \gls{glos:latency}\footnote{The time interval between the time of Xena port receiving frame and the time of another Xena port sending frame.} and \gls{glos:jitter}\footnote{The absolute value of the difference between the latency of two consecutive received frames belonging to the same stream from one Xena port to another Xena port. \newline\url{http://www.xenanetworks.com/wp-content/uploads/Measuring_Frame_latency_Variation.pdf}} for the WR network. For the measurement, Xena traffic generator sends the traffic streams with a unique stream ID for identifying latency, jitter and packet loss. The WR network for FAIR has the following traffic ~\cite{prados_testing_2016}.
+\subsection{Characterization of the WR network for the B2B transfer}
+Within this dissertation, a network analyzed by Xena is used to characterize the properties of the WR network, which are relevant to B2B transfer. The WR network measurement is achieved by the Xena traffic generator\footnote{\url{http://xenanetworks.com/layer-2-3-platform/}}, which offers a new class of professional Layer 2-3 Gigabit Ethernet test platform. It is used to measure the \gls{glos:frame_loss_rate}\footnote{The ratio of the number of the lost frames to the number of the theoretic received frames of a tested port.}, \gls{glos:latency}\footnote{The time interval between the time of Xena port receiving frame and the time of another Xena port sending frame.} and \gls{glos:jitter}\footnote{The absolute value of the difference between the latency of two consecutive received frames belonging to the same stream from one Xena port to another Xena port. \newline\url{http://www.xenanetworks.com/wp-content/uploads/Measuring_Frame_latency_Variation.pdf}} for the WR network. For the measurement, Xena traffic generator sends the traffic streams with a unique stream ID for identifying latency, jitter and packet loss. For the measurements, the following types of traffic are considered ~\cite{prados_testing_2016}.
 
 \begin{itemize}
     \item DM Broadcast 
@@ -603,7 +603,7 @@ Based on the mentioned traffic, the measurement setup is built, see Fig.~\ref{GS
 \renewcommand{\multirowsetup}{\centering} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The connection between Xena ports and WR switches}
+\caption{The connection between the traffic generator and WR switches}
 \label{test_setup_network}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
@@ -810,7 +810,7 @@ Tab. ~\ref{kicker_delay} shows delay for three scenarios and related parameters.
     \hline
     Beam & $\beta$ &  \tabincell{c}{time\\ L/$\beta$c } &\tabincell{c}{bunch gap \\ G } & \tabincell{c}{minimum delay \\ L/$\beta$c-G+90ns} & \tabincell{c}{delay \\ D/$\beta$c} & \tabincell{c}{maximum delay \\ G+d/$\beta$c-90ns}\\ \hline
     $H^+$ & 0.982 &75ns &  184ns & 0ns & 69ns & 163ns  \\ \hline
-    $U^{28}$ &0.568 & 130ns &  159ns & 61ns &120ns & 189ns \\ \hline
+    $U^{28+}$ &0.568 & 130ns &  159ns & 61ns &120ns & 189ns \\ \hline
     $U^{73+}$ & 0.872 & 84ns & 104ns & 70ns & 78ns & 92ns \\ \hline
     \end{tabular}
 \end{center}
@@ -835,7 +835,7 @@ Two bunches from SIS18 will be continuously injected into two RF buckets after t
     \hline
     Beam & $\beta$ &  \tabincell{c}{kicker pass\\ time L/$\beta$c} & \tabincell{c}{Rise time \\ 1/20$\times T_{rev}^{SIS100}$}& \tabincell{c}{Preparation time \\ L/$\beta$c+1/20$\times T_{rev}^{SIS100}$} & \tabincell{c}{bunch gap \\ 2.25$\times T_{rev}^{SIS100}$}\\ \hline
     $H^+$     & 0.982 & 3ns  &  184ns & 187ns & 828ns   \\ \hline
-    $U^{28}$  & 0.568 & 22ns &  318ns   & 333ns  & 1431ns  \\ \hline
+    $U^{28+}$  & 0.568 & 22ns &  318ns   & 333ns  & 1431ns  \\ \hline
     $U^{73+}$ & 0.872 & 15ns &   207ns & 222ns &  932ns \\ \hline
     \end{tabular}
 \end{center}
@@ -848,7 +848,7 @@ In this section, the test setup for the B2B transfer system is described, focusi
 \subsection{Test functional requirement}
 The test setup achieves the following functional requirement.
 \begin{itemize}
-\item[-] After receiving the B2B beginning frames, both the B2B source and target SCUs collect predicted phase equivalent data locally. The equivalence is a timestamp for the zero crossing point of the simulated RF Reference Signal of SIS18 and SIS100. 
+\item[-] After receiving CMD\_B2B\_START, both the B2B source and target SCUs collect predicted phase equivalent data locally. The equivalence is a timestamp for the zero crossing point of the simulated Reference RF Signal of SIS18 and SIS100. 
 \item[-] The B2B target SCU transfers the frame containing the timestamp to the B2B source SCU.
 \item[-] After receiving the data, the B2B source SCU calculates the synchronization window.
 \item[-] The B2B source SCU sends the frame containing the beginning of the synchronization window to the WR network.
@@ -864,7 +864,7 @@ The test setup achieves the following functional requirement.
    \label{setup}
 \end{figure}
 
-Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two MODEL DS345 Synthesized Function Generators\footnote{\url{http://www.thinksrs.com/downloads/PDFs/Manuals/DS345m.pdf}} are used, which are with the frequency accuracy of \SI{+-5}{ppm} of the selected frequency to simulate RF Reference Signals of SIS18 and SIS100. DS345 of SIS18 is directly triggered by the \SI{10}{\MHz} of \gls{BuTiS} receiver and DS345 of SIS100 is triggered by DS345 of SIS18. So both DS345s are synchronized to BuTiS. The B2B source SCU, B2B target SCU and trigger SCU are connected to the same WR switch, which connects to the timing network. \gls{PC}\footnote{A Linux personal computer is installed with the standard TR tools and library. \newline\url{https://www-acc.gsi.de/wiki/Timing/TimingSystemNodesCurrentRelease}} is used as a DM to produce the B2B start timing frame. Besides, it monitors the status of the  B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of the two simulated RF Reference Signals within the synchronization window provided by the trigger SCU.   
+Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two MODEL DS345 Synthesized Function Generators\footnote{\url{http://www.thinksrs.com/downloads/PDFs/Manuals/DS345m.pdf}} are used, which are with the frequency accuracy of \SI{+-5}{ppm} of the selected frequency to simulate Reference RF Signals of SIS18 and SIS100. DS345 of SIS18 uses an internal \SI{10}{\MHz} clock as an external reference clock for DS345 of SIS100. The B2B source SCU, B2B target SCU and trigger SCU are connected to the same WR switch, which connects to the timing network. A \gls{PC}\footnote{A Linux personal computer is installed with the standard TR tools and library. \newline\url{https://www-acc.gsi.de/wiki/Timing/TimingSystemNodesCurrentRelease}} is used as a DM to produce the B2B start timing frame. Besides, it monitors the status of the  B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of the two simulated Reference RF Signals within the synchronization window provided by the trigger SCU.   
 
 Fig.~\ref{testsetup_text} shows the front and back view of the test setup. DS345 of SIS18 produces the sine wave of \SI{1.572200}{\MHz} frequency for the B2B source SCU. DS345 of SIS100 produces the sine wave of \SI{1.572000}{\MHz} for the B2B target SCU. So the beating frequency is \SI{200}{\Hz} and the synchronization period is \SI{5}{\ms}. 
 
@@ -884,7 +884,7 @@ The B2B source, B2B target and trigger SCUs have different firmware running on t
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{flow_chart_src.jpg}
-   \caption{Flow chart of the firmware for B2B source SCU.}{Flow chart of the firmware for B2B source SCU. Step is represented as `S` in the figure.}
+   \caption{Flow chart of the firmware for B2B source SCU.}{Flow chart of the firmware for B2B source SCU. ``Step`` is represented as ``S`` in the figure.}
    \label{flow_chart_src}
 \end{figure}
 
@@ -892,8 +892,9 @@ The firmware for the B2B source SCU is the core program of the B2B transfer syst
 
  	\begin{itemize}
 		\item[-]Step 1. The program waits for the CMD\_START\_B2B timing frame.
- 		\item[-]Step 2. When it receives the timing frame CMD\_START\_B2B, it collects the predicted phase and checks whether it is within a proper range of $0^\circ$ to $360^\circ$. If not, it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the data error.
-		\item[-]Step 3. It waits for the TGM\_PHASE\_TIME timing frame from the B2B target SCU, which contains the predicted phase and the slop of the target synchrotron.
+% 		\item[-]Step 2. When it receives the timing frame CMD\_START\_B2B, it collects the predicted phase and checks whether it is within a proper range of $0^\circ$ to $360^\circ$. If not, it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the data error.
+ 		\item[-]Step 2. When it receives the timing frame CMD\_START\_B2B, it reads the extrapolated phase, the corresponding timestamp and the phase advance slope from the PAP module.
+		\item[-]Step 3. It waits for the TGM\_PHASE\_TIME timing frame from the B2B target SCU, which contains the extrapolated phase, the corresponding timestamp and the slope of the phase advance.
 		\item[-]Step 4. When it receives the timing frame TGM\_PHASE\_TIME within a specified timeout interval, it calculates the synchronization window, the phase shift/jump value and the phase correction value. Or it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the timeout error of the frame. Besides, it checks whether the phase correction is in the range of $0^\circ$ to $360^\circ$ , the required phase shift in the range of $-180^\circ$ to $180^\circ$ and the start of the synchronization window not in the forbidden range. If at least one of them is not correct, it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the calculation error. 
 		\item[-]Step 5. It sends the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE \_CORRECTION to the WR network. TGM\_SYNCH\_WIN indicates the start of the synchronization window and TGM\_PHASE\_CORRECTION is used for the trigger SCUs for the reproduction of the bucket label signal.
 		\item[-]Step 6. It gives the phase correction and phase shift/jump values to corresponding modules.
@@ -914,7 +915,7 @@ The firmware for the B2B source SCU is the core program of the B2B transfer syst
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{flow_chart_trg.jpg}
-   \caption{Flow chart of the firmware for B2B target SCU.}{Flow chart of the firmware for B2B target SCU. Step is represented as S in the figure.}
+   \caption{Flow chart of the firmware for B2B target SCU.}{Flow chart of the firmware for B2B target SCU. ``Step`` is represented as ``S`` in the figure.}
    \label{flow_chart_trg}
 \end{figure}
 Fig. ~\ref{flow_chart_trg} (a) shows the flow chart of the program of the B2B target SCU.
@@ -939,38 +940,38 @@ Fig. ~\ref{flow_chart_trg} (b) shows the flow chart of the program of the source
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{The time constraints of the B2B transfer system}
-For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the system. The $CMD\_START\_B2B$ is executed at \gls{symb:t_b2b}. The RF phase prediction needs \SI{500}{\us}, so the B2B source and target SCUs collect the phase data at $t_{B2B}$ + \SI{500}{\us} and need about \SI{450}{\ns} for the data collection. The B2B source SCU receives the timing frame TGM\_PHASE\_TIME at around $t_{B2B}$ + \SI{500}{\us} + \SI{450}{\ns} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1}{\ms}. The second \SI{500}{\us} is the worst latency of the WR network. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE\_CORRECTION and data transferring to the corresponding module. TGM\_SYNCH\_WIN is sent at around $t_{B2B}$ + \SI{1}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{1.1}{\ms}. The trigger SCU receives TGM\_PHASE\_CORRECTION and TGM\_SYNCH\_WIN at around $t_{B2B}$ + \SI{1.1}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1.6}{\ms}. The \SI{500}{\us} is the latency of the WR network. The start of the synchronization window must be later than $t_{B2B}$ + \SI{1.1}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{2.1}{\ms}, because the TGM\_SYNCH\_WIN must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer needs maximum \SI{500}{\us} and the transfer from the DM to BI needs another \SI{500}{\us}.  Because the upper bound B2B transfer time is \SI{10}{\ms} and there is no hard real time for the collection of the trigger and firing timestamps and timing frame TGM\_KICKER\_TIME\_S sending, we give \SI{1}{\ms} for the source trigger SCU to do this task and the source trigger SCU sends TGM\_KICKER\_TIME\_S at around $t_{B2B}$ + \SI{10}{\ms} + \SI{1}{\ms} $\approx$ $t_{B2B}$ + \SI{11}{\ms}. The same time constraints is also for the target trigger SCU. The B2B source SCU receives TGM\_KICKER\_TIME\_S and TGM\_KICKER\_TIME\_T at around $t_{B2B}$ + \SI{11}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{11.5}{\ms}. The \SI{500}{\us} is the latency of the WR network. The B2B source SCU sends TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.5}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{11.6}{\ms}. The BI devices receives the timing frame TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.6}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{12.6}{\ms}.
+For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the system. The $CMD\_START\_B2B$ is executed at \gls{symb:t_b2b}. The RF phase prediction needs \SI{500}{\us}, so the B2B source and target SCUs collect the phase data at $t_{B2B}$ + \SI{500}{\us} and need about \SI{450}{\ns} for the data collection. The B2B source SCU receives the timing frame TGM\_PHASE\_TIME at around $t_{B2B}$ + \SI{500}{\us} + \SI{450}{\ns} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1}{\ms}. The second \SI{500}{\us} is the upper bound latency of the WR network. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE\_CORRECTION and data transferring to the corresponding module. TGM\_SYNCH\_WIN is sent at around $t_{B2B}$ + \SI{1}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{1.1}{\ms}. The trigger SCU receives TGM\_PHASE\_CORRECTION and TGM\_SYNCH\_WIN at around $t_{B2B}$ + \SI{1.1}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1.6}{\ms}. The \SI{500}{\us} is the latency of the WR network. The start of the synchronization window must be later than $t_{B2B}$ + \SI{1.1}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{2.1}{\ms}, because the TGM\_SYNCH\_WIN must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer needs maximum \SI{500}{\us} and the transfer from the DM to BI needs another \SI{500}{\us}.  Because the upper bound B2B transfer time is \SI{10}{\ms} and there is no hard real time for the collection of the trigger and firing timestamps and timing frame TGM\_KICKER\_TIME\_S sending, we give \SI{1}{\ms} for the source trigger SCU to do this task and the source trigger SCU sends TGM\_KICKER\_TIME\_S at around $t_{B2B}$ + \SI{10}{\ms} + \SI{1}{\ms} $\approx$ $t_{B2B}$ + \SI{11}{\ms}. The same time constraints is also for the target trigger SCU. The B2B source SCU receives TGM\_KICKER\_TIME\_S and TGM\_KICKER\_TIME\_T at around $t_{B2B}$ + \SI{11}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{11.5}{\ms}. The \SI{500}{\us} is the latency of the WR network. The B2B source SCU sends TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.5}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{11.6}{\ms}. The BI devices receives the timing frame TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.6}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{12.6}{\ms}.
 
 \begin{landscape}
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=240mm]{flow_chart_time.jpg}
-   \caption{The time constraints of the B2B transfer system.}{The time constraints of the B2B transfer system. The sent and received timing frame pairs have the same color. The test setup realizes the steps in the blue rectangle.}
+   \caption{The time constraints of the B2B transfer system.}{The sent and received timing frame pairs have the same color. The test setup realizes the steps in the blue rectangle. (not drawn to accurate timescale) }
    \label{time_constraint}
 \end{figure}
 \end{landscape}
 
 \subsection{Test result}
-Because some modules of the B2B transfer system are still under the development, the test setup realizes parts of the whole function, mainly concentrated on the data collection from two simulated RF reference signals, the calculation of the synchronization window and the distribution of the start of the synchronization window. The steps with the blue rectangle in Fig.~\ref{time_constraint} are realized in this test setup. The test result of the B2B programs on B2B source, B2B target and trigger SCUs are shown as follows. 
+Because some modules of the B2B transfer system are still under the development, the test setup realizes parts of the whole function, mainly concentrated on the data collection from two simulated Reference RF signals, the calculation of the synchronization window and the distribution of the start of the synchronization window. The steps with the blue rectangle in Fig.~\ref{time_constraint} are realized in this test setup. The test result of the B2B programs on B2B source, B2B target and trigger SCUs are shown as follows. 
 
 \begin{lstlisting}[language={[ANSI]C}, keywordstyle=\color{blue!70}, commentstyle=\color{red!50!green!50!blue!50}, frame=shadowbox, rulesepcolor=\color{red!20!green!20!blue!20}]
 
 U28+ B2B transfer from SIS18 to SIS100 => Source B2B SCU
 =============================================
-SIS18: Frequency of the RF reference signal = 1.572200MHz
-SIS100: Frequency of the RF reference signal = 1.572000MHz 
-SIS18: Period of the RF reference signal = 636051(ps)
-SIS100: Period of the RF reference signal = 636132(ps)
+SIS18: Frequency of the Reference RF Signal = 1.572200MHz
+SIS100: Frequency of the Reference RF Signal = 1.572000MHz 
+SIS18: Period of the Reference RF Signal = 636051(ps)
+SIS100: Period of the Reference RF Signal = 636132(ps)
 
 >>>>>>>>>>>>>>>>>>>>>>>>> Receive CMD_START_B2B from WR network
-Timestamp of the RF reference signal from SIS18 (accuracy to 1ns)
+Timestamp of the Reference RF Signal from SIS18 (accuracy to 1ns)
 GMT: Thu, Jan 8, 1970, 21:07:27.445405856
 
 >>>>>>>>>>>>>>>>>>>>>>>>> Receive TGM_PHASE_TIME from WR network
-Timestamp of the RF reference signal from SIS100 (accuracy to 1ns)
+Timestamp of the Reference RF Signal from SIS100 (accuracy to 1ns)
 GMT: Thu, Jan 8, 1970, 21:07:27.445364560
 
-Beating time: 4.622818 (ms)
+Synchronization time: 4.622818 (ms)
 The number of the SIS18 revolution for the synchronization: 3634
 Start of the synchronization window: GMT: Thu, Jan 8, 1970, 21:07:27.450028674
 
@@ -982,7 +983,7 @@ Start of the synchronization window: GMT: Thu, Jan 8, 1970, 21:07:27.450028674
 U28+ B2B transfer from SIS18 to SIS100 => Target B2B SCU
 =============================================
 >>>>>>>>>>>>>>>>>>>>>>>>> Receive CMD_START_B2B from WR network
-Timestamp of the RF reference signal from SIS100 (accuracy to 1ns)
+Timestamp of the Reference RF Signal from SIS100 (accuracy to 1ns)
 GMT: Thu, Jan 8, 1970, 21:07:27.445364560
 
 <<<<<<<<<<<<<<<<<<<<<<<<< Send TGM_PHASE_TIME to WR network
@@ -1003,7 +1004,7 @@ After both B2B source and target programs receive the $CMD\_START\_B2B$ frame, t
 	\item
 The SoC bus might be granted to other program and B2B program must wait until it is free.
 	\item
-The printout of the user friendly messages of the LM32 programs causes the non real time of the programs.
+The behaviour of the user friendly messages of the LM32 programs causes the non real time of the programs.
 \end{itemize}
 
 The difference between timestamps of the adjacent zero crossing points, 592ns, is the remainder resulting from 41.296us dividing SIS18 revolution period \SI{636051}{\ps}. Based on eq. ~\ref{syn_time} and eq. ~\ref{syn_num}, 
