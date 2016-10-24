@@ -24,14 +24,14 @@
 \BOOKMARK [1][-]{section.3.3}{MPS system}{chapter.3}% 24
 \BOOKMARK [1][-]{section.3.4}{Comparison}{chapter.3}% 25
 \BOOKMARK [0][-]{chapter.4}{Concept of the B2B transfer system for FAIR \040baiconcept2016}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Basic principle of the B2B transfer system for FAIR}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.1}{Basic idea of the B2B transfer system for FAIR}{chapter.4}% 27
 \BOOKMARK [2][-]{subsection.4.1.1}{Phase alignment}{section.4.1}% 28
 \BOOKMARK [2][-]{subsection.4.1.2}{Calculation of the kick time}{section.4.1}% 29
 \BOOKMARK [1][-]{section.4.2}{Basic procedure of the B2B transfer system for FAIR}{chapter.4}% 30
 \BOOKMARK [1][-]{section.4.3}{Realization of the basic B2B functionalities}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.3.1}{Phase measurement and corresponding timestamp}{section.4.3}% 32
-\BOOKMARK [3][-]{subsubsection.4.3.1.1}{Phase measurement in one rf system}{subsection.4.3.1}% 33
-\BOOKMARK [3][-]{subsubsection.4.3.1.2}{Phase extrapolation in one rf system}{subsection.4.3.1}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Phase measurement and corresponding timestamp of one RF system}{section.4.3}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.1.1}{Phase measurement in one RF system}{subsection.4.3.1}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.1.2}{Phase extrapolation in one RF system}{subsection.4.3.1}% 34
 \BOOKMARK [3][-]{subsubsection.4.3.1.3}{Timestamp the extrapolated phase}{subsection.4.3.1}% 35
 \BOOKMARK [2][-]{subsection.4.3.2}{Exchange of the measured data}{section.4.3}% 36
 \BOOKMARK [2][-]{subsection.4.3.3}{RF synchronization}{section.4.3}% 37
@@ -45,19 +45,19 @@
 \BOOKMARK [0][-]{chapter.5}{Application of the B2B transfer system for FAIR accelerators}{}% 45
 \BOOKMARK [1][-]{section.5.1}{ Circumference ratio is an ideal integer}{chapter.5}% 46
 \BOOKMARK [2][-]{subsection.5.1.1}{Harmonic ratio equals to the circumference ratio}{section.5.1}% 47
-\BOOKMARK [3][-]{subsubsection.5.1.1.1}{User case of the U28+ B2B transfer from SIS18 to SIS100}{subsection.5.1.1}% 48
+\BOOKMARK [3][-]{subsubsection.5.1.1.1}{use case of the U28+ B2B transfer from SIS18 to SIS100}{subsection.5.1.1}% 48
 \BOOKMARK [2][-]{subsection.5.1.2}{Harmonic ratio does not equal to the circumference ratio}{section.5.1}% 49
-\BOOKMARK [3][-]{subsubsection.5.1.2.1}{User case of the H+ B2B transfer from SIS18 to SIS100}{subsection.5.1.2}% 50
-\BOOKMARK [3][-]{subsubsection.5.1.2.2}{User case of the B2B transfer from ESR to CRYRING}{subsection.5.1.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{Use case of the H+ B2B transfer from SIS18 to SIS100}{subsection.5.1.2}% 50
+\BOOKMARK [3][-]{subsubsection.5.1.2.2}{use case of the B2B transfer from ESR to CRYRING}{subsection.5.1.2}% 51
 \BOOKMARK [1][-]{section.5.2}{ Circumference ratio is not an ideal integer}{chapter.5}% 52
 \BOOKMARK [2][-]{subsection.5.2.1}{Circumference ratio is close to an ideal integer}{section.5.2}% 53
-\BOOKMARK [3][-]{subsubsection.5.2.1.1}{User case of h=4 B2B transfer from SIS18 to ESR}{subsection.5.2.1}% 54
-\BOOKMARK [3][-]{subsubsection.5.2.1.2}{User case of h=1 B2B transfer from SIS18 to ESR}{subsection.5.2.1}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.1.1}{use case of h=4 B2B transfer from SIS18 to ESR}{subsection.5.2.1}% 54
+\BOOKMARK [3][-]{subsubsection.5.2.1.2}{use case of h=1 B2B transfer from SIS18 to ESR}{subsection.5.2.1}% 55
 \BOOKMARK [2][-]{subsection.5.2.2}{Circumference ratio is far away from an ideal integer}{section.5.2}% 56
-\BOOKMARK [3][-]{subsubsection.5.2.2.1}{User case of H+ B2B transfer from SIS100 to CR}{subsection.5.2.2}% 57
-\BOOKMARK [3][-]{subsubsection.5.2.2.2}{User case of RIB B2B transfer from SIS100 to CR}{subsection.5.2.2}% 58
-\BOOKMARK [3][-]{subsubsection.5.2.2.3}{User case of B2B transfer from CR to HESR}{subsection.5.2.2}% 59
-\BOOKMARK [3][-]{subsubsection.5.2.2.4}{User case of B2B transfer from SIS18 to ESR via FRS}{subsection.5.2.2}% 60
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{use case of H+ B2B transfer from SIS100 to CR}{subsection.5.2.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{use case of RIB B2B transfer from SIS100 to CR}{subsection.5.2.2}% 58
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{use case of B2B transfer from CR to HESR}{subsection.5.2.2}% 59
+\BOOKMARK [3][-]{subsubsection.5.2.2.4}{use case of B2B transfer from SIS18 to ESR via FRS}{subsection.5.2.2}% 60
 \BOOKMARK [1][-]{section.5.3}{Summary of the synchronization for different scenarios}{chapter.5}% 61
 \BOOKMARK [0][-]{chapter.6}{Realization and systematic investigation of the B2B transfer system for FAIR}{}% 62
 \BOOKMARK [1][-]{section.6.1}{Investigation of two synchronization methods for U28+ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }{chapter.6}% 63
@@ -71,7 +71,7 @@
 \BOOKMARK [3][-]{subsubsection.6.2.1.1}{The best estimate of alignment and the probable range of alignment for the phase shift method}{subsection.6.2.1}% 71
 \BOOKMARK [3][-]{subsubsection.6.2.1.2}{The best estimate of alignment and the probable range of alignment for the frequency beating method}{subsection.6.2.1}% 72
 \BOOKMARK [3][-]{subsubsection.6.2.1.3}{Calculation the synchronization window and its accuracy}{subsection.6.2.1}% 73
-\BOOKMARK [2][-]{subsection.6.2.2}{Measurement of the WR network for the B2B transfer}{section.6.2}% 74
+\BOOKMARK [2][-]{subsection.6.2.2}{Characterization of the WR network for the B2B transfer}{section.6.2}% 74
 \BOOKMARK [3][-]{subsubsection.6.2.2.1}{WR network test setup}{subsection.6.2.2}% 75
 \BOOKMARK [3][-]{subsubsection.6.2.2.2}{Frame loss rate test result for B2B frames}{subsection.6.2.2}% 76
 \BOOKMARK [3][-]{subsubsection.6.2.2.3}{Latency and jitter test result for B2B frames}{subsection.6.2.2}% 77

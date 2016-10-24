@@ -866,7 +866,7 @@ The test setup achieves the following functional requirement.
 
 Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two MODEL DS345 Synthesized Function Generators\footnote{\url{http://www.thinksrs.com/downloads/PDFs/Manuals/DS345m.pdf}} are used, which are with the frequency accuracy of \SI{+-5}{ppm} of the selected frequency to simulate Reference RF Signals of SIS18 and SIS100. DS345 of SIS18 uses an internal \SI{10}{\MHz} clock as an external reference clock for DS345 of SIS100. The B2B source SCU, B2B target SCU and trigger SCU are connected to the same WR switch, which connects to the timing network. A \gls{PC}\footnote{A Linux personal computer is installed with the standard TR tools and library. \newline\url{https://www-acc.gsi.de/wiki/Timing/TimingSystemNodesCurrentRelease}} is used as a DM to produce the B2B start timing frame. Besides, it monitors the status of the  B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of the two simulated Reference RF Signals within the synchronization window provided by the trigger SCU.   
 
-Fig.~\ref{testsetup_text} shows the front and back view of the test setup. DS345 of SIS18 produces the sine wave of \SI{1.572200}{\MHz} frequency for the B2B source SCU. DS345 of SIS100 produces the sine wave of \SI{1.572000}{\MHz} for the B2B target SCU. So the beating frequency is \SI{200}{\Hz} and the synchronization period is \SI{5}{\ms}. 
+Fig.~\ref{testsetup_text} shows the front and back view of the test setup. DS345 of SIS18 produces the sine wave of \SI{1.572200}{\MHz} frequency for the oscilloscope and DS345 of SIS100 produces the sine wave of \SI{1.572000}{\MHz} for the oscilloscope, which are achieved by the LEMO cables, see green line in Fig.~\ref{testsetup_text}. DS345 produces the TTL signal for the B2B source SCU, whose rising edge is synchronized to the positive zero crossing of the sine wave of \SI{1.572200}{\MHz} frequency and DS345 of SIS100 produces the TTL signal for the B2B target SCU, whose rising edge is synchronized to the sine wave of \SI{1.572000}{\MHz}, which are achieved by the LEMO cables, see red line in Fig.~\ref{testsetup_text}. So the beating frequency is \SI{200}{\Hz} and the synchronization period is \SI{5}{\ms}. The B2B source, target and trigger SCUs are connected to the WR switch, which are achieved by the optical fiber, see yellow line. The WR switch is connected to the PC and the WR network. The output of the synchronization window from the B2B trigger SCU is connected to the oscilloscope, which is achieved by the LEMO cable, see green line. 
 
 \begin{figure}[!htb]
    \centering   
@@ -874,6 +874,18 @@ Fig.~\ref{testsetup_text} shows the front and back view of the test setup. DS345
    \caption{The front and back view of the test setup}
    \label{testsetup_text}
 \end{figure}
+
+Compared with the final scenario, there are some difference of the test setup.
+\begin{itemize}
+\item
+The SIS18 and SIS100 DS345 will be replaced by the PAP modules, which are installed in the B2B source and target SCUs as SCU slaves. 
+\item 
+All devices are installed in different racks. The SIS18 source SCU and B2B trigger SCU of the extraction kicker are installed in SIS18 and the SIS18 target SCU and B2B trigger SCU of the injection kicker are installed in SIS100. The connection is done via the WR network. 
+\item 
+The B2B source SCU has several other SCU slaves, e.g. Phase Shift Module (PSM) for the phase shift. 
+\item 
+The B2B trigger SCU considers not only the synchronization window, but also the kicker delay compensation from the SM. Besides, it has several SCU slaves, which coordinate the correct B2B extraction and injeciton kicker with other systems, e.g. MPS.
+\end{itemize}
 
 \subsection{The firmware of the B2B transfer system}
 
@@ -940,7 +952,7 @@ Fig. ~\ref{flow_chart_trg} (b) shows the flow chart of the program of the source
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{The time constraints of the B2B transfer system}
-For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the system. The $CMD\_START\_B2B$ is executed at \gls{symb:t_b2b}. The RF phase prediction needs \SI{500}{\us}, so the B2B source and target SCUs collect the phase data at $t_{B2B}$ + \SI{500}{\us} and need about \SI{450}{\ns} for the data collection. The B2B source SCU receives the timing frame TGM\_PHASE\_TIME at around $t_{B2B}$ + \SI{500}{\us} + \SI{450}{\ns} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1}{\ms}. The second \SI{500}{\us} is the upper bound latency of the WR network. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE\_CORRECTION and data transferring to the corresponding module. TGM\_SYNCH\_WIN is sent at around $t_{B2B}$ + \SI{1}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{1.1}{\ms}. The trigger SCU receives TGM\_PHASE\_CORRECTION and TGM\_SYNCH\_WIN at around $t_{B2B}$ + \SI{1.1}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1.6}{\ms}. The \SI{500}{\us} is the latency of the WR network. The start of the synchronization window must be later than $t_{B2B}$ + \SI{1.1}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{2.1}{\ms}, because the TGM\_SYNCH\_WIN must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer needs maximum \SI{500}{\us} and the transfer from the DM to BI needs another \SI{500}{\us}.  Because the upper bound B2B transfer time is \SI{10}{\ms} and there is no hard real time for the collection of the trigger and firing timestamps and timing frame TGM\_KICKER\_TIME\_S sending, we give \SI{1}{\ms} for the source trigger SCU to do this task and the source trigger SCU sends TGM\_KICKER\_TIME\_S at around $t_{B2B}$ + \SI{10}{\ms} + \SI{1}{\ms} $\approx$ $t_{B2B}$ + \SI{11}{\ms}. The same time constraints is also for the target trigger SCU. The B2B source SCU receives TGM\_KICKER\_TIME\_S and TGM\_KICKER\_TIME\_T at around $t_{B2B}$ + \SI{11}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{11.5}{\ms}. The \SI{500}{\us} is the latency of the WR network. The B2B source SCU sends TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.5}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{11.6}{\ms}. The BI devices receives the timing frame TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.6}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{12.6}{\ms}.
+For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the system. The $CMD\_START\_B2B$ is executed at \gls{symb:t_b2b}. The RF phase prediction needs \SI{500}{\us}, so the B2B source and target SCUs collect the phase data at $t_{B2B}$ + \SI{500}{\us} and need about \SI{450}{\ns} for the data collection. The B2B source SCU receives the timing frame TGM\_PHASE\_TIME at around $t_{B2B}$ + \SI{500}{\us} + \SI{450}{\ns} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1}{\ms}. The second \SI{500}{\us} is the upper bound latency of the WR network. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE\_CORRECTION and data transferring to the corresponding module. TGM\_SYNCH\_WIN is sent at around $t_{B2B}$ + \SI{1}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{1.1}{\ms}. The trigger SCU receives TGM\_PHASE\_CORRECTION and TGM\_SYNCH\_WIN at around $t_{B2B}$ + \SI{1.1}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{1.6}{\ms}. The \SI{500}{\us} is the latency of the WR network. The start of the synchronization window must be later than $t_{B2B}$ + \SI{1.1}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{2.1}{\ms}, because the TGM\_SYNCH\_WIN must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer needs maximum \SI{500}{\us} and the transfer from the DM to BI needs another \SI{500}{\us}.  The upper bound B2B transfer time is \SI{10}{\ms}, which is decided by the duration of the stable beam. There is no hard real time for the collection of the trigger and firing timestamps and timing frame TGM\_KICKER\_TIME\_S sending, we give \SI{1}{\ms} for the source trigger SCU to do this task and the source trigger SCU sends TGM\_KICKER\_TIME\_S at around $t_{B2B}$ + \SI{10}{\ms} + \SI{1}{\ms} $\approx$ $t_{B2B}$ + \SI{11}{\ms}. The same time constraints is also for the target trigger SCU. The B2B source SCU receives TGM\_KICKER\_TIME\_S and TGM\_KICKER\_TIME\_T at around $t_{B2B}$ + \SI{11}{\ms} + \SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{11.5}{\ms}. The \SI{500}{\us} is the latency of the WR network. The B2B source SCU sends TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.5}{\ms} + \SI{100}{\us} $\approx$ $t_{B2B}$ + \SI{11.6}{\ms}. The BI devices receives the timing frame TGM\_B2B\_STATUS at around $t_{B2B}$ + \SI{11.6}{\ms} + 2$\times$\SI{500}{\us} $\approx$ $t_{B2B}$ + \SI{12.6}{\ms}.
 
 \begin{landscape}
 \begin{figure}[!htb]
@@ -971,6 +983,7 @@ GMT: Thu, Jan 8, 1970, 21:07:27.445405856
 Timestamp of the Reference RF Signal from SIS100 (accuracy to 1ns)
 GMT: Thu, Jan 8, 1970, 21:07:27.445364560
 
+Beating time: 5 (ms)
 Synchronization time: 4.622818 (ms)
 The number of the SIS18 revolution for the synchronization: 3634
 Start of the synchronization window: GMT: Thu, Jan 8, 1970, 21:07:27.450028674
@@ -998,32 +1011,51 @@ Waiting for timing frames...
 Event execution timestamp: GMT 1970-01-08 21:07:27.450028674
 \end{lstlisting}
 
-After both B2B source and target programs receive the $CMD\_START\_B2B$ frame, they trigger another unit connected to the System-on-Chip\footnote{A system-on-chip is an integrated circuit that integrates all components of a computer or other electronic system into a single chip.}  (SoC) bus to get the timestamp of the next zero crossing point of the DS345 sine waves, which is simulated as an equivalent to the predicted phase. The triggers of the B2B source and target SCUs are not simultaneous, namely the B2B source and target SCU do not get the timestamp of the adjacent zero crossing points of two RF simulated sine signals, see Line 10 and 14 of the test result of the B2B source SCU. All timestamp are shown in the format of Greenwich Mean Time (GMT). The timestamp got by the B2B source SCU is Thu, Jan 8, 1970, 21:07:27 0.445405856 second and the timestamp got by the B2B target SCU is Thu, Jan 8, 1970, 21:07:27 0.445364560 second. The time difference between two timestamps is \SI{41.296}{\us}. There are two reasons for the asynchronous triggers.
+After both B2B source and target programs receive the $CMD\_START\_B2B$ frame, they trigger another unit connected to the System-on-Chip\footnote{A system-on-chip is an integrated circuit that integrates all components of a computer or other electronic system into a single chip.}  (SoC) bus to get the timestamp of the next zero crossing point of the DS345 sine waves, which is simulated as an equivalent to the predicted phase. All timestamp are shown in the format of Greenwich Mean Time (GMT). The timestamp got by the B2B source SCU is Thu, Jan 8, 1970, 21:07:27 0.445405856 second and the timestamp got by the B2B target SCU is Thu, Jan 8, 1970, 21:07:27 0.445364560 second, see Line 10 and 14 of the test result of the B2B source SCU. The time difference between two timestamps is \SI{41.296}{\us}. The frequency difference between SIS18 and SIS100 Reference RF Signals is \SI{200}{Hz}. It means that there are 200 more periods of the SIS18 Reference RF Signal within one second compared with the SIS100 Reference RF Signal. Every \SI{5}{ms} (1/\SI{200}{Hz}) SIS18 Reference RF Signal has one period more than that of SIS100. The time is calculated by eq. ~\ref {syn_time}, indicating the alignment of the zero crossing of two DS345 sine waves of SIS18 and SIS100. The time is named as ``synchronization time``, denoted by $\Delta t$.
 
-\begin{itemize}
-	\item
-The SoC bus might be granted to other program and B2B program must wait until it is free.
-	\item
-The behaviour of the user friendly messages of the LM32 programs causes the non real time of the programs.
-\end{itemize}
-
-The difference between timestamps of the adjacent zero crossing points, 592ns, is the remainder resulting from 41.296us dividing SIS18 revolution period \SI{636051}{\ps}. Based on eq. ~\ref{syn_time} and eq. ~\ref{syn_num}, 
 \begin{equation}
 \begin{aligned}
-\frac{T^{SIS18}_{h=2}}{5ms}=\frac{592ns}{\Delta t}
+\frac{T^{SIS18}_{h=2}}{1/(f^{SIS18}_{h=2}-f^{SIS100}_{h=10})}=\frac{41.296us\mod T^{SIS100}_{h=10}}{\Delta t}
 \label {syn_time}
 \end{aligned}
 \end{equation}
 
 \begin{equation}
-\begin{aligned}
-\frac{\Delta t}{T^{SIS18}_{h=1}}=3634
-\label {syn_num}
-\end{aligned}
+\Delta t = \SI{4.622818}{\ms}
 \end{equation}
-we could get that the beating time \gls{symb:d_t} is \SI{4.622818}{\ms} and the number of the SIS18 revolution period is 3634 for the test. 
 
-For the real application of the B2B transfer system, in order to guarantee the time constraints of the B2B programs, see Fig. ~\ref{time_constraint}, the B2B source, target and trigger SCUs run only their corresponding B2B program. The SoC bus is occupied only by the B2B program. Besides, the programs running on LM32 are forbidden to print out any user friendly messages.
+The number of the SIS18 Reference RF Signal periods for the synchronization is calculated as
+\begin{equation}
+\frac{\Delta t}{T^{SIS18}_{h=2}}=7268
+\end{equation}
+we could get that the beating time \gls{symb:d_t} is \SI{4.622818}{\ms} and the number of the SIS18 Reference RF Signal periods for the synchronization is 7268 for the test.
+
+%After both B2B source and target programs receive the $CMD\_START\_B2B$ frame, they trigger another unit connected to the System-on-Chip\footnote{A system-on-chip is an integrated circuit that integrates all components of a computer or other electronic system into a single chip.}  (SoC) bus to get the timestamp of the next zero crossing point of the DS345 sine waves, which is simulated as an equivalent to the predicted phase. The triggers of the B2B source and target SCUs are not simultaneous, namely the B2B source and target SCU do not get the timestamp of the adjacent zero crossing points of two RF simulated sine signals, see Line 10 and 14 of the test result of the B2B source SCU. All timestamp are shown in the format of Greenwich Mean Time (GMT). The timestamp got by the B2B source SCU is Thu, Jan 8, 1970, 21:07:27 0.445405856 second and the timestamp got by the B2B target SCU is Thu, Jan 8, 1970, 21:07:27 0.445364560 second. The time difference between two timestamps is \SI{41.296}{\us}. There are two reasons for the asynchronous triggers.
+%
+%\begin{itemize}
+%	\item
+%The SoC bus might be granted to other program and B2B program must wait until it is free.
+%	\item
+%The behaviour of the user friendly messages of the LM32 programs causes the non real time of the programs.
+%\end{itemize}
+%
+%The difference between timestamps of the adjacent zero crossing points, 592ns, is the remainder resulting from 41.296us dividing SIS18 revolution period \SI{636051}{\ps}. Based on eq. ~\ref{syn_time} and eq. ~\ref{syn_num}, 
+%\begin{equation}
+%\begin{aligned}
+%\frac{T^{SIS18}_{h=2}}{5ms}=\frac{592ns}{\Delta t}
+%\label {syn_time}
+%\end{aligned}
+%\end{equation}
+%
+%\begin{equation}
+%\begin{aligned}
+%\frac{\Delta t}{T^{SIS18}_{h=1}}=3634
+%\label {syn_num}
+%\end{aligned}
+%\end{equation}
+%we could get that the beating time \gls{symb:d_t} is \SI{4.622818}{\ms} and the number of the SIS18 revolution period is 3634 for the test. 
+%
+%For the real application of the B2B transfer system, in order to guarantee the time constraints of the B2B programs, see Fig. ~\ref{time_constraint}, the B2B source, target and trigger SCUs run only their corresponding B2B program. The SoC bus is occupied only by the B2B program. Besides, the programs running on LM32 are forbidden to print out any user friendly messages.
 
 
 
