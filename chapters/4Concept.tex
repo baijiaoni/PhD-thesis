@@ -164,9 +164,15 @@ Based on a series of the phase advance measurements, the phase advance at first 
 \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Timestamp the extrapolated phase}
-The timestamp of the first C2 zero crossing after T0 edges corresponds to the extrapolated phase advance.
+The timestamp of the first C2 zero crossing after T0 edges corresponds to the extrapolated phase advance. 
+ \begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{PAP.png}
+   \caption{Implementation of the Phase Advance Prediction Module in the B2B source SCU}
+   \label{PAP}
+\end{figure}
 
-The B2B source and target SCUs are installed in the source and target synchrotrons locally. Both B2B SCUs could get the timestamp of every BuTiS C2 zero-crossing. Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by timing notes, \gls{glos:B2B_s_SCU} and \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first zero-crossing of C2 clock after a specified T0 edge. They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules use e.g. \SI{500}{\us} for the extrapolation and updates the extrapolated phase value every first zero-crossing of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi1$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first zero-crossing of C2 clock after T0 edge $t_{\psi1}$ which corresponds to the extrapolated phase, as well as the slope of the phase advance $k$.  
+The B2B source and target SCUs are installed in the source and target synchrotrons locally. Fig.~\ref{PAP} shows the implementation of the PAP module in the B2B source SCU.  The PAP module is installed as a slave on the B2B source and targe SCUs. Both B2B SCUs could get the timestamp of every BuTiS C2 zero-crossing. Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by timing notes, \gls{glos:B2B_s_SCU} and \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first zero-crossing of C2 clock after a specified T0 edge. They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively via the SCU bus. The PAP modules use e.g. \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every first zero-crossing of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi1$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first zero-crossing of C2 clock after T0 edge $t_{\psi1}$ which corresponds to the extrapolated phase, as well as the slope of the phase advance $k$.  
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{phase_diff_syn_time.jpg}
@@ -176,9 +182,9 @@ The B2B source and target SCUs are installed in the source and target synchrotro
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Exchage data %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of the measured data}
 
-For the B2B transfer, there is a“B2B transfer master“, which is responsible for the data collection of two synchrotrons, calculation, redistribution and B2B transfer status check. The data of the source and target synchrotron must be transferred to the ``B2B transfer master`` via the deterministic WR network in the format of the timing frame.
+For the B2B transfer, there is a“B2B transfer master“, which is responsible for the data collection of two synchrotrons, data calculation, data redistribution and B2B transfer status check. The data of the source and target synchrotron must be transferred to the ``B2B transfer master`` via the deterministic WR network in the format of the timing frame.
  
-In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, the data must be transferred between two synchrotrons. The B2B source SCU works as ``B2B transfer master``, so the extrapolated phase $\psi1$, the corresponding timestamp $t_{\psi1}$ and the phase advance slope $k$ are transferred by the B2B target SCU (Scalable Control Unit) ~\cite{beck_new_2012, thieme_scu_2013} to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME, please see Appendix A. The B2B transfer involves a certain amount of telegrams. The timing frames are not sent via DM in order to reduce the traffic of the WR network ~\cite{bai_concept_2016} and reduce the transfer delay, so a specified VLAN, B2B VLAN, is defined. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frame in the WR network. The frame is transferred along the path with orange color instead of the path with blue color. 
+In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, the data must be transferred between two synchrotrons. The B2B source SCU works as ``B2B transfer master``, so the extrapolated phase $\psi1$, the corresponding timestamp $t_{\psi1}$ and the phase advance slope $k$ are transferred by the B2B target SCU (Scalable Control Unit) ~\cite{beck_new_2012, thieme_scu_2013} to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME, please see Appendix A. The B2B transfer involves a certain amount of telegrams. The timing frames are not sent via DM in order to reduce the traffic of the WR network ~\cite{bai_concept_2016} and reduce the timing frame transfer delay on the WR network, so a specified VLAN, B2B VLAN, is defined. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frame in the WR network. The frame is transferred along the path with orange color instead of the path with blue color. 
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{network_B2B.jpg}
@@ -187,7 +193,7 @@ In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RF synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RF synchronization}
-The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}.
+The B2B transfer system for FAIR is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}. The phase difference between two RF systems allows for the realization of the RF synchronization. With the phase shift method, a frequency modulation with a fixed duration is applied to one RF system. With the frequency beating method, the phase difference varies at the rate of the frequency difference between two RF systems.
 \begin{itemize}
 \item RF synchronization with the phase shift method
 
@@ -195,14 +201,20 @@ Eq.~\ref{phase} gives the relation between the required phase shift \gls{symb:ph
 \begin{equation}
 \Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase}
 \end{equation}
-The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation T. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. \ref{two_sync_methods} at page \pageref{3_criteria}. For the RF synchronization, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented. A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The required phase shift, \gls{symb:pha_shift}, is calculated by the B2B source SCU.
+The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation $T$. The phase shift must be executed adiabatically in order to guarantee the bucket size and continuous synchronous phase, see Sec. \ref{two_sync_methods} at page \pageref{3_criteria}. For the RF synchronization, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, namely $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented for the simplicity of the rf frequency modulation. A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The required phase shift, \gls{symb:pha_shift}, is calculated by the B2B source SCU.
 \begin{equation}
 \frac{\Delta \phi_{shift}}{180^\circ}= \frac{f_{actual}}{f_{normalized}} \label{actual_profile}
 \end{equation}
 
-Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency  modulation profiles and the corresponding phase shift profile. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue one is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green one is $1/3f_{normalized}$ with $60^\circ$. 
+Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency  modulation profiles and the corresponding phase shift profiles. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue one is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green one is $1/3f_{normalized}$ with $60^\circ$. 
+ \begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{PSM.png}
+   \caption{Implementation of the Phase Shift Module in the B2B source SCU}
+   \label{PSM}
+\end{figure}
 
-The B2B source SCU sends the required phase shift to the Phase Shift Module (\gls{PSM}), which controls the phase shift of the Reference RF Signal of Group DDS by means of either frequency (Fig.~\ref{normalized_profile} (a)) or phase (Fig.~\ref{normalized_profile} (b)) modulation. The Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM modules, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR``.
+Fig.~\ref{PSM} shows the implementation of the PSM in the B2B source SCU. The B2B source SCU sends the required phase shift to the Phase Shift Module (\gls{PSM}), which controls the phase shift of the Reference RF Signal of Group DDS by means of either frequency (Fig.~\ref{normalized_profile} (a)) or phase (Fig.~\ref{normalized_profile} (b)) modulation. The Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM modules, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR``.
                        
 \begin{figure}[!htb]
    \centering   
@@ -224,22 +236,40 @@ The ratio of the circumference between many pair of machines in FAIR is not a pe
 \subsection{Coarse synchronization}
 % For each beam production chain, the B2B related SCUs will be configured by FESA.
 
-The coarse synchronization is achieved by the synchronization window with a certain length. Within this window, the bunch is injected into the bucket with the center mismatch smaller than the upper bound\footnote{B2B transfer from SIS18 to SIS100: upper bound of the bunch-to-bucket center mismatch is $1^\circ$}. The length of the synchronization window \gls{symb:syn_win_length} is two times the period of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the mismatch between the bunch and bucket center within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum bunch-to-bucket center mismatch \gls{symb:mismatch} with the synchronization window is calculated by 
+The coarse synchronization is achieved by the synchronization window with a certain length. Within this window, the bunch is transferred into the bucket with the center mismatch smaller than the upper bound\footnote{B2B transfer from SIS18 to SIS100: upper bound of the bunch-to-bucket center mismatch is $1^\circ$}. The length of the synchronization window \gls{symb:syn_win_length} is two times the period of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the mismatch between the bunch and bucket center within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum bunch-to-bucket center mismatch \gls{symb:mismatch} with the synchronization window is calculated by 
 \begin{equation}
 \frac{T_{sync\_win}}{1/\Delta f}= \frac{\Delta \theta}{360^\circ}
 \end{equation}
-where \gls{symb:beating_freq} is the beating frequency.
-The B2B source SCU is capable of receiving the values (kicker delay for extraction kicker of the source synchrotron, kicker delay for injection kicker of the target synchrotron, $t_{TOF}$, rf frequencies of the source and target synchrotrons, the upper bound time for the phase shift of the source synchrotron) from the SM by FESA classes via the accelerator network. The B2B source SCU calculates the synchronization window, taking kicker delays into consideration and transfers the timestamp of the start of the synchronization window, TGM\_SYNCH\_WIN, to the DM and the source and target Trigger SCUs via the WR network. The Trigger SCUs are used to produce the kicker trigger signal. The TGM\_SYNCH\_WIN could also be used for the triggering of the bunch rotation of both machines (e.g. SIS100 and CR) with a specified advance. 
+where \gls{symb:beating_freq} is the beating frequency. 
+
+The B2B source SCU is capable of receiving the values (kicker delay for extraction kicker of the source synchrotron, kicker delay for injection kicker of the target synchrotron, $t_{TOF}$, rf frequencies of the source and target synchrotrons, the upper bound time for the phase shift of the source synchrotron) from the SM by FESA classes via the accelerator network. The B2B source SCU calculates the synchronization window, taking kicker delays into consideration and transfers the timestamp of the start of the synchronization window (see Sec.  ???), TGM\_SYNCH\_WIN, to the DM and the source and target Trigger SCUs via the WR network. The Trigger SCUs are used to produce the kicker trigger signal. The TGM\_SYNCH\_WIN could also be used for the triggering of the bunch rotation of both machines (e.g. SIS100 and CR) with a specified advance. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bucket label}
 \label{sec:bucket_label}
-The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter is used for the emergency kick of SIS100. 
+The bucket label is realized by a delay based on an indication signal. The indication signal is used to indicate the first bucket and the delay is used to indicate a certain bucket. The indication signal is with the revolution frequency of the target synchrotron. Becasue the evolution of the phase advance of the RF system of the target synchrotron $\psi$ can be calculated according to the slope of the phase advance $k$, see eq. ~\ref{linear}, the indication signal can be corrected exactly in phase with the revolution frequency of the target synchrotron.  The indication signal is exactly a copy of the revolution frequency of the target synchrotron, so it is called the ''reproduced signal''.  The reproduced signal coud be reproduced campus-wide. A certain bucket is just a certain number of the RF periods delay based on the reproduced signal. 
+
+\begin{equation}
+\psi= kt+b\label{linear}
+\end{equation}
+
+Where $\psi2$ and $t_{\psi2}$ coincidences with the linear relationship, so $b$ can be calculated as $\psi2-kt_{\psi2}$.
+
+For the emergency kick, the reproduced signal has always the same freqency and is always in phase with the revolution signal, so it is called the ''real-time reproduced signal''. The delay based on the real-time reproduced signal always indicates the bunch gap.
+
+The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter could be used for the emergency dump. 
+ \begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{PCM.png}
+   \caption{Implementation of the Phase Correction Module in the Trigger SCU}
+   \label{PCM}
+\end{figure}
+Fig.~\ref{PSM} shows the implementataion of the PCM in the Trigger SCU.  The bucket label is realized by the Signal Reproduction module and the PCM. The PCM is installed in the Trigger SCU, which produces the trigger signal for the kicker. 
 
 \begin{itemize}
 \item Bucket label for the normal extraction and injection
 
-For the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the reproduction of the bucket label. Here we use B2B trasfer from SIS18 to SIS100 as an example.
+For the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the reproduction of the bucket label. Here we use B2B transfer from SIS18 to SIS100 as an example.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{bucket_label.jpg}
@@ -249,10 +279,10 @@ For the bucket label for the normal extraction and injection, three steps are ne
 \begin{itemize}
 \item[-] Step 1. Frequency correction
 
-A signal with the same frequency as the Reference RF Signal at the flattop of the target synchrotron (e.g. RF revolution frequency of SIS100) is produced by the Signal Reproduction (\gls{SR}) module, which is called the reproduced signal. For the B2B transfer system for FAIR, the zero-crossing of the reproduced signal always indicates the start of the 1st bucket.
+The Signal Reproduction (\gls{SR}) module produces the ''reproduced signal'' with  the same frequency as the Reference RF Signal at the flattop of the target synchrotron (e.g. RF revolution frequency of SIS100). The zero-crossing of the reproduced signal always indicates the start of the 1st bucket.
 \item[-] Step 2. Phase correction
 
-For the phase synchronization with the bucket, the bucket label signal must do phase correction at a specified T0 edge. The phase correction value is calculated by the B2B source SCU and transferred by the timing frame TGM\_PHASE\_CORRECTION to the \gls{glos:trigger_scu}. Than the Trigger SCU gives the phase correction value to the SR module.
+The reproduced signal must do phase correction at a specified T0 edge. The phase correction value is calculated by the B2B source SCU and transferred by the timing frame TGM\_PHASE\_CORRECTION to the \gls{glos:trigger_scu}. Than the Trigger SCU gives the phase correction value to the SR module.
 
 \item[-] Step 3. Bucket label
 
@@ -270,10 +300,10 @@ Only for SIS100 emergency procedure, the bunch gap label is important during the
 \end{figure} 
 
 \begin{itemize}
-\item[-] Step 1. The reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal in frequency and phase.
+\item[-] Step 1. The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal in frequency and phase.
 \item[-] Step 2. Bunch gap label
 
-The SM informs the bunch gap with the parameter of $d_{pattern}$ on the reproduced signal during the whole acceleration cycle. In Fig.~\ref{Emergency_label}, the 9th and 10th buckets services as the bunch gap. The $d_{pattern}=4\times T_{rev}^{SIS18}$ is with variable value, which is considered in the kicker delay compensation and applied to the reproduced signal on T0 edges.
+The SM informs the bunch gap with the parameter of $d_{pattern}$ on the real-time reproduced signal during the whole acceleration cycle. In Fig.~\ref{Emergency_label}, the 9th and 10th buckets services as the bunch gap. The $d_{pattern}=4\times T_{rev}^{SIS18}$ is with variable value, which is considered in the kicker delay compensation and applied to the real-time reproduced signal on T0 edges.
 
 \end{itemize}
 
@@ -281,49 +311,60 @@ The SM informs the bunch gap with the parameter of $d_{pattern}$ on the reproduc
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Fine synchronization of the extraction and injection kicker}
-For the normal B2B extraction/injection, the synchronization window is a gating signal, which is received by the source and target Trigger SCUs from the WR network by TGM\_SYNCH\_WIN. Within this window, the first reproduced signal will be selected by the Trigger Decision (\gls{TD}) module . The extraction and injection kicker are synchronized with the bunch and bucket by the extraction and injection kicker delay compensation. If the inhibit signal of MPS is off, the kicker delay compensation must be considered for the kicker synchronization. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker will be triggered by the injection kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18} - (t_{v\_inj}+$ \gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the first selected reproduced signal by TD module. If the inhibit signal is on, the normal injection and extraction trigger signals will be blocked.
+After the synchronization between two RF systems, the exact time-of-flight between two synchrotrons before the center of a certain bucket passes the injection kicker, the extraction kicker must kick the bunch in the source synchrotron. When there are some emergency, the emergency kicker must kick the beam into the emergency dump as soon as possible.
 
-For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{rev}^{SIS100} + t_{bucket} - (t_{v\_emg} + t_{emg})$, where \gls{symb:temg} is the time delay between the virtual RF cavity and the emergency extraction position and \gls{symb:Demg} the emergency kicker delay. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the selected reproduced signal by TD module. Only when the emergency signal is valid, the emergency kicker will be triggered by the TD module.
+The first reproduced signal within the synchronization window is selected. The triggers for the extraction and injection kicker are produced after the first reproduced signal with the delay of the extraction and injection kicker delay compensation. When some emergency happens, the following bunch gap label outputs to trigger the emergency kicker.
+ \begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{PSM.png}
+   \caption{Implementation of the Trigger Decision module in the Trigger SCU}
+   \label{PSM}
+\end{figure}
+Fig.~\ref{PSM} shows the implementataion of the TD module in the Trigger SCU.  The TD module is responsible for the production of trigger for the kicker. The extraction  /injection kicker trigger signal is produced by the TD module, which selects the first reproduced signal within the synchronization window and adds the delay of the extraction /injection kicker delay compensation to the first reproduced signal. For the emergency kick, the TD module produces the bunch gap label by the delay of the bunch gap based on the real-time reproduced signal.   
+
+For the normal B2B extraction/injection, the synchronization window is a gating signal, which is received by the source and target Trigger SCUs from the WR network by TGM\_SYNCH\_WIN. Within this window, the first reproduced signal from the SR module will be selected by the Trigger Decision (\gls{TD}) module . The extraction and injection kicker are synchronized with the bunch and bucket by the extraction and injection kicker delay compensation. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker will be triggered by the injection kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18} - (t_{v\_inj}+$ \gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the first selected reproduced signal by TD module. 
+
+For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{rev}^{SIS100} + t_{bucket} - (t_{v\_emg} + t_{emg})$, where \gls{symb:temg} is the time delay between the virtual RF cavity and the emergency extraction position and \gls{symb:Demg} the emergency kicker delay. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the real-time reproduced signal by TD module. Only when the emergency signal is valid, the emergency kicker will be triggered by the TD module.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Beam indication for the beam instrumentation}
-
-Two timing frames will be send from the B2B source SCU to the DM. DM sends them further to the FECs for BI.
-\begin{itemize}
-\item[-] Timing frame $TGM\_SYNCH\_WIN$
-
-This time frame indicates the start of the synchronization window for the beam instrumentation.
-
-\item[-] Timing frame $TGM\_B2B\_STATUS$
-
-The time frame $TGM\_B2B\_STATUS$ indicates the status of the B2B transfer system and the actual beam injection time. 
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WR network %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{WR network}
-
-The B2B transfer involves a certain amount of frames within the WR network ~\cite{beck_white_2011}. More details about the B2B frames, please see Appendix A. The name of the timing frames from the DM is beginning with CMD\_, the name of other telegrams is beginning with TGM\_. The B2B related frames make use of the format of the timing frame. The Format ID (\gls{FID}) of the timing frame is used to indicate the B2B transfer, the Group ID (\gls{GID}) the source and target machines and the Beam Process ID (\gls{BPID}) the B2B process steps for the B2B related SCUs. 
-
-A Virtual Local Area Network (VLAN) is a group of FECs in the WR network that is logically segmented by function or application, without regard to the physical locations of the FECs. 
-
-All FECs in the WR network are assigned to the DM VLAN, within which the DM forwards broadcast timing telegrams downwards to all FECs. The telegrams sent from the source B2B SCU upwards to the DM are unicast packets within this VLAN. E.g. TGM\_SYNCH\_WIN and TGM\_B2B\_STATUS. 
-
-
-\begin{landscape}
-\begin{figure}[H]
-   \centering   
-   \includegraphics*[width=250mm]{Telegram_network.jpg}
-   \caption{Timing frames transfer for the B2B transfer}
-   \label{Telegram_network}
-\end{figure}  
-\end{landscape}
-
-Besides, the SCUs for the B2B transfer are assigned to the B2B \gls{VLAN}. The specified VLAN for the B2B transfer could reduce the traffic of the WR network ~\cite{bai_concept_2016}. All B2B related telegrams TGM\_ except TGM\_SYNCH\_WIN and TGM\_B2B\_STATUS are broadcasted in the B2B VLAN. The broadcast packet is much safer, because it does not need to know the Internet Protocol address (\gls{IP} address) of B2B related SCUs. Besides, it increases the flexibility of the system that all SCUs for the B2B transfer could have changeable IP addresses. Fig. ~\ref{Telegram_network} shows the types of the B2B timing frames, their VLANs and the frames transfers among B2B related SCUs.
+%\subsection{Beam indication for the beam instrumentation}
+%
+%Two timing frames will be send from the B2B source SCU to the DM. DM sends them further to the FECs for BI.
+%\begin{itemize}
+%\item[-] Timing frame $TGM\_SYNCH\_WIN$
+%
+%This time frame indicates the start of the synchronization window for the beam instrumentation.
+%
+%\item[-] Timing frame $TGM\_B2B\_STATUS$
+%
+%The time frame $TGM\_B2B\_STATUS$ indicates the status of the B2B transfer system and the actual beam injection time. 
+%\end{itemize}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WR network %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{WR network}
+%
+%The B2B transfer involves a certain amount of frames within the WR network ~\cite{beck_white_2011}. More details about the B2B frames, please see Appendix A. The name of the timing frames from the DM is beginning with CMD\_, the name of other telegrams is beginning with TGM\_. The B2B related frames make use of the format of the timing frame. The Format ID (\gls{FID}) of the timing frame is used to indicate the B2B transfer, the Group ID (\gls{GID}) the source and target machines and the Beam Process ID (\gls{BPID}) the B2B process steps for the B2B related SCUs. 
+%
+%A Virtual Local Area Network (VLAN) is a group of FECs in the WR network that is logically segmented by function or application, without regard to the physical locations of the FECs. 
+%
+%All FECs in the WR network are assigned to the DM VLAN, within which the DM forwards broadcast timing telegrams downwards to all FECs. The telegrams sent from the source B2B SCU upwards to the DM are unicast packets within this VLAN. E.g. TGM\_SYNCH\_WIN and TGM\_B2B\_STATUS. 
+%
+%
+%\begin{landscape}
+%\begin{figure}[H]
+%   \centering   
+%   \includegraphics*[width=250mm]{Telegram_network.jpg}
+%   \caption{Timing frames transfer for the B2B transfer}
+%   \label{Telegram_network}
+%\end{figure}  
+%\end{landscape}
+%
+%Besides, the SCUs for the B2B transfer are assigned to the B2B \gls{VLAN}. The specified VLAN for the B2B transfer could reduce the traffic of the WR network ~\cite{bai_concept_2016}. All B2B related telegrams TGM\_ except TGM\_SYNCH\_WIN and TGM\_B2B\_STATUS are broadcasted in the B2B VLAN. The broadcast packet is much safer, because it does not need to know the Internet Protocol address (\gls{IP} address) of B2B related SCUs. Besides, it increases the flexibility of the system that all SCUs for the B2B transfer could have changeable IP addresses. Fig. ~\ref{Telegram_network} shows the types of the B2B timing frames, their VLANs and the frames transfers among B2B related SCUs.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Status check %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{B2B transfer status check}
-The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
+The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics??????. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data/Signal flow of the B2B transfer system}
 In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Before the synchronization, the feedback loop, e.g. beam phase feedback loop and bunch-to-bunch feedback loop, should be frozen. 
