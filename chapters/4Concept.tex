@@ -1,6 +1,6 @@
 
 
-In order to realize the B2B transfer above, the standard procedure is defined and described in Sec. 4.1. We specify how the basic B2B principles mentioned in Chap.2 are realized for FAIR in Sec. 4.2. In Sec. 4.3, the data flow of the B2B transfer system is described. 
+In order to realize the B2B transfer above, the basic idea is presented in Sec. 4.1. The standard procedure is defined and described in Sec. 4.2. Sec. 4.3 illustrastes how the basic B2B functionalities are realized. In Sec. 4.4, the data/signal flow of the B2B transfer system is described. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
 \section{Basic idea of the B2B transfer system for FAIR} 
@@ -17,7 +17,7 @@ The indication of the beam injection is important for the beam instrumentation a
 
 % .
 \subsection{Phase alignment}
-If the rf frequency of one rf system is integer times of the rf frequency of the other rf system, the phase difference between two rf systems is a constant. The phase difference must be adjusted by the phase shift method. Or the phase difference is adjusted automatically because of the beating frequency. The beating frequency must not be too small in order to guarantee the constraint of the maximum synchronization time, but also not too large to satisfy the precise of the phase alignment. For the phase alignment, the following idea must be followed. 
+If the rf frequency of one rf system is integer times of the rf frequency of the other rf system, the phase difference between two rf systems is a constant. The phase difference must be adjusted by the phase shift method. Or the phase difference is adjusted automatically because of the beating frequency. The beating frequency must not be too small in order to satisfy the constraint of the maximum synchronization time, but also not too large to satisfy the precise of the phase alignment. For the phase alignment, the following idea must be followed. 
 \begin{enumerate}
 \item Measurement of the phase of the rf system in each synchrotron locally and the corresponding timestamp.
 \item Exchange of the measured data.
@@ -115,13 +115,13 @@ For the phase shift method, the source synchrotron generally achieves the phase 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Realization of the basic B2B functionalities}
 In this section, how the basic B2B functionalities are realized based on the FAIR control system and LLRF system is introduced.
-Fig.~\ref{Topology} shows the topology of the B2B transfer system ~\cite{bai_bunch_2015, bai_concept_2016}.
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=160mm]{Topology.jpg}
-   \caption{The topology of the B2B transfer system}
-   \label{Topology}
-\end{figure}
+%Fig.~\ref{Topology} shows the topology of the B2B transfer system ~\cite{bai_bunch_2015, bai_concept_2016}.
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=160mm]{Topology.jpg}
+%   \caption{The topology of the B2B transfer system}
+%   \label{Topology}
+%\end{figure}
 %
 %The B2B transfer system includes four main SCUs.
 %\begin{enumerate}
@@ -139,7 +139,7 @@ We assume that two rf systems are stable during the B2B transfer process. The ph
 \item Timestamp the extrapolated phase values
 \end{enumerate}
  \subsubsection{Phase measurement in one RF system}
-The phase measurement of one RF system is achieved by measuring the phase difference between the RF system and a reference sine signal. The phase difference is a linear relationship, with the range from $-180^\circ$ to $+180^\circ$. 
+The phase measurement of one RF system is achieved by measuring the phase advance between the RF system and a reference sine signal. The phase advance is a linear relationship, with the range from $-180^\circ$ to $+180^\circ$. 
 
 In order to get the phase difference between two RF systems of the source and target synchrotrons, we make use of a shared reference signal at both source and target synchrotrons, which is called the \gls{glos:Syn_ref_signal}. It is with the fixed frequency and always in the same phase at two synchrotrons. It is a sine wave, whose frequency is a multiple of \SI{100}{kHz} and whose zero-crossing is aligned with the first zero-crossing of C2 clocks after T0 edges in order to ensure the synchronization of the Synchronization Reference Signal in different synchrotrons ~\cite{ferrand_system_2014, ferrand_system_2015}. 
 
@@ -153,9 +153,7 @@ In order to get the phase difference between two RF systems of the source and ta
 Fig.~\ref{phase_prediction} shows the phase measurement of a RF system at a synchrotron. The red sine wave represents the Synchronization Reference Signals (e.g \SI{100}{kHz}) in two synchrotrons and the black wave the Reference RF signals (e.g. \SI{1000/3}{kHz}) from the \gls{glos:group_DDS}. The phase advance \gls{symb:phase_diff_s} between the Reference RF Signal and the Synchronization Reference Signal is measured by the Phase Advance Measurement (\gls{PAM}) Module at the source synchrotrons and \gls{symb:phase_diff_t} at the target synchrotron. The phase advance measurement is performed synchronously to an internal clock, which is represented by the blue dots. For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase extrapolate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Phase extrapolation in one RF system}
-The phase advance can be extrapolated due to the linear relationship.
-
-Based on a series of the phase advance measurements, the phase advance at first zero-crossing of C2 clocks after T0 edges \gls{symb:phase_diff_s_T0} and \gls{symb:phase_diff_t_T0} could be extrapolated in every synchrotron by the Phase Advance Prediction (\gls{PAP}) Module. The extrapolated phase advance is represented by the red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first zero-crossing of C2 clocks after T0 edges and the Synchronization Reference Signal's phase is $0^\circ$ at these zero-crossing of C2 clocks, $\psi1$ and $\psi2$ are the phase of the Reference RF Signals. For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
+The phase advance can be extrapolated due to the linear relationship. Based on a series of the phase advance measurements, the phase advance at first zero-crossing of C2 clocks after T0 edges \gls{symb:phase_diff_s_T0} and \gls{symb:phase_diff_t_T0} could be extrapolated in every synchrotron by the Phase Advance Prediction (\gls{PAP}) Module. The extrapolated phase advance is represented by the red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first zero-crossing of C2 clocks after T0 edges and the Synchronization Reference Signal's phase is $0^\circ$ at these zero-crossing of C2 clocks, $\psi1$ and $\psi2$ are the phase of the Reference RF Signals. For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{phase_prediction1.jpg}
@@ -164,15 +162,15 @@ Based on a series of the phase advance measurements, the phase advance at first 
 \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Timestamp the extrapolated phase}
-The timestamp of the first C2 zero crossing after T0 edges corresponds to the extrapolated phase advance. 
+The timestamp of the first C2 zero-crossing after T0 edges corresponds to the extrapolated phase advance. 
  \begin{figure}[!htb]
    \centering   
-   \includegraphics*[width=130mm]{PAP.png}
+   \includegraphics*[width=100mm]{PAP.png}
    \caption{Implementation of the Phase Advance Prediction Module in the B2B source SCU}
    \label{PAP}
 \end{figure}
 
-The B2B source and target SCUs are installed in the source and target synchrotrons locally. Fig.~\ref{PAP} shows the implementation of the PAP module in the B2B source SCU.  The PAP module is installed as a slave on the B2B source and targe SCUs. Both B2B SCUs could get the timestamp of every BuTiS C2 zero-crossing. Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by timing notes, \gls{glos:B2B_s_SCU} and \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first zero-crossing of C2 clock after a specified T0 edge. They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively via the SCU bus. The PAP modules use e.g. \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every first zero-crossing of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi1$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first zero-crossing of C2 clock after T0 edge $t_{\psi1}$ which corresponds to the extrapolated phase, as well as the slope of the phase advance $k$.  
+The B2B source and target SCUs are installed in the source and target synchrotrons locally. Fig.~\ref{PAP} shows the implementation of the PAP module in the B2B source SCU.  The PAP module is installed as a slave on the B2B source and targe SCUs. Both B2B source and target SCUs could get the timestamp of every BuTiS C2 zero-crossing. Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first zero-crossing of C2 clock after a specified T0 edge (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules use e.g. \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every first zero-crossing of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi1$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first zero-crossing of C2 clock after T0 edge $t_{\psi1}$ which corresponds to the extrapolated phase, as well as the slope of the phase advance $k$.  
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{phase_diff_syn_time.jpg}
@@ -184,7 +182,7 @@ The B2B source and target SCUs are installed in the source and target synchrotro
 
 For the B2B transfer, there is a“B2B transfer master“, which is responsible for the data collection of two synchrotrons, data calculation, data redistribution and B2B transfer status check. The data of the source and target synchrotron must be transferred to the ``B2B transfer master`` via the deterministic WR network in the format of the timing frame.
  
-In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, the data must be transferred between two synchrotrons. The B2B source SCU works as ``B2B transfer master``, so the extrapolated phase $\psi1$, the corresponding timestamp $t_{\psi1}$ and the phase advance slope $k$ are transferred by the B2B target SCU (Scalable Control Unit) ~\cite{beck_new_2012, thieme_scu_2013} to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME, please see Appendix A. The B2B transfer involves a certain amount of telegrams. The timing frames are not sent via DM in order to reduce the traffic of the WR network ~\cite{bai_concept_2016} and reduce the timing frame transfer delay on the WR network, so a specified VLAN, B2B VLAN, is defined. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frame in the WR network. The frame is transferred along the path with orange color instead of the path with blue color. 
+In order to get the phase difference between two rf systems, $\psi1$ - $\psi2$, the data must be transferred between two synchrotrons. The B2B source SCU works as ``B2B transfer master``, so the extrapolated phase $\psi1$, the corresponding timestamp $t_{\psi1}$ and the phase advance slope $k$ are transferred by the B2B target SCU ~\cite{beck_new_2012, thieme_scu_2013} to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME, please see Appendix A. The B2B transfer involves a certain amount of telegrams. The timing frames are not sent via DM in order to reduce the traffic of the WR network ~\cite{bai_concept_2016} and reduce the timing frame transfer delay on the WR network, so a specified VLAN, B2B VLAN, is defined. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frame in the WR network. The frame is transferred along the path with orange color instead of the path with blue color. 
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{network_B2B.jpg}
@@ -209,7 +207,7 @@ The required phase shift is determined by the frequency offset \gls{symb:freq_mo
 Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency  modulation profiles and the corresponding phase shift profiles. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue one is $1/2f_{normalized}$ with the phase shift of $90^\circ$ and the green one is $1/3f_{normalized}$ with $60^\circ$. 
  \begin{figure}[!htb]
    \centering   
-   \includegraphics*[width=130mm]{PSM.png}
+   \includegraphics*[width=100mm]{PSM.png}
    \caption{Implementation of the Phase Shift Module in the B2B source SCU}
    \label{PSM}
 \end{figure}
@@ -260,7 +258,7 @@ For the emergency kick, the reproduced signal has always the same freqency and i
 The B2B transfer system for FAIR needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter could be used for the emergency dump. 
  \begin{figure}[!htb]
    \centering   
-   \includegraphics*[width=130mm]{PCM.png}
+   \includegraphics*[width=100mm]{PCM.png}
    \caption{Implementation of the Phase Correction Module in the Trigger SCU}
    \label{PCM}
 \end{figure}
@@ -316,11 +314,11 @@ After the synchronization between two RF systems, the exact time-of-flight betwe
 The first reproduced signal within the synchronization window is selected. The triggers for the extraction and injection kicker are produced after the first reproduced signal with the delay of the extraction and injection kicker delay compensation. When some emergency happens, the following bunch gap label outputs to trigger the emergency kicker.
  \begin{figure}[!htb]
    \centering   
-   \includegraphics*[width=130mm]{PSM.png}
+   \includegraphics*[width=100mm]{TD.png}
    \caption{Implementation of the Trigger Decision module in the Trigger SCU}
-   \label{PSM}
+   \label{TD}
 \end{figure}
-Fig.~\ref{PSM} shows the implementataion of the TD module in the Trigger SCU.  The TD module is responsible for the production of trigger for the kicker. The extraction  /injection kicker trigger signal is produced by the TD module, which selects the first reproduced signal within the synchronization window and adds the delay of the extraction /injection kicker delay compensation to the first reproduced signal. For the emergency kick, the TD module produces the bunch gap label by the delay of the bunch gap based on the real-time reproduced signal.   
+Fig.~\ref{TD} shows the implementataion of the TD module in the Trigger SCU.  The TD module is responsible for the production of trigger for the kicker. The extraction  /injection kicker trigger signal is produced by the TD module, which selects the first reproduced signal within the synchronization window and adds the delay of the extraction /injection kicker delay compensation to the first reproduced signal. For the emergency kick, the TD module produces the bunch gap label by the delay of the bunch gap based on the real-time reproduced signal.   
 
 For the normal B2B extraction/injection, the synchronization window is a gating signal, which is received by the source and target Trigger SCUs from the WR network by TGM\_SYNCH\_WIN. Within this window, the first reproduced signal from the SR module will be selected by the Trigger Decision (\gls{TD}) module . The extraction and injection kicker are synchronized with the bunch and bucket by the extraction and injection kicker delay compensation. The extraction kicker will be triggered by the extraction kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker will be triggered by the injection kick delay compensation, $T_{rev}^{SIS100}$ + $T_{rev}^{SIS18} - (t_{v\_inj}+$ \gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker}. Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the first selected reproduced signal by TD module. 
 
@@ -367,34 +365,30 @@ For the SIS100 emergency kick, the extraction delay compensation is calculated b
 The B2B source SCU shall receive the trigger time of the extraction kicker and actual beam extraction time, TGM\_KICKER\_TRIGGER\_TIME\_S, from the source \gls{glos:trigger_scu} via the WR network and also the trigger time of the injection kicker and actual beam injection time, TGM\_KICKER\_TRIGGER\_TIME\_T, from the target Trigger SCU via the WR network. The Trigger SCU is responsible for the trigger of the kicker electronics??????. The B2B source SCU is capable of examining the status of the B2B transfer system and transferring the status and the actual beam injection time  (TGM\_B2B\_STATUS) to the DM. If all components of the B2B transfer system work correctly and the B2B transfer process is accomplished, the status bit is `0`. Otherwise it is `1`. For this purpose, it shall do simple checking based on the extraction/injection trigger time and the actual beam extraction/injection time. E.g. Source trigger time $<$ actual beam extraction time.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data/Signal flow of the B2B transfer system}
-In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Before the synchronization, the feedback loop, e.g. beam phase feedback loop and bunch-to-bunch feedback loop, should be frozen. 
+In this section, the procedure for the B2B transfer is explained from the viewpoint of the data/signal flow, which follows the basic six steps in Fig.~\ref{2method}. Fig. ~\ref{data_flow} shows the data flow in the source and target synchrotrons and between two synchrotrons. The rectangle with the different color represents the basic six steps. The left part in each rectangle presents the data/signal flow in the source synchrotron and the right part the data/signal flow in the target synchrotron.
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=110mm]{data_flow.jpg}
+   \caption{The data/signal flow of the B2B transfer system}
+   \label{data_flow}
+\end{figure}  
 
 \begin{enumerate}
-\item The DM sends the timing frame CMD\_START\_B2B for the B2B transfer. 
+\item The DM sends the timing frame CMD\_START\_B2B to the B2B source and target SCUs for the start of the B2B transfer via the WR network. Besides, it freezes of the feedback loop, e.g. the beam phase control loop and the bunch-to-bunch longitudinal rf feedback loop, see Sec. ~\ref{sec:LLRF}. 
 
-\item  The B2B source and target SCUs send the timing frame tag to the PAP module. They read the predicted phase advance and the time slope from the PAP module after a fixed delay. 
+\item  After receiving CMD\_START\_B2B, the B2B source and target SCUs start the PAM module to measure the phase advance $\Delta \varphi$ with the help of the PAP module locally and the PAP module extrapolates the phase advance in the furture. After a period of time, the B2B source and targtet SCU reads the extrapolated phase advance $\psi$ and the slope of the phase advance $k$ from the PAP module locally, timestamping the $\psi$.  
 
-\item  The B2B target SCU sends the extrapolated phase, the corresponding timestamp and the time slope (TGM\_PHASE\_TIME) to the B2B source SCU via the WR network. 
+\item  The B2B target SCU sends the extrapolated phase $\psi2$, the corresponding timestamp $t^{\psi}$ and the slope $k$ in the format of the timing frame TGM\_PHASE\_TIME to the B2B source SCU via the WR network. 
 
-\item  The B2B source SCU calculates the synchronization window and transfers the timestamp of the start of the window (TGM\_SYNCH\_WIN) to the DM, as well as to the Trigger SCUs of both machines.
-The B2B source SCU calculates the phase correction value and transfers it to all Trigger SCUs via the WR network. Then the Trigger SCUs transfer the phase correction value to its Phase Correction Module (\gls{PCM}). The PCM triggers the phase correction of the SR module. 
-Only for the phase shift method, the B2B source SCU calculates the required shifted phase and transfers it to the PSM. Then the PSM transfers the phase or frequency modulation profile to the Group DDS.  
+\item  The B2B source SCU calculates the synchronization window and transfers the timestamp of the start of the window to the DM in the format of the timing frame TGM\_SYNCH\_WIN, as well as to the Trigger SCUs at the source and target synchrotrons.
+The B2B source SCU calculates the phase correction value and transfers it to all Trigger SCUs via the WR network in the format of the timing frame TGM\_PHASE\_CORRECTION. Then the Trigger SCUs transfer the phase correction value to its \gls{PCM}. The PCM starts the phase correction of the SR module. 
 
-\item  When the source and target Trigger SCUs receive the telegram (TGM\_SYNCH\_WIN), they produces the synchronization window pulse for the TD module. With the help of the bucket label signal, inhibit signal and emergency extraction signal, the TD module will produce the extraction and injection trigger signals for the kicker electronics.  
-The source Trigger SCU gets the timestamp of the extraction trigger signal and the target Trigger SCU the timestamp of the injection trigger signal.
-\item  The extraction and injection kickers are fired. 
-After that, the source Trigger SCU gets the actual beam extraction time and transfers it together with the timestamp of the extraction trigger signal (TGM\_KICKER\_TRIGGER\_TIME\_S) to the source B2B SCU via the WR network.
-The target Kicker SCU gets the timestamp of actual beam injection time and transfers it together with the timestamp of the injection trigger signal (TGM\_KICKER\_TRIGGER\_TIME\_T) to the source B2B SCU via the WR network.
+Only for the phase shift method, the B2B source SCU calculates the required shifted phase $\Delta \phi_{shift}$ and transfers it to the PSM. Then the PSM transfers the phase or frequency modulation profile to the Group DDS.  
 
-The regular extraction and injection kickers are not fired, when one of the following situation happens. 
-\begin{itemize}
-\item[-] The calculation (synchronization window, the phase correction and phase shift value) is not correct. 
+\item  When the source and target Trigger SCUs receive the timing frame TGM\_SYNCH\_WIN, they produces the synchronization window pulse for the TD module. With the help of the reproduced signal from the SR module, the kicker delay compensation from the Trigger SCU and the indication of the emergency kick from the MPS, the TD module produces the normal extraction/injection trigger signals or the emergency kick trigger for the kicker.  
 
-\item[-] The telegrams are not received within a specified timeout interval. 
+\item  The extraction and injection kickers or emergency kicker are fired. After that, the source Trigger SCU gets the actual beam extraction time and the timestamp of the extraction trigger signal from the TD module and transfer them to the source B2B SCU in the format of the timing frame TGM\_KICKER\_TRIGGER\_TIME\_S. The target Trigger SCU gets the timestamp of actual beam injection time and the timestamp of the injection trigger signal from the TD module and transfer them to the source B2B SCU in the format of the timing frame TGM\_KICKER\_TRIGGER\_TIME\_T. Than the B2B source SCU checks the B2B transfer status and transfers the status together with the beam injection time to the DM in the format of the timing frame TGM\_B2B\_STAUS, represented as the red line in the rectangle of step 6 in Fig. ~\ref{data_flow}.
 
-\item[-] The inhibit signal from the MPS is on and the emergency extraction signal from the MPS is valid. 
-\end{itemize}
-Besides of the basic six steps, the B2B source SCU transfers the B2B status together with the timestamp of the beam injection (TGM\_B2B\_STATUS) to the DM via the WR network. 
 \end{enumerate}
 
 
