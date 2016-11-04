@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.25)  2 NOV 2016 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.25)  4 NOV 2016 19:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -1294,6 +1294,24 @@ LaTeX Info: Redefining \cite on input line 694.
 
 (main.aux
 
+LaTeX Warning: Label `phase_focusing' multiply defined.
+
+
+LaTeX Warning: Label `phase_focusing' multiply defined.
+
+
+LaTeX Warning: Label `phase_focusing' multiply defined.
+
+
+LaTeX Warning: Label `phase_space' multiply defined.
+
+
+LaTeX Warning: Label `eq:pv' multiply defined.
+
+
+LaTeX Warning: Label `eq:phse_slip' multiply defined.
+
+
 LaTeX Warning: Label `close_to_interger1' multiply defined.
 
 
@@ -1477,11 +1495,4 @@ File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+211E (decimal 8478)
    defining Unicode char U+2120 (decimal 8480)
    defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2126 (decimal 8486)
-   defining Unicode char U+2127 (decimal 8487)
-   defining Unicode char U+212E (decimal 8494)
-   defining Unicode char U+2190 (decimal 8592)
-   defining Unicode char U+2191 (decimal 8593)
-   defining Unicode char U+2192 (decimal 8594)
-   defining Unicode char U+2193 (decimal 8595)
-   defining Unicode char U+
+   defining Unicode ch
