@@ -1,10 +1,10 @@
 Transferring bunches of particles from a synchrotron into specified buckets of another synchrotron has several underlying basic principles. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must first of all match that of the target synchrotron. Principally speaking, every synchrotron has its independent RF system. Then the phase advance between the bunch and the bucket must be precisely controlled before the bunch is ejected. The process of achieving the detailed phase adjustment between two RF systems is termed ''RF synchronization''. For the correct bucket injection, the filled buckets and the bucket to be filled must be marked. The bunch fast extraction must happen exactly one ''time of flight'' before the required bucket of the target synchrotron passes the injection region. The injection kicker must kick when the bucket passes the injection region.  In this chapter, all of the B2B basic principles will be explained.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\section{Bunch and bucket}
 For a ring accelerator, particles gain energy from electric field in longitudinal direction and are deflected by magnetic field to a particle orbit. A radio-frequency (rf) cavity operating at a resonance condition is used to provide longitudinal accelerating voltage with $V\sin(\phi_\mathit{s}+2\pi f_\mathit{rf}t)$ in the vacuum chamber, where $V$ is the amplitude of the rf voltage, $\phi_\mathit{s}$ is a phase factor, and $f_{\mathit{rf}}$ is the rf frequency. In order to accelerate particles with an accelerating voltage at rf cavity, the rf frequency must always be an integer multiple of the revolution frequency of particles. 
 \begin{equation}
-	f_{\mathit{rf}}=hf_{\mathit{rev}}
+	f_{\mathit{rf}}=hf_{\mathit{rev}}\label{harmonic_number}
 \end{equation}
 where the integer multiple $h$ is called ``harmonic number``. 
 
@@ -65,45 +65,80 @@ A bunch of particles consists of particles with slightly different momentum as a
    \caption{The longitudinal focusing of particles by rf voltage.}
    \label{phase_focusing}
 \end{figure}
-A synchronous particle is indicated by the green spot in Fig. ~\label{phase_focusing}. It will gain or lose energy of $eV\sin\phi_{\mathit{s}}$, per passage through an rf cavity. A particle with smaller energy (blue spot) than the synchronous particle will run slower and arrive the same rf cavity later, seeing a higher accelerating voltage. It will compensate the lack of energy step-by-step, closing to the synchronous particle. Oppositely for a particle with bigger energy. As it is faster than the synchronous particle, it will arrive at the rf cavity earlier, seeing a smaller accelerating voltage. The excess energy will be reduced step-by-step approching to the synchronous particle. Particles will oscillate longitudinally around the synchronous particle. The oscillations are called ``synchrotron oscillations``. This longitudinal motion is plotted in longitudinal phase space, See Fig. ~\label{phase_space}.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=170mm]{phase_space.jpg}
    \caption{The longitudinal motion of asynchronous particles in longitudinal phase space.}{Red spot represents the particle with higher energy, blue spot the particle with lower energy and green dot the synchronous particle from Fig. ~\label{phase_focusing}}
    \label{phase_space}
 \end{figure}
+A synchronous particle is indicated by the green spot in Fig. ~\ref{phase_focusing}. It will gain energy of $eV\sin\phi_{\mathit{s}}$, per passage through an rf cavity. A particle with smaller energy (blue spot) than the synchronous particle will run slower and arrive the same rf cavity later, seeing a higher accelerating voltage. It will compensate the lack of energy step-by-step, closing to the synchronous particle. Oppositely for a particle with bigger energy. As it is faster than the synchronous particle, it will arrive at the rf cavity earlier, seeing a smaller accelerating voltage. The excess energy will be reduced step-by-step approching to the synchronous particle. Particles will oscillate longitudinally around the synchronous particle. The oscillations are called ``synchrotron oscillations``. This longitudinal motion is plotted in longitudinal phase space, See Fig. ~\ref{phase_space}.
 
-All particles get ``clumped`` around the synchronous particle in a \emph{bunch}. Particles with small energy deviation follow a circular path inside the bunch. For particles with larger energy deviations, these circles get flattened into ellipses. For particles with the energy deviations larger than the maximum, they can not be trapped around the synchronous particle and will lose. The trajectory of this particle with the maximum energy deviation in longitudinal phase space define a region with a specific size and form. This is a \emph{RF bucket}. The maximum energy deviation is determined by the rf voltage and the rf harmonic number of the rf cavity.
+All particles get ``clumped`` around the synchronous particle, froming a ``bunch``. Firstly of all, we consider the synchronous phase is $0^\circ$. In this scenario, particles with small energy deviation follow a circular path inside the bunch. For particles with larger energy deviations, these circles get flattened into ellipses. For a given rf system with specific rf voltage and harmonic number, there exists a maximum energy deviation. For particles with the energy deviations larger than the maximum energy deviation, they can not be trapped around the synchronous particle and will be lost. The trajectory of the particle with the maximum energy deviation in longitudinal phase space defines a region with a specific size and form. This region is called ``rf bucket``, or ``rf stationary bucket``, see Fig. ~\ref{energy_deviation}. The maximum momentum deviation of the rf bucket is called ``bucket height``. These buckets will exist as soon as the RF system is on and the number of  circulating buckets is determined by the harmonic number and the bucket height by the rf voltage. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=160mm]{energy_deviation.jpg}
+   \caption{A stationary rf bucket.}
+   \label{energy_deviation}
+\end{figure} 
+%%%%%%%%%%%%%%%%%%%%%%%%% running bucket%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- 
+So far we give the definition of the bucke, when then synchronous particle sees no rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$, per passage through an rf cavity, it will gain energy of $eV\sin\phi_{\mathit{s}}$. Only particles which gain higher energy than the synchronous particle will run synchrotron oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees a rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energe increasement, resulting in particles to move further away from the synchronous particle. The particle, starting at $\pi-\phi_{\mathit{s}}$, traces a closed fish-shaped orbit, defining a ``runing rf bucket``. The bucket area is defined as the area of longitudinal phase space enclosed by the bucket ~\cite{lee_accelerator_2011}. For the same rf voltage, the running
+bucket is always smaller than the stationary bucket. The ratio of bucket areas of a running bucket to a stationary bucket is called ``bucket area factor``, $\alpha(\Delta \phi_s)$. The bucket area factor could be calculated by ~\cite{lee_accelerator_2011}.
 
+\begin{equation}
+\alpha_b(\Delta\phi_s)\approx(1-sin(\Delta \phi_s))(1+sin(\Delta \phi_s))
+\label{eq:buckt_area_factor}
+\end{equation} 
+
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{running_bucket.jpg}
+   \caption{A running rf bucket.}{The blue dot represents the synchronous particle, the red one the particle with higher energy, which can be captured in the bucket and the blue one the particle with lower energy, which can not be captured in the bucket.}
+   \label{running_bucket}
+\end{figure} 
+
+The oscillation of the asynchronous particles is called ``synchrotron motion``. The angular synchrotron frequency \footnote{For the small-amplitude synchrotron motion} is ~\cite{lee_accelerator_2011}
+\begin{equation}
+\omega_{\mathit{syn}}=2\pi f_{\mathit{rev}}\sqrt{\frac{heV|\cos\phi_s|}{2\pi\beta^2E_0}}
+\label{eq:synchfreq}
+\end{equation} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy match, Phase match and voltage match}
+\section{Energy match, phase match and voltage match}
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=170mm]{injection_error.jpg}
+   \caption{Bunch-to-bucket injection with errors.}{The blank dot represents the injeciton without error, the red dot the injection with phase error, the green the injection with the energy error and the yellow the injeciton with the voltage error.}
+   \label{injection_error}
+\end{figure} 
+Bunches must be injected exactly in the center of buckets, which requires the energy and phase match between bunches and buckets. Besides, bunches must be enclosed by buckets to be injeted, which requires the voltage match of two rf systems. Fig. ~\ref{injection_error} illustrates the bunch-to-bucket injection with energy, phase or voltage error. 
 
 The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
 \begin{equation}
 	\label{eq:energy}
-	B(t)\rho_0 =\frac{p(t)}{e}
+	B\rho_0 =\frac{p}{q}
 \end{equation}
-where p(t) is the magnitude of the particle momentum, \gls{symb:e} is the charge of the particle, B(t) is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field B(t). The ratio of p(t) to e describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
+where $q$ is the charge of the particle, $B$ is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
 
-The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be matched:
+The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be same.
 
 \begin{equation}
 	\label{eq:rigidity}
-	B^{src}(t)\rho_0^{src} =\frac{p}{e}=B^{trg}(t)\rho_0^{trg}
+	B^{\mathit{src}}\rho_0^{\mathit{src}} =\frac{p}{q}=B^{\mathit{trg}}\rho_0^{\mathit{trg}}
 \end{equation}
 
-Where the superscript of the symbol denotes the synchrotron, ``src`` represents the source synchrotron and ``trg`` the target synchrotron.
+Where the superscript of the symbol denotes the synchrotron, $\mathit{src}$ represents the source synchrotron and $\mathit{trg}$ the target synchrotron.
 
-Besides, the rf frequency of two synchrotrons must meet the following relation ~\cite{garoby_timing_1984}.
+Besides, based on eq. ~\ref{freq_phase1}, we can get that the revolution frequency of two synchrotrons must meet the following relation ~\cite{garoby_timing_1984}.
 \begin{equation}
-	\label{eq:velocity}
-	C^{src}\frac{f_{rf}^{src}(t)}{h^{src}} = \beta c=C^{trg}\frac{f_{rf}^{trg}(t)}{h^{trg}}
+	C^{\mathit{src}}f_{rev}^{\mathit{src}} = \beta c=C^{\mathit{trg}}f_{rev}^{\mathit{trg}}
 \end{equation}
 
-where C is the circumference of the synchrotron, h the harmonic number of the rf signal and $f_{rf}$ denotes the cavity rf frequency, \gls{symb:b} the fraction of the particle velocity to the lightspeed.
+Due to the relation between the revolution frequency and rf frequency eq. ~\ref{harmonic_number}, the ratio between rf frequencies of two rf systems is
+\begin{equation}
+	\frac{f_{rf}^{\mathit{src}}}{f_{rf}^{\mathit{trg}}}=\frac{h^{\mathit{src}}f_{rev}^{\mathit{src}}}{h^{\mathit{trg}}f_{rev}^{\mathit{trg}}}=\frac{h^{\mathit{src}}C^{\mathit{trg}}}{h^{\mathit{trg}}C^{\mathit{src}}}
+\end{equation}
+where $C$ is the circumference of the synchrotron.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
@@ -274,7 +309,8 @@ and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\item Transverse dynamics analysis
 
-The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes chromaticity drift $\Delta{Q}$. $Q^`$is the chromaticity of the machine ~\cite{holzer_introduction_2013}.
+The beam particle’s tune  $Q$, defined as the frequency of the transverse oscillation, and chromaticity $Q^`$ as its
+dependence on particle momentum ~\ref{steinhagen_tune_2008}. The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes tune drift $\Delta{Q}$ ~\cite{holzer_introduction_2013}.
 
 \begin{equation}
 \Delta{Q} = Q^`\frac{\Delta{p}}{p}
