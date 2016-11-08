@@ -82,7 +82,8 @@ All particles get ``clumped`` around the synchronous particle, froming a ``bunch
 \end{figure} 
 %%%%%%%%%%%%%%%%%%%%%%%%% running bucket%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-So far we give the definition of the bucke, when then synchronous particle sees no rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$, per passage through an rf cavity, it will gain energy of $eV\sin\phi_{\mathit{s}}$. Only particles which gain higher energy than the synchronous particle will run synchrotron oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees a rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energe increasement, resulting in particles to move further away from the synchronous particle. The particle, starting at $\pi-\phi_{\mathit{s}}$, traces a closed fish-shaped orbit, defining a ``runing rf bucket``. The bucket area is defined as the area of longitudinal phase space enclosed by the bucket ~\cite{lee_accelerator_2011}. For the same rf voltage, the running
+So far we give the definition of the bucke, when the synchronous particle sees no rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$, per passage through an rf cavity, it will gain energy of $eV\sin\phi_{\mathit{s}}$. %Only particles which gain higher energy than the synchronous particle will run synchrotron oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees a rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energe increasement, resulting in particles to move further away from the synchronous particle.
+Particles osillate arround the synchronous particle at $\phi_{\mathit{s}}$ with elliptical orbit. The particle at $\pi-\phi_{\mathit{s}}$ traces a closed fish-shaped orbit, which defines a ``runing rf bucket``. The phase-space orbit near the particle at $\pi-\phi_{\mathit{s}}$ are hyperbola, which can not be captured by the bucket. The bucket area is defined as the area of longitudinal phase space enclosed by the bucket ~\cite{lee_accelerator_2011}. For the same rf voltage, the running
 bucket is always smaller than the stationary bucket. The ratio of bucket areas of a running bucket to a stationary bucket is called ``bucket area factor``, $\alpha(\Delta \phi_s)$. The bucket area factor could be calculated by ~\cite{lee_accelerator_2011}.
 
 \begin{equation}
@@ -116,7 +117,7 @@ Bunches must be injected exactly in the center of buckets, which requires the en
 The bunch coordinates in the longitudinal phase plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The energy of a beam is determined by the 'magnetic rigidity', which is defined as the following:
 \begin{equation}
 	\label{eq:energy}
-	B\rho_0 =\frac{p}{q}
+	B\rho =\frac{p}{q}
 \end{equation}
 where $q$ is the charge of the particle, $B$ is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
 
@@ -124,7 +125,7 @@ The bunch is transferred from the source to the target synchrotron with the same
 
 \begin{equation}
 	\label{eq:rigidity}
-	B^{\mathit{src}}\rho_0^{\mathit{src}} =\frac{p}{q}=B^{\mathit{trg}}\rho_0^{\mathit{trg}}
+	B^{\mathit{src}}\rho^{\mathit{src}} =\frac{p}{q}=B^{\mathit{trg}}\rho^{\mathit{trg}}
 \end{equation}
 
 Where the superscript of the symbol denotes the synchrotron, $\mathit{src}$ represents the source synchrotron and $\mathit{trg}$ the target synchrotron.
@@ -134,11 +135,107 @@ Besides, based on eq. ~\ref{freq_phase1}, we can get that the revolution frequen
 	C^{\mathit{src}}f_{rev}^{\mathit{src}} = \beta c=C^{\mathit{trg}}f_{rev}^{\mathit{trg}}
 \end{equation}
 
-Due to the relation between the revolution frequency and rf frequency eq. ~\ref{harmonic_number}, the ratio between rf frequencies of two rf systems is
+Due to the relation between the revolution frequency and rf frequency, eq. ~\ref{harmonic_number}, the ratio between rf frequencies of two rf systems is
 \begin{equation}
 	\frac{f_{rf}^{\mathit{src}}}{f_{rf}^{\mathit{trg}}}=\frac{h^{\mathit{src}}f_{rev}^{\mathit{src}}}{h^{\mathit{trg}}f_{rev}^{\mathit{trg}}}=\frac{h^{\mathit{src}}C^{\mathit{trg}}}{h^{\mathit{trg}}C^{\mathit{src}}}
 \end{equation}
-where $C$ is the circumference of the synchrotron.
+where $C$ is the circumference of the synchrotron. 
+
+Due to the circumference ratio between the source and target synchrotrons, there are several scenarios. For simplicity's sake, the following analysis is from the perspective of the large/small synchrotrons instead of the source/target synchrotrons. A group of new symbols are therefore defined. The circumference of the synchrotron is denoted by \gls{symb:C_param}, the revolution frequency and rf cavity frequency by \gls{symb:rev_freq} and \gls{symb:cavity_freq}, the beating frequency by \gls{symb:beating_freq} and the harmonic number by \gls{symb:harmonic_param}. The superscript X could be either ``l`` or ``s`` denoting the large or small synchrotron. \gls{symb:integer} is used to represent integers and \gls{symb:decimal} the decimal numbers.
+
+\subsection{Circumference ratio is an integer}
+If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is an integer, we have the following relation. 
+\begin{equation}
+\frac{C^l}{C^s}=\kappa \label{circumference_ratio_int1}
+\end{equation}
+From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
+\begin{equation}
+\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{rev}}^{s}}=\frac{1}{\kappa} \label{rev_freq_ratio_int1}
+\end{equation}
+Based on eq.~\ref{rev_freq_ratio_int1} and harmonic number, the $f_{rf}^{X}$ is calculated by eq.~\ref{rf_freq_s_int1} and eq.~\ref{rf_freq_l_int1}
+\begin{equation} 
+f_{\mathit{rf}}^{s}= h^s \times f_{\mathit{rev}}^{s}=h^s \times \kappa \times f_{rev}^{l} \label{rf_freq_s_int1}
+\end{equation}
+\begin{equation} 
+f_{\mathit{rf}}^{l}= h^l \times f_{\mathit{rev}}^{l} \label{rf_freq_l_int1}
+\end{equation}
+Diving eq.~\ref{rf_freq_l_int1} by eq.~\ref{rf_freq_s_int1}, we get
+\begin{equation} 
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \times \kappa} \label{rf_freq_ratio1}
+\end{equation}
+Y is defined as the \gls{GCD} (Greatest Common Divisor) of $h^l$ and $h^s \times \kappa$.
+
+$\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}$. Namely, the phase difference between two rf systems is always constant after ${h^l/Y}$ rf period of the large synchrotron or ${(h^s\times \kappa)/Y}$ rf period of the small synchrotron. Fig. ~\ref{cir_int} illustrages an example with $\kappa=5$, $h^s=1$ and $h^l=10$. $f_{\mathit{rf}}^{l}=2f_{\mathit{rf}}^{s}$. GCD of $h^l$ and $h^s \times \kappa$ is 5. The constant phase difference $\Delta\phi$ happens every ${h^l/Y}=2$ rf period of the large synchrotron or every ${(h^s\times \kappa)/Y}=1$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by the phase shift method.
+%phase_match.dox
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{cir_int.jpg}
+   \caption{Constant phase difference between two rf systems when circumference ratio is an integer.}
+   \label{cir_int}
+\end{figure} 
+%%%%%%%%%%%%%%%%%%%%%%close to an integer
+\subsection{Circumference ratio is close to an integer}
+If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is  close to an integer, $\lambda$ in eq. ~\ref{circumference_ratio_noint1} has the order of magnitude $10^{-2}$. We have the following relation.
+\begin{equation}
+\frac{C^l}{C^s}= \kappa + \lambda \label{circumference_ratio_noint1}
+\end{equation}
+From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
+\begin{equation}
+\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{rev}}^{s}}=\frac{1}{ \kappa+ \lambda} \label{rev_freq_ratio_noint1}
+\end{equation}
+Based on eq.~\ref{rev_freq_ratio_noint1} and harmonic number, the $f_{\mathit{rf}}^{X}$ are calculated by eq.~\ref{rf_freq_s_noint1} and eq.~\ref{rf_freq_l_noint1}
+\begin{equation} 
+f_{\mathit{rf}}^{s}= h^s \times f_{\mathit{rev}}^{s}=h^s \times ( \kappa+ \lambda) \times f_{\mathit{rev}}^{l} \label{rf_freq_s_noint1}
+\end{equation}
+\begin{equation} 
+f_{\mathit{rf}}^{l}= h^l \times f_{\mathit{rev}}^{l} \label{rf_freq_l_noint1}
+\end{equation}
+
+We could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$ by dividing eq.~\ref{rf_freq_l_noint1} by eq.~\ref{rf_freq_s_noint1}.
+\begin{equation} 
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \times ( \kappa+ \lambda)}=\frac{h^l}{h^s \times  \kappa+ h^s \times \lambda}\label{close_to_interger_31}
+\end{equation}
+
+In eq.~\ref{close_to_interger_31}, $h^s\times\lambda $ is much smaller than $h^s \times \kappa$ and $h^l$, so the frequency beating method is preferred. Y is the GCD of $h^l$ and $h^s \times \kappa$. Two slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}$. The beating frequency is
+\begin{equation} 
+\begin{split}
+\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}=\frac{f_{\mathit{rf}}^{s}}{[h^s\times (\kappa+\lambda)]/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}\\=-\frac{f_{\mathit{rf}}^{s}\lambda}{[h^s\times (\kappa+\lambda)\times \kappa]/Y}
+\end{split}
+\end{equation}
+In this scenario, the phase difference between two rf systems varies periodically. There is one time of point within the beating period, when two rf systems match phase. The beating frequency must not be too large in order to guarantee the precise of the phase match, but also not too small to satisfy the constraint of the maximum synchronization time. 
+%phase_match.dox
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=130mm]{cir_noint.jpg}
+   \caption{Constant phase difference between two rf systems when circumference ratio is an integer.}
+   \label{cir_noint}
+\end{figure} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%far away from integer
+\subsection{Circumference ratio is far away from an integer}
+When the circumference ratio of the large synchrotron to that of the small synchrotron is far away from an integer, the circumference ratio can be expressed as
+
+\begin{equation}
+\frac{C^l}{C^s}=\frac{m}{n}+ \lambda \label{circumference_ratio_noint11}
+\end{equation}
+
+where $m$ and $n$ are integers. Substituting $\kappa$ by $\frac{m}{n}$ into eq.~\ref{close_to_interger_31}, we could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$.
+\begin{equation} 
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}\label{close_to_interger11}
+\end{equation}
+
+In eq.~\ref{close_to_interger11}, $h^s \times\lambda\times n$ is much smaller than $h^s \times m$ and $h^l\times n$, so the frequency beating method is preferred. Y is the GCD of $h^l\times n$ and $h^s \times m$. Two slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{(h^l\times n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}$. The beating frequency is
+\begin{equation} 
+\begin{split}
+\frac{f_{\mathit{rf}}^{l}}{(h^l\times n)/Y} - \frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}=\frac{f_{\mathit{rf}}^{s}}{(h^s \times m+ h^s \times\lambda\times n)/Y} - \frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}\\=-\frac{f_{\mathit{rf}}^{s}\times(\lambda\times n)}{(h^s \times m+ h^s \times\lambda\times n) \times m/Y} 
+\end{split}
+\end{equation}
+In this scenario, the phase difference between two rf systems also varies periodically. There is one time of point within the beating period, when two rf systems match phase. 
+
+There are various combination of $\frac{m}{n}$ and $\lambda$, $\lambda$ determines the beating speed. The smaller, the more precise the phase match. $(h^l\times n)/Y$ and $(h^s\times m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\times n)/Y$ and $(h^s\times m)/Y$, the smaller two slightly different frequencies, which has higher requirement for rf system. So we have to find a proper combination of $\frac{m}{n}$ and $\lambda$.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Loop freeze}
