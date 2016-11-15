@@ -1,931 +1,0 @@
-%PDF-1.5
-%ĞÔÅØ
-1 0 obj
-<< /S /GoTo /D (chapter*.2) >>
-endobj
-4 0 obj
-(Abstract)
-endobj
-5 0 obj
-<< /S /GoTo /D (section*.7) >>
-endobj
-8 0 obj
-(Glossary)
-endobj
-9 0 obj
-<< /S /GoTo /D (section*.9) >>
-endobj
-12 0 obj
-(List of Abbreviations)
-endobj
-13 0 obj
-<< /S /GoTo /D (section*.11) >>
-endobj
-16 0 obj
-(List of Symbols)
-endobj
-17 0 obj
-<< /S /GoTo /D (chapter.1) >>
-endobj
-20 0 obj
-(Introduction)
-endobj
-21 0 obj
-<< /S /GoTo /D (section.1.1) >>
-endobj
-24 0 obj
-(Objectives, Contribution and Structure of the Dissertation)
-endobj
-25 0 obj
-<< /S /GoTo /D (chapter.2) >>
-endobj
-28 0 obj
-(Theoretical background)
-endobj
-29 0 obj
-<< /S /GoTo /D (section.2.1) >>
-endobj
-32 0 obj
-(Energy match)
-endobj
-33 0 obj
-<< /S /GoTo /D (section.2.2) >>
-endobj
-36 0 obj
-(Loop freeze)
-endobj
-37 0 obj
-<< /S /GoTo /D (section.2.3) >>
-endobj
-40 0 obj
-(Phase difference between two RF systems)
-endobj
-41 0 obj
-<< /S /GoTo /D (section.2.4) >>
-endobj
-44 0 obj
-(RF synchronization)
-endobj
-45 0 obj
-<< /S /GoTo /D (subsection.2.4.1) >>
-endobj
-48 0 obj
-(Phase shift method)
-endobj
-49 0 obj
-<< /S /GoTo /D (subsection.2.4.2) >>
-endobj
-52 0 obj
-(Frequency beating method)
-endobj
-53 0 obj
-<< /S /GoTo /D (section.2.5) >>
-endobj
-56 0 obj
-(Bucket label)
-endobj
-57 0 obj
-<< /S /GoTo /D (section.2.6) >>
-endobj
-60 0 obj
-(Synchronization of the extraction and injection kicker)
-endobj
-61 0 obj
-<< /S /GoTo /D (section.2.7) >>
-endobj
-64 0 obj
-(Beam indication for the beam instrumentation)
-endobj
-65 0 obj
-<< /S /GoTo /D (chapter.3) >>
-endobj
-68 0 obj
-(Technical basis for the B2B transfer system)
-endobj
-69 0 obj
-<< /S /GoTo /D (section.3.1) >>
-endobj
-72 0 obj
-(FAIR control system)
-endobj
-73 0 obj
-<< /S /GoTo /D (subsection.3.1.1) >>
-endobj
-76 0 obj
-(BuTiS)
-endobj
-77 0 obj
-<< /S /GoTo /D (subsection.3.1.2) >>
-endobj
-80 0 obj
-(GMT)
-endobj
-81 0 obj
-<< /S /GoTo /D (subsection.3.1.3) >>
-endobj
-84 0 obj
-(FESA)
-endobj
-85 0 obj
-<< /S /GoTo /D (subsection.3.1.4) >>
-endobj
-88 0 obj
-(Settings Management)
-endobj
-89 0 obj
-<< /S /GoTo /D (section.3.2) >>
-endobj
-92 0 obj
-(LLRF system)
-endobj
-93 0 obj
-<< /S /GoTo /D (section.3.3) >>
-endobj
-96 0 obj
-(MPS system)
-endobj
-97 0 obj
-<< /S /GoTo /D (section.3.4) >>
-endobj
-100 0 obj
-(Comparison)
-endobj
-101 0 obj
-<< /S /GoTo /D (chapter.4) >>
-endobj
-104 0 obj
-(Concept of the B2B transfer system for FAIR \040baiconcept2016)
-endobj
-105 0 obj
-<< /S /GoTo /D (section.4.1) >>
-endobj
-108 0 obj
-(Basic idea of the B2B transfer system for FAIR)
-endobj
-109 0 obj
-<< /S /GoTo /D (subsection.4.1.1) >>
-endobj
-112 0 obj
-(Phase alignment)
-endobj
-113 0 obj
-<< /S /GoTo /D (subsection.4.1.2) >>
-endobj
-116 0 obj
-(Calculation of the kick time)
-endobj
-117 0 obj
-<< /S /GoTo /D (section.4.2) >>
-endobj
-120 0 obj
-(Basic procedure of the B2B transfer system for FAIR)
-endobj
-121 0 obj
-<< /S /GoTo /D (section.4.3) >>
-endobj
-124 0 obj
-(Realization of the basic B2B functionalities)
-endobj
-125 0 obj
-<< /S /GoTo /D (subsection.4.3.1) >>
-endobj
-128 0 obj
-(Phase measurement and corresponding timestamp of one RF system)
-endobj
-129 0 obj
-<< /S /GoTo /D (subsubsection.4.3.1.1) >>
-endobj
-132 0 obj
-(Phase measurement in one RF system)
-endobj
-133 0 obj
-<< /S /GoTo /D (subsubsection.4.3.1.2) >>
-endobj
-136 0 obj
-(Phase extrapolation in one RF system)
-endobj
-137 0 obj
-<< /S /GoTo /D (subsubsection.4.3.1.3) >>
-endobj
-140 0 obj
-(Timestamp the extrapolated phase)
-endobj
-141 0 obj
-<< /S /GoTo /D (subsection.4.3.2) >>
-endobj
-144 0 obj
-(Exchange of the measured data)
-endobj
-145 0 obj
-<< /S /GoTo /D (subsection.4.3.3) >>
-endobj
-148 0 obj
-(RF synchronization)
-endobj
-149 0 obj
-<< /S /GoTo /D (subsection.4.3.4) >>
-endobj
-152 0 obj
-(Coarse synchronization)
-endobj
-153 0 obj
-<< /S /GoTo /D (subsection.4.3.5) >>
-endobj
-156 0 obj
-(Bucket label)
-endobj
-157 0 obj
-<< /S /GoTo /D (subsection.4.3.6) >>
-endobj
-160 0 obj
-(Fine synchronization of the extraction and injection kicker)
-endobj
-161 0 obj
-<< /S /GoTo /D (subsection.4.3.7) >>
-endobj
-164 0 obj
-(B2B transfer status check)
-endobj
-165 0 obj
-<< /S /GoTo /D (section.4.4) >>
-endobj
-168 0 obj
-(Data/Signal flow of the B2B transfer system)
-endobj
-169 0 obj
-<< /S /GoTo /D (chapter.5) >>
-endobj
-172 0 obj
-(Application of the B2B transfer system for FAIR accelerators)
-endobj
-173 0 obj
-<< /S /GoTo /D (section.5.1) >>
-endobj
-176 0 obj
-( Circumference ratio is an ideal integer)
-endobj
-177 0 obj
-<< /S /GoTo /D (subsection.5.1.1) >>
-endobj
-180 0 obj
-(Harmonic ratio equals to the circumference ratio)
-endobj
-181 0 obj
-<< /S /GoTo /D (subsubsection.5.1.1.1) >>
-endobj
-184 0 obj
-(use case of the U28+ B2B transfer from SIS18 to SIS100)
-endobj
-185 0 obj
-<< /S /GoTo /D (subsection.5.1.2) >>
-endobj
-188 0 obj
-(Harmonic ratio does not equal to the circumference ratio)
-endobj
-189 0 obj
-<< /S /GoTo /D (subsubsection.5.1.2.1) >>
-endobj
-192 0 obj
-(Use case of the H+ B2B transfer from SIS18 to SIS100)
-endobj
-193 0 obj
-<< /S /GoTo /D (subsubsection.5.1.2.2) >>
-endobj
-196 0 obj
-(use case of the B2B transfer from ESR to CRYRING)
-endobj
-197 0 obj
-<< /S /GoTo /D (section.5.2) >>
-endobj
-200 0 obj
-( Circumference ratio is not an ideal integer)
-endobj
-201 0 obj
-<< /S /GoTo /D (subsection.5.2.1) >>
-endobj
-204 0 obj
-(Circumference ratio is close to an ideal integer)
-endobj
-205 0 obj
-<< /S /GoTo /D (subsubsection.5.2.1.1) >>
-endobj
-208 0 obj
-(use case of h=4 B2B transfer from SIS18 to ESR)
-endobj
-209 0 obj
-<< /S /GoTo /D (subsubsection.5.2.1.2) >>
-endobj
-212 0 obj
-(use case of h=1 B2B transfer from SIS18 to ESR)
-endobj
-213 0 obj
-<< /S /GoTo /D (subsection.5.2.2) >>
-endobj
-216 0 obj
-(Circumference ratio is far away from an ideal integer)
-endobj
-217 0 obj
-<< /S /GoTo /D (subsubsection.5.2.2.1) >>
-endobj
-220 0 obj
-(use case of H+ B2B transfer from SIS100 to CR)
-endobj
-221 0 obj
-<< /S /GoTo /D (subsubsection.5.2.2.2) >>
-endobj
-224 0 obj
-(use case of RIB B2B transfer from SIS100 to CR)
-endobj
-225 0 obj
-<< /S /GoTo /D (subsubsection.5.2.2.3) >>
-endobj
-228 0 obj
-(use case of B2B transfer from CR to HESR)
-endobj
-229 0 obj
-<< /S /GoTo /D (subsubsection.5.2.2.4) >>
-endobj
-232 0 obj
-(use case of B2B transfer from SIS18 to ESR via FRS)
-endobj
-233 0 obj
-<< /S /GoTo /D (section.5.3) >>
-endobj
-236 0 obj
-(Summary of the synchronization for different scenarios)
-endobj
-237 0 obj
-<< /S /GoTo /D (chapter.6) >>
-endobj
-240 0 obj
-(Realization and systematic investigation of the B2B transfer system for FAIR)
-endobj
-241 0 obj
-<< /S /GoTo /D (section.6.1) >>
-endobj
-244 0 obj
-(Investigation of two synchronization methods for U28+ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint )
-endobj
-245 0 obj
-<< /S /GoTo /D (subsection.6.1.1) >>
-endobj
-248 0 obj
-(Phase shift method)
-endobj
-249 0 obj
-<< /S /GoTo /D (subsubsection.6.1.1.1) >>
-endobj
-252 0 obj
-(Longitudinal dynamic analysis for the simulation)
-endobj
-253 0 obj
-<< /S /GoTo /D (subsubsection.6.1.1.2) >>
-endobj
-256 0 obj
-(Transverse dynamics analysis for the simulation)
-endobj
-257 0 obj
-<< /S /GoTo /D (subsection.6.1.2) >>
-endobj
-260 0 obj
-(Frequency beating method)
-endobj
-261 0 obj
-<< /S /GoTo /D (subsubsection.6.1.2.1) >>
-endobj
-264 0 obj
-(Longitudinal dynamics analysis of the frequency beating for SIS18)
-endobj
-265 0 obj
-<< /S /GoTo /D (section.6.2) >>
-endobj
-268 0 obj
-(GMT systematic investigation for the B2B transfer system)
-endobj
-269 0 obj
-<< /S /GoTo /D (subsection.6.2.1) >>
-endobj
-272 0 obj
-(Calculation of the synchronization window)
-endobj
-273 0 obj
-<< /S /GoTo /D (subsubsection.6.2.1.1) >>
-endobj
-276 0 obj
-(The best estimate of alignment and the probable range of alignment for the phase shift method)
-endobj
-277 0 obj
-<< /S /GoTo /D (subsubsection.6.2.1.2) >>
-endobj
-280 0 obj
-(The best estimate of alignment and the probable range of alignment for the frequency beating method)
-endobj
-281 0 obj
-<< /S /GoTo /D (subsubsection.6.2.1.3) >>
-endobj
-284 0 obj
-(Calculation the synchronization window and its accuracy)
-endobj
-285 0 obj
-<< /S /GoTo /D (subsection.6.2.2) >>
-endobj
-288 0 obj
-(Characterization of the WR network for the B2B transfer)
-endobj
-289 0 obj
-<< /S /GoTo /D (subsubsection.6.2.2.1) >>
-endobj
-292 0 obj
-(WR network test setup)
-endobj
-293 0 obj
-<< /S /GoTo /D (subsubsection.6.2.2.2) >>
-endobj
-296 0 obj
-(Frame loss rate test result for B2B frames)
-endobj
-297 0 obj
-<< /S /GoTo /D (subsubsection.6.2.2.3) >>
-endobj
-300 0 obj
-(Latency and jitter test result for B2B frames)
-endobj
-301 0 obj
-<< /S /GoTo /D (subsubsection.6.2.2.4) >>
-endobj
-304 0 obj
-(Result and conclusion)
-endobj
-305 0 obj
-<< /S /GoTo /D (section.6.3) >>
-endobj
-308 0 obj
-(Kicker systematic investigation for the B2B transfer system)
-endobj
-309 0 obj
-<< /S /GoTo /D (subsection.6.3.1) >>
-endobj
-312 0 obj
-(SIS18 extraction kicker units)
-endobj
-313 0 obj
-<< /S /GoTo /D (subsection.6.3.2) >>
-endobj
-316 0 obj
-(SIS100 injection kicker units)
-endobj
-317 0 obj
-<< /S /GoTo /D (section.6.4) >>
-endobj
-320 0 obj
-(Test setup for the data collection, merging and redistribution of the B2B transfer system)
-endobj
-321 0 obj
-<< /S /GoTo /D (subsection.6.4.1) >>
-endobj
-324 0 obj
-(Test functional requirement)
-endobj
-325 0 obj
-<< /S /GoTo /D (subsection.6.4.2) >>
-endobj
-328 0 obj
-(Test setup)
-endobj
-329 0 obj
-<< /S /GoTo /D (subsection.6.4.3) >>
-endobj
-332 0 obj
-(The firmware of the B2B transfer system)
-endobj
-333 0 obj
-<< /S /GoTo /D (subsection.6.4.4) >>
-endobj
-336 0 obj
-(The time constraints of the B2B transfer system)
-endobj
-337 0 obj
-<< /S /GoTo /D (subsection.6.4.5) >>
-endobj
-340 0 obj
-(Test result)
-endobj
-341 0 obj
-<< /S /GoTo /D (chapter.7) >>
-endobj
-344 0 obj
-(Conclusion and outlook)
-endobj
-345 0 obj
-<< /S /GoTo /D (appendix.A) >>
-endobj
-348 0 obj
-(B2B timing frames)
-endobj
-349 0 obj
-<< /S /GoTo /D (appendix.B) >>
-endobj
-352 0 obj
-(Timing frames transfer for the B2B transfer)
-endobj
-353 0 obj
-<< /S /GoTo /D (appendix.C) >>
-endobj
-356 0 obj
-(Parameters of B2B transfer for FAIR accelerator pairs)
-endobj
-357 0 obj
-<< /S /GoTo /D (section.C.1) >>
-endobj
-360 0 obj
-(Parameters for the B2B transfer from SIS18 to SIS100)
-endobj
-361 0 obj
-<< /S /GoTo /D (section.C.2) >>
-endobj
-364 0 obj
-(Parameters for the B2B transfer from SIS18 to ESR)
-endobj
-365 0 obj
-<< /S /GoTo /D (section.C.3) >>
-endobj
-368 0 obj
-(Parameters for the B2B transfer from SIS18 to ESR via FRS)
-endobj
-369 0 obj
-<< /S /GoTo /D (section.C.4) >>
-endobj
-372 0 obj
-(Parameters for the B2B transfer from ESR to CRYRING)
-endobj
-373 0 obj
-<< /S /GoTo /D (section.C.5) >>
-endobj
-376 0 obj
-(Parameters for the B2B transfer from CR to HESR)
-endobj
-377 0 obj
-<< /S /GoTo /D (section.C.6) >>
-endobj
-380 0 obj
-(Parameters for the B2B transfer from SIS100 to CR)
-endobj
-381 0 obj
-<< /S /GoTo /D (table.C.6) >>
-endobj
-384 0 obj
-(Bibliography)
-endobj
-385 0 obj
-<< /S /GoTo /D (appendix*.13) >>
-endobj
-388 0 obj
-(Publications)
-endobj
-389 0 obj
-<< /S /GoTo /D [390 0 R /Fit] >>
-endobj
-392 0 obj
-<<
-/Length 769       
-/Filter /FlateDecode
->>
-stream
-xÚU[o›0~ï¯à¤ábğö–é5I•NÕ´¯qˆ•ÆH`Öµ/ûë³±Q“têú‚	9ßå†È+½È»8‹ş³‹³óI‚½8„ÄØ+6^šJ°G1)¢^±ö¾ûãü>¿ßMóY„	Åş|b×â2w7WÓ«ÙEğ£¸öRp”zaŒ@9‚åÃ²È§¶t$ĞŸ/Ş(L!ÈbèPÄ¢†«Ùè2,æáp5ºÉt±Ì–“|ÑÁâc­a^|ËóÙ‰ÁI cì®,R@)<ÆŒ¯Ñ(¿Íƒ C~1_,MñùD+@mãØg FK!€Ij±÷AûÕ^KÅTKéì1Ğ·[sù„úÊk.Ü³®á„jë™Br_ÉF	Õ*ÃCüMWˆÀX×E iÇ]ÙËDoÙÁó¶¶À,ù³‘br­¸}v×YyiÄÎ‚©Ş^İù‘üš;‚‹ÊZV[®¤øtş¡ìğ"ÚaŞ[Šİ0õÅ²éy@¿fr·ik×ÛÛuÊ„´~²¤ÙÉ8^û†òú‰É²•¥ğš7f`ì³5ß‹ÆÎ–K×AÍLU—@(9&æBöãj§ªºçuz3¦ÚúY4——m·NRÜóaËWrÉ·{QöÃh­˜•aHJ\f²ÃÌH±ã3hÂĞI>¯«¤°i2ñ¯h†Pbt²­%·	¬ê~:Ì%5AˆìÏ*Ó¤ŞæÔçûÃÈÚ2˜¥Ä…#(Ì–2ñÒ2é6y¹eò·pY«-ŸÜı=Ú
-ÉlztoY¬-fà~¾áÆF©¯AH05$go\»›°†L½
-òÚfbİl¢W=µÄmÉMU×Ÿ#;ÒŞ¨aÆ¢;ÖåITr!ß¶¾´ôeÙÉ¥ş˜)îT¦•5²µ°CÆY/— Lc'‡>’ÛÛ8%úèÓÏ½äúIŸ;«J°~Á£Ï‘lZ×ı¸'øÖÌ 6Z÷–&.‰cVïÅÖî-G˜âwŸ¥¼8ûÔH¬±
-endstream
-endobj
-390 0 obj
-<<
-/Type /Page
-/Contents 392 0 R
-/Resources 391 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-393 0 obj
-<<
-/D [390 0 R /XYZ 67.031 808.885 null]
->>
-endobj
-394 0 obj
-<<
-/D [390 0 R /XYZ 68.031 771.024 null]
->>
-endobj
-391 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-400 0 obj
-<<
-/Length 274       
-/Filter /FlateDecode
->>
-stream
-xÚ•PËNÃ0¼û+ö˜Htñ3¯H€à†È­ê!Ônj‘Ä)¡U/\¼;3ûòPè€Â=y',F
-åH¥mr	Û¬7lÔ¢05¿+\!3:æ=<“'BfÇ›†\ß1Œ¡QŠC³&%ªªÉjÔT@ca]<”+Á«âXr]L‡Ş&¨‹Ş—¬xMœËÄ2å:ë¬ß¶‹ËhÙûuëCpó»ÚÅOãß¦!úüĞÎY}kcõìÆ$.áªÜ4ñ¯°b¥¬òqı”Ä?v¹yŸà!¼´£ÍÄ)éâ*^éÇdn7{7Ú"¦'n›ö+…ÿ±ÿ‚Í"æÂH®óG¼?_ş“Äw*
-endstream
-endobj
-399 0 obj
-<<
-/Type /Page
-/Contents 400 0 R
-/Resources 398 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-401 0 obj
-<<
-/D [399 0 R /XYZ 101.047 808.885 null]
->>
-endobj
-398 0 obj
-<<
-/Font << /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-404 0 obj
-<<
-/Length 2734      
-/Filter /FlateDecode
->>
-stream
-xÚYKsÛ8¾Ï¯Ğ‘ª²4|Šä1JâØ;ÉÄeyvkgw0	I(S¤
-$íx/û×·_ (™Iæ¤F£4ûñuòg»™?ûô‹/¿ë‡_~½’Y/Ó,fÛÙ*[úQ0[¥Ù2Îgåì_Ş»bŞSİàÏK¥Ë>èz…^7ÿÏÃß~½’Y,ó$	q¶H’eÆ¼úÚØ¶›/¢Uì©ºdbÛX}hÚî
-†iìİ2÷e¦^ÓW"T™'dhuüîUıÄä§_™>Úf«Û¶±8L¼;.ç‹$Î¼–ˆÜûZ™gÚĞò’ßtÛi7y‹_‚ªñ2V}¯PşY´ˆß{œ/Â NàµÿV}rO¯,Ø	ÈêÀÛ›–‰»ıòÃRÖw}	{Á®pVYîİÈY»‹Óï ¿œ¿šN›n®áÕ¸ï+³Twöq+ş¸O«ÖáNxöÚÙ§5¼"K—QÎş2ÆàÀUÿ“­F,En„h¸gg(W?m{Ûñ¶êÀ¿_”©…Ca€±D·O<rÓŸ6·LlÉ›@td8‘%à6ğ©wÌdk¢^§ñøC»æh
-´¶Ÿx· T­À`-âPô&•üî›Gê$É4od½x2ŒRö$~<©è”}G«£:Y¯ªŠ5}gšºòY³á$ñ:sĞW¨ï™RÓ· —ì&+oÛ×%Y‡dfÔÓœb—G’;(á¾Øú|À‘mb¦¨BH/úü²/:ãBòìLğÇ÷ï+…YN©Æ€ä$·“Ò0(µ>V¯L›úß~ôxlÉœG§&Ğl* $]ö8×·FµæS¼œIB˜he9E˜ÃúeZ]á© 2îGúÖ#Øí;…”¡?¤0x½E·G!Ì_ŠB®m_ñˆƒˆÓ6|pF&UâªçeÏ£²)Ìb©dÎAÕ	a4¤H­0T5å	ˆ¶-$ºÅ8Ze^[ Q÷kPQHEÎ½Ñªí¾9ÒGÄ<°“Â†M6Š™Üd˜à²dIŠ‘W¦+³ÕÇ<ÚF-AzBéïCLPkşYÂq¤Ë$ÉA:YFa4[„Š›v”TÔëä"zÃ@‹@lÃ‹v¬H‰M"n.*ÁÊûÀ mJæ­K«Ÿæ°P1ƒ±Æ§Fwd°6ƒÖ ıè[×šË	:Çw‘1¤.bógÓ‚£	b¨˜•U¯+Í‚»Ş”\p$	 q§«#E#o¶Û!¤"îÈA¶éwû¦ïx,všğŠCÔÕœ,ô(@V”ïÀ>/£á*P—Ğ’dvV«p £ZŠÒ„`“û´2³ctŒeÆöi,Å9Ô§—½¬)”Õ"ÊÀ%±:ñ‰Š±Ÿz O O5,Ì2±.²9“rà´/\UuùvuÙ€	úÇ®å!$µ$©C†dšGÑ‰#j‘Óñ(ÇÜ4và½VO!—!£ç•ş0Í<ÎúBSí¾r_à‚”d1ŠtËôA–]ì“{–læai èaPQ<äî3`FYÙ¢nD¶©+™ì“"*9{ é¸˜òÎ¤£JÈ[)´‡I8ÚiêápkXC
-¦ƒ‚!LMoÕCDzZ×`Äë´ciş-{ËU7Å6²gJ[,İ€  ó(;i…<I&dß ’bÈSÂ2`½lP;c}d¾b¦”-èŞ†M³İ€`™$`· l8· wÌĞáúe'ÑøeMb1¦ÔÛ*Äd¼˜nÏ”t§U¥ë•d–èËUÑWì-¯e­`®ÓW}•¬ou÷¨ZæP«H!.'nû®·ú‡Å é†‘É‡§F2¶#WªÉ"|İanÚ@¢hàƒÔ®§|€	Êƒ0–<@Â8`r@zÄ˜ŒcïıæıW–(5Öñƒ´2Wß/Ğ_a+C}06±y¿Yùh¯6ŞbëŠb÷JLæ¾@ÔËª?>ÌNæŞUú˜oD¸ôFík$ ‚à í”ÿÁQUÃ¡ËX>.Œ‘÷„/İVZŠëí±í¬Â8H#£$¤î’«(µ4	§ıRç8ät\÷µ)TÅ¬qÇ&§»â?ø{GŞO¥M†_ı­ÓœëÉ/’Spv¾bäÊ”‘/ñ <ÈªH“Iâ ÏTÇ=óÖ¤PùË<Ë~zÁ²i‰«]ÉÅÕpPu\ÂÃæX9jn£\šæ(İ¦v0”'Ãíi!~CÛ²ˆ¬K\KB<lÿÊvo<Eå¤dsÆÕQ«¤(à¦·"{˜²V°,_QÈ3êÉ4·.0âŞ(0àù†JMµ]ú|¯[eyşÎª²!\‚Xt½)L€©LİòxÔÖ®‘Í]á‚
-×ĞŸ*^ÄÏ0S.ÍT¦â ”2EÏ,5¾Ï‡ÊØgàH‚êU¶ ¬ıŞr-÷Œ ˜Ñ<My¡Ş™ZÓ[I,xïûc0Å!ëÔ©+ÁQ'\z´à·˜	šáèçŒ¦KmäK ãÄ92„9÷´{šılà3¥7…F	0¡ñ-
-)(*$H²Ù"‚J‚„†ù›NÕ¦­$×ˆõdù-zÌ{RiZ€İ–Ğ‚õNp”¾Üm~|¥ñ~QxuOÆWKß¥&±5sF.Î¼’y…ğ\ó$ÈFæçúBpÅ{TP¨™ÍnÁä(á0…­¿/LÖ1E½s(uÀ¥FË„æŞüíTdË4üOP¼ùem§Ê÷“n<<İ^yHõæïÖ÷×Ì9Çp„Û¢ ,oñR¸dyÁ?şF§Ù›€‹Ry]ˆø:Ÿ®cÈ¡‡ôôĞÃ¨L%~"ª*Ï”DUs<•–IÉÏŸñ+j_[èŸxzPEäbo®'q
-ÜÙnéQ4N[„îıˆëy ¾~w{¿äñ-?MŒ ¸£÷ÚQ]=Eút‡ƒL]Ğ3ˆ»Òº÷A$¤æ.¦i²İJ.åğËîDê²$#Ï•d’tÏÃ‰{Tƒ†<ƒe¿CC«UA/'ài*æ±i€`GqŞ„L=~aĞA‘Te	z#7­È'sØaTêXÔgé©%wI¶,ã"¿n —»0¡w®x‘÷Y×n9¥D~j‘¹½FÄşjé’qoNòm+=ábƒ£!÷çÆrÑ¸,‡@_ômi´:œ–]VüIi”zkmë=^Gˆı§9nµlE5~wæYJúíA?»ßãµb—òó$NüáqIªü—üÑã’ïâg¯J§Å›õÇSÀ ÄY{ˆa 9pıU­şÈ»é†·$4Û`Vş7‚Ş
-ÙÿßqK#ìàïÇÍ=\5Aäı=Bú?ïoÿtuæ0hs+]É”O"øâïİúæïSÎ¸Ì]|Hbéñˆ¸Ğ9x£3pHgXşdÄ òïò¤WJEY´£¼V*
-*YWò.‚'=±4i¿››‹»¿¢~äLN·[¾¯²®•\o	Ğq’{6®ÓÈØÜoäfİ#Z‚xæºÆ‚M ÃğŞ,ôS¨JÁÒz™AóÏÏ=ÆœI}|øåÿÿeÏ
-endstream
-endobj
-403 0 obj
-<<
-/Type /Page
-/Contents 404 0 R
-/Resources 402 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-405 0 obj
-<<
-/D [403 0 R /XYZ 67.031 808.885 null]
->>
-endobj
-406 0 obj
-<<
-/D [403 0 R /XYZ 68.031 771.024 null]
->>
-endobj
-402 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-409 0 obj
-<<
-/Length 694       
-/Filter /FlateDecode
->>
-stream
-xÚ•TKsÛ ¾ûWp”fbĞûØL›×$‡Æ>5“±°E£WÅu}Y–¤vÇ—^¤İoöû–Jv„’ëÅÏsJa”'4+IY§	ÏÈ¦_<=SÒ¸Ø¡IZWdï3{’ñ<auéì¬ß4ìu¹^|ºb9a,©óœ“õÖ™uRĞ‚”yĞ¢"ë†<E·ñ2£,êc^F³±àñHşš´4æ(t@{§…Uvn$æÙáëÕíZûvÄĞ¤GX÷¦ö±­Dã*®X$6ªSöhëí¨Ñø< j•ÛÁCü¼¾#KV&y^»–dYÌÅĞÄË´æÑ­ËòÆ£4Rè,oË<‹~È$Å2r²*¨ Ó/İ*©U/Ø$^iêÈ„"¢3#Z7×«åz”^qŠßk¹• ¸ñ¬ià[ _¯?åEdáØ	mZ5!¸oÕqçŠ®óıÛÃG6ö~ƒÒ·üyh¤¶âÕç d[eĞÒGÍH<Ÿ“&R÷ÂØîW<rrxUÃ<ğ²ÂºãÜ5àÖQ§^A›Dêû+†WÌ€·¢Wİqßn  D\TÀPâ[ A¦’ÃfœµØÉ£óÈ8g"h™„–8;Ğ–ºš^†ğÜfæ	ÏzÔ0,Ã®ºˆïªó§Y›Y±›ö´AR£¥èIYô0‹ğ¸ÅT§ò¬âdQĞ©†ú-^¶P{fP¾« .n¸îü«ÈªóMÀÅä.èF	+_‡1„ˆ®DÓ£nÜÎK¦xğw¢:õ;€ÃÙåò:Zûã>&nâ‡§,-Ó„•ù©¤;%ÆAá`^
-…gX3÷ñÓÄ/B÷ÆŠÆ^`òJNVú^¾„Š8§¬€]>Ş»¯ë3Ïg'Oÿçù<ólº>$uÊHF“º¯¦zû·øúvÇ
-endstream
-endobj
-408 0 obj
-<<
-/Type /Page
-/Contents 409 0 R
-/Resources 407 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-410 0 obj
-<<
-/D [408 0 R /XYZ 101.047 808.885 null]
->>
-endobj
-407 0 obj
-<<
-/Font << /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-413 0 obj
-<<
-/Length 2099      
-/Filter /FlateDecode
->>
-stream
-xÚ•XK9¾çWøXÄN½Çx0Éôbf1h7°Xlæ —å¶&å*¯¤J§s™¿¾|ÕÃİåöbS‹¢(ò#¥põ´
-WŸß…ò¿}|÷áS’­âtS”E´z<®òr&Ñ*/ªM’«ÇÃê?ÁÇ½óVÕşîÇ|øe«(ÚTY£|¸Zgé&®r}<w·†/ƒƒqN[¯¼éZääAD\Şš}ïµˆù'ıI3¤j}ñ½jxâ ¿áWºé.gÍ
-ŞÃL‘îÅy}†jşÒĞ,K;oÔF£t“¦b¡ØS%jH¤À:›ö‰™¬”ùö.
-´jÌaÀë,ÇöcÛ· Vãª§µïÖÛè¯d†gá/anã-üEòµU­;jË*dÍc‰DÁ§»(,ƒ÷ï‡qª6ñ¸ĞsE<>²£Ì·Ğy6>v÷Ì‰‚í´²l½Èxù¼»gâİœO]ãü÷Ûş,Ë‘É)¡²7)ÆÚıÍ '‰³ÕŒß[Ào¢4¾ŞìNÌ€Ÿç»¸´¯ë6å¦™*ÎƒÏgîÙÆ¨ØdY%ú²!áˆâ(Ş21¹GÃQÇEÂC&:ºGß­Á9<wiùØ±„jùßœ/H9;†ù¶kô+¥~°dĞşÀÃ‹…èÏ²àO]CP“g®6"y>™ñ„²$x6æF¦0ÛHŠğô·;œßõ¥êî|“¢à;÷};©K9á»ıëÀÍØağ¡CoQ…e>Zvµ!6¨Ö¶ÊÃ™-Å³Á°‹†lâØûŞêÍİ:MâàŞ³#ÇÖ½#” Î—0J­“iJAøWäd¼Ö:K/Tg»3S»û]TŠH7±Â³**Á²„‘rõÂ>öd ­V±qƒ—<ÍO Èy}`Õì1 ÄÈêÊÈr4²œŒ,ÅÈ*øy÷ÀN`ï-(²×b?= *üûáşŸŸ7<ƒ)°`şrq@x4ÃYŞÜç÷Ê1™ŒöÅ*ñP7€»Œ¤ ¸=Z…£¯ñˆ¸8…Pùõ×‡OWğÏbhÁÔ±htxØ€
-l»£©8d€[w’‹Ó*..À}6şÄ›ÄoCÎ´Âøİv^×pj‚ñÀÚî¡û·ßwİïEé˜sss.¤ÍSq«$¸>À_†ÈÏ&û³åâÕ¾ÑÌ9*Ó€«x@ñ8µp(¢•xÓL-[…¡D¤ú›2 ¹E Šà¾Å£¡Š
-Ş€	ªU÷¸ßdÍgÈšT#+•ĞYAË®Šh·÷Ê´'ÆªiÕÁtÌ;Zıß^S}aš`!É‹Éh}9AòwÙ–h«¡I`aÙøú6|z©( ¥»ódÆÂ¸É±&ÂùQÍD‹qb/åé³V1ÿÿÕàÖ(¸ô2ûlš)è‚¤ß90Ãêã`=­kZìtĞ(ŠÖ…Ó»˜ºsTÀ2V×ÆÁ½Ç­góò€Ó†Œˆ©¸ÀÙ~[Ì™öIIæ–ªAœÄËÈ{”†‡d@>ÅFÿhvSx„57)!ºŞÒ•ù•s±†P¨ŸÀ~uü‰rÌV<ü%)ÇfñgÀmQ€g9¾Ë¡ Ãÿ‡Ğ)±ıl]ßì	Ÿ’,8(ë§7mzó@“SH{ÀP{B”|†\ì8¢h,©I.Ä1Y…Dİ)ë„†¦S(€É‘ÄŸ,*n@(Â#–İAåu's¤¢=x#²&G¹\ç§â?fÇ˜R„>û°äÒlHn÷Ö„º³™ä–›4uúùÛ†x‹îéî †äĞµÒEã…B5uß(9=¾L§4µíy~uD8¶zÌÌöÒÊqUJ÷Ä¬{„‘Ğ¤|š×Ô²baô8­yğÓI]6œ3ë`˜;STòÆ^ˆ-Ä¨ªLÆs!YÊkà+Y“ci1šÏâa‰,"ß¸_¶#M0F_ÿ'”†4ßıò ç–!—6+ÏÆjõjlZ½$ƒ³1ıŠRî•iXµ%‹€y%—KcpIÀ%‰‰í!³.‡tHLç‰£ZQ·‰È3åÜW‹}íÛF<vçSÃ÷ÃÉ§%û4Æ›ëŸ’8$_ËEKKÕ>7O[àÀÀÌë(©İãŠ¾Ã.ªÌí¾Õµê	ŒR©HŒŞM£Wm8rÆ6XñŸ„„Ã4œ”ÍŒê¨óAJ:\é&¶á·‹8m­˜7:4<¼´êL/ 0 ›üÂ\?Šj¼Èp	†ôaE5öÛ(ÕM,jØ€¦˜†gèÂ‰xCÁ::Q6Ág·Ün/ Rš`CáOìäõÇ¹ôÖXˆX‘lG’C3I'9iŸ°wÂáà©>À™-ÉTä!ô~‹1|8?tR´âlôOêïôDöãc$Éàİg&¿¡ì,¦Qâ«™A‰uò½Õ,¬ B^~hÑÆ÷f`Oİu©Ë8a´•[dXèõ“ÑxCÈÓlx‘‚©W/RŞ ©¬ ¥¿Ã-_ÚÔ!s«bö2DÏW¨Ü°-ø9(¿U¯9Ğ£Ãµ).Ó¡nwäQCYâ¹â£Ó‹q—×ùJ|PĞNÀÃñÔ¸hïÔ“fŞ´Ö¢Ñÿz`iõ¬M¶_™)W‰ÖpÅW·n˜$‰‚Ûô³'¡k2R°aíû39•‡w6|C1 KNcöx³(+iõÎV$WßHî^¿` ŸÓ=åĞ¸‰F3?ÀîM; 1©ˆ¯_@É	ã»ë*«MÎ$ßÄEÌJ¿]Éüüøî!Û<
-endstream
-endobj
-412 0 obj
-<<
-/Type /Page
-/Contents 413 0 R
-/Resources 411 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-414 0 obj
-<<
-/D [412 0 R /XYZ 67.031 808.885 null]
->>
-endobj
-2 0 obj
-<<
-/D [412 0 R /XYZ 68.031 771.024 null]
->>
-endobj
-411 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-417 0 obj
-<<
-/Length 114       
-/Filter /FlateDecode
->>
-stream
-xÚ3PHW0Ppç2€ÒN!\únÆ¦
-F&zææ†
-!i
-†Fz&æ
-fæ–zÆfæ
-!)
-ÑŞ¥EUi‰ÅÅ¥yéš±!^pıún†¦
-††z–¦¦F ÍFæz&
-ºfÆzÆ–İe™(š\C¸ íÏ
-endstream
-endobj
-416 0 obj
-<<
-/Type /Page
-/Contents 417 0 R
-/Resources 415 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 397 0 R
->>
-endobj
-418 0 obj
-<<
-/D [416 0 R /XYZ 101.047 808.885 null]
->>
-endobj
-419 0 obj
-<<
-/D [416 0 R /XYZ 102.047 771.024 null]
->>
-endobj
-415 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-422 0 obj
-<<
-/Length 114       
-/Filter /FlateDecode
->>
-stream
-xÚUÌ»Â0Fá=Oñí€kÇØqVEbÎ†Ø¸¨K@<?BEHLg:ãÆ>ñ·›–†QyM%Š ]áA¬/•ÔÚÇn{Ÿ{•îyYòèOíğ3†Q"TÍòÈì”-°rÒ¨ñš¦¿k×Òs$
-endstream
-endobj
-421 0 obj
-<<
-/Type /Page
-/Contents 422 0 R
-/Resources 420 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 425 0 R
->>
-endobj
-423 0 obj
-<<
-/D [421 0 R /XYZ 67.031 808.885 null]
->>
-endobj
-424 0 obj
-<<
-/D [421 0 R /XYZ 68.031 771.024 null]
->>
-endobj
-420 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-428 0 obj
-<<
-/Length 123       
-/Filter /FlateDecode
->>
-stream
-xÚUÌ±
-Â0Fá=OñíĞÛ›Ü$7Y#ˆc6qÓ–L«>¿HEp:Óù3Ãßîª‹8OšÔ¢N°ìˆ½"j&‰ŠzÅ¹;µõÑ¢¡[¦­¥ÍÏûmí/õøÓÆb¬¥‚ûP=Eq¢$’”7ëÕZûÛöÕ¼d"r
-endstream
-endobj
-427 0 obj
-<<
-/Type /Page
-/Contents 428 0 R
-/Resources 426 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 425 0 R
->>
-endobj
-429 0 obj
-<<
-/D [427 0 R /XYZ 101.047 808.885 null]
->>
-endobj
-430 0 obj
-<<
-/D [427 0 R /XYZ 102.047 771.024 null]
->>
-endobj
-426 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-433 0 obj
-<<
-/Length 124       
-/Filter /FlateDecode
->>
-stream
-xÚUÌ±
-Â0€á=Oqc2ôšär¹Ë*XAoE[
-‚C||‘ŠàôOÿa‚;¿İ˜ëbÈE%P#%¨Òª€]áèóò	ûÇ¸ÖB+ş|¹ß–p²ıÏë‡Ä6æüÁrT-ĞUR$m+7¿ş¦­¹7ñZ!Æ
-endstream
-endobj
-432 0 obj
-<<
-/Type /Page
-/Contents 433 0 R
-/Resources 431 0 R
-/MediaBox [0 0 595.276 841.89]
-/Parent 425 0 R
->>
-endobj
-434 0 obj
-<<
-/D [432 0 R /XYZ 67.031 808.885 null]
->>
-endobj
-435 0 obj
-<<
-/D [432 0 R /XYZ 68.031 771.024 null]
->>
-endobj
-431 0 obj
-<<
-/Font << /F35 395 0 R /F15 396 0 R >>
-/ProcSet [ /PDF /Text ]
->>
-endobj
-439 0 obj
-<<
-/Length 2543      
-/Filter /FlateDecode
->>
-stream
-xÚ…ËrÛ8òî¯Ğ-t•Í€or/SNÖI<5åÙµ½§LI˜ğáI+¯ß~¤lz÷"6º@£_è†Ôf¿Q›ÏgJ¾ÎŞŠ’MûY›‡İ&Í}›4Ëı\f»ùê}<”ƒ¶ç—Q–xÁù·‡_aöe¢ü(+˜ã¦=o°ğŞv¬ÓµÈøşSl‚À/’$Äåq^ìçiÈógŞİ'şöÏı „Cï–sïÉluÏ˜ºk÷fÏaÓ–5#w°i˜yÕØ›vÏ«¦:Ü‡U×öƒ-MÛóxp»>–v0U-£¦sR£˜AìÇqÊbš¶ˆ
-F¹D¤@Òã¡ì5ƒıcYˆ2:ş–üYşPAÜ"Ã–QVïa_ÿü2V)kdÉÈ\¹p1ÍôÂ»^íBñV¤'İªÈû>V¨Ï¨=à~ °ˆÚN:S!mèÁÑ«®®5Û•ºã{FWà*£E‰x4ÃÁ´w­f–y2”''yVD'éâ Ÿ¥»ºËÓ‰È g·eÛïĞI‘¥g,è‡	–¼‘¼Vî´píl×ğ¼’?3oYUºÖ¶:·r‹[ƒQW¤e]…©Wiæ¢˜1é
-ı#¹ª®š–”Ôù8h—~9%á;XÖò|–‹Ğ³\¬¸ ó“¤ y_ËèŠãl>ñ©ö2Ö^œ.µì¤=œÆÒöÂaXY#È­°¶üx«Ô{4ÚŸ±xDşZ6ZÖüĞµ[ør’5˜°ÄÍ#ë>ŠY B³D	H‰¡/Ò3¦c†ªø€‚&ip‰’„Èv¢{æ ÉÜÊ1¸Bmª“„E–¢: Àó†Àßn¿kóB^SpîHBà¨Ãáù-cJ¢@ØÀÁ0K•ì8LtîBÊ¦?T¢†§ƒY>Ö-KË†¸EıÌĞñ Û·}8Uİñwgõ_£nQ@CA¸NhîtÄŸn1	ÔÇiü%·[ºïF[	L
-Å)Ci÷(41<K´Ûî”VÖ)Ñ­Rãåšì“ú@Q2)ŸÂ‰£‚ïĞõ–áC¹4bX8d_hR?­•y7x"yÎÃ¥y{Fad(WüıÑ¼L)‘°f0Ïf_Õ[Fñr¥J!Òz äö-S!àĞMzQÌñ|²Uûnà¹ıhŸÌÓ9‡ÒÙÃ4SÿWÎ]“{ò´(ÿè¥“ ‰œ$R'äd’1U‡ç¶pçğØ9"x¡Ø7sgßhj8êd¶îjö‰-êúÔ‡$•Ã¤(Ë=v®7xñ] İ ,;¦Œ^¨\~Cä‡n$ğhêš!NO|·ÒDYÓBœ@µ²‡¨/Ã[Š¿˜eg¥#H1”HpÉDÚ‚Ê#©{6ˆÆMrb#D ğ;Ù‹d6¯Æƒª#K¹À+
-ï÷£ŒÖ‰ÄyÓvZ9†»0;ï;QÁPW ·ŸƒÕ¤F›F,g!'ĞùÕÂ»q0y·Û¨A×æÓÁóép·öO8¥aı¿ /œBxğâ†wZ
-cïŠœXZªuh}…–Ä¤¼¦ü±YQ³“¶<j:+ÛêŸ¸j»¿@QwŠª{a8:çv0%Å•“Ôæ‡c…z/Zün;®D ¬“B¥ª;Z›B+ğ&ºL\ŞaHpuMíÂñíòåÓy 
-ïêæÓ\wŸÎó
-Sr×gÄBZÀÊ+6‹¶a B¯WJ|0÷Æaît¯KË–Çuc.u‘§dV0®ˆkKŒ~ªôqÍEIøf!³;‘3KCZà2.‘~dtÅ4)‘ åóı_tİºzø›é§e‚=İ	ÌÊ©ó™‡7nÍåIeurñï_ÖÌ±7¤şy5DIĞM¥‡Ë6™_dŠ;ÄÈO£xûQ”óÜ`­ÓBº¼ËÛWf‹NØ"?@1Ç/\.ş²¶^ùQ8Îo>³ŞœæÉá[šFjä‚•
-8ê#3ì#™¨xß¥nµİ?3B¥ldvSè´¸úˆ”T£´‡T—
-¡•Í^d q@º{¥ıƒï·£¸k¼ ArŞÖâ]£{ŸK¼Î·Ì@œ»&rş‰5Y?Ğ©ñÆè@ÿçöæ·+4÷GõF±qsäXUAª×P‚`PöüåÌ×Ùï¥4@ya“ƒ#Î";OG4y`Ÿ*Æ‹òÈ2†Ó GpvAQ{É
-(ÚP~¯Wï;Óƒ®%ÅÆ¹vÃ\Í9Ñ¶Ô,Cä²JîësåJ.û€9ÌA…Cî¼sÌÆP¦•¨@ë*²¹ÙÁ´eù™ÁÍAÂÀó×Ê—/[ä;2<%ÀW=ŸË#Íc^@T©4İC¹—õ°eìç´îrÒ`&| uÁÈÜäKf{ù {)%Š4rUP£Xï·z!"2ØiÎİõıCœ”xKÚÌõO1¡…º€Š²-ğÜ»ÃĞ¸ÚŠd·´v
-•Øj‰!É„ñ2ÉdñI&öU”$™/i|ˆ¡íÖ¸› Š•÷…‚)×S*)f‰qÀ:#f’qhçâ°8Ö¯Oßs‚I3?„œwrV—;’)w$Ëd—'×`ï[,5Q-#‡1s¸úÜ#ò[RÖ;î2‘aªıWŒS6é N:İsF-]»gŒ‘/7‘··šò9L3Xçq¹<•wÈB5Êr1ÁOçZ²Å.DW$.z‘Â¥ä£ŸeÑw.ÚiiŒ)gH*$Ğv¼Ş¼´34ıJõ#®·İT“—Û¹Ÿ)	Ô?P½¤Òô"—ågÑ—Ù8f~LM)ùáW^C)m½•m '3Áõ&¢Ò ™^?NkQßkoÉgo¡brî+úI_¼UL}­ëÁtÿv­øñúîö‚¨¥»J¼ëqzô)[Fın÷pÿ]Jå±Í»év¬j¨—xğ¢JŒrî8ÄÏ˜?!-ö‹gı½ëßVNÏüÉk MçPV÷¢m|qáÃ€`yKİ
-ğ‘ÜHé¡!fšS›,3 Ÿ´@½WÓËRäÔ… 7D ¼_½!x˜’OR%‚‡ô(#—¢_…XCeïäûŒä„Œ\éàCQÇ˜~·Ï‚:WM÷ò±çÚ ÉP¡V“{Ln\?œıu†£Úîo<ôÜUsöõ›Úlçô£"ß‰±çR¾ÊR€ëÍıÙ¿ù/’l“Bù‹uìn“~\$›T“'õo¾)ü"Sºrü8ËC©Èÿ¯ºäGØø_DO=S{ºWyiƒÿ,mÏv¸`–ãñèï{ãoõÉùÜ÷Uá]~Áæaáçù²D_ªæ¿™Uå

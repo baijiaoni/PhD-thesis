@@ -1,14 +1,16 @@
+!!!!!!!!!!!!!!!!please check List of symbol and abbrevation ... for chapter 5 and 6.
+
 This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. 6.1, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic viewpoint. The WR network is investigated for the B2B transfer and the calculation of the synchronization window are presented in Sec. 6.2. The B2B transfer system for FAIR focuses first of all on SIS18 to SIS100 transfer, so the trigger possibility of the SIS18 extraction and SIS100 injection kicker is systematically investigated in Sec. 6.3. Besides, the test setup from the timing aspect is built in Sec. 6.4. 
 
 \section{Investigation of two synchronization methods for $U^{28+}$ B2B transfer from SIS18 to SIS100 from the beam dynamics viewpoint }
 This section analyzes the phase shift and frequency beating methods from the beam-dynamics viewpoint for the synchronization of SIS18 with SIS100. In this chapter, the circumference of SIS18 and SIS100 are denoted by $C^{SIS18}$ and $C^{SIS100}$, the revolution frequency by $f_{h=1}^{SIS18}$ and $f_{h=1}^{SIS100}$ and the rf frequency by $f_{h=2}^{SIS18}$ and $f_{h=10}^{SIS100}$. Since SIS18 and SIS100 harmonic number are 2 and 10, the relationship between the revolution and rf frequencies are $f_{h=2}^{SIS18}=2f_{h=1}^{SIS18}$ and $f_{h=10}^{SIS100}=10f_{h=1}^{SIS100}$. Since $C^{SIS100}$ is five times as long as $C^{SIS18}$, we could get the relation  $f_{h=1}^{SIS18}$=5$f_{h=1}^{SIS100}$ and $f_{h=10}^{SIS100}$=$f_{h=2}^{SIS18}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Phase shift method}
-To achieve a required phase shift, the \gls{RF} frequency is modulated away from the nominal value for a period of time and modulated back ~\cite{ezura_beam-dynamics_2008}. Let \gls{symb:pha_shift} be the phase shift to be achieved and \gls{symb:freq_modulation} the RF frequency variation to accomplish it; then,
+To achieve a required phase shift, the \gls{RF} frequency is modulated away from the nominal value for a period of time and modulated back ~\cite{ezura_beam-dynamics_2008}. Let $\Delta \phi_\mathit{shift}$ be the phase shift to be achieved and \gls{symb:freq_modulation} the RF frequency variation to accomplish it; then,
 \begin{equation}
 \Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase_integration}
 \end{equation}
-where \gls{symb:period_phase} is the period of frequency modulation and \gls{symb:start_phase} is the time at which the modulation begins. To make the frequency modulation effective, the stabilization system, beam-phase feedback loop, must be frozen before the modulation begins. 
+where $T$ is the period of frequency modulation and $t_0$ is the time at which the modulation begins. To make the frequency modulation effective, the stabilization system, beam-phase feedback loop, must be frozen before the modulation begins. 
 
 The following four examples of frequency modulation are analyzed. Case (1) trapezoid modulation, Case (2) triangular modulation, Case (3) sinusoidal modulation and Case (4) parabolic modulation. Here I assume the phase shift must be achieved within 7ms. These frequency modulations are shown in Fig.~\ref{4case}. All the four modulations give the same phase shift, $\Delta \phi_{shift}=\pi$, which is proved by substituting each form of $\Delta f_{rf}(t)$ into eq.~\ref{phase_integration} and performing integration. 
 
@@ -159,7 +161,7 @@ Tab. \ref{momentum excursion} shows the maximum relative momentum shift and the 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Synchronous phase
 
-The rf frequency modulations make the synchronous phase deviate from the nominal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase, $\Delta \phi_s$(t). It is calculated by substituting values into eq.~\ref{eq:delta_phase}. For case (1), the phase jumps in \gls{symb:syn_phase} appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous. The phase jumps endanger the beam stability. Hence, only case (3) and (4) are applicable.
+The rf frequency modulations make the synchronous phase deviate from the nominal value $0^\circ$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase, $\Delta \phi_s$(t). It is calculated by substituting values into eq.~\ref{eq:delta_phase}. For case (1), the phase jumps in $\Delta \phi_s$ appear at the start and end of the frequency modulation, and at two points where the slope of modulation changes from upward to flat and from flat to downward. For case (2), the phase jumps in $\Delta \phi_s(t)$ appear at the start and end of the frequency modulation, and at the midpoint where the slope of modulation changes from upward to downward. For case (3) and (4), the  synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous. The phase jumps endanger the beam stability. Hence, only case (3) and (4) are applicable.
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=160mm]{synch_phase.png}
@@ -169,7 +171,7 @@ The rf frequency modulations make the synchronous phase deviate from the nominal
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \item Bucket size
 
-The bucket area factor \gls{symb:bucket_size} varies during rf frequency modulations. Before the modulations, the synchronous phase \gls{symb:s_syn_phase}=$0^\circ$ and  $\alpha_b(0^\circ) = 1$. By substituting the changes in synchronous phase into eq.~(\ref{factor}), we get the ratio of bucket areas of a running bucket to the stationary bucket for four cases, see Fig.~(\ref{bucket_size}).
+The bucket area factor \gls{symb:bucket_size} varies during rf frequency modulations. Before the modulations, the synchronous phase $\phi_s$=$0^\circ$ and  $\alpha_b(0^\circ) = 1$. By substituting the changes in synchronous phase into eq.~(\ref{factor}), we get the ratio of bucket areas of a running bucket to the stationary bucket for four cases, see Fig.~(\ref{bucket_size}).
 \begin{equation}
 \alpha_b (\phi_s) \approx \frac{1-sin \phi_s}{1+sin \phi_s}\label{factor}
 \end{equation}
