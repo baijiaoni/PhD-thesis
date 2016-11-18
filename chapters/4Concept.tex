@@ -181,7 +181,7 @@ Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolat
 For the B2B transfer, there is a ``B2B transfer master``, which is responsible for the data collection of two synchrotrons, data calculation, data redistribution and B2B transfer status check. The data of the source and target synchrotron must be transferred to the ``B2B transfer master`` via the deterministic WR network in the format of the timing frame.
  
 For the simplicity, the B2B source SCU works as ``B2B transfer master``, so the extrapolated phase $\psi2$, the corresponding timestamp $t_{\psi2}$ and the phase advance slope \gls{symb:slope} are transferred by the B2B target SCU to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM \_PHASE \_TIME. The B2B transfer involves a certain amount of timing frames. More details about the B2B timing frames, please see Appendix A. The timing frames are not sent via DM in order to reduce the traffic of the WR network and reduce the timing frame transfer delay on the WR network ~\cite{bai_concept_2016}, so a specified VLAN, B2B \gls{VLAN}, is defined for the B2B timing frames. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frame in the WR network. The frame is transferred along the path with orange color instead of the path with blue color. 
- \begin{figure}[!htb
+ \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{network_B2B.jpg}
    \caption{One example of the transfer path of the B2B timing frame in the WR network}
@@ -250,7 +250,7 @@ The bucket label is realized by a delay based on an indication signal. The indic
 Where $\psi2$ and $t_{\psi2}$ coincidence with the linear relationship, so $d$ can be calculated as $\psi2-kt_{\psi2}$.
 
 
-The indication signal can be corrected exactly in phase with the revolution frequency of the target synchrotron.  The indication signal is exactly a copy of the revolution frequency of the target synchrotron, so it is called ''reproduced signal''.  The reproduced signal coud be reproduced campus-wide. A specifc bucket is just a certain number of the rf periods delay based on the reproduced signal.
+The indication signal can be corrected exactly in phase with the revolution frequency of the target synchrotron.  The indication signal is exactly a copy of the revolution frequency of the target synchrotron \footnote{This is the simplest scenario. More details about the frequency of the indication signal, please see Chap. ~\ref{application}.}, so it is called ''reproduced signal'', or ``bucket label signal`` from the functional perspective.  The reproduced signal coud be reproduced campus-wide. A specifc bucket is just a certain number of the rf periods delay based on the reproduced signal.
 
 
 The FAIR B2B transfer system needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The former is used for the normal extraction and injection and the latter could be used for the emergency dump. For the emergency kick, the reproduced signal has always the same freqency and is always in phase with the revolution signal, so it is called the ''real-time reproduced signal''. The delay based on the real-time reproduced signal always indicates the bunch gap.
