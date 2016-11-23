@@ -31,10 +31,10 @@ For the proper B2B transfer, not only the relative position of the bunch and buc
 Before the detailed idea of the calculation are explained, some basic concepts and their symbols are introduced, see Fig.~\ref{ext_inj_kicker}.
 
 \begin{itemize}
-\item[-] Bucket pattern \gls{symb:bucket_pattern}.
-\item[-] Time-Of-Flight (\gls{TOF}) between two synchrotrons \gls{symb:two_TOF}. 
-\item[-] Time-Of-Flight between the virtual RF cavity and the extraction/injection kicker, \gls{symb:tsrc} and \gls{symb:ttrg}. 
-\item[-] Extraction and injection kicker rise time, \gls{symb:ext_pre} and \gls{symb:inj_pre}.
+\item[-] The bucket pattern \gls{symb:bucket_pattern}.
+\item[-] The Time-Of-Flight (\gls{TOF}) between two synchrotrons \gls{symb:two_TOF}. 
+\item[-] The Time-Of-Flight between the virtual RF cavity and the extraction/injection kicker, \gls{symb:tsrc} and \gls{symb:ttrg}. 
+\item[-] The sum of the preparation time and rise time of an extraction/injection kicker, \gls{symb:ext_pre} and \gls{symb:inj_pre}.
 \end{itemize}
 \begin{figure}[H]
    \centering   
@@ -50,7 +50,7 @@ The kicker magnet must have zero magnetic field when the bunch passes by it and 
 \begin{itemize}
 \item Extraction kick
 
-In order to inject into specific buckets, the extraction kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}}$, see gray gear at the SIS100 revolution frequency marker at SIS18. For example, when two $U^{28+}$ bunches of SIS18 are to be injected into the bucket $\sharp3$ and $\sharp4$ of SIS100, $t_{\mathit{bucket}} =1 \times T_{\mathit{rev}}^{\mathit{SIS18}}$. The extraction kicker must be fired $t_{\mathit{v\_inj}}+t_{\mathit{TOF}}+t_{\mathit{ext}}$ earlier as the bucket passes the virtual rf cavity, so the extraction kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}} - (t_{\mathit{TOF}} + t_{\mathit{v\_inj}} + t_{\mathit{ext}})$, see red lighting bolt at the SIS100 revolution frequency marker at SIS18. 
+In order to inject into specific buckets, the extraction kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}}$, see gray gear at the SIS100 revolution frequency marker at SIS18. For example, when two $U^{28+}$ bunches of SIS18 are to be injected into the bucket $\sharp3$ and $\sharp4$ of SIS100, $t_{\mathit{bucket}} =1 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. The extraction kicker must be fired $t_{\mathit{v\_inj}}+t_{\mathit{TOF}}+t_{\mathit{ext}}$ earlier as the bucket passes the virtual rf cavity, so the extraction kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}} - (t_{\mathit{TOF}} + t_{\mathit{v\_inj}} + t_{\mathit{ext}})$, see red lighting bolt at the SIS100 revolution frequency marker at SIS18. 
 
 \item Injection kick
 
@@ -284,7 +284,7 @@ The reproduced signal must do phase correction at a specified first zero-crossin
 
 \item[-] Step 3. Bucket indication
 
-The SM considers the bucket pattern $t_{\mathit{bucket}}$ within the kicker delay compensation, see Sec. ~\ref{sec:compensation}. In Fig.~\ref{bucket_label}, the 3rd and 4th buckets will be filled with $t_{\mathit{bucket}}=1\times T_{\mathit{rev}}^{\mathit{SIS18}}$. 
+The SM considers the bucket pattern $t_{\mathit{bucket}}$ within the kicker delay compensation, see Sec. ~\ref{sec:compensation}. In Fig.~\ref{bucket_label}, the 3rd and 4th buckets will be filled with $t_{\mathit{bucket}}=1\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
 \end{itemize}
 
 \item Bunch gap label for the emergency extraction
@@ -301,7 +301,7 @@ Only for SIS100 emergency procedure, the bunch gap label is important during the
 \item[-] Step 1. The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal in frequency and phase.
 \item[-] Step 2. Bunch gap indication
 
-The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the 9th and 10th buckets are taken as an example as the bunch gap. The $t_{\mathit{bucket}}=4\times T_{\mathit{rev}}^{\mathit{SIS18}}$.
+The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the 9th and 10th buckets are taken as an example as the bunch gap. The $t_{\mathit{bucket}}=4\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$.
 
 \end{itemize}
 

@@ -74,97 +74,123 @@ A bunch of particles consists of particles with slightly different momentum as t
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=120mm]{phase_focusing.jpg}
-   \caption{The longitudinal focusing of particles by rf voltage ($\eta > 0$).}{The red spot represents a particle with hihger energy, the blue spot a particle with lower energy and the green dot the synchronous particle.}
+   \caption{The longitudinal focusing of particles by a rf voltage ($\eta > 0$).}{The red spot represents a particle with a hihger energy, the blue spot a particle with a lower energy and the green dot the synchronous particle.}
    \label{phase_focusing}
 \end{figure}
 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=170mm]{phase_space.jpg}
-   \caption{The longitudinal motion of asynchronous particles in longitudinal phase space plane ($\eta > 0$).}{The red spot represents a particle with higher energy, the blue spot a particle with lower energy and the green dot the synchronous particle. The red arrow shows the trend of a particle with higher energy and the blue arrow the trend of a particle with lower energy.}
+   \caption{The longitudinal motion of asynchronous particles in the longitudinal phase space plane ($\eta > 0$).}{The red spot represents a particle with a higher energy, the blue spot a particle with a lower energy and the green dot the synchronous particle. The red arrow shows the trend of a particle with a higher energy and the blue arrow the trend of a particle with a lower energy.}
    \label{phase_space}
 \end{figure}
-The synchronous particle is indicated by the green spot in Fig. ~\ref{phase_focusing}. It will gain energy of $qV_0\sin\phi_{\mathit{s}}$ per passage through a rf cavity, where \gls{symb:charge} is the charge of a particle.  When $\eta > 0$, a particle with smaller energy (blue spot) than the synchronous particle will run slower and have longer revolution period, arriving the same rf cavity later and seeing a higher accelerating voltage. This particle has a decreasing revolution period to the revoltion period of the synchronous particle. During the decreasing process, the lack of energy is compensated step-by-step, closing to the synchronous particle. Oppositely for a particle with bigger energy. As it is faster than the synchronous particle and has shorter revoltuion period, it will arrive at the rf cavity earlier, seeing a smaller accelerating voltage. This particle has an increasing revolution period to the revoltion period of the synchronous particle. During the increasing process, the excess energy will be reduced step-by-step approching to the synchronous particle. Particles will oscillate longitudinally around the synchronous particle. The oscillations are called ``synchrotron oscillations``. This longitudinal motion is plotted in longitudinal phase space plane, See Fig. ~\ref{phase_space}.
+The synchronous particle is indicated by the green spot in Fig. ~\ref{phase_focusing}. It will gain energy of $qV_0\sin\phi_{\mathit{s}}$ per passage through a rf cavity, where \gls{symb:charge} is the charge of a particle.  When $\eta > 0$, a particle with smaller energy (blue spot) than the synchronous particle will run slower and have longer revolution period, arriving the same rf cavity later and seeing a higher accelerating voltage. This particle has a decreasing revolution period to the revoltion period of the synchronous particle. During the decreasing process, the lack of energy is compensated step-by-step, closing to the synchronous particle. Oppositely for a particle with higher energy. As it is faster than the synchronous particle and has shorter revoltuion period, it will arrive at the rf cavity earlier, seeing a smaller accelerating voltage. This particle has an increasing revolution period to the revoltion period of the synchronous particle. During the increasing process, the excess energy will be reduced step-by-step approching to the synchronous particle. Particles will oscillate longitudinally around the synchronous particle. The oscillations are called ``synchrotron oscillations``. This longitudinal motion is plotted in longitudinal phase space plane, See Fig. ~\ref{phase_space}.
 
-All particles oscillate around the synchronous particle and stay together, froming a ``bunch``. The ``\gls{glos:bunch_gap}`` is the area without any bunches. The area occupied by a bunch in the longitudinal phase space plane is called ``\gls{glos:long_emi}``. Firstly of all, we consider the synchronous phase is $0^\circ$. In this scenario, particles with small energy deviation follow an elliptical path inside the bunch. For a given rf system with specific rf voltage and harmonic number, there exists a maximum energy deviation. For particles with the energy deviations larger than the maximum energy deviation, they can not be trapped around the synchronous particle. The trajectory of a particle with the maximum energy deviation in longitudinal phase space plane defines a region with a specific size and form. This region is called ``rf bucket`` or ``\gls{glos:stationary_bucket}``, see Fig. ~\ref{energy_deviation}. The maximum momentum deviation of the rf bucket is called ``\gls{glos:bucket_height}``. These buckets will exist as soon as the rf system is on and the number of circulating buckets is determined by the harmonic number and the bucket area and height are proportional to the rf voltage ~\cite{lee_accelerator_2011}. The order of buckets to be filled is called ``bucket pattern``.
+All particles oscillate around the synchronous particle and stay together, froming a ``bunch``. The ``\gls{glos:bunch_gap}`` is the area without any bunches. The area occupied by a bunch in the longitudinal phase space plane is called ``\gls{glos:long_emi}``. First of all, we consider the synchronous phase is $0^\circ$. In this scenario, particles with small energy deviation follow an elliptical path inside the bunch. For a given rf system with specific rf voltage and harmonic number, there exists a maximum energy deviation. For particles with the energy deviations larger than the maximum energy deviation, they can not be trapped around the synchronous particle. The trajectory of a particle with the maximum energy deviation in longitudinal phase space plane defines a region with a specific size and form. This region is called ``rf bucket`` or ``\gls{glos:stationary_bucket}``, see Fig. ~\ref{energy_deviation}. The maximum momentum deviation of the rf bucket is called ``\gls{glos:bucket_height}``. These buckets will exist as soon as the rf system is on and the number of circulating buckets is determined by the harmonic number and the bucket area and height are proportional to the rf voltage ~\cite{lee_accelerator_2011}. The order of buckets to be filled is called ``bucket pattern``.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{energy_deviation.jpg}
-   \caption{A stationary rf bucket.}{The green dot represents the synchronous particle (top), the blue path the orbit of asynchronous particles and the black path the boundary of a stationary rf bucket (bottom).}
+   \caption{A stationary rf bucket.}{The green dot represents the synchronous particle (top), the blue path orbits of asynchronous particles and the black path the boundary of a stationary rf bucket (bottom).}
    \label{energy_deviation}
 \end{figure} 
 %%%%%%%%%%%%%%%%%%%%%%%%% running bucket%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-So far we give the definition of the bucket, when the synchronous particle sees no rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$, per passage through an rf cavity, it will gain energy of $eV_0\sin\phi_{\mathit{s}}$. %Only particles which gain higher energy than the synchronous particle will run synchrotron oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees a rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energe increasement, resulting in particles to move further away from the synchronous particle.
+So far we give the definition of the bucket, when the synchronous particle sees no accelerating rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$, per passage through an rf cavity, it will gain energy of $eV_0\sin\phi_{\mathit{s}}$. %Only particles which gain higher energy than the synchronous particle will run synchrotron oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees a rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energe increasement, resulting in particles to move further away from the synchronous particle.
 Particles osillate arround the synchronous particle at $\phi_{\mathit{s}}$ with an elliptical orbit. The particle at $\pi-\phi_{\mathit{s}}$ traces a closed fish-shaped orbit, which defines a ``\gls{glos:running_bucket}``, see Fig. ~\ref{running_bucket}. Particles at bigger phase than $\pi-\phi_{\mathit{s}}$ can not be captured by the bucket.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{running_bucket.jpg}
-   \caption{A running rf bucket.}{The green dot represents the synchronous particle (top), the blue path the orbit of asynchronous particles and the black path the boundary of a running rf bucket (bottom).}
+   \caption{A running rf bucket.}{The green dot represents the synchronous particle (top), the blue path orbits of asynchronous particles and the black path the boundary of a running rf bucket (bottom).}
    \label{running_bucket}
 \end{figure} 
 
 The ``\gls{glos:bucket_size}`` is defined as the area of longitudinal phase space plane enclosed by the bucket ~\cite{lee_accelerator_2011}. For the same rf voltage, the running bucket is always smaller than the stationary bucket. The ratio of bucket size of a running bucket to a stationary bucket is called ``\gls{glos:bucket_area_factor}``, \gls{symb:bucket_size}. The bucket area factor could be calculated by ~\cite{lee_accelerator_2011}.
 
 \begin{equation}
-\alpha_b(\Delta\phi_s)\approx(1-sin(\Delta \phi_s))(1+sin(\Delta \phi_s))
+\alpha_b(\phi_{s})\approx(1-sin(\phi_{s}))(1+sin(\phi_{s}))
 \label{eq:buckt_area_factor}
 \end{equation} 
 
-where $\Delta\phi_s=$ \gls{symb:s_syn_phase}, \gls{symb:syn_phase} is the synchronous phase offset compared with the synchronous phase of a stationary rf bucket.
-
-
 The oscillation of the asynchronous particles is called ``\gls{glos:syn_motion}``. The angular synchrotron frequency \footnote{For the small-amplitude synchrotron motion.} \gls{symb:an_freq_syn} is ~\cite{lee_accelerator_2011}
 \begin{equation}
-\omega_{\mathit{syn}}=2\pi f_{\mathit{rev}}\sqrt{\frac{hqV_0|\eta\cos\Delta \phi_s|}{2\pi\beta^2E_0}}
+\omega_{\mathit{syn}}=2\pi f_{\mathit{rev}}\sqrt{\frac{hqV_0|\eta\cos\phi_{s}|}{2\pi\beta^2E_0}}
 \label{eq:synchfreq}
 \end{equation} 
 
 Bunches are always captured in buckets. A synchrotron can have same amount of bunches as buckets. It is also possible for a synchroton to have less amount of bunches than buckets, e.g. only a part of buckets are filled by bunches. A train of bunches circulating along a synchrotron to be transferred to buckets is defined as a ``\gls{glos:batch}``.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Energy match, voltage match and phase match}
-\label{match}
-
-Bunches must be injected exactly in the center of buckets for the preservation of the longitudinal emittance, which requires the energy and phase match between bunches and buckets. Besides, the shape of bunches to be transferred must match the shape of buckets to be injected in the longitudinal phase space plane. If the source and target synchrotrons have same rf frequencies, see. eq.~\ref{harmonic_number}, buckets of the source synchrotron must have same size and height as that of the target synchrotron for the match between bunches and buckets. The voltage match will be done by machine physicists, which is out of the scope of this dissertation. Fig. ~\ref{injection_error} illustrates the bunch-to-bucket injection with energy, phase or voltage error. 
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=140mm]{injection_error.jpg}
-   \caption{Bunch-to-bucket injection with errors.}{The blank dot represents the injeciton without error, the red dot the injection with phase error, the green the injection with the energy error and the yellow the injeciton with the voltage error.}
-   \label{injection_error}
-\end{figure} 
-
-The bunch coordinates in the longitudinal phase space plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The energy of a beam is related to the 'magnetic rigidity', which is defined as the following:
+The energy of a beam is related to the 'magnetic rigidity', which is defined as the following:
 \begin{equation}
 	\label{eq:energy}
 	B\rho =\frac{p}{q}
 \end{equation}
-where \gls{symb:mgenet} is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the 'stiffness’ of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}.
+where \gls{symb:mgenet} is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the ``stiffness`` of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}. A rf cavity requirement for beam acceleration rate is
+\begin{equation}
+	\label{eq:rf_acceleration}
+	V_0\sin\phi_s=2\pi R\rho\dot{B}
+\end{equation}
 
-The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum and velocity for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be same.
+Bunches must be injected exactly in the center of buckets for the preservation of the longitudinal emittance, which requires the energy and phase match between bunches and buckets. Besides, the shape of bunches to be transferred must match the shape of buckets to be injected in the longitudinal phase space plane. If the source and target synchrotrons have same rf frequencies, buckets of the source synchrotron must have same size and height as that of the target synchrotron for the match between bunches and buckets. The voltage mismatch between bunches and buckets will cause an emittance blow-up. Fig. ~\ref{injection_error} illustrates a bunch-to-bucket injection with an energy, phase or voltage error. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=140mm]{injection_error.jpg}
+   \caption{The bunch-to-bucket injection with a phase, energy or voltage error.}{The blue dot represents a injeciton without any error, the red dot a injection with a phase error, the green a injection with a energy error and the yellow a injeciton with a voltage error.}
+   \label{injection_error}
+\end{figure} 
+
+The bunch coordinates in the longitudinal phase space plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be same.
 
 \begin{equation}
 	\label{eq:rigidity}
 	(B\rho)^{\mathit{src}} =\frac{p}{q}=(B\rho)^{\mathit{trg}}
 \end{equation}
 
-Where the superscript of the symbol denotes the synchrotron, $\mathit{src}$ represents the source synchrotron and $\mathit{trg}$ the target synchrotron.
+Where the superscript of the symbol denotes the synchrotron, $\mathit{src}$ represents the source synchrotron and $\mathit{trg}$ the target synchrotron. The energy and voltage match will be done by machine physicists, which are out of the scope of this dissertation. 
 
-Besides, based on eq. ~\ref{freq_phase1}, we can get that the revolution frequency of two synchrotrons must meet the following relation ~\cite{garoby_timing_1984}.
+Before the B2B transfer, the revolution frequency of two synchrotrons must meet the following relation based on eq. ~\ref{freq_phase1}. 
 \begin{equation}
 	C^{\mathit{src}}f_{rev}^{\mathit{src}} = \beta c=C^{\mathit{trg}}f_{rev}^{\mathit{trg}}
 \end{equation}
 
-where \gls{symb:C_param} represents the circumference of a specific synchrotron. A group of new symbols are necessary to be defined. The revolution frequency and rf cavity frequency by \gls{symb:rev_freq} and \gls{symb:cavity_freq}, the beating frequency by \gls{symb:beating_freq} and the harmonic number by \gls{symb:harmonic_param}. The superscript $X$ could be either $src$ or $trg$ denoting the source or target synchrotron. \gls{symb:integer}, $m$ and $n$ are used to represent integers and \gls{symb:decimal} the decimal numbers.
+where \gls{symb:C_param} represents the circumference of a specific synchrotron. A group of new symbols are necessary to be defined. The revolution frequency and rf cavity frequency by \gls{symb:rev_freq} and \gls{symb:cavity_freq}, the harmonic number by \gls{symb:harmonic_param}. The superscript $X$ could be either $src$ or $trg$ denoting the source or target synchrotron. 
 
 Due to the relation between the revolution frequency and rf frequency, eq. ~\ref{harmonic_number}, the ratio between rf frequencies of two rf systems is
 \begin{equation}
-	\frac{f_{rf}^{\mathit{src}}}{f_{rf}^{\mathit{trg}}}=\frac{h^{\mathit{src}}f_{rev}^{\mathit{src}}}{h^{\mathit{trg}}f_{rev}^{\mathit{trg}}}=\frac{h^{\mathit{src}}C^{\mathit{trg}}}{h^{\mathit{trg}}C^{\mathit{src}}}
+	\frac{f_{rf}^{\mathit{src}}}{f_{rf}^{\mathit{trg}}}=\frac{h^{\mathit{src}}}{h^{\mathit{trg}}}\cdot\frac{f_{rev}^{\mathit{src}}}{f_{rev}^{\mathit{trg}}}=\frac{h^{\mathit{src}}}{h^{\mathit{trg}}}\cdot \frac{C^{\mathit{trg}}}{C^{\mathit{src}}}
 \end{equation}
-where $C$ is the circumference of the synchrotron. 
 
-Due to the \gls{glos:cir_ratio} between the source and target synchrotrons, there are several scenarios. For simplicity's sake, the following analysis is from the perspective of the large/small synchrotrons instead of the source/target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Phase match}
+\label{match}
+The rf voltage of two rf systems of the large and small synchrotrons, $V^1$ and $V^s$, are
+\begin{equation}
+\label{rf_freq1}
+	V^1=V_0\sin(2\pi f_\mathit{rf}^{l}t+\theta_\mathit{1})
+\end{equation}
+\begin{equation}
+\label{rf_freq2}
+	V^s=V_0\sin(2\pi f_\mathit{rf}^{s}t+\theta_\mathit{2})
+\end{equation}
 
+where $\theta_\mathit{1}$ and $\theta_\mathit{1}$ are initial phases of two rf system. The phase difference between the synchrotron \textit{a} and {b}, $\Delta \phi_{a\_b}$, is defined as the corresponding phase of the rf system of the synchrotron \textit{a} when the rf system of the synchrotron \textit{b} has its positive zero-crossing points.
+
+In order to get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$, positive zero-crossing points of the small synchrotron happen at
+\begin{equation}
+\label{s_0_time}
+	t=\frac{2\pi x-\theta_2}{2\pi f_\mathit{rf}^{s}}
+\end{equation}
+where $x$ is a positive integer. Positive zero-crossing points correspond to phases of $2\pi x$. The phase difference $\Delta \phi_{l\_s}$ is
+\begin{equation}
+\label{phase_diff}
+	\Delta \phi_{l\_s}=\frac{f_\mathit{rf}^{l}}{f_\mathit{rf}^{s}}(2\pi x-\theta_2)+\theta_1 \mod 2\pi
+\end{equation}
+
+The phase difference must be with a required value when bunches are transferred to buckets. For the phase shift method, two rf frequencies of two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required for the beating. These two rf frequencies are called ``synchronization rf frequency``, denoted as $f_\mathit{syn}^{X}$.
+
+Due to the \gls{glos:cir_ratio} between the source and target synchrotrons, there are several scenarios of the phase difference. For simplicity's sake, the following analysis is from the perspective of the large/small synchrotrons instead of the source/target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, \gls{symb:integer}, $m$, $n$, $x$ and $g$ are used to represent positive integers and \gls{symb:decimal} the decimal number.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Circumference ratio is an integer}
 \label{sec:cir_integer}
 If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is an integer, we have the following relation. 
@@ -177,27 +203,44 @@ From the circumference ratio, the revolution frequency ratio of two synchrotrons
 \end{equation}
 Based on eq.~\ref{rev_freq_ratio_int1} and harmonic number, the $f_{rf}^{X}$ is calculated by eq.~\ref{rf_freq_s_int1} and eq.~\ref{rf_freq_l_int1}
 \begin{equation} 
-f_{\mathit{rf}}^{s}= h^s \times f_{\mathit{rev}}^{s}=h^s \times \kappa \times f_{rev}^{l} \label{rf_freq_s_int1}
+f_{\mathit{rf}}^{s}= h^s \cdot f_{\mathit{rev}}^{s}=h^s \cdot \kappa \cdot f_{rev}^{l} \label{rf_freq_s_int1}
 \end{equation}
 \begin{equation} 
-f_{\mathit{rf}}^{l}= h^l \times f_{\mathit{rev}}^{l} \label{rf_freq_l_int1}
+f_{\mathit{rf}}^{l}= h^l \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_int1}
 \end{equation}
-Diving eq.~\ref{rf_freq_l_int1} by eq.~\ref{rf_freq_s_int1}, we get
+Dividing eq.~\ref{rf_freq_l_int1} by eq.~\ref{rf_freq_s_int1}, we get
 \begin{equation} 
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \times \kappa} \label{rf_freq_ratio1}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa} \label{rf_freq_ratio1}
 \end{equation}
-\gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h^l$ and $h^s \times \kappa$.
+Substituting $\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}$ in eq.~\ref{rf_freq_ratio1} into eq.~\ref{phase_diff}, we get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$.
+\begin{equation}
+\label{phase_diff_cir_int}
+	\Delta \phi_{l\_s}=\frac{h^{l}}{h^{s}\cdot \kappa}(2\pi x-\theta_2)+\theta_1 \mod 2\pi=\textcolor{red}{x} \cdot \frac{h^{l}}{h^{s}\kappa}\cdot 2\pi -\frac{h^{l}}{h^{s}\kappa}\theta_2+\theta_1 \mod 2\pi
+\end{equation}
 
-$\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}$. Namely, the phase difference between two rf systems is always constant after ${h^l/Y}$ rf period of the large synchrotron or ${(h^s\times \kappa)/Y}$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by a phase shift of either rf system. 
+Only $x$ is a variable in eq. ~\ref{phase_diff_cir_int}, which is marked in red color. From the $1^{\mathit{st}}$ item in eq. ~\ref{phase_diff_cir_close_int}, we know that the phase difference $\Delta \phi_{l\_s}$ is constant when $x$ is the integer multiple of the $h^{s}\kappa$. Namely, the rf signal of the large synchrotron has a constant phase every $(h^{s}\kappa)^{\mathit{th}}$ positive zero-crossing of the rf signal of the small synchrotron. The constant phase of the rf system of the large synchrotron happens at the frequency of $f_{\mathit{rf}}^{l}/h^{l}$ and the corresponding postive zero-crossing of the rf system of the small synchrotron at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ are the synchronization rf frequencies for the phase shift method, namely, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. In this scenario, the phase match must be achieved by a phase shift of one of rf systems.
+
+So far we get only one possible pair of the synchroniation rf frequencies for the phase shift method, but this pair is not the best one. It is easier for the LLRF system to produce rf frequencyies closer to $f_{\mathit{rf}}^{l}$ or $f_{\mathit{rf}}^{s}$. What is more, the possible pair with large frequencies reduces the period of the occurance of the required phase difference. Hence, the pair of the synchroniation rf frequencies with largest frequencies are preferred. They are
+\begin{equation}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y} \label{synch_freq1}
+\end{equation}
+\begin{equation}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y} \label{synch_freq2}
+\end{equation}
+
+where \gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h^l$ and $h^s \cdot \kappa$.
+
+%$\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$. Namely, the phase difference between two rf systems is always constant after ${h^l/Y}$ rf period of the large synchrotron or ${(h^s\cdot \kappa)/Y}$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by a phase shift either of them. 
+
+
+Fig. ~\ref{cir_int} illustrates an example with $\kappa=5$, $h^s=1$ and $h^l=10$. So $f_{\mathit{rf}}^{l}=2f_{\mathit{rf}}^{s}$. GCD of $h^l$ and $h^s \cdot \kappa$ is 5. Hence, according to eq. ~\ref{synch_freq1} and eq. ~\ref{synch_freq2}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}$. The constant phase difference $\Delta \phi_{l\_s}$ happens every ${h^l/Y}=2$ rf period of the large synchrotron or every ${(h^s\cdot \kappa)/Y}=1$ rf period of the small synchrotron (red rectangle in Fig. ~\ref{cir_int}). 
 %phase_match.dox
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{cir_int.jpg}
-   \caption{Constant phase difference between two rf systems when circumference ratio is an integer.}{The red rectangle represents the constant phase difference periodically.}
+   \caption{The constant phase difference between two rf systems when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically.}
    \label{cir_int}
 \end{figure} 
-
-Fig. ~\ref{cir_int} illustrates an example with $\kappa=5$, $h^s=1$ and $h^l=10$. $f_{\mathit{rf}}^{l}=2f_{\mathit{rf}}^{s}$. GCD of $h^l$ and $h^s \times \kappa$ is 5. The constant phase difference $\Delta\phi$ happens every ${h^l/Y}=2$ rf period of the large synchrotron or every ${(h^s\times \kappa)/Y}=1$ rf period of the small synchrotron (red rectangle in Fig. ~\ref{cir_int}). 
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
 \subsection{Circumference ratio is close to an integer}
@@ -206,41 +249,66 @@ If the ratio of the circumference of the injection/extraction orbit of the large
 \begin{equation}
 \frac{C^l}{C^s}= \kappa + \lambda \label{circumference_ratio_noint0}
 \end{equation}
-where $\lambda$ has the order of magnitude $10^{-2}$. From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
+where $\lambda$ is the decimal and in the range of $10^{-3}$. From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
 \begin{equation}
 \frac{f_{\mathit{rev}}^{l}}{f_{\mathit{rev}}^{s}}=\frac{1}{ \kappa+ \lambda} \label{rev_freq_ratio_noint1}
 \end{equation}
 Based on eq.~\ref{rev_freq_ratio_noint1} and harmonic number, the $f_{\mathit{rf}}^{X}$ are calculated by eq.~\ref{rf_freq_s_noint1} and eq.~\ref{rf_freq_l_noint1}
 \begin{equation} 
-f_{\mathit{rf}}^{s}= h^s \times f_{\mathit{rev}}^{s}=h^s \times ( \kappa+ \lambda) \times f_{\mathit{rev}}^{l} \label{rf_freq_s_noint1}
+f_{\mathit{rf}}^{s}= h^s \cdot f_{\mathit{rev}}^{s}=h^s \cdot ( \kappa+ \lambda) \cdot f_{\mathit{rev}}^{l} \label{rf_freq_s_noint1}
 \end{equation}
 \begin{equation} 
-f_{\mathit{rf}}^{l}= h^l \times f_{\mathit{rev}}^{l} \label{rf_freq_l_noint1}
+f_{\mathit{rf}}^{l}= h^l \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_noint1}
 \end{equation}
 
 We could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$ by dividing eq.~\ref{rf_freq_l_noint1} by eq.~\ref{rf_freq_s_noint1}.
 \begin{equation} 
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \times ( \kappa+ \lambda)}=\frac{h^l}{h^s \times  \kappa+ h^s \times \lambda}\label{close_to_interger_31}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \cdot ( \kappa+ \lambda)}=\frac{h^l}{h^s \cdot  \kappa+ h^s \cdot \lambda}\label{close_to_interger_31}
 \end{equation}
 
-In eq.~\ref{close_to_interger_31}, $h^s\times\lambda $ is much smaller than $h^s \times \kappa$ and $h^l$, so the frequency beating method is preferred. Y is the GCD of $h^l$ and $h^s \times \kappa$. Two slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}$. The beating frequency is
-\begin{equation} 
+Substituting $\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}$ in eq.~\ref{close_to_interger_31} into eq.~\ref{phase_diff}, we get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$.
+\begin{equation}
 \begin{split}
-\Delta f=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}=\frac{f_{\mathit{rf}}^{s}}{[h^s\times (\kappa+\lambda)]/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\times \kappa)/Y}\\=-\frac{f_{\mathit{rf}}^{s}\lambda}{[h^s\times (\kappa+\lambda)\times \kappa]/Y}
-\label{cir_close_an_int}
+\label{phase_diff_cir_close_int}
+	\Delta \phi_{l\_s}=\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda}(2\pi x-\theta_2)+\theta_1 \mod 2\pi 
+\\=\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda} \cdot 2\pi x-\frac{h^{l}}{h^{s}\kappa+h^{s} \lambda} \cdot\theta_2+\theta_1 \mod 2\pi 
 \end{split}
 \end{equation}
-In this scenario, the phase difference between two rf systems varies periodically. The period of the phase variation is defined as the beating period, which equals to $1/\Delta f$. There is one time of point within the beating period, when two rf systems match phase. 
+
+In eq.~\ref{phase_diff_cir_close_int}, $h^s\lambda $ is much smaller than $h^s\kappa$. When $x$ is the integer multiple of $h^{s}\kappa$, namely $x=gh^s\kappa$ ($g$ represents a positive integer), we have the following relation from eq. ~\ref{phase_diff_cir_close_int}.
+\begin{equation}
+\begin{split}
+\label{phase_diff_cir_close_int1}
+	\Delta \phi_{l\_s}=\textcolor{red}{g}\cdot h^{l}\cdot2\pi-\textcolor{red}{g}\cdot\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi-\frac{h^{l}}{h^{s}\kappa-h^{s} \lambda}\theta_2+\theta_1 \mod 2\pi 
+\end{split}
+\end{equation}
+
+Only $g$ is a variable in eq. ~\ref{phase_diff_cir_close_int1}, which is marked in red color. From the $2^{\mathit{nd}}$ item in eq. ~\ref{phase_diff_cir_close_int1}), we know that the phase difference $\Delta \phi_{l\_s}$ increases at the speed of $\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}\cdot2\pi$ ($h^{l}h^{s}\lambda$ is much smaller than $h^{s}\kappa+h^{s}\lambda$) every the $(h^{s}\kappa)^{\mathit{th}}$ positive zero-crossing of the rf system of the small synchrotron. From the $1^{\mathit{st}}$ item in eq. ~\ref{phase_diff_cir_close_int1}, the phase step growth of the rf system of the large synchrotron happens at the frequency of $f_{\mathit{rf}}^{l}/h^{l}$ and the corresponding postive zero-crossing of the rf system of the small synchrotron at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ are the synchronization rf frequencies for the frequency beating method, namely, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. In this scenario, the rf frequency can be detuned on one of rf systems.
+
+Similarly as the scenario of the integer circumference ratio, the pair of the synchroniation rf frequencies with largest frequencies are 
+
+\begin{equation}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y} \label{synch_freq11}
+\end{equation}
+\begin{equation}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y} \label{synch_freq22}
+\end{equation}
+
+Y is the GCD of $h^l$ and $h^s \cdot \kappa$. In this scenario, the phase difference between two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
+\begin{equation} 
+\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
+\end{equation}
+
 %phase_match.dox
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{cir_noint.jpg}
-   \caption{Periodical phase difference between two rf systems when circumference ratio is close to an integer.}{The red rectangle represents the periodical phase difference.}
+   \caption{The step grown phase difference between two rf systems when circumference ratio is close to an integer.}{Red rectangles represent step grown phase differences.}
    \label{cir_noint}
 \end{figure} 
 
 Fig. ~\ref{cir_noint} illustrates an example.
-The beating frequency must not be too large in order to guarantee the precise of the phase match, but also not too small to satisfy the time constraint for the phase match. 
+The beating frequency must not be too large in order to guarantee the precise of the phase match due to the step grown phase, but also not too small to satisfy the time constraint for the phase match. 
 
 %%%%%%%%%%%%%%%%%%%%%%%far away from integer
 \subsection{Circumference ratio is far away from an integer}
@@ -252,18 +320,43 @@ When the circumference ratio of the large synchrotron to that of the small synch
 
 Substituting $\kappa$ by $m/n$ into eq.~\ref{close_to_interger_31}, we could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$.
 \begin{equation} 
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l\times n}{h^s \times m+ h^s \times\lambda\times n}\label{close_to_interger11}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}\label{close_to_interger11}
 \end{equation}
 
-In eq.~\ref{close_to_interger11}, $h^s \times\lambda\times n$ is much smaller than $h^s \times m$ and $h^l\times n$, so the frequency beating method is preferred. Y is the GCD of $h^l\times n$ and $h^s \times m$. Two slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{(h^l\times n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}$. The beating frequency is
-\begin{equation} 
+Substituting $\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}$ in eq.~\ref{close_to_interger11} into eq.~\ref{phase_diff}, we get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$.
+\begin{equation}
 \begin{split}
-\Delta f=\frac{f_{\mathit{rf}}^{l}}{(h^l\times n)/Y} - \frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}=\frac{f_{\mathit{rf}}^{s}}{(h^s \times m+ h^s \times\lambda\times n)/Y} - \frac{f_{\mathit{rf}}^{s}}{(h^s\times m)/Y}\\=-\frac{f_{\mathit{rf}}^{s}\times(\lambda\times n)}{(h^s \times m+ h^s \times\lambda\times n) \times m/Y} 
+\label{phase_diff_far_fram_int}
+	\Delta \phi_{l\_s}=\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}(2\pi x-\theta_2)+\theta_1 \mod 2\pi 
+\\=\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}2\pi x-\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}\theta_2+\theta_1 \mod 2\pi 
 \end{split}
 \end{equation}
+
+In eq.~\ref{phase_diff_far_fram_int}, $h^s\lambda n$ is much smaller than $h^sm$. When $x$ is the integer multiple of $h^{s}m$, namely $x=gh^sm$, we have the following relation from eq. ~\ref{phase_diff_far_fram_int}.
+\begin{equation}
+\label{phase_diff_far_fram_int1}
+	\Delta \phi_{l\_s}=\textcolor{red}{g}\cdot h^{l}n\cdot2\pi-\textcolor{red}{g}\cdot\frac{h^{l}h^{s}\lambda n^2}{h^{s}m+h^{s}\lambda n}2\pi-\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}\theta_2+\theta_1 \mod 2\pi 
+\end{equation}
+
+Only $g$ is a variable in eq. ~\ref{phase_diff_far_fram_int1}, which is marked in red color. From the $2^{\mathit{nd}}$ item in eq. ~\ref{phase_diff_far_fram_int1}, we know that the phase difference $\Delta \phi_{l\_s}$ increase at the speed of $\frac{h^{l}h^{s}\lambda n^2}{h^{s}m+h^{s}\lambda n}\cdot2\pi$ ($h^{l}h^{s}\lambda n^2$ is much smaller than $h^{s}m+h^{s}\lambda n$) every the $(h^{s}m)^{\mathit{th}}$ positive zero-crossing of the rf system of the small synchrotron. From the $1^{\mathit{st}}$ item in eq. ~\ref{phase_diff_far_fram_int1}, we know that the phase step growth  of the rf system of the large synchrotron happens at the frequency of $f_{\mathit{rf}}^{l}/(h^{l}n)$ and the corresponding postive zero-crossing of the rf system of the small synchrotron at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}m)$. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/(h^{l}n)$ and $f_{\mathit{rf}}^{s}/(h^{s}m)$ are the synchronization rf frequencies for the frequency beating method, namely, $f_{\mathit{rf}}^{l}/(h^{l}n)$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/(h^{s}m)$. In this scenario, the rf frequency can be detuned on one of rf systems.
+
+Similarly as the scenario of the integer circumference ratio, the pair of the synchroniation rf frequencies with largest frequencies are 
+
+\begin{equation}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}n/Y} \label{synch_freq111}
+\end{equation}
+\begin{equation}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}m/Y} \label{synch_freq222}
+\end{equation}
+
+Y is the GCD of $h^ln$ and $h^s m$. In this scenario, the phase difference between two rf systems varies periodically. The beating frequency is
+\begin{equation} 
+\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
+\end{equation}
+
 In this scenario, the phase difference between two rf systems also varies periodically. There is one time of point within the beating period, when two rf systems match phase. 
 
-There are various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating speed. The smaller, the more precise the phase match. $(h^l\times n)/Y$ and $(h^s\times m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\times n)/Y$ and $(h^s\times m)/Y$, the smaller two slightly different frequencies, which has higher requirement for rf system. So we have to find a proper combination of $m/n$ and $\lambda$.
+There are various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating speed. The smaller, the more precise the phase match. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization rf frequencies, which has a higher requirement for rf systems. So we have to find a proper combination of $m/n$ and $\lambda$.
 
 
 
@@ -365,24 +458,23 @@ Eq.~\ref{phase1} gives the relation between the required phase shift \gls{symb:p
 \end{equation}
 The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation \gls{symb:period_phase}. It starts at \gls{symb:start_phase}. For the phase alignment, the phase of either synchrotron can be shifted backward or forward. %For the phase alignment, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented. 
 
-After the phase shift, the bunches of the source synchrotron are phase aligned with buckets of the target synchrotron. Theoretically the synchronization window is infinitely long by the phase shift method. In fact, the beam feedback loop on the rf system is frozen or switched off before the B2B transfer, so the beam is stable for short time, e.g. \SI{10}{ms}. So bunches must be transferred as soon as possible. The phase shift process must be performed slowly enough for the beam to follow. 
+After the phase shift, the bunches of the source synchrotron are phase aligned with buckets of the target synchrotron. Theoretically the synchronization window is infinitely long by the phase shift method. In fact, the beam feedback loop on the rf system is frozen or switched off before the B2B transfer, so the beam is stable for short time, e.g. \SI{10}{ms}. Hence, bunches must be transferred as soon as possible. The phase shift process must be performed slowly enough for the beam to follow. 
 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=140mm]{phase_shift.png}
-   \caption{The illustration of the phase shift method.}
+   \caption{The illustration of the phase shift method.}{Blue dots represent bunches of the source synchrotron and red dots buckets of the target synchrotron.}
    \label{phase_shift}
 \end{figure}
 
 
-Fig.~\ref{phase_shift} illustrates the phase shift method. The first and second sinusoidal signals are rf signals with specific harmonic numbers respectively from the source and target synchrotrons. For the phase shift method, two signals are of the same frequency. The blue dots show the position of the bunches of the source synchrotron, the red dots correspond to the bucket positions of the target synchrotron. The time-of-flight between the bunch and bucket is compensated here. The red dashed line shows the end of the phase shift process ($\Delta \phi=0^\circ$) and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with buckets. The triangle frequency modulation is used as an example for the phase shift. Based on eq. ~\ref{phase1}, the area of the triangle equals to $\Delta \phi/2\pi$, see eq. ~\ref{area}. The base of the triangle is \gls{symb:base}, the height of the triangle \gls{symb:height} is determined by eq. ~\ref{height}.  
-
+Fig.~\ref{phase_shift} illustrates the phase shift method. The first and second sinusoidal signals are rf signals with specific harmonic numbers respectively from the source and target synchrotrons. For the phase shift method, two signals are of the same frequency. The time-of-flight between bunches and buckets is compensated here. The red dashed line shows the end of the phase shift process ($\Delta \phi=0^\circ$) and the beginning of the synchronization window, drawn in yellow. After the phase shift, bunches match with buckets. A sinusoidal frequency modulation $\Delta f_{\mathit{rf\_sin}}$ with a fixed duration time $T$ is used as an example for the phase shift.
 \begin{equation}
-\frac{\Delta \phi}{2\pi}=\frac{1}{2}ab \label{area}
+\Delta f_{\mathit{rf\_sin}}=A[1-\cos \frac{2\pi}{T}(t-t_0)]
 \end{equation}
-
+where $A$ is the amplitude of the sinusoidal wave. Based on eq. ~\ref{phase1}, the area of the sinusoidal wave equals to $\Delta \phi/2\pi$. We can calculate the amplitude $A$  
 \begin{equation}
-b= \frac{\Delta \phi}{\pi a}\label{height}
+A= \frac{\Delta \phi}{2\pi}\cdot\frac{1}{T}
 \end{equation}
 
 A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it did not capture any bunch yet, the phase jump can be done for the target synchrotron.
@@ -393,13 +485,18 @@ Now we analyze the rf frequency modulation of the phase shift from the the beam 
 
 	\item Momentum shift and radial excursion
 
-Eq. ~\ref{eq:phaseP1} shows the momentum shift due to the rf frequency modulation. Subtituting ${\Delta R}/{R}$ in eq. ~\ref{mom_com1} into eq. ~\ref{eq:phaseP1}, we get the radial excursion according to the rf frequency modulation.
+A rf frequency modulation introduces the momentum shift. 
+\begin{equation}
+\frac{\Delta{p}}{p}  = \frac{1}{\frac{1}{\gamma^2}-\alpha_{\mathit{p}}}\cdot \frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}}
+\label{eq:phaseP11}
+\end{equation}
+Substituting ${\Delta R}/{R}$ in eq. ~\ref{mom_com1} into eq. ~\ref{eq:phaseP11}, we get the radial excursion according to a rf frequency modulation.
 \begin{equation}
 \label{eq:phaseR}
-\frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}} =({\frac{1}{\alpha_{\mathit{p}}\gamma^2}-1}) \frac{\Delta{R}}{R}
+\frac{\Delta{R}}{R} =\frac{1}{{\frac{1}{\alpha_{\mathit{p}}\gamma^2}-1}}\cdot\frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}}
 \end{equation}
 
-The rf frequency modulation causes the radial excursion. There is an accepting radial excursion for every synchroton, so there is a maximum frequency offset for the rf frequency modulation.
+The rf frequency modulation causes a radial excursion. There is a limit on the maximum radial excursion of every synchroton, so there is a maximum frequency offset for the rf frequency modulation.
 %
 %\begin{equation}
 %f(t)=\frac{\beta c}{2\pi R(t)} \label{freq_phase}
@@ -444,23 +541,29 @@ The rf frequency modulation causes the radial excursion. There is an accepting r
 %\label{eq:phaseP}
 %\end{equation}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\item Tune shift
 
-The beam particle’s tune \gls{symb:oscillation_x} and \gls{symb:oscillation_y}, defined as the frequency of the horizontal and vertical oscillations, and chromaticity \gls{symb:chromaticity_x} and \gls{symb:chromaticity_y} as their dependence on particle momentum ~\ref{steinhagen_tune_2008}. The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes horizontal and vertical tune shifts \gls{symb:c_chromaticity_x} and \gls{symb:c_chromaticity_y} ~\cite{holzer_introduction_2013}.
-
-\begin{equation}
-\Delta{Q_x} = Q^`_x\frac{\Delta{p}}{p}
-\label{eq:chromaticity_x}
-\end{equation} 
-\begin{equation}
-\Delta{Q_y} = Q^`_y\frac{\Delta{p}}{p}
-\label{eq:chromaticity_y}
-\end{equation} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\item Shift of synchronous phase
 
-The beam acceleration or deceleration accompanies with the rf frequency modulation, so the synchronous phase deviates from $0^\circ$. The change in the synchronous phase $\Delta\phi_{s}$ is ~\cite{ezura_beam-dynamics_2008}
+The beam acceleration or deceleration accompanies with the rf frequency modulation, so the synchronous phase deviates from $0^\circ$ and the momentum is shifted from $p$ to $p+\Delta p$. Based on eq. ~\ref{eq:energy}, we can get the first derivative of the magnetic rigidity
+\begin{equation}
+	\label{deriva_rigidity}
+	\dot{B}\rho =\frac{\dot{\Delta p}}{q}=B\rho \dot{\frac{\Delta p}{p}}
+\end{equation}
+
+Substituting $\dot{B}\rho$ in eq. ~\ref{deriva_rigidity} into eq.~\ref{eq:rf_acceleration}, we get 
+\begin{equation}
+\label{deriva_voltage}
+V_0\sin\phi_s=2\pi (R+R_0) B\rho \dot{\frac{\Delta p}{p}}
+\end{equation} 
+
+Substituting $\dot{\Delta p}$ in the first derivative of eq. ~\ref{mom_com1} into eq. ~\ref{deriva_voltage}, we get the simplified  relation, eq. ~\ref{deriva_voltage1}, between the change in the synchronous phase $\phi_{s}$ and the radius change rate based on the prerequisite that $\Delta R/R$ is very small and negligible. The maximum radial excursion of FAIR synchrotons $\Delta R/R$ is in the $10^{-4}$ range. The full formula is listed in ~\cite{ezura_beam-dynamics_2008}.
+\begin{equation}
+\label{deriva_voltage1}
+V_0\sin\phi_s=\frac{2\pi B\rho}{\alpha_p} \dot{\frac{\Delta p}{p}}
+\end{equation} 
+
+Eq. ~\ref{deriva_voltage1} shows that the synchronous phase is proportional to the momentum change rate. According to eq. ~\ref{eq:phaseP11}, the momentum change rate is proportional to the rf frequency modulation rate. Hence, the synchronous phase is proportional to $\dot{\Delta f_{\mathit{rf}}}$. 
 %From the expression of the particle momentum, p(t), given in eq. ~\ref{eq:momentum}, the time derivative of p(t) can be written as
 %\begin{equation}
 %\frac {dp(t)}{dt} = \frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}
@@ -481,23 +584,24 @@ The beam acceleration or deceleration accompanies with the rf frequency modulati
 %
 %From this equation, we obtain the expression of energy gain in one turn,
 %\begin{equation}
-%2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}]=eV(t)sin[\phi_{s0}(t)+\Delta \phi_s(t)]
+%2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}+e\rho_0 (\frac {R(t)}{R_0})^{1/\alpha_p }\frac{dB(t)}{dt}]=eV(t)sin[\phi_{s0}(t)+\phi_{s}(t)]
 %\label{eq:energy_cycle}
 %\end{equation} 
 %where \gls{symb:voltage} is the RF accelerating voltage per turn; $\phi_{s0}$, the synchronous phase in the
-%operation with no frequency modulation; and $\Delta\phi_{s}(t)$, the change in the synchronous phase originating from the rf frequency modulation.
+%operation with no frequency modulation; and $\phi_{s}(t)$, the change in the synchronous phase originating from the rf frequency modulation.
 %
 %The magnetic field is not affected by the frequency change, we can assume dB(t)/dt = 0. Before the synchronization, it is a stationary bucket with the synchronous phase $0^\circ$. Then, eq.~\ref{eq:energy_cycle} reduce to
 %\begin{equation}
-%2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}]=eV(t)sin[\Delta \phi_s(t)]
+%2\pi R_0 [\frac {e\rho_0B(t)}{\alpha_pR_0^{1/\alpha_p}}R(t)^{1/\alpha_p-1}\frac{dR(t)}{dt}]=eV(t)sin[\phi_{s}(t)]
 %\label{eq:energy_cycle_noB}
 %\end{equation} 
 %
 %Solving  $\Delta \phi_{s}(t)$  from eq.~\ref{eq:energy_cycle_noB}, we have
-\begin{equation}
-\Delta \phi_{s}=\sin^{-1}[{\frac{2\pi \rho B}{\alpha_pV_0}(1+\frac{\Delta R}{R})^{1/\alpha_p-1}\frac{d\Delta R}{dt}}]
-\label{eq:delta_phase}
-\end{equation} 
+%\begin{equation}
+%\Delta \phi_{s}=\sin^{-1}[{\frac{2\pi \rho B}{\alpha_pV_0}(1+\frac{\Delta R}{R})^{1/\alpha_p-1}\frac{d\Delta R}{dt}}]
+%\label{eq:delta_phase}
+%\end{equation} 
+
 
 
 
@@ -505,7 +609,7 @@ The beam acceleration or deceleration accompanies with the rf frequency modulati
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Bucket size
 
-At the flattop, the bucket is a stationary bucket. During the frequency modulation process, the bucket becomes a running bucket with $\Delta\phi_s$. The bucket area factor is calculated by eq. ~\ref{eq:buckt_area_factor}. Buckets must be big enough to capture bunches.
+At the flattop, the bucket is a stationary bucket. During the frequency modulation process, the bucket becomes a running bucket with $\phi_{s}\neq 0^\circ$. The bucket area factor is calculated by eq. ~\ref{eq:buckt_area_factor}. Buckets must be big enough to capture bunches. Eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. The synchronous phase must be small enough to guarantee the bucket size, so $\dot{\Delta f_{\mathit{rf}}}$ must be small enough, namely the change of the rf frequency modulation must be slow enough.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Adiabaticity 
@@ -522,24 +626,40 @@ A process is called “adiabatic” when the rf frequency is changed slowly enou
 \label{eq:adiabaticity}
 \end{equation} 
 
-where \gls{symb:adiabaticity} is the adiabaticity parameter. For the synchrotron frequency, eq. ~\ref{eq:synchfreq}, all of the other variables change very slowly compared with $\phi_s$,  namely $\Delta \phi_s$. From eq.~(\ref{eq:adiabaticity}) and eq.~(\ref{eq:synchfreq}), the adiabaticity can be written as follows ~\cite{ezura_beam-dynamics_2008}:
+where \gls{symb:adiabaticity} is the adiabaticity parameter. For the synchrotron frequency, eq. ~\ref{eq:synchfreq}, all of the other variables change very slowly compared with $\phi_s$. From eq.~(\ref{eq:adiabaticity}) and eq.~(\ref{eq:synchfreq}), the adiabaticity can be written as follows ~\cite{ezura_beam-dynamics_2008}:
 \begin{equation}
-\varepsilon \approx \frac{1}{2\omega_{\mathit{syn\_0}}}|\tan\Delta \phi_{\mathit{s\_0}}\frac{d\Delta \phi_s}{dt}|
+\varepsilon \approx \frac{1}{2\omega_{\mathit{syn\_0}}}|\tan \phi_s\dot{\phi_{s}}|
 \label{eq:derivation}
 \end{equation} 
-where \gls{symb:an_freq_syn0} is the synchrotron frequency with no frequency modulation and \gls{symb:syn_phase0} is the synchronous phase with no frequency modulation.
+where \gls{symb:an_freq_syn0} is the synchrotron frequency with no frequency modulation. Form the adiabaticity eq. ~\ref{eq:derivation}, $\phi_{s}$ and $\dot{\phi_{s}}$ must be small enough to gaurantee the adiabaticity. So not only $\dot{\Delta f_{\mathit{rf}}}$ but also $\ddot{\Delta f_{\mathit{rf}}}$ must be existing and small enough. Namely, $\dot{\Delta f_{\mathit{rf}}}$  must be continuous. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\item Constraints on the rf frequency modulation
+%
+%From eq. ~\ref{eq:delta_phase}, the synchronous phase $\phi_{s}$ is determined by $d\Delta R/dt$. From eq.~\ref{eq:phaseR}, we could get the relation between $d\Delta R/dt$ and $d\Delta f_{\mathit{rf}}/dt$.
+%\begin{equation}
+%\frac{d\Delta R}{dt}(\frac{1}{\gamma^2\alpha_p}-1)f=\frac{d\Delta f_{\mathit{rf}}}{dt} R
+%\label{eq:RtoF}
+%\end{equation}
+%
+%In order to guarantee the continuous synchronous phase, the $d\Delta f/dt$ of the rf frequency modulation must be continuous. Besides, eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. $d\Delta f_{\mathit{rf}}/dt$ must be small enough to guarantee the bucket size. Form the adiabaticity eq. ~\ref{eq:derivation}, $d\phi_{s}/dt$ must be small enough to gaurantee the adiabaticity. So $d\Delta f_{\mathit{rf}}/dt/dt$ must be small enough.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\item Constraints on the rf frequency modulation
+	\item Tune shift
 
-From eq. ~\ref{eq:delta_phase}, the synchronous phase $\Delta\phi_s$ is determined by $d\Delta R/dt$. From eq.~\ref{eq:phaseR}, we could get the relation between $d\Delta R/dt$ and $d\Delta f_{\mathit{rf}}/dt$.
+So far the rf frequency modulation is analyzed from the longitudinal beam dynamics perspective. Because of the momentum shift, the rf frequency modulation has an influence on the transverse beam dynamics as well. The beam particle’s tune \gls{symb:oscillation_x_y}, defined as the frequency of the horizontal/vertical oscillations, and chromaticity \gls{symb:chromaticity_x_y} as their horizontal/vertical dependence on particle momentum ~\ref{steinhagen_tune_2008}. The momentum spread ${\Delta{p}}/{p} \neq 0$ during the phase shift process causes horizontal/vertical tune shifts \gls{symb:c_chromaticity_x_y} ~\cite{holzer_introduction_2013}.
+
 \begin{equation}
-\frac{d\Delta R}{dt}(\frac{1}{\gamma^2\alpha_p}-1)f=\frac{d\Delta f_{\mathit{rf}}}{dt} R
-\label{eq:RtoF}
-\end{equation}
+\Delta{Q_{\mathit{x/y}}} = Q^`_{\mathit{x/y}}\frac{\Delta{p}}{p}
+\label{eq:chromaticity_x}
+\end{equation} 
 
-In order to guarantee the continuous synchronous phase, the $d\Delta f/dt$ of the rf frequency modulation must be continuous. Besides, eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. $d\Delta f_{\mathit{rf}}/dt$ must be small enough to guarantee the bucket size. Form the adiabaticity eq. ~\ref{eq:derivation}, $d\Delta \phi_s/dt$ must be small enough to gaurantee the adiabaticity. So $d\Delta f_{\mathit{rf}}/dt/dt$ must be small enough.
+The momentum shift of FAIR synchrotons $\Delta p/p_0$ is in the $10^{-4}$ range and the chromaticity is about \SI{10}{Hz}. So the tune shift is relative small and has almost no influence on the transverse motion.
+
 \end{itemize}
 
+According to the beam dynamics analysis, there are several requirements for the rf frequency modulation. There exists a maximum rf frequency offset. $\dot{\Delta f_{\mathit{rf}}}$ must be not only continuous but also small enough. What is more, $\ddot{\Delta f_{\mathit{rf}}}$ must be small enough. 
 %Now let us deduce how the rf frequency modulation affects $\phi_s(t)$ and $d\phi_s(t)/dt$. 
 %
 %Solving $\frac{dR}{dt}$ from eq. ~\ref{eq:RtoF} and substituting it into eq. ~\ref{eq:delta_phase} yields 
@@ -557,7 +677,7 @@ In order to guarantee the continuous synchronous phase, the $d\Delta f/dt$ of th
 %\label{eq:dotf}
 %\end{equation}
 %
-%From eq.~\ref{eq:buckt_area_factor}, we know that the bucket area factor is determined by the synchronous phase change $\Delta\phi_s$. Based on eq.~\ref{eq:dotf}, we know the synchronous phase $\Delta\phi_s$ is determined by df(t)/dt, so df(t)/dt is important for the bucket size.
+%From eq.~\ref{eq:buckt_area_factor}, we know that the bucket area factor is determined by the synchronous phase change $\phi_{s}$. Based on eq.~\ref{eq:dotf}, we know the synchronous phase $\phi_{s}$ is determined by df(t)/dt, so df(t)/dt is important for the bucket size.
 %
 %In order to get the relation between $d\phi_s(t)/dt$ and the frequency modulation, we get the time derivative of eq.~\ref{eq:dotf}
 %
@@ -583,7 +703,7 @@ The frequency beating method uses the effect of two rf signals of slightly diffe
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{frequency_beating.png}
-   \caption{The illustration of the frequency beating method.}
+   \caption{The illustration of the frequency beating method.}{Blue dots represent bunches of the source synchrotron and red dots buckets of the target synchrotron.}
    \label{frequency_beat}
 \end{figure}
 \begin{itemize}
@@ -642,7 +762,7 @@ When $\Delta p$ = 0, we have the following relation between $\Delta B/B$ and $\D
 Substituting eq. ~\ref{rb} into eq. ~\ref{eq:eq4}, we get the general relation between the magnetic field change and rf frequency change.
 
 \begin{equation}
-\frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}} = \alpha_p\times{\frac{\Delta{B}}{B}}
+\frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}} = \alpha_p\cdot{\frac{\Delta{B}}{B}}
 \label{eq:eq5}
 \end{equation}
 \end {itemize}
@@ -657,7 +777,7 @@ Substituting eq. ~\ref{rb} into eq. ~\ref{eq:eq4}, we get the general relation b
 %  This RF frequency de-tune is done accompanying with the RF ramp. Accepting to decentre the orbit by 8mm for the SIS18~\cite{SIS18_man}: 
 %
 %\begin{equation}
-%\frac{\bigtriangleup{R}}{R}\approx{2.4}{\times}10^{-4}\label{eq1}
+%\frac{\bigtriangleup{R}}{R}\approx{2.4}{\cdot}10^{-4}\label{eq1}
 %\end{equation}
 %
 %  We know the basic differential relations among the fractional change in the RF frequency f, the fractional change in the momentum p, the fractional change in the bending magnetic field B and the fractional change in the radius R as follows ~\cite{J-PARC}.
@@ -685,7 +805,7 @@ Substituting eq. ~\ref{rb} into eq. ~\ref{eq:eq4}, we get the general relation b
 %\end{equation}
 %
 %\begin{equation}
-%\frac{\Delta{f}}{f} =  \frac{1}{{\gamma_t}^2}\times{\frac{\Delta{B}}{B}}
+%\frac{\Delta{f}}{f} =  \frac{1}{{\gamma_t}^2}\cdot{\frac{\Delta{B}}{B}}
 %\label{eq:eq5}
 %\end{equation}
 
@@ -704,11 +824,12 @@ Substituting eq. ~\ref{rb} into eq. ~\ref{eq:eq4}, we get the general relation b
 \section{Synchronization of extraction and injection kicker magnets}
 \label{sec:kicker}
 
-Kicker magnet (or kicker) is dipole magnet, which is used to rapidly switch particles between two paths. An \gls{glos:inj_kick} merges one beam into a circulating beam in a synchrotron and an \gls{glos:ext_kick} diverts a circulating beam to leave a synchrotron. For the bunch extraction and injection \footnote{Fast beam extraction and injection.}, a pulsed kicker magnet must be used with rapid rise time and fall time and the variable pulse flat-top ~\cite{wang_design_1991, petzenhauser_concept_2016}. Fig. ~\ref{kicker_magnet} shows the schematic diagram of kicker magnet. The energy storage cable \footnote{There are two different possibilities for energy storage in a kicker system. First is the usage of a coaxial cable and second the usage of a pulse forming network. FAIR uses the coaxial cable for the energy storage.} is charged with a high voltage power supply. The energy storage cable is discharged via the transmission cable and the kicker magnet by switching on the pulse start switch. The magnet needs a certain period of time to reach a stable magnetic field. This period is the so-called ``\gls{glos:rise_time}``. The pulse ``\gls{glos:flat-top}`` length can be modified by switching on the stop switch in correlation with the pulse start switch. When the pulse stop switch is switched off, the magnet needs a certain period of time to reduce to zero magnetic field. This period is so-called ``\gls{glos:fall_time}`` ~\cite{udo_injection_2014}. For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. As soon as the tail of the circulating bunch passes the kicker, the start switch can be switched on. The pulse stop switch must be switched off in time in order not to affect the head of the next coming bunch in the synchrotron. The kicker control electronics produces the ignition signal to switch on/off two swichtes.
+A kicker magnet (or kicker) is a dipole magnet, which is used to rapidly switch particles between two paths. An \gls{glos:inj_kick} merges one beam into a circulating beam in a synchrotron and an \gls{glos:ext_kick} diverts a circulating beam to leave a synchrotron. The B2B transfer needs a fast beam extraction and injection, which extracts and injectes beam in a single-turn. Hence, a pulsed kicker magnet must be used with rapid rise time and fall time and the variable pulse flat-top ~\cite{petzenhauser_concept_2016}. Fig. ~\ref{kicker_magnet} shows the schematic diagram of a kicker magnet. The energy storage module%\footnote{There are two different possibilities for energy storage in a kicker system. First is the usage of a coaxial cable and second the usage of a pulse forming network. FAIR uses the coaxial cable for the energy storage.} 
+ is charged with a high voltage power supply. It will be discharged via the transmission cable and the kicker magnet by switching on the pulse start switch. Before the increase of the magnetic field, there exist a preparation time for the kicker magnet. The magnet needs a certain period of time to increase from zero to a stable magnetic field, which is so-called a ``\gls{glos:rise_time}``. The pulse ``\gls{glos:flat-top}`` length can be modified by switching on the stop switch in correlation with the pulse start switch. When the pulse stop switch is switched off, the magnet needs a certain period of time to reduce to zero magnetic field. This period is so-called a ``\gls{glos:fall_time}`` ~\cite{udo_injection_2014}. For the proper B2B transfer, the extraction and injection kickers must be synchronized with the beam. As soon as the tail of the circulating bunch passes the kicker, the start switch can be switched on. The pulse stop switch must be switched off in time in order not to affect the head of the next coming bunch in the synchrotron. The kicker control electronic produces the ignition signal to switch on/off two swichtes. Generally a preparation time of FAIR kickers is within the \SI{5}{}$-$\SI{10}{us} range. Compared with the FAIR rf frequency in the \SI{}{MHz} range, a preparation time is not negligible, which could cause an increase of the bunch-to-bucket injection center mismatch especially for the frequency beating method. The kicker control electronic must take the preparation time into consideration, igniting kickers in advance of the preparation time.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{kicker_magnet.jpg}
-   \caption{Schematic diagram of kicker magnet.}
+   \caption{The schematic diagram of a kicker magnet.}
    \label{kicker_magnet}
 \end{figure}
  
@@ -720,21 +841,21 @@ Kicker magnet (or kicker) is dipole magnet, which is used to rapidly switch part
 
 %rise_flattop_fall.pptx
 
-Most commonly, an extraction kicker is used to eject all bunches. Fig. ~\ref{ext_rise_flattop_fall} illustrates the rise time, flat-top and fall time of the extraction kicker. The start switch is switched on as soon as the tail of the circulating bunch passes the kicker at $t0$. The flat-top of the magnetic filed must be achieved before the head of the next circulating bunch passes the kicker at $t1$. So the rise time of the extraction kicker must be shorter than the bunch gap. The flat-top has at least the length of bunches to be extracted. The stop switch is switched on earliest at $t2$, when all bunches are extracted. There is no bunch at the synchrotron, so the fall time is not constrained. 
+Most commonly, an extraction kicker is used to eject all bunches. Fig. ~\ref{ext_rise_flattop_fall} illustrates the rise time, flat-top and fall time of an extraction kicker. The tail of the circulating bunch passes the kicker at $t_0$. The start switch is switched on the preparation time earlier than $t_0$. The rsie time starts at $t_0$. The flat-top of the magnetic filed must be achieved before the head of the next circulating bunch passes the kicker at $t_1$. So the rise time of the extraction kicker must be shorter than the bunch gap. The flat-top has at least the length of bunches to be extracted. The stop switch is switched on earliest at $t_2$, when all bunches are extracted. Then there is no more bunch left in the synchrotron, so there is no constraint for the fall time. 
 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=120mm]{ext_rise_flattop_fall.jpg}
-   \caption{The rise time, flat-top and fall time of the extraction kicker.}{The yellow ellipse represents the circulating bunches in the synchrotron and the red one the extracted bunches.}
+   \caption{The rise time, flat-top and fall time of an extraction kicker.}{Yellow ellipses represent circulating bunches in the synchrotron, red ones extracted bunches and red lighting bolt the extraction kicker firing.}
    \label{ext_rise_flattop_fall}
 \end{figure}
  
-For multi batches injection, see Fig. ~\ref{inj_rise_flattop_fall}, the start switch is switched on as soon as the tail of the circulating bunch passes the kicker at $t0$. The flat-top of the magnetic filed must be achieved before bunches are injected at $t1$. So the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. For a single \gls{glos:batch} injection, the rise time is not constrained. The length of the flat-top is determined by the length of bunches to be injected. The stop switch is switched on as soon as the tail of the last injected bunch passes the kicker at $t2$. The magnetic field must be reduced to zero before the head of the circulating bunch passes the kicker at $t3$. So the fall time must be shorter than $t3-t2$.
+For multi batches injection, see Fig. ~\ref{inj_rise_flattop_fall}, the tail of the circulating bunch passes the kicker at $t_0$. The start switch is switched on the preparation time earlier than $t_0$. The rsie time starts at $t_0$.  The flat-top of the magnetic filed must be achieved before bunches are injected at $t_1$. So the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. For a single \gls{glos:batch} injection, the rise time is not constrained. The length of the flat-top is determined by the length of bunches to be injected. The stop switch is switched on as soon as the tail of the last injected bunch passes the kicker at $t_2$. The magnetic field must be reduced to zero before the head of the circulating bunch passes the kicker at $t_3$. So the fall time must be shorter than $t_3-t_2$.
 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=120mm]{inj_rise_flattop_fall.jpg}
-   \caption{The rise time, flat-top and fall time of the injection kicker for multi batches injection.}{The yellow ellipse represents the circulating bunches in the synchrotron and the red one bunches to be injected.}
+   \caption{The rise time, flat-top and fall time of an injection kicker for multi batches injection.}{Yellow ellipses represent circulating bunches in the synchrotron, red ones bunches to be injected and the red lighting bolt the injection kicker firing.}
    \label{inj_rise_flattop_fall}
 \end{figure}
 
