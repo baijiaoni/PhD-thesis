@@ -8,64 +8,65 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces A running rf bucket.\relax }}{14}{figure.caption.18}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The bunch-to-bucket injection with a phase, energy or voltage error.\relax }}{14}{figure.caption.19}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces The constant phase difference between two rf systems when the circumference ratio is an integer.\relax }}{17}{figure.caption.20}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces The step grown phase difference between two rf systems when circumference ratio is close to an integer.\relax }}{19}{figure.caption.21}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The illustration of the phase shift method.\relax }}{21}{figure.caption.22}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces The illustration of the frequency beating method.\relax }}{24}{figure.caption.23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces The schematic diagram of a kicker magnet.\relax }}{26}{figure.caption.24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces The rise time, flat-top and fall time of an extraction kicker.\relax }}{27}{figure.caption.25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces The rise time, flat-top and fall time of an injection kicker for multi batches injection.\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The phase difference between two rf systems when circumference ratio is close to an integer.\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The phase difference between two rf systems when circumference ratio is far away from an integer.\relax }}{20}{figure.caption.22}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces The illustration of the phase shift method.\relax }}{22}{figure.caption.23}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces The illustration of the frequency beating method.\relax }}{25}{figure.caption.24}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The schematic diagram of a kicker magnet.\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces The rise time, flat-top and fall time of an extraction kicker.\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces The rise time, flat-top and fall time of an injection kicker for multi batches injection.\relax }}{29}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Reference RF Signal distribution system\relax }}{32}{figure.caption.27}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Local Cavity Synchronization\relax }}{33}{figure.caption.28}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Bunch-to-bucket transfer between SIS18 and ESR with GSI control system.\relax }}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Reference RF Signal distribution system\relax }}{33}{figure.caption.28}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Local Cavity Synchronization\relax }}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Bunch-to-bucket transfer between SIS18 and ESR with GSI control system.\relax }}{35}{figure.caption.30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The illustration of B2B transfer from SIS18 to SIS100.\relax }}{38}{figure.caption.30}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The procedure for the B2B transfer within one acceleration cycle.\relax }}{40}{figure.caption.31}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The realization of the phase advance measurement at one synchrotron\relax }}{42}{figure.caption.32}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The realization of the phase advance extrapolation at one synchrotron\relax }}{43}{figure.caption.33}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Implementation of the Phase Advance Prediction Module in the B2B source SCU\relax }}{44}{figure.caption.34}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The synchronization of the extrapolated phase to the timestamp in one synchrotron\relax }}{44}{figure.caption.35}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces One example of the transfer path of the B2B timing frame in the WR network\relax }}{45}{figure.caption.36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The normalized frequency and phase modulation profile and the actual profiles\relax }}{46}{figure.caption.37}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Implementation of the Phase Shift Module in the B2B source SCU\relax }}{47}{figure.caption.38}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Implementation of the Phase Correction Module in the Trigger SCU\relax }}{49}{figure.caption.39}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The realization of the bucket label for the normal extraction and injection.\relax }}{49}{figure.caption.40}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces The realization of the bunch gap for the emergency extraction.\relax }}{50}{figure.caption.41}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Implementation of the Trigger Decision module in the Trigger SCU\relax }}{51}{figure.caption.42}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The data flow of the B2B transfer system\relax }}{54}{figure.caption.43}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The illustration of B2B transfer from SIS18 to SIS100.\relax }}{39}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The procedure for the B2B transfer within one acceleration cycle.\relax }}{41}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The realization of the phase advance measurement at one synchrotron\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The realization of the phase advance extrapolation at one synchrotron\relax }}{44}{figure.caption.34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Implementation of the Phase Advance Prediction Module in the B2B source SCU\relax }}{45}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The synchronization of the extrapolated phase to the timestamp in one synchrotron\relax }}{45}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces One example of the transfer path of the B2B timing frame in the WR network\relax }}{46}{figure.caption.37}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The normalized frequency and phase modulation profile and the actual profiles\relax }}{47}{figure.caption.38}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Implementation of the Phase Shift Module in the B2B source SCU\relax }}{48}{figure.caption.39}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Implementation of the Phase Correction Module in the Trigger SCU\relax }}{50}{figure.caption.40}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The realization of the bucket label for the normal extraction and injection.\relax }}{50}{figure.caption.41}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The realization of the bunch gap for the emergency extraction.\relax }}{51}{figure.caption.42}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Implementation of the Trigger Decision module in the Trigger SCU\relax }}{52}{figure.caption.43}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The data flow of the B2B transfer system\relax }}{55}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The frequency of the bucket label signal for the phase shift method.\relax }}{57}{figure.caption.45}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The frequency of the bucket label signal for the frequency beating method.\relax }}{58}{figure.caption.46}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The frequency of the bucket label signal for the phase shift method.\relax }}{58}{figure.caption.46}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The frequency of the bucket label signal for the frequency beating method.\relax }}{59}{figure.caption.47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Examples of RF frequency modulation.\relax }}{77}{figure.caption.64}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Time derivation of four modulations\relax }}{77}{figure.caption.65}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The phase shift modulation of four cases\relax }}{78}{figure.caption.66}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Average radial excursions of four cases.\relax }}{78}{figure.caption.67}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Relative momentum shift of four cases.\relax }}{79}{figure.caption.69}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Changes in synchronous phase of four cases\relax }}{80}{figure.caption.71}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of four cases\relax }}{81}{figure.caption.72}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Adiabaticity parameter estimation of case (3) and (4)\relax }}{82}{figure.caption.74}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces RF frequency derivation of the $U^{28+}$ rf ramp\relax }}{83}{figure.caption.75}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window\relax }}{84}{figure.caption.76}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The illustration of symbols for the calculation\relax }}{85}{figure.caption.77}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Scenarios for the phase shift method\relax }}{87}{figure.caption.78}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Two scenarios for the frequency beating method\relax }}{89}{figure.caption.79}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces The illustration of the synchronization window and its accuracy\relax }}{90}{figure.caption.80}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces The WR network test setup\relax }}{93}{figure.caption.82}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces The frame loss rate for B2B Broadcast and B2B Unicast frames\relax }}{95}{figure.caption.84}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces The average latency and jitter for B2B Broadcast frames\relax }}{95}{figure.caption.85}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces The maximum latency and jitter for B2B Broadcast frames\relax }}{96}{figure.caption.87}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces The average latency and jitter for B2B Unicast frames\relax }}{97}{figure.caption.89}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces The maximum latency and jitter for B2B Unicast frames\relax }}{97}{figure.caption.90}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Three scenarios for the delay of SIS18 extraction kicker\relax }}{99}{figure.caption.92}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces SIS100 injection kicker\relax }}{101}{figure.caption.94}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces Schematic of the test setup\relax }}{102}{figure.caption.96}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces The front and back view of the test setup\relax }}{103}{figure.caption.97}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Flow chart of the firmware for B2B source SCU.\relax }}{104}{figure.caption.98}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Flow chart of the firmware for B2B target SCU.\relax }}{106}{figure.caption.99}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{108}{figure.caption.100}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Examples of RF frequency modulation.\relax }}{78}{figure.caption.65}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Time derivation of four modulations\relax }}{78}{figure.caption.66}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The phase shift modulation of four cases\relax }}{79}{figure.caption.67}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Average radial excursions of four cases.\relax }}{79}{figure.caption.68}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Relative momentum shift of four cases.\relax }}{80}{figure.caption.70}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Changes in synchronous phase of four cases\relax }}{81}{figure.caption.72}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of four cases\relax }}{82}{figure.caption.73}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Adiabaticity parameter estimation of case (3) and (4)\relax }}{83}{figure.caption.75}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces RF frequency derivation of the $U^{28+}$ rf ramp\relax }}{84}{figure.caption.76}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window\relax }}{85}{figure.caption.77}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The illustration of symbols for the calculation\relax }}{86}{figure.caption.78}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Scenarios for the phase shift method\relax }}{88}{figure.caption.79}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Two scenarios for the frequency beating method\relax }}{90}{figure.caption.80}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces The illustration of the synchronization window and its accuracy\relax }}{91}{figure.caption.81}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces The WR network test setup\relax }}{94}{figure.caption.83}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces The frame loss rate for B2B Broadcast and B2B Unicast frames\relax }}{96}{figure.caption.85}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces The average latency and jitter for B2B Broadcast frames\relax }}{96}{figure.caption.86}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces The maximum latency and jitter for B2B Broadcast frames\relax }}{97}{figure.caption.88}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces The average latency and jitter for B2B Unicast frames\relax }}{98}{figure.caption.90}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces The maximum latency and jitter for B2B Unicast frames\relax }}{98}{figure.caption.91}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Three scenarios for the delay of SIS18 extraction kicker\relax }}{100}{figure.caption.93}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces SIS100 injection kicker\relax }}{102}{figure.caption.95}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Schematic of the test setup\relax }}{103}{figure.caption.97}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces The front and back view of the test setup\relax }}{104}{figure.caption.98}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Flow chart of the firmware for B2B source SCU.\relax }}{105}{figure.caption.99}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Flow chart of the firmware for B2B target SCU.\relax }}{107}{figure.caption.100}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{109}{figure.caption.101}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{116}{figure.caption.102}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{117}{figure.caption.103}
 \addvspace {10\p@ }
