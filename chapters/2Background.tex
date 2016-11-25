@@ -162,32 +162,50 @@ Due to the relation between the revolution frequency and rf frequency, eq. ~\ref
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase match}
 \label{match}
-The rf voltage of two rf systems of the large and small synchrotrons, $V^l$ and $V^s$, are
+The rf voltage of two rf systems are $v_1$ and $v_2$.
 \begin{equation}
 \label{rf_freq1}
-	V^l=V_0\sin(2\pi f_\mathit{rf}^{l}t+\theta_\mathit{1})
+	v_1=V_1\sin(2\pi f_1t+\varphi_1)
 \end{equation}
 \begin{equation}
 \label{rf_freq2}
-	V^s=V_0\sin(2\pi f_\mathit{rf}^{s}t+\theta_\mathit{2})
+	v_2=V_2\sin(2\pi f_2t+\varphi_2)
 \end{equation}
 
-where $\theta_\mathit{1}$ and $\theta_\mathit{1}$ are initial phases of two rf system. The phase difference between the synchrotron \textit{a} and {b}, $\Delta \phi_{a\_b}$, is defined as the corresponding phase of the rf system of the synchrotron \textit{a} when the rf system of the synchrotron \textit{b} has its positive zero-crossing points.
+where $V_1$ and $V_2$ are the amplitude, $\varphi_1$ and $\varphi_1$ the initial phases and $f_1$ and $f_2$ are the frequencies of two rf voltages. The phase difference $\Delta \phi$ is the difference, expressed in degrees, between two rf voltage sine waves referenced to the same point in time. 
 
-In order to get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$, positive zero-crossing points of the small synchrotron happen at
+
+The phase difference between $v_1$ and $v_1$ is
 \begin{equation}
-\label{s_0_time}
-	t=\frac{2\pi x-\theta_2}{2\pi f_\mathit{rf}^{s}}
+	\Delta \phi=2\pi(f_1-f_2)t+\varphi_1-\varphi_2\label{phase_diff_general}
 \end{equation}
-where $x$ is a positive integer. Positive zero-crossing points correspond to phases of $2\pi x$. The phase difference $\Delta \phi_{l\_s}$ is
+
+The phase difference $\Delta \phi$ is constant when two frequencies are same. In order to change the phase difference for the phase match between two rf voltage sine waves, at least the frequency of one rf voltage sine wave has to be modulated away from
+its nominal value for a period of time and then modulated back - the phase shift method. Eq.~\ref{phase1} gives the relation between the required phase shift \gls{symb:pha_shift} and the frequency modulation. 
 \begin{equation}
-\label{phase_diff}
-	\Delta \phi_{l\_s}=[\frac{f_\mathit{rf}^{l}}{f_\mathit{rf}^{s}}(2\pi x-\theta_2)+\theta_1] \mod 2\pi
+\Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase1}
 \end{equation}
+The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation \gls{symb:period_phase}. The rf frequency modulation starts at \gls{symb:start_phase}. For the phase alignment, the phase of either synchrotron can be shifted backward or forward. 
 
-The phase difference must be with a required value when bunches are transferred to buckets. For the phase shift method, two rf frequencies of two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required for the beating. These two rf frequencies are called ``synchronization rf frequency``, denoted as $f_\mathit{syn}^{X}$.
+When two frequencies are slightly different, the phase difference $\Delta \phi$ is a periodical variation whose rate is the difference between the two frequencies - the frequency beating method. This rate is called the ``beating frequency``, $\Delta f=|f_1-f_2|$. The beating period is defined as a period of time for the periodical variation, namely $1/\Delta f$. Within one beating period, there exists a correct phase difference for the phase alignment. 
 
-Due to the \gls{glos:cir_ratio} between the source and target synchrotrons, there are several scenarios of the phase difference. For simplicity's sake, the following analysis is from the perspective of the large/small synchrotrons instead of the source/target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, \gls{symb:integer}, $m$, $n$ and $g$ are used to represent positive integers and \gls{symb:decimal} the decimal number.
+The phase alignment is realized based on two same or slightly different frequencies. These two frequencies are called ``synchronization frequency``, denoted as $f_\mathit{syn}^{X}$. Some FAIR use cases are with a identical rf frequency or slightly different frequencies of two rf system, so the identical rf frequency or two slightly different frequencies are chosen as the synchronization frequencies. There exists many FAIR use cases with hugely different rf frequencies as well. In this scenario, two synchronization frequencies are an integer multiple of the same or slightly different derived rf frequencies, which are the division of the revolution frequencies. e.g. the division of the revolution frequency is $f_\mathit{rev}^{X}/m$ and the synchronization frequency is $Y\cdot f_\mathit{rev}^{X}/m$, both $m$ and $Y$ are positive integers. Because of the technical requirement, the synchronization frequencies are impossible to have higher frequencies than rf frequencies, namely $Y/m <=h^X$. 
+
+The calculation of the sycnhronization frequencies are explained in the different scenarios of the circumference ratio between two synchrotrons. For simplicity's sake, the following analysis is from the perspective of the large/small synchrotrons instead of the source/target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, \gls{symb:integer}, $m$, $n$ and $g$ are used to represent positive integers and \gls{symb:decimal} the decimal number.
+
+%In order to get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$, positive zero-crossing points of the small synchrotron happen at
+%\begin{equation}
+%\label{s_0_time}
+%	t=\frac{2\pi x-\theta_2}{2\pi f_\mathit{rf}^{s}}
+%\end{equation}
+%where $x$ is a positive integer. Positive zero-crossing points correspond to phases of $2\pi x$. The phase difference $\Delta \phi_{l\_s}$ is
+%\begin{equation}
+%\label{phase_diff}
+%	\Delta \phi_{l\_s}=[\frac{f_\mathit{rf}^{l}}{f_\mathit{rf}^{s}}(2\pi x-\theta_2)+\theta_1] \mod 2\pi
+%\end{equation}
+%
+%The phase difference must be with a required value when bunches are transferred to buckets. For the phase shift method, two rf frequencies of two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required for the beating. 
+ 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -212,35 +230,41 @@ Dividing eq.~\ref{rf_freq_l_int1} by eq.~\ref{rf_freq_s_int1}, we get
 \begin{equation} 
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa} \label{rf_freq_ratio1}
 \end{equation}
-Substituting $\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}$ in eq.~\ref{rf_freq_ratio1} into eq.~\ref{phase_diff}, we get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$.
+
+In this scenario, the same synchronization frequencies are $f_{\mathit{rf}}^{l}/h^l $ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. Substituting two same synchronization frequencies into eq.~\ref{phase_diff_general}, we get the constant phase difference $\Delta \phi$. Fig. ~\ref{cir_int} shows the constant phase difference between two same synchronization frequencies.
 \begin{equation}
 \label{phase_diff_cir_int}
-	\Delta \phi_{l\_s}=[\frac{h^{l}}{h^{s}\cdot \kappa}(2\pi x-\theta_2)+\theta_1] \mod 2\pi=(\textcolor{red}{x} \cdot \frac{h^{l}}{h^{s}\kappa}\cdot 2\pi -\frac{h^{l}}{h^{s}\kappa}\theta_2+\theta_1) \mod 2\pi
+	\Delta \phi=(\varphi_l-\varphi_s) \mod 2\pi
 \end{equation}
 
-Only $x$ is a variable in eq. ~\ref{phase_diff_cir_int}, which is marked in red color. The $1^{\mathit{st}}$ term in eq. ~\ref{phase_diff_cir_close_int} suggests that the phase difference $\Delta \phi_{l\_s}$ is constant when $x$ is the integer multiple of the $h^{s}\kappa$. Namely, the constant phase of the rf signal of the large synchrotron occurs at every $h^{s}\kappa$ positive zero-crossing point of the rf signal of the small synchrotron. The occurance of every $h^{s}\kappa$ positive zero-crossing points is at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ and the occurance of the constant phase of the large synchrotron is at the frequency of $f_{\mathit{rf}}^{l}/h^l $, see Fig. ~\ref{cir_int}. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ are the synchronization rf frequencies for the phase shift method. In this scenario, the phase match must be achieved by a phase shift of one of rf systems.
 %phase_match.dox
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{cir_int.jpg}
-   \caption{The constant phase difference between two rf systems when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically.}
+   \caption{The constant phase difference between two same synchronization frequencies when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically.}
    \label{cir_int}
 \end{figure} 
 
-So far we get only one possible pair of the synchroniation rf frequencies for the phase shift method, but this pair is not the best one. It is easier for the LLRF system to produce rf frequencyies closer to $f_{\mathit{rf}}^{l}$ or $f_{\mathit{rf}}^{s}$. What is more, the possible pair with large frequencies reduces the period of the occurance of the required phase difference. Hence, the pair of the synchroniation rf frequencies with largest frequencies are preferred. They are
+So far we get only one possible pair of the synchroniation frequencies for the phase shift method, but this pair is not the best one. It is easier for the LLRF system to produce rf frequencyies closer to $f_{\mathit{rf}}^{l}$ or $f_{\mathit{rf}}^{s}$. What is more, the possible pair with large frequencies reduces the period of the occurance of the required phase difference. Hence, the pair of the synchroniation frequencies with largest frequencies are preferred. They are
 \begin{equation}
-f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y} \label{synch_freq1}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Yf_{\mathit{rev}}^{l} \label{synch_freq1}
 \end{equation}
 \begin{equation}
-f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y} \label{synch_freq2}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s} \label{synch_freq2}
 \end{equation}
 
 where \gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h^l$ and $h^s \cdot \kappa$.
 
 %$\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$. Namely, the phase difference between two rf systems is always constant after ${h^l/Y}$ rf period of the large synchrotron or ${(h^s\cdot \kappa)/Y}$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by a phase shift either of them. 
+%phase_match.dox
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=150mm]{cir_int1.jpg}
+   \caption{An example of two synchronization frequencies when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically, red sine waves the synchronization frequencies and black sine waves the revolution frequencies. When the sine wave of the synchronization frequency overlaps that of the revolution frequency, the sine wave is red.}
+   \label{cir_int1}
+\end{figure} 
 
-
-Fig. ~\ref{cir_int} illustrates also an example with $\kappa=5$, $h^s=1$ and $h^l=10$, when $h^{l}/f_{\mathit{rf}}^{l}$ in Fig is replaced by $1/f_{\mathit{syn}}^{l}$ and $(h^{s}\kappa)/f_{\mathit{rf}}^{s}$ in Fig is replaced by $1/f_{\mathit{syn}}^{s}$. So $f_{\mathit{rf}}^{l}=2f_{\mathit{rf}}^{s}$. GCD of $h^l$ and $h^s \cdot \kappa$ is 5. Hence, according to eq. ~\ref{synch_freq1} and eq. ~\ref{synch_freq2}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}$. The constant phase difference $\Delta \phi_{l\_s}$ happens every ${h^l/Y}=2$ rf period of the large synchrotron or every ${(h^s\cdot \kappa)/Y}=1$ rf period of the small synchrotron (red rectangle in Fig. ~\ref{cir_int}). This example is the FAIR use case of the $H^{+}$ B2B transfer from SIS18 to SIS100, which will be explained in Chap. ~\ref{application}.
+Fig. ~\ref{cir_int1} illustrates an example with $\kappa=5$, $h^s=1$ and $h^l=10$. So GCD of $h^l$ and $h^s \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=5f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the $H^{+}$ B2B transfer from SIS18 to SIS100, which will be explained in Chap. ~\ref{application}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
@@ -267,43 +291,55 @@ We could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \cdot ( \kappa+ \lambda)}=\frac{h^l}{h^s \cdot  \kappa+ h^s \cdot \lambda}\label{close_to_interger_31}
 \end{equation}
 
-Substituting $\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}$ in eq.~\ref{close_to_interger_31} into eq.~\ref{phase_diff}, we get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$.
+In eq.~\ref{close_to_interger_31}, $h^s\lambda $ is much smaller than $h^s\kappa$ and $h^l$. So two slightly different synchronization frequencies are 
 \begin{equation}
-\begin{split}
-\label{phase_diff_cir_close_int}
-	\Delta \phi_{l\_s}=[\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda}(2\pi x-\theta_2)+\theta_1] \mod 2\pi 
-\\=(\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda} \cdot 2\pi x-\frac{h^{l}}{h^{s}\kappa+h^{s} \lambda} \cdot\theta_2+\theta_1) \mod 2\pi 
-\end{split}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Yf_{\mathit{rev}}^{l} \label{synch_freq11}
+\end{equation}
+\begin{equation}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s} \label{synch_freq22}
+\end{equation}
+$Y$ is the GCD of $h^l$ and $h^s \cdot \kappa$.  Substituting two synchronization frequencies into eq.~\ref{phase_diff_general}, we get the periodical phase difference $\Delta \phi$.
+\begin{equation}
+	\Delta \phi=[2\pi(\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}-\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y})t+\varphi_l-\varphi_s] \mod 2\pi \label{phase_diff_general1}
 \end{equation}
 
-In eq.~\ref{phase_diff_cir_close_int}, $h^s\lambda $ is much smaller than $h^s\kappa$. When $x$ is the integer multiple of $h^{s}\kappa$, namely $x=gh^s\kappa$ ($g$ represents a positive integer), we have the following relation from eq. ~\ref{phase_diff_cir_close_int}.
+Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger_31} into eq.~\ref{phase_diff_general1}, we get the phase difference.
 \begin{equation}
-\begin{split}
-\label{phase_diff_cir_close_int1}
-	\Delta \phi_{l\_s}=(\textcolor{red}{g}\cdot h^{l}\cdot2\pi-\textcolor{red}{g}\cdot\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi-\frac{h^{l}}{h^{s}\kappa-h^{s} \lambda}\theta_2+\theta_1) \mod 2\pi 
-\end{split}
+	\Delta \phi=[2\pi Y\frac{-{h^{s}\lambda f_{\mathit{rf}}^{s}}}{(h^{s}\kappa+h^{s}\lambda)h^{s}\kappa}t+\varphi_l-\varphi_s] \mod 2\pi \label{phase_diff_general2}
 \end{equation}
+Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical variable. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. Fig. ~\ref{cir_int} shows the periodically variable phase difference between two slightly different synchronization frequencies.
+ 
 
-Only $g$ is a variable in eq. ~\ref{phase_diff_cir_close_int1}, which is marked in red color. Eq. ~\ref{phase_diff_cir_close_int1} shows that the phase difference $\Delta \phi_{l\_s}$ occurs every $h^{s}\kappa$ zero-crossing point of the rf system of the small synchroton with the phase step growth of $\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi$. $\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi$ is much smaller than $2\pi$, because $h^{l}h^{s}\lambda$ is much smaller than $h^{s}\kappa+h^{s}\lambda$. The occurance of every $h^{s}\kappa$ positive zero-crossing point is at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. The $1^{\mathit{st}}$ term in eq. ~\ref{phase_diff_cir_close_int1} shows that the step grown phase difference is based on the rf signal with the frequency of $f_{\mathit{rf}}^{l}/h^l$ of the large synchrotron, see Fig. ~\ref{cir_noint}. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ are the synchronization rf frequencies for the frequency beating method. In this scenario, the rf frequency can be detuned on one of rf systems.
+%\begin{equation}
+%\begin{split}
+%\label{phase_diff_cir_close_int}
+%	\Delta \phi_{l\_s}=[\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda}(2\pi x-\theta_2)+\theta_1] \mod 2\pi 
+%\\=(\frac{h^{l}}{h^{s}\kappa+h^{s}\lambda} \cdot 2\pi x-\frac{h^{l}}{h^{s}\kappa+h^{s} \lambda} \cdot\theta_2+\theta_1) \mod 2\pi 
+%\end{split}
+%\end{equation}
+%
+%In eq.~\ref{phase_diff_cir_close_int}, $h^s\lambda $ is much smaller than $h^s\kappa$. When $x$ is the integer multiple of $h^{s}\kappa$, namely $x=gh^s\kappa$ ($g$ represents a positive integer), we have the following relation from eq. ~\ref{phase_diff_cir_close_int}.
+%\begin{equation}
+%\begin{split}
+%\label{phase_diff_cir_close_int1}
+%	\Delta \phi_{l\_s}=(\textcolor{red}{g}\cdot h^{l}\cdot2\pi-\textcolor{red}{g}\cdot\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi-\frac{h^{l}}{h^{s}\kappa-h^{s} \lambda}\theta_2+\theta_1) \mod 2\pi 
+%\end{split}
+%\end{equation}
+
+%Only $g$ is a variable in eq. ~\ref{phase_diff_cir_close_int1}, which is marked in red color. Eq. ~\ref{phase_diff_cir_close_int1} shows that the phase difference $\Delta \phi_{l\_s}$ occurs every $h^{s}\kappa$ zero-crossing point of the rf system of the small synchroton with the phase step growth of $\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi$. $\frac{h^{l}h^{s}\lambda}{h^{s}\kappa+h^{s}\lambda}2\pi$ is much smaller than $2\pi$, because $h^{l}h^{s}\lambda$ is much smaller than $h^{s}\kappa+h^{s}\lambda$. The occurance of every $h^{s}\kappa$ positive zero-crossing point is at the frequency of $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. The $1^{\mathit{st}}$ term in eq. ~\ref{phase_diff_cir_close_int1} shows that the step grown phase difference is based on the rf signal with the frequency of $f_{\mathit{rf}}^{l}/h^l$ of the large synchrotron, see Fig. ~\ref{cir_noint}. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^{l}$ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$ are the synchronization rf frequencies for the frequency beating method. In this scenario, the rf frequency can be detuned on one of rf systems.
 
 %phase_match.dox
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{cir_noint.jpg}
-   \caption{The phase difference between two rf systems when circumference ratio is close to an integer.}{Red rectangles represent the phase differences with constant phase step growth.}
+   \caption{The periodically variable phase difference between two slightly different synchroniztion frequencies when circumference ratio is close to an integer.}{Red rectangles represent the phase differences with constant phase step growth.}
    \label{cir_noint}
 \end{figure} 
 
-Similarly as the scenario of the integral circumference ratio, the pair of the synchroniation rf frequencies with largest frequencies are 
+Similarly as the scenario of the integral circumference ratio, the pair of the synchroniation frequencies with largest frequencies are 
 
-\begin{equation}
-f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y} \label{synch_freq11}
-\end{equation}
-\begin{equation}
-f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y} \label{synch_freq22}
-\end{equation}
 
-Y is the GCD of $h^l$ and $h^s \cdot \kappa$. In this scenario, the phase difference between two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
+In this scenario, the phase difference between two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
 \begin{equation} 
 \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
 \end{equation}
@@ -352,7 +388,7 @@ Only $g$ is a variable in eq. ~\ref{phase_diff_far_fram_int1}, which is marked i
    \label{cir_noint_far}
 \end{figure} 
 
-Similarly as the scenario of the integer circumference ratio, the pair of the synchroniation rf frequencies with largest frequencies are 
+Similarly as the scenario of the integer circumference ratio, the pair of the synchroniation frequencies with largest frequencies are 
 
 \begin{equation}
 f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}n/Y} \label{synch_freq111}
@@ -463,11 +499,7 @@ For different scenarios mentioned in Sec. ~\ref{match}, two methods available fo
 
 The rf frequency of rf system of the source or target or both synchrotrons are modulated away from their nominal value for a period of time and then modulated back so that the phase shift created by the frequency modulation could compensate for the required phase difference. During the phase shift process, particles are accelerated or decelerated.
 
-Eq.~\ref{phase1} gives the relation between the required phase shift \gls{symb:pha_shift} and the frequency modulation. 
-\begin{equation}
-\Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase1}
-\end{equation}
-The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation \gls{symb:period_phase}. The rf frequency modulation starts at \gls{symb:start_phase}. For the phase alignment, the phase of either synchrotron can be shifted backward or forward. %For the phase alignment, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented. 
+%For the phase alignment, the maximum phase shift required of one synchrotron is one bucket length of the other synchrotron, $360^\circ$. Because the phase can be shifted backward or forward, a phase shift of up to $\pm 180^\circ$ can be implemented. 
 
 After the phase shift, the bunches of the source synchrotron are phase aligned with buckets of the target synchrotron. Theoretically the synchronization window is infinitely long by the phase shift method. In fact, the beam feedback loop on the rf system is frozen or switched off before the B2B transfer, so the beam is stable for short time, e.g. \SI{10}{ms}. Hence, bunches must be transferred as soon as possible. The phase shift process must be performed slowly enough for the beam to follow. 
 
