@@ -1,4 +1,4 @@
-The phase shift must be executed slowly enough to preserve the beam emittance, which needs much longer time than the frequency beating method. Besides, many FAIR accelerator pairs are beating automatically due to the non integer ratio of the circumference between two synchrotrons. So there is a preference for FAIR to use the frequency beating method. In this chapter all FAIR use cases with the frequency beating method will be discussed in details. Based on the circumference ratio, there are three scenarios of the B2B transfer for FAIR with the frequency beating method. 
+The phase shift method must be executed slowly enough to preserve the beam emittance, which needs much longer time than the frequency beating method. Besides, many FAIR accelerator pairs are beating automatically due to the non integer ratio of the circumference between two synchrotrons. So there is a preference for FAIR to use the frequency beating method. In this chapter all FAIR use cases with the frequency beating method will be discussed in details. Based on the circumference ratio, there are three scenarios of the B2B transfer for FAIR with the frequency beating method. 
 \begin{itemize}
 	\item The \gls{glos:cir_ratio} between the large and small synchrotron is an integer.
 		\begin{itemize}
@@ -45,12 +45,12 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
      	\multirow{2}*{\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to an integer\\ ($|\lambda|<=0.005$)}}&2-0.003& &\tabincell{c}{h=4 B2B transfer\\ from the SIS18 to the ESR\\ \\} \\ \cline{2-4}
  								  	  &2-0.003&&\tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR\\ \\}\\ \cline{1-4}				
 
-  	\multirow{4}*{\tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=m/n+ \lambda$\\far away from an integer\\ ($|\lambda|<=0.05$)}}&&4.9-0.0004&\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR} \\ \cline{2-4}
-&&4.4-0.0046& \tabincell{c}{RIB B2B transfer\\ from the SIS100 to the CR}\\ \cline{2-4}
+  	\multirow{4}*{\tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=m/n+ \lambda$\\far away from an integer\\ ($|\lambda|<=0.05$)}}&not applicable&4.9-0.0004&\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR} \\ \cline{2-4}
+&not applicable&4.4-0.0046& \tabincell{c}{RIB B2B transfer\\ from the SIS100 to the CR}\\ \cline{2-4}
 
 &2.6-0.003& &\tabincell{c}{B2B transfer \\from the CR to the ESR }\\ \cline{2-4}
 
-&&1.8+0.048&\tabincell{c}{B2B transfer \\from the SIS18 to the ESR \\via FRS} \\ \hline
+&not applicable&1.8+0.048&\tabincell{c}{B2B transfer \\from the SIS18 to the ESR \\via FRS} \\ \hline
 
     \end{tabular}
 \end{center}
@@ -129,7 +129,7 @@ $Y$ is the \gls{GCD} of $h^l$ and $h^s \cdot \kappa$. More details, please see S
 %\frac{f_{\mathit{rf}}^{l}}{h^l/Y}= \frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y} 
 %\end{equation}
 %Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$,
-$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between these two synchroniation rf frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because they implement their species dependent rf frequency modulation profiles for a same required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. For the frequency beating method, two slightly different frequencies is based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning one of them. Generally the rf system of the source synchrontron is preferred to be detuned, because there exists circulating bunches in the target synchrotron. 
+$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between these two synchroniation rf frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. For the frequency beating method, two slightly different frequencies is based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning one of them. Generally the rf system of the source synchrontron is preferred to be detuned, because the detune process can be achieved at the end of the acceleration ramp. 
 
 %If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s \cdot \kappa)/Y]$. According to the relation between $h^l$ and $h^s \cdot \kappa$, we have the following two cases.
 %\begin{itemize}
@@ -494,7 +494,7 @@ Two synchronization rf frequencies are beating automatically. When the large syn
 \end{center}
 \end{table}
 
-When the small synchrotron is the target, the frequency of the bucket label signal is dependent on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio close to integer} shows the formulas when the small synchrotron is the target.
+When the small synchrotron is the target, the frequency of the bucket label signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio close to integer} shows the formulas when the small synchrotron is the target.
 
 
 \begin{table}[!htb]
@@ -516,7 +516,7 @@ When the small synchrotron is the target, the frequency of the bucket label sign
 \end{center}
 \end{table}
 
-In fact, two slightly different frequencies could be a fraction (between $1/Y$ and $1$) times of $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$. When we use one of two slightly different frequencies as the bucket label signal, the bucket label frequency is proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ and the beating frequency to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the fraction and the length of the synchronization window is inversely proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the reciprocal for the fraction. The bunch to bucket center mismatch is proportional to the synchronization window and the beating frequency, whose coefficient product is $1$, so the fraction does not affet the mismatch. In other words, when two rf frequency are beating slower/faster, there will be a longer/shorter synchronization window. The ratio between the length of the synchronization window and the beating period is a constant for a specified mismatch. When we use one of two revolution frequencies as the bucket label signal, the length of the synchronization window is constant and the beating frequency is proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the fraction. The bunch to bucket center mismatch is only affected by the beating frequency with the proportion of the fraction. In other words, the slower the beating between two rf frequencies, namely the smaller the fraction, the smaller the mismath within the synchronization window.
+In fact, two slightly different frequencies could be a fraction (between $1/Y$ and $1$) times of $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$. When we use one of two slightly different frequencies as the bucket label signal, the bucket label frequency is proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ and the beating frequency to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the fraction and the length of the synchronization window is inversely proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the reciprocal for the fraction. The bunch to bucket center mismatch is proportional to the synchronization window and the beating frequency, whose coefficient product is $1$, so the fraction does not affet the mismatch. In other words, when two rf frequency are beating slower/faster, there will be a longer/shorter synchronization window. The ratio between the length of the synchronization window and the beating period is a constant for a specified mismatch. When we use one of two revolution frequencies as the bucket label signal, the length of the synchronization window is constant and the beating frequency is proportional to $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}-\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ by the coefficient of the fraction. The bunch to bucket center mismatch is only affected by the beating frequency with the proportion of the fraction. In other words, the slower the beating between two rf frequencies, namely the smaller the fraction, the smaller the mismatch within the synchronization window.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Use case of h=4 B2B transfer from the SIS18 to the ESR} 
@@ -626,7 +626,7 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}m/Y}=\frac{Y}{m}f_{\mathit{
 
 $Y$ is the GCD of $h^l\cdot n$ and $h^s \cdot m$.
 
-Two synchronization rf frequencies are beating automatically. When the large synchrotron is the target, the frequency of the bucket label signal is dependent on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}>=f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}>=1$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas when the large synchrotron is the target.
+Two synchronization rf frequencies are beating automatically. When the large synchrotron is the target, the frequency of the bucket label signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}>=f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}>=1$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas when the large synchrotron is the target.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -646,7 +646,7 @@ Two synchronization rf frequencies are beating automatically. When the large syn
     \end{tabular}
 \end{center}
 \end{table}
-When the small synchrotron is the target, the frequency of the bucket label signal is dependent on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$, namely $\frac{Y}{m}>=1$ the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio far from integer small} shows the formulas when the small synchrotron is the target.
+When the small synchrotron is the target, the frequency of the bucket label signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$, namely $\frac{Y}{m}>=1$ the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket label signal is $f_{\mathit{rev}}^{s}$. Or the bucket label signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio far from integer small} shows the formulas when the small synchrotron is the target.
 
 
 \begin{table}[!htb]
