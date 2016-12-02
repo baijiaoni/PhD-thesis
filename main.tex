@@ -40,9 +40,11 @@
 \setacronymstyle{long-short}
 
 %Ein eigenes Symbolverzeichnis erstellen
-\newglossary[slg]{symbolslist}{syi}{syg}{List of Symbols}
+\newglossary[slg]{abbreslist}{syi}{syg}{Abbreviations}
+\newglossary[slg]{B2Blist}{syi}{syg}{Abbreviations related to FAIR B2B transfer system }
+\newglossary[slg]{symbolslist}{syi}{syg}{Parameters related to synchrotron and beam}
+\newglossary[slg]{B2B_sym_slist}{syi}{syg}{Parameters related to FAIR B2B transfer system}
 
-\newglossary[slg]{abbreslist}{syi}{syg}{List of Abbreviations}
 %Befehle für Symbole
 \newglossaryentry{symb:C_param}{
 name=$C^{X}$,
@@ -80,6 +82,7 @@ name=$f_{\mathit{rf}}$,
 description={Rf frequency},
 sort=symbolphi, type=symbolslist
 }
+
 \newglossaryentry{symb:rev_freq1}{
 name=$f_{\mathit{rev}}$,
 description={Revolution frequency},
@@ -92,47 +95,23 @@ sort=symbolphi, type=symbolslist
 }
 \newglossaryentry{symb:rev_freq}{
 name=$f_{\mathit{rev}}^{X} $,
-description={oder $f_{h=1}^{X}$. Revolution frequency of a specific synchrotron}, 
+description={or $f_{h=1}^{X}$. Revolution frequency of a specific synchrotron}, 
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:cavity_freq}{
 name=$f_{\mathit{rf}}^{X}$,
-description={oder $f_{h=cavity\_harmonic}^{X}$. Cavity frequency of a specific synchrotron},
+description={or $f_{h=cavity\_harmonic}^{X}$. Cavity rf frequency of a specific synchrotron},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:harmonic_param}{
 name=$h^X$,
-description={Harmonic number of a specific synchrotron. $X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
+description={Harmonic number of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:integer}{
-name=$\kappa$,
-description={Integer, $m$ and $n$ are also integer},
-sort=symbolpi, type=symbolslist
-}
-\newglossaryentry{symb:decimal}{
-name=$\lambda$,
-description={Decimal},
-sort=symbolpi, type=symbolslist
-}
-%\newglossaryentry{symb:18h1}{
-%name=$f_{h=1}^{SIS18}$,
-%description={RF cavity revolution frequency of SIS18},
-%sort=symbolpi, type=symbolslist
-%}
-%\newglossaryentry{symb:18h2}{
-%name=$f_{h=2}^{SIS18}$,
-%description={RF cavity driving frequency of SIS18},
-%sort=symbolpi, type=symbolslist
-%}
-\newglossaryentry{symb:GCD}{
-name=$Y$,
-description={Greatest common divisor},
-sort=symbolpi, type=symbolslist
-}
+
 \newglossaryentry{symb:period_rf}{
 name=$T_{rf}^{X}$,
-description={Period of the cavity frequency of machine X},
+description={Period of the cavity rf frequency of machine X},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:period_rev}{
@@ -140,20 +119,16 @@ name=$T_{rev}^{X}$,
 description={Period of the revolution period of machine X},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:slope}{
-name=$k$,
-description={Slope of the phase advance},
-sort=symbolpi, type=symbolslist
-}
+
 
 \newglossaryentry{symb:period_18h1}{
 name=$T_{h=1}^{SIS18}$,
-description={Period of the rf cavity revolution frequency of SIS18},
+description={Revolution period of SIS18},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:period_18h2}{
 name=$T_{h=2}^{SIS18}$,
-description={Period of the rf cavity driving frequency of SIS18},
+description={Rf period of the h=2 cavity rf frequency of SIS18},
 sort=symbolpi, type=symbolslist
 }
 %\newglossaryentry{symb:100h1}{
@@ -168,7 +143,7 @@ sort=symbolpi, type=symbolslist
 %}
 \newglossaryentry{symb:period_100h1}{
 name=$T_{h=1}^{SIS100}$,
-description={Period of rf cavity revolution frequency of SIS100},
+description={Revolution period of SIS100},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:rest_mass}{
@@ -178,45 +153,23 @@ sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:period_100h10}{
 name=$T_{h=10}^{SIS100}$,
-description={Period of the rf cavity driving frequency of SIS100},
+description={Rf period of the h=10 cavity rf frequency of SIS100},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:pha_shift}{
-name=$\Delta \phi$,
-description={Required phase shift for the phase shift method, bunch-to-bucket center mismatch for the frequency beating method},
-sort=symbolpi, type=symbolslist
-}
-\newglossaryentry{symb:freq_modulation}{
-name=$\Delta f_{rf}$,
-description={Rf frequency modulation for the phase shift method},
-sort=symbolpi, type=symbolslist
-}
-\newglossaryentry{symb:period_phase}{
-name=$T$,
-description={Period of rf frequency modulation for the phase shift method },
-sort=symbolpi, type=symbolslist
-}
-\newglossaryentry{symb:start_phase}{
-name=$t_0$,
-description={Start time of the rf frequency modulation for the phase shift method},
-sort=symbolpi, type=symbolslist
-}
+
+
+%\newglossaryentry{symb:start_phase}{
+%name=$t_0$,
+%description={Start time of the rf frequency modulation for the phase shift method},
+%sort=symbolpi, type=symbolslist
+%}
 
 \newglossaryentry{symb:syn_phase0}{
 name=$\Delta \phi_{\mathit{s\_0}}$,
 description={synchronous phase with no frequency modulation},
 sort=symbolphi, type=symbolslist
 }
-\newglossaryentry{symb:base}{
-name=$a$,
-description={Base of a triangle},
-sort=symbolphi, type=symbolslist
-}
-\newglossaryentry{symb:height}{
-name=$b$,
-description={Height of a triangle},
-sort=symbolphi, type=symbolslist
-}
+
 \newglossaryentry{symb:bucket_size}{
 name=$\alpha_b$,
 description={Bucket area factor},
@@ -232,16 +185,7 @@ name=$\omega_{\mathit{syn\_0}}$,
 description={Angular synchrotron frequency with no frequency modulation},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:diff_freq}{
-name=$f_1$ and $f_2$,
-description={Two slightly different frequencies},
-sort=symbollambda, type=symbolslist
-} 
-\newglossaryentry{symb:inital_phase}{
-name=$\Delta \varphi$,
-description={Maximum initial phase difference between two slightly different frequencies},
-sort=symbollambda, type=symbolslist
-} 
+
 \newglossaryentry{symb:mom_factor}{
 name=$\alpha_p$,
 description={Momentum compaction factor},
@@ -298,14 +242,6 @@ name=$\Delta Q_{\mathit{x/y}}$,
 description={Horizontal/vertical tune shift},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:radius}{
-name=$\frac{\Delta{R}}{R}$,
-description={Ratio between the excursive radius and the designed radius},
-sort=symbollambda, type=symbolslist
-}
-
-
-
 
 \newglossaryentry{symb:adiabaticity}{
 name=$\varepsilon$,
@@ -319,17 +255,12 @@ name=$\omega_s(t)$,
 description={Small-amplitude synchrotron frequency},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:freq}{
-name=$\frac{\Delta{f}}{f}$,
-description={Ratio between the modulated frequency and the normalized frequency},
-sort=symbollambda, type=symbolslist
-}
 
-\newglossaryentry{symb:voltage1}{
-name=V(t),
-description={rf accelerating voltage},
-sort=symbollambda, type=symbolslist
-}
+%\newglossaryentry{symb:voltage1}{
+%name=V(t),
+%description={rf accelerating voltage},
+%sort=symbollambda, type=symbolslist
+%}
 \newglossaryentry{symb:mgenet}{
 name=$B$,
 description={Magnetic field},
@@ -345,6 +276,7 @@ name=$\gamma$,
 description={Relativistic factor, which measures the total particle energy, $E$, in units of the particle rest energy, $E_0$},
 sort=symbollambda, type=symbolslist
 }
+
 \newglossaryentry{symb:charge}{
 name=$q$,
 description={Charge of a particle},
@@ -365,119 +297,7 @@ name=$E_0$,
 description={Particle rest energy},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:best_align}{
-name=$t_{best}$,
-description={Best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:probable_aligh}{
-name=$\delta t_{best}$,
-description={Uncertainty of the best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
-sort=symbollambda, type=symbolslist
-}
 
-\newglossaryentry{symb:h1phase100}{
-name=$\psi_{h=1}^{SIS100}$,
-description={Predicted SIS100 h=1 rf phase at $t_{\psi}$},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:h15phase18}{
-name=$\psi_{h=1/5}^{SIS18}$,
-description={Predicted SIS18 h=1/5 rf phase at $t_{\psi}$ },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:un_h1phase100}{
-name=$\delta \psi_{h=1}^{SIS100}$,
-description={Uncertainty of the predicted SIS100 rf phase at h=1 },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:un_h15phase18}{
-name=$\delta \psi_{h=1/5}^{SIS18}$,
-description={Uncertainty of the predicted SIS18 rf phase at h=1/5 },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:h10phase100}{
-name=$\phi_{h=10}^{SIS100}$,
-description={Rf phase at the cavity frequency h=10 of SIS100 at $t_{\psi}$},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:h2phase18}{
-name=$\phi_{h=2}^{SIS18}$,
-description={Rf phase at the cavity frequency h=2 of SIS18 at $t_{\psi}$  },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:un_h10phase100}{
-name=$\delta \phi_{h=10}^{SIS100}$,
-description={Uncertainty of rf phase at the cavity frequency h=10 of SIS100 },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:un_h2phase18}{
-name=$\delta \phi_{h=2}^{SIS18}$,
-description={Uncertainty of rf phase at the cavity frequency h=2 of SIS18  },
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:prediction_time}{
-name=$t_{\psi}$,
-description={Time of the predicted phase},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:uncertainty_time}{
-name=$\delta t_{\psi}$,
-description={Uncertainty of the predicted phase advance at time domain},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:upper_Ttime}{
-name=$T_{phase\_ shift}^{upper\_ bound}$,
-description={Upper bound time of the phase shift process},
-sort=symbollambda, type=symbolslist
-}
-
-\newglossaryentry{symb:un_upper_time_phase_shift}{
-name=$\delta T_{phase\_ shift}^{upper\_ bound}$,
-description={Uncertainty of the upper bound time of the phase shift process},
-sort=symbollambda, type=symbolslist
-}
-
-\newglossaryentry{symb:phase_just_frequency_beating}{
-name=$\Delta \phi_{adjustment}$,
-description={Phase adjustment of the frequency beating method, calculated by B2B source SCU},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_s_alignment}{
-name=$\psi_{s\_alignment}$,
-description={Rf phase of the cavity driving frequency at the start of the probable rang of alignment},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:win_correction}{
-name=$\Delta t_{win \_correct}$,
-description={Time correction for the start of the probable range of alignment [$t_{best}$-$\delta t_{best}$,$t_{best}$+$\delta t_{best}$] to the best estimate of the start of the synchronization window},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:win_start}{
-name=$WIN_{start}$,
-description={Start of the synchronization window, calculated by B2B source SCU},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:G}{
-name=G,
-description={Bunch gap},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:L}{
-name=L,
-description={Distance from the leftmost to the rightmost SIS18 extraction/SIS100 injection kicker unit},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:d}{
-name=d,
-description={Distance between two extraction kicker crates of SIS18},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:D}{
-name=D,
-description={Sum distance of d and the 2nd crate},
-sort=symbollambda, type=symbolslist
-}
 \newglossaryentry{symb:c}{
 name=$c$,
 description={Speed of the light},
@@ -493,117 +313,9 @@ name=$\upsilon(t)$,
 description={Velocity of particle},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:t_b2b}{
-name=$t_{B2B}$,
-description={Start time of the B2B transfer},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:d_t}{
-name=$\Delta t$,
-description={Beating time for the synchronization},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_shift_actual}{
-name=$f_{actual}$ ,
-description={Actual rf freqnecy modulation profile, calculated by PSM},
-sort=symbollambda, type=symbolslist
-} 
-\newglossaryentry{symb:phase_shift_normalized}{
-name=$f_{normalized}$ ,
-description={Normalized rf frequency modulation profile, preloaded from SM},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:ext_pre}{
-name=$t_{ext}$ ,
-description={Extraction kicker delay},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:inj_pre}{
-name=$t_{inj}$ ,
-description={Injection kicker delay},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:diff_sync}{
-name=$t_{\mathit{diff\_sync}}$ ,
-description={Time difference between rf systems of two synchrotrons after the synchronization},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:two_TOF}{
-name=$t_{\mathit{TOF}}$,
-description={Time-of-Flight between two synchrotrons},
-sort=symbollambda, type=symbolslist
-}
 
-\newglossaryentry{symb:bucket_pattern}{
-name=$t_{\mathit{bucket}}$ ,
-description={Time delay for a specific bucket pattern},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:tsrc}{
-name=$t_{v\_ext}$,
-description={Time corresponds to the distance between the virtual rf cavity driving signals and the extraction position of the source synchrotron},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:ttrg}{
-name=$t_{v\_inj}$,
-description={Time corresponds to the distance between the virtual rf cavity driving signals and the injection position of the target synchrotron},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:temg}{
-name=$t_{v\_emg}$,
-description={Time corresponds to the distance between the virtual rf cavity and the emergency extraction position of SIS100},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:Demg}{
-name=$t_{emg}$,
-description={Extraction kicker delay of SIS100},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:mismatch}{
-name=$\Delta \theta$,
-description={Mismatch between the bunch and bucket center},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:syn_win_length}{
-name=$T_{\mathit{sync\_win}}$,
-description={Length of the synchronization window},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_diff_s}{
-name=$\Delta \varphi1$,
-description={Phase difference between the Reference RF Signal and the Synchronization Reference Signal of the source synchrotron, measured by PAM module},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_diff_t}{
-name=$\Delta \varphi2$,
-description={Phase difference between the Reference RF Signal and the Synchronization Reference Signal of the target synchrotron, measured by PAM module},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_diff_s_T0}{
-name=$\psi1$,
-description={Predicted phase difference between the Reference RF Signal and the Synchronization Reference Signal of the source synchrotron},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:phase_diff_t_T0}{
-name=$\psi2$,
-description={Predicted phase difference between the Reference RF Signal and the Synchronization Reference Signal of the target synchrotron},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:time_phase_diff_s_T0}{
-name=$t_{\mathit{\psi1}}$,
-description={Time corresponding to the extrapolated phase $\psi1$},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:time_phase_diff_t_T0}{
-name=$t_{\mathit{\psi2}}$,
-description={Time corresponding to the extrapolated phase $\psi2$},
-sort=symbollambda, type=symbolslist
-}
-\newglossaryentry{symb:beating_freq}{
-name=$\Delta f$,
-description={Beating frequency},
-sort=symbollambda, type=symbolslist
-}
+
+
 \newglossaryentry{symb:R}{
 name=$R$,
 description={Orbit radius},
@@ -629,11 +341,7 @@ name=$\eta$,
 description={Phase-slip factor},
 sort=symbollambda, type=symbolslist
 }
-\newglossaryentry{symb:e}{
-name=e,
-description={Charge of the particle},
-sort=symbollambda, type=symbolslist
-}
+
 \newglossaryentry{symb:mom_comp}{
 name=$\alpha_p$,
 description={Momentum compaction factor},
@@ -645,6 +353,289 @@ name=$\rho$,
 description={Bending radius of a particle immersed in a magnetic field B},
 sort=symbollambda, type=symbolslist
 }
+% Symbol for B2B transfer system
+%\newglossaryentry{symb:integer}{
+%name=$\kappa$,
+%description={Integer, $m$ and $n$ are also integer},
+%sort=symbolpi, type=B2B_sym_slist
+%}
+%\newglossaryentry{symb:decimal}{
+%name=$\lambda$,
+%description={Decimal},
+%sort=symbolpi, type=B2B_sym_slist
+%}
+%\newglossaryentry{symb:18h1}{
+%name=$f_{h=1}^{SIS18}$,
+%description={RF cavity revolution frequency of SIS18},
+%sort=symbolpi, type=B2B_sym_slist
+%}
+%\newglossaryentry{symb:18h2}{
+%name=$f_{h=2}^{SIS18}$,
+%description={RF cavity driving frequency of SIS18},
+%sort=symbolpi, type=B2B_sym_slist
+%}
+\newglossaryentry{symb:GCD}{
+name=$Y$,
+description={Greatest common divisor},
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:pha_shift}{
+name=$\Delta \phi$,
+description={Required phase shift for the phase shift method. Bunch-to-bucket injection center mismatch for the frequency beating method},
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:freq_modulation}{
+name=$\Delta f_{rf}$,
+description={Rf frequency modulation for the phase shift method},
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:period_phase}{
+name=$T$,
+description={Period of rf frequency modulation for the phase shift method },
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:inital_phase}{
+name=$\Delta \varphi$,
+description={Phase step growth because of the frequency beating},
+sort=symbollambda, type=B2B_sym_slist
+} 
+\newglossaryentry{symb:best_align}{
+name=$t_{best}$,
+description={Best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:probable_aligh}{
+name=$\delta t_{best}$,
+description={Uncertainty of the best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:slope}{
+name=$k^X$,
+description={Slope of the phase advance between the Synchronization Reference Signal and a dedicated Reference RF Signal of the synchrotron X},
+sort=symbolpi, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:h1phase100}{
+name=$\psi_{h=1}^{SIS100}$,
+description={Predicted SIS100 h=1 rf phase at $t_{\psi}$},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:h15phase18}{
+name=$\psi_{h=1/5}^{SIS18}$,
+description={Predicted SIS18 h=1/5 rf phase at $t_{\psi}$ },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:un_h1phase100}{
+name=$\delta \psi_{h=1}^{SIS100}$,
+description={Uncertainty of the predicted SIS100 rf phase at h=1 },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:un_h15phase18}{
+name=$\delta \psi_{h=1/5}^{SIS18}$,
+description={Uncertainty of the predicted SIS18 rf phase at h=1/5 },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:h10phase100}{
+name=$\phi_{h=10}^{SIS100}$,
+description={Phase at the h=10 cavity rf frequency of SIS100 at $t_{\psi}$},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:h2phase18}{
+name=$\phi_{h=2}^{SIS18}$,
+description={Phase at the h=2 cavity rf frequency of SIS18 at $t_{\psi}$  },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:un_h10phase100}{
+name=$\delta \phi_{h=10}^{SIS100}$,
+description={Uncertainty of rf phase at the h=10 cavity rf frequency of SIS100 },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:un_h2phase18}{
+name=$\delta \phi_{h=2}^{SIS18}$,
+description={Uncertainty of rf phase at the h=2 cavity rf frequency of SIS18  },
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:prediction_time}{
+name=$t_{\psi}$,
+description={Time of the predicted phase},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:uncertainty_time}{
+name=$\delta t_{\psi}$,
+description={Uncertainty of the predicted phase advance at time domain},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:upper_Ttime}{
+name=$T_{phase\_ shift}^{upper\_ bound}$,
+description={Upper bound time of the phase shift process},
+sort=symbollambda, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:un_upper_time_phase_shift}{
+name=$\delta T_{phase\_ shift}^{upper\_ bound}$,
+description={Uncertainty of the upper bound time of the phase shift process},
+sort=symbollambda, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:phase_just_frequency_beating}{
+name=$\Delta \phi_{adjustment}$,
+description={Phase adjustment of the frequency beating method, calculated by B2B source SCU},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:phase_s_alignment}{
+name=$\psi_{s\_alignment}$,
+description={Rf phase of the cavity driving frequency at the start of the probable rang of alignment},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:win_correction}{
+name=$\Delta t_{win \_correct}$,
+description={Time correction for the start of the probable range of alignment [$t_{best}$-$\delta t_{best}$,$t_{best}$+$\delta t_{best}$] to the best estimate of the start of the synchronization window},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:win_start}{
+name=$WIN_{start}$,
+description={Start of the synchronization window, calculated by B2B source SCU},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:G}{
+name=$G$,
+description={Bunch gap},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:L}{
+name=$L$,
+description={Distance from the leftmost to the rightmost SIS18 extraction/SIS100 injection kicker unit},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:d}{
+name=$d$,
+description={Distance between two extraction kicker crates of SIS18},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:D}{
+name=$D$,
+description={Sum distance of d and the 2nd crate},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:t_b2b}{
+name=$t_{B2B}$,
+description={Start time of the B2B transfer},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:d_t}{
+name=$\Delta t$,
+description={Beating time for the synchronization},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:phase_shift_actual}{
+name=$f_{actual}$ ,
+description={Actual rf freqnecy modulation profile, calculated by PSM},
+sort=symbollambda, type=B2B_sym_slist
+} 
+\newglossaryentry{symb:phase_shift_normalized}{
+name=$f_{normalized}$ ,
+description={Normalized rf frequency modulation profile, preloaded from SM},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:ext_pre}{
+name=$t_{ext}$ ,
+description={Extraction kicker delay},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:inj_pre}{
+name=$t_{inj}$ ,
+description={Injection kicker delay},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:diff_sync}{
+name=$t_{\mathit{diff\_sync}}$ ,
+description={Time difference between rf systems of two synchrotrons after the synchronization},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:two_TOF}{
+name=$t_{\mathit{TOF}}$,
+description={Time-of-Flight between two synchrotrons},
+sort=symbollambda, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:bucket_pattern}{
+name=$t_{\mathit{bucket}}$ ,
+description={Time delay for a specific bucket pattern},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:tsrc}{
+name=$t_{v\_ext}$,
+description={Time corresponding to the distance between the virtual rf cavity and the extraction position of the source synchrotron},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:ttrg}{
+name=$t_{v\_inj}$,
+description={Time corresponding to the distance between the virtual rf cavity and the injection position of the target synchrotron},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:temg}{
+name=$t_{v\_emg}$,
+description={Time corresponding to the distance between the virtual rf cavity and the emergency extraction position of SIS100},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:Demg}{
+name=$t_{emg}$,
+description={Extraction kicker delay of SIS100 for the emergency kick},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:mismatch}{
+name=$\Delta \theta$,
+description={Mismatch between the bunch and bucket center},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:syn_win_length}{
+name=$T_{\mathit{sync\_win}}$,
+description={Length of the synchronization window},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:phase_diff}{
+name=$\Delta \varphi^X$,
+description={Measured phase advance between the Reference RF Signal and the Synchronization Reference Signal of the synchrotron X by PAM module},
+sort=symbollambda, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:phase_diff_T0}{
+name=$\psi^X$,
+description={Extrapolated phase advance between the Reference RF Signal and the Synchronization Reference Signal of the synchrotron X by PAP module},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:synchronization_freq}{
+name=$f_\mathit{syn}^{X}$,
+description={Synchronization frequency},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:phase_diff_t_T0}{
+name=$\psi2$,
+description={Extrapolated phase advance between the Reference RF Signal and the Synchronization Reference Signal of the target synchrotron by PAP module},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:time_phase_diff_T0}{
+name=$t_{\mathit{\psi^X}}$,
+description={Timestamp corresponding to the extrapolated phase advance $\psi^X$},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:initial_phase advance}{
+name=$\psi_0^X$,
+description={Initial phase advance in a linear relationship between the phase advance and time},
+sort=symbollambda, type=B2B_sym_slist
+}
+
+\newglossaryentry{symb:beating_freq}{
+name=$\Delta f$,
+description={Beating frequency},
+sort=symbollambda, type=B2B_sym_slist
+}
+\newglossaryentry{symb:syn_ref}{
+name=$f_{\mathit{syn}}^{\mathit{REF}}$,
+description={Frequency of the Synchronization Reference Signal},
+sort=symbolphi, type=B2B_sym_slist
+}
+
 %Befehle für Abbreviation
 \newglossaryentry{GCD}
 {
@@ -901,28 +892,28 @@ description={Central Processing Unit},type=abbreslist
 }
 \newglossaryentry{PAM}{
 name={PAM},
-description={Phase Advance Measurement},type=abbreslist
+description={Phase Advance Measurement module},type=abbreslist
 }
 \newglossaryentry{PAP}{
 name={PAP},
-description={Phase Advance Prediction},type=abbreslist
+description={Phase Advance Prediction module},type=B2Blist
 }
 
 \newglossaryentry{PSM}{
 name={PSM},
-description={Phase Shift Module},type=abbreslist
+description={Phase Shift Module},type=B2Blist
 }
 \newglossaryentry{PCM}{
 name={PCM},
-description={Phase Correction Module},type=abbreslist
+description={Phase Correction Module},type=B2Blist
 }
 \newglossaryentry{SR}{
 name={SR},
-description={Signal Reproduction},type=abbreslist
+description={Signal Reproduction module},type=B2Blist
 }
 \newglossaryentry{TD}{
 name={TD},
-description={Trigger Decision},type=abbreslist
+description={Trigger Decision module},type=B2Blist
 }
 \newglossaryentry{FID}{
 name={FID},
@@ -1000,20 +991,20 @@ name={injection kicker},
 description={Merges one beam into a circulating beam in a synchrotron }
 }
 \newglossaryentry{glos:rise_time}{
-name={rise time},
+name={kicker rise time},
 description={A period of time for kicker magnet to reach a stable magnetic field}
 }
 \newglossaryentry{glos:flat-top}{
-name={flat-top},
+name={kicker flat-top},
 description={A period of time of kicker magnet with a stable magnetic field}
 }
 \newglossaryentry{glos:fall_time}{
-name={fall time},
+name={kicker fall time},
 description={A period of time of kicker magnet to reduce to zero magnetic field}
 }
 \newglossaryentry{glos:stationary_bucket}{
 name={stationary rf bucket},
-description={Or rf bucket. Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together without energy gain/loss per turn}
+description={Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together without energy gain/loss per turn (short: bucket)}
 }
 \newglossaryentry{glos:adia}{
 name={adiabaticity},
@@ -1099,31 +1090,41 @@ description={Bunches are transferred into correct buckets}
 name={Synchronization Reference Signal},
 description={Shared synchronous reference signal at each supply room (same frequency and in phase)}
 }
+\newglossaryentry{glos:Syn_fre}{
+name={synchronization frequencies},
+description={An integral multiple of the derived rf frequency, which is the division of the revolution frequency. It is used for the phase alignment of two rf systems}
+}
+
 \newglossaryentry{glos:accuracy}{
-name={accuracy},
-description={Closeness of agreement between the observed start and the best estimate of the start of the synchronization window, which is the sum of the precision and trueness}
+name={accuracy of the start of the synchronization window},
+description={Time closeness of agreement between the observed and the best estimate start of the synchronization window, which is the sum of the precision and trueness}
 }
 
 \newglossaryentry{glos:precision}{
-name={precision},
-description={Closeness of agreement between the actual start of the synchronization window of different SCUs}
+name={precision of the start of the synchronization window},
+description={Time closeness of agreement between the actual start of the synchronization window of different timing notes}
+}
+\newglossaryentry{glos:bucket_label}{
+name={bucket label signal},
+description={Time indication of a dedicated bucket passing on the virtual rf cavity of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection.}
 }
 
+
 \newglossaryentry{glos:trueness}{
-name={trueness},
-description={Closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window}
+name={trueness of the start of the synchronization window},
+description={Time closeness of agreement between the average actual start of the synchronization window of different timing notes and the best estimate start of the synchronization window}
 }
 \newglossaryentry{glos:frame_loss_rate}{
 name={frame loss rate},
 description={The ratio of the number of the lost Ethernet frames to the number of the theoretic received frames of a tested port}
 }
 \newglossaryentry{glos:latency}{
-name={latency},
-description={The time interval between the time of Xena port receiving frame and the time of another Xena port sending frame}
+name={frame transfer latency},
+description={The time interval between the frame reception and sending}
 }
 \newglossaryentry{glos:jitter}{
-name={jitter},
-description={The absolute value of the difference between the latency of two consecutive received frames belonging to the same stream from one Xena port to another Xena port}
+name={frame transfer jitter},
+description={The time deviation between the transfer latencies of two consecutive frames}
 }
 
 \newglossaryentry{glos:broadcast}{
@@ -1136,20 +1137,21 @@ description={The frame is intended to be received and processed by a specified t
 }
 \newglossaryentry{glos:trigger_scu}{
 name={Trigger SCU},
-description={Production of the trigger signal for kicker electronics}
+description={Production of the trigger signal for kicker electronics},type=B2Blist
 }
 
 \newglossaryentry{glos:B2B_s_SCU}{
 name={B2B source SCU},
-description={Works as B2B transfer master}
+description={Works as the B2B transfer master},type=B2Blist
 }
+
 \newglossaryentry{glos:B2B_master}{
 name={B2B transfer master},
-description={Responsible for the data collection of two synchrotrons, data calculation, data redistribution and B2B transfer status check}
+description={Responsible for the data collection of two synchrotrons, the data calculation, the data redistribution and the B2B transfer status check},type=B2Blist
 }
 \newglossaryentry{glos:B2B_t_SCU}{
 name={B2B target SCU},
-description={Collects the predicted phase of the target synchrotron and transfers it to the source synchrotron}
+description={Collects the predicted phase of the target synchrotron and transfers it to the source synchrotron},type=B2Blist
 }
 \newglossaryentry{glos:machine_cycle}{
 name={machine cycle},
@@ -1278,8 +1280,8 @@ description={Range within which the fine alignment lies because of the propagati
 	\normalsize
 	% referent
 	\begin{align*}
-		 \text{Referent: }\:  &\text{Prof. Dr. U. Ratzinger}\\
-		 \text{Korreferent: }\: &\text{Prof. Dr. O. Kester}\\
+		 \text{Referent: }\:  &\text{Prof. Dr. }\\
+		 \text{Korreferent: }\: &\text{Prof. Dr.}\\
 		 \text{Tag der Einreichung: }\: &\text{Date. Month Year}\\
 		 \text{Tag der m"undlichen Pr"ufung: }\: &\text{Date. Month Year} \\
 \end{align*}
@@ -1327,9 +1329,10 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 
 %Abbreviation ausgeben
 \printnoidxglossary[type=abbreslist,style=long]
- 
-%Symbole ausgeben
+\printnoidxglossary[type=B2Blist,style=long]
+%Symbole ausgeben 
 \printnoidxglossary[type=symbolslist,style=long]
+\printnoidxglossary[type=B2B_sym_slist,style=long]
 
 %\newacronym{GMT}{General Machine Timing}
 %%\newacronym{B2B}{Bunch to Bucket}
@@ -1396,12 +1399,14 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\chapter{References}
 %\input{chapters/References}
 \appendix
-\chapter{B2B timing frames}
+\chapter{B2B transfer related timing frames}
 \input{chapters/appendixA}
-\chapter{Timing frames transfer for the B2B transfer}
+\chapter{Transfer of timing frames for the B2B transfer system}
 \input{chapters/appendixC}
-\chapter{Parameters of B2B transfer for FAIR accelerator pairs}
+\chapter{Parameters of the B2B transfer for FAIR use cases}
 \input{chapters/appendixB}
+\chapter{Parameters of the B2B transfer system from Settings Management}
+\input{chapters/appendixD}
 
 \addcontentsline{toc}{chapter}{Bibliography}
 

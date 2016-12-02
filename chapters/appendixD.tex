@@ -1,0 +1,29 @@
+\label{parameter_SM}
+\begin{landscape} 
+\begin{table}[!htb]
+
+%\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{Parameters for the B2B transfer provided by SM}
+\label{requirement}
+\begin{center}
+    \begin{tabular}{ | c | c | c |}
+    \hline
+\rowcolor[gray]{0.5}
+     	Parameter &Destination & Usage  \\ \hline
+$f_{\mathit{syn}}^X $							&	B2B source SCU	&	Start of synchronization window calculation\\ \hline
+$f_{\mathit{syn}}^\mathit{REF} 	$			&	B2B source SCU	&	Phase advance extrapolation for PCM	\\ \hline
+%f_{\mathit{rev}}^\mathit{X} 				&	B2B source SCU 	&	&6	&B2B source SCU&DM, source and target Trigger SCUs	\\ \hline
+\tabincell{c}{Frequency of\\ bucket label signal} 			&	\tabincell{c}{B2B source SCU$\Rightarrow$SR\\B2B target SCU$\Rightarrow$SR\\Trigger SCU$\Rightarrow$SR}& Bucket labe signal production\\ \hline
+\tabincell{c}{Delay compensation\\ for TOF, all propagation\\ and kicker preparation}	&	B2B source SCU	& Start of synchronization window calculation\\ \hline
+\tabincell{c}{Extraction kicker \\delay compensation}&		Trigger SCU$\Rightarrow$TD			&Extractuion kicker trigger signal production	\\ \hline
+\tabincell{c}{Injection kicker \\delay compensation} &		Trigger SCU$\Rightarrow$TD			&Injection kicker trigger signal production\\ \hline
+\tabincell{c}{Emergency kicker \\delay compensation} &		Trigger SCU$\Rightarrow$TD			&Emergency kicker trigger signal production\\ \hline
+$t_{\mathit{diff\_sync}}$ 							&		B2B source SCU	&\tabincell{c}{Start of synchronization window calculation \\ or phase correction calculation for PCM} \\ \hline
+$\Delta f$ 											&		B2B source SCU	&Start of synchronization window calculation\\ \hline
+$T$													&		\tabincell{c}{B2B source SCU$\Rightarrow$PSM\\B2B source SCU$\Rightarrow$PSM}	&\tabincell{c}{Start of synchronization window calculation \\ and rf frequency modulation\\ profile with certain duration T production}\\ \hline
+$\Delta f_{\mathit{rf}}$, $\dot{\Delta f_{\mathit{rf}}}$ and $\ddot{\Delta f_{\mathit{rf}}}$ & B2B source SCU$\Rightarrow$PSM&\tabincell{c}{ Adiabatical rf frequency modulation\\ profile production}\\ \hline
+
+    \end{tabular}
+\end{center}
+\end{table}
+\end{landscape} 
