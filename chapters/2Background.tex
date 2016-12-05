@@ -231,7 +231,7 @@ Dividing eq.~\ref{rf_freq_l_int1} by eq.~\ref{rf_freq_s_int1}, we get
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa} \label{rf_freq_ratio1}
 \end{equation}
 
-In this scenario, the same synchronization frequencies are $f_{\mathit{rf}}^{l}/h^l $ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. Substituting two same synchronization frequencies into eq.~\ref{phase_diff_general}, we get the constant phase difference $\Delta \phi$. Fig. ~\ref{cir_int1} shows the constant phase difference between two same synchronization frequencies (red sinusoidal waves).
+In this scenario, the same synchronization frequencies are $f_{\mathit{rf}}^{l}/h^l $ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$. Substituting two same synchronization frequencies into eq.~\ref{phase_diff_general}, we get the constant phase difference $\Delta \phi$. Fig. ~\ref{cir_int1} shows the constant phase difference between two same synchronization frequencies $f_{\mathit{rf}}^{l}/h^l $ and $f_{\mathit{rf}}^{s}/(h^{s}\kappa)$, when $\kappa=5$, $h^s=1$ and $h^l=10$.
 \begin{equation}
 \label{phase_diff_cir_int}
 	\Delta \phi=(\phi_l-\phi_s) \mod 2\pi
@@ -241,11 +241,11 @@ In this scenario, the same synchronization frequencies are $f_{\mathit{rf}}^{l}/
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{cir_int1.jpg}
-   \caption{The constant phase difference between two same synchronization frequencies when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the revolution frequencies as an example. When the sinusoidal wave of the synchronization frequency overlaps that of the revolution frequency, the sinusoidal wave is red.}
-   \label{cir_int}
+   \caption{The constant phase difference between one possible pair of the synchronization frequencies when $\kappa=5$, $h^s=1$ and $h^l=10$. }{Red rectangles represent the constant phase difference periodically and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the cavity rf frequencies. }
+   \label{cir_int1}
 \end{figure} 
 
-So far we get only one possible pair of the synchronization frequencies for the phase shift method, but this pair is not the best one. It is easier for the LLRF system to produce synchronization frequencies closer to $f_{\mathit{rf}}^{l}$ and $f_{\mathit{rf}}^{s}$. What is more, the possible pair with large frequencies reduces the period of the occurrence of the required phase difference. Hence, the pair of the synchronization frequencies with largest possible frequencies are preferred. They are
+So far we get only one possible pair of the synchronization frequencies for the phase shift, but this pair is not the best one. It is easier for the LLRF system to produce synchronization frequencies closer to $f_{\mathit{rf}}^{l}$ and $f_{\mathit{rf}}^{s}$. What is more, the possible pair with large frequencies reduces the period of the occurrence of the required phase difference. Hence, the pair of the synchronization frequencies with largest possible frequencies are preferred. More detailed explanation, please see Chap. ~\ref{application}. Two synchronization frequencies are chosen as
 \begin{equation}
 f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Yf_{\mathit{rev}}^{l} \label{synch_freq1}
 \end{equation}
@@ -263,8 +263,15 @@ where \gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h
 %   \caption{An example of two synchronization frequencies when the circumference ratio is an integer.}{Red rectangles represent the constant phase difference periodically, red sinusoidal waves the synchronization frequencies and black sinusoidal waves the revolution frequencies. When the sinusoidal wave of the synchronization frequency overlaps that of the revolution frequency, the sinusoidal wave is red.}
 %   \label{cir_int1}
 %\end{figure} 
+%phase_match.dox
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=150mm]{exp_H_18_100.jpg}
+   \caption{The constant phase difference between the synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=5$, $h^s=1$ and $h^l=10$. }{Red rectangles represent the constant phase difference periodically and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the cavity rf frequencies. The sinuaoidal wave is red when the synchronization frequency and the cavity rf frequency overlap.}
+   \label{exp_H_18_100}
+\end{figure} 
 
-Fig. ~\ref{cir_int1} illustrates also an example with $\kappa=5$, $h^s=1$ and $h^l=10$. So GCD of $h^l$ and $h^s \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=5f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, which will be explained in Chap. ~\ref{application}.
+Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$, when $\kappa=5$, $h^s=1$ and $h^l=10$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/1$. This example is the FAIR use case of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, which will be explained in Sec. ~\ref{sec:cir_no_int1}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
@@ -309,7 +316,10 @@ Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger_31} into eq.~\r
 \begin{equation}
 	\Delta \phi=[2\pi Y\frac{-{h^{s}\lambda f_{\mathit{rf}}^{s}}}{(h^{s}\kappa+h^{s}\lambda)h^{s}\kappa}t+\phi_l-\phi_s] \mod 2\pi \label{phase_diff_general2}
 \end{equation}
-Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical variable. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. The beating frequency must not be too large in order to guarantee the precise of the phase match due to the periodical phase variable, but also not too small to satisfy the time constraint for the phase match. Fig. ~\ref{cir_int} shows the periodically variable phase difference between two slightly different synchronization frequencies (red sinusoidal waves).
+Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical variable. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. The beating frequency must not be too large in order to guarantee the precise of the phase match due to the periodical phase variable, but also not too small to satisfy the time constraint for the phase match. 
+
+Fig. ~\ref{cir_noint} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}$. This example is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Sec. ~\ref{sec:h4_18_ESR}. 
+
  
 
 %\begin{equation}
@@ -334,7 +344,7 @@ Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical v
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{cir_noint.jpg}
-   \caption{The periodically variable phase difference between two slightly different synchronization frequencies when circumference ratio is close to an integer.}{Red rectangles represent the periodical variable phase difference and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the revolution frequencies as an example.}
+   \caption{The periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$.}{Red rectangles represent the periodical variable phase difference and red sinusoidal waves the overlap between synchronization frequencies and cavity rf frequencies.}
    \label{cir_noint}
 \end{figure} 
 
@@ -342,8 +352,8 @@ Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical v
 %\begin{equation} 
 %\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
 %\end{equation} 
-
-Fig. ~\ref{cir_noint} illustrates also an example with $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. So $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=4/[2(2-0.003)]$. GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=4f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=2f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Chap. ~\ref{application}. 
+%
+%Fig. ~\ref{cir_noint} illustrates also an example with $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. So $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=4/[2(2-0.003)]$. GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=4f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=2f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Chap. ~\ref{application}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%far away from integer
 \subsection{Circumference ratio is far away from an integer}
@@ -353,7 +363,7 @@ When the circumference ratio of the large synchrotron to that of the small synch
 \frac{C^l}{C^s}=\frac{m}{n}+ \lambda \label{circumference_ratio_noint11}
 \end{equation}
 
-where $m/n$ represents the whole and part of the decimal parts of the decimal number, $\lambda$ represents the rest part of the decimal part and the absolute value of $\lambda$ is smaller than $0.05$ for FAIR use cases. e.g. $C^l/C^s=4.9-0.0004=49/10-0.0004$, so $m=49$, $n=10$ and $\lambda=-0.0004$. 
+where $m/n$ represents the whole and part of the decimal parts of the decimal number, $\lambda$ represents the rest part of the decimal part and the absolute value of $\lambda$ is smaller than $0.05$ for FAIR use cases. e.g. $C^l/C^s=2.6-0.003=26/10-0.003$, so $m=26$, $n=10$ and $\lambda=-0.003$. 
 
 Substituting $\kappa$ by $m/n$ into eq.~\ref{close_to_interger_31}, we could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$.
 \begin{equation} 
@@ -378,7 +388,9 @@ Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger11} into eq.~\re
 	\Delta \phi=[2\pi Y\frac{-\lambda n f_{\mathit{rf}}^{s}}{(h^{s}m+h^{s}\lambda n)m}t+\phi_l-\phi_s] \mod 2\pi \label{phase_diff_general23}
 \end{equation}
 
-Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical variable. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. It is possible to have various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating frequency. The smaller, the more precise the phase match. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization rf frequencies, which has a higher requirement for rf systems. So we have to find a proper combination of $m/n$ and $\lambda$. Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference between two slightly different synchronization frequencies (red sinusoidal waves).
+Eq. ~\ref{phase_diff_general23} shows that the phase difference is a periodical variable. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. It is possible to have various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating frequency. The smaller, the more precise the phase match. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization rf frequencies, which has a higher requirement for LLRF systems. So we have to find a proper combination of $m/n$ and $\lambda$. 
+
+Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $m=26$, $n=10$, $\lambda=-0.003$, $h^s=1$ and $h^l=1$. $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=1\cdot 10/(1\cdot26-1\cdot10\cdot0.003)$. The GCD of $h^ln=1\cdot10$ and $h^s m=1\cdot26$ is 2, namely $Y=2$. Hence, according to eq. ~\ref{synch_freq111} and eq. ~\ref{synch_freq222}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/5$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/13$. This example is the FAIR use case of the B2B transfer from the CR to the HESR, which will be explained in Sec. ~\ref{B2B_CR_HESR}.   
 
 
 %%In eq.~\ref{phase_diff_far_fram_int}, $h^s\lambda n$ is much smaller than $h^sm$. When $x$ is the integer multiple of $h^{s}m$, namely $x=gh^sm$, we have the following relation from eq. ~\ref{phase_diff_far_fram_int}.
@@ -393,7 +405,7 @@ Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical v
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{cir_noint_far.jpg}
-   \caption{The phase difference between two synchronization frequencies when the circumference ratio is far away from an integer.}{Red rectangles represent the periodical variable phase difference and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the revolution frequencies as an example.}
+   \caption{The periodically variable phase difference between two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $m=26$, $n=10$, $\lambda=-0.003$, $h^s=1$ and $h^l=1$.}{Red rectangles represent the periodical variable phase difference and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the cavity rf frequencies.}
    \label{cir_noint_far}
 \end{figure} 
 
@@ -404,9 +416,6 @@ Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodical v
 %\begin{equation} 
 %\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
 %\end{equation}
-
-
-Fig. ~\ref{cir_noint_far} illustrates also an example with $m=49$, $n=10$, $\lambda=-0.0004$, $h^s=1$ and $h^l=5$. $T_{\mathit{rev}}^{X}$ represents the revolution period of a synchrotron. $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=5\cdot 10/(1\cdot49-1\cdot10\cdot0.0004)$. GCD of $h^ln=5\cdot10$ and $h^s m=1\cdot49$ is 1, namely $Y=1$. Hence, according to eq. ~\ref{synch_freq111} and eq. ~\ref{synch_freq222}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=50f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=49f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the $H^+$ B2B transfer from the CR to the HESR via the Pbar, which will be explained in Chap. ~\ref{application}.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Loop freeze}
