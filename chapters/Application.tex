@@ -21,7 +21,7 @@ Besides, FAIR has many use cases of B2B transfers that the extraction and inject
 
 \begin{itemize}
 
- 	\item The revoluiton frequency ratio between the small and large synchrotrons is far away from an integer.
+ 	\item The revolution frequency ratio between the small and large synchrotrons is far away from an integer.
 		\begin{itemize}
 			\item The $H^{+}$ B2B transfer from the SIS100 to the CR via a Pbar
 			\item The rare isotope beams (\gls{RIB}) B2B transfer from the SIS100 to the CR via a Super FRS
@@ -130,7 +130,7 @@ $Y$ is the \gls{GCD} of $h^l$ and $h^s \cdot \kappa$. More details, please see S
 %\frac{f_{\mathit{rf}}^{l}}{h^l/Y}= \frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y} 
 %\end{equation}
 %Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$,
-$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchroniation frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. For the frequency beating method, two slightly different frequencies is based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning one of them. Generally the rf system of the source synchrotron is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
+$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchronization frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. For the frequency beating method, two slightly different frequencies is based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning one of them. Generally the rf system of the source synchrotron is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
 
 
 %If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s \cdot \kappa)/Y]$. According to the relation between $h^l$ and $h^s \cdot \kappa$, we have the following two cases.
@@ -173,7 +173,7 @@ When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_
 
 When the small synchrotron is the target, the relation between $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}\frac{Y}{\kappa}$ and $f_{\mathit{rev}}^{s}$ is not fixed. If $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}>=1$, the revolution period is $\frac{Y}{\kappa}$ times long as the period of $f_{\mathit{syn}}^{s}$. Hence, the bucket label signal is with the frequency of $f_{\mathit{rev}}^{s}$ and the length of the synchronization window is two times as long as the revolution period of the small synchrotron.
 %Fig. ~\ref{bucket_label_phase_small} (a) is the case with the phase shift method and Fig. ~\ref{bucket_label_frequency_small} (a) the case with the frequency beating method. 
-Oppositly,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}<1$, the period of $f_{\mathit{syn}}^{s}$ is $\frac{\kappa}{Y}$ times as long as the revolution period. Hence, the rf frequency with $f_{\mathit{syn}}^{s}$ is used as the bucket label signal and the length of the synchronization window is two times as long as the rf period of the synchronization frequency of the small synchrotron. 
+Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}<1$, the period of $f_{\mathit{syn}}^{s}$ is $\frac{\kappa}{Y}$ times as long as the revolution period. Hence, the rf frequency with $f_{\mathit{syn}}^{s}$ is used as the bucket label signal and the length of the synchronization window is two times as long as the rf period of the synchronization frequency of the small synchrotron. 
 %Fig. ~\ref{bucket_label_phase_small} (b) is the case with the phase shift method and Fig. ~\ref{bucket_label_frequency_small} (b) the case with the frequency beating method. 
 %%rev_or_subharmonic1.docx
 
@@ -284,7 +284,7 @@ Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket labe
 
 \subsection{Use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100}
 \label{sec:cir_no_int}
-The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large synchroton is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}=10$ and $h^{\mathit{SIS18}}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
+The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large synchrotron is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}=10$ and $h^{\mathit{SIS18}}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
 The GCD of $h^{\mathit{SIS100}}=10$ and $h^{\mathit{SIS18}} \cdot \kappa=2\cdot 5=10$ is 10, namely $Y=10$. Substituting these values into eq.~\ref{rf_freq_ratio1}, we get
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}}{h^{\mathit{SIS18}} \cdot \kappa}= \frac{10}{2 \cdot 5}=\frac{10}{10}
@@ -308,7 +308,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
 \end{center}
 \end{table}
 
-After the synchronization, the phase difference between the SIS18 and SIS100 synchronization frequenciy markers equals to the sum of $t_{v\_inj}$, $t_{v\_ext}$ and $t_{TOF}$. The SIS100 revolution frequency marker works for the bucket label. When the 1st and 2nd buckets are to be filled, $t_{pattern}$=0. When the 3rd and 4th buckets are to be filled, $t_{pattern}$=$T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 5th and 6th buckets are to be filled, $t_{pattern}$= 2 $\cdot$ $T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 7th and 8th buckets are to be filled, $t_{pattern}$= 3 $\cdot$ $T_{\mathit{rev}}^{\mathit{SIS18}}$. Detailed parameters of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, please see Appendix \ref{sec:18to100}.
+After the synchronization, the phase difference between the SIS18 and SIS100 synchronization frequency markers equals to the sum of $t_{v\_inj}$, $t_{v\_ext}$ and $t_{TOF}$. The SIS100 revolution frequency marker works for the bucket label. When the 1st and 2nd buckets are to be filled, $t_{pattern}$=0. When the 3rd and 4th buckets are to be filled, $t_{pattern}$=$T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 5th and 6th buckets are to be filled, $t_{pattern}$= 2 $\cdot$ $T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 7th and 8th buckets are to be filled, $t_{pattern}$= 3 $\cdot$ $T_{\mathit{rev}}^{\mathit{SIS18}}$. Detailed parameters of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, please see Appendix \ref{sec:18to100}.
 
 %%%%%%%%%%%%%%%%%% Harmonic != circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Harmonic ratio does not equal to the circumference ratio} 

@@ -1,4 +1,4 @@
-!!!!!!!!!!!!!!!!please check List of symbol and abbrevation ... for chapter 5 and 6.
+!!!!!!!!!!!!!!!!please stop here. This chapter needs to be reworked, including the corresponding abbreviation.
 
 This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. 6.1, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic viewpoint. The WR network is investigated for the B2B transfer and the calculation of the synchronization window are presented in Sec. 6.2. The B2B transfer system for FAIR focuses first of all on SIS18 to SIS100 transfer, so the trigger possibility of the SIS18 extraction and SIS100 injection kicker is systematically investigated in Sec. 6.3. Besides, the test setup from the timing aspect is built in Sec. 6.4. 
 
@@ -254,7 +254,7 @@ In the case of the frequency beating method, we guarantee the extraction and inj
 
 \subsubsection{Longitudinal dynamics analysis of the frequency beating for SIS18}
 For the frequency beating method, the rf frequency de-tune is done accompanying with
-the RF ramp. Accepting to decentre the orbit by 8mm ~\cite{liebermann_fair_2013} for the SIS18 
+the RF ramp. Accepting to decenter the orbit by 8mm ~\cite{liebermann_fair_2013} for the SIS18 
 \begin{equation}
 \frac{\Delta{R}}{R} = \pm 2.4 \cdot 10^{-4}
 %\gls{symb:radius} = \pm 2.4 \cdot 10^{-4}
@@ -438,7 +438,7 @@ The phase adjustment is achieved by the phase shift method within the upper boun
 \begin{equation}
 t_{best} = t_{\psi} + T_{phase\_ shift}^{upper\_ bound} \label{Phase_win}
 \end{equation}
-The uncertainty in the phase prediction $\delta t_{\psi}$ is 100ps, see eq.~\ref{jitter_measure_t}. The phase shift uncertainy $\delta \Delta \phi_{phase}$ is casued by the rf frequency modulation, whose jitter is 100ps, see eq.~\ref{freq_jitter_t}. The phase shift uncertainy equals to the uncertainty in the phase shift upper bound time, \gls{symb:un_upper_time_phase_shift} = 100ps. Both cause an uncertainty in the best estimate of alignment $t_{best}$.
+The uncertainty in the phase prediction $\delta t_{\psi}$ is 100ps, see eq.~\ref{jitter_measure_t}. The phase shift uncertainty $\delta \Delta \phi_{phase}$ is casued by the rf frequency modulation, whose jitter is 100ps, see eq.~\ref{freq_jitter_t}. The phase shift uncertainty equals to the uncertainty in the phase shift upper bound time, \gls{symb:un_upper_time_phase_shift} = 100ps. Both cause an uncertainty in the best estimate of alignment $t_{best}$.
 \begin{equation}
 \begin{aligned}
 \delta t_{best} =\sqrt {(\frac {\partial t_{best}}{\partial t_{\psi}}\delta t_{\psi})^2 + (\frac {\partial t_{best}}{\partial T_{phase\_ shift}^{upper\_ bound}}\delta T_{phase\_ shift}^{upper\_ bound})^2} \\
@@ -546,7 +546,7 @@ WIN_{start}= t_{best}- \delta t_{best}-\Delta t_{win \_correct}
 
 \end{itemize}
 
-The actual start of the synchronization window is impossible to be exactly at the best estimate of the start of the synchronization window because of the precision and trueness~\cite{_statistical_????}. The \gls{glos:precision} is defined as the closeness of agreement between the actual start of the synchronization window of different SCUs and the \gls{glos:trueness} as the closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window. The precision comes from the random error, e.g. IO port \gls{TTL} signal rising osillation. The trueness is the systematic error, e.g. FPGA process time. The \gls{glos:accuracy} is defined as the closeness of agreement between the observed start and the best estimate of the start of the synchronization window, which is the sum of the precision and trueness. The B2B transfer system will be used for many transfers for FAIR. Therefore, we have to find the most stringent accuracy requirement. The shortest revolution period of the target machine is \SI{433}{\ns}, which comes from RIB transfer from CR to HESR. We keep 10ns as a forbidden range, which means that the actual start is not allowed \SI{10}{\ns} before and after the revolution frequency marker. The green region in Fig.~\ref{accuracy_syn_win} represents the safty margin for the start of the synchronization window. So the accuracy of the start of the synchronization window must meet the requirement calculated by eq. ~\ref{accu}.
+The actual start of the synchronization window is impossible to be exactly at the best estimate of the start of the synchronization window because of the precision and trueness~\cite{_statistical_????}. The \gls{glos:precision} is defined as the closeness of agreement between the actual start of the synchronization window of different SCUs and the \gls{glos:trueness} as the closeness of agreement between the average actual start of the synchronization window of different SCUs and the best estimation start of the synchronization window. The precision comes from the random error, e.g. IO port \gls{TTL} signal rising oscillation. The trueness is the systematic error, e.g. FPGA process time. The \gls{glos:accuracy} is defined as the closeness of agreement between the observed start and the best estimate of the start of the synchronization window, which is the sum of the precision and trueness. The B2B transfer system will be used for many transfers for FAIR. Therefore, we have to find the most stringent accuracy requirement. The shortest revolution period of the target machine is \SI{433}{\ns}, which comes from RIB transfer from CR to HESR. We keep 10ns as a forbidden range, which means that the actual start is not allowed \SI{10}{\ns} before and after the revolution frequency marker. The green region in Fig.~\ref{accuracy_syn_win} represents the safety margin for the start of the synchronization window. So the accuracy of the start of the synchronization window must meet the requirement calculated by eq. ~\ref{accu}.
 \begin{equation}
 \begin{aligned}
 Accuracy=\pm\frac{433-10 \cdot 2}{2}\approx \pm \SI{200}{\ns}\label{accu}
@@ -854,7 +854,7 @@ The test setup achieves the following functional requirement.
 \item[-] The B2B target SCU transfers the frame containing the timestamp to the B2B source SCU.
 \item[-] After receiving the data, the B2B source SCU calculates the synchronization window.
 \item[-] The B2B source SCU sends the frame containing the beginning of the synchronization window to the WR network.
-\item[-] After receving the frame, the trigger SCU produces TTL output indicating the start of the synchronization window. 
+\item[-] After receiving the frame, the trigger SCU produces TTL output indicating the start of the synchronization window. 
 \end{itemize}
 
 \subsection{Test setup}
@@ -886,7 +886,7 @@ All devices are installed in different racks. The SIS18 source SCU and B2B trigg
 \item 
 The B2B source SCU has several other SCU slaves, e.g. Phase Shift Module (PSM) for the phase shift. 
 \item 
-The B2B trigger SCU considers not only the synchronization window, but also the kicker delay compensation from the SM. Besides, it has several SCU slaves, which coordinate the correct B2B extraction and injeciton kicker with other systems, e.g. MPS.
+The B2B trigger SCU considers not only the synchronization window, but also the kicker delay compensation from the SM. Besides, it has several SCU slaves, which coordinate the correct B2B extraction and injection kicker with other systems, e.g. MPS.
 \end{itemize}
 
 \subsection{The firmware of the B2B transfer system}
