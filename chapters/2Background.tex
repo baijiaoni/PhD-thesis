@@ -106,7 +106,7 @@ Particles oscillate around the synchronous particle at $\phi_{\mathit{s}}$ with 
 The ``\gls{glos:bucket_size}`` is defined as the area of the longitudinal phase space plane enclosed by the bucket ~\cite{lee_accelerator_2011}. For a same rf voltage, the bucket size of a running bucket is always smaller than that of a stationary bucket. The ratio of the bucket size of a running bucket to that of a stationary bucket is called the ``\gls{glos:bucket_area_factor}``, \gls{symb:bucket_size}. The bucket area factor can be calculated by ~\cite{lee_accelerator_2011}.
 
 \begin{equation}
-\alpha_b(\phi_{s})\approx(1-sin(\phi_{s}))(1+sin(\phi_{s}))
+\alpha_b(\phi_{s})\approx \frac{1-\sin\phi_{s}}{1+\sin\phi_{s}}
 \label{eq:buckt_area_factor}
 \end{equation} 
 
@@ -181,18 +181,18 @@ The phase difference between $u_1$ and $u_2$ is
 	\Delta \phi=[2\pi(f_1-f_2)t+\phi_1-\phi_2] \mod 2\pi\label{phase_diff_general}
 \end{equation}
 
-The phase difference $\Delta \phi$ is constant when two frequencies are same ($f_1=f_2$). In order to change the phase difference for the phase match between two rf voltages, the phase of either (or both) rf system can be shifted backward or forward by means of the rf frequency modulation. The frequency of one (or both) rf voltage is modulated away from the nominal value for a specified period of time and then modulated back. This is the so-called phase shift. Eq.~\ref{phase1} gives the relation between the required phase shift \gls{symb:pha_shift} and the frequency modulation. 
+The phase difference $\Delta \phi$ is constant when two frequencies are same ($f_1=f_2$). In order to change the phase difference for the phase match between two rf voltages, the phase of either (or both) rf system can be shifted backward or forward by means of the rf frequency modulation. The frequency of one (or both) rf voltage is modulated away from the nominal value for a specified period of time and then modulated back. This is the so-called phase shift. Eq.~\ref{phase1} gives the relation between the required phase shift $\Delta \phi$ and the frequency modulation. 
 \begin{equation}
 \Delta \phi= 2\pi \int_{t_0}^{t_0+T} \Delta f_\mathit{rf}(t)dt \label{phase1}
 \end{equation}
 
 The phase shift process starts at $t_0$. The obtainable phase shift is determined by the frequency offset $\Delta f_\mathit{rf}$ and the duration of the frequency modulation \gls{symb:period_phase}. 
 
-When two frequencies are slightly different, the phase difference $\Delta \phi$ is a periodic function whose rate is the difference between the two frequencies. This is the so-called frequency beating. The periodically variable rate is called the ``beating frequency``, $\Delta f=|f_1-f_2|$. The beating period is defined as a period of time for the periodical variation, namely $1/\Delta f$. Within one beating period, there exists a time point, which corresponds to a correct phase difference between two rf systems, namely the phase alignment. 
+When two frequencies are slightly different, the phase difference $\Delta \phi$ is a periodic function whose rate is the difference between two frequencies. This is the so-called frequency beating. The periodically variable rate is called the ``beating frequency``, $\Delta f=|f_1-f_2|$. The beating period is defined as a period of time for the periodical variation, namely $1/\Delta f$. Within one beating period, there exists a time point, which corresponds to a correct phase difference between two rf systems, namely the phase alignment. 
 
 The phase alignment is realized based on two same or two slightly different frequencies. These two frequencies are called ``\gls{glos:Syn_fre}``, denoted as \gls{symb:synchronization_freq}. Some FAIR use cases are with an identical cavity rf frequency or slightly different cavity rf frequencies of two rf systems, so two cavity rf frequencies are chosen as the synchronization frequencies. There exists many FAIR use cases with big different cavity rf frequencies as well. In this scenario, two synchronization frequencies are an integral multiple of the same or slightly different derived rf frequencies, which are the division of the revolution frequencies. e.g. the division of the revolution frequency is $f_\mathit{rev}^{X}/m$ and the synchronization frequency is $Y\cdot f_\mathit{rev}^{X}/m$, both $m$ and $Y$ are positive integers. The division of the the revolution frequency and the integral multiple are determined by the circumference ratio and the harmonic number of two synchrotron. Because of the technical requirement (see Chap. ~\ref{concept}), the synchronization frequencies are impossible to have higher frequencies than cavity rf frequencies, namely $Y/m <=h^X$. Besides, either $m/Y$ or $Y/m$ must be an integer for FAIR use cases, namely the revolution frequency is an integral multiple of the synchronization frequency or the synchronization frequency is an integral multiple of the revolution frequency, so the occurrence of positive zero-crossings of the synchronization frequencies and the positive zero-crossing of the revolution frequencies at the same time always indicates a specified bunch and bucket.
 
-The calculation of the synchronization frequencies are explained for the different scenarios of the circumference ratio between two synchrotrons. For simplicity's sake, the following analysis is from the perspective of the large and small synchrotrons instead of the source and target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, $\kappa$, $m$, $n$ and $Y$ are used to represent positive integers and $\lambda$ a decimal number.
+The calculation of the synchronization frequencies are explained for the different scenarios of the circumference ratio between two synchrotrons. For simplicity's sake, the following analysis is from the perspective of the large and small synchrotrons instead of the source and target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, $\kappa$, $m$, $n$ and $Y$ are used to represent positive integers and $\lambda$ a decimal number. The following analysis is based on the energy match between two synchrotrons.
 
 %In order to get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$, positive zero-crossing points of the small synchrotron happen at
 %\begin{equation}
@@ -253,13 +253,15 @@ f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Yf_{\mathit{rev}}^{l} \
 \begin{equation}
 f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s} \label{synch_freq2}
 \end{equation}
-where \gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h^l$ and $h^s \cdot \kappa$. In eq. ~\ref{phase_diff_general}, the phase difference equals to $\phi_1-\phi_2$ when $f_1=f_2$. The value of the initial phase is related to the choice of the rf frequency. e.g. when the phase of rf frequency $f_1$ is $\phi_1$, the phase of the rf frequency $Nf_1$ is $(N\phi_1 \mod 2\pi)$. Hence, the phase difference between two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ is denoted as $\Delta \phi_\mathit{syn}$. $\phi^l_\mathit{syn}$ and $\phi^s_\mathit{syn}$ are the initial phases of two synchronization frequencies. The phase difference $\Delta \phi_\mathit{syn}$ calculated as
+where \gls{symb:GCD} is defined as the Greatest Common Divisor (\gls{GCD}) of $h^l$ and $h^s \cdot \kappa$. 
+
+In eq. ~\ref{phase_diff_general}, the phase difference between $f_1$ and $f_2$ equals to $\phi_1-\phi_2$ when $f_1=f_2$. The value of the initial phase is related to the choice of the rf frequency. e.g. when the phase of rf frequency $f_1$ is $\phi_1$, the phase of the rf frequency $Nf_1$ is $(N\phi_1 \mod 2\pi)$. Hence, the phase difference must be defined with regard to the dedicated rf frequencies. The phase differencebetween two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ is denoted as $\Delta \phi_\mathit{syn}$. $\phi^l_\mathit{syn}$ and $\phi^s_\mathit{syn}$ are the initial phases of two synchronization frequencies. The phase difference $\Delta \phi_\mathit{syn}$ calculated as
 \begin{equation}
 \label{phase_diff_cir_int1}
 	\Delta \phi_\mathit{syn}=(\phi^l_\mathit{syn}-\phi^s_\mathit{syn}) \mod 2\pi
 \end{equation}
 
-The cavity rf frequency of the large synchrotron is $f_{\mathit{rf}}^{l}/f_{\mathit{syn}}^{l}$ times as large as its synchronization frequency, so the phase difference between cavity rf frequencies \gls{symb:pha_shift_rf} is also $f_{\mathit{rf}}^{l}/f_{\mathit{syn}}^{l}$ times as large as the phase difference between two synchronization frequencies \gls{symb:pha_shift_syn}, namely 
+The cavity rf frequency of the large synchrotron is $f_{\mathit{rf}}^{l}/f_{\mathit{syn}}^{l}$ times as large as its synchronization frequency, so the phase difference between the cavity rf frequencies \gls{symb:pha_shift_rf} is also $f_{\mathit{rf}}^{l}/f_{\mathit{syn}}^{l}$ times as large as the phase difference between two synchronization frequencies \gls{symb:pha_shift_syn}, namely 
 \begin{equation}
 \Delta \phi_\mathit{rf}=(\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{syn}}^{l}}\Delta \phi_\mathit{syn}) \mod 2\pi 
 \end{equation}
@@ -275,11 +277,11 @@ The cavity rf frequency of the large synchrotron is $f_{\mathit{rf}}^{l}/f_{\mat
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{exp_H_18_100.jpg}
-   \caption{The constant phase difference between two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=5$, $h^s=1$ and $h^l=10$. }{Red planes represent the constant phase difference between the positive zero-crossings of two synchronization frequencies and red sinusoidal waves the synchronization frequencies. Black sinusoidal waves represent the individual cavity rf frequencies and the blue sinusoidal wave the revolution frequency. The red sinusoidal wave at the top time axis represents the overlap of the synchronization frequency, the cavity rf frequency and the revolution frequency.}
+   \caption{The constant phase difference between two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=5$, $h^s=1$ and $h^l=10$. }{Red planes represent the constant phase difference between two synchronization frequencies and red sinusoidal waves the individual synchronization frequencies. Black sinusoidal waves represent the individual cavity rf frequencies and the blue sinusoidal wave the revolution frequency. The red sinusoidal wave at the top time axis represents the overlap of the synchronization frequency, the cavity rf frequency and the revolution frequency.}
    \label{exp_H_18_100}
 \end{figure} 
 
-Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$, when $\kappa=5$, $h^s=1$ and $h^l=10$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2=5f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/1=f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=2\Delta \phi_\mathit{syn}. 
+Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$, when $\kappa=5$, $h^s=1$ and $h^l=10$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2=5f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/1=f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=2\Delta \phi_\mathit{syn}$.  The parameters are from the FAIR use case of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, which will be explained in Sec. ~\ref{sec:cir_no_int1}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
@@ -315,18 +317,21 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa}f
 \end{equation}
 
 
-$Y$ is the GCD of $h^l$ and $h^s \cdot \kappa$. Substituting two synchronization frequencies into eq.~\ref{phase_diff_general}, we get the periodically variable phase difference $\Delta \phi$.
+$Y$ is the GCD of $h^l$ and $h^s \cdot \kappa$. Substituting two synchronization frequencies into eq.~\ref{phase_diff_general}, we get the periodically variable phase difference between two synchronization frequencies $\Delta \phi_\mathit{syn}$.
 \begin{equation}
 	\Delta \phi_\mathit{syn}(t)=[2\pi(f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s})t+\phi_\mathit{syn}^l-\phi^s_\mathit{syn}] \mod 2\pi \label{phase_diff_general1}
 \end{equation}
 
-Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger_31} into eq.~\ref{phase_diff_general1}, we get the phase difference.
+Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger_31} into eq.~\ref{phase_diff_general1}, we get 
 \begin{equation}
 	\Delta \phi_\mathit{syn}(t)=[2\pi Y\frac{-{\lambda f_{\mathit{rf}}^{s}}}{(\kappa+\lambda)h^{s}\kappa}t+\phi_\mathit{syn}^l-\phi^s_\mathit{syn}] \mod 2\pi \label{phase_diff_general2}
 \end{equation}
-Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodic function. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. The beating frequency must not be too large in order to guarantee the precision, but also not too small to satisfy the time constraint for the phase match. 
+Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodic function. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. The beating frequency must not be too large in order to guarantee the precision, but also not too small to satisfy the time constraint for the phase match. The phase difference between two cavity rf frequencies is
+\begin{equation}
+\Delta \phi_\mathit{rf}=(\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{syn}}^{l}}\Delta \phi_\mathit{syn}) \mod 2\pi 
+\end{equation}
 
-Fig. ~\ref{cir_noint} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}=4f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}=2f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Sec. ~\ref{sec:h4_18_ESR}. 
+Fig. ~\ref{cir_noint} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. The GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}=4f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}=2f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=\Delta \phi_\mathit{syn}$.  The parameters are from the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Sec. ~\ref{sec:h4_18_ESR}. 
 
  
 
@@ -372,7 +377,8 @@ When the circumference ratio of the large synchrotron to that of the small synch
 \end{equation}
 
 %where $m/n$ represents the whole and part of the decimal parts of the decimal number, 
-where $m/n$ represents a quotient of two integers, $m$ is a numerator and $n$ is a non-zero denominator. $\lambda$ represents the remainder of the decimal part and the absolute value of $\lambda$ is smaller than $0.05$ for FAIR use cases. e.g. $C^l/C^s=2.6-0.003=26/10-0.003$, so $m=26$, $n=10$ and $\lambda=-0.003$. The bound of $\lambda$ is shown in Chap. ~\ref{application}.
+where $m/n$ represents a quotient of two integers, $m$ is a numerator and $n$ is a non-zero denominator. $\lambda$ represents the remainder of the decimal part and the absolute value of $\lambda$ is smaller than $0.05$ for FAIR use cases. e.g. $C^l/C^s=2.6-0.003=26/10-0.003$, so $m=26$, $n=10$ and $\lambda=-0.003$. The parameters are from the FAIR use case of the B2B transfer from the CR to the HESR, which will be explained in Sec. ~\ref{B2B_CR_HESR}.   
+
 
 Substituting $\kappa$ by $m/n$ into eq.~\ref{close_to_interger_31}, we get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$.
 \begin{equation} 
@@ -387,20 +393,22 @@ f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}n/Y}=\frac{Y}{n}f_{\mathit{
 f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}m/Y}=\frac{Y}{m}f_{\mathit{rev}}^{s} \label{synch_freq222}
 \end{equation}
 
-$Y$ is the GCD of $h^l n$ and $h^s m$. Substituting two synchronization frequencies into eq.~\ref{phase_diff_general}, we get the periodical phase difference $\Delta \phi$.
+$Y$ is the GCD of $h^l n$ and $h^s m$. Substituting two synchronization frequencies into eq.~\ref{phase_diff_general}, we get the periodical phase difference $\Delta \phi_\mathit{syn}$.
 \begin{equation}
 	\Delta \phi_\mathit{syn}(t)=[2\pi(f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s})t+\phi_\mathit{syn}^l-\phi^s_\mathit{syn}] \mod 2\pi \label{phase_diff_general11}
 \end{equation}
 
-Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger11} into eq.~\ref{phase_diff_general11}, we get the phase difference.
+Substituting $f_{\mathit{rf}}^{l}$ in eq.~\ref{close_to_interger11} into eq.~\ref{phase_diff_general11}, we get 
 \begin{equation}
 	\Delta \phi_\mathit{syn}(t)=[2\pi Y\frac{-\lambda f_{\mathit{rf}}^{s}}{(m/n+\lambda)h^{s}m}t+\phi_\mathit{syn}^l-\phi^s_\mathit{syn}] \mod 2\pi \label{phase_diff_general23}
 \end{equation}
 
-Eq. ~\ref{phase_diff_general23} shows that the phase difference is a periodic function. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. It is possible to have various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating frequency. The smaller, the more precise the phase match between two synchronization frequencies. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines the two slightly different frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization rf frequencies, which has a higher requirement for the LLRF system. So we have to find a proper combination of $m/n$ and $\lambda$. 
+Eq. ~\ref{phase_diff_general23} shows that the phase difference is a periodic function. The beating frequency is $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$. It is possible to have various combination of $m/n$ and $\lambda$. $\lambda$ determines the beating frequency. The smaller, the more precise the phase match between two synchronization frequencies. $Y/n$ and $Y/m$ determines two synchronization frequencies. The bigger $Y/n$ and $Y/m$, the easier of the production of two synchronization frequencies based on the revolution frequencies. So we have to find a proper combination of $m/n$ and $\lambda$.  The phase difference between two cavity rf frequencies is
+\begin{equation}
+\Delta \phi_\mathit{rf}=(\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{syn}}^{l}}\Delta \phi_\mathit{syn}) \mod 2\pi 
+\end{equation}
 
-Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $m=26$, $n=10$, $\lambda=-0.003$, $h^s=1$ and $h^l=1$. $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=1\cdot 10/(1\cdot26-1\cdot10\cdot0.003)$. The GCD of $h^ln=1\cdot10$ and $h^s m=1\cdot26$ is 2, namely $Y=2$. Hence, according to eq. ~\ref{synch_freq111} and eq. ~\ref{synch_freq222}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/5=f_{\mathit{rev}}^{l}/5$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/13=f_{\mathit{rev}}^{s}/13$. This example is the FAIR use case of the B2B transfer from the CR to the HESR, which will be explained in Sec. ~\ref{B2B_CR_HESR}.   
-
+Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $m=26$, $n=10$, $\lambda=-0.003$, $h^s=1$ and $h^l=1$. $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=1\cdot 10/(1\cdot26-1\cdot10\cdot0.003)$. The GCD of $h^ln=1\cdot10$ and $h^s m=1\cdot26$ is 2, namely $Y=2$. Hence, according to eq. ~\ref{synch_freq111} and eq. ~\ref{synch_freq222}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/5=f_{\mathit{rev}}^{l}/5$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/13=f_{\mathit{rev}}^{s}/13$ and $\Delta \phi_\mathit{rf}=5\Delta \phi_\mathit{syn}$.
 
 %%In eq.~\ref{phase_diff_far_fram_int}, $h^s\lambda n$ is much smaller than $h^sm$. When $x$ is the integer multiple of $h^{s}m$, namely $x=gh^sm$, we have the following relation from eq. ~\ref{phase_diff_far_fram_int}.
 %%\begin{equation}
@@ -542,7 +550,7 @@ where $A$ is the amplitude of the sinusoidal wave. Based on eq. ~\ref{phase1}, t
 A= \frac{\Delta \phi_\mathit{syn}}{2\pi}\cdot\frac{1}{T}
 \end{equation}
 
-When the rf frequency modulation on the synchronization frequency $f_{\mathit{syn}}^{X}$ is $\Delta f_{\mathit{syn}}$, the rf frequency modulation on the cavity rf frequency and the phase shift for the cavity rf frequency $f_{\mathit{rf}}^{X}$ are
+When the rf frequency modulation on the synchronization frequency $f_{\mathit{syn}}^{X}$ is $\Delta f_{\mathit{syn}}$, the rf frequency modulation on the cavity rf frequency $\Delta f_{\mathit{rf}}$ and the phase shift for the cavity rf frequency $\Delta \phi_\mathit{rf}$ are
 \begin{equation}
 \Delta f_{\mathit{rf}}=\frac{f_\mathit{rf}^\mathit{X}}{f_\mathit{syn}^\mathit{X}}\Delta f_{\mathit{syn}}
 \end{equation}
@@ -700,7 +708,13 @@ Hence, the synchronous phase is proportional to $\frac{d \Delta f_\mathit{rf}}{d
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Bucket size
 
-At the flattop, the bucket is a stationary bucket. During the frequency modulation process, the bucket becomes a running bucket with $\phi_{s}\neq 0^\circ$. The bucket area factor is calculated by eq. ~\ref{eq:buckt_area_factor}. Buckets must be big enough to capture bunches. Eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. The synchronous phase must be small enough to guarantee the bucket size, so $\frac{d\Delta f_{\mathit{rf}}}{dt}$ must be small enough, namely the change of the rf frequency modulation must be slow enough.
+At the flattop, the bucket is a stationary bucket. During the frequency modulation process, the bucket becomes a running bucket with $\phi_{s}\neq 0^\circ$. When the synchronous phase is very small, we get the bucket area factor from eq. ~\ref{eq:buckt_area_factor}. 
+\begin{equation} 
+\alpha_b(\phi_{s})\approx \frac{1-\phi_{s}}{1+\phi_{s}}
+\label{eq:buckt_area_factor11}
+\end{equation} 
+
+Buckets must be big enough to capture bunches. Eq. ~\ref{eq:buckt_area_factor11} shows that the bucket area factor is in inverse proportion to the synchronous phase. The synchronous phase must be small enough to guarantee the bucket size, so $\frac{d\Delta f_{\mathit{rf}}}{dt}$ must be small enough, namely the change of the rf frequency modulation must be slow enough.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Adiabaticity 
@@ -790,7 +804,7 @@ According to the beam dynamics analysis, there are several requirements for the 
 \subsection{Frequency beating method}
 \label{subsec:beating}
 
-The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. Or the rf system of the source or the target or both synchrotrons is detuned for the achievement of beating. The frequency dutune is at a constant energy by changing the magnetic field and the orbit, which is done by machine physicists, which are out of the scope of this dissertation. The synchronization is realized when the phase difference of the two synchronization frequencies corresponds to the required phase difference. The $\Delta \phi_\mathit{syn}$ is the phase mismatch between two synchronization frequencies. In principle, the B2B transfer requirement for FAIR allows a bunch-to-bucket center mismatch ($\Delta \phi_\mathit{rf}$) within the range of $\pm1^\circ$, namely the phase mismatch between two synchronization frequencies within the range of $\frac{\pm1^\circ}{f_{\mathit{rf}}^\mathit{trg}/f_{\mathit{syn}}^\mathit{trg}}$. The mismatch upper bound brings a symmetric time frame with respect to the time of the required phase difference. This is called the maximum synchronization window, drawn in yellow, see Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the required phase difference.
+The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. Or the rf system of the source or the target or both synchrotrons is detuned for the achievement of beating. The frequency dutune is at a constant energy by changing the magnetic field and the orbit, which is done by machine physicists, which are out of the scope of this dissertation. The frequency detune for the synchronization frequency is denoted as \gls{symb:freq_modulation1} and that for the cavity rf frequency is denoted as \gls{symb:freq_modulation},  $\Delta f_\mathit{rf}=\frac{f_{\mathit{rf}}^\mathit{X}}{f_{\mathit{syn}}^\mathit{X}} \Delta f_\mathit{syn}$. The synchronization is realized when the phase difference of two synchronization frequencies corresponds to the required phase difference. The $\Delta \phi_\mathit{syn}$ is the phase mismatch between two synchronization frequencies. In principle, the B2B transfer requirement for FAIR allows a bunch-to-bucket center mismatch within the range of $\pm1^\circ$, namely the phase mismatch between two synchronization frequencies within the range of $\frac{\pm1^\circ}{f_{\mathit{rf}}^\mathit{trg}/f_{\mathit{syn}}^\mathit{trg}}$. The mismatch upper bound brings a symmetric time frame with respect to the time of the required phase difference. This is called the maximum synchronization window, drawn in yellow, see Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the required phase difference.
 %Two_method_figure
 \begin{figure}[!htb]
    \centering   
@@ -805,7 +819,7 @@ The maximum synchronization window is
 T_{w}=\frac{[1^\circ-(-1^\circ)]\cdot\frac{f_{\mathit{syn}}^\mathit{trg}}{f_{\mathit{rf}}^\mathit{trg}}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
 \end{equation}
 
-One bunch can be exactly injected into the center of the corresponding bucket within the synchronization window, which is represented by the yellow dot in Fig. ~\ref{frequency_beat}. Other bunches on both side of this bunch are injected into their corresponding buckets (red dots) with an arithmetic increasing phase offset, which is called the ``phase step growth``, denoted as \gls{symb:pha_step}. 
+if a bunch can be exactly injected into the center of the corresponding bucket within the synchronization window, which is represented by the yellow dot in Fig. ~\ref{frequency_beat}, other bunches on both side of this bunch are injected into their corresponding buckets (red dots) with an arithmetic increasing phase offset based on the cavity rf frequencies, which is called the ``phase step growth``, denoted as \gls{symb:pha_step}. 
 \begin{equation}
 \Delta \phi_\mathit{step}=\frac{2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}{f_{\mathit{syn}}^\mathit{trg}}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}\label{step_growth}
 \end{equation}
@@ -816,6 +830,10 @@ The length of the synchronization window is either $2/f_{\mathit{syn}}^\mathit{t
 \Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|T_\mathit{w}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}
 \end{equation}
 
+In fact, there exists the possibility that a bunch can be optimal injected into the center of a bucket with a mismatch range from $0^\circ$ to $\Delta \phi_\mathit{step}$ due to the initial phase relation between two rf systems. Therefore, the bunch-to-bucket injection center mismatch within the synchronization window is within the following range.
+\begin{equation}
+\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|T_\mathit{w}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}+\Delta \phi_\mathit{step}
+\end{equation}
 
 %\begin{itemize}
 %\item

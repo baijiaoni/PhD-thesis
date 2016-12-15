@@ -79,7 +79,7 @@ The B2B transfer process basically needs to follow the six steps ~\cite{bai_bunc
 
 The source synchrotron generally accomplishes the phase alignment in case of the phase shift method. A particular case is the empty target synchrotron. The phase alignment can be achieved very fast and simple by the phase jump at the target synchrotron. Although the synchronization window is theoretically infinite for the phase shift method, bunches should be transferred as soon as the phase shift is done, in order to guarantee the stability of the beam. For both synchronization methods, the synchronization window has a certain length.
 
-\item The trigger signals are generated for the kickers with the delay compensation.
+\item The trigger signals with the delay compensation are generated for the kickers.
 \item The kicker electronic fire the kickers. The actual beam injection time and the B2B transfer status are send from the source synchrotron to the DM and the DM sends them further to the beam instrumentation.
 
 \end{enumerate}
@@ -124,7 +124,7 @@ This section describes the realization of the FAIR B2B transfer system based on 
 %
 %The B2B transfer system includes four main SCUs.
 %\begin{enumerate}
-%\item REF SCU provides the Reference RF Signals for a group of cavities in one synchrotron. 
+%\item REF SCU provides the B2B Reference Signals for a group of cavities in one synchrotron. 
 %\item COPY SCU is used for the phase measurement.
 %\item B2B SCU
 %\item Trigger SCU provides trigger for the kickers in each synchrotron.
@@ -135,14 +135,14 @@ The rf frequency in the source and target synchrotron need to be stable constant
 
 \begin{enumerate}
 \item The measurement of the actual phase values.
-\item The extrapolated phase advance in the future based on the measured phase advance.
+\item The extrapolated phase advance in the future based on the measured phase advance values.
 \item The timestamp for the extrapolated phase values.
 \end{enumerate}
  \subsubsection{Measurement of actual phase values of each rf system}
-The phase measurement of each rf system is achieved by measuring the phase advance between a dedicated Reference RF Signal of a synchrotron and a shared reference sinusoidal signal. The phase advance has a linear relationship with time, whose range is from $-180^\circ$ to $+180^\circ$. 
+The phase measurement of each rf system is achieved by measuring the phase advance between a dedicated B2B Reference Signal of a synchrotron and a shared reference sinusoidal signal. The phase advance has a linear relationship with time, whose range is from $-180^\circ$ to $+180^\circ$. 
 
 
-A dedicated Reference RF Signal of a synchrotron has its synchronization frequency, see Sec. ~\ref{match}. A shared reference signal (which is called “\gls{glos:Syn_ref_signal}”) is used in the source and target synchrotrons in order to determine the phase difference between two rf systems. It has a fixed frequency and always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges ~\cite{ferrand_system_2014, ferrand_system_2015}. Thus, the Synchronization Reference Signal is synchronous in different supply rooms by definition. The frequency of the Synchronization Reference Signal \gls{symb:syn_ref} is calculated by 
+A B2B Reference Signal of a synchrotron has a frequency of the smaller value of $f_{\mathit{rev}}^{X}$ and $f_{\mathit{syn}}^{X}$. see Sec. ~\ref{match}. A shared reference signal (which is called “\gls{glos:Syn_ref_signal}”) is used in the source and target synchrotrons in order to determine the phase difference between two rf systems. It has a fixed frequency and always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges ~\cite{ferrand_system_2014, ferrand_system_2015}. Thus, the Synchronization Reference Signal is synchronous in different supply rooms by definition. The frequency of the Synchronization Reference Signal \gls{symb:syn_ref} is calculated by 
 
 \begin{equation}
 \label{round}
@@ -158,10 +158,10 @@ The function \textit{round} rounds $f_\mathit{syn}^{X}/\SI{100}{kHz}$ up or down
    \label{phase_prediction}
 \end{figure}
 
-Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated synchrotron. The red sinusoidal wave represents the Synchronization Reference Signals (e.g \SI{100}{kHz}) in two supply rooms and the black wave the Reference RF Signals (e.g. \SI{1000/3}{kHz}) from the \gls{glos:group_DDS}. Although the relation between the Synchronization Reference Signal and the Reference RF Signal in Fig.~\ref{phase_prediction} does not comply with eq. ~\ref{round}, the principle for the measurement of the phase advance is same and they are used for the easy observation of the process. The phase advance  between the Reference RF Signal and the Synchronization Reference Signal $\Delta \varphi^\mathit{src}$ is measured by the Phase Advance Measurement (\gls{PAM}) module at the source synchrotrons and $\Delta \varphi^\mathit{trg}$ at the target synchrotron. \gls{symb:phase_diff} represents the measured phase advance of the synchrotron X. The phase advance measurement is performed asynchronously to an internal clock, which is represented by the blue dots. For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
+Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated synchrotron. The red sinusoidal wave represents the Synchronization Reference Signals (e.g \SI{100}{kHz}) in two supply rooms and the black wave the B2B Reference Signals (e.g. \SI{1000/3}{kHz}) from the \gls{glos:group_DDS}. Although the relation between the Synchronization Reference Signal and the B2B Reference Signal in Fig.~\ref{phase_prediction} does not comply with eq. ~\ref{round}, the principle for the measurement of the phase advance is same and they are used for the easy observation of the process. The phase advance  between the B2B Reference Signal and the Synchronization Reference Signal $\Delta \varphi^\mathit{src}$ is measured by the Phase Advance Measurement (\gls{PAM}) module at the source synchrotrons and $\Delta \varphi^\mathit{trg}$ at the target synchrotron. \gls{symb:phase_diff} represents the measured phase advance of the synchrotron X. The phase advance measurement is performed asynchronously to an internal clock, which is represented by the blue dots. For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase extrapolate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Phase extrapolation of each rf system}
-The phase advance can be extrapolated due to the linear relationship between time and the phase advance. Based on a series of the phase advance measurements, the phase advance at the first positive zero-crossings of C2 clocks after T0 edges $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are extrapolated at the source and target synchrotrons by the Phase Advance Prediction (\gls{PAP}) Module.  \gls{symb:phase_diff_T0} represents the extrapolated phase advance of the synchrotron X. The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target synchrotron, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first positive zero-crossings of C2 clocks after T0 edges and the Synchronization Reference Signal is zero phase aligned with the first positive zero-crossings of C2 clocks after T0 edges, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the Reference RF Signals of the virtual rf cavitis of two synchrotrons (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
+The phase advance can be extrapolated due to the linear relationship between time and the phase advance. Based on a series of the phase advance measurements, the phase advance at the first positive zero-crossings of C2 clocks after T0 edges $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are extrapolated at the source and target synchrotrons by the Phase Advance Prediction (\gls{PAP}) Module.  \gls{symb:phase_diff_T0} represents the extrapolated phase advance of the synchrotron X. The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target synchrotron, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first positive zero-crossings of C2 clocks after T0 edges and the Synchronization Reference Signal is zero phase aligned with the first positive zero-crossings of C2 clocks after T0 edges, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the B2B Reference Signals of the virtual rf cavitis of two synchrotrons (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{phase_prediction1.jpg}
@@ -201,7 +201,7 @@ For the simplicity, the B2B source SCU works as the ``B2B transfer master``, so 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% rf synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Rf synchronization}
-The FAIR B2B transfer system is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}. The rf synchronization of two synchrotrons can be realized based on the measurement of the phase difference between the Reference RF Signals of two rf systems. With the phase shift method, a frequency modulation with a fixed duration is applied to the Reference RF Signal of one (or both) rf system. With the frequency beating method, the phase difference varies at the rate of the synchronization frequency difference between two rf systems. 
+The FAIR B2B transfer system is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}. The rf synchronization of two synchrotrons can be realized based on the measurement of the phase difference between the B2B Reference Signals of two rf systems. With the phase shift method, a frequency modulation with a fixed duration is applied to the B2B Reference Signal of one (or both) rf system. With the frequency beating method, the phase difference varies at the rate of the synchronization frequency difference between two rf systems. 
 
 \begin{itemize}
 \item Rf synchronization with the phase shift method
@@ -224,7 +224,7 @@ Fig.~\ref{normalized_profile} shows an example of a normalized and several actua
    \label{normalized_profile}
 \end{figure}  
 
-Fig.~\ref{PSM} shows the implementation of the Phase Shift Module (PSM) in the B2B source SCU. The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the Reference RF Signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed star-shaped to all the Group DDS of the synchrotron. The Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.
+Fig.~\ref{PSM} shows the implementation of the Phase Shift Module (PSM) in the B2B source SCU. The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the B2B Reference Signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed star-shaped to all the Group DDS of the synchrotron. The B2B Reference Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.
   \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=80mm]{PSM.jpg}
@@ -237,7 +237,7 @@ A particular case of the B2B synchronization occurs, when the target synchrotron
 
 \item Rf synchronization with the frequency beating method
 
-The circumference ratio between many pair of machines in FAIR is not an integer, the synchronization frequencies of two synchrotrons begin beating automatically. For the pairs with an integral circumference ratio, the synchronization frequency of the source synchrotron is detuned. The Group DDS produces the detuned Reference RF Signal. 
+The circumference ratio between many pair of machines in FAIR is not an integer, the synchronization frequencies of two synchrotrons begin beating automatically. For the pairs with an integral circumference ratio, the synchronization frequency of the source synchrotron is detuned. The Group DDS produces the detuned B2B Reference Signal. 
 \end{itemize}
 
 
@@ -267,7 +267,7 @@ The bucket label is realized based on the indication signal for the first bucket
 
 The indication signal is either with the revolution frequency or the synchronization frequency of the target synchrotron. It depends on the relation between the revolution frequency and the synchronization frequency of the target synchrotron.  When $f_{\mathit{syn}}^{trg}>=f_{\mathit{rev}}^{trg}$, namely the rf period of the synchronization frequency is equal to or less than the revolution period, the  rf period of the synchronization frequency is not long enough to include all buckets. In this case, the indication signal is with the revolution frequency of the target synchrotron and the synchronization window is two times as long as the revolution period, namely $T_{w}=2\cdot T_{\mathit{rev}}^{\mathit{trg}}$. Oppositely, the indication signal is with the synchronization frequency of the target synchrotron and the synchronization window is two times as long as the rf period of the synchronization frequency, namely $T_{w}=2\cdot T_\mathit{syn}^{\mathit{trg}}$. $T_\mathit{syn}^X$ is denoted as the rf period of the synchronization frequency of the synchrotron $X$. 
 
-Because the phase advance of the Reference RF Signal complies with the linear relation with time, the evolution of the phase advance of the target synchrotron can be calculated. Therefore, the indication signal can be corrected exactly in phase with the frequency of $f_{\mathit{rev}}^{trg}$ or $f_{\mathit{syn}}^{trg}$ by the evolution of the phase advance at a first positive zero-crossing of C2 clock after T0 edges. The indication signal is exactly a copy of the revolution frequency or the synchronization frequency of the target synchrotron, so it is called the ''reproduced signal'', or the ``bucket label signal`` from the functional perspective. The reproduced signal could be reproduced campus-wide. A specific bucket is just a certain number of the cavity rf periods of the target synchrotron delay based on the reproduced signal.
+Because the phase advance of the B2B Reference Signal complies with the linear relation with time, the evolution of the phase advance of the target synchrotron can be calculated. Therefore, the indication signal can be corrected exactly in phase with the frequency of $f_{\mathit{rev}}^{trg}$ or $f_{\mathit{syn}}^{trg}$ by the evolution of the phase advance at a first positive zero-crossing of C2 clock after T0 edges. The indication signal is exactly a copy of the revolution frequency or the synchronization frequency of the target synchrotron, so it is called the ''reproduced signal'', or the ``bucket label signal`` from the functional perspective. The reproduced signal could be reproduced campus-wide. A specific bucket is just a certain number of the cavity rf periods of the target synchrotron delay based on the reproduced signal.
 
 
 %\begin{equation}
@@ -307,7 +307,7 @@ The \gls{SR} module produces the ''reproduced signal'' with the same frequency a
 
 The reproduced signal must do the phase correction at a specified first positive zero-crossing of C2 clock after T0 edge. The phase correction value is calculated by the B2B source SCU and transferred by the timing frame TGM \_PHASE \_CORRECTION to the \gls{glos:trigger_scu}. Then the Trigger SCU gives the phase correction value to the SR module via the PCM.
 
-In reality, the reproduced signal can also be directly distributed from the switch matrix, which synchronizes with the Reference RF Signal of the revolution frequency or the synchronization frequency of the target synchrontron in frequency and phase.
+In reality, the reproduced signal can also be directly distributed from the switch matrix, which synchronizes with the B2B Reference Signal of the revolution frequency or the synchronization frequency of the target synchrontron in frequency and phase.
 
 \item[-] Step 3. Bucket indication
 
@@ -325,9 +325,9 @@ Only for the SIS100 emergency procedure, the bunch gap label is important during
 \end{figure} 
 
 \begin{itemize}
-\item[-] Step 1. Reproduced signal synchronized with the Reference RF Signal of the revolution frequency
+\item[-] Step 1. Reproduced signal synchronized with the B2B Reference Signal of the revolution frequency
 
-The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal of the revolution frequency in frequency and phase.
+The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the B2B Reference Signal of the revolution frequency in frequency and phase.
 \item[-] Step 2. Bunch gap indication
 
 The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the real-time reproduced signal is with the SIS100 revolution frequency and the 9th and 10th buckets of ten buckets are taken as an example as the bunch gap. The $t_{\mathit{bucket}}=4\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$.
