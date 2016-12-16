@@ -200,7 +200,7 @@ Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket labe
 	&  Large synchrotron is target synchrotron \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{l}$\\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & $f_{\mathit{syn}}^{s}+\Delta f$ and $f_{\mathit{syn}}^{l}$ \\ \hline
-	\tabincell{c}{Frequency of \\ Synchronization \\Reference\\ Signal} & $f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
   
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{l}$ \\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{rev}}^{l}}{1/\Delta f}\cdot360^\circ\cdot\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{syn}}^{l}}$ \\ \hline
@@ -220,7 +220,7 @@ Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket labe
 	Cases& \tabincell{c}{ $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$ \\ \\($\frac{Y}{\kappa}>=1$) } &\tabincell{c}{ $f_{\mathit{syn}}^{l}<f_{\mathit{rev}}^{s}$ \\ \\ ($\frac{Y}{\kappa}<1$) } \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{s}$ & $f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{l}+\Delta f$ and $f_{\mathit{syn}}^{s}$}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \multicolumn{2}{c|}{$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} &$\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$& $\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$\\ \hline
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{s}$ & $2/f_{\mathit{syn}}^{s}$\\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{rev}}^{s}}{1/\Delta f}\cdot360^\circ\cdot\frac{f_{\mathit{rf}}^{s}}{f_{\mathit{syn}}^{s}}$ & $\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{syn}}^{s}}{1/\Delta f}\cdot360^\circ\cdot\frac{f_{\mathit{rf}}^{s}}{f_{\mathit{syn}}^{s}}$\\ \hline
     \end{tabular}
@@ -299,9 +299,9 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
     \begin{tabular}{ | c | c | c |}
     \hline
 	&  \tabincell{c}{Large synchrotron (the SIS100) is target synchrotron} \\ \hline
-   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{SIS100}}$  \\ \hline
+   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{0.157254}{MHz}$  \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} &  \tabincell{c}{$f_{\mathit{syn}}^{s}+\Delta f=f_{\mathit{rf}}^{\mathit{SIS18}}+\SI{200}{Hz}$=\SI{1.572536}{MHz}+\SI{200}{Hz} \\and\\ $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{\mathit{SIS100}}$=\SI{1.572536}{MHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{1.6}{MHz}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{200}{kHz}\\ \hline
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{12.718}{us}$\\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f{\mathit{rev}}^{\mathit{SIS100}}}{1/200}\cdot360^\circ\cdot 1=\pm0.5^\circ$\\ \hline
     \end{tabular}
@@ -366,9 +366,9 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
     \begin{tabular}{ | c | c | c| }
     \hline
 	&  Large synchrotron (the SIS100) is target synchrotron \\ \hline
-   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{SIS100}}$  \\ \hline
+   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{0.135936}{MHz}$  \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} &  \tabincell{c}{$f_{\mathit{syn}}^{s}+\Delta f=f_{\mathit{rf}}^{\mathit{SIS18}}+\SI{200}{Hz}$=\SI{1.359358}{MHz}+\SI{200}{Hz} \\and\\ $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{\mathit{SIS100}}/2$=\SI{1.359358}{MHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{1.4}{MHz}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz}\\ \hline
 
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{7.356}{us}$ \\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{rev}}^{\mathit{SIS100}}}{1/200}\cdot360^\circ\cdot 2=\pm0.6^\circ$\\ \hline
@@ -467,7 +467,7 @@ Two synchronization frequencies are beating automatically. The choice of the fre
 	&  Large synchrotron is target synchrotron \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{l}$\\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\ \hline
-	\tabincell{c}{Frequency of \\ Synchronization \\Reference\\ Signal} & $f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{Beating \\ frequencies} & $\Delta f= |f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$ \\ \hline
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{l}$ \\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{rev}}^{l}}{1/\Delta f}\cdot360^\circ\cdot\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{syn}}^{l}}$ \\ \hline
@@ -489,7 +489,7 @@ Two synchronization frequencies are beating automatically. The choice of the fre
 	Cases& \tabincell{c}{ $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$ \\ \\($\frac{Y}{\kappa}>=1$) } &\tabincell{c}{ $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ \\ \\ ($\frac{Y}{\kappa}<1$) } \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$}\\ \hline
-	\tabincell{c}{Frequency of \\ Synchronization \\Reference\\ Signal} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ &$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{Beating\\ frequencies} & \multicolumn{2}{c|}{$\Delta f=|f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$}\\ \hline
 
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{s}$ & $2/f_{\mathit{syn}}^{s}$\\ \hline
@@ -526,9 +526,9 @@ The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$ ,s
     \begin{tabular}{ | c | c | }
     \hline
 	&  Small synchrotron (the ESR) is target synchrotron \\ \hline
-   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{ESR}}$  \\ \hline
+   \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{\mathit{ESR}}=\SI{0.685651}{\MHz}$  \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{\mathit{SIS18}}=\SI{1.373201}{\MHz}$ and $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{\mathit{ESR}}=\SI{1.371302}{\MHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{1.4}{MHz} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{700}{kHz} \\ \hline
 	\tabincell{c}{Beating\\ frequencies} & \SI{1899}{\Hz}\\ \hline
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{\mathit{ESR}}=\SI{2.917}{us}$ \\ \hline
 	\tabincell{c}{Bunch-to-bucket\\injection\\center\\ mismatch}&$\pm\frac{1}{2}\cdot\frac{2/f_{\mathit{rev}}^{\mathit{ESR}}}{1/1899}\cdot360^\circ\cdot1=\pm1.0^\circ$\\ \hline
@@ -658,7 +658,7 @@ Two synchronization frequencies are beating automatically. When the large synchr
 	Cases& \tabincell{c}{ $f_{\mathit{syn}}^{l}>=f_{\mathit{rev}}^{l}$ \\ \\($\frac{Y}{n}>=1$) } &\tabincell{c}{ $f_{\mathit{syn}}^{l}<f_{\mathit{rev}}^{l}$ \\ \\ ($\frac{Y}{n}<1$) } \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{l}$ &$f_{\mathit{syn}}^{l}$ \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$}\\ \hline
-	\tabincell{c}{Frequency of \\ Synchronization \\Reference\\ Signal} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{Beating\\ frequencies} & \multicolumn{2}{c|}{$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}\\ \hline
 
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{l}$ & $2/f_{\mathit{syn}}^{l}$\\ \hline
@@ -680,7 +680,7 @@ When the small synchrotron is the target, the frequency of the bucket label sign
 	Cases& \tabincell{c}{ $f_{\mathit{syn}}^{s}>=f_{\mathit{rev}}^{s}$ \\ \\($\frac{Y}{m}>=1$) } &\tabincell{c}{ $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ \\ \\ ($\frac{Y}{m}<1$) } \\ \hline
    \tabincell{c}{Frequency \\ of bucket label} & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{synchronization\\ frequencies} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$}\\ \hline
-	\tabincell{c}{Frequency of \\ Synchronization \\Reference\\ Signal} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{Beating\\ frequencies} & \multicolumn{2}{c|}{$\Delta f=|f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$}\\ \hline
 
 	\tabincell{c}{Length of \\synchronization\\ window}& $2/f_{\mathit{rev}}^{s}$ & $2/f_{\mathit{syn}}^{s}$\\ \hline
@@ -688,7 +688,7 @@ When the small synchrotron is the target, the frequency of the bucket label sign
     \end{tabular}
 \end{center}
 \end{table}
-There are various combination of $\frac{m}{n}$ and $\lambda$, $\lambda$ determines the beating frequency. The smaller, the more precise bunch-to-bucket injection. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines two synchronization frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization frequencies, which has higher requirement for the LLRF system. So we have to find a balance between the precision of the bunch-to-bucket injection and two synchronization frequencies for the beating.
+%There are various combination of $\frac{m}{n}$ and $\lambda$, $\lambda$ determines the beating frequency. The smaller, the more precise bunch-to-bucket injection. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines two synchronization frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization frequencies, which has higher requirement for the LLRF system. So we have to find a balance between the precision of the bunch-to-bucket injection and two synchronization frequencies for the beating.
 
 %Two synchronization frequencies could also be a fraction (between 1/Y and 1) times of the $\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$, see Sec. ~\ref{sec:close_to_int}.
 %The bucket label frequency and the beating frequency are proportional to the slightly difference frequencies by the coefficient of the fraction and the length of the synchronization window is inversely proportional to the slightly difference frequencies by the coefficient of the reciprocal for the fraction. The bunch to bucket center mismatch is proportional to the synchronization window and the beating frequency, whose coefficient product is 1, so the mismatch is determined by $\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$.
@@ -751,6 +751,7 @@ There exists an inherent big bunch-to-bucket injection center mismatch. If this 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use case of the RIB B2B transfer from the SIS100 to the CR} 
+\label{RIB_100_CR}
 Only one out of two bunches is extracted from the SIS100 and goes to a Super FRS, then the RIB is produced and injected into one bucket of the CR. The large synchrotron is the SIS100 and the small one is the CR. $h^{\mathit{SIS100}}=2$ and $h^{\mathit{CR}}=1$. Here we take an example, that the energy of the heavy ion beam before the Super FRS is \SI{1.5}{GeV/\atomicmassunit} and the RIB energy after the Super FRS is \SI{740}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.4-0.0046=\frac{m}{n}+ \lambda=\frac{22}{5}-0.0046

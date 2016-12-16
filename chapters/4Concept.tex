@@ -25,8 +25,9 @@ For the phase alignment, the steps below must be carried out.
 For the proper B2B transfer, not only the relative position of bunches and buckets, but also the firing of the extraction and injection kickers must be precisely controlled. The extraction kicker must kick the bunch exactly the time-of-flight earlier before a specific bucket passes the injection kicker. For the calculation of the trigger time for the extraction and injection kickers, the following steps must be processed. 
 %The kicker time contains the rise time, the flat-top and the fall time, see Sec. ~\ref{sec:kicker}. 
 \begin{enumerate}
-\item The kicker firing requires the B2B injection center phase mismatch in the range between $\pm 1^\circ$, which defines a ``coarse synchronization``.
-\item The bucket counting requires the kicker firing based on a bucket indication signal (see Sec. ~\ref{sec:bucket_label}). With the help of the bucket counting, bunches are injected into correct buckets. This process is called the ``fine synchronization``.
+\item The kicker firing requires the bunch-to-bucket injection center phase mismatch within a upper bound, e.g. $\pm 1^\circ$, which defines a ``coarse synchronization``.
+\item The bucket label requires the kicker firing based on a bucket indication signal for the first bucket plus a
+fixed delay (see Sec. ~\ref{sec:bucket_label}). With the help of the bucket label, bunches are injected into correct buckets. This process is called the ``fine synchronization``.
 \end{enumerate}
 
 Before the detailed idea of the calculation is explained, some basic concepts and their symbols are introduced, see Fig.~\ref{ext_inj_kicker}.
@@ -59,6 +60,16 @@ In order to inject into specific buckets, the extraction kicker delay compensati
 With the consideration of the \gls{glos:bucket_pattern}, the injection kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}}$, see the gray gear at the SIS100 revolution frequency marker at the SIS100. The injection kicker must be fired $t_{\mathit{v\_inj}}+t_{\mathit{inj}}$ time earlier as the bucket passes the virtual rf cavity, so the injection kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}} - (t_{\mathit{v\_inj}} + t_{\mathit{inj}})$, see the red lighting bolt at the SIS100 revolution frequency marker at the SIS100.
 \end{itemize}
 
+The bucket indication signal indicates the passing time of the first bucket of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection. The first bucket of the target synchrotron is indicated by $f_{\mathit{rev}}^{trg}$. For FAIR use cases, we have $f_\mathit{syn}^{X}=Y\cdot f_\mathit{rev}^{X}/m$ and either $m/Y$ or $Y/m$ must be an integer, see Sec. ~\ref{match}. The correct phase alignment of the rf system of the target synchrotron with the rf system of the source synchrotron is indicated directly by $f_{\mathit{syn}}^{trg}$ for the phase shift method (black bars on the third x-axis of Fig. ~\ref{bucket_label_occurrence} (a)) and indirectly by $f_{\mathit{syn}}^{trg}$ for the frequency beating method (black bars on the third x-axis of Fig. ~\ref{bucket_label_occurrence} (b)). Hence, the rising edges of the bucket indication signal occurs, when the positive zero-crossings of $f_{\mathit{rev}}^{trg}$ overlap that of $f_{\mathit{syn}}^{trg}$, see Fig. ~\ref{bucket_label_occurrence}. In Fig. ~\ref{bucket_label_occurrence}, the bunch length is not taken into consideration. (a) is the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 and (b) is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, more details, please see Chap. ~\ref{application}.
+%bucket_label_signal_choose.docx
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=150mm]{bucket_label_occurrence.jpg}
+   \caption{The occurrence of the rising edges of the bucket indication signal.}{Red dots represent buckets of the target synchrotron and blue ones represent bunches of the source synchrotron. The occurrence of the rising edges of the bucket indication signal are at the positive zero-crossings chosen by blue rectangles. The phase of two rf systems in this example is correct phase aligned with $\Delta\phi_\mathit{syn}=0^\circ$. (a) In the case of the phase shift method. (b) In the case of the frequency beating method.}
+   \label{bucket_label_occurrence}
+\end{figure}
+
+The bucket indication signal is either with the revolution frequency or the synchronization frequency of the target synchrotron. It depends on the relation between the revolution frequency and the synchronization frequency of the target synchrotron. When $f_{\mathit{syn}}^{trg}>=f_{\mathit{rev}}^{trg}$, namely the rf period of the synchronization frequency is equal to or less than the revolution period, the  rf period of the synchronization frequency is not long enough to include all buckets. In this case, the indication signal has the revolution frequency of the target synchrotron. Or the indication signal has the synchronization frequency of the target synchrotron. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
 \section{Basic procedure of the FAIR B2B transfer system}
 \begin{figure}[!htb]
@@ -124,7 +135,7 @@ This section describes the realization of the FAIR B2B transfer system based on 
 %
 %The B2B transfer system includes four main SCUs.
 %\begin{enumerate}
-%\item REF SCU provides the B2B Reference Signals for a group of cavities in one synchrotron. 
+%\item REF SCU provides the Reference RF Signals for a group of cavities in one synchrotron. 
 %\item COPY SCU is used for the phase measurement.
 %\item B2B SCU
 %\item Trigger SCU provides trigger for the kickers in each synchrotron.
@@ -139,22 +150,22 @@ The rf frequency in the source and target synchrotron need to be stable constant
 \item The timestamp for the extrapolated phase values.
 \end{enumerate}
  \subsubsection{Measurement of actual phase values of each rf system}
-The phase measurement of each rf system is achieved by measuring the phase advance between a B2B Reference Signal of a synchrotron and a shared reference sinusoidal signal. The phase advance has a linear relationship with time, whose range is from $-180^\circ$ to $+180^\circ$. 
+The phase measurement of each rf system is achieved by measuring the phase advance between a specified Reference RF Signal of a synchrotron and a shared reference sinusoidal signal. The phase advance has a linear relationship with time, whose range is from $-180^\circ$ to $+180^\circ$. 
 
 
-The \gls{glos:B2B_ref} of the target synchrotron has the same frequency as the bucket indication signal, the smaller value of $f_{\mathit{rev}}^{trg}$ and $f_{\mathit{syn}}^{trg}$. More explanation for the frequency of the bucket indication signal, please see Sec. ~\ref{sec:bucket_label}. The frequency of the B2B Reference Signal is denoted as $f_{\mathit{B2B}}^{X}$. From Chap. ~\ref{background}, we know $f_{\mathit{syn}}^{trg}=\frac{f_{\mathit{rev}}^{trg}}{m}Y$ and either $Y/m$ or $m/Y$ must be an integer for FAIR use cases. Two scenarios of the B2B Reference Signals are
+The Reference RF Signal of the target synchrotron has the same frequency as the bucket indication signal, the smaller value of $f_{\mathit{rev}}^{trg}$ and $f_{\mathit{syn}}^{trg}$. The frequency of the Reference RF Signal is denoted as \gls{symb:B2B_ref}. From Chap. ~\ref{background}, we know $f_{\mathit{syn}}^{trg}=\frac{f_{\mathit{rev}}^{trg}}{m}Y$ and either $Y/m$ or $m/Y$ must be an integer for FAIR use cases. Two scenarios of the frequencies of the Reference RF Signals for two synchrotrons are
 
 \begin{itemize}
-\item $f_{\mathit{rev}}^{trg}>f_{\mathit{syn}}^{trg}$
+\item when $f_{\mathit{rev}}^{trg}>f_{\mathit{syn}}^{trg}$
 
 $f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}$ and $f_{\mathit{B2B}}^{src}=f_{\mathit{syn}}^{src}$, details about the calculation of $f_{\mathit{syn}}^{X}$, please see Sec. ~\ref{match}. 
 
-\item $f_{\mathit{rev}}^{trg}<=f_{\mathit{syn}}^{trg}$
+\item when $f_{\mathit{rev}}^{trg}<=f_{\mathit{syn}}^{trg}$
 
 $f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}$ and $f_{\mathit{B2B}}^{src}=\frac{m}{Y}f_{\mathit{syn}}^{src}$.
 \end{itemize}
 
-A shared reference signal (which is called “\gls{glos:Syn_ref_signal}”) is used in the source and target synchrotrons in order to determine the phase difference between two rf systems. It has a fixed frequency and always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges ~\cite{ferrand_system_2014, ferrand_system_2015}. Thus, the Synchronization Reference Signal is synchronous in different supply rooms by definition. The frequency of the Synchronization Reference Signal \gls{symb:syn_ref} is calculated by 
+A shared reference signal (which is called “\gls{glos:Syn_ref_signal}”) is used in the source and target synchrotrons in order to determine the phase difference between two rf systems. It has a fixed frequency and always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges ~\cite{ferrand_system_2014, ferrand_system_2015}. Thus, the Synchronization Reference Signal is synchronous in different supply rooms by definition. The frequency of the Synchronization Reference Signal \gls{symb:syn_ref} is determined by $f_{\mathit{B2B}}^{X}$ and calculated as
 
 \begin{equation}
 \label{round}
@@ -170,10 +181,12 @@ The function \textit{round} rounds $f_\mathit{B2B}^{X}/\SI{100}{kHz}$ up or down
    \label{phase_prediction}
 \end{figure}
 
-Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated synchrotron. The red sinusoidal wave represents the Synchronization Reference Signals (e.g \SI{200}{kHz}) in two supply rooms and the black wave the B2B Reference Signals (e.g. \SI{157.254}{kHz}) from the \gls{glos:group_DDS}. The phase advance between the B2B Reference Signal and the Synchronization Reference Signal (denoted by \gls{symb:phase_diff}) is measured by the Phase Advance Measurement (\gls{PAM}) module at the source synchrotrons and at the target synchrotron. The phase advance measurement is performed synchronously to an internal clock and asynchronously to the BuTiS reference clock, which is represented by the blue dots. For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
+Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated synchrotron. The red sinusoidal wave represents the Synchronization Reference Signals (e.g \SI{200}{kHz}) in two supply rooms and the black wave the Reference RF Signals (e.g. \SI{157.254}{kHz}) from the \gls{glos:group_DDS}. The phase advance between the Reference RF Signal and the Synchronization Reference Signal (denoted by \gls{symb:phase_diff}) is measured by the Phase Advance Measurement (\gls{PAM}) module at the source synchrotrons and at the target synchrotron. The phase advance measurement is performed synchronously to an internal clock and asynchronously to the BuTiS reference clock, which is represented by the blue dots. For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase extrapolate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Phase extrapolation of each rf system}
-The phase advance can be extrapolated due to the linear relationship between time and the phase advance. Based on a series of the phase advance measurements, the phase advance at the first positive zero-crossings of C2 clocks after T0 edges (denoted by \gls{symb:phase_diff_T0}) are extrapolated at the source and target synchrotrons by the Phase Advance Prediction (\gls{PAP}) Module. The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target synchrotron, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first positive zero-crossings of C2 clocks after T0 edges and the Synchronization Reference Signal is zero phase aligned with the first positive zero-crossings of C2 clocks after T0 edges, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the B2B Reference Signals of the virtual rf cavitis of two synchrotrons (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
+The phase advance can be extrapolated due to the linear relationship between time and the phase advance. 
+
+Based on a series of the phase advance measurements, the phase advance at the first positive zero-crossings of C2 clocks after T0 edges (denoted by \gls{symb:phase_diff_T0}) are extrapolated at the source and target synchrotrons by the Phase Advance Prediction (\gls{PAP}) Module. The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target synchrotron, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance extrapolation is synchronized with the first positive zero-crossings of C2 clocks after T0 edges and the Synchronization Reference Signal is zero phase aligned with the first positive zero-crossings of C2 clocks after T0 edges, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the Reference RF Signals at the virtual rf cavitis of two synchrotrons (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.   
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{phase_prediction1.jpg}
@@ -192,7 +205,7 @@ The timing nodes, the B2B source and target SCUs ~\cite{beck_new_2012, thieme_sc
    \label{PAP}
 \end{figure}
 
-Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. The DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and the \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first positive zero-crossings of C2 clock after a specified T0 edge (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules needs approximate \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value at the first positive zero-crossings of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi^X$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first positive zero-crossing of C2 clock after T0 edge \gls{symb:time_phase_diff_T0} which corresponds to the extrapolated phase, as well as the slope of the phase advance \gls{symb:slope}. The B2B source SCU obtains $\psi^\mathit{src}$, $t_\psi^\mathit{src}$ and $k^\mathit{src}$ at the source synchrotron and the B2B target SCU obtains $\psi^\mathit{trg}$, $t_\psi^\mathit{trg}$ and $k^\mathit{trg}$ at the target synchrotron.
+Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. The DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and the \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at the designated time, the first positive zero-crossings of C2 clock after a specified T0 edge (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules needs approximate \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value at the first positive zero-crossings of C2 clocks after T0 edges. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to get the extrapolated phase $\psi^X$ (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules and they also get the timestamp of the first positive zero-crossing of C2 clock after T0 edge \gls{symb:time_phase_diff_T0} which corresponds to the extrapolated phase, as well as the slope of the phase advance \gls{symb:slope}. The B2B source SCU obtains $\psi^\mathit{src}$, $t_\psi^\mathit{src}$ and $k^\mathit{src}$ at the source synchrotron and the B2B target SCU obtains $\psi^\mathit{trg}$, $t_\psi^\mathit{trg}$ and $k^\mathit{trg}$ at the target synchrotron. In fact, $t_\psi^\mathit{src}=t_\psi^\mathit{trg}$.
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{phase_diff_syn_time.jpg}
@@ -204,7 +217,7 @@ Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolat
 
 For the B2B transfer, there is a ``\gls{glos:B2B_master}``, which is responsible for the data collection of two synchrotrons, the data calculation, the data redistribution and the B2B transfer status check. The data of the source and target synchrotron must be transferred to the ``B2B transfer master`` via the deterministic WR network in the format of the timing frame.
  
-For the simplicity, the B2B source SCU works as the ``B2B transfer master``, so the extrapolated phase $\psi^\mathit{trg}$, the corresponding timestamp $t_{\psi^\mathit{trg}}$ and the phase advance slope $k^\mathit{trg}$ are transferred by the B2B target SCU to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM \_PHASE \_TIME. The B2B transfer involves a certain amount of timing frames. More details about the B2B timing frames, please see Appendix A. The timing frames are not sent via the DM in order to reduce the traffic of the WR network and reduce the timing frame transfer delay on the WR network ~\cite{bai_concept_2016}, so a specified VLAN, B2B \gls{VLAN}, is defined for the B2B timing frames. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frames in the WR network. The frames are transferred along the path with orange color instead of the path with blue color. 
+For the simplicity, the B2B source SCU works as the ``B2B transfer master``, so the extrapolated phase $\psi^\mathit{trg}$, the corresponding timestamp $t_\psi^\mathit{trg}$ and the phase advance slope $k^\mathit{trg}$ are transferred by the B2B target SCU to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM \_PHASE \_TIME. The B2B transfer involves a certain amount of timing frames. More details about the B2B timing frames, please see Appendix A. The timing frames are not sent via the DM in order to reduce the traffic of the WR network and reduce the timing frame transfer delay on the WR network ~\cite{bai_concept_2016}, so a specified VLAN, B2B \gls{VLAN}, is defined for the B2B timing frames. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frames in the WR network. The frames are transferred along the path with orange color instead of the path with blue color. The test for the transfer delay of the B2B timing frames on the WR network is explained in Chap. ~\ref{realization}.
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{network_B2B.jpg}
@@ -213,7 +226,12 @@ For the simplicity, the B2B source SCU works as the ``B2B transfer master``, so 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% rf synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Rf synchronization}
-The FAIR B2B transfer system is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}. The rf synchronization of two synchrotrons can be realized based on the measurement of the phase difference between the B2B Reference Signals of two rf systems. With the phase shift method, a frequency modulation with a fixed duration is applied to the B2B Reference Signal of one (or both) rf system, as well as the Reference RF Signals. With the frequency beating method, the phase difference varies at the rate of the synchronization frequency difference between two rf systems. 
+The FAIR B2B transfer system is available for both the phase shift and frequency beating methods, see Sec. \ref{two_sync_methods}. The rf synchronization of two synchrotrons is based on the target phase difference and the phase difference between two synchronization frequencies of two rf systems $\Delta \phi_\mathit{syn}$. $\Delta \phi_\mathit{syn}$ is directly or indirectly calculated from the measurement of the phase difference between the Reference RF Signals of two rf systems. When $f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}$, $\Delta \phi_\mathit{syn}=\psi^\mathit{trg}-\psi^\mathit{src}$. When $f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}$, $\Delta \phi_\mathit{syn}=\frac{Y}{m}(\psi^\mathit{trg}-\psi^\mathit{src})$. The B2B source SCU calculates the required phase shift (denoted as  \gls{symb:pha_shift_shift}) based on the target phase difference $t_{\mathit{diff\_sync}}$ and $\Delta \phi_\mathit{syn}$, see eq. ~\ref{phase_shift_eq}. The SM provides the target phase difference in the format of the time, which considers the delay compenstion for TOF, all propagation, kicker preparation and extra phase shift. If the SIS100 odd buckets need to be injected by one SIS18 $H^+$ bunch, the extra phase shift equals to $0^\circ$, If the SIS100 even buckets need to be injected by one SIS18 $H^+$ bunch, the extra phase shift equals to $\pi$. 
+\begin{equation}
+\Delta \phi_\mathit{shift}= (\frac{t_{\mathit{diff\_sync}} \mod 1/f_\mathit{syn}^\mathit{trg}}{1/f_\mathit{syn}^\mathit{trg}}\cdot 2\pi -\Delta \phi_\mathit{syn}) \mod \pi\label{phase_shift_eq}
+\end{equation}
+
+With the phase shift method, a frequency modulation with a fixed duration is applied to the Group DDS with the synchronization frequency of one (or both) rf system. The rf frequency modulation achieves the phase shift of $\Delta \phi_\mathit{shift}$. With the frequency beating method, the phase difference varies at the rate of the synchronization frequency difference between two rf systems. Two rf systems are synchronized when the phase difference equals to $\Delta \phi_\mathit{shift}$. 
 
 \begin{itemize}
 \item Rf synchronization with the phase shift method
@@ -223,12 +241,13 @@ The FAIR B2B transfer system is available for both the phase shift and frequency
 %\Delta \phi_{shift}= 2\pi \int_{t_0}^{t_0+T} \Delta f_{rf}(t)dt \label{phase}
 %\end{equation}
 %The required phase shift is determined by the frequency offset \gls{symb:freq_modulation} and the duration of the frequency modulation $T$.
-Eq.~\ref{phase1} gives the relation between the required phase shift and the frequency modulation. The phase shift must be executed adiabatically, see Sec. \ref{two_sync_methods}. For the rf synchronization, the maximum required phase shift of the synchronization frequency is $360^\circ$. In order to accomplish the phase alignment as fast as possible, the phase shift will be conducted backward or forward. Therefore a phase shift of up to $\pm 180^\circ$ will be implemented for the B2B Reference Signal, as well as Reference RF Signals (e.g. the Group DDS). A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by the normalized frequency modulation profile and the required phase shift, see eq.~\ref{actual_profile}. The B2B source SCU calculates the required phase shift, $\Delta \phi_\mathit{syn}$, based on the target phase difference and the measured phase difference between two rf systems. The SM provides the target phase difference in the format of the time, which considers the delay compenstion for TOF, all propagation, kicker preparation and extra phase shift. If the SIS100 odd buckets need to be injected by one the SIS18 $H^+$ bunch, the extra phase shift equals to $0^\circ$, If the SIS100 even buckets need to be injected by one the SIS18 $H^+$ bunch, the extra phase shift equals to $\pi$. 
+Eq.~\ref{phase1} gives the relation between the required phase shift and the frequency modulation. The phase shift must be executed adiabatically, see Sec. \ref{two_sync_methods}. For the rf synchronization, the maximum required phase shift of the synchronization frequency is $360^\circ$. In order to accomplish the phase alignment as fast as possible, the phase shift will be conducted backward or forward. Therefore a phase shift of up to $\pm 180^\circ$ will be implemented for the Group DDS with the synchronization frequency $f_\mathit{syn}^X$. A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $180^\circ$ can be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by \gls{symb:phase_shift_normalized} and \gls{symb:pha_shift_shift}, see eq.~\ref{actual_profile}. 
+\begin{equation}
+\frac{\Delta \phi_\mathit{shift}}{180^\circ}= \frac{f_{\mathit{actual}}}{f_{\mathit{normalized}}} \label{actual_profile}
+\end{equation}
 
 Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency  modulation profiles and the corresponding phase shift profiles. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $180^\circ$. The blue one is $1/2 f_{\mathit{normalized}}$ with the phase shift of $90^\circ$ and the green one is $1/3 f_{\mathit{normalized}}$ with $60^\circ$. 
-\begin{equation}
-\frac{\Delta \phi_\mathit{syn}}{180^\circ}= \frac{f_{\mathit{actual}}}{f_{\mathit{normalized}}} \label{actual_profile}
-\end{equation}
+
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=160mm]{normalized_profile.png}
@@ -236,7 +255,7 @@ Fig.~\ref{normalized_profile} shows an example of a normalized and several actua
    \label{normalized_profile}
 \end{figure}  
 
-Fig.~\ref{PSM} shows the implementation of the Phase Shift Module (PSM) in the B2B source SCU. The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the B2B Reference Signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed star-shaped to all the Group DDS of the synchrotron. The B2B Reference Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.
+Fig.~\ref{PSM} shows the implementation of the Phase Shift Module (PSM) in the B2B source SCU. The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the Reference RF Signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed star-shaped to all the Group DDS of the synchrotron. The Reference RF Signal is routed to the different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the synchrotron. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}.
   \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=80mm]{PSM.jpg}
@@ -245,11 +264,11 @@ Fig.~\ref{PSM} shows the implementation of the Phase Shift Module (PSM) in the B
 \end{figure}                     
 
 
-A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it does not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. the phase jump is possible). In this case, the B2B source SCU sends the timing frame TGM \_PHASE \_JUMP to the B2B target SCU, which contains the required phase jump. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS of the target synchrotron.
+A particular case of the B2B synchronization occurs, when the target synchrotron is empty, i.e. it does not capture any bunch yet, the phase shift can be done for the target synchrotron without adiabatical consideration (e.g. the phase jump is possible). In this case, the B2B source SCU sends the timing frame TGM \_PHASE \_JUMP to the B2B target SCU, which contains the required phase shift. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS with the synchronization frequency of the target synchrotron.
 
 \item Rf synchronization with the frequency beating method
 
-The circumference ratio between many pair of machines in FAIR is not an integer, the synchronization frequencies of two synchrotrons begin beating automatically. For the pairs with an integral circumference ratio, the synchronization frequency of the source synchrotron is detuned. The Group DDS produces the detuned B2B Reference Signal. 
+The circumference ratio between many pair of machines in FAIR is not an integer, the synchronization frequencies of two synchrotrons begin beating automatically. For the pairs with an integral circumference ratio, the synchronization frequency of the source synchrotron is detuned. The Group DDS produces the detuned Reference RF Signal. 
 \end{itemize}
 
 
@@ -257,29 +276,33 @@ The circumference ratio between many pair of machines in FAIR is not an integer,
 \subsection{Coarse synchronization}
 % For each beam production chain, the B2B related SCUs will be configured by FESA.
 
-The \gls{glos:coarse_syn} is achieved by the synchronization window with a certain length. Within this window, bunches are transferred into buckets with the center mismatch smaller than the upper bound\footnote{B2B transfer from the SIS18 to the SIS100: upper bound of the bunch-to-bucket center mismatch is $\pm1^\circ$}. The length of the synchronization window \gls{symb:syn_win_length} is two rf periods of the reproduced signal for the bucket label, see Sec. \ref{sec:bucket_label}. For the phase shift method, the bunch-to-bucket injection center mismatch within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum bunch-to-bucket injection center mismatch $\Delta \phi_\mathit{rf}$ within the synchronization window is calculated by 
+The \gls{glos:coarse_syn} is achieved by the synchronization window with a certain length. Within this window, bunches are transferred into buckets with the center mismatch smaller than the upper bound\footnote{B2B transfer from the SIS18 to the SIS100: upper bound of the bunch-to-bucket center mismatch is $\pm1^\circ$}. The length of the synchronization window \gls{symb:syn_win_length} is two rf periods of the bucket indication signal. For the phase shift method, the bunch-to-bucket injection center mismatch within the synchronization window is almost $0^\circ$. For the frequency beating method, the maximum bunch-to-bucket injection center mismatch $\Delta \phi_\mathit{rf}$ within the synchronization window is calculated by eq. ~\ref{b2b_center_1}. More details, please see Sec. ~\ref{subsec:beating}.
 \begin{equation}
-\Delta \phi_\mathit{rf}=\pm\frac{1}{2}\frac{T_{w}}{1/\Delta f_\mathit{syn}}\cdot360^\circ\cdot\frac{f_{\mathit{rf}}^{trg}}{f_{\mathit{syn}}^{trg}}
+\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|T_\mathit{w}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}+\Delta \phi_\mathit{step}\label{b2b_center_1}
 \end{equation}
 
 %The B2B source SCU is capable of receiving the values~\footnote{The delay compensation for the TOF and the kicker preparation time, the cavity rf frequencies of the source and target synchrotrons, the extra phase shift value for the even buckets injection and the upper bound time for the phase shift of the source synchrotron} from the SM by FESA classes via the accelerator network. 
-The B2B source SCU obtains the delay compensation for the TOF, all propagation delays and kicker preparation time from the SM. It calculates the synchronization window, taking the delay compensation into consideration and transfers the timestamp of the start of the synchronization window, TGM \_SYNCH \_WIN, to the DM and the source and target Trigger SCUs via the WR network. The Trigger SCUs are used to produce the kicker trigger signals. 
+The B2B source SCU obtains the delay compensation for the TOF, all propagation delays, the kicker preparation time and the bucket pattern (denoted as \gls{symb:delay_com}) from the SM. It calculates the start of the synchronization window (denoted as \gls{symb:win_start}), taking the delay compensation into consideration and transfers \gls{symb:win_start} to the DM and the source and target Trigger SCUs via the WR network by the timing frame TGM \_SYNCH \_WIN. The Trigger SCUs are used to produce the kicker trigger signals. For the phase shift method, the rf frequency detune has a fixed duration $T$. Eq. ~\ref{syn_win_start} is the start of the synchronization window for the phase shift method and Eq. ~\ref{syn_win_start1} that for the frequency beating method.
+\begin{equation}
+t_\mathit{w\_start}=t_\psi^\mathit{X}+T-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start}
+\end{equation}
+\begin{equation}
+t_\mathit{w\_start}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{\Delta f}-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start1}
+\end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bucket label}
 \label{sec:bucket_label}
-The bucket label is realized based on the indication signal for the first bucket plus a fixed delay for the indication of the correct buckets to be filled. The indication signal indicates the passing time of the first bucket of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection. The first bucket of the target synchrotron is indicated by $f_{\mathit{rev}}^{trg}$. For FAIR use cases, we have $f_\mathit{syn}^{X}=Y\cdot f_\mathit{rev}^{X}/m$ and either $m/Y$ or $Y/m$ must be an integer, see Sec. ~\ref{match}. The correct phase alignment of the rf system of the target synchrotron with the rf system of the source synchrotron is indicated directly by $f_{\mathit{syn}}^{trg}$ for the phase shift method (black bars on the second x-axis of Fig. ~\ref{bucket_label_occurrence} (a)) and indirectly by $f_{\mathit{syn}}^{trg}$ for the frequency beating method (black bars on the second x-axis of Fig. ~\ref{bucket_label_occurrence} (b)). Hence, the rising edges of the bucket label signal occurs, when the positive zero-crossings of $f_{\mathit{rev}}^{trg}$ overlap that of $f_{\mathit{syn}}^{trg}$, see Fig. ~\ref{bucket_label_occurrence}. In Fig. ~\ref{bucket_label_occurrence}, the bunch length is not taken into consideration. (a) is the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 and (b) is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, more details, please see Chap. ~\ref{application}.
-%bucket_label_signal_choose.docx
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{bucket_label_occurrence.jpg}
-   \caption{The occurrence of the rising edges of the bucket label signal.}{Red dots represent buckets of the target synchrotron and blue ones represent bunches of the source synchrotron. The occurrence of the rising edges of the bucket label signal are at the positive zero-crossings chosen by blue rectangles. The phase of two rf systems in this example is correct phase aligned with $\Delta\phi=0^\circ$. (a) In the case of the phase shift method. (b) In the case of the frequency beating method.}
-   \label{bucket_label_occurrence}
-\end{figure}
+The bucket label is realized based on the bucket indication signal for the first bucket plus a fixed delay for the indication of the correct buckets to be filled. 
 
-The indication signal is either with the revolution frequency or the synchronization frequency of the target synchrotron. It depends on the relation between the revolution frequency and the synchronization frequency of the target synchrotron. When $f_{\mathit{syn}}^{trg}>=f_{\mathit{rev}}^{trg}$, namely the rf period of the synchronization frequency is equal to or less than the revolution period, the  rf period of the synchronization frequency is not long enough to include all buckets. In this case, the indication signal is with the revolution frequency of the target synchrotron and the synchronization window is two times as long as the revolution period, namely $T_{w}=2\cdot T_{\mathit{rev}}^{\mathit{trg}}$. Oppositely, the indication signal is with the synchronization frequency of the target synchrotron and the synchronization window is two times as long as the rf period of the synchronization frequency, namely $T_{w}=2\cdot T_\mathit{syn}^{\mathit{trg}}$. $T_\mathit{syn}^X$ is denoted as the rf period of the synchronization frequency of the synchrotron $X$. 
+Because the phase advance of the Reference RF Signal complies with the linear relation with time, the evolution of the phase advance of the target synchrotron can be calculated for any first positive zero-crossings of C2 clock after T0 edges. 
+\begin{equation}
+\psi^\mathit{trg}(t)= [k^\mathit{trg}t+(\psi^\mathit{trg}(t_\mathit{\psi}^\mathit{trg})-k^\mathit{trg}t_\mathit{\psi}^\mathit{trg})] \mod 2\pi
+\end{equation}
 
-Because the phase advance of the B2B Reference Signal complies with the linear relation with time, the evolution of the phase advance of the target synchrotron can be calculated. Therefore, the indication signal can be corrected exactly in phase with the frequency of $f_{\mathit{rev}}^{trg}$ or $f_{\mathit{syn}}^{trg}$ by the evolution of the phase advance at a first positive zero-crossing of C2 clock after T0 edges. The indication signal is exactly a copy of the revolution frequency or the synchronization frequency of the target synchrotron, so it is called the ''reproduced signal'', or the ``bucket label signal`` from the functional perspective. The reproduced signal could be reproduced campus-wide. A specific bucket is just a certain number of the cavity rf periods of the target synchrotron delay based on the reproduced signal.
+where $\psi^\mathit{trg}(t_\mathit{\psi}^\mathit{trg})$ is the phase advance extrapolated by the PAP module at the target synchrotron.
+Therefore, the bucket indication signal can be corrected exactly in phase with the Reference RF Signal of the target synchrotron by the evolution of the phase advance at a first positive zero-crossing of C2 clock after T0 edges. The bucket indication signal is exactly a copy of the revolution frequency or the synchronization frequency of the target synchrotron, so
+it is also called the ”reproduced signal”. The bucket indication signal can be reproduced campus-wide. A specific bucket is just a certain number of the cavity rf periods of the target synchrotron delay based on the bucket indication signal.
 
 
 %\begin{equation}
@@ -290,7 +313,7 @@ Because the phase advance of the B2B Reference Signal complies with the linear r
 
 
 
-The FAIR B2B transfer system needs the bucket label not only at the rf flattop, but also during the whole acceleration cycle. The bucket label at the rf flattop is used for the normal extraction and injection and the bucket label during the whole acceleration cycle is used for the emergency dump. For the SIS100 emergency kick, the reproduced signal has always the same frequency and is always in phase with the SIS100 revolution signal, so it is called the ''real-time reproduced signal''. The delay based on the real-time reproduced signal always indicates the bunch gap.
+The FAIR B2B transfer system needs the bucket indication not only at the rf flattop, but also during the whole acceleration cycle. The bucket indication at the rf flattop is used for the normal extraction and injection and the bucket indication during the whole acceleration cycle is used for the emergency dump. For the SIS100 emergency kick, the reproduced signal has always the same frequency and is always in phase with the SIS100 revolution signal, so it is called the ''real-time reproduced signal''. The delay based on the real-time reproduced signal always indicates the bunch gaps.
 
 
  \begin{figure}[!htb]
@@ -299,7 +322,7 @@ The FAIR B2B transfer system needs the bucket label not only at the rf flattop, 
    \caption{Implementation of the Phase Correction Module in the Trigger SCU}
    \label{PCM}
 \end{figure}
-The bucket label is realized by the Trigger SCU, the Signal Reproduction (SR) module and the Phase Correction Module (PCM), see Fig.~\ref{PCM}. The reproduced signal is produced by SR module. The Trigger SCU is responsible for the receipt of the phase correction value from the B2B source SCU and the transfer of this value to the PCM. The PCM module is used to correct the phase of the reproduced signal. The PCM module is a SCU salve in the Trigger SCU. The SR module produces the bucket label signal in the format of the pulse wave, whose rising edges are aligned with the positive zero-crossings of the rf signal of the revolution frequency or the synchronization frequency. For more details about the implementation and realization of the PCM and the SR module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
+The bucket label is realized by the Trigger SCU, the Signal Reproduction (SR) module and the Phase Correction Module (PCM), see Fig.~\ref{PCM}. The reproduced signal is produced by SR module. The Trigger SCU is responsible for the receipt of the phase correction value from the B2B source SCU and the transfer of this value to the PCM. The PCM module is used to correct the phase of the reproduced signal. The PCM module is a SCU salve in the Trigger SCU. The SR module produces the bucket indication signal in the format of the pulse wave, whose rising edges are aligned with the positive zero-crossings of the rf signal of the revolution frequency or the synchronization frequency. For more details about the implementation and realization of the PCM and the SR module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_????}. 
 
 \begin{itemize}
 \item Bucket label for the normal extraction and injection
@@ -319,7 +342,7 @@ The \gls{SR} module produces the ''reproduced signal'' with the same frequency a
 
 The reproduced signal must do the phase correction at a specified first positive zero-crossing of C2 clock after T0 edge. The phase correction value is calculated by the B2B source SCU and transferred by the timing frame TGM \_PHASE \_CORRECTION to the \gls{glos:trigger_scu}. Then the Trigger SCU gives the phase correction value to the SR module via the PCM.
 
-In reality, the reproduced signal can also be directly distributed from the switch matrix, which synchronizes with the B2B Reference Signal of the revolution frequency or the synchronization frequency of the target synchrontron in frequency and phase.
+%In reality, the reproduced signal can also be directly distributed from the switch matrix, which synchronizes with the Reference RF Signal of the revolution frequency or the synchronization frequency of the target synchrontron in frequency and phase.
 
 \item[-] Step 3. Bucket indication
 
@@ -337,9 +360,9 @@ Only for the SIS100 emergency procedure, the bunch gap label is important during
 \end{figure} 
 
 \begin{itemize}
-\item[-] Step 1. Reproduced signal synchronized with the B2B Reference Signal of the revolution frequency
+\item[-] Step 1. Reproduced signal synchronized with the Reference RF Signal of the revolution frequency
 
-The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the B2B Reference Signal of the revolution frequency in frequency and phase.
+The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the Reference RF Signal of the revolution frequency in frequency and phase.
 \item[-] Step 2. Bunch gap indication
 
 The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the real-time reproduced signal is with the SIS100 revolution frequency and the 9th and 10th buckets of ten buckets are taken as an example as the bunch gap. The $t_{\mathit{bucket}}=4\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$.
@@ -370,13 +393,13 @@ In case of fatal errors or considerable damage, the emergency kicker must kick t
 Fig.~\ref{TD} shows the implementation of the Trigger Decision (TD) module in the Trigger SCU.  The TD module is responsible for the production of triggers for the kickers. 
 %The extraction/injection kicker trigger signal is produced by the TD module, which selects the first reproduced signal within the synchronization window and adds the delay of the extraction /injection kicker delay compensation to the first reproduced signal. For the emergency kick, the TD module produces the bunch gap label by the delay of the bunch gap based on the real-time reproduced signal.   
 
-The kicker triggering is realized based on the first rising edge of the bucket label signal within the synchronization window plus the kicker delay compensation. For the normal B2B extraction/injection, the synchronization window is received by the source and target Trigger SCUs from the WR network by TGM \_SYNCH \_WIN. The extraction kick delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}} - (t_{v\_inj}+$ \gls{symb:inj_pre}) in the example in Fig.~\ref{ext_inj_kicker}, when the bucket label signal has the frequency of $f_{\mathit{rev}}^{\mathit{trg}}$. 
+The kicker triggering is realized based on the first rising edge of the bucket indication signal within the synchronization window plus the kicker delay compensation. For the normal B2B extraction/injection, the synchronization window is received by the source and target Trigger SCUs from the WR network by TGM \_SYNCH \_WIN. The extraction kick delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}} - (t_{v\_inj}+$ \gls{symb:inj_pre}) in the example in Fig.~\ref{ext_inj_kicker}, when the bucket indication signal has the frequency of $f_{\mathit{rev}}^{\mathit{trg}}$. 
 
-For FAIR use cases, that the bucket label signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$, there is always only one bucket in the target synchrotron. In this case, the bucket pattern is not taken into consideration. The extraction kick delay compensation is $T_{\mathit{syn}}^{\mathit{trg}} -$(\gls{symb:two_TOF}$ + t_{v\_inj}+ $\gls{symb:ext_pre}) and the injection kicker delay compensation is $T_{\mathit{syn}}^{\mathit{trg}} - (t_{v\_inj}+ $\gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker1}. 
+For FAIR use cases, that the bucket indication signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$, there is always only one bucket in the target synchrotron. In this case, the bucket pattern is not taken into consideration. The extraction kick delay compensation is $T_{\mathit{syn}}^{\mathit{trg}} -$(\gls{symb:two_TOF}$ + t_{v\_inj}+ $\gls{symb:ext_pre}) and the injection kicker delay compensation is $T_{\mathit{syn}}^{\mathit{trg}} - (t_{v\_inj}+ $\gls{symb:inj_pre}), see Fig.~\ref{ext_inj_kicker1}. 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{syc_ext_inj1.jpg}
-   \caption{The illustration of the kicker delay compensation when the bucket label signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$.}{Red lighting bolts represent the extraction and injection kicker firing.}
+   \caption{The illustration of the kicker delay compensation when the bucket indication signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$.}{Red lighting bolts represent the extraction and injection kicker firing.}
    \label{ext_inj_kicker1}
 \end{figure}
 
@@ -435,7 +458,7 @@ In this section, the procedure for the B2B transfer is explained from the perspe
 
 \item  After receiving CMD\_START\_B2B, the B2B source and target SCUs start the PAM module to measure the phase advance $\Delta \varphi^X$ with the help of the PAP module locally and the PAP module extrapolates the phase advance in the future. After a period of time, the B2B source and targtet SCU reads the extrapolated phase advance $\psi^X$ and the slope of the phase advance $k^\mathit{trg}$ from the PAP module locally, timestamping the $\psi^X$.  
 
-\item  The B2B target SCU sends the extrapolated phase $\psi^\mathit{trg}$, the corresponding timestamp $t_{\psi^\mathit{trg}}$ and the slope $k^\mathit{trg}$ in the format of the timing frame TGM \_PHASE \_TIME to the B2B source SCU via the WR network. 
+\item  The B2B target SCU sends the extrapolated phase $\psi^\mathit{trg}$, the corresponding timestamp $t_\psi^\mathit{trg}$ and the slope $k^\mathit{trg}$ in the format of the timing frame TGM \_PHASE \_TIME to the B2B source SCU via the WR network. 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=110mm]{data_flow.jpg}
@@ -446,7 +469,7 @@ In this section, the procedure for the B2B transfer is explained from the perspe
 \item  When the B2B source SCU receives the timing frame TGM \_PHASE \_TIME, it calculates the synchronization window and transfers the timestamp of the start of the window to the DM in the format of the timing frame TGM \_SYNCH \_WIN, as well as to the Trigger SCUs at the source and target synchrotrons.
 The B2B source SCU calculates the phase correction value and transfers it to all Trigger SCUs via the WR network in the format of the timing frame TGM \_PHASE \_CORRECTION. Then the Trigger SCUs transfer the phase correction value to its \gls{PCM}. The PCM starts the phase correction of the SR module. 
 
-Only for the phase shift method, the B2B source SCU calculates the required shifted phase $\Delta \phi$ and transfers it to the PSM. Then the PSM transfers the phase or frequency modulation profile to the Group DDS.  
+Only for the phase shift method, the B2B source SCU calculates the required phase shift $\Delta \phi_\mathit{shift}$ and transfers it to the PSM. Then the PSM transfers the phase or frequency modulation profile to the Group DDS.  
 
 \item  When the source and target Trigger SCUs receive the timing frame TGM \_SYNCH \_WIN, they produces the synchronization window pulse for the TD module. With the help of the reproduced signal from the SR module, the kicker delay compensation from the Trigger SCU and the indication signals (the emergency dump signal and the beam injection inhibit signal) from the MPS, the TD module produces the normal extraction/injection trigger signals or the emergency kick trigger for the kicker.  
 
