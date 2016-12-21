@@ -103,6 +103,11 @@ name=$f_{\mathit{rf}}^{X}$,
 description={or $f_{h=cavity\_harmonic}^{X}$. Cavity rf frequency of a specific synchrotron},
 sort=symbolpi, type=symbolslist
 }
+\newglossaryentry{symb:bucket_freq}{
+name=$f_\mathit{bucket}$,
+description={Rf frequency of the bucket indication signal},
+sort=symbolpi, type=symbolslist
+}
 \newglossaryentry{symb:harmonic_param}{
 name=$h^X$,
 description={Harmonic number of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
@@ -441,7 +446,7 @@ sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:slope}{
 name=$k^X$,
-description={Slope of the phase advance between the Synchronization Reference Signal and a dedicated Reference RF Signal of the synchrotron X},
+description={Slope of the phase deviation between the Synchronization Reference Signal and a dedicated Reference RF Signal of the synchrotron X},
 sort=symbolpi, type=B2B_sym_slist
 }
 
@@ -548,7 +553,7 @@ description={Sum distance of d and the 2nd crate},
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:t_b2b}{
-name=$t_{B2B}$,
+name=$t_\mathit{B2B}$,
 description={Start time of the B2B transfer},
 sort=symbollambda, type=B2B_sym_slist
 }
@@ -579,7 +584,7 @@ sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:diff_sync}{
 name=$t_{\mathit{diff\_sync}}$ ,
-description={Target phase difference between rf systems of two synchrotrons in the format of time},
+description={Target time difference between rf systems of two synchrotrons in the format of time},
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:two_TOF}{
@@ -625,7 +630,7 @@ sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:phase_diff}{
 name=$\Delta \varphi^X$,
-description={Measured phase advance between the Reference RF Signal and the Synchronization Reference Signal of the synchrotron X by PAM module},
+description={Measured phase deviation between the Reference RF Signal and the Synchronization Reference Signal of the synchrotron X by PAM module},
 sort=symbollambda, type=B2B_sym_slist
 }
 
@@ -639,6 +644,12 @@ name=$f_\mathit{syn}^{X}$,
 description={Synchronization frequency},
 sort=symbollambda, type=B2B_sym_slist
 }
+\newglossaryentry{symb:synchronization_freq_period}{
+name=$T_\mathit{syn}^{X}$,
+description={Rf period of synchronization frequency},
+sort=symbollambda, type=B2B_sym_slist
+}
+
 \newglossaryentry{symb:phase_diff_t_T0}{
 name=$\psi2$,
 description={Extrapolated phase advance between the Reference RF Signal and the Synchronization Reference Signal of the target synchrotron by PAP module},
@@ -657,7 +668,7 @@ sort=symbollambda, type=B2B_sym_slist
 
 \newglossaryentry{symb:beating_freq}{
 name=$\Delta f$,
-description={Beating frequency},
+description={Beating frequency between two synchronization frequencies},
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:syn_ref}{
@@ -927,7 +938,7 @@ description={Central Processing Unit},type=abbreslist
 }
 \newglossaryentry{PAM}{
 name={PAM},
-description={Phase Advance Measurement module},type=abbreslist
+description={Phase Advance Measurement module},type=B2Blist
 }
 \newglossaryentry{PAP}{
 name={PAP},
@@ -1140,8 +1151,12 @@ name={precision of the start\\ of the synchronization window},
 description={Time closeness of agreement between the actual start of the synchronization window of different timing notes}
 }
 \newglossaryentry{glos:bucket_label}{
-name={bucket label signal},
-description={Time indication of a dedicated bucket passing on the virtual rf cavity of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection.}
+name={bucket indication signal},
+description={Time indication of a dedicated bucket passing on the virtual rf cavity of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection}
+}
+\newglossaryentry{glos:T0_incidents}{
+name={T0 incidents},
+description={First positive zero-crossings of BuTiS C2 clocks after every BuTiS T0 edge}
 }
 
 
@@ -1438,7 +1453,7 @@ freqnecy \appendix
 \input{chapters/appendixA}
 \chapter{Transfer of timing frames for the B2B transfer system}
 \input{chapters/appendixC}
-\chapter{Parameters of the B2B transfer for FAIR use cases}
+\chapter{Parameters related to the B2B transfer of FAIR use cases}
 \input{chapters/appendixB}
 \chapter{Parameters of the B2B transfer system from Settings Management}
 \input{chapters/appendixD}
