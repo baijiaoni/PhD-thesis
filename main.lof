@@ -45,30 +45,27 @@
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Average radial excursions of three cases.\relax }}{81}{figure.caption.74}
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Relative momentum shift of three cases.\relax }}{82}{figure.caption.76}
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Changes in synchronous phase of three cases.\relax }}{83}{figure.caption.78}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of three cases\relax }}{84}{figure.caption.79}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Adiabaticity parameter of three cases.\relax }}{85}{figure.caption.81}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Rf frequency derivation of the $U^{28+}$ rf ramp\relax }}{86}{figure.caption.83}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window\relax }}{87}{figure.caption.84}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces The illustration of symbols for the calculation\relax }}{88}{figure.caption.85}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Scenarios for the phase shift method\relax }}{90}{figure.caption.86}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Two scenarios for the frequency beating method\relax }}{92}{figure.caption.87}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces The illustration of the synchronization window and its accuracy\relax }}{93}{figure.caption.88}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces The WR network test setup\relax }}{96}{figure.caption.90}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces The frame loss rate for B2B Broadcast frames\relax }}{98}{figure.caption.92}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces The average latency and jitter for B2B Broadcast frames\relax }}{98}{figure.caption.93}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces The maximum latency and jitter for B2B Broadcast frames\relax }}{99}{figure.caption.95}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces The average latency and jitter for B2B Unicast frames\relax }}{100}{figure.caption.97}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces The maximum latency and jitter for B2B Unicast frames\relax }}{100}{figure.caption.98}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Three scenarios for the delay of SIS18 extraction kicker\relax }}{102}{figure.caption.100}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces SIS100 injection kicker\relax }}{104}{figure.caption.102}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Schematic of the test setup\relax }}{105}{figure.caption.104}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces The front and back view of the test setup\relax }}{106}{figure.caption.105}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Flow chart of the firmware for B2B source SCU.\relax }}{107}{figure.caption.106}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Flow chart of the firmware for B2B target SCU.\relax }}{109}{figure.caption.107}
-\contentsline {figure}{\numberline {6.28}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{111}{figure.caption.108}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of three cases.\relax }}{83}{figure.caption.79}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Adiabaticity parameter of three cases.\relax }}{84}{figure.caption.81}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Frequency detune during the SIS18 $U^{28+}$ rf ramp.\relax }}{86}{figure.caption.83}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window.\relax }}{87}{figure.caption.84}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces The illustration of the synchronization window and its accuracy.\relax }}{89}{figure.caption.85}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces The WR network test setup.\relax }}{92}{figure.caption.87}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Frame loss rate of the B2B Broadcast frames.\relax }}{94}{figure.caption.89}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces The average latency and jitter for B2B Broadcast frames.\relax }}{94}{figure.caption.90}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces The maximum latency and jitter for B2B Broadcast frames.\relax }}{95}{figure.caption.92}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces The average latency and jitter for B2B Unicast frames.\relax }}{96}{figure.caption.94}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces The maximum latency and jitter for B2B Unicast frames.\relax }}{96}{figure.caption.95}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Three scenarios for the delay of SIS18 extraction kicker.\relax }}{98}{figure.caption.97}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces SIS100 injection kicker.\relax }}{100}{figure.caption.99}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Schematic of the test setup.\relax }}{101}{figure.caption.101}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces The front and back view of the test setup.\relax }}{102}{figure.caption.102}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Flow chart of the firmware for B2B source SCU.\relax }}{103}{figure.caption.103}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Flow chart of the firmware for B2B target SCU.\relax }}{105}{figure.caption.104}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{107}{figure.caption.105}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{119}{figure.caption.110}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{115}{figure.caption.107}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

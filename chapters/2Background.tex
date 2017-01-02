@@ -1,7 +1,7 @@
 In Chap. 1, the bunch and bucket are introduced with simplified definition. In this chapter, the bunch and bucket are first of all defined from the accelerator physics perspective in Sec.~\ref{bunch and bucket}. Transferring bunches from a synchrotron into specific buckets of another synchrotron has several underlying basic principles. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must match that of the target synchrotron. The amplitude of the accelerating voltage match of two rf systems is needed to ensure that buckets capture bunches efficiently. Principally speaking, every synchrotron has its independent rf system. The phase difference between bunches and buckets must be precisely controlled before the transfer. The energy and voltage match will be done by machine physicists, which are out of the scope of this dissertation, so only the phase match is explained in detail in Sec.~\ref{match}. Two methods for the phase alignment between two rf systems are discussed in Sec.~\ref{two_sync_methods}. For the correct bucket injection, the bunch extraction must happen exactly the time-of-flight before the required bucket of the target synchrotron passes the injection kicker. The synchronization of extraction and injection kicker magnets are presented in Sec.~\ref{sec:kicker}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Bunch and bucket}
+\section{Bunch and Bucket}
 \label{bunch and bucket}
 For a ring accelerator, particles gain energy from electric field in longitudinal direction and are deflected by magnetic field to a particle orbit. A rf cavity operating at a resonance condition is used to provide a longitudinal accelerating voltage\footnote{Rf voltage with a single harmonic operation is considered in this dissertation.} \gls{symb:voltage} in the vacuum chamber.
 \begin{equation}
@@ -164,7 +164,7 @@ Due to the relation between the revolution frequency and cavity rf frequency, eq
 
 The energy and voltage match will be done by machine physicists, which are out of the scope of this dissertation. The dissertation concentrates on the phase match.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Phase difference}
+\section{Phase Difference}
 \label{match}
 The rf voltage of two rf systems are $u_1(t)$ and $u_2(t)$.
 \begin{equation}
@@ -214,7 +214,7 @@ The calculation of the synchronization frequencies are explained for the differe
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Circumference ratio is an integer}
+\subsection{Circumference Ratio is an Integral}
 \label{sec:cir_integer}
 If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is an integer, we have the following relation. 
 \begin{equation}
@@ -291,7 +291,7 @@ Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit
 
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
-\subsection{Circumference ratio is close to an integer}
+\subsection{Circumference Ratio is close to an Integer}
 \label{sec:cir_close_an_int}
 If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is a decimal number close to an integer. Eq. ~\ref{circumference_ratio_int1} changes to 
 \begin{equation}
@@ -376,7 +376,7 @@ Fig. ~\ref{cir_noint} shows the periodically variable phase difference between t
 %Fig. ~\ref{cir_noint} illustrates also an example with $\kappa=2$, $\lambda=-0.003$, $h^s=2$ and $h^l=4$. So $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=4/[2(2-0.003)]$. GCD of $h^l$ and $h^s \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization rf frequencies are $f_{\mathit{syn}}^{l}=4f_{\mathit{rev}}^{l}$ and $f_{\mathit{syn}}^{s}=2f_{\mathit{rev}}^{s}$. This example is the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Chap. ~\ref{application}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%far away from integer
-\subsection{Circumference ratio is far away from an integer}
+\subsection{Circumference Ratio is far away from an Integer}
 When the circumference ratio of the large synchrotron to that of the small synchrotron is far away from an integer, the circumference ratio is a decimal number and eq. ~\ref{circumference_ratio_int1} can be expressed as a rational number plus a small remainder of the decimal number.
 
 \begin{equation}
@@ -453,7 +453,7 @@ Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference betwe
 %For the RF synchronization between two synchrotrons, the prerequisite is to know the phase difference between two independent RF systems. 
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Phase match of two rf systems}
+\section{Phase Match of two Rf Systems}
 \label{two_sync_methods}
 For the different scenarios mentioned in Sec. ~\ref{match}, two methods are available for the phase alignment of two rf systems, the phase shift and the frequency beating methods. Both methods provide a time frame for the B2B transfer, within which bunches are transferred into buckets with the bunch-to-bucket injection center mismatch smaller than a given upper bound. This time frame is called the ``synchronization window``. Both methods are based on the prerequisite that the phase difference between two rf systems is predictable, so the LLRF feedback loops used for phase corrections must be switched off before the B2B transfer starts. e.g. beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gross_bunch-by-bunch_2015}.
 
@@ -532,7 +532,7 @@ For the different scenarios mentioned in Sec. ~\ref{match}, two methods are avai
 %Of the four variables, f(t), B(t), p(t) and R(t), only two are independent. This leads to four very useful differential relations, eq. ~\ref{eq:pRB}, eq. ~\ref{eq:fPR}, eq. ~\ref{eq:fBR} and eq. ~\ref{eq:fPB} ~\cite{ezura_beam-dynamics_2008, bovet_selection_1970}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Phase shift method}
+\subsection{Phase Shift Method}
 \label{sec:requirement_phase_shift}
 
 In order to change the constant phase difference between two synchronization frequencies, the phase of either (or both) rf system can be shifted backward or forward by means of the rf frequency modulation. The frequency of one (or both) rf system is modulated away from the nominal value for a specified period of time and then modulated back, see Sec. ~\ref{two_sync_methods}.
@@ -819,13 +819,13 @@ Application of these criterion to FAIR use cases, please see Chap. ~\ref{realiza
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%------------------------------%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Frequency beating method}
+\subsection{Frequency Beating Method}
 \label{subsec:beating}
 
-The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. When they are identical, either the rf system of the source or that of the target is detuned to achieve the beating. The frequency is detuned at constant energy by changing the frequency and magnetic field. This will be done by operators and is out of the scope of this dissertation. The frequency detuning for the synchronization frequency is denoted as \gls{symb:freq_modulation1} and that for the cavity rf frequency is denoted as \gls{symb:freq_modulation},  $\Delta f_\mathit{rf}=\frac{f_{\mathit{rf}}^\mathit{X}}{f_{\mathit{syn}}^\mathit{X}} \Delta f_\mathit{syn}$. The length of the synchronization window $T_\mathit{w}$ is either $2/f_{\mathit{syn}}^\mathit{trg}$ or $2/f_{\mathit{rev}}^\mathit{trg}$, which depends on the relation between $f_{\mathit{syn}}^\mathit{trg}$ and $f_{\mathit{rev}}^\mathit{trg}$. More explanation, please see Chap. ~\ref{concept}. The synchronization window brings a symmetric time frame with respect to the time of the required phase difference, see yellow region in Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the required phase difference. The bunch-to-bucket injection center mismatch $\Delta \phi_\mathit{rf}$ within the synchronization window is calculated by eq. ~\ref{phase_mismatch_win}. %e.g. $\Delta \phi_\mathit{rf}=\pm 0.5^\circ$  for the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100.
+The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. When they are identical, either the rf system of the source or that of the target is detuned to achieve the beating. The frequency is detuned at constant energy by changing the frequency and magnetic field. This will be done by operators and is out of the scope of this dissertation. The frequency detuning for the synchronization frequency is denoted as \gls{symb:freq_modulation1} and that for the cavity rf frequency is denoted as \gls{symb:freq_modulation},  $\Delta f_\mathit{rf}=\frac{f_{\mathit{rf}}^\mathit{X}}{f_{\mathit{syn}}^\mathit{X}} \Delta f_\mathit{syn}$. The length of the synchronization window $T_\mathit{w}$ is either $2/f_{\mathit{syn}}^\mathit{trg}$ or $2/f_{\mathit{rev}}^\mathit{trg}$, which depends on the relation between $f_{\mathit{syn}}^\mathit{trg}$ and $f_{\mathit{rev}}^\mathit{trg}$. More explanation, please see Chap. ~\ref{concept}. The synchronization window brings a symmetric time frame with respect to the time of the required phase difference, see yellow region in Fig. ~\ref{frequency_beat}. The red dashed line shows the time for the required phase difference. The bunch-to-bucket injection center mismatch $\Delta \phi_\mathit{rf}$ within the synchronization window is determined not only by the length of the synchronizaion window, but also the total number of buckets of the target synchrotron($h^\mathit{trg}$) and the number of buckets needed to be injected (denoted as ``\gls{symb:harmonic_param_inj}``).  $\Delta \phi_\mathit{rf}$ is calculated by eq. ~\ref{phase_mismatch_win}. %e.g. $\Delta \phi_\mathit{rf}=\pm 0.5^\circ$  for the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100.
 
 \begin{equation}
-\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|\cdot T_\mathit{w}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}\label{phase_mismatch_win}
+\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|\cdot T_\mathit{w}\cdot \frac{(h^\mathit{trg}_\mathit{inj}-1)}{h^\mathit{trg}} \cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}\label{phase_mismatch_win}
 \end{equation}
 %%Tphase_shift_ill
 \begin{figure}[!htb]
@@ -854,16 +854,16 @@ If $N$ is an integer, there exists positive zero-crossings of the source synchro
 \begin{equation}
 \Delta \phi_\mathit{step}=2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}| \cdot T_{\mathit{syn}}^\mathit{trg}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}\label{step_growth}
 \end{equation}
-where \gls{symb:synchronization_freq_period} is the rf period of the synchronization frequency.
-If there exists no integral $N$, $\Delta \phi_\mathit{syn}$ within each beating period only approaches to $0^\circ$ but never equals to $0^\circ$. Principally speaking, we can get the minimal $\Delta \phi_\mathit{syn}$ after several beating periods.  Generally there is a given upper bound time for the synchronization, so only one beating period is chosen for the phase match. For one beating period, a bunch can be optimal injected into the center of a bucket with a mismatch range from $0^\circ$ to $\Delta \phi_\mathit{step}$. Therefore, the bunch-to-bucket injection center mismatch within the synchronization window is within the following range.
+where \gls{symb:synchronization_freq_period} is the period of the synchronization frequency.
+If there exists no integral $N$, $\Delta \phi_\mathit{syn}$ within each beating period only approaches to $0^\circ$ but never equals to $0^\circ$. Principally speaking, we can get the minimal $\Delta \phi_\mathit{syn}$ after a certain number of beating periods.  Generally there is a given upper bound time for the synchronization, so only one beating period can be used for the phase match. For one beating period, a bunch can be optimal injected into the center of a bucket with a mismatch range from $-\Delta \phi_\mathit{step}$ to $\Delta \phi_\mathit{step}$. Therefore, the bunch-to-bucket injection center mismatch within the synchronization window is within the following range.
 \begin{equation}
-\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot (2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|T_\mathit{w}\cdot \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}+\Delta \phi_\mathit{step})
+\Delta \phi_\mathit{rf}=\pm (\frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|T_\mathit{w}\cdot \frac{(h^\mathit{trg}_\mathit{inj}-1)}{h^\mathit{trg}} \cdot  \frac{f_{\mathit{rf}}^\mathit{trg}}{f_{\mathit{syn}}^\mathit{trg}}+\Delta \phi_\mathit{step})
 \end{equation}
 
 %The synchronization is realized when the phase difference of two synchronization frequencies corresponds to the required phase difference. The $\Delta \phi_\mathit{syn}$ is the phase difference between two synchronization frequencies. 
 In reality, all B2B transfer have a tolerant upper bound for the bunch-to-bucket center mismatch $\Delta \phi_\mathit{rf\_max}$ (e.g. $\Delta \phi_\mathit{rf\_max}=\pm1^\circ$ for FAIR use cases). The upper bound brings a maximum synchronization window $T_{w\_max}$. The maximum synchronization window is 
 \begin{equation}
-T_{w\_max}=\frac{(2\Delta \phi_\mathit{rf\_max}-\Delta \phi_\mathit{step})\cdot\frac{f_{\mathit{syn}}^\mathit{trg}}{f_{\mathit{rf}}^\mathit{trg}}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
+T_{w\_max}=\frac{2(|\Delta \phi_\mathit{rf\_max}|-\Delta \phi_\mathit{step})\cdot\frac{f_{\mathit{syn}}^\mathit{trg}}{f_{\mathit{rf}}^\mathit{trg}}\cdot\frac{h^\mathit{trg}}{(h^\mathit{trg}_\mathit{inj}-1)}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
 \end{equation}
 
 
@@ -975,7 +975,7 @@ $\frac{\Delta{R}}{R}$ constrained by the synchrotron lattice is used to check th
 %	\frac{f_{rf}^{src}}{p} = \frac{f_{rf}^{trg}}{q}
 %\end{equation}
 
-\section{Synchronization of extraction and injection kicker magnets}
+\section{Synchronization of Extraction and Injection Kicker Magnets}
 \label{sec:kicker}
 
 The proper bunch-to-bucket transfer requires not only that two rf systems are synchronized with each other, but also that the extraction and injection kicker magnets are synchronized with beam.

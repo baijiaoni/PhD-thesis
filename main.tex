@@ -112,6 +112,12 @@ sort=symbolpi, type=symbolslist
 name=$h^X$,
 description={Harmonic number of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
 sort=symbollambda, type=symbolslist
+} 
+
+\newglossaryentry{symb:harmonic_param_inj}{
+name=$h^\mathit{trg}_\mathit{inj}$,
+description={Number of buckets needed to be injected of the target synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
+sort=symbollambda, type=symbolslist
 }
 
 \newglossaryentry{symb:period_rf}{
@@ -450,26 +456,22 @@ description={Slope of the phase deviation between the Synchronization Reference 
 sort=symbolpi, type=B2B_sym_slist
 }
 
-\newglossaryentry{symb:h1phase100}{
-name=$\psi_{h=1}^{SIS100}$,
-description={Predicted SIS100 h=1 rf phase at $t_{\psi}$},
-sort=symbollambda, type=B2B_sym_slist
-}
-\newglossaryentry{symb:h15phase18}{
-name=$\psi_{h=1/5}^{SIS18}$,
-description={Predicted SIS18 h=1/5 rf phase at $t_{\psi}$ },
-sort=symbollambda, type=B2B_sym_slist
-}
+%\newglossaryentry{symb:h1phase100}{
+%name=$\psi_{h=1}^{SIS100}$,
+%description={Predicted SIS100 h=1 rf phase at $t_{\psi}$},
+%sort=symbollambda, type=B2B_sym_slist
+%}
+%\newglossaryentry{symb:h15phase18}{
+%name=$\psi_{h=1/5}^{SIS18}$,
+%description={Predicted SIS18 h=1/5 rf phase at $t_{\psi}$ },
+%sort=symbollambda, type=B2B_sym_slist
+%}
 \newglossaryentry{symb:un_h1phase100}{
-name=$\delta \psi_{h=1}^{SIS100}$,
-description={Uncertainty of the predicted SIS100 rf phase at h=1 },
+name=$\delta \psi^{X}$,
+description={Uncertainty of the extrapolated phase of the synchrotron X in the phase domain},
 sort=symbollambda, type=B2B_sym_slist
 }
-\newglossaryentry{symb:un_h15phase18}{
-name=$\delta \psi_{h=1/5}^{SIS18}$,
-description={Uncertainty of the predicted SIS18 rf phase at h=1/5 },
-sort=symbollambda, type=B2B_sym_slist
-}
+
 \newglossaryentry{symb:h10phase100}{
 name=$\phi_{h=10}^{SIS100}$,
 description={Phase at the h=10 cavity rf frequency of SIS100 at $t_{\psi}$},
@@ -487,17 +489,17 @@ sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:un_h2phase18}{
 name=$\delta \phi_{h=2}^{SIS18}$,
-description={Uncertainty of rf phase at the h=2 cavity rf frequency of SIS18  },
+description={Uncertainty of rf phase at the h=2 cavity rf frequency of SIS18 },
 sort=symbollambda, type=B2B_sym_slist
 }
-\newglossaryentry{symb:prediction_time}{
-name=$t_{\psi}$,
-description={Time of the predicted phase},
-sort=symbollambda, type=B2B_sym_slist
-}
+%\newglossaryentry{symb:prediction_time}{
+%name=$t_{\psi}$,
+%description={Time of the predicted phase},
+%sort=symbollambda, type=B2B_sym_slist
+%}
 \newglossaryentry{symb:uncertainty_time}{
-name=$\delta t_{\psi}$,
-description={Uncertainty of the predicted phase advance at time domain},
+name=$\delta t_{\psi}^X$,
+description={Uncertainty of the extrapolated phase in the time domain},
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:upper_Ttime}{
@@ -1098,7 +1100,7 @@ name={uncertainty},
 description={A non-negative parameter characterizing the dispersion of the values attributed to a measured quantity}
 }
 \newglossaryentry{glos:error_pro}{
-name={error propagation},
+name={uncertainty propagation},
 description={Uncertainties in the original measurements ``propagate`` through calculations to cause uncertainties in the calculated final answers}
 }
 
@@ -1428,34 +1430,34 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \pagenumbering{arabic}
 \chapter{Introduction}
 \input{chapters/1Introduction}
-\chapter{Theoretical background}\label{background}
+\chapter{Theoretical Background}\label{background}
 \input{chapters/2Background}
 %\chapter{First idea on the B2B transfer system}
 %\input{chapters/3Firstconcept}
-\chapter{Technical basis for the FAIR B2B transfer system}\label{technical}
+\chapter{Technical Basis for FAIR B2B Transfer System}\label{technical}
 \input{chapters/3Technical_basis}
-\chapter{Concept of the FAIR B2B transfer system}\label{concept}
+\chapter{Concept of FAIR B2B Transfer System}\label{concept}
 \input{chapters/4Concept}
-\chapter{Application of the FAIR B2B transfer system for FAIR accelerators}\label{application}
+\chapter{Application of FAIR B2B Transfer System for FAIR Accelerators}\label{application}
 \input{chapters/Application}
-\chapter{Realization and systematic investigation of the FAIR B2B transfer system}\label{realization}
+\chapter{Realization and systematic Investigation of FAIR B2B Transfer System}\label{realization}
 \input{chapters/5Realization}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
-\chapter{Conclusion and outlook}
+\chapter{Conclusion and Outlook}
 \input{chapters/7SummaryAusblick}
 
 
 %\chapter{References}
 %\input{chapters/References}
 freqnecy \appendix
-\chapter{B2B transfer related timing frames}
+\chapter{FAIR B2B Transfer related Timing Frames}
 \input{chapters/appendixA}
-\chapter{Transfer of timing frames for the B2B transfer system}
+\chapter{Transfer of Timing Frames for FAIR B2B Transfer System}
 \input{chapters/appendixC}
-\chapter{Parameters related to the B2B transfer of FAIR use cases}
+\chapter{Parameters of FAIR Use Cases}
 \input{chapters/appendixB}
-\chapter{Parameters of the B2B transfer system from Settings Management}
+\chapter{Parameters of FAIR B2B Transfer System from Settings Management}
 \input{chapters/appendixD}
 
 \addcontentsline{toc}{chapter}{Bibliography}
