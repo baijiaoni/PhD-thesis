@@ -103,11 +103,7 @@ name=$f_{\mathit{rf}}^{X}$,
 description={or $f_{h=cavity\_harmonic}^{X}$. Cavity rf frequency of a specific synchrotron},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:bucket_freq}{
-name=$f_\mathit{bucket}$,
-description={Rf frequency of the bucket indication signal},
-sort=symbolpi, type=symbolslist
-}
+
 \newglossaryentry{symb:harmonic_param}{
 name=$h^X$,
 description={Harmonic number of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
@@ -395,6 +391,11 @@ name=$\Delta \phi$,
 description={Target phase shift for the phase shift method. Bunch-to-bucket injection center mismatch for the frequency beating method},
 sort=symbolpi, type=B2B_sym_slist
 }
+\newglossaryentry{symb:bucket_freq}{
+name=$f_\mathit{bucket}$,
+description={Rf frequency of the bucket indication signal},
+sort=symbolpi, type=B2B_sym_slist
+}
 \newglossaryentry{symb:pha_shift_rf}{
 name=$\Delta \phi_\mathit{rf}$,
 description={Phase difference between two cavity rf frequencies for the phase shift method, Bunch-to-bucket injection center mismatch within the synchronization window for the frequency beating method},
@@ -402,12 +403,22 @@ sort=symbolpi, type=B2B_sym_slist
 }
 \newglossaryentry{symb:pha_shift_syn}{
 name=$\Delta \phi_\mathit{syn}$,
-description={Phase difference between two synchronization frequencies for the phase shift method, phase mismatch  between two synchronization frequencies within the synchronization window for the frequency beating method},
+description={Phase difference between two synchronization frequencies for the phase shift method, phase mismatch between two synchronization frequencies for the frequency beating method},
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:pha_shift_uncertain}{
+name=$\delta \Delta \phi_\mathit{syn}$,
+description={Uncertainty of the phase difference between two synchronization frequencies},
 sort=symbolpi, type=B2B_sym_slist
 }
 \newglossaryentry{symb:pha_shift_shift}{
 name=$\Delta \phi_\mathit{shift}$,
 description={Required phase shift for the Group DDS with the synchronization frequency},
+sort=symbolpi, type=B2B_sym_slist
+}
+\newglossaryentry{symb:init_pse}{
+name=$\phi^X_\mathit{syn}$,
+description={Initial phase of the synchronization frequency},
 sort=symbolpi, type=B2B_sym_slist
 }
 \newglossaryentry{symb:pha_step}{
@@ -436,7 +447,7 @@ description={Phase step growth because of the frequency beating},
 sort=symbollambda, type=B2B_sym_slist
 } 
 \newglossaryentry{symb:best_align}{
-name=$t_{best}$,
+name=$t_{align}$,
 description={Best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
 sort=symbollambda, type=B2B_sym_slist
 }
@@ -446,7 +457,7 @@ description={Delay compensation for the TOF, all propagation delays, the kicker 
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:probable_aligh}{
-name=$\delta t_{best}$,
+name=$\delta t_{align}$,
 description={Uncertainty of the best estimate of alignment of zero crossing points of Reference RF Signals of source and target synchrotrons},
 sort=symbollambda, type=B2B_sym_slist
 }
@@ -526,7 +537,7 @@ sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:win_correction}{
 name=$\Delta t_{win \_correct}$,
-description={Time correction for the start of the probable range of alignment [$t_{best}$-$\delta t_{best}$,$t_{best}$+$\delta t_{best}$] to the best estimate of the start of the synchronization window},
+description={Time correction for the start of the probable range of alignment [$t_{align}$-$\delta t_{align}$,$t_{align}$+$\delta t_{align}$] to the best estimate of the start of the synchronization window},
 sort=symbollambda, type=B2B_sym_slist
 }
 \newglossaryentry{symb:win_start}{
@@ -1096,7 +1107,7 @@ description={Number of particle trajectory oscillations during one revolution in
 }
 
 \newglossaryentry{glos:uncertainty}{
-name={uncertainty},
+name={measurement uncertainty},
 description={A non-negative parameter characterizing the dispersion of the values attributed to a measured quantity}
 }
 \newglossaryentry{glos:error_pro}{

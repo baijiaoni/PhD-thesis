@@ -344,236 +344,145 @@ where the maximum rf frequency detune approximates to \SI{370}{Hz} for the cavit
 The B2B transfer system makes use of certain aspects of the GMT system to implement the data collection, merging and redistribution. The main task of the data merging is the calculation of the synchronization window, within which bunches could be injected into buckets with the bunch-to-bucket center mismatch smaller than the upper bound. The data collection and redistribution make use of the WR network, so the test and measurement of the WR network for the B2B transfer is important. 
 
 \subsection{Calculation of Synchronization Window}
-According to the phase difference between two rf systems of two synchrotrons, the fine time for the correct phase alignment between two synchronization frequencies for both the phase shift and frequency beating methods can be calculated. This time is called the ``\gls{glos:best_align}`` and denoted by $t_{best}$, see Fig. ~\ref{alignment}. The uncertainty is a non-negative parameter characterizing the dispersion of the values attributed to a measured quantity. Because of the \gls{glos:uncertainty} ~\cite{taylor_introduction_1982} of the phase extrapolation and rf frequency modulation, the fine alignment lies between \gls{symb:best_align} - $\delta t_{best}$ and $t_{best}$ + $\delta t_{best}$, where \gls{symb:probable_aligh} is the uncertainty of the alignment. [$t_{best}$ - $\delta t_{best}$, $t_{best}$ + $\delta t_{best}$] is called the ``\gls{glos:pro_align}``. In Sec. 6.2.1.1 and Sec. 6.2.1.2, the calculation of the best estimation of alignment and the probable range of alignment for the phase shift and frequency beating methods are explained. The probable range of alignment is within the synchronization window. For the correct selection of the same rising edge of the bucket indication signal at different SCUs, the start of the synchronization window must be properly calculated. In Sec. 6.2.1.3, the calculation of the start of the synchronization window is explained. 
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=160mm]{alignment.jpg}
-   \caption{The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window.}
-   \label{alignment}
-\end{figure}
+The FAIR B2B transfer system is based on the phase deviation measurement by the PAM module. With the help of the phase extrapolation by the PAP module and the timestamp for the extrapolated phase by the B2B source and target SCUs, the fine time of the correct phase alignment between two synchronization frequencies is calculated, see Chap. ~\ref{concept}. This fine time is called the ``\gls{glos:best_align}`` and denoted by $t_\mathit{align}$. There exists \textit{uncertainty} for any measurement, which is defined as a non-negative parameter characterizing the dispersion of the values attributed to a measured quantity. The \gls{glos:uncertainty}~\cite{taylor_introduction_1982} of the phase deviation is reflected in the uncertainty of the extrapolated phase for the calculation of the phase alignment.
+% The rf frequency manipulation (e.g. the rf frequency modulation for the phase shift and the rf frequency detuning) has the long term stability, so the uncertainty of the rf frequency manipulation is neglectable. 
+Because of the propagation of the uncertainty of the extrapolated phase and that of the timestamp, the phase alignment lies between \gls{symb:best_align}$-\delta t_\mathit{align}$ and $t_\mathit{align}+\delta t_\mathit{align}$, where \gls{symb:probable_aligh} is the uncertainty of the phase alignment. [$t_\mathit{align}-\delta t_\mathit{align}$, $t_\mathit{align}+\delta t_\mathit{align}$] is called the ``\gls{glos:pro_align}``. In order to achieve the highly precise bunch-to-bucket injection, the length of the probable rang of alignment must be much shorter than the length of the synchronization window. In Sec. 6.2.1.1, the calculation and inspection of $\delta t_\mathit{align}$ for the phase shift and frequency beating methods are explained. For the correct selection of the same rising edge of the bucket indication signal at different SCUs, the start of the synchronization window must be properly calculated. In Sec. 6.2.1.2, the calculation of the start of the synchronization window is explained. 
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=160mm]{alignment.jpg}
+%   \caption{The illustration of the best estimate of alignment, the probable range of alignment and the synchronization window.}
+%   \label{alignment}
+%\end{figure}
 
 %In fact, two SIS100 revolution periods is enough for the correct bucket selection, achieving much preciser injection. The beginning of the synchronization window denotes by $WIN_{start}$. The synchronization window is within the range [$WIN_{start}$ , $WIN_{start}$  + 2 $\cdot T_{rev}^{SIS100}$]. $T_{rev}^{SIS100}$is the revolution period of SIS100, which equals to 6.359 us for U$^{28+}$ at 200Mev/u.  
+\subsubsection{Measurement Uncertainty}
 
-For both the phase shift and frequency beating methods, the calculation is based on the extrapolated phase of the rf signal locally. Here the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is taken as an example, two synchronization frequencies are $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{SIS18}$ and $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{SIS100}$ and two Reference RF Signals are $f_{\mathit{B2B}}^{SIS18}=1/5f_{\mathit{rev}}^{SIS18}$ and $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{SIS100}$ (more details about $f_{\mathit{syn}}^{X}$ and $f_\mathit{B2B}^{X}$, please see Chap. ~\ref{background} and Chap. ~\ref{concept}.). The PAP module extrapolates the phase $\psi^{SIS100}$ for $f_{\mathit{B2B}}^{SIS100}$ and $\psi^{SIS18}$ for $f_{\mathit{B2B}}^{SIS18}$ at $t_{\psi}^\mathit{SIS18}=t_{\psi}^\mathit{SIS100}$. The phase difference between two synchronization frequencies is
-\begin{equation}
-\Delta \phi_\mathit{syn}=\frac{f_{\mathit{syn}}^{SIS100}}{f_{\mathit{rev}}^{SIS100}}(\psi^\mathit{SIS100}-\psi^\mathit{SIS18}) \mod 2\pi =10 \times(\psi^\mathit{SIS100}-\psi^\mathit{SIS18}) \mod 2\pi
-\label{phase_diff_18to100}
-\end{equation}
+In Chap. ~\ref{concept}, we get the phase difference $\Delta \phi_\mathit{syn}$ between two synchronization frequencies at $t_\psi^X$.
+\begin{eqnarray}\label{phase_syn}
+\Delta \phi_\mathit{syn}=
+\begin{cases}
+\psi^\mathit{trg}-\psi^\mathit{src}, &f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}\cr
+\frac{f_{\mathit{syn}}^{trg}}{f_{\mathit{rev}}^{trg}}(\psi^\mathit{trg}-\psi^\mathit{src}) \mod 2\pi, &f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}\cr
+\end{cases}
+\end{eqnarray}
 
-%Fig.~\ref{Calculation_symble} illustrates some basic definition of symbols for the calculation. 
-%\begin{figure}[!htb]
-%   \centering   
-%   \includegraphics*[width=160mm]{Calculation_symble.jpg}
-%   \caption{The illustration of symbols for the calculation.}
-%   \label{Calculation_symble}
-%\end{figure}
-%$\phi_{h=2}^{SIS18}$and $\phi_{h=10}^{SIS100}$ are individual rf phase of SIS18 and SIS100 Reference RF Signals at $t_{\psi}$. The relationship between \gls{symb:h2phase18}, \gls{symb:h10phase100} and $\psi_{h=1/5}^{SIS18}$, $\psi_{h=1}^{SIS100}$ are given by eq.~\ref{SIS18_phase} and eq.~\ref{SIS100_phase}. 
+The longer the time is used for the phase extrapolation, the smaller the uncertainty of the extrapolated phase will be. If the PAP module use \SI{500}{us} to extrapolate the phase, the uncertainty of the extrapolated phase is \SI{100}{ps} in the time domain ~\cite{ferrand_development_????}. The uncertainty of the extrapolated phase from the time domain to the phase domain (denoted as \gls{symb:un_h1phase100}) is calcuated by eq. ~\ref{jitter_measure_p}.
 
-%\begin{equation}
-%\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}}{360^\circ}\cdot {T_{h=1/5}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\cdot {360^\circ} \label{SIS18_phase}
-%\end{equation}
-%\begin{equation}
-%\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}}{360^\circ}\cdot {T_{h=1}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\cdot {360^\circ} \label{SIS100_phase}
-%\end{equation}
-%substituting $T_{h=2}^{SIS18}\cdot 10=T_{h=1/5}^{SIS18}$, $T_{h=10}^{SIS100}\cdot 10=T_{h=1}^{SIS100}$ into eq.\ref{SIS18_phase} and eq.\ref{SIS100_phase} yields
-% \begin{equation}
-%\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}\cdot 10}{360^\circ}\cdot {T_{h=2}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\cdot {360^\circ} \label{SIS18_phase1}
-%\end{equation}
-%\begin{equation}
-%\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}\cdot 10}{360^\circ}\cdot {T_{h=10}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\cdot {360^\circ} \label{SIS100_phase1}
-%\end{equation}
-
-Here we explain the inevitable uncertainty of the phase extrapolation and rf frequency modulation. 
-\begin{itemize}
-\item Uncertainty of the phase extrapolation
-
-The longer the time is used for the phase extrapolation, the more precise the extrapolated phase will be. If the PAP module use \SI{500}{us} to extrapolate the phase, the uncertainty of the extrapolated phase (denoted as \gls{symb:uncertainty_time}) is \SI{100}{ps} ~\cite{ferrand_development_????}, see eq. ~\ref{jitter_measure_t}. The uncertainty of the extrapolated phase from the time domain to the phase domain (denoted as \gls{symb:un_h1phase100}) is calcuated by eq. ~\ref{jitter_measure_p}.  
 \begin{equation} 
-\delta t_\psi^X= 100ps
-\label{jitter_measure_t}
-\end{equation}
-\begin{equation} 
-\delta \psi^{SIS18}=\delta\psi^{SIS100}=
-\frac {100ps}{T_\mathit{rev}^\mathit{SIS100}} \times {360^{\circ}}\approx \pm0.006^\circ
+\delta \psi^{X}=100ps \times f_\mathit{B2B}^\mathit{trg} \times {2\pi}
 \label{jitter_measure_p}
 \end{equation}
- 
-Based on eq.~\ref{phase_diff_18to100} and eq.~\ref{jitter_measure_p}, the uncertainty of the phase difference between the SIS18 and SIS100 synchronization frequencies is
-\begin{equation}
-\Delta \phi_\mathit{syn}\approx10 \times[0.006^\circ-(-0.006^\circ)] \mod 2\pi\approx 0.12^\circ
-\end{equation}
 
-%\begin{equation}
+%According to the propagation of uncertainties, we get the uncertainty of the phase difference between two synchronization frequencies, denoted as \gls{symb:pha_shift_uncertain}. 
+%\begin{eqnarray}\label{case4}
 %\begin{aligned}
-%\delta \phi_{h=2}^{SIS18} = \sqrt {(\frac{\partial \phi_{h=2}^{SIS18}}{\partial \psi_{h=2}^{SIS18}} \delta \psi_{h=2}^{SIS18})^2}=\sqrt {(10 \cdot \delta \psi_{h=2}^{SIS18})^2}=0.06^\circ
-%\label{phi_jitter1}
+%\delta \Delta \phi_\mathit{syn}=\sqrt {(\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^\mathit{trg}}\delta \psi^\mathit{trg})^2 + (\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^\mathit{src}}\delta \psi^\mathit{src})^2} =\\
+%\begin{cases}
+%\sqrt {(\delta \psi^\mathit{trg})^2 + (\delta \psi^\mathit{src})^2}, &f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}\cr
+%\frac{f_{\mathit{syn}}^{trg}}{f_{\mathit{rev}}^{trg}}\sqrt {(\delta \psi^\mathit{trg})^2 + (\delta \psi^\mathit{src})^2}\mod 2\pi, &f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}\cr
+%\end{cases}
 %\end{aligned}
-%\end{equation}
-%\begin{equation}
-%\delta \phi_{h=10}^{SIS100} = \sqrt {(\frac{\partial \phi_{h=10}^{SIS100}}{\partial \psi_{h=1}^{SIS100}} \delta \psi_{h=10}^{SIS100})^2}=\sqrt {(10 \cdot \delta \psi_{h=10}^{SIS100})^2}=0.06^\circ
-%\label{phi_jitter2}
-%\end{equation}
+%\end{eqnarray}
 
-\item Uncertainty of the rf frequency modulation
-
-For the rf frequency modulation, the uncertainty is $0.2^\circ$ at \SI{5.4}{MHz} ~\cite{laier_funktional-spezifikation_2011}. We calculate the uncertainty in the time domain, see eq.~\ref{freq_jitter_t}.
-\begin{equation}
-\delta \Delta f_\mathit{rf} =\delta \Delta f_\mathit{syn}= \frac{0.2^\circ}{360^\circ} \times {\frac{1}{5.4MHz}}\approx 100ps
-\label{freq_jitter_t}
-\end{equation}
-%
-%The precision of the rf frequency is 0.05Hz. 
-%\begin{equation}
-%\delta \Delta f = 0.05Hz
-%\label{freq_jitter_f}
-%\end{equation}
-
-
-
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Best Estimate of Alignment and probable Range of Alignment for Phase Shift Method}
-
-
-
-
-
-%Different relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ requires different phase adjustment for SIS18. Fig.~\ref{phase_shift} illustrates all scenarios of their relation and the required phase adjustment for each scenario. We would like to introduce a phase shift of up to $\pm 180^\circ$. The blue and red line represents the phase of SIS100 and SIS18 Reference RF Signal. The clockwise arrow from the SIS18 to SIS100 rf phase represents the negative phase adjustment for SIS18 and the anticlockwise represents the positive phase adjustment. The required phase adjustment of SIS18 is denoted by $\Delta \phi_{shift}$.
-%
-%
-%\begin{itemize}
-%    \item Scenario (a): $\phi_{h=10}^{SIS100}\in [0,90^\circ)$, see Fig.~\ref{frequency_beating} (a).
-%
-%	\begin{itemize}
-%		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
-%    \begin{equation}
-%			\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
-%    \end{equation}
-%    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
-%    \begin{equation}
-%			\Delta \phi_{shift}= 360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
-%    \end{equation}
-%	\end{itemize}
-%\begin{figure}[H]
-%   \centering   
-%   \includegraphics*[width=130mm]{phase_shift_synch_window_cal.jpg}
-%   \caption{Scenarios for the phase shift method.}
-%   \label{phase_shift}
-%\end{figure}
-%    \item Scenario (b): $\phi_{h=10}^{SIS100}\in [90,180^\circ)$, see Fig.~\ref{frequency_beating} (b). 
-%
-%	\begin{itemize}
-%		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (b). The phase adjustment is
-%	    \begin{equation}		
-%\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
-%    \end{equation}
-%    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (b).  The phase adjustment is
-%    \begin{equation}			
-%\Delta \phi_{shift}=360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
-%    \end{equation}
-%	\end{itemize}
-%    \item Scenario (c): $\phi_{h=10}^{SIS100}\in [180,270^\circ)$, see Fig.~\ref{frequency_beating} (c). The phase adjustment is
-%
-%	\begin{itemize}
-%		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
-%    \begin{equation}			
-%\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
-%    \end{equation}
-%    		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
-%    \begin{equation}			
-%\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}
-%    \end{equation}
-%	\end{itemize}
-%    \item Scenario (d): $\phi_{h=10}^{SIS100}\in [270,360^\circ)$, see Fig.~\ref{frequency_beating} (d).
-%
-%	\begin{itemize}
-%		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (d). The phase adjustment is 
-%	    \begin{equation}	
-%\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}	
-%    \end{equation}
-%    		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $ , which denotes by the white semicircle in Fig.~\ref{frequency_beating} (d). 
-%    \begin{equation}			
-%\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
-%    \end{equation}
-%	\end{itemize}
-%\end{itemize}
-
-The duration of the rf frequency modulation for the phase shift is $T$, so the best estimate of alignment is expressed by 
-
-\begin{equation}
-t_\mathit{best} = t_{\psi}^X + T \label{Phase_win}
-\end{equation}
-The uncertainty of the phase extrapolation $t_{\psi}^X$ is $\pm$\SI{100}{ps}, see eq.~\ref{jitter_measure_t}. The uncertainty of the phase shift is casued by the rf frequency modulation, whose uncertainty is \SI{100}{ps}, see eq.~\ref{freq_jitter_t}. The phase shift uncertainty equals to the uncertainty of the phase shift duration time, namely $\delta T = 100ps$. Both cause an uncertainty in the best estimate of alignment $t_{best}$.
-\begin{equation}
-%\begin{aligned}
-%\delta t_{best} =\sqrt {(\frac {\partial t_{best}}{\partial t_{\psi}^X}\delta t_{\psi}^X)^2 + (\frac {\partial t_{best}}{\partial T}\delta T)^2} \\
-% =\sqrt {(\delta t_{\psi}^X)^2+T^2} \approx \sqrt { 100ps^2+100ps^2}\approx 140ps \label{Phase_uncertainty}
-%\end{aligned}
-\delta t_\mathit{best} =\sqrt {(\frac {\partial t_{best}}{\partial t_{\psi}^X}\delta t_{\psi}^X)^2 + (\frac {\partial t_{best}}{\partial T}\delta T)^2} 
- =\sqrt {(\delta t_{\psi}^X)^2+(\delta T)^2}\approx 140ps \label{Phase_uncertainty}
+Both the B2B source SCU and the B2B target SCU measures the timestamp $t_\psi^X$ for the extrapolated phase and the uncertainty of the measured timestamp is \SI{1}{ns} (denoted as \gls{symb:uncertainty_time}).  
+\begin{equation} 
+\delta t_\psi^X= 1ns
+\label{jitter_measure_t}
 \end{equation}
 
+\begin{itemize}
+\item Phase shift method
 
-The uncertainty of the alignment for the phase shift method is about \SI{140}{ps}. So the proper range of alignment is [$t_{best}$-\SI{140}{ps}, $t_{best}$+\SI{140}{ps}] for $U^{28+}$ B2B transfer from the SIS18 to the SIS100.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Best Estimate of Alignment and probable Range of Alignment for Frequency Beating Method}
-%Fig.~\ref{frequency_beating} illustrates two scenarios for the frequency beating method. With the frequency beating method, SIS18 can only achieve positive phase adjustment, which is denoted by \gls{symb:phase_just_frequency_beating}. E.q.~\ref{sync_time} shows the best estimate of alignment for the phase adjustment of $\Delta \phi_{adjustment}$.
-%\begin{equation}
-%	 t_{best} = t_{\psi}+\frac {\Delta \phi_{adjustment}}{{360^\circ} \cdot {\Delta f}} \label {sync_time}
-%   \end{equation}
-%where \gls{symb:beating_freq} is the beating frequency.
-%\begin{figure}[!htb]
-%   \centering   
-%   \includegraphics*[width=90mm]{frequency_beating_synch_window_cal.jpg}
-%   \caption{Two scenarios for the frequency beating method.}
-%   \label{frequency_beating}
-%\end{figure}
-%
-%According to the relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$, there are two scenarios, see Fig.~\ref{frequency_beating}.
-%\begin{itemize}
-%    \item Scenario (a): $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$
-%	\begin{equation}
-%	 \Delta \phi_{adjustment} = \phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}\label {great}
-%   \end{equation}
-%   Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{great}, we have
-%	\begin{equation}
-%	 t_{best} =t_{\psi} +\frac {\phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}}{{360^\circ} \cdot {\Delta f}} \label {beating_win_1}
-%   \end{equation}
-%     \item  Scenario (b): $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$
-%	\begin{equation}
-%	 \Delta \phi_{adjustment} = 360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100}) \label {less}
-%   \end{equation}
-%  Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{less}, we have
-%
-%	\begin{equation}
-%	 t_{best} =t_{\psi} +\frac {360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \cdot {\Delta f}} \label {beating_win_2}
-%   \end{equation}
-%\end{itemize}
-%Based on these two scenarios, we could deduce the formula for the best estimate of alignment. 
-%	\begin{equation}
-%	 t_{best} =t_{\psi} +\frac {{\Delta n} \cdot {360^\circ} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \cdot {\Delta f}} \label {beating_win_2}
-%   \end{equation}
-%where $\bigtriangleup{n}$ equals 0 when  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ and equals 1 when  $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$.
-The time of the phase alignment is determined by the phase difference, the target phase difference and the beating frequency, see eq. ~\ref{best_align_beating}.
+For the phase shift method, the duration of the rf frequency modulation is $T$, so the best estimate of alignment is expressed by 
+
 \begin{equation}
-t_\mathit{best}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
+t_\mathit{align} = t_{\psi}^X + T \label{Phase_win}
+\end{equation}
+
+The uncertainty of the phase alignment is only caused by the uncertainty of the timestamp, calculated by eq.~\ref{Phase_uncertainty}.
+\begin{equation}
+\delta t_\mathit{align} =\sqrt {(\frac {\partial t_\mathit{align}}{\partial t_{\psi}^X}\delta t_{\psi}^X)^2} =\delta t_{\psi}^X=1ns
+\label{Phase_uncertainty}
+\end{equation}
+For all FAIR B2B transfer use cases with the phase shift method, the uncertainty of the phase alignment is \SI{1}{ns}, which is much smaller than $T_\mathit{w}$.
+
+\item Frequency beating method
+
+The best estimate of alignment is determined by the required phase difference $\Delta \phi_\mathit{shift}$, see eq. ~\ref{best_align_beating}.
+\begin{equation}
+t_\mathit{align}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
 \label{best_align_beating}
 \end{equation}
-where $\Delta \phi_\mathit{shift}$ is the required phase difference, the relation between $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ is explained in Chap. ~\ref{concept}. Becasue $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ have a linear relationship and the linear slop is $1$, the uncertainty of $\Delta \phi_\mathit{shift}$ (denoted as $\delta \Delta \phi_\mathit{shift}$) is equal to $\delta \Delta \phi_\mathit{syn}$, namely $\delta \Delta \phi_\mathit{shift}\approx 0.12^\circ$.   
+The relation between $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ is explained in Chap. ~\ref{concept}. 
 
-The uncertainty of the alignment is the result of the \gls{glos:error_pro} of the phase extrapolation and rf frequency detune, see eq.~\ref{beating_uncertainty}. Because the rf frequency detune has the long term stability, $\int\delta \Delta f_\mathit{syn}$=0, the uncertainty caused by rf frequency detune is 0. The uncertainty of the phase extrapolation is taken into consideration by $\Delta \phi_\mathit{shift}$. $\Delta f$ = \SI{200}{Hz} is taken as an example of the frequency detune. 
-\begin{equation}
+The uncertainty of the phase alignment is caused by the uncertainty of the phase extrapolation and the uncertainty of the timestamp, calculated by eq.~\ref{beating_uncertainty}
+\begin{eqnarray}
 \begin{aligned}
-\delta t_{best} =\sqrt {(\frac {\partial t_{best}}{\partial \phi_{h=2}^{SIS18}}\delta \phi_{h=2}^{SIS18})^2 + (\frac {\partial t_{best}}{\partial \phi_{h=10}^{SIS100}}\delta \phi_{h=10}^{SIS100})^2+(\frac {\partial t_{best}}{\partial \Delta f}\delta \Delta f)^2} \\
- =\sqrt {(\frac{-1}{{2\pi} \cdot {\Delta f}}\delta \phi_{h=2}^{SIS18})^2+(\frac{1}{{2\pi} \cdot {\Delta f}}\delta \phi_{h=10}^{SIS100})^2+(-\frac{{\Delta n} \cdot {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{2\pi} \cdot {\Delta f}^2}\delta \Delta f)^2} \\
-\le \sqrt {(\frac{-1}{{2\pi} \cdot {200}}0.06^\circ)^2+(\frac{1}{{2\pi} \cdot {200}}0.06^\circ)^2+0}\\
-\approx 1.178us \label{beating_uncertainty}
+\delta t_\mathit{align} =\sqrt {(\frac {\partial t_\mathit{align}}{\partial t_\psi^\mathit{X}} \delta t_\psi^\mathit{X})^2 +(\frac {\partial t_\mathit{align}}{\partial \psi^{src}} \delta\psi^{src})^2+(\frac {\partial t_\mathit{align}}{\partial \psi^{trg}} \delta\psi^{trg})^2  }\\
+=\sqrt {(\delta t_\psi^\mathit{X})^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{src}}  \delta  \psi^{src})^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{trg}}  \delta  \psi^{trg})^2}\\
+\label{beating_uncertainty}
 \end{aligned}
-\end{equation}
-From eq.~\ref{beating_uncertainty} we could get the uncertainty of the alignment is 1.178us, so the probable range of alignment is [$t_{best} – 1.178us, t_{best}+ 1.178us$].
+\end{eqnarray}
+
+Becasue $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ have a linear relationship and the linear slope is $1$, $\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{trg}}=\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^{trg}}$ and $\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{src}}=\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^{src}}$. Based on eq. ~\ref{phase_syn}, we get the partial derivative of $\Delta \phi_\mathit{shift}$ with respect to $\psi^{src}$ and $\psi^{trg}$.
+\begin{eqnarray}\label{partial}
+|\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{trg}}| = |\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^{src}}|=
+\begin{cases}
+1, &f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}\cr
+\frac{f_{\mathit{syn}}^{trg}}{f_{\mathit{rev}}^{trg}}, &f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}\cr
+\end{cases}
+\end{eqnarray}
+
+$\delta  \psi^{src}=\delta  \psi^{trg}$ and Substituting eq. ~\ref{partial} into eq.~\ref{beating_uncertainty}, we get 
+\begin{eqnarray}
+\delta t_\mathit{align}=
+\begin{cases}
+\sqrt {(\delta t_\psi^\mathit{X})^2 +2(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|} \delta  \psi^{X})^2 }, &f_{\mathit{B2B}}^{trg}=f_{\mathit{syn}}^{trg}\cr
+\sqrt {(\delta t_\psi^\mathit{X})^2 +2(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|} \frac{f_{\mathit{syn}}^{trg}}{f_{\mathit{rev}}^{trg}}\delta  \psi^{X})^2 }, &f_{\mathit{B2B}}^{trg}=f_{\mathit{rev}}^{trg}\cr
+\end{cases}
+\end{eqnarray}
+
+Tab. ~\ref{uncertainty} shows the uncertainty of the phase alignment for all FAIR use cases. More details about parameters, please see Chap. ~\ref{application}.
+\begin{table}[!htb]
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\caption{Uncertainty of the phase alignment of all FAIR B2B use cases}
+\label{uncertainty}
+\begin{center}
+    \begin{tabular}{ | c | c | c | c | c | c |}
+	    \hline
+	\tabincell{c}{ Use cases of FAIR accelerators}& $\delta \psi^{X}$  & $|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|$ & $\delta t_\mathit{align}$ & $T_\mathit{w}$\\ \hline
+   \tabincell{c}{$U^{28+}$ B2B transfer\\ from the SIS18 to the SIS100}& $0.006^\circ$  &\SI{200}{Hz} & \SI{1.174}{us} & \SI{6.359}{us}\\ \hline
+	\tabincell{c}{$H^{+}$ B2B transfer\\ from the SIS18 to the SIS100}& $0.010^\circ$  & \SI{200}{Hz} & \SI{0.983}{us}& \SI{3.678}{us} \\ \hline
+	\tabincell{c}{h=4 B2B transfer\\ from the SIS18 to the ESR}& $0.025^\circ$ &  \SI{1899}{Hz} & \SI{0.103}{us}& \SI{1.456}{us} \\ \hline
+	\tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR}& $0.036^\circ$ & \SI{1368}{Hz} & \SI{0.104}{us}& \SI{1.017}{us} \\ \hline	
+	\tabincell{c}{B2B transfer \\from the ESR to the CRYRING}&$0.025^\circ$  & \SI{949}{Hz} & \SI{0.102}{us}& \SI{1.456}{us} \\ \hline	
+	\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via a Pbar} &$0.002^\circ$ & \SI{450}{Hz} & \SI{0.019}{us}& \SI{18.226}{us} \\ \hline	
+	\tabincell{c}{RIB B2B transfer\\from the SIS100 to the CR \\ via a Super FRS}&$0.004^\circ$ &  \SI{108}{Hz} & \SI{0.154}{us} & \SI{9.779}{us}\\ \hline	
+	\tabincell{c}{Antiproton B2B transfer \\from the CR to the HESR }&$0.004^\circ$ & \SI{136}{Hz} & \SI{0.123}{us}& \SI{9.860}{us} \\ \hline	
+	\tabincell{c}{B2B transfer \\from the SIS18 to the ESR \\via a FRS}&$0.008^\circ$ & \SI{4249}{Hz} & \SI{7}{ns}& \SI{4.553}{us} \\ \hline	
+   \end{tabular}
+\end{center}
+\end{table} 
+
+The length of the uncertainty of the phase alignment for all FAIR use cases is much smaller than the length of the synchronization window. Hence, the propagation of the uncertainty has no influence on the bunch-to-bucket injection center mismatch within the synchronization window. The uncertainty of the phase extrapolation \SI{100}{ps} is acceptable for the FAIR B2B transfer system.
+
+\end{itemize}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Calculation of Synchronization Window and its Accuracy}
-In the last section, we get the probable range of alignment, within which the two Reference Rf Signals could be aligned with each other. The synchronization window is used to select the revolution frequency marker for the extraction and injection kicker firing, which is closest to the probable range of alignment, See Fig.~\ref{accuracy_syn_win}. For the selection, the length of the synchronization window must be a least one SIS100 revolution period. The best estimate of the start of the synchronization window is exactly half revolution period before the selected revolution frequency marker. The blue and orange rectangles represent two scenarios of the probable range of alignment. In Fig.~\ref{accuracy_syn_win}, the $2^{nd}$ revolution frequency marker is the closest one to the probable range of alignment. The best estimate of the start of the synchronization window aligns with the negative zero crossing point of the revolution marker signal.
+In the last section, we get the probable range of alignment, within which the two synchronization frequencies are correctly phase aligned with each other. In Chap. ~\ref{concept}, we get the start of the synchronization window with the phase shift method and frequency beating methods.
+\begin{equation}
+t_\mathit{w\_start}=t_\psi^\mathit{X}+T-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start2}
+\end{equation}
+\begin{equation}
+t_\mathit{w\_start}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start3}
+\end{equation}
+
+The start of the synchronization window is used to select the marker of the bucket indication signal, See Fig.~\ref{accuracy_syn_win}. For the proper selection, the start of the synchronization window is exactly half the period of the bucket indication signal before the selected bucket indication signal. 
+
+The blue and orange rectangles represent two scenarios of the probable range of alignment. In Fig.~\ref{accuracy_syn_win}, the $2^{nd}$ revolution frequency marker is the closest one to the probable range of alignment. The best estimate of the start of the synchronization window aligns with the negative zero crossing point of the revolution marker signal.
+
+
 
 \begin{figure}[!htb]
    \centering   
@@ -582,10 +491,10 @@ In the last section, we get the probable range of alignment, within which the tw
    \label{accuracy_syn_win}
 \end{figure}
 
-For SIS100, the rf phase of the revolution frequency is $\psi_{h=1}^{SIS100}$ at $t_{\psi}$. We could calculate the rf phase \gls{symb:phase_s_alignment} of the revolution frequency at the start of the probable rang of alignment, $t_{best}$-$\delta t_{best}$.
+For SIS100, the rf phase of the revolution frequency is $\psi_{h=1}^{SIS100}$ at $t_{\psi}$. We could calculate the rf phase \gls{symb:phase_s_alignment} of the revolution frequency at the start of the probable rang of alignment, $t_\mathit{align}$-$\delta t_\mathit{align}$.
 \begin{equation}
 \begin{aligned}
-\psi_{s\_alignment}=\frac{(t_{best}-\delta t_{best}-t_{\psi}- \frac{360^\circ-\psi_{h=1}^{SIS100}}{360^\circ} \cdot {T_{h=1}^{SIS100}}) \mod T_{h=1}^{SIS100}}{T_{h=1}^{SIS100}}\cdot {360^\circ} 
+\psi_{s\_alignment}=\frac{(t_\mathit{align}-\delta t_\mathit{align}-t_{\psi}- \frac{360^\circ-\psi_{h=1}^{SIS100}}{360^\circ} \cdot {T_{h=1}^{SIS100}}) \mod T_{h=1}^{SIS100}}{T_{h=1}^{SIS100}}\cdot {360^\circ} 
 \label{phase_after_syn}
 \end{aligned}
 \end{equation}
@@ -600,7 +509,7 @@ For the calculation of the best estimate of the start of the synchronization win
 \end{equation}
 \begin{equation}
 \begin{aligned}
-WIN_{start}= t_{best}- \delta t_{best}-\Delta t_{win \_correct}
+WIN_{start}= t_\mathit{align}- \delta t_\mathit{align}-\Delta t_{win \_correct}
 \end{aligned}
 \end{equation}
 
@@ -614,7 +523,7 @@ WIN_{start}= t_{best}- \delta t_{best}-\Delta t_{win \_correct}
 \end{equation}
 \begin{equation}
 \begin{aligned}
-WIN_{start}= t_{best}- \delta t_{best}-\Delta t_{win \_correct}
+WIN_{start}= t_\mathit{align}- \delta t_\mathit{align}-\Delta t_{win \_correct}
 \end{aligned}
 \end{equation}
 
@@ -1139,3 +1048,189 @@ we could get that the beating time \gls{symb:d_t} is \SI{4.622818}{\ms} and the 
 
 
 
+%%%%%%%%%%%Uncertainty 
+%For both the phase shift and frequency beating methods, the calculation is based on the extrapolated phase of the rf signal locally. Here the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is taken as an example, two synchronization frequencies are $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{SIS18}$ and $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{SIS100}$ and two Reference RF Signals are $f_{\mathit{B2B}}^{SIS18}=1/5f_{\mathit{rev}}^{SIS18}$ and $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{SIS100}$ (more details about $f_{\mathit{syn}}^{X}$ and $f_\mathit{B2B}^{X}$, please see Chap. ~\ref{background} and Chap. ~\ref{concept}.). The PAP module extrapolates the phase $\psi^{SIS100}$ for $f_{\mathit{B2B}}^{SIS100}$ and $\psi^{SIS18}$ for $f_{\mathit{B2B}}^{SIS18}$ at $t_{\psi}^\mathit{SIS18}=t_{\psi}^\mathit{SIS100}$. The phase difference between two synchronization frequencies is
+%\begin{equation}
+%\Delta \phi_\mathit{syn}=\frac{f_{\mathit{syn}}^{SIS100}}{f_{\mathit{rev}}^{SIS100}}(\psi^\mathit{SIS100}-\psi^\mathit{SIS18}) \mod 2\pi =10 \times(\psi^\mathit{SIS100}-\psi^\mathit{SIS18}) \mod 2\pi
+%\label{phase_diff_18to100}
+%\end{equation}
+
+%Fig.~\ref{Calculation_symble} illustrates some basic definition of symbols for the calculation. 
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=160mm]{Calculation_symble.jpg}
+%   \caption{The illustration of symbols for the calculation.}
+%   \label{Calculation_symble}
+%\end{figure}
+%$\phi_{h=2}^{SIS18}$and $\phi_{h=10}^{SIS100}$ are individual rf phase of SIS18 and SIS100 Reference RF Signals at $t_{\psi}$. The relationship between \gls{symb:h2phase18}, \gls{symb:h10phase100} and $\psi_{h=1/5}^{SIS18}$, $\psi_{h=1}^{SIS100}$ are given by eq.~\ref{SIS18_phase} and eq.~\ref{SIS100_phase}. 
+
+%\begin{equation}
+%\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}}{360^\circ}\cdot {T_{h=1/5}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\cdot {360^\circ} \label{SIS18_phase}
+%\end{equation}
+%\begin{equation}
+%\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}}{360^\circ}\cdot {T_{h=1}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\cdot {360^\circ} \label{SIS100_phase}
+%\end{equation}
+%substituting $T_{h=2}^{SIS18}\cdot 10=T_{h=1/5}^{SIS18}$, $T_{h=10}^{SIS100}\cdot 10=T_{h=1}^{SIS100}$ into eq.\ref{SIS18_phase} and eq.\ref{SIS100_phase} yields
+% \begin{equation}
+%\phi_{h=2}^{SIS18} =  \frac {\frac{\psi_{h=1/5}^{SIS18}\cdot 10}{360^\circ}\cdot {T_{h=2}^{SIS18}} \mod {T_{h=2}^{SIS18}}}{T_{h=2}^{SIS18}}\cdot {360^\circ} \label{SIS18_phase1}
+%\end{equation}
+%\begin{equation}
+%\phi_{h=10}^{SIS100} =  \frac {\frac{\psi_{h=1}^{SIS100}\cdot 10}{360^\circ}\cdot {T_{h=10}^{SIS100}} \mod {T_{h=10}^{SIS100}}}{T_{h=10}^{SIS100}}\cdot {360^\circ} \label{SIS100_phase1}
+%\end{equation}
+%
+%Here we explain the inevitable uncertainty of the phase extrapolation and rf frequency modulation. 
+%\begin{itemize}
+%\item Uncertainty of the phase extrapolation
+%
+%
+% 
+%Based on eq.~\ref{phase_diff_18to100} and eq.~\ref{jitter_measure_p}, the uncertainty of the phase difference between the SIS18 and SIS100 synchronization frequencies is
+%\begin{equation}
+%\Delta \phi_\mathit{syn}\approx10 \times[0.006^\circ-(-0.006^\circ)] \mod 2\pi\approx 0.12^\circ
+%\end{equation}
+
+%\begin{equation}
+%\begin{aligned}
+%\delta \phi_{h=2}^{SIS18} = \sqrt {(\frac{\partial \phi_{h=2}^{SIS18}}{\partial \psi_{h=2}^{SIS18}} \delta \psi_{h=2}^{SIS18})^2}=\sqrt {(10 \cdot \delta \psi_{h=2}^{SIS18})^2}=0.06^\circ
+%\label{phi_jitter1}
+%\end{aligned}
+%\end{equation}
+%\begin{equation}
+%\delta \phi_{h=10}^{SIS100} = \sqrt {(\frac{\partial \phi_{h=10}^{SIS100}}{\partial \psi_{h=1}^{SIS100}} \delta \psi_{h=10}^{SIS100})^2}=\sqrt {(10 \cdot \delta \psi_{h=10}^{SIS100})^2}=0.06^\circ
+%\label{phi_jitter2}
+%\end{equation}
+
+%\item Uncertainty of the rf frequency modulation
+%
+%For the rf frequency modulation, the uncertainty is $0.2^\circ$ at \SI{5.4}{MHz} ~\cite{laier_funktional-spezifikation_2011}. We calculate the uncertainty in the time domain, see eq.~\ref{freq_jitter_t}.
+%\begin{equation}
+%\delta \Delta f_\mathit{rf} =\delta \Delta f_\mathit{syn}= \frac{0.2^\circ}{360^\circ} \times {\frac{1}{5.4MHz}}\approx 100ps
+%\label{freq_jitter_t}
+%\end{equation}
+%
+%The precision of the rf frequency is 0.05Hz. 
+%\begin{equation}
+%\delta \Delta f = 0.05Hz
+%\label{freq_jitter_f}
+%\end{equation}
+
+
+%
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Different relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$ requires different phase adjustment for SIS18. Fig.~\ref{phase_shift} illustrates all scenarios of their relation and the required phase adjustment for each scenario. We would like to introduce a phase shift of up to $\pm 180^\circ$. The blue and red line represents the phase of SIS100 and SIS18 Reference RF Signal. The clockwise arrow from the SIS18 to SIS100 rf phase represents the negative phase adjustment for SIS18 and the anticlockwise represents the positive phase adjustment. The required phase adjustment of SIS18 is denoted by $\Delta \phi_{shift}$.
+%
+%
+%\begin{itemize}
+%    \item Scenario (a): $\phi_{h=10}^{SIS100}\in [0,90^\circ)$, see Fig.~\ref{frequency_beating} (a).
+%
+%	\begin{itemize}
+%		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
+%    \begin{equation}
+%			\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
+%    \end{equation}
+%    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (a). The phase adjustment is
+%    \begin{equation}
+%			\Delta \phi_{shift}= 360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
+%    \end{equation}
+%	\end{itemize}
+%\begin{figure}[H]
+%   \centering   
+%   \includegraphics*[width=130mm]{phase_shift_synch_window_cal.jpg}
+%   \caption{Scenarios for the phase shift method.}
+%   \label{phase_shift}
+%\end{figure}
+%    \item Scenario (b): $\phi_{h=10}^{SIS100}\in [90,180^\circ)$, see Fig.~\ref{frequency_beating} (b). 
+%
+%	\begin{itemize}
+%		\item $\phi_{h=10}^{SIS100}< \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100} +180^\circ$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (b). The phase adjustment is
+%	    \begin{equation}		
+%\Delta \phi_{shift}=-(\phi_{h=2}^{SIS18} - \phi_{h=10}^{SIS100})
+%    \end{equation}
+%    		\item $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} >\phi_{h=10}^{SIS100} +180^\circ$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (b).  The phase adjustment is
+%    \begin{equation}			
+%\Delta \phi_{shift}=360^\circ - \phi_{h=2}^{SIS18} + \phi_{h=10}^{SIS100}
+%    \end{equation}
+%	\end{itemize}
+%    \item Scenario (c): $\phi_{h=10}^{SIS100}\in [180,270^\circ)$, see Fig.~\ref{frequency_beating} (c). The phase adjustment is
+%
+%	\begin{itemize}
+%		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
+%    \begin{equation}			
+%\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
+%    \end{equation}
+%    		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the white semicircle in Fig.~\ref{frequency_beating} (c). The phase adjustment is
+%    \begin{equation}			
+%\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}
+%    \end{equation}
+%	\end{itemize}
+%    \item Scenario (d): $\phi_{h=10}^{SIS100}\in [270,360^\circ)$, see Fig.~\ref{frequency_beating} (d).
+%
+%	\begin{itemize}
+%		\item $\phi_{h=10}^{SIS100}-180^\circ < \phi_{h=2}^{SIS18}< \phi_{h=10}^{SIS100}$, which denotes by the yellow semicircle in Fig.~\ref{frequency_beating} (d). The phase adjustment is 
+%	    \begin{equation}	
+%\Delta \phi_{shift}=\phi_{h=10}^{SIS100}-\phi_{h=2}^{SIS18}	
+%    \end{equation}
+%    		\item $\phi_{h=2}^{SIS18} > \phi_{h=10}^{SIS100}$ or  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100} +180^\circ - 360^\circ $ , which denotes by the white semicircle in Fig.~\ref{frequency_beating} (d). 
+%    \begin{equation}			
+%\Delta \phi_{shift}=-(360^\circ - \phi_{h=10}^{SIS100}+ \phi_{h=2}^{SIS18})
+%    \end{equation}
+%	\end{itemize}
+%\end{itemize}
+
+
+%\begin{aligned}
+%\delta t_\mathit{align} =\sqrt {(\frac {\partial t_\mathit{align}}{\partial t_{\psi}^X}\delta t_{\psi}^X)^2 + (\frac {\partial t_\mathit{align}}{\partial T}\delta T)^2} \\
+% =\sqrt {(\delta t_{\psi}^X)^2+T^2} \approx \sqrt { 100ps^2+100ps^2}\approx 140ps \label{Phase_uncertainty}
+%\end{aligned}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Fig.~\ref{frequency_beating} illustrates two scenarios for the frequency beating method. With the frequency beating method, SIS18 can only achieve positive phase adjustment, which is denoted by \gls{symb:phase_just_frequency_beating}. E.q.~\ref{sync_time} shows the best estimate of alignment for the phase adjustment of $\Delta \phi_{adjustment}$.
+%\begin{equation}
+%	 t_\mathit{align} = t_{\psi}+\frac {\Delta \phi_{adjustment}}{{360^\circ} \cdot {\Delta f}} \label {sync_time}
+%   \end{equation}
+%where \gls{symb:beating_freq} is the beating frequency.
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=90mm]{frequency_beating_synch_window_cal.jpg}
+%   \caption{Two scenarios for the frequency beating method.}
+%   \label{frequency_beating}
+%\end{figure}
+%
+%According to the relation between $\phi_{h=2}^{SIS18}$ and $\phi_{h=10}^{SIS100}$, there are two scenarios, see Fig.~\ref{frequency_beating}.
+%\begin{itemize}
+%    \item Scenario (a): $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$
+%	\begin{equation}
+%	 \Delta \phi_{adjustment} = \phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}\label {great}
+%   \end{equation}
+%   Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{great}, we have
+%	\begin{equation}
+%	 t_\mathit{align} =t_{\psi} +\frac {\phi_{h=10}^{SIS100} - \phi_{h=2}^{SIS18}}{{360^\circ} \cdot {\Delta f}} \label {beating_win_1}
+%   \end{equation}
+%     \item  Scenario (b): $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$
+%	\begin{equation}
+%	 \Delta \phi_{adjustment} = 360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100}) \label {less}
+%   \end{equation}
+%  Replacing $\Delta \phi_{adjustment}$ in eq.~\ref{sync_time} with eq.~\ref{less}, we have
+%
+%	\begin{equation}
+%	 t_\mathit{align} =t_{\psi} +\frac {360^\circ - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \cdot {\Delta f}} \label {beating_win_2}
+%   \end{equation}
+%\end{itemize}
+%Based on these two scenarios, we could deduce the formula for the best estimate of alignment. 
+%	\begin{equation}
+%	 t_\mathit{align} =t_{\psi} +\frac {{\Delta n} \cdot {360^\circ} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{360^\circ} \cdot {\Delta f}} \label {beating_win_2}
+%   \end{equation}
+%where $\bigtriangleup{n}$ equals 0 when  $\phi_{h=2}^{SIS18} < \phi_{h=10}^{SIS100}$ and equals 1 when  $\phi_{h=2}^{SIS18} \ge \phi_{h=10}^{SIS100}$.
+
+
+%\begin{equation}
+%\begin{aligned}
+%\delta t_\mathit{align} =\sqrt {(\frac {\partial t_\mathit{align}}{\partial \phi_{h=2}^{SIS18}}\delta \phi_{h=2}^{SIS18})^2 + (\frac {\partial t_\mathit{align}}{\partial \phi_{h=10}^{SIS100}}\delta \phi_{h=10}^{SIS100})^2+(\frac {\partial t_\mathit{align}}{\partial \Delta f}\delta \Delta f)^2} \\
+% =\sqrt {(\frac{-1}{{2\pi} \cdot {\Delta f}}\delta \phi_{h=2}^{SIS18})^2+(\frac{1}{{2\pi} \cdot {\Delta f}}\delta \phi_{h=10}^{SIS100})^2+(-\frac{{\Delta n} \cdot {2\pi} - (\phi_{h=2}^{SIS18}-\phi_{h=10}^{SIS100})}{{2\pi} \cdot {\Delta f}^2}\delta \Delta f)^2} \\
+%\le \sqrt {(\frac{-1}{{2\pi} \cdot {200}}0.06^\circ)^2+(\frac{1}{{2\pi} \cdot {200}}0.06^\circ)^2+0}\\
+%\approx 1.178us \label{beating_uncertainty}
+%\end{aligned}
+%\end{equation}
