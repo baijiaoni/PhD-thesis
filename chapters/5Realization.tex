@@ -355,7 +355,7 @@ Because of the propagation of the uncertainty of the extrapolated phase and that
 %\end{figure}
 
 %In fact, two SIS100 revolution periods is enough for the correct bucket selection, achieving much preciser injection. The beginning of the synchronization window denotes by $WIN_{start}$. The synchronization window is within the range [$WIN_{start}$ , $WIN_{start}$  + 2 $\cdot T_{rev}^{SIS100}$]. $T_{rev}^{SIS100}$is the revolution period of SIS100, which equals to 6.359 us for U$^{28+}$ at 200Mev/u.  
-\subsubsection{Measurement Uncertainty}
+\subsubsection{Uncertainty of Phase Alignment}
 
 In Chap. ~\ref{concept}, we get the phase difference $\Delta \phi_\mathit{syn}$ between two synchronization frequencies at $t_\psi^X$.
 \begin{eqnarray}\label{phase_syn}
@@ -469,16 +469,20 @@ The length of the uncertainty of the phase alignment for all FAIR use cases is m
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Calculation of Synchronization Window and its Accuracy}
-In the last section, we get the probable range of alignment, within which the two synchronization frequencies are correctly phase aligned with each other. In Chap. ~\ref{concept}, we get the start of the synchronization window with the phase shift method and frequency beating methods.
+\subsubsection{Uncertainty of Start of the Synchronization Window}
+The start of the synchronization window with the phase shift method and the frequency beating method are calculated by eq. ~\ref{syn_win_start2} and  eq. ~\ref{syn_win_start3}. More explaination, please see Chap.  ~\ref{concept}.
 \begin{equation}
-t_\mathit{w\_start}=t_\psi^\mathit{X}+T-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start2}
+t_\mathit{w\_start}=t_\psi^\mathit{X}+T-\frac{T_w}{2}-t_\mathit{delay}=t_\mathit{align}-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start2}
 \end{equation}
 \begin{equation}
-t_\mathit{w\_start}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start3}
+t_\mathit{w\_start}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}-\frac{T_w}{2}-t_\mathit{delay}=t_\mathit{align}-\frac{T_w}{2}-t_\mathit{delay}\label{syn_win_start3}
 \end{equation}
 
-The start of the synchronization window is used to select the marker of the bucket indication signal, See Fig.~\ref{accuracy_syn_win}. For the proper selection, the start of the synchronization window is exactly half the period of the bucket indication signal before the selected bucket indication signal. 
+The synchronization window is used to select the first rising edge of the bucket indication signal. In reality, the relative position between the start of the synchronization window and the first rising edge of the bucket indication signal is random. In order to guarantee the correct selection of the rising edge of the bucket indication signal at both the source and target synchrotrons, the start of the synchronization window will be rectified to half the period of the bucket indication signal before the selected rising edge. This time is called the ``best estimate of the start of the synchronization window``, denoted as \gls{symb:win_start_rect}. However, the actual start of the synchronization window is impossible to be exactly at \gls{symb:win_start_rect} because of the propogation of the uncertainty. The start of the synchronization window lies between \gls{symb:win_start_rect}$-\delta t_\mathit{w\_start\_rect}$ and $t_\mathit{align}+\delta t_\mathit{w\_start\_rect}$, where \gls{symb:probable_win_start} is the uncertainty of the start of the synchronization window. 
+
+The rf phase of the Reference RF Signal is $\psi_{X}$ at $t_{\psi}^X$. We could calculate the rf phase \gls{symb:phase_s_alignment} of the revolution frequency at the start of the probable rang of alignment, $t_\mathit{align}$-$\delta t_\mathit{align}$.
+
+
 
 The blue and orange rectangles represent two scenarios of the probable range of alignment. In Fig.~\ref{accuracy_syn_win}, the $2^{nd}$ revolution frequency marker is the closest one to the probable range of alignment. The best estimate of the start of the synchronization window aligns with the negative zero crossing point of the revolution marker signal.
 
