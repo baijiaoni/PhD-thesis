@@ -1,20 +1,20 @@
-This dissertation contributes to the conceptual development, the systematic investigation and the timing system realization of the FAIR bunch-to-bucket transfer system. 
+This dissertation contributes to the conceptual development, the systematic investigation and the timing system realization of the FAIR Bunch-to-Bucket (B2B) transfer system. 
 
-The FAIR B2B transfer system plays an important role for the FAIR project, which will achieve various complex bunch-to-bucket transfer for FAIR accelerators in the future. It focuses first of all on the transfer from the SIS18 to the SIS100, but it will be firstly tested for the transfer from the SIS18 to the ESR and from the ESR to the CRYRING. The system is developed based on the FAIR existing infrastructures, the Low Level Radio Frequency system (LLRF) and the FAIR control system. It coordinates with the Machine Protection System (MPS), which protects SIS100/SIS300 from fatal errors and considerable damage and indicates beam status for Beam Instrumentation (BI). 
+The FAIR B2B transfer system plays an important role for the FAIR project, which will achieve various complex bunch-to-bucket transfer for FAIR accelerators in the future. It focuses first of all on the transfer from the SIS18 to the SIS100, but it will be firstly tested for the transfer from the SIS18 to the ESR and from the ESR to the CRYRING. The system is developed based on the FAIR existing infrastructures, the Low Level Radio Frequency system and the FAIR control system. It coordinates with the Machine Protection System, which protects SIS100/SIS300 from fatal errors and considerable damage and indicates beam status for Beam Instrumentation. 
  
-The B2B transfer system obtains the radio frequency (rf) phase difference between two synchrotrons by means of a campus wide distributed reference signal with picosecond precision, which is provided by the Bunchphase Timing System (BuTiS). The part of the B2B electronic locates in the the source synchrotron supply room and serves as a kind of the ``B2B transfer master``. The most important tasks of B2B transfer master are:
+The FAIR B2B transfer system obtains the radio frequency (rf) phase difference between two synchrotrons by means of a campus wide distributed reference signal with picosecond precision, which is provided by the Bunchphase Timing System (BuTiS). The part of the B2B electronic is locates in the the source synchrotron supply room and serves as the ``B2B transfer master``. The most important tasks of B2B transfer master are:
 \begin{itemize}
 
-	\item 	The data collection (e.g. the rf phase collection). 
+	\item 	The data collection (e.g. the rf phase). 
 
-   \item 	The data processing (e.g. the calculation of the synchronization window, the phase shift for the phase match between two rf systems, the phase correction for the bucket label, the B2B transfer status check and etc.). 
+   \item 	The data calculation (e.g. the start of the synchronization window, the required phase shift for the phase match between two rf systems, the phase correction for the bucket indication, the B2B transfer status check and etc). 
 
-   \item 	The data redistribution (e.g. the synchronization window).
+   \item 	The data redistribution (e.g. the start of the synchronization window).
 \end{itemize}
-The synchronization window is a coarse time frame for the transfer (coarse synchronization) and the bucket label signal is used to indicate a specified bucket to be injected within the window, which is called the ``fine synchronization``. This system is applied to all FAIR B2B transfer use cases and all transfers have to achieve the bunch-to-bucket injection center mismatch within the tolerate limits.
+The synchronization window is a coarse time frame for the transfer (coarse synchronization) and the bucket indication signal is used to indicate a specified bucket to be injected within the window, which is called the ``fine synchronization``. This system is applied to all FAIR B2B transfer use cases and most transfers achieve the bunch-to-bucket injection center mismatch within the tolerate limits.
 
 This dissertation presents the basic idea of the FAIR B2B transfer system, the basic procedure of the FAIR B2B transfer and the realization of each function.
 %
 Because the system focuses first of all on the transfer from the SIS18 to the SIS100, the beam dynamic of the B2B transfer from the SIS18 to the SIS100 is simulated for two synchronization methods, the phase shift and the frequency beating method. In addition, the SIS18 extraction and SIS100 injection kickers are analyzed for different triggering strategies. This dissertation also explains the timing constraints of the system, the calculation of the synchronization window and presents the usage of the WR network for the B2B transfer system. 
 
-A test setup of the timing system of the FAIR B2B transfer system is presented and the test result is analyzed in this dissertation. 
+A test setup of the FAIR B2B transfer system focusing mainly on the timing aspects is presented and the test result is analyzed in this dissertation. 

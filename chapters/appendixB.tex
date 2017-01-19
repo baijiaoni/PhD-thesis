@@ -5,8 +5,8 @@
     \begin{longtable}{ | c | c | c | c | c | c |}
     \hline
 \rowcolor[gray]{0.8}
-     	 &  & \multicolumn{2}{c|}{Proton} & \multicolumn{2}{c|}{Heavy Ion} \\ \hline
-		 & Unit &	SIS18 Ext\tablefootnote{Ext: Extraction} & SIS100 Inj\tablefootnote{Inj: Injection} & SIS18 Ext &SIS100 Inj\\ \hline
+     	 &  & \multicolumn{2}{c|}{Proton} & \multicolumn{2}{c|}{Heavy Ion $U^\mathit{28+}$} \\ \hline
+		 & Unit &	SIS18 Ext & SIS100 Inj & SIS18 Ext &SIS100 Inj\\ \hline
 Design orbit &	m &	 216.72&1083.6&	216.72&1083.6	\\ \hline
 $C_{SIS18}:C_{SIS100}$&	&	\multicolumn{2}{c|}{5}&\multicolumn{2}{c|}{5}	\\ \hline
 \tabincell{c}{Ext kinetic\\ energy}&	\SI{}{\MeV/\atomicmassunit}&	4000&&	200&	\\ \hline
@@ -18,11 +18,15 @@ $f_{rev}$&\SI{}{\MHz}&	1.359358&0.271872&0.786268&0.157254\\ \hline
 $T_{rev}$&\SI{}{\us}&	0.736&3.678&1.272&6.359\\ \hline
 Max $\Delta p/p$&	&$\pm0.008$&$\pm0.01$&$\pm0.008$&$\pm0.01$\\ \hline
 $\Delta R/R$&	&$\pm0.8\times10^{-4}$&&$\pm2.4\times10^{-4}$&\\ \hline
-$\eta$ \tablefootnote{Frequency slip factor is defined as $\eta=\frac{1}{\gamma^2}-\alpha_p$}&	&0.026	&&	0.647&	\\ \hline
+$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&0.026	&&	0.647&	\\ \hline
 \tabincell{c}{$\gamma_t$}&	&10	&      &5.8&\\ \hline
 $\alpha_p$ &	&0.010&	&0.030&	\\ \hline
 $\beta$&	&0.982&0.982&0.568&0.568\\ \hline
 $\gamma$&	&5.294&5.294	&1.215&1.215\\ \hline
+$Q_x$&	&4.17&	&4.17&\\ \hline
+$Q_y$&	&3.4&	&3.4&\\ \hline
+$Q^`_x$&	&-7.5&	&-6.5&\\ \hline
+$Q^`_y$&	&-4.4&	&-4.1&\\ \hline
 	&	&\multicolumn{2}{c|}{\tabincell{c}{Injection\\ four times}}	&\multicolumn{2}{c|}{\tabincell{c}{Injection\\ four times}} \\ \hline
 %%----------------------------------------------
 %\rowcolor[gray]{0.8}
@@ -72,7 +76,7 @@ $T_{rev}$&\SI{}{\us}&	1.010&0.506&2.913&1.458\\ \hline
 \tabincell{c}{$\Delta p/p$ compared \\with design orbit}&	&&1$\%$&&1$\%$\\ \hline
 $\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
 %$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
-$\eta$ &	&0.480	&0.310&	0.909&	0.759\\ \hline
+$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&0.480	&0.310&	0.909&	0.759\\ \hline
 \tabincell{c}{$\gamma_t$}&	&10	&2.357&	5.8&	2.357\\ \hline
 $\alpha_p$ &	&0.010&0.18	&0.030&0.18	\\ \hline
 $\beta$&	&0.715&0.715	&0.248&0.248	\\ \hline
@@ -123,7 +127,7 @@ $T_{rev}$&\SI{}{\us}&	0.929&0.506\\ \hline
 \tabincell{c}{$\Delta p/p$ compared \\with design orbit}&	&&1$\%$\\ \hline
 $\Delta R/R$&	&&0.138$\%$\\ \hline
 %$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
-$\eta$ &	&0.366	&0.310\\ \hline
+$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&0.366	&0.310\\ \hline
 \tabincell{c}{$\gamma_t$}&	&5.8	&2.357\\ \hline
 $\alpha_p$ &	&0.030&0.18	\\ \hline
 $\beta$&	&0.778&0.715	\\ \hline
@@ -176,7 +180,7 @@ $f_{rev}$&\SI{}{\MHz}&	0.685651&1.373200&\tabincell{c}{0.254354-\\0.400885}&\tab
 $T_{rev}$&\SI{}{\us}&	1.458&0.728&\tabincell{c}{3.932-\\2.494}&\tabincell{c}{1.963-\\1.246}\\ \hline
 
 %$\Delta R/R$&	&&0.138$\%$&&0.138$\%$\\ \hline
-$\eta$ &	&0.759	&&	0.798-0.812&	\\ \hline
+$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&0.759	&&	0.798-0.812&	\\ \hline
 \tabincell{c}{$\gamma_t$}&	&2.357	&&	2.357&	\\ \hline
 $\alpha_p$ &	&0.18&&0.18&	\\ \hline
 $\beta$&	&0.248&0.248	&0.092-0.145&0.092-0.145	\\ \hline
@@ -215,7 +219,7 @@ $T_{rf}$&\SI{}{\us}&	0.759&1.972&0.889&2.309\\ \hline
 $f_{rev}$&\SI{}{\MHz}&	1.316775&0.507131&1.124408&0.433043\\ \hline
 $T_{rev}$&\SI{}{\us}&	0.759&1.972&0.889&2.309\\ \hline
 Max $\Delta p/p$ &	& $\pm3\%$& &$\pm1.5\%$&\\ \hline
-$\eta$ &	&-0.011	&&0.178	&	\\ \hline
+$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&-0.011	&&0.178	&	\\ \hline
 \tabincell{c}{$\gamma_t$}&	&3.85&&	2.711&	\\ \hline
 $\alpha_p$ &	&0.067&&&	\\ \hline
 $\beta$&	&0.972&0.972	&0.830&0.830	\\ \hline
@@ -264,7 +268,7 @@ $T_{rf}$&\SI{}{\us}&	0.723&0.759&1.955&0.889\\ \hline
 $f_{rev}$&\SI{}{\MHz}&	0.276578&1.316778&0.255814&1.124408\\ \hline
 $T_{rev}$&\SI{}{\us}&	3.616&0.759&3.909&0.889\\ \hline
 Max $\Delta p/p$ &	& $\pm3\%$& &$\pm1.5\%$&\\ \hline
-%$\eta$ &	&-0.011	&&0.178	&	\\ \hline
+%$\eta=\frac{1}{\gamma^2}-\alpha_p$ &	&-0.011	&&0.178	&	\\ \hline
 %\tabincell{c}{Transition\\ Energy $\gamma_t$}&	&3.85&&	2.711&	\\ \hline
 %$\alpha_p$ &	&0.067&&&	\\ \hline
 $\beta$&	&0.999&0.972&0.924&0.830\\ \hline

@@ -155,7 +155,7 @@ For the frequency beating method, two slightly different frequencies are chosen 
 %   \label{bucket_label_phase}
 %\end{figure}
 
-The frequency of the bucket indication signal (denoted as ``\gls{symb:bucket_freq}``) depends on the relation between $f_{\mathit{syn}}^{\mathit{trg}}$ and $f_{\mathit{rev}}^{\mathit{trg}}$, see Chap. ~\ref{concept}.
+The frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{\mathit{trg}}$ and $f_{\mathit{rev}}^{\mathit{trg}}$, see Chap. ~\ref{concept}.
 %
 When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two Reference RF Signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the Synchronization Reference Signal $f_\mathit{syn}^\mathit{REF}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\Delta \phi_\mathit{rf}$ when the large synchrotron is the target. 
 
@@ -305,7 +305,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &  \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}=$\SI{1.572536}{MHz} \\and\\ $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{\mathit{SIS100}}$=\SI{1.572536}{MHz}}\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{\mathit{SIS18}}+\frac{1}{2}\Delta f_\mathit{syn})=$\SI{157.254}{kHz}+\SI{20}{Hz} \\and\\ $f_\mathit{B2B}^\mathit{SIS100}$=\SI{157.254}{kHz}}\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{200}{kHz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{6.359}{us}$\\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{6.359}{\micro\second}$\\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.4^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -376,7 +376,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{SIS18}+\Delta f_\mathit{syn})=$\SI{271.872}{kHz}+\SI{40}{Hz} \\and\\ $f_{\mathit{B2B}}^{SIS100}$=\SI{271.872}{kHz}}\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{300}{kHz}\\ \hline
 
-	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{3.678}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{3.678}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.4^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -539,7 +539,7 @@ The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=2f_{\mathit{rev}}^{\mathit{SIS18}}= \SI{686.601}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{700}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{1899}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{ESR}}=\SI{1.456}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{ESR}}=\SI{1.456}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -578,7 +578,7 @@ The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X$, $\ka
 
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{1}{MHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{1368}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{ESR}}=\SI{1.017}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{ESR}}=\SI{1.017}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -612,7 +612,7 @@ The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X$, 
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{0.685651}{MHz}$ \\and \\$f_{\mathit{B2B}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2=\SI{0.686600}{MHz}$}\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{700}{kHz}\\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{949}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{CRYRING}}=\SI{1.456}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{CRYRING}}=\SI{1.456}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -758,7 +758,7 @@ The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/2
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.316}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{450}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{18.226}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{18.226}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm35.5^\circ$\\ \hline
 
     \end{tabular}
@@ -794,7 +794,7 @@ The GCD of $h^{\mathit{SIS100}}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}} \cdot m=
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=2f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{108}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{9.779}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{9.779}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm2.1^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -835,7 +835,7 @@ The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{CR}=\frac{f_{\mathit{rev}}^{\mathit{CR}}}{13}=\SI{101.290}{\kHz}$ and $f_{\mathit{B2B}}^{HESR}=\frac{f_{\mathit{rev}}^{\mathit{HESR}}}{5}=\SI{101.426}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{136}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{9.860}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{9.860}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm1.2^\circ$\\ \hline
 		\rowcolor[gray]{0.8}
  		&\SI{740}{MeV/\atomicmassunit} RIB \\ \hline
@@ -844,7 +844,7 @@ The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/13=\SI{86.493}{\kHz}$ and $f_{\mathit{B2B}}^{HESR}=f_{\mathit{rev}}^{\mathit{HESR}}/5=\SI{86.608}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{113}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{11.545}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{11.545}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm1.2^\circ$\\ \hline
     \end{tabular}
 \end{center}
@@ -875,7 +875,7 @@ The GCD of $h^{\mathit{SIS18}}\cdot n=1\cdot5=5$ and $h^s \cdot m=1\cdot 9=9$ is
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{200}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{4249}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{ESR}=\SI{4.553}{us}$ \\ \hline
+	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{ESR}=\SI{4.553}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm31.2^\circ$\\ \hline
     \end{tabular}
 \end{center}
