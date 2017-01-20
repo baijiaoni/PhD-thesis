@@ -157,7 +157,7 @@ For the frequency beating method, two slightly different frequencies are chosen 
 
 The frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{\mathit{trg}}$ and $f_{\mathit{rev}}^{\mathit{trg}}$, see Chap. ~\ref{concept}.
 %
-When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two Reference RF Signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the Synchronization Reference Signal $f_\mathit{syn}^\mathit{REF}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\Delta \phi_\mathit{rf}$ when the large synchrotron is the target. 
+When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two phase measurement signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the synchronization reference signal $f_\mathit{syn}^\mathit{REF}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\Delta \phi_\mathit{rf}$ when the large synchrotron is the target. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -311,7 +311,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
 \end{center}
 \end{table}
 
-The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}$, provided by the SM. The SIS100 revolution frequency works for the bucket indication. When the 1st and 2nd buckets are to be filled, $t_{pattern}=0$. When the 3rd and 4th buckets are to be filled, $t_{pattern}=T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 5th and 6th buckets are to be filled, $t_{pattern}= 2 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. When the 7th and 8th buckets are to be filled, $t_{pattern}= 3 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. Detailed parameters of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, please see Appendix \ref{sec:18to100}.
+The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}$, provided by the SM. The SIS100 revolution frequency works for the bucket indication. When the $1^{st}$ and $2^{nd}$ buckets are to be filled, $t_{pattern}=0$. When the $3^{rd}$ and $4^{th}$ buckets are to be filled, $t_{pattern}=T_{\mathit{rev}}^{\mathit{SIS18}}$. When the $5^{th}$ and $6^{th}$ buckets are to be filled, $t_{pattern}= 2 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. When the $7^{th}$ and $8^{th}$ buckets are to be filled, $t_{pattern}= 3 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. Detailed parameters of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, please see Appendix \ref{sec:18to100}.
 
 %%%%%%%%%%%%%%%%%% Harmonic != circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Harmonic ratio does not equal to the circumference ratio} 
@@ -388,10 +388,10 @@ The SIS100 revolution frequency works for the bucket indication. In order to inj
 \begin{itemize}
 	\item Injection into odd number buckets
 		
-		The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}$. When the 1st bucket is to be filled, $t_{pattern}$=0. When the 3rd bucket is to be filled, $t_{pattern}=1 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
+		The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}$. When the $1^{st}$ bucket is to be filled, $t_{pattern}$=0. When the $3^{rd}$ bucket is to be filled, $t_{pattern}=1 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
 	\item Injection into even number buckets
 	
-		The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}-T_{\mathit{rf}}^{\mathit{SIS100}}$. When the 2nd bucket is to be filled, $t_{pattern}=0$. When the 4th bucket is to be filled, $t_{pattern}=1\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
+		The target time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}-T_{\mathit{rf}}^{\mathit{SIS100}}$. When the $2^{nd}$ bucket is to be filled, $t_{pattern}=0$. When the $4^{th}$ bucket is to be filled, $t_{pattern}=1\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
 
 \end{itemize}
 
@@ -893,7 +893,7 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
     \hline
-	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}& \tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{Reference RF Signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
+	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}& \tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
  \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ \tabincell{c}{Y=GCD$(h^l,h^s \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$\\ and\\ $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$\\ \\ $\Delta f=\Delta f_\mathit{syn}$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$} \\ \hline
 											
  	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }&\tabincell{c}{$\frac{h^l}{h^s\cdot (\kappa+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD$(h^l,h^s \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ \\ \\$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$}   \\ \hline
@@ -920,7 +920,7 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
     \hline
-	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{Reference RF Signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
+	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
 
  \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} 
 &  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} 
@@ -952,7 +952,7 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
     \hline
-	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{Reference RF Signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
+	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
 
  \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} 
 & \tabincell{c}{$Y/\kappa<1, f_{\mathit{syn}}^{s}$} 
