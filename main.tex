@@ -26,6 +26,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{graphicx,subcaption}
+\usepackage{tikz}
 
 \usepackage[numbers,sort&compress]{natbib}
 
@@ -103,8 +104,18 @@ sort=symbolpi, type=symbolslist
 }
 
 \newglossaryentry{symb:harmonic_param}{
-name=$h^X$,
-description={Harmonic number of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
+name=$h^X_\mathit{rf}$,
+description={Cavity harmonic number of a specified synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
+sort=symbollambda, type=symbolslist
+} 
+\newglossaryentry{symb:syn_harmonic_param}{
+name=$h_\mathit{syn}^\mathit{X}$,
+description={Harmonic number of the synchronization frequency of a specific synchrotron}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
+sort=symbollambda, type=symbolslist
+} 
+\newglossaryentry{symb:rev_harmonic_param}{
+name=$h_\mathit{rev}^\mathit{X}$,
+description={Harmonic number of the revolution frequency of a specific synchrotron, which is defined as the first harmonic}, %$X=l$, harmonic number of large synchrotron; $X=s$, harmonic number of small synchrotron; $X=src$, harmonic number of source synchrotron; $X=trg$, harmonic number of target synchrotron },
 sort=symbollambda, type=symbolslist
 } 
 
@@ -414,6 +425,21 @@ name=$\Delta \phi_\mathit{shift}$,
 description={Required phase shift for the Group DDS with the synchronization frequency},
 sort=symbolpi, type=symbolslist
 }
+\newglossaryentry{symb:raw_shift_shift}{
+name=$\Delta \phi_\mathit{shift\_raw}$,
+description={Raw value of the required phase shift for the synchronization frequency},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:raw1_shift_shift}{
+name=$\Delta \phi_\mathit{shift\_raw}'$,
+description={Raw value of the required phase shift for the revolution frequency},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:imp_shift_shift}{
+name=$\Delta \phi_\mathit{shift\_imp}$,
+description={Implemented phase shift for the Group DDS with the revolution frequency},
+sort=symbolpi, type=symbolslist
+}
 \newglossaryentry{symb:init_pse}{
 name=$\phi^X_\mathit{syn}$,
 description={Initial phase of the synchronization frequency},
@@ -476,7 +502,7 @@ sort=symbolpi, type=symbolslist
 %sort=symbollambda, type=symbolslist
 %}
 \newglossaryentry{symb:un_h1phase100}{
-name=$\delta \psi^{X}$,
+name=$\delta \psi^{X}_0$,
 description={Uncertainty of the extrapolated phase of the synchrotron X in the phase domain},
 sort=symbollambda, type=symbolslist
 }
@@ -710,7 +736,7 @@ description={Beating frequency between two synchronization frequencies},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:syn_ref}{
-name=$f_{\mathit{syn}}^{\mathit{REF}}$,
+name=$f_\mathit{ref}$,
 description={Frequency of the synchronization reference signal},
 sort=symbolphi, type=symbolslist
 }
@@ -1247,7 +1273,7 @@ description={One complete operation cycle of a machine, i.e. injection, ramp up,
 }
 \newglossaryentry{glos:batch}{
 name={batch},
-description={A train of bunches circulating along a synchrotron to be transferred to buckets}% E.g. SIS100 batch: Train of 4 $\times$ 2 $U^{28+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle. Or train of 4 $\times$ 1 $H^{+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle}
+description={A train of bunches circulating along a synchrotron to be transferred to buckets}% E.g. SIS100 batch: Train of 4 $\cdot$ 2 $U^{28+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle. Or train of 4 $\cdot$ 1 $H^{+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle}
 }
 \newglossaryentry{glos:bunch_gap}{
 name={bunch gap},
@@ -1464,7 +1490,7 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/4Concept}
 \chapter{Realization and systematic Investigation of FAIR B2B Transfer System}\label{realization}
 \input{chapters/5Realization}
-\chapter{Application of FAIR B2B Transfer System for FAIR Accelerators}\label{application}
+\chapter{Application of FAIR B2B Transfer System to FAIR Accelerators}\label{application}
 \input{chapters/Application}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}

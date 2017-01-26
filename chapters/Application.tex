@@ -30,7 +30,7 @@ Besides, FAIR has many use cases of B2B transfers that the extraction and inject
 		\end{itemize}
 \end{itemize}
   
-%In this document, the circumference of the injection/extraction orbit of the synchrotron is denoted by $C^{X}$, the revolution frequency and rf cavity frequency by $f_{\mathit{\mathit{rev}}}^{X} $ and $f_{\mathit{\mathit{rf}}}^{X}$, the beating frequency by \gls{symb:beating_freq} and the harmonic number by $h^X$. The superscript X could be either ``l`` or ``s`` denoting the large or small synchrotron. $\kappa$ is used to represent integers and $\lambda$ the decimal numbers.
+%In this document, the circumference of the injection/extraction orbit of the synchrotron is denoted by $C^{X}$, the revolution frequency and rf cavity frequency by $f_{\mathit{\mathit{rev}}}^{X} $ and $f_{\mathit{\mathit{rf}}}^{X}$, the beating frequency by \gls{symb:beating_freq} and the harmonic number by $h^X_\mathit{rf}$. The superscript X could be either ``l`` or ``s`` denoting the large or small synchrotron. $\kappa$ is used to represent integers and $\lambda$ the decimal numbers.
 
 Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and $\kappa$ are integers. 
 \begin{table}[!htb]
@@ -68,21 +68,21 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
 %\begin{center}
 %    \begin{tabular}{ | c | c | c | c | c | c | c | c |}
 %    \hline
-%	\tabincell{c}{Type} &  $C^l/C^s$ &$\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}$\tablefootnote{if $f_{\mathit{rev}}^{l}>f_{\mathit{rev}}^{s}$,$\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}=\frac{ f_{\mathit{rev}}^{l}}{ f_{\mathit{rev}}^{s}}$, or $\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}=\frac{ f_{\mathit{rev}}^{s}}{ f_{\mathit{rev}}^{l}}$} &$h^l$ & $h^s$ &  $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$\tablefootnote{$\frac{f_rf^{l}}{f_{\mathit{rf}}{s}}=\frac{h^l f_rev^{l}}{h^s  f_{\mathit{rev}}^{s}}=\frac{h^l C^{s}}{h^s C_l}$} & use case of FAIR accelerators\\ \hline
-%     	\multirow{3}*{A} &  5&& 10 & 2 & $\frac{h^l}{h^s\cdot \kappa}=\frac{10}{2\cdot 5}=1$ & $U^{28+}$ \tabincell{c}{B2B transfer \\from the SIS18 to the SIS100} \\ \cline{2-7}
-%& 5&& 10 & 1 & $\frac{h^l}{h^s\cdot \kappa}=\frac{10}{1\cdot 5}=2$ &\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS18 to the SIS100} \\ \cline{2-7}
-%											&5 && 2& 1  & $\frac{h^l}{h^s\cdot \kappa}=\frac{1}{1\cdot 2}=\frac{1}{2}$ &\tabincell{c}{B2B transfer\\ from the ESR to the CRYRING} \\ \hline
-%     	\multirow{2}*{B}&2-0.003& &4&1 & $\frac{h^l}{h^s\cdot (\kappa+ \lambda)}=\frac{4}{1\cdot (2-0.003)}$ & \tabincell{c}{h=4 B2B transfer \\from the SIS18 to the ESR} \\ \cline{2-7}
-% 								  	  &2-0.003&& 1&1 &$\frac{h^l}{h^s\cdot (\kappa+ \lambda)}=\frac{1}{1\cdot (2-0.003)}$ & \tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR}\\ \cline{1-7}
+%	\tabincell{c}{Type} &  $C^l/C^s$ &$\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}$\tablefootnote{if $f_{\mathit{rev}}^{l}>f_{\mathit{rev}}^{s}$,$\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}=\frac{ f_{\mathit{rev}}^{l}}{ f_{\mathit{rev}}^{s}}$, or $\frac{ f_{\mathit{rev}}^{X}}{ f_{\mathit{rev}}^{X}}=\frac{ f_{\mathit{rev}}^{s}}{ f_{\mathit{rev}}^{l}}$} &$h^l_\mathit{rf}$ & $h^s_\mathit{rf}$ &  $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$\tablefootnote{$\frac{f_rf^{l}}{f_{\mathit{rf}}{s}}=\frac{h^l_\mathit{rf} f_rev^{l}}{h^s_\mathit{rf}  f_{\mathit{rev}}^{s}}=\frac{h^l_\mathit{rf} C^{s}}{h^s_\mathit{rf} C_l}$} & use case of FAIR accelerators\\ \hline
+%     	\multirow{3}*{A} &  5&& 10 & 2 & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}=\frac{10}{2\cdot 5}=1$ & $U^{28+}$ \tabincell{c}{B2B transfer \\from the SIS18 to the SIS100} \\ \cline{2-7}
+%& 5&& 10 & 1 & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}=\frac{10}{1\cdot 5}=2$ &\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS18 to the SIS100} \\ \cline{2-7}
+%											&5 && 2& 1  & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}=\frac{1}{1\cdot 2}=\frac{1}{2}$ &\tabincell{c}{B2B transfer\\ from the ESR to the CRYRING} \\ \hline
+%     	\multirow{2}*{B}&2-0.003& &4&1 & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot (\kappa+ \lambda)}=\frac{4}{1\cdot (2-0.003)}$ & \tabincell{c}{h=4 B2B transfer \\from the SIS18 to the ESR} \\ \cline{2-7}
+% 								  	  &2-0.003&& 1&1 &$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot (\kappa+ \lambda)}=\frac{1}{1\cdot (2-0.003)}$ & \tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR}\\ \cline{1-7}
 % 									
 %
 %  	\multirow{4}*{C}
-%&&4.9-0.0004& 5&1 &$\frac{h^l}{h^s \cdot (m/n+ \lambda)}=\frac{5}{1 \cdot (49/10-0.0004)}$ & \tabincell{c}{$H^{+}$ B2B transfer\\ from the SIS100 to the CR} \\ \cline{2-7}
-%& &4.9-0.0004& 2&1 & $\frac{h^l}{h^s \cdot (m/n+ \lambda)}=\frac{2}{1 \cdot (49/10-0.0004)}$ & \tabincell{c}{RIB B2B transfer \\from the SIS100 to the CR} \\ \cline{2-7}
+%&&4.9-0.0004& 5&1 &$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}=\frac{5}{1 \cdot (49/10-0.0004)}$ & \tabincell{c}{$H^{+}$ B2B transfer\\ from the SIS100 to the CR} \\ \cline{2-7}
+%& &4.9-0.0004& 2&1 & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}=\frac{2}{1 \cdot (49/10-0.0004)}$ & \tabincell{c}{RIB B2B transfer \\from the SIS100 to the CR} \\ \cline{2-7}
 %
-%& 2.6-0.003& &1&1 &$\frac{h^l}{h^s \cdot (m/n+ \lambda)}=\frac{1}{1 \cdot (13/5-0.003)}$ &\tabincell{c}{B2B transfer\\ from the CR to the ESR} \\ \cline{2-7}
+%& 2.6-0.003& &1&1 &$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}=\frac{1}{1 \cdot (13/5-0.003)}$ &\tabincell{c}{B2B transfer\\ from the CR to the ESR} \\ \cline{2-7}
 %
-% &&1.8+0.048& 1&1 & $\frac{h^l}{h^s \cdot (m/n+ \lambda)}=\frac{9}{5}+0.048$ & \tabincell{c}{B2B transfer \\from the SIS18 to the ESR via FRS} \\ \hline
+% &&1.8+0.048& 1&1 & $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}=\frac{9}{5}+0.048$ & \tabincell{c}{B2B transfer \\from the SIS18 to the ESR via FRS} \\ \hline
 % 
 %
 %    \end{tabular}
@@ -94,16 +94,16 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
 \label{sec:integ}
 When the circumference ratio of the large synchrotron to that of the small synchrotron is an integer, there exists the following relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation}
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa}\label{cir_int_1}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa}\label{cir_int_1}
 \end{equation}
 Two synchronization frequencies are
 \begin{equation}
-f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Y f_{\mathit{rev}}^{l} \label{synch_freq1_r}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}=Y f_{\mathit{rev}}^{l} \label{synch_freq1_r}
 \end{equation}
 \begin{equation}
-f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s} \label{synch_freq2_r}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s} \label{synch_freq2_r}
 \end{equation}
-$Y$ is the \gls{GCD} of $h^l$ and $h^s \cdot \kappa$. More details, please see Sec. ~\ref{sec:cir_integer}.
+$Y$ is the \gls{GCD} of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$. For more details, please see Sec. ~\ref{sec:cir_integer}.
 
 %If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is an integer, we have the following relation. 
 %\begin{equation}
@@ -115,49 +115,49 @@ $Y$ is the \gls{GCD} of $h^l$ and $h^s \cdot \kappa$. More details, please see S
 %\end{equation}
 %Based on eq.~\ref{rev_freq_ratio_int} and harmonic number, the $f_{\mathit{rf}}^{X}$ is calculated by eq.~\ref{rf_freq_s_int} and eq.~\ref{rf_freq_l_int}
 %\begin{equation} 
-%f_{\mathit{rf}}^{s}= h^s \cdot f_{\mathit{rev}}^{s}=h^s \cdot \kappa \cdot f_{\mathit{rev}}^{l} \label{rf_freq_s_int}
+%f_{\mathit{rf}}^{s}=h^s_\mathit{rf} \cdot f_{\mathit{rev}}^{s}=h^s_\mathit{rf} \cdot \kappa \cdot f_{\mathit{rev}}^{l} \label{rf_freq_s_int}
 %\end{equation}
 %\begin{equation} 
-%f_{\mathit{rf}}^{l}= h^l \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_int}
+%f_{\mathit{rf}}^{l}= h^l_\mathit{rf} \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_int}
 %\end{equation}
 %Diving eq.~\ref{rf_freq_l_int} by eq.~\ref{rf_freq_s_int}, we get
 %\begin{equation} 
-%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa} \label{rf_freq_ratio1}
+%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa} \label{rf_freq_ratio1}
 %\end{equation}
-%Y is defined as the \gls{GCD} (Greatest Common Divisor) of $h^l$ and $h^s \cdot \kappa$.
+%Y is defined as the \gls{GCD} (Greatest Common Divisor) of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$.
 %
 %For the phase shift method, two rf frequencies of two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required. From eq.~\ref{rf_freq_ratio1}, we get
 %\begin{equation}
-%\frac{f_{\mathit{rf}}^{l}}{h^l/Y}= \frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y} 
+%\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}= \frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y} 
 %\end{equation}
-%Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$,
+%Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$,
 %$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchronization frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. 
 For the frequency beating method, two slightly different frequencies are chosen based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning $\Delta f_\mathit{syn}$ either (or both) of rf systems. Generally the rf system of the source synchrotron is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
 
 
-%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s \cdot \kappa)/Y]$. According to the relation between $h^l$ and $h^s \cdot \kappa$, we have the following two cases.
+%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l_\mathit{rf}/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
 %\begin{itemize}
-%	\item $h^l > h^s \cdot \kappa \rightarrow \Delta f \cdot (h^l/Y) > \Delta f \cdot [(h^s \cdot \kappa)/Y]$ 
+%	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) > \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$ 
 %
 %The frequency detune for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detune is preferred for the small synchrotron.
-%	\item $h^l < h^s \cdot \kappa \rightarrow \Delta f \cdot (h^l/Y) < \Delta f \cdot [(h^s \cdot \kappa)/Y]$
+%	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) < \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$
 %
 %The frequency detune for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detune is preferred for the large synchrotron.
 %\end{itemize}
 
-%For the phase shift method, the bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time ($\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$), when the phase of two rf systems are aligned. It indicates only the passing time of the first bucket, when it is phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_phase}.
+%For the phase shift method, the bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when the phase of two rf systems are aligned. It indicates only the passing time of the first bucket, when it is phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_phase}.
  
 %rev_or_subharmonic.docx
 %\begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=130mm]{bucket_label_phase.jpg}
-%   \caption{The frequency of the bucket indication signal for the phase shift method.}{The red dots represent buckets and the blue ones bunches, the black bars chosen by blue rectangle are used by the bucket indication signal. The phase of two rf systems in this example is aligned at $0^\circ$.}
+%   \caption{The frequency of the bucket indication signal for the phase shift method.}{The red dots represent buckets and the blue ones bunches, the black bars chosen by blue rectangle are used by the bucket indication signal. The phase of two rf systems in this example is aligned at $0$.}
 %   \label{bucket_label_phase}
 %\end{figure}
 
 The frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{\mathit{trg}}$ and $f_{\mathit{rev}}^{\mathit{trg}}$, see Chap. ~\ref{concept}.
 %
-When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two phase measurement signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the synchronization reference signal $f_\mathit{syn}^\mathit{REF}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\Delta \phi_\mathit{rf}$ when the large synchrotron is the target. 
+When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two phase measurement signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the synchronization reference signal $f_\mathit{ref}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\Delta \phi_\mathit{rf}$ when the large synchrotron is the target. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -168,9 +168,9 @@ When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_
     \hline
 	&  Large synchrotron is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_\mathit{syn}^\mathit{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^{l}/Y}$ \\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})=\frac{1}{\kappa}(f_{\mathit{rev}}^{s}+\frac{\kappa}{Y}\Delta f_\mathit{syn})$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_\mathit{syn}^\mathit{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^l_\mathit{rf}/Y}$ \\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})=\frac{1}{\kappa}(f_{\mathit{rev}}^{s}+\frac{\kappa}{Y}\Delta f_\mathit{syn})$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
   
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{l}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{l}}{f_{\mathit{syn}}^\mathit{l}}$ \\ \hline
@@ -205,10 +205,10 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
 	Case& (1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}\ge1$)  &(2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}<1$)  \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ & $f_{\mathit{syn}}^{s}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^{l}/Y}$} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^l_\mathit{rf}/Y}$} \\ \hline
 
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot (f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn})$\\$=\kappa(f_{\mathit{rev}}^{l}+\frac{1}{Y}\Delta f_\mathit{syn})$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn}$\\$=Y(f_{\mathit{rev}}^{l}+\frac{1}{Y}\Delta f_\mathit{syn})$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s}$}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} &$\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$& $\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot (f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn})$\\$=\kappa(f_{\mathit{rev}}^{l}+\frac{1}{Y}\Delta f_\mathit{syn})$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn}$\\$=Y(f_{\mathit{rev}}^{l}+\frac{1}{Y}\Delta f_\mathit{syn})$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s}$}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} &$\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$& $\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{s}$ & $T_{\mathit{syn}}^{s}$\\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}& \multicolumn{2}{c|}{$\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{s}}{f_{\mathit{syn}}^\mathit{s}}$ }\\ \hline
     \end{tabular}
@@ -221,15 +221,15 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 
 
 
-%For the frequency beating method, the bucket indication signal indicates the passing time of the first bucket of the target synchrontron, when it is correct phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_frequency_small}. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a). When the small synchrotron is the target, the frequency of the bucket indication signal is depend on the relation between $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}\frac{Y}{\kappa}$ and $f_{\mathit{rev}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s}$. The rule is same as that for the phase shift method. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a) and (b) are for cases $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.
+%For the frequency beating method, the bucket indication signal indicates the passing time of the first bucket of the target synchrontron, when it is correct phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_frequency_small}. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a). When the small synchrotron is the target, the frequency of the bucket indication signal is depend on the relation between $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}\frac{Y}{\kappa}$ and $f_{\mathit{rev}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}}$. The rule is same as that for the phase shift method. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a) and (b) are for cases $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.
 %%rev_or_subharmonic1.docx
 
 
-%The bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time of the target synchrotron ($\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$), when two rf systems have a periodical phase difference. It indicates only the passing time of the first bucket, when it is correct aligned with the rf frequency ($\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$) of the source synchrotron.
+%The bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time of the target synchrotron ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when two rf systems have a periodical phase difference. It indicates only the passing time of the first bucket, when it is correct aligned with the rf frequency ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$) of the source synchrotron.
  
-%Here we assume $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}<f_{\mathit{rev}}^{s}$, if $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}\ge f_{\mathit{rev}}^{s}$, the bucket indication is with $f_{\mathit{rev}}^{s}$, the $h^s\cdot \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{s}$ is replaced by $f_{\mathit{rev}}^{s}$. We assume $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}<f_{\mathit{rev}}^{l}$, if $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}\ge f_{\mathit{rev}}^{l}$, the bucket indication is with $f_{\mathit{rev}}^{l}$ and the $h^l/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{l}$ is replaced by $f_{\mathit{rev}}^{l}$.
+%Here we assume $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}<f_{\mathit{rev}}^{s}$, if $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}\ge f_{\mathit{rev}}^{s}$, the bucket indication is with $f_{\mathit{rev}}^{s}$, the $h^s_\mathit{rf}\cdot \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{s}$ is replaced by $f_{\mathit{rev}}^{s}$. We assume $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$, if $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the bucket indication is with $f_{\mathit{rev}}^{l}$ and the $h^l_\mathit{rf}/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{l}$ is replaced by $f_{\mathit{rev}}^{l}$.
 
-%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}<f_{\mathit{rev}}^{l}$ (the large synchrotron is the target), namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small synchrotron. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}\ge f_{\mathit{rev}}^{l}$.
+%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$ (the large synchrotron is the target), namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small synchrotron. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$.
 
 %\begin{table}[!htb]
 %\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -240,9 +240,9 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %    \hline
 %	&  \tabincell{c}{Large synchrotron is\\target synchrotron}& \tabincell{c}{Small synchrotron is\\target synchrotron} \\ \hline
 %   $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ & $f_{\mathit{rev}}^{s}$ \\ \hline
-%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \multicolumn{2}{c|}{$\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}+\Delta f$ or $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}+\Delta f$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$}\\ \hline
+%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \multicolumn{2}{c|}{$\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}+\Delta f$ or $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}+\Delta f$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$}\\ \hline
 %	\tabincell{c}{$T_w$}& $2\cdot T_{\mathit{rev}}^{l}$ & $2\cdot T_{\mathit{rev}}^{s}$\\ \hline
-%	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{l}}{1/\Delta f}\cdot360^\circ$ & $\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{s}}{1/\Delta f}\cdot360^\circ$\\ \hline
+%	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{l}}{1/\Delta f}\cdot2\pi$ & $\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{s}}{1/\Delta f}\cdot2\pi$\\ \hline
 %    \end{tabular}
 %\end{center}
 %\end{table}
@@ -252,9 +252,9 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %\label{sec:cir_no_int}
 %When the ratio of the harmonic number of the large synchrotron to that of the small synchrotron equals to the circumference ratio, we have the following relation.
 %\begin{equation}
-%\frac {h^{l}}{h^{s}}=\frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_int}
+%\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}=\frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_int}
 %\end{equation}
-%So the GCD of $h^l$ and $h^s \cdot \kappa$ is $h^l=h^s \cdot \kappa$, namely Y=$h^l=h^s \cdot \kappa$. 
+%So the GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$ is $h^l_\mathit{rf}=h^s_\mathit{rf} \cdot \kappa$, namely Y=$h^l_\mathit{rf}=h^s_\mathit{rf} \cdot \kappa$. 
 %
 %Substituting eq.~\ref{harmonic_1_int} into eq.~\ref{rf_freq_ratio1}, the following relation is deduced. 
 %\begin{equation} 
@@ -267,7 +267,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %
 %In this scenario, the rf cavity frequencies of two synchrotrons are same. For the rf synchronization, both phase shift and frequency beating methods are applicable for the small or large synchrotrons. There is no difference of the implementation of two methods either on the large or small synchrotron, because they implement their species dependent rf frequency modulation profiles for a same required phase shift and same frequency dutune for the frequency beating method. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. With the phase shift method, the phase advance between two synchrotrons is a constant, so the synchronization window is ideally infinitely long, within which two synchrotrons remain perfect synchronized. Bunches can be transferred at any time within the window.
 %
-%There exists $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}\ge f_{\mathit{rev}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l}$, so the formulas in Tab.~\ref{Syn_rev_ratio_int} is applicable.
+%There exists $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}$, so the formulas in Tab.~\ref{Syn_rev_ratio_int} is applicable.
 %%\begin{table}[!htb]
 %%\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 %%\caption{Parameters related to the B2B transfer when the circumference ratio is an integer and the harmonic ratio equals to the circumference ratio}
@@ -279,7 +279,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %%   $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ & $f_{\mathit{rev}}^{s}$  \\ \hline
 %%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{rf}}^{l}$ and $f_{\mathit{rf}}^{s}+\Delta f$ or $f_{\mathit{rf}}^{l}+\Delta f and f_{\mathit{rf}}^{s}$}\\ \hline
 %%	\tabincell{c}{$T_w$}& $2\cdot T_{\mathit{rev}}^{l}$ & $2\cdot T_{\mathit{rev}}^{s}$\\ \hline
-%%	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm\frac{1}{2}\cdot\frac{2 \cdot T_{\mathit{rev}}^{l}}{1/\Delta f}\cdot360^\circ$ & $\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{s}}{1/\Delta f}\cdot360^\circ$\\ \hline
+%%	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm\frac{1}{2}\cdot\frac{2 \cdot T_{\mathit{rev}}^{l}}{1/\Delta f}\cdot2\pi$ & $\pm\frac{1}{2}\cdot\frac{2\cdot T_{\mathit{rev}}^{s}}{1/\Delta f}\cdot2\pi$\\ \hline
 %%    \end{tabular}
 %%\end{center}
 %%\end{table}
@@ -292,7 +292,7 @@ The GCD of $h^{\mathit{SIS100}}=10$ and $h^{\mathit{SIS18}} \cdot \kappa=2\cdot 
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}}{h^{\mathit{SIS18}} \cdot \kappa}= \frac{10}{2 \cdot 5}=\frac{10}{10}
 \end{equation}
 
-Because the SIS100 is the large synchrotron and the target, substituting $h^X$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+Because the SIS100 is the large synchrotron and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method}
@@ -302,9 +302,9 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
     \hline
 	&  \tabincell{c}{Large synchrotron (SIS100) is target synchrotron} \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{157.254}{kHz}$\tablefootnote{A Group DDS produces a given frequency with the \SI{}{mHz} order of magnitude precision}  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &  \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}=$\SI{1.572536}{MHz} \\and\\ $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{\mathit{SIS100}}$=\SI{1.572536}{MHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{\mathit{SIS18}}+\frac{1}{2}\Delta f_\mathit{syn})=$\SI{157.254}{kHz}+\SI{20}{Hz} \\and\\ $f_\mathit{B2B}^\mathit{SIS100}$=\SI{157.254}{kHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{200}{kHz}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &  \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=2f_{\mathit{rev}}^{\mathit{SIS18}}=$\SI{1.572536}{MHz} \\and\\ $f_{\mathit{syn}}^{SIS100}=10 f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{1.572536}{MHz}}\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{\mathit{SIS18}}+\frac{1}{2}\Delta f_\mathit{syn})=$\SI{157.254}{kHz}+\SI{20}{Hz} \\and\\ $f_\mathit{B2B}^\mathit{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{157.254}{kHz}}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{200}{kHz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{6.359}{\micro\second}$\\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.4^\circ$\\ \hline
     \end{tabular}
@@ -318,17 +318,17 @@ The target time difference between the SIS18 and SIS100 rf systems equals to $t_
 %\label
 %When the ratio of the harmonic number of the large synchrotron to that of the small synchrotron does not equal to the circumference ratio, we have the following relation.
 %\begin{equation}
-%\frac {h^{l}}{h^{s}}\neq \frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_noint}
+%\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}\neq \frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_noint}
 %\end{equation}
 %%We assume 
 %%\begin{equation}
-%%\frac {h^{l}}{h^{s} \cdot \kappa}= \frac {m}{n}  \label{number_noint}
+%%\frac {h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa}= \frac {m}{n}  \label{number_noint}
 %%\end{equation}
 %%where m and n are used to represent integers.
 %
 %%Eq.~\ref{rf_freq_l_int} divides eq.~\ref{rf_freq_s_int}, we get
 %%\begin{equation}
-%%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l}{h^s \cdot \kappa} \label{freq_divide}
+%%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa} \label{freq_divide}
 %%\end{equation}
 %
 %%Substituting eq.~\ref{number_noint} into eq.~\ref{freq_divide}, the following relation is deduced. 
@@ -340,14 +340,14 @@ The target time difference between the SIS18 and SIS100 rf systems equals to $t_
 %
 %For the frequency beating method, from eq.~\ref{rf_freq_ratio1}, we get
 %\begin{equation}
-%\frac{f_{\mathit{rf}}^{l}}{h^l}= \frac{f_{\mathit{rf}}^{s}}{h^s \cdot \kappa} 
+%\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}= \frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} \cdot \kappa} 
 %\end{equation}
-%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot h^l$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{h^s \cdot \kappa}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot (h^s \cdot \kappa)$. According to the relation between $h^l$ and $h^s \cdot \kappa$, we have the following two cases.
+%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot h^l_\mathit{rf}$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} \cdot \kappa}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
 %\begin{itemize}
-%	\item $h^l > h^s \cdot \kappa \rightarrow \Delta f \cdot h^l > \Delta f \cdot (h^s \cdot \kappa)$ 
+%	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} > \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$ 
 %
 %The frequency detune for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detune is preferred for the small synchrotron.
-%	\item $h^l < h^s \cdot \kappa \rightarrow \Delta f \cdot h^l < \Delta f \cdot (h^s \cdot \kappa)$
+%	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} < \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$
 %
 %The frequency detune for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detune is preferred for the large synchrotron.
 %\end{itemize}
@@ -359,7 +359,7 @@ Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continu
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}}{h^{\mathit{SIS18}} \cdot \kappa}= \frac{10}{1 \cdot 5}=\frac{2}{1}
 \end{equation}
 
-Because the SIS100 is the large synchrotron and the target, substituting $h^X$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+Because the SIS100 is the large synchrotron and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
 
 %\begin{table}[[!htb]
 \begin{table}[!htb]
@@ -371,10 +371,10 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X$, 
     \hline
 	&  Large synchrotron (SIS100) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{271.872}{kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &   \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}$=\SI{1.359358}{MHz} \\and\\ $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{\mathit{SIS100}}/2$=\SI{1.359358}{MHz}}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &   \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}$=\SI{1.359358}{MHz} \\and\\ $f_{\mathit{syn}}^{SIS100}=5f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{1.359358}{MHz}}\\ \hline
 
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{SIS18}+\Delta f_\mathit{syn})=$\SI{271.872}{kHz}+\SI{40}{Hz} \\and\\ $f_{\mathit{B2B}}^{SIS100}$=\SI{271.872}{kHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{300}{kHz}\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{SIS18}+\Delta f_\mathit{syn})=$\SI{271.872}{kHz}+\SI{40}{Hz} \\and\\ $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS1800}}$=\SI{271.872}{kHz}}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{300}{kHz}\\ \hline
 
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{SIS100}}=\SI{3.678}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.4^\circ$\\ \hline
@@ -410,15 +410,15 @@ Detailed parameters of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, pl
 %\end{equation}
 %Based on eq.~\ref{rev_freq_ratio_noint} and harmonic number, the $f_{\mathit{rf}}^{X}$ are calculated by eq.~\ref{rf_freq_s_noint} and eq.~\ref{rf_freq_l_noint}
 %\begin{equation} 
-%f_{\mathit{rf}}^{s}= h^s \cdot f_{\mathit{rev}}^{s}=h^s \cdot (\kappa+ \lambda) \cdot f_{\mathit{rev}}^{l} \label{rf_freq_s_noint}
+%f_{\mathit{rf}}^{s}=h^s_\mathit{rf} \cdot f_{\mathit{rev}}^{s}=h^s_\mathit{rf} \cdot (\kappa+ \lambda) \cdot f_{\mathit{rev}}^{l} \label{rf_freq_s_noint}
 %\end{equation}
 %\begin{equation} 
-%f_{\mathit{rf}}^{l}= h^l \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_noint}
+%f_{\mathit{rf}}^{l}= h^l_\mathit{rf} \cdot f_{\mathit{rev}}^{l} \label{rf_freq_l_noint}
 %\end{equation}
 %
 %We could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$ by dividing eq.~\ref{rf_freq_l_noint} by eq.~\ref{rf_freq_s_noint}.
 %\begin{equation} 
-%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \cdot (\kappa+ \lambda)}=\frac{h^l}{h^s \cdot \kappa+ h^s \cdot \lambda}\label{close_to_interger_3}
+%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa+h^s_\mathit{rf} \cdot \lambda}\label{close_to_interger_3}
 %\end{equation}
 %
 %In this scenario, two rf cavity frequencies begin beating automatically. So the frequency beating method is preferred. The synchronization window depends on the beating frequency. The beating frequency corresponding to this mismatch must not be too large in order to guarantee a long enough synchronization window, but also not too small to satisfy the constraint of the maximum synchronization time.
@@ -428,23 +428,23 @@ Detailed parameters of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, pl
 When the circumference ratio of the large synchrotron to that of the small synchrotron is very close to an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation} 
 \label{ratio_close_int}
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l}{h^s \cdot ( \kappa+ \lambda)}=\frac{h^l}{h^s \cdot  \kappa+ h^s \cdot \lambda}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot ( \kappa+ \lambda)}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot  \kappa+h^s_\mathit{rf} \cdot \lambda}
 \end{equation}
 
 %\begin{equation}
-%\frac {h^{l}}{h^{s}}= \kappa  \label{harmonic_1_noint}
+%\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}= \kappa  \label{harmonic_1_noint}
 %\end{equation}
 %Substituting eq.~\ref{harmonic_1_noint} into  eq.~\ref{rf_freq_s_noint}, the following relation is deduced. 
 %\begin{equation} 
-%%f_{\mathit{rf}}^{s}=h^s \cdot \kappa \cdot f_{\mathit{rev}}^{l}+ h^s \cdot \lambda \cdot f_{\mathit{rev}}^{l}=h^l\cdot f_{\mathit{rev}}^{l} + h^s \cdot \lambda \cdot f_{\mathit{rev}}^{l} \label{equ_rf_freq_noint}
+%%f_{\mathit{rf}}^{s}=h^s_\mathit{rf} \cdot \kappa \cdot f_{\mathit{rev}}^{l}+h^s_\mathit{rf} \cdot \lambda \cdot f_{\mathit{rev}}^{l}=h^l_\mathit{rf}\cdot f_{\mathit{rev}}^{l} +h^s_\mathit{rf} \cdot \lambda \cdot f_{\mathit{rev}}^{l} \label{equ_rf_freq_noint}
 %\end{equation}
 %Subtituting eq.~\ref{rf_freq_l_noint} into eq.~\ref{equ_rf_freq_noint}, we get
 %\begin{equation} 
-%f_{\mathit{rf}}^{s}=f_{\mathit{rf}}^{l}+ h^s \cdot \lambda \cdot f_{\mathit{rev}}^{l}\label{equ_rf_freq_noint1}
+%f_{\mathit{rf}}^{s}=f_{\mathit{rf}}^{l}+h^s_\mathit{rf} \cdot \lambda \cdot f_{\mathit{rev}}^{l}\label{equ_rf_freq_noint1}
 %\end{equation}
 
 
-%The slightly different frequencies are $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$. If the small synchrotron is the target, $\frac{f_{\mathit{rf}}^{s}}{(h^s \cdot \kappa)/Y}$ works as for the bucket indication, or $\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ works for the bucket indication. 
+%The slightly different frequencies are $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$. If the small synchrotron is the target, $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ works as for the bucket indication, or $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ works for the bucket indication. 
 
 Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is close to an integer when the beam passes a target (e.g. a FRS, a Pbar) between two synchrotrons. The ratio between two revolution frequencies can be expressed as
 \begin{equation} 
@@ -453,12 +453,12 @@ Besides, it is also grouped to this scenario, that the revolution frequency rati
 The relation between two cavity rf frequencies is same as eq.~\ref{ratio_close_int}. Two synchronization frequencies are
 
 \begin{equation}
-f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}/Y}=Y f_{\mathit{rev}}^{l} \label{synch_freq11_r}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}=Y f_{\mathit{rev}}^{l} \label{synch_freq11_r}
 \end{equation}
 \begin{equation}
-f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}\kappa/Y}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s} \label{synch_freq22_r}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s} \label{synch_freq22_r}
 \end{equation}
-$Y$ is the GCD of $h^l$ and $h^s \cdot \kappa$.
+$Y$ is the GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$.
 %%%%%%%%%$$
 
 Two synchronization frequencies are beating automatically. The choice of the frequency for the bucket indication signal and the calculation of the synchronization window are similar as that of the integral circumference ratio scenario, see Sec. ~\ref{sec:integ}. Tab.~\ref{Syn_rev_large_close} shows the formulas related to the B2B transfer when the large synchrotron is the target and Tab.~\ref{Cir ratio close to integer} shows the formulas when the small synchrotron is the target. 
@@ -472,9 +472,9 @@ Two synchronization frequencies are beating automatically. The choice of the fre
     \hline
 	&  Large synchrotron is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}=\frac{1}{\kappa}f_{\mathit{rev}}^{s}$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}=\frac{1}{\kappa}f_{\mathit{rev}}^{s}$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{$\Delta f$} & $|f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$ \\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{l}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{l}}{f_{\mathit{syn}}^\mathit{l}}$ \\ \hline
@@ -495,9 +495,9 @@ Two synchronization frequencies are beating automatically. The choice of the fre
 	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
 	Case& \tabincell{c}{ (1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}\ge1$) } &\tabincell{c}{ (2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$  ($\frac{Y}{\kappa}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$} \\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}=\kappa f_{\mathit{rev}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}=Y f_{\mathit{rev}}^{l}$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s}$}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ &$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$} \\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}=\kappa f_{\mathit{rev}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}=Y f_{\mathit{rev}}^{l}$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}=\frac{Y}{\kappa} f_{\mathit{rev}}^{s}$}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ &$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{$\Delta f$} & \multicolumn{2}{c|}{$|f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$}\\ \hline
 
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{s}$ & $T_{\mathit{syn}}^{s}$\\ \hline
@@ -523,7 +523,7 @@ The GCD of $h^{\mathit{SIS18}}=4$ and $h^{\mathit{ESR}}\cdot \kappa=2\cdot 2=2$ 
 \frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^{\mathit{SIS18}}}{h^{\mathit{ESR}} \cdot (\kappa+ \lambda)}=\frac {4}{2 \cdot(2-0.003)}
 \end{equation}
 
-The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so substituting $h^X$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
+The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
 
 
 \begin{table}[!htb]
@@ -535,9 +535,9 @@ The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so
     \hline
 	&  Small synchrotron (ESR) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}=\SI{1.373201}{\MHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rf}}^{\mathit{ESR}}=\SI{1.371302}{\MHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=4f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{1.373201}{\MHz}$ and $f_{\mathit{syn}}^{ESR}=2f_{\mathit{rev}}^{\mathit{ESR}}=\SI{1.371302}{\MHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=2f_{\mathit{rev}}^{\mathit{SIS18}}= \SI{686.601}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{700}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{700}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{1899}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{\mathit{ESR}}=\SI{1.456}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
@@ -550,7 +550,7 @@ Detailed parameters of the $h=4$ B2B transfer from the SIS18 to the ESR, please 
 The target time difference between the SIS18 and ESR rf systems depends on the accumulation method.
 
 %Put it to the next section!!!
-%When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy dependent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{\mathit{rf}}^{\mathit{ESR}}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. More details, please see Appendix \ref{sec:18tothe ESRviaFRS}. The 1/9 the ESR revolution frequency works for the bucket indication. After the synchronization, the phase difference between the 1/5 the SIS18 and 1/9 the ESR revolution frequency depends on the accumulation method. 
+%When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy dependent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{\mathit{rf}}^{\mathit{ESR}}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. For more details, please see Appendix \ref{sec:18tothe ESRviaFRS}. The 1/9 the ESR revolution frequency works for the bucket indication. After the synchronization, the phase difference between the 1/5 the SIS18 and 1/9 the ESR revolution frequency depends on the accumulation method. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of h=1 B2B Transfer from SIS18 to ESR} 
 One bunch is injected into one bucket of the injection orbit of the ESR. The beam is accumulated in the ESR. The large synchrotron is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}=1$ and $h^{\mathit{ESR}}=1$. The circumference ratio between the SIS18 and the ESR is
@@ -559,10 +559,10 @@ One bunch is injected into one bucket of the injection orbit of the ESR. The bea
 \end{equation}
 The GCD of $h^{\mathit{SIS18}}=1$ and $h^{\mathit{ESR}}\cdot \kappa=1\cdot 2=2$ is 1, namely $Y=1$. Substituting $h^{\mathit{SIS18}}$, $h^{\mathit{ESR}}$, $\kappa$ and $\lambda$ into eq.~\ref{ratio_close_int}, we get
 \begin{equation}
-\frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^l}{h^s \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2-0.003)}
+\frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2-0.003)}
 \end{equation}
 
-The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=1 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:118tothe ESR}. Here we use the \SI{400}{MeV/\atomicmassunit} proton B2B transfer as an example. 
+The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=1 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:118tothe ESR}. Here we use the \SI{400}{MeV/\atomicmassunit} proton B2B transfer as an example. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -573,10 +573,10 @@ The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X$, $\ka
     \hline
 	&  Small synchrotron (ESR) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{988.388}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}=\SI{989.756}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rf}}^{\mathit{ESR}}/2=\SI{988.388}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{989.756}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/2=\SI{988.388}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{989.756}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/2=\SI{988.388}{\kHz}$\\ \hline
 
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{1}{MHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{1}{MHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{1368}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{ESR}}=\SI{1.017}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
@@ -594,10 +594,10 @@ Only one bunch is injected into one bucket of the CRYRING ~\cite{herfurth_low_20
 \end{equation}
 The GCD of $h^{\mathit{ESR}}=1$ and $h^{\mathit{CRYRING}} \cdot \kappa=1\cdot 2$ is 1, namely $Y=1$. Substituting $h^{\mathit{ESR}}$, $h^{\mathit{CRYRING}}$, $\kappa$ and $\lambda$ into eq.~\ref{ratio_close_int}, we get
 \begin{equation}
-\frac {f_{\mathit{rf}}^{\mathit{ESR}}}{f_{\mathit{rf}}^{\mathit{CRYRING}}}= \frac{h^l}{h^s \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2+0.003)}
+\frac {f_{\mathit{rf}}^{\mathit{ESR}}}{f_{\mathit{rf}}^{\mathit{CRYRING}}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2+0.003)}
 \end{equation}
 
-The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the B2B transfer from the ESR to the CRYRING is obtained, see Tab.~\ref{tab:the ESRtothe CRYRING}. Here we use the \SI{30}{MeV/\atomicmassunit} proton B2B transfer as an example. 
+The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the B2B transfer from the ESR to the CRYRING is obtained, see Tab.~\ref{tab:the ESRtothe CRYRING}. Here we use the \SI{30}{MeV/\atomicmassunit} proton B2B transfer as an example. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -608,9 +608,9 @@ The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X$, 
     \hline
 	&  Small synchrotron (CRYRING) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CRYRING}=\SI{686.600}{kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{syn}}^{ESR}=f_{\mathit{rf}}^{\mathit{ESR}}=\SI{685.651}{kHz}$ \\and \\$f_{\mathit{syn}}^{CRYRING}=f_{\mathit{rf}}^{\mathit{CRYRING}}/2$=\SI{686.600}{kHz}}\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{0.685651}{MHz}$ \\and \\$f_{\mathit{B2B}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2=\SI{0.686600}{MHz}$}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{700}{kHz}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{kHz}$ \\and \\$f_{\mathit{syn}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2$=\SI{686.600}{kHz}}\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{kHz}$ \\and \\$f_{\mathit{B2B}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2=\SI{686.600}{kHz}$}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{700}{kHz}\\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{949}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{\mathit{CRYRING}}=\SI{1.456}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm0.5^\circ$\\ \hline
@@ -625,7 +625,7 @@ The CRYRING synchronization frequency works for the bucket indication. The targe
 When the circumference ratio of the large synchrotron to that of the small synchrotron is far away from an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation}
 \label{ratio_away_int}
-\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}
+\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}\cdot n}{h^s_\mathit{rf} \cdot m+h^s_\mathit{rf} \cdot\lambda\cdot n}
 \end{equation}
 
 %$\kappa$ in eq.~\ref{circumference_ratio_noint} could be denoted by $\frac{m}{n}$ (m and n are integers) and eq.~\ref{circumference_ratio_noint} could be expressed as
@@ -636,12 +636,12 @@ When the circumference ratio of the large synchrotron to that of the small synch
 %
 %Substituting $\kappa$ by $\frac{m}{n}$ into eq.~\ref{close_to_interger_3}, we could get the relation between $f_{\mathit{rf}}^{s}$ and $f_{\mathit{rf}}^{l}$.
 %\begin{equation} 
-%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l\cdot n}{h^s \cdot m+ h^s \cdot\lambda\cdot n}\label{close_to_interger1}
+%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}\cdot n}{h^s_\mathit{rf} \cdot m+h^s_\mathit{rf} \cdot\lambda\cdot n}\label{close_to_interger1}
 %\end{equation}
 
 
 
-%With the frequency beating method, the slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{h^l\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s\cdot m}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{l}}{h^l\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s\cdot m}$.
+%With the frequency beating method, the slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\cdot m}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\cdot m}$.
 
 Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is far away from an integer when the beam passes a target between two synchrotrons. The revolution frequency ratio can be expressed as
 \begin{equation} 
@@ -649,13 +649,13 @@ Besides, it is also grouped to this scenario, that the revolution frequency rati
 \end{equation}
 The relation between two cavity rf frequencies is same as eq.~\ref{ratio_away_int}. Two synchronization frequencies are
 \begin{equation}
-f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^{l}n/Y}=\frac{Y}{n}f_{\mathit{rev}}^{l} \label{synch_freq111_r}
+f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}n/Y}=\frac{Y}{n}f_{\mathit{rev}}^{l} \label{synch_freq111_r}
 \end{equation}
 \begin{equation}
-f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^{s}m/Y}=\frac{Y}{m}f_{\mathit{rev}}^{s} \ \label{synch_freq222_r}
+f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}m/Y}=\frac{Y}{m}f_{\mathit{rev}}^{s} \ \label{synch_freq222_r}
 \end{equation}
 
-$Y$ is the GCD of $h^l\cdot n$ and $h^s \cdot m$.
+$Y$ is the GCD of $h^l_\mathit{rf}\cdot n$ and $h^s_\mathit{rf} \cdot m$.
 
 Two synchronization frequencies are beating automatically. When the large synchrotron is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{l}$ and $f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}< f_{\mathit{rev}}^{l}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas related to the B2B transfer when the large synchrotron is the target.
 
@@ -669,9 +669,9 @@ Two synchronization frequencies are beating automatically. When the large synchr
 	&  \multicolumn{2}{c|}{Large synchrotron is target synchrotron} \\ \hline
 	Case& \tabincell{c}{ (1) $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$ ($\frac{Y}{n}\ge1$) } &\tabincell{c}{(2)  $f_{\mathit{syn}}^{l}<f_{\mathit{rev}}^{l}$  ($\frac{Y}{n}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ &$f_{\mathit{syn}}^{l}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$}\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}=\frac{n}{m}f_{\mathit{rev}}^{s} $ \\and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{rev}}^{l}$} &\tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s} $\\ and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$}\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}=\frac{n}{m}f_{\mathit{rev}}^{s} $ \\and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{rev}}^{l}$} &\tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s} $\\ and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & $\textit{round} (f_\mathit{rev}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{$\Delta f$} & \multicolumn{2}{c|}{$|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}\\ \hline
 
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{l}$ & $T_{\mathit{syn}}^{l}$\\ \hline
@@ -692,10 +692,10 @@ When the small synchrotron is the target, the frequency of the bucket indication
 	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
 	Case& \tabincell{c}{(1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{m}\ge1$) } &\tabincell{c}{(2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ ($\frac{Y}{m}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$}\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{rev}}^{s} $ \\and\\ $f_{\mathit{B2B}}^{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}=\frac{m}{n}f_{\mathit{rev}}^{l}$} &\tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s} $\\ and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$}\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{rev}}^{s} $ \\and\\ $f_{\mathit{B2B}}^{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}=\frac{m}{n}f_{\mathit{rev}}^{l}$} &\tabincell{c}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s} $\\ and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
 
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & $\textit{round} (f_\mathit{rev}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$&$\textit{round} (f_\mathit{syn}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$ \\ \hline
 	\tabincell{c}{$\Delta f$} & \multicolumn{2}{c|}{$|f_{\mathit{syn}}^{s}-f_{\mathit{syn}}^{l}|$}\\ \hline
 
 	\tabincell{c}{$T_w$}& $T_{\mathit{rev}}^{s}$ & $T_{\mathit{syn}}^{s}$\\ \hline
@@ -703,35 +703,35 @@ When the small synchrotron is the target, the frequency of the bucket indication
     \end{tabular}
 \end{center}
 \end{table}
-%There are various combination of $\frac{m}{n}$ and $\lambda$, $\lambda$ determines the beating frequency. The smaller, the more precise bunch-to-bucket injection. $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$ determines two synchronization frequencies. The bigger $(h^l\cdot n)/Y$ and $(h^s\cdot m)/Y$, the smaller two synchronization frequencies, which has higher requirement for the LLRF system. So we have to find a balance between the precision of the bunch-to-bucket injection and two synchronization frequencies for the beating.
+%There are various combination of $\frac{m}{n}$ and $\lambda$, $\lambda$ determines the beating frequency. The smaller, the more precise bunch-to-bucket injection. $(h^l_\mathit{rf}\cdot n)/Y$ and $(h^s_\mathit{rf}\cdot m)/Y$ determines two synchronization frequencies. The bigger $(h^l_\mathit{rf}\cdot n)/Y$ and $(h^s_\mathit{rf}\cdot m)/Y$, the smaller two synchronization frequencies, which has higher requirement for the LLRF system. So we have to find a balance between the precision of the bunch-to-bucket injection and two synchronization frequencies for the beating.
 
-%Two synchronization frequencies could also be a fraction (between 1/Y and 1) times of the $\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$, see Sec. ~\ref{sec:close_to_int}.
-%The bucket indication frequency and the beating frequency are proportional to the slightly difference frequencies by the coefficient of the fraction and the length of the synchronization window is inversely proportional to the slightly difference frequencies by the coefficient of the reciprocal for the fraction. The bunch to bucket center mismatch is proportional to the synchronization window and the beating frequency, whose coefficient product is 1, so the mismatch is determined by $\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$.
+%Two synchronization frequencies could also be a fraction (between 1/Y and 1) times of the $\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$, see Sec. ~\ref{sec:close_to_int}.
+%The bucket indication frequency and the beating frequency are proportional to the slightly difference frequencies by the coefficient of the fraction and the length of the synchronization window is inversely proportional to the slightly difference frequencies by the coefficient of the reciprocal for the fraction. The bunch to bucket center mismatch is proportional to the synchronization window and the beating frequency, whose coefficient product is 1, so the mismatch is determined by $\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$.
 
 
 %\begin{equation}
-%\frac {h^{l}}{h^{s}}\neq \kappa  \label{harmonic_1_iinoint}
+%\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}\neq \kappa  \label{harmonic_1_iinoint}
 %\end{equation}
 %According to the relation between the revolution and rf cavity frequencies, we know 
 %\begin{equation}
-%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l f_{\mathit{rev}}^{l}}{h^s f_{\mathit{rev}}^{s}}\label{number_iinoint}
+%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l_\mathit{rf} f_{\mathit{rev}}^{l}}{h^s_\mathit{rf} f_{\mathit{rev}}^{s}}\label{number_iinoint}
 %\end{equation}
 %Substituting eq.~\ref{rev_freq_ratio_noint} into eq.~\ref{number_iinoint}
 %\begin{equation}
-%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l}{h^s (\kappa+ \lambda)}\label{number_iinoint2}
+%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l_\mathit{rf}}{h^s_\mathit{rf} (\kappa+ \lambda)}\label{number_iinoint2}
 %\end{equation}
 %Substituting eq.~\ref{circumference_ratio_noint} into eq.~\ref{number_iinoint}, we get
 %
 %\begin{equation}
-%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l n}{h^s( m+ \lambda n)}\label{number_iinoint1}
+%\frac {f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac {h^l_\mathit{rf} n}{h^s_\mathit{rf}( m+ \lambda n)}\label{number_iinoint1}
 %\end{equation}
 %namely 
 %\begin{equation}
-%\frac {f_{\mathit{rf}}^{s}}{h^s m}+\frac{\lambda f_{\mathit{rev}}^{l}}{m}= \frac {f_{\mathit{rf}}^{l}}{h^l n}\label{cir_noint_har_noeq}
+%\frac {f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} m}+\frac{\lambda f_{\mathit{rev}}^{l}}{m}= \frac {f_{\mathit{rf}}^{l}}{h^l_\mathit{rf} n}\label{cir_noint_har_noeq}
 %\end{equation}
 %
 %In this scenario, two rf cavity frequencies are different, so the frequency beating method is preferred. 
-%Two frequencies are $\frac {f_{\mathit{rf}}^{s}}{h^s m}$ and $\frac {f_{\mathit{rf}}^{l}}{h^l n}$. The  beating frequency is $+\frac{\lambda f_{\mathit{rev}}^{l}}{m}$. 
+%Two frequencies are $\frac {f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} m}$ and $\frac {f_{\mathit{rf}}^{l}}{h^l_\mathit{rf} n}$. The  beating frequency is $+\frac{\lambda f_{\mathit{rev}}^{l}}{m}$. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of $H^{+}$ B2B Transfer from SIS100 to CR} 
 Only one out of five bunches of proton is extracted from the SIS100 and goes to a Pbar, then antiprotons are produced and injected into one bucket of the CR ~\cite{steck_demonstration_2011}. The large synchrotron is the SIS100 and the small one is the CR, $h^{\mathit{SIS100}}=5$ and $h^{\mathit{CR}}=1$. Here we take an example, that the proton energy before the Pbar is \SI{28.8}{GeV/\atomicmassunit} and the antiproton energy after the Pbar is \SI{3}{GeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
@@ -743,7 +743,7 @@ The GCD of $h^{\mathit{SIS100}}\cdot n=5\cdot5=25$ and $h^{\mathit{CR}} \cdot m=
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}\cdot n}{h^{\mathit{CR}} \cdot m+ h^{\mathit{CR}} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.039\cdot 5}
 \end{equation}
 
-The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton}.
+The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton}.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -754,9 +754,9 @@ The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/2
     \hline
 	&  Small synchrotron (CR) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{54.866}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{\mathit{SIS100}}/25=\SI{55.316}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rf}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.316}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.316}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{450}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{18.226}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm35.5^\circ$\\ \hline
@@ -779,7 +779,7 @@ Substituting $h^{\mathit{SIS100}}$, $h^{\mathit{CR}}$, m, n and $\lambda$ into e
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}\cdot n}{h^{\mathit{CR}} \cdot m+ h^{\mathit{CR}} \cdot\lambda\cdot n}=\frac{2\cdot 5}{1 \cdot 22- 1 \cdot0.0046\cdot 5}
 \end{equation}
 
-The GCD of $h^{\mathit{SIS100}}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRrib}.
+The GCD of $h^{\mathit{SIS100}}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRrib}.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -790,9 +790,9 @@ The GCD of $h^{\mathit{SIS100}}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}} \cdot m=
     \hline
 	& Small synchrotron (CR) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{102.218}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rf}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rf}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=2f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=2f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{108}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{9.779}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm2.1^\circ$\\ \hline
@@ -815,7 +815,7 @@ The GCD of $h^{\mathit{HESR}}\cdot n=1\cdot5=5$ and $h^{\mathit{CR}} \cdot m=1\c
 \frac{f_{\mathit{rf}}^{\mathit{HESR}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{HESR}}\cdot n}{h^{\mathit{CR}} \cdot m+ h^{\mathit{HESR}} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 13- 1 \cdot 0.003\cdot 5}
 \end{equation}
 
-The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR is obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
+The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR is obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
 
 %The B2B transfer from the CR to the ESR is impossible to be achieved by the frequency beating method because there exist no slightly different frequencies between two cavity rf frequencies. Besides, the bunch is stochastic cooling by electrons in the CR. So only the phase shift for the ESR is the only synchronization method. 
 
@@ -831,18 +831,18 @@ The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1
 		\rowcolor[gray]{0.8}
 		&\SI{3}{GeV/\atomicmassunit} antiproton	\\ \hline
    		$f_\mathit{bucket}$ & $f_{\mathit{syn}}^{HESR}=\SI{101.426}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{CR}=\frac{f_{\mathit{rf}}^{\mathit{CR}}}{13}=\SI{101.290}{\kHz}$ and $f_{\mathit{syn}}^{HESR}=\frac{f_{\mathit{rf}}^{\mathit{HESR}}}{5}=\SI{101.426}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{CR}=\frac{f_{\mathit{rev}}^{\mathit{CR}}}{13}=\SI{101.290}{\kHz}$ and $f_{\mathit{B2B}}^{HESR}=\frac{f_{\mathit{rev}}^{\mathit{HESR}}}{5}=\SI{101.426}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/13=\SI{101.290}{\kHz}$ and $f_{\mathit{syn}}^{HESR}=f_{\mathit{rev}}^{\mathit{HESR}}/5=\SI{101.426}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/13=\SI{101.290}{\kHz}$ and $f_{\mathit{B2B}}^{HESR}=f_{\mathit{rev}}^{\mathit{HESR}}/5=\SI{101.426}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{136}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{9.860}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm1.2^\circ$\\ \hline
 		\rowcolor[gray]{0.8}
  		&\SI{740}{MeV/\atomicmassunit} RIB \\ \hline
    		$f_\mathit{bucket}$ & $f_{\mathit{syn}}^{HESR}=\SI{86.608}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{CR}=f_{\mathit{rf}}^{\mathit{CR}}/13=\SI{86.493}{\kHz}$ and $f_{\mathit{syn}}^{HESR}=f_{\mathit{rf}}^{\mathit{HESR}}/5=\SI{86.608}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/13=\SI{86.493}{\kHz}$ and $f_{\mathit{syn}}^{HESR}=f_{\mathit{rev}}^{\mathit{HESR}}/5=\SI{86.608}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/13=\SI{86.493}{\kHz}$ and $f_{\mathit{B2B}}^{HESR}=f_{\mathit{rev}}^{\mathit{HESR}}/5=\SI{86.608}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{100}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{113}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{HESR}=\SI{11.545}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm1.2^\circ$\\ \hline
@@ -859,9 +859,9 @@ Only one bunch is extracted from the SIS18 and goes to a FRS, then a RIB is prod
 \end{equation}
 Substituting $h^{\mathit{SIS18}}$, $h^{\mathit{ESR}}$, m, n and $\lambda$ into eq.~\ref{ratio_away_int}, we get
 \begin{equation}
-\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}\cdot n}{h^s \cdot m+ h^{\mathit{ESR}} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.036\cdot 5}
+\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}\cdot n}{h^s_\mathit{rf} \cdot m+ h^{\mathit{ESR}} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.036\cdot 5}
 \end{equation}
-The GCD of $h^{\mathit{SIS18}}\cdot n=1\cdot5=5$ and $h^s \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via a FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS}.
+The GCD of $h^{\mathit{SIS18}}\cdot n=1\cdot5=5$ and $h^s_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via a FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS}.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the B2B transfer from the SIS18 to the ESR via a FRS with the frequency beating method}
@@ -871,9 +871,9 @@ The GCD of $h^{\mathit{SIS18}}\cdot n=1\cdot5=5$ and $h^s \cdot m=1\cdot 9=9$ is
     \hline
 	&  Small synchrotron (ESR) is target synchrotron \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{219.642}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rf}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rf}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
+	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{REF}$} & \SI{200}{kHz} \\ \hline
+	\tabincell{c}{$f_\mathit{ref}$} & \SI{200}{kHz} \\ \hline
 	\tabincell{c}{$\Delta f$} & \SI{4249}{\Hz}\\ \hline
 	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{ESR}=\SI{4.553}{\micro\second}$ \\ \hline
 	\tabincell{c}{$\Delta \phi_\mathit{rf}$}&$\pm31.2^\circ$\\ \hline
@@ -894,17 +894,17 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
     \hline
 	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}& \tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
- \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ \tabincell{c}{Y=GCD$(h^l,h^s \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$\\ and\\ $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$\\ \\ $\Delta f=\Delta f_\mathit{syn}$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$} \\ \hline
+ \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}$\\ \\ \tabincell{c}{Y=GCD$(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$\\ and\\ $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$\\ \\ $\Delta f=\Delta f_\mathit{syn}$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$} \\ \hline
 											
- 	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }&\tabincell{c}{$\frac{h^l}{h^s\cdot (\kappa+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD$(h^l,h^s \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ \\ \\$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$}   \\ \hline
+ 	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }&\tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot (\kappa+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD$(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$}} & \tabincell{c}{$f_{\mathit{rev}}^{l}$} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ \\ \\$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} &\tabincell{c}{$f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}$ \\and \\$f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$}   \\ \hline
 
 
 \tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=m/n+ \lambda$\\far away from integer}
-&\tabincell{c}{ $\frac{h^l}{h^s \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD$(h^l n,h^s  m)$}}& \tabincell{c}{if $Y/n\ge1, f_{\mathit{rev}}^{l}$  \\ \\ \color{red}{if $Y/n<1, f_{\mathit{syn}}^{l}$}} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$\\ and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}  
+&\tabincell{c}{ $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD$(h^l_\mathit{rf} n,h^s_\mathit{rf}  m)$}}& \tabincell{c}{if $Y/n\ge1, f_{\mathit{rev}}^{l}$  \\ \\ \color{red}{if $Y/n<1, f_{\mathit{syn}}^{l}$}} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$\\ and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}  
 
-&\tabincell{c}{$f_{\mathit{B2B}}^{s}=\frac{f_{\mathit{rev}}^{l}}{f_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}$ \\and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{rev}}^{l}$ \\ \\ \color{red}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}$}\\ \color{red}{and}\\ \color{red}{$f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}$}}\\ \hline
+&\tabincell{c}{$f_{\mathit{B2B}}^{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}$ \\and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{rev}}^{l}$ \\ \\ \color{red}{$f_{\mathit{B2B}}^{s}=f_{\mathit{syn}}^{s}$}\\ \color{red}{and}\\ \color{red}{$f_{\mathit{B2B}}^{l}=f_{\mathit{syn}}^{l}$}}\\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{l}}{f_{\mathit{syn}}^\mathit{l}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{l}}{h_{\mathit{syn}}^\mathit{l}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -923,22 +923,22 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
 
  \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} 
-&  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} 
-& \tabincell{c}{$Y/\kappa\ge1, f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$\\ \\ $\Delta f=\Delta f_\mathit{syn}$}
-&\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot (f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn})$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$}\\ \hline
+&  \tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}$\\ \\ $Y=GCD(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$} 
+& \tabincell{c}{$Y/\kappa\ge1, f_{\mathit{rev}}^{s}$} & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$\\ \\ $\Delta f=\Delta f_\mathit{syn}$}
+&\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot (f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn})$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$}\\ \hline
 											
  	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }
-&\tabincell{c}{$\frac{h^l}{h^s\cdot (\kappa+ \lambda)}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} & \tabincell{c}{$Y/\kappa\ge1, f_{\mathit{rev}}^{s}$} 
-& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ \\ \\ $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}
-& \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} \\ \hline
+&\tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot (\kappa+ \lambda)}$\\ \\ $Y=GCD(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$} & \tabincell{c}{$Y/\kappa\ge1, f_{\mathit{rev}}^{s}$} 
+& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\and \\$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ \\ \\ $\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$}
+& \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} \\ \hline
 
 
 \tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=m/n+ \lambda$\\far away from integer}
-&\tabincell{c}{ $\frac{h^l}{h^s \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{$Y=GCD(h^l n,h^s  m)$}}&\tabincell{c}{$Y/m\ge1, f_{\mathit{rev}}^{s}$} 
-& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
-&\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{f_{\mathit{rev}}^{s}}{f_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} \\ \hline
+&\tabincell{c}{ $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{$Y=GCD(h^l_\mathit{rf} n,h^s_\mathit{rf}  m)$}}&\tabincell{c}{$Y/m\ge1, f_{\mathit{rev}}^{s}$} 
+& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
+&\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{h_{\mathit{rev}}^{s}}{h_{\mathit{syn}}^{s}}\cdot f_{\mathit{syn}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} \\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{s}}{f_{\mathit{syn}}^\mathit{s}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -954,24 +954,24 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
     \hline
 	\tabincell{c}{Circumference\\ratio} &  \tabincell{c}{Cavity rf\\frequency ratio \\$f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}$}&\tabincell{c}{Bucket indication \\ signal\\$f_\mathit{bucket}$}&\tabincell{c}{Synchronization \\frequencies\\$f_{\mathit{syn}}^{X}$}& \tabincell{c}{phase measurement signal\\ $f_{\mathit{B2B}}^{X}$} \\ \hline
 
- \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l}{h^s\cdot \kappa}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} 
+ \tabincell{c}{$C^l/C^s=\kappa$ \\Integer} &  \tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot \kappa}$\\ \\ $Y=GCD(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$} 
 & \tabincell{c}{$Y/\kappa<1, f_{\mathit{syn}}^{s}$} 
-& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ \\ \\ $\Delta f=\Delta f_\mathit{syn}$}
+& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ \\ \\ $\Delta f=\Delta f_\mathit{syn}$}
 &\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}+\Delta f_\mathit{syn}$ \\ and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}$}\\ \hline
 											
- 	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }&\tabincell{c}{$\frac{h^l}{h^s\cdot (\kappa+ \lambda)}$\\ \\ $Y=GCD(h^l,h^s \kappa)$} 
+ 	\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to integer }&\tabincell{c}{$\frac{h^l_\mathit{rf}}{h^s_\mathit{rf}\cdot (\kappa+ \lambda)}$\\ \\ $Y=GCD(h^l_\mathit{rf},h^s_\mathit{rf} \kappa)$} 
 & \tabincell{c}{$Y/\kappa<1, f_{\mathit{syn}}^{s}$ } 
-& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l/Y}$ \\ and \\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot \kappa)/Y}$ \\ \\$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
+& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ \\ and \\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$ \\ \\$\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
 & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}$}  \\ \hline
 
 
 \tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=m/n+ \lambda$\\far away from integer}
-&\tabincell{c}{ $\frac{h^l}{h^s \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD\\$(h^l n,h^s  m)$}}
+&\tabincell{c}{ $\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (m/n+ \lambda)}$\\ \\ \tabincell{c}{Y=GCD\\$(h^l_\mathit{rf} n,h^s_\mathit{rf}  m)$}}
 &\tabincell{c}{$Y/m<1, f_{\mathit{syn}}^{s}$ } 
-& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l\cdot n)/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
+& \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
 & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=f_{\mathit{syn}}^{l}$ \\and \\$f_\mathit{B2B}^\mathit{s}=f_{\mathit{syn}}^{s}$}  \\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{syn}^\mathit{REF}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{f_{\mathit{rf}}^\mathit{s}}{f_{\mathit{syn}}^\mathit{s}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{bucket}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
