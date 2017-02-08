@@ -1,8 +1,9 @@
 
 
-This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. 6.1, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic perspective. The WR network is investigated for the B2B transfer and the calculation of the synchronization window are presented in Sec. 6.2. The B2B transfer system for FAIR focuses first of all on the transfer from the SIS18 to the SIS100, so the trigger possibility of the SIS18 extraction and SIS100 injection kicker are systematically investigated in Sec. 6.3. Besides, the test setup from the timing aspect is introduced and the test result is analyzed in Sec. 6.4. 
+This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. ~\ref{real_dyn}, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic perspective. The WR network is investigated for the B2B transfer and the calculation of the synchronization window are presented in Sec. ~\ref{real_timing}. The B2B transfer system for FAIR focuses first of all on the transfer from the SIS18 to the SIS100, so the trigger possibility of the SIS18 extraction and SIS100 injection kicker are systematically investigated in Sec. ~\ref{real_kicker}. Besides, the test setup from the timing aspect is introduced and the test result is analyzed in Sec. ~\ref{real_test}. 
 
 \section{Beam Dynamic Analysis of two Synchronization Methods for B2B Transfer from SIS18 to SIS100}
+\label{real_dyn}
 This section analyzes the phase shift and frequency beating methods from the beam-dynamics perspective for the synchronization of the SIS18 with the SIS100. Because the most stringent requirement are from the boundary ion species, the beam dynamics of the $H^+$ and $U^\mathit{28+}$ beams are analyzed. The acceptable range of the parameters for the frequency adjustment accompanying these two methods for the SIS18 are summarized in Tab. ~\ref{dynamic_param}.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -414,12 +415,13 @@ From eq. ~\ref{eq:eq4}, the tolerate rf frequency change for $H^+$ at the extrac
 where the maximum rf frequency detune approximates to \SI{108}{Hz} for the cavity rf frequency of \SI{1.359358}{MHz} of $H^+$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GMT systematic Investigation}
+\label{real_timing}
 The B2B transfer system makes use of certain aspects of the GMT system to implement the data collection, merging and redistribution. The main task of the data merging is to calculate the start of the synchronization window, which is used for the selection of the bucket indication signal for the kicker trigger. The data collection and redistribution make use of the WR network, so the test and measurement of the WR network for the B2B transfer is important. 
 
 \subsection{Calculation of the Start of the Synchronization Window}
 All calculations for the B2B transfer are based on the phase deviation measurement by the PAM module. With the help of the phase extrapolation by the PAP module and the timestamp for the extrapolated phase by the B2B source and target SCUs, the fine time point of the correct phase alignment between two synchronization frequencies is calculated, see Chap. ~\ref{concept}. This fine time point is called the ``\gls{glos:best_align}`` and denoted by $t_\mathit{align}$. There exists \textit{uncertainty} for any measurement, which is defined as a non-negative parameter characterizing the dispersion of the values attributed to a measured quantity. The \gls{glos:uncertainty}~\cite{taylor_introduction_1982} of the phase deviation is reflected in the uncertainty of the extrapolated phase for the calculation of the phase alignment.
 % The rf frequency manipulation (e.g. the rf frequency modulation for the phase shift and the rf frequency detuning) has the long term stability, so the uncertainty of the rf frequency manipulation is neglectable. 
-Because of the propagation of the uncertainty of the extrapolated phase and that of the timestamp, the phase alignment lies between \gls{symb:best_align}$-\delta t_\mathit{align}$ and $t_\mathit{align}+\delta t_\mathit{align}$, where \gls{symb:probable_aligh} is the uncertainty of the phase alignment. [$t_\mathit{align}-\delta t_\mathit{align}$, $t_\mathit{align}+\delta t_\mathit{align}$] is called the ``\gls{glos:pro_align}``. In order to achieve the highly precise bunch-to-bucket injection, the length of the probable rang of alignment must be much shorter than the length of the synchronization window. In Sec. 6.2.1.1, the calculation and inspection of $\delta t_\mathit{align}$ for the phase shift and frequency beating methods are explained. For the correct selection of the same rising edge of the bucket indication signal at different SCUs, the start of the synchronization window must be properly calculated. In Sec. 6.2.1.2, the calculation of the start of the synchronization window is explained. In Sec. 6.2.1.3, the requirement of the accuracy of the start of the synchronization window is calculated. 
+Because of the propagation of the uncertainty of the extrapolated phase and that of the timestamp, the phase alignment lies between \gls{symb:best_align}$-\delta t_\mathit{align}$ and $t_\mathit{align}+\delta t_\mathit{align}$, where \gls{symb:probable_aligh} is the uncertainty of the phase alignment. [$t_\mathit{align}-\delta t_\mathit{align}$, $t_\mathit{align}+\delta t_\mathit{align}$] is called the ``\gls{glos:pro_align}``. In order to achieve the highly precise bunch-to-bucket injection, the length of the probable rang of alignment must be much shorter than the length of the synchronization window. In Sec. ~\ref{cal_align}, the calculation and inspection of $\delta t_\mathit{align}$ for the phase shift and frequency beating methods are explained. For the correct selection of the same rising edge of the bucket indication signal at different SCUs, the start of the synchronization window must be properly calculated. In Sec.  ~\ref{cal_start}, the calculation of the start of the synchronization window is explained. In Sec.  ~\ref{cal_accuracy}, the requirement of the accuracy of the start of the synchronization window is calculated. 
 %\begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=150mm]{alignment.jpg}
@@ -429,10 +431,10 @@ Because of the propagation of the uncertainty of the extrapolated phase and that
 
 %In fact, two SIS100 revolution periods is enough for the correct bucket selection, achieving much preciser injection. The beginning of the synchronization window denotes by $WIN_{start}$. The synchronization window is within the range [$WIN_{start}$ , $WIN_{start}$  + 2 $\cdot T_{rev}^{SIS100}$]. $T_{rev}^{SIS100}$is the revolution period of SIS100, which equals to 6.359 us for U$^{28+}$ at 200Mev/u.  
 \subsubsection{Uncertainty of Phase Alignment}
-
-In Chap. ~\ref{concept}, we get the phase difference $\Delta \phi_\mathit{syn}$ between two synchronization frequencies at $t_\psi^X$.
+\label{cal_align}
+In Chap. ~\ref{concept}, we get the phase difference $\Delta \phi_\mathit{syn\_0}$ between two synchronization frequencies at $t_\psi^X$.
 \begin{eqnarray}\label{phase_syn}
-\Delta \phi_\mathit{syn}=
+\Delta \phi_\mathit{syn\_0}=
 \begin{cases}
 \psi^\mathit{trg}_0-\psi^\mathit{src}_0, &f_{\mathit{bucket}}=f_{\mathit{syn}}^{trg}\cr
 \frac{h_{\mathit{syn}}^{trg}}{h_{\mathit{rev}}^{trg}}(\psi^\mathit{trg}_0-\psi^\mathit{src}_0) \mod 2\pi, &f_{\mathit{bucket}}=f_{\mathit{rev}}^{trg}\cr
@@ -483,7 +485,7 @@ For all FAIR B2B transfer use cases with the phase shift method, the uncertainty
 
 The best estimate of alignment is determined by the required phase difference $\Delta \phi_\mathit{shift}$ and calculated by eq.~\ref{best_align_beating} (derived from eq.~\ref{syn_win_start1}).
 \begin{equation}
-t_\mathit{align}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}+ n\cdot \frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
+t_\mathit{align}= t_\psi^\mathit{X}+\frac{\Delta \phi_\mathit{adjust}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}+ n\cdot \frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
 \label{best_align_beating}
 \end{equation}
 
@@ -491,14 +493,14 @@ The uncertainty of the phase alignment is caused by the uncertainty of the phase
 \begin{eqnarray}
 \begin{aligned}
 \delta t_\mathit{align} =\sqrt {(\frac {\partial t_\mathit{align}}{\partial t_\psi^\mathit{X}} \delta t_\psi^\mathit{X})^2 +(\frac {\partial t_\mathit{align}}{\partial \psi^\mathit{src}_0} \delta\psi^\mathit{src}_0)^2+(\frac {\partial t_\mathit{align}}{\partial \psi^\mathit{trg}_0} \delta\psi^\mathit{trg}_0)^2  }\\
-=\sqrt {(\delta t_\psi^\mathit{X})^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{src}_0}  \delta  \psi^\mathit{src}_0)^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{trg}_0}  \delta  \psi^\mathit{trg}_0)^2}\\
+=\sqrt {(\delta t_\psi^\mathit{X})^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{src}_0}  \delta  \psi^\mathit{src}_0)^2 +(\frac{1}{2\pi}\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{trg}_0}  \delta  \psi^\mathit{trg}_0)^2}\\
 \label{beating_uncertainty}
 \end{aligned}
 \end{eqnarray}
 
-The relation between $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ is explained in Chap. ~\ref{concept}. Becasue $\Delta \phi_\mathit{shift}$ and $\Delta \phi_\mathit{syn}$ have a linear relationship and the linear slope is $1$, $\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{trg}_0}=\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^\mathit{trg}_0}$ and $\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{src}_0}=\frac {\partial \Delta \phi_\mathit{syn}}{\partial \psi^\mathit{src}_0}$. Based on eq. ~\ref{phase_syn}, we get the partial derivative of $\Delta \phi_\mathit{shift}$ with respect to $\psi^\mathit{src}_0$ and $\psi^\mathit{trg}_0$.
+The relation between $\Delta \phi_\mathit{adjust}$ and $\Delta \phi_\mathit{syn\_0}$ is explained in Chap. ~\ref{concept}. Becasue $\Delta \phi_\mathit{adjust}$ and $\Delta \phi_\mathit{syn\_0}$ have a linear relationship and the linear slope is $1$, $\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{trg}_0}=\frac {\partial \Delta \phi_\mathit{syn\_0}}{\partial \psi^\mathit{trg}_0}$ and $\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{src}_0}=\frac {\partial \Delta \phi_\mathit{syn\_0}}{\partial \psi^\mathit{src}_0}$. Based on eq. ~\ref{phase_syn}, we get the partial derivative of $\Delta \phi_\mathit{adjust}$ with respect to $\psi^\mathit{src}_0$ and $\psi^\mathit{trg}_0$.
 \begin{eqnarray}\label{partial}
-|\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{trg}_0}| = |\frac {\partial \Delta \phi_\mathit{shift}}{\partial \psi^\mathit{src}_0}|=
+|\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{trg}_0}| = |\frac {\partial \Delta \phi_\mathit{adjust}}{\partial \psi^\mathit{src}_0}|=
 \begin{cases}
 1, &f_{\mathit{bucket}}=f_{\mathit{syn}}^{trg}\cr
 \frac{h_{\mathit{syn}}^{trg}}{h_{\mathit{rev}}^{trg}}, &f_{\mathit{bucket}}=f_{\mathit{rev}}^{trg}\cr
@@ -528,20 +530,21 @@ Tab. ~\ref{uncertainty} shows the uncertainty of the phase alignment for all FAI
 	\tabincell{c}{h=4 B2B transfer\\ from the SIS18 to the ESR}& $0.025^\circ$ &  \SI{1899}{Hz} & \SI{0.103}{\micro\second}& \SI{1.456}{\micro\second} \\ \hline
 	\tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR}& $0.036^\circ$ & \SI{1368}{Hz} & \SI{0.104}{\micro\second}& \SI{1.017}{\micro\second} \\ \hline	
 	\tabincell{c}{B2B transfer \\from the ESR to the CRYRING}&$0.025^\circ$  & \SI{949}{Hz} & \SI{0.102}{\micro\second}& \SI{1.456}{\micro\second} \\ \hline	
-	\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via a Pbar} &$0.002^\circ$ & \SI{450}{Hz} & \SI{0.019}{\micro\second}& \SI{18.226}{\micro\second} \\ \hline	
-	\tabincell{c}{RIB B2B transfer\\from the SIS100 to the CR \\ via a Super FRS}&$0.004^\circ$ &  \SI{108}{Hz} & \SI{0.154}{\micro\second} & \SI{9.779}{\micro\second}\\ \hline	
+	\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via the Pbar target} &$0.002^\circ$ & \SI{450}{Hz} & \SI{0.019}{\micro\second}& \SI{18.226}{\micro\second} \\ \hline	
+	\tabincell{c}{RIB B2B transfer\\from the SIS100 to the CR \\ via the Super FRS}&$0.004^\circ$ &  \SI{108}{Hz} & \SI{0.154}{\micro\second} & \SI{9.779}{\micro\second}\\ \hline	
 	\tabincell{c}{Antiproton B2B transfer \\from the CR to the HESR }&$0.004^\circ$ & \SI{136}{Hz} & \SI{0.123}{\micro\second}& \SI{9.860}{\micro\second} \\ \hline	
-	\tabincell{c}{B2B transfer \\from the SIS18 to the ESR \\via a FRS}&$0.008^\circ$ & \SI{4249}{Hz} & \SI{7}{ns}& \SI{4.553}{\micro\second} \\ \hline	
+	\tabincell{c}{B2B transfer \\from the SIS18 to the ESR \\via the FRS}&$0.008^\circ$ & \SI{4249}{Hz} & \SI{7}{ns}& \SI{4.553}{\micro\second} \\ \hline	
    \end{tabular}
 \end{center}
 \end{table} 
 
-The uncertainty of the phase alignment for all FAIR use cases is much smaller than the length of the synchronization window. Hence, the influence of the propagation of the uncertainty on the bunch-to-bucket injection center mismatch within the synchronization window is negligible. The uncertainty of the phase extrapolation \SI{100}{ps} and the uncertainty of the timestamp $t_\mathit{psi}^X$ are acceptable for the FAIR B2B transfer system.
+The uncertainty of the phase alignment for all FAIR use cases is much smaller than the length of the synchronization window. Hence, the influence of the propagation of the uncertainty on the bunch-to-bucket injection center mismatch within the synchronization window is negligible. The uncertainty of the phase extrapolation \SI{100}{ps} and the uncertainty of the timestamp $t_\mathit{\psi}^X$ are acceptable for the FAIR B2B transfer system.
 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Uncertainty of the Start of the Synchronization Window}
+\label{cal_start}
 The start of the synchronization window is expressed as 
 \begin{equation}
 t_\mathit{w}=t_\psi^\mathit{X}+\Delta t_\mathit{w}\label{syn_win_start2}
@@ -552,7 +555,7 @@ with
 \Delta t_\mathit{w}=
 \begin{cases}
 \SI{600}{\us}+T-t_\mathit{delay}\ &\textit{Phase shift method}\cr
-\frac{\Delta \phi_\mathit{shift}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}+n\cdot \frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}-\frac{T_w}{2}-t_\mathit{delay} & \textit{Frequency beating method}\cr
+\frac{\Delta \phi_\mathit{adjust}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}+n\cdot \frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}-\frac{T_w}{2}-t_\mathit{delay} & \textit{Frequency beating method}\cr
 \end{cases}
 \end{eqnarray}
 For more details, please see Chap. ~\ref{concept}.
@@ -587,7 +590,7 @@ The uncertainty of $t_\mathit{w\_rect}$ is caused by the uncertainty of the phas
 For FAIR use cases, $f^\mathit{trg}_\mathit{B2B}$ is in the \SI{100}{kHz} range and $\delta\psi^\mathit{trg}_0$ is less than $0.05^\circ$ (see Tab. ~\ref{uncertainty}). Hence, $\delta t_\mathit{w\_rect} < 2ns$, which can be negligible. 
 
 \subsubsection{Accuracy of the Start of the Synchronization Window}
-
+\label{cal_accuracy}
 The actual start of the synchronization window is impossible to be exactly at the best estimate of the start of the synchronization window because of random uncertainty (e.g. the transition time from low to high voltage of digital IO ports) and systematic uncertainty (e.g. the FPGA process time). The \gls{glos:accuracy} of the start of the synchronization window is the deviation between the theoretically calculated start time and the actual observed start time on SCUs. The FAIR B2B transfer system will be used for all FAIR use cases. Therefore, we have to find the most stringent accuracy requirement. The shortest synchronization window is \SI{1.017}{\us}, which comes from h=1 B2B transfer from the SIS18 to the ESR. We keep \SI{20}{ns} as a forbidden range, which means that the actual start is not allowed \SI{20}{\ns} before and after the bucket indication signal marker. The green region in Fig.~\ref{accuracy_syn_win1} represents the safety margin for the start of the synchronization window and the red region the forbidden range. So the requirement of the accuracy of the start of the synchronization window is 
 
 \begin{equation}
@@ -879,6 +882,7 @@ For the B2B transfer system, the upper bound latency of the frames on the WR net
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Kicker systematic Investigation}
+\label{real_kicker}
 The SIS18 extraction kicker is consisted of nine kicker magnets. In the existing topology, five kicker magnets are equally located in the $1^{st}$ crate and the other four kicker magnets are equally located in the $2^{nd}$ crate. The investigation is based on the assumption that the kicker magnets in one crate are controlled by a common kicker control electronics, which received a trigger signal from a common TD module. The nine kicker magnets could also be controlled by their own kicker control electronics and TD module. It is still an open issue. The kicker magnets in the same crate are triggered instantaneous by the trigger signal with the local delay compensation of the electronics, the length of the energy transmission cable and etc. Fig. ~\ref{SIS18_kicker} shows the schematic diagram of the kicker magnets in the $2^{nd}$ crate of the SIS18 extraction kicker. The width of each kicker magnet is \SI{0.25}{m} and the distance between two kicker magnets is \SI{0.09}{m}. The distance between two crates is \SI{19.17}{m} ~\cite{ros_sis18_2008}. 
 %kicker.pptx
 \begin{figure}[H]
@@ -976,6 +980,7 @@ Two bunches from SIS18 will be transferred into two SIS100 rf buckets in each B2
 Tab. ~\ref{kicker_SIS100} shows that the sum of the kicker passing time and rise time is much shorter than the bunch gap, so the SIS100 kicker magnets could be fired instantaneous. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Test Setup for Data Collection, Merging and Redistribution}
+\label{real_test}
 
 In this section, the test setup for the FAIR B2B transfer system is described, focusing mainly on the timing aspects.  
 

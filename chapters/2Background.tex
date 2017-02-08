@@ -1,4 +1,4 @@
-In Chap. 1, the bunch and bucket are introduced with simplified definition. In this chapter, the bunch and bucket are first of all defined from the accelerator physics perspective in Sec.~\ref{bunch and bucket}. Transferring bunches from a synchrotron into specific buckets of another synchrotron has several underlying basic principles. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must match that of the target synchrotron. The amplitude of the accelerating voltage match of two rf systems is needed to ensure that buckets capture bunches efficiently. Principally speaking, every synchrotron has its independent rf system. The phase difference between bunches and buckets must be precisely controlled before the transfer. The energy and voltage match will be done by machine physicists, which are out of the scope of this dissertation, so only the phase match is explained in detail in Sec.~\ref{match}. Two methods for the phase alignment between two rf systems are discussed in Sec.~\ref{two_sync_methods}. For the correct bucket injection, the bunch extraction must happen exactly the time-of-flight before the required bucket of the target synchrotron passes the injection kicker. The synchronization of extraction and injection kicker magnets are presented in Sec.~\ref{sec:kicker}.
+In Chap. 1, the bunch and bucket are introduced with simplified definition. In this chapter, the bunch and bucket are first of all defined from the accelerator physics perspective in Sec.~\ref{bunch and bucket}. Transferring bunches from a synchrotron into specific buckets of another synchrotron has several underlying basic principles. The energy of the beam is same before and after the B2B transfer, so the energy of the source synchrotron must match that of the target synchrotron. The amplitude of the accelerating voltage match of the two rf systems is needed to ensure that buckets capture bunches efficiently. Principally speaking, every synchrotron has its independent rf system. The phase difference between bunches and buckets must be precisely controlled before the transfer. The energy and voltage match will be done by machine physicists, which are out of the scope of this dissertation, so only the phase match is explained in detail in Sec.~\ref{match}. Two methods for the phase alignment between the two rf systems are discussed in Sec.~\ref{two_sync_methods}. For the correct bucket injection, the bunch extraction must happen exactly the time-of-flight before the required bucket of the target synchrotron passes the injection kicker. The synchronization of extraction and injection kicker magnets are presented in Sec.~\ref{sec:kicker}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Bunch and Bucket}
@@ -49,11 +49,10 @@ Substituting $\Delta \beta/\beta$ into eq. ~\ref{dfreq_phase1}, we get
 \frac{\Delta f_{\mathit{rf}}}{f_{\mathit{rf}}}=\frac{1}{\gamma^2}\frac{\Delta p}{p}-\frac{\Delta R}{R}\label{f_p_r1}
 \end{equation} 
 
-For the constant magnetic field, a particle will have a different orbit, if it is slightly shifted in momentum. The ``momentum compaction factor`` \gls{symb:mom_factor}\footnote{FAIR complex is with $\alpha_p>0$.} is defined as:
+For the constant magnetic field, a particle will have a different orbit, if it is slightly shifted in momentum. The ``momentum compaction factor`` \gls{symb:mom_factor} is defined as eq. ~\ref{mom_com1}. The FAIR complex is with $\alpha_p>0$.
 \begin{equation}
 \frac{\Delta R}{R}=\alpha_p\frac{\Delta p}{p}\label{mom_com1}
 \end{equation} 
-
 
 Substituting eq. ~\ref{mom_com1} into eq. ~\ref{f_p_r1}, we finally obtain the required relation between the frequency offset and the momentum error.
 \begin{equation}
@@ -125,7 +124,7 @@ The energy of a beam is related to the 'magnetic rigidity', which is defined as 
 	\label{eq:energy}
 	B\rho =\frac{p}{q}
 \end{equation}
-where \gls{symb:mgenet} is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the ``stiffness`` of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}. The relation between a rf cavity and the beam acceleration rate is
+where \gls{symb:mgenet} is magnetic field, and \gls{symb:bending_rad} is the bending radius of a particle immersed in a magnetic field $B$. The ratio of $p$ to $q$ describes the ``stiffness`` of a beam, it can be considered as a measure of how much angular deflection results when a particle travels through a given magnetic field~\cite{barletta_overview_????}. The relation between the voltage of a rf cavity and the beam acceleration rate is
 \begin{equation}
 	\label{eq:rf_acceleration}
 	V_0\sin\phi_s=2\pi R\rho\dot{B}
@@ -140,7 +139,7 @@ Bunches must be injected exactly in the center of buckets for the preservation o
    \label{injection_error}
 \end{figure} 
 
-The bunch coordinates in the longitudinal phase space plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two synchrotrons must be same.
+The bunch coordinates in the longitudinal phase space plane of the source synchrotron, just before transfer, must be accurately controlled, according to the bucket to be filled ~\cite{garoby_timing_1984}. The bunch is transferred from the source to the target synchrotron with the same energy. So the beam has the same momentum for both synchrotrons. According to eq. ~\ref{eq:energy}, the magnetic rigidity of two ring accelerators must be same.
 
 \begin{equation}
 	\label{eq:rigidity}
@@ -149,13 +148,13 @@ The bunch coordinates in the longitudinal phase space plane of the source synchr
 
 Where the superscript of the symbol denotes the synchrotron, $\mathit{src}$ represents the source synchrotron and $\mathit{trg}$ the target synchrotron. 
 
-Before the B2B transfer, the revolution frequency of two synchrotrons must meet the following relation based on eq. ~\ref{freq_phase1}. 
+Before the B2B transfer, the revolution frequency of two ring accelerators must meet the following relation based on eq. ~\ref{freq_phase1}. 
 \begin{equation}
 	C^{\mathit{src}}f_{rev}^{\mathit{src}} = \beta c=C^{\mathit{trg}}f_{rev}^{\mathit{trg}}
 \end{equation}
 where \gls{symb:C_param} represents the circumference of a specific synchrotron. A group of new symbols are necessary to be defined. The revolution frequency and cavity rf frequency are denoted by \gls{symb:rev_freq} and \gls{symb:cavity_freq}, the cavity harmonic number by \gls{symb:harmonic_param}, the harmonic number of the revolution frequency by \gls{symb:rev_harmonic_param}, which is defined as the first harmonic, namely $h_\mathit{rev}^\mathit{X}=1$. The superscript $X$ can be either $src$ or $trg$ denoting the source or target synchrotron. 
 
-Due to the relation between the revolution frequency and cavity rf frequency, eq. ~\ref{harmonic_number}, the ratio between cavity rf frequencies of two rf systems is
+Due to the relation between the revolution frequency and cavity rf frequency, eq. ~\ref{harmonic_number}, the ratio between cavity rf frequencies of the two rf systems is
 \begin{equation}
 	\frac{f_{rf}^{\mathit{src}}}{f_{rf}^{\mathit{trg}}}=\frac{h^{\mathit{src}}}{h^{\mathit{trg}}}\cdot\frac{f_{rev}^{\mathit{src}}}{f_{rev}^{\mathit{trg}}}=\frac{h^{\mathit{src}}}{h^{\mathit{trg}}}\cdot \frac{C^{\mathit{trg}}}{C^{\mathit{src}}}
 \end{equation}
@@ -164,7 +163,7 @@ The energy and voltage match will be done by machine physicists, which are out o
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase Difference}
 \label{match}
-The rf voltage of two rf systems are $u_1(t)$ and $u_2(t)$.
+The rf voltage of the two rf systems are $u_1(t)$ and $u_2(t)$.
 \begin{equation}
 \label{rf_freq1}
 	u_1(t)=V_1\sin(2\pi f_1t+\phi_1)
@@ -189,11 +188,11 @@ The phase difference $\Delta \phi$ is constant when two frequencies are same ($f
 
 The phase shift process starts at $t_0$. The obtainable phase shift is determined by the frequency offset $\Delta f_\mathit{rf}$ and the duration of the frequency modulation \gls{symb:period_phase}. 
 
-When two frequencies are slightly different, the phase difference $\Delta \phi$ is a periodic function whose rate is the difference between two frequencies. This is the so-called frequency beating. The periodically variable rate is called the ``beating frequency``, $\Delta f=|f_1-f_2|$. The beating period is defined as a period of time for the periodical variation, namely $1/\Delta f$. Within one beating period, there exists a time point, which corresponds to a correct phase difference between two rf systems, namely the phase alignment. 
+When two frequencies are slightly different, the phase difference $\Delta \phi$ is a periodic function whose rate is the difference between two frequencies. This is the so-called frequency beating. The periodically variable rate is called the ``beating frequency``, $\Delta f=|f_1-f_2|$. The beating period is defined as a period of time for the periodical variation, namely $1/\Delta f$. Within one beating period, there exists a time point, which corresponds to a correct phase difference between the two rf systems, namely the phase alignment. 
 
-The phase alignment is realized based on two same or two slightly different frequencies. These two frequencies are called ``\gls{glos:Syn_fre}``, denoted as \gls{symb:synchronization_freq}. Some FAIR use cases are with an identical cavity rf frequency or slightly different cavity rf frequencies of two rf systems, so two cavity rf frequencies are chosen as the synchronization frequencies. There exists many FAIR use cases with big different cavity rf frequencies as well. In this scenario, two synchronization frequencies are an integral multiple of the same or slightly different derived rf frequencies, which are the division of the revolution frequencies. e.g. the division of the revolution frequency is $f_\mathit{rev}^{X}/m$ and the synchronization frequency is $Y\cdot f_\mathit{rev}^{X}/m$, both $m$ and $Y$ are positive integers. The division of the revolution frequency and the integral multiple are determined by the circumference ratio and the harmonic number of two synchrotron. Because of the technical requirement (see Chap. ~\ref{concept}), the synchronization frequencies are impossible to have higher frequencies than cavity rf frequencies, namely $Y/m <=h^X_\mathit{rf}$. Besides, either $m/Y$ or $Y/m$ must be an integer for FAIR use cases, namely the revolution frequency is an integral multiple of the synchronization frequency or the synchronization frequency is an integral multiple of the revolution frequency, so the occurrence of positive zero-crossings of the synchronization frequencies and the positive zero-crossing of the revolution frequencies at the same time always indicates a specified bunch and bucket.
+The phase alignment is realized based on two same or two slightly different frequencies. These two frequencies are called ``\gls{glos:Syn_fre}``, denoted as \gls{symb:synchronization_freq}. Some FAIR use cases are with an identical cavity rf frequency or slightly different cavity rf frequencies of the two rf systems, so two cavity rf frequencies are chosen as the synchronization frequencies. There exists many FAIR use cases with big different cavity rf frequencies as well. In this scenario, two synchronization frequencies are an integral multiple of the same or slightly different derived rf frequencies, which are the division of the revolution frequencies. e.g. the division of the revolution frequency is $f_\mathit{rev}^{X}/m$ and the synchronization frequency is $Y\cdot f_\mathit{rev}^{X}/m$, both $m$ and $Y$ are positive integers. The division of the revolution frequency and the integral multiple are determined by the circumference ratio and the harmonic number of two synchrotron. Because of the technical requirement (see Chap. ~\ref{concept}), the synchronization frequencies are impossible to have higher frequencies than cavity rf frequencies, namely $Y/m <=h^X_\mathit{rf}$. Besides, either $m/Y$ or $Y/m$ must be an integer for FAIR use cases, namely the revolution frequency is an integral multiple of the synchronization frequency or the synchronization frequency is an integral multiple of the revolution frequency, so the occurrence of positive zero-crossings of the synchronization frequencies and the positive zero-crossing of the revolution frequencies at the same time always indicates a specified bunch and bucket.
 
-The calculation of the synchronization frequencies are explained for the different scenarios of the circumference ratio between two synchrotrons. For simplicity's sake, the following analysis is from the perspective of the large and small synchrotrons instead of the source and target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, $\kappa$, $m$, $n$ and $Y$ are used to represent positive integers and $\lambda$ a decimal number. The following analysis is based on the energy match between two synchrotrons.
+The calculation of the synchronization frequencies are explained for the different scenarios of the circumference ratio between two ring accelerators. For simplicity's sake, the following analysis is from the perspective of the large and small synchrotrons instead of the source and target synchrotrons. The superscript $X$ of \gls{symb:C_param}, \gls{symb:rev_freq}, \gls{symb:cavity_freq} and \gls{symb:harmonic_param} will be either $l$ or $s$ denoting the large or small synchrotron. $\Delta f$ represents the beating frequency, $\kappa$, $m$, $n$ and $Y$ are used to represent positive integers and $\lambda$ a decimal number. The following analysis is based on the energy match between two ring accelerators.
 
 %In order to get the phase difference between the large and small synchrotrons $\Delta \phi_{l\_s}$, positive zero-crossing points of the small synchrotron happen at
 %\begin{equation}
@@ -206,7 +205,7 @@ The calculation of the synchronization frequencies are explained for the differe
 %	\Delta \phi_{l\_s}=[\frac{f_\mathit{rf}^{l}}{f_\mathit{rf}^{s}}(2\pi x-\theta_2)+\theta_1] \mod 2\pi
 %\end{equation}
 %
-%The phase difference must be with a required value when bunches are transferred to buckets. For the phase shift method, two rf frequencies of two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required for the beating. 
+%The phase difference must be with a required value when bunches are transferred to buckets. For the phase shift method, two rf frequencies of the two rf systems with same frequency are needed. For the frequency beating method, two slightly different frequencies are required for the beating. 
  
 
 
@@ -217,7 +216,7 @@ If the ratio of the circumference of the injection/extraction orbit of the large
 \begin{equation}
 \frac{C^l}{C^s}=\kappa \label{circumference_ratio_int1}
 \end{equation}
-From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
+From the circumference ratio, the revolution frequency ratio of two ring accelerators can be calculated.
 \begin{equation}
 \frac{f_{\mathit{rev}}^{l}}{f_{\mathit{rev}}^{s}}=\frac{1}{\kappa} \label{rev_freq_ratio_int1}
 \end{equation}
@@ -266,7 +265,7 @@ The cavity rf frequency of a synchrotron is $h_{\mathit{rf}}^{X}/h_{\mathit{syn}
 \begin{equation}
 \Delta \phi_\mathit{rf}=\frac{h_{\mathit{rf}}^{trg}}{h_{\mathit{syn}}^{trg}}\Delta \phi_\mathit{syn} \mod 2\pi \label{phase_diff_rf}
 \end{equation}
-%$\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$. Namely, the phase difference between two rf systems is always constant after ${h^l_\mathit{rf}/Y}$ rf period of the large synchrotron or ${(h^s_\mathit{rf}\cdot \kappa)/Y}$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by a phase shift either of them. 
+%$\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ equals to $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$. Namely, the phase difference between the two rf systems is always constant after ${h^l_\mathit{rf}/Y}$ rf period of the large synchrotron or ${(h^s_\mathit{rf}\cdot \kappa)/Y}$ rf period of the small synchrotron. In this scenario, the phase match must be achieved by a phase shift either of them. 
 %phase_match.dox
 %\begin{figure}[!htb]
 %   \centering   
@@ -294,7 +293,7 @@ If the ratio of the circumference of the injection/extraction orbit of the large
 \begin{equation}
 \frac{C^l}{C^s}= \kappa + \lambda \label{circumference_ratio_noint0}
 \end{equation}
-where $\kappa$ is the integer part and $\lambda$ is the decimal part of the decimal number and the absolute value of $\lambda$ is smaller than 0.005 for FAIR use cases. The bound of $\lambda$ is shown in Chap. ~\ref{application}. From the circumference ratio, the revolution frequency ratio of two synchrotrons can be calculated.
+where $\kappa$ is the integer part and $\lambda$ is the decimal part of the decimal number and the absolute value of $\lambda$ is smaller than 0.005 for FAIR use cases. The bound of $\lambda$ is shown in Chap. ~\ref{application}. From the circumference ratio, the revolution frequency ratio of two ring accelerators can be calculated.
 \begin{equation}
 \frac{f_{\mathit{rev}}^{l}}{f_{\mathit{rev}}^{s}}=\frac{1}{ \kappa+ \lambda} \label{rev_freq_ratio_noint1}
 \end{equation}
@@ -365,7 +364,7 @@ Fig. ~\ref{cir_noint} shows the periodically variable phase difference between t
    \label{cir_noint}
 \end{figure} 
 
-%In this scenario, the phase difference between two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
+%In this scenario, the phase difference between the two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
 %\begin{equation} 
 %\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
 %\end{equation} 
@@ -433,7 +432,7 @@ Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference betwe
 
 
 
-%Y is the GCD of $h^l_\mathit{rf}n$ and $h^s_\mathit{rf} m$. In this scenario, the phase difference between two rf systems varies periodically. There is one time of point within the beating period, when two rf systems match phase.  The beating frequency is
+%Y is the GCD of $h^l_\mathit{rf}n$ and $h^s_\mathit{rf} m$. In this scenario, the phase difference between the two rf systems varies periodically. There is one time of point within the beating period, when two rf systems match phase.  The beating frequency is
 %\begin{equation} 
 %\Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|
 %\end{equation}
@@ -446,12 +445,12 @@ Fig. ~\ref{cir_noint_far} shows the periodically variable phase difference betwe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Phase difference between two RF systems}
 %\label{sec:phase_diff}
-%For the RF synchronization between two synchrotrons, the prerequisite is to know the phase difference between two independent RF systems. 
+%For the RF synchronization between two ring accelerators, the prerequisite is to know the phase difference between two independent RF systems. 
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phase Match of two Rf Systems}
 \label{two_sync_methods}
-For the different scenarios mentioned in Sec. ~\ref{match}, two methods are available for the phase alignment of two rf systems, the phase shift and the frequency beating methods. Both methods provide a time frame for the B2B transfer, within which bunches are transferred into buckets with the bunch-to-bucket injection center mismatch smaller than a given upper bound. This time frame is called the ``synchronization window``. Both methods are based on the prerequisite that the phase difference between two rf systems is predictable, so the LLRF feedback loops used for phase corrections must be switched off before the B2B transfer starts. e.g. beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gross_bunch-by-bunch_2015}.
+For the different scenarios mentioned in Sec. ~\ref{match}, two methods are available for the phase alignment of the two rf systems, the phase shift and the frequency beating methods. Both methods provide a time frame for the B2B transfer, within which bunches are transferred into buckets with the bunch-to-bucket injection center mismatch smaller than a given upper bound. This time frame is called the ``synchronization window``. Both methods are based on the prerequisite that the phase difference between the two rf systems is predictable, so the LLRF feedback loops used for phase corrections must be switched off before the B2B transfer starts. e.g. beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gross_bunch-by-bunch_2015}.
 
 
 %Before the B2B transfer process, feedback loops for the deviations correction of the particles from reference states (e.g. position and velocity) must switch off or freezen. e.g. beam phase feedback loop~\cite{grieser_beam_2015} and bunch-by-bunch longitudinal rf feedback loop~\cite{gross_bunch-by-bunch_2015}. 
@@ -827,10 +826,15 @@ Application of these criterion to FAIR use cases, please see Chap. ~\ref{realiza
 \subsection{Frequency Beating Method}
 \label{subsec:beating}
 
-The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. When they are identical, either the rf system of the source or that of the target is detuned to achieve the beating. The frequency is detuned at constant energy by changing the frequency and magnetic field. This will be done by operators and is out of the scope of this dissertation. The frequency detuning for the synchronization frequency is denoted as \gls{symb:freq_modulation1} and that for the cavity rf frequency is denoted as \gls{symb:freq_modulation},  $\Delta f_\mathit{rf}=\frac{h_{\mathit{rf}}^\mathit{X}}{h_{\mathit{syn}}^\mathit{X}} \Delta f_\mathit{syn}$. The synchronization window has a certain length, which is denoted as \gls{symb:syn_win_length}. The synchronization window brings a symmetric time frame with respect to the time, when the phase difference between two synchronization frequencies is closest to the required phase difference, see yellow region in Fig. ~\ref{frequency_beat}. The red dashed line shows the time of the closest to the required phase difference. The bunch-to-bucket injection center mismatch $\Delta \phi_\mathit{rf}$ within the synchronization window is related to the length of the synchronization window, see eq. ~\ref{phase_mismatch_win}. %e.g. $\Delta \phi_\mathit{rf}=\pm 0.5^\circ$  for the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100.
+The frequency beating method uses two slightly different synchronization frequencies. When two synchronization frequencies are slightly different, two rf systems are beating automatically. When they are identical, either the rf system of the source or that of the target is detuned to achieve the beating. The frequency is detuned at constant energy by changing the frequency and magnetic field. This will be done by operators and is out of the scope of this dissertation. The frequency detuning for the synchronization frequency is denoted as \gls{symb:freq_modulation1} and that for the cavity rf frequency is denoted as \gls{symb:freq_modulation},  $\Delta f_\mathit{rf}=\frac{h_{\mathit{rf}}^\mathit{X}}{h_{\mathit{syn}}^\mathit{X}} \Delta f_\mathit{syn}$. The synchronization window has a certain length, which is denoted as \gls{symb:syn_win_length}. The synchronization window brings a symmetric time frame with respect to the time, when the phase difference between two synchronization frequencies is closest to the required phase difference, see yellow region in Fig. ~\ref{frequency_beat}. The red dashed line shows the time of the closest to the required phase difference. The phase difference between  two synchronization frequencies within the synchronization window is denoted as \gls{symb:sigma_syn} and the bunch-to-bucket injection center mismatch within the synchronization window is denoted as \gls{symb:sigma_rf}. There exits the following relation
+\begin{equation}
+\sigma_\mathit{rf}=\frac{h_{\mathit{rf}}^\mathit{trg}}{h_{\mathit{syn}}^\mathit{trg}}\sigma_\mathit{syn}
+\end{equation}
+
+The bunch-to-bucket injection center mismatch is related to the length of the synchronization window, see eq. ~\ref{phase_mismatch_win}. %e.g. $\Delta \phi_\mathit{rf}=\pm 0.5^\circ$  for the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100.
 
 \begin{equation}
-\Delta \phi_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{trg}}{h_{\mathit{syn}}^\mathit{trg}}\label{phase_mismatch_win}
+\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{trg}}{h_{\mathit{syn}}^\mathit{trg}}\label{phase_mismatch_win}
 \end{equation}
 %%Tphase_shift_ill
 \begin{figure}[!htb]
@@ -840,6 +844,7 @@ The frequency beating method uses two slightly different synchronization frequen
 	\caption*{\textsl{\small{Blue dots represent bunches of the source synchrotron and red dots buckets of the target synchrotron.}}}
    \label{frequency_beat}
 \end{figure}
+
 
 %From eq. ~\ref{phase_diff_general}, we get the phase difference between two synchronization frequencies is 
 %\begin{equation}
@@ -866,9 +871,9 @@ The frequency beating method uses two slightly different synchronization frequen
 %\end{equation}
 
 %The synchronization is realized when the phase difference of two synchronization frequencies corresponds to the required phase difference. The $\Delta \phi_\mathit{syn}$ is the phase difference between two synchronization frequencies. 
-In reality, all B2B transfer have a tolerant upper bound for the bunch-to-bucket center mismatch $\Delta \phi_\mathit{rf\_max}$ (e.g. $\Delta \phi_\mathit{rf\_max}=\pm1^\circ$ for FAIR use cases). The upper bound brings a maximum synchronization window $T_{w\_max}$. The maximum synchronization window is 
+In reality, all B2B transfer have a tolerable upper bound for the bunch-to-bucket center mismatch $\sigma_\mathit{rf\_max}$ (e.g. $\sigma_\mathit{rf\_max}=\pm1^\circ$ for FAIR use cases). The upper bound brings a maximum synchronization window $T_{w\_max}$. The maximum synchronization window is 
 \begin{equation}
-T_{w\_max}=\frac{2|\Delta \phi_\mathit{rf\_max}|\cdot\frac{h_\mathit{syn}^\mathit{trg}}{h_\mathit{rf}^\mathit{trg}}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
+T_{w\_max}=\frac{2|\sigma_\mathit{rf\_max}|\cdot\frac{h_\mathit{syn}^\mathit{trg}}{h_\mathit{rf}^\mathit{trg}}}{2\pi}\cdot\frac{1}{|f_{\mathit{syn}}^\mathit{src}-f_{\mathit{syn}}^\mathit{trg}|}
 \end{equation}
 
 
@@ -930,7 +935,7 @@ $\frac{\Delta{R}}{R}$ constrained by the synchrotron lattice is used to check th
 
 
 %\subsubsection{Example of frequency beating method for SIS18 and SIS100 1 Seite}
-%Because the circumference ratio of the large synchrotron to the small synchrotron is a perfect integer, the rf frequency at the flattop of SIS18 is same as that of SIS100. So the first step for the bunch to bucket transfer is the RF frequency detune. In order to realize the frequency beating between two synchrotrons, the RF frequency of the source synchrotron or the target synchrotron or both synchrotrons can be detuned. It means that the particles on the detuned synchrotron run at an average radius different by $\bigtriangleup$R from the designed orbit R. For the synchronization of the SIS18 and the SIS100, we will detune the RF frequency on the SIS18. The SIS18 operates with a cycle length of 520ms, harmonic number of 2 ( h = 2 ), and RF frequency of approximately 0.43 MHz at injection and approximately 1.57 MHz at ejection for the $U^{28+}$~\cite{SIS18}. During nominal operation, the SIS18 forms two bunches from the beam injected at 11.4 MeV/$\mu$ and accelerates them up to 200 MeV/$\mu$. From the SIS18, 4 batches, each of 2 bunches, are transferred at  maximum 10ms intervals to the SIS100. The harmonic number of the SIS100 is 10 and the SIS100 RF frequency is fixed at approximately 1.57 MHz during the
+%Because the circumference ratio of the large synchrotron to the small synchrotron is a perfect integer, the rf frequency at the flattop of SIS18 is same as that of SIS100. So the first step for the bunch to bucket transfer is the RF frequency detune. In order to realize the frequency beating between two ring accelerators, the RF frequency of the source synchrotron or the target synchrotron or both synchrotrons can be detuned. It means that the particles on the detuned synchrotron run at an average radius different by $\bigtriangleup$R from the designed orbit R. For the synchronization of the SIS18 and the SIS100, we will detune the RF frequency on the SIS18. The SIS18 operates with a cycle length of 520ms, harmonic number of 2 ( h = 2 ), and RF frequency of approximately 0.43 MHz at injection and approximately 1.57 MHz at ejection for the $U^{28+}$~\cite{SIS18}. During nominal operation, the SIS18 forms two bunches from the beam injected at 11.4 MeV/$\mu$ and accelerates them up to 200 MeV/$\mu$. From the SIS18, 4 batches, each of 2 bunches, are transferred at  maximum 10ms intervals to the SIS100. The harmonic number of the SIS100 is 10 and the SIS100 RF frequency is fixed at approximately 1.57 MHz during the
 %injection period to simplify the RF control system and to avoid perturbing batches already transferred.
 %
 %  This RF frequency detune is done accompanying with the RF ramp. Accepting to decentre the orbit by 8mm for the SIS18~\cite{SIS18_man}: 

@@ -1,5 +1,8 @@
 \documentclass[12pt,twoside]{report}
-
+\usepackage{svg}
+\setsvg{
+    inkscape = inkscape -z -D % conversion options for svg package, export drawing instead of page
+}
 \usepackage[english]{babel}
 
 \usepackage[nopostdot,  style=super, nonumberlist, toc]{glossaries}
@@ -29,8 +32,7 @@
 \usepackage{tikz}
 
 \usepackage[numbers,sort&compress]{natbib}
-
-
+\interfootnotelinepenalty=100
 
 % Generate the glossary
 \makenoidxglossaries
@@ -407,12 +409,27 @@ sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:pha_shift_rf}{
 name=$\Delta \phi_\mathit{rf}$,
-description={Phase difference between two cavity rf frequencies for the phase shift method, Bunch-to-bucket injection center mismatch within the synchronization window for the frequency beating method},
+description={Phase difference between two cavity rf frequencies of two ring accelerators},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:pha_shift_syn}{
 name=$\Delta \phi_\mathit{syn}$,
-description={Phase difference between two synchronization frequencies for the phase shift method, phase mismatch between two synchronization frequencies for the frequency beating method},
+description={Phase difference between two synchronization frequencies of two ring accelerators},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:pha_shift_syn0}{
+name=$\Delta \phi_\mathit{syn\_0}$,
+description={Phase difference between two synchronization frequencies of two ring accelerators at time $t_\psi^X$},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:sigma_syn}{
+name=$\sigma_\mathit{syn}$,
+description={Phase mismatch between two synchronization frequencies within the synchronization window},
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:sigma_rf}{
+name=$\sigma_\mathit{rf}$,
+description={Phase mismatch between two cavity rf frequencies within the synchronization window},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:pha_shift_uncertain}{
@@ -426,13 +443,13 @@ description={Required phase shift for the Group DDS with the synchronization fre
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:raw_shift_shift}{
-name=$\Delta \phi_\mathit{shift\_raw}$,
-description={Raw value of the required phase shift for the synchronization frequency},
+name=$\Delta \phi_\mathit{adjust}$,
+description={Required phase adjustment for the phase alignment on the synchronization frequency},
 sort=symbolpi, type=symbolslist
 }
-\newglossaryentry{symb:raw1_shift_shift}{
-name=$\Delta \phi_\mathit{shift\_raw}'$,
-description={Raw value of the required phase shift for the revolution frequency},
+\newglossaryentry{symb:goal_phase}{
+name=$\Delta \phi_\mathit{goal}$,
+description={Goal phase difference between the synchronization frequencies of two ring accelerators},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:imp_shift_shift}{
@@ -441,8 +458,8 @@ description={Implemented phase shift for the Group DDS with the revolution frequ
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:init_pse}{
-name=$\phi^X_\mathit{syn}$,
-description={Initial phase of the synchronization frequency},
+name=$\phi^X_0$,
+description={Initial phase deviation between the synchronization frequency and synchronization reference signal of the synchrotron X},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:pha_step}{
@@ -463,6 +480,11 @@ sort=symbolpi, type=symbolslist
 \newglossaryentry{symb:period_phase}{
 name=$T$,
 description={Duration of rf frequency modulation for the phase shift method },
+sort=symbolpi, type=symbolslist
+}
+\newglossaryentry{symb:beating_time_phase}{
+name=$T_\mathit{wait}$,
+description={Waiting time for the phase match of the frequency beating method},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:inital_phase}{
@@ -643,12 +665,12 @@ sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:diff_sync}{
 name=$t_{\mathit{diff\_sync}}$ ,
-description={Target time difference between the synchronization frequencies of two synchrotrons in the format of time},
+description={Goal time difference between the synchronization frequencies of two ring accelerators in the format of time},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:two_TOF}{
 name=$t_{\mathit{TOF}}$,
-description={Time-of-Flight between two synchrotrons},
+description={Time-of-Flight between two ring accelerators},
 sort=symbollambda, type=symbolslist
 }
 
@@ -687,15 +709,25 @@ name=$T_{w}$,
 description={Length of the synchronization window},
 sort=symbollambda, type=symbolslist
 }
+\newglossaryentry{symb:phase_diff1}{
+name=$\phi^X$,
+description={Measured phase deviation between the synchronization frequency and the synchronization reference signal of the synchrotron X},
+sort=symbollambda, type=symbolslist
+}
 \newglossaryentry{symb:phase_diff}{
-name=$\Delta \varphi^X$,
-description={Measured phase deviation between the phase measurement signal and the synchronization reference signal of the synchrotron X by PAM module},
+name=$\varphi^X$,
+description={Measured phase deviation between the phase measurement signal and the synchronization reference signal of the synchrotron X},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:phase_diff_0}{
+name=$\varphi^X_0$,
+description={Initial value of the phase deviation between the phase measurement signal and the synchronization reference signal of the synchrotron X},
 sort=symbollambda, type=symbolslist
 }
 
 \newglossaryentry{symb:phase_diff_T0}{
 name=$\psi^X$,
-description={Extrapolated phase advance between the phase measurement signal and the synchronization reference signal of the synchrotron X by PAP module},
+description={Extrapolated phase advance between the phase measurement signal and the synchronization reference signal of the synchrotron X},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:phase_diff_time0}{
@@ -824,7 +856,7 @@ description={Primary Beam Radio Frequency},type=abbreslist
 }
 \newglossaryentry{Pbar}{
 name={Pbar},
-description={Proton bar},type=abbreslist
+description={Antiproton target},type=abbreslist
 }
 
 \newglossaryentry{SBES}{
@@ -1086,7 +1118,7 @@ description={Ratio of the revolution frequencies for synchrotrons of different s
 }
 \newglossaryentry{glos:har_ratio}{
 name={harmonic ratio},
-description={Cavity harmonic ratio between two synchrotrons}
+description={Cavity harmonic ratio between two ring accelerators}
 }
 \newglossaryentry{glos:bunch}{
 name={bunch},
@@ -1202,7 +1234,7 @@ description={Shared synchronous reference signal at each supply room (same frequ
 }
 \newglossaryentry{glos:Syn_fre}{
 name={synchronization frequencies},
-description={An integral multiple of the derived rf frequency, which is the division of the revolution frequency. It is used for the phase alignment of two rf systems}
+description={An integral multiple of the derived rf frequency, which is the division of the revolution frequency. It is used for the phase alignment of the two rf systems}
 }
 
 \newglossaryentry{glos:accuracy}{
@@ -1261,7 +1293,11 @@ description={Works as the B2B transfer master}
 
 \newglossaryentry{glos:B2B_master}{
 name={B2B transfer master},
-description={Responsible for the data collection of two synchrotrons, the data calculation, the data redistribution and the B2B transfer status check}
+description={Responsible for the data collection of two ring accelerators, the data calculation, the data redistribution and the B2B transfer status check}
+}
+\newglossaryentry{glos:cavity_rf_freq}{
+name={cavity rf frequency},
+description={Frequency of the main harmonic, according to which the beam is bunched}
 }
 \newglossaryentry{glos:B2B_t_SCU}{
 name={B2B target SCU},
@@ -1501,6 +1537,15 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\chapter{References}
 %\input{chapters/References}
 \appendix
+\chapter{Glossaries, Abbreviations and Symbols}
+%Glossary ausgeben
+\printnoidxglossary
+
+%Abbreviation ausgeben
+\printnoidxglossary[type=abbreslist,style=long]
+%Symbole ausgeben 
+\printnoidxglossary[type=symbolslist,style=long]
+
 \chapter{FAIR B2B Transfer related Timing Frames}
 \input{chapters/appendixA}
 \chapter{Timing Frames Transfer for FAIR B2B Transfer System}
@@ -1517,14 +1562,6 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \bibliographystyle{unsrtnat}
 \bibliography{reference}
 
-
-%Glossary ausgeben
-\printnoidxglossary
-
-%Abbreviation ausgeben
-\printnoidxglossary[type=abbreslist,style=long]
-%Symbole ausgeben 
-\printnoidxglossary[type=symbolslist,style=long]
 
 \cleardoublepage
 % \phantomsection
