@@ -12,8 +12,8 @@ This section analyzes the phase shift and frequency beating methods from the bea
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | c |}
     \hline
-     \tabincell{c}{Average \\radial\\ excursion} & \tabincell{c}{Relative\\moment\\ shift} &\tabincell{c}{Synchronous\\phase} & \tabincell{c}{Bucket\\size} &\tabincell{c}{Adiabaticity} & \tabincell{c}{Chromaticity\\tune\\ shift/tune} \\ \hline
-      \tabincell{c}{$H^{+}$ $\pm0.8\cdot10^{-4}$\\$U^\mathit{28+}$ $\pm2.4\cdot10^{-4}$} & $\pm0.008$	& $\pm10^\circ$ &  $>80\%$  &  $<2\cdot10^{-4}$ & $<\pm10^{-3}$\\ \hline
+     \tabincell{c}{Average \\radial\\ excursion} & \tabincell{c}{Relative\\moment\\ shift} &\tabincell{c}{Synchronous\\phase} & \tabincell{c}{Bucket\\size} & \tabincell{c}{Chromaticity\\tune shift} \\ \hline
+      \tabincell{c}{$H^{+}$ $\pm0.8\cdot10^{-4}$\\$U^\mathit{28+}$ $\pm2.4\cdot10^{-4}$} & $\pm0.008$	& $<\pm6.4^\circ$ &  $>80\%$  &  $<\pm10^{-2}$\\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -145,13 +145,13 @@ Fig.~\ref{1st_derivation} and Fig.~\ref{2nd_derivation} show the first and secon
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{1st_derivation.png}
-   \caption{First derivation of three cases.}
+   \caption{First derivative of three cases.}
    \label{1st_derivation}
 \end{figure}
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{2nd_derivation.png}
-   \caption{Second derivation of three cases.}
+   \caption{Second derivative of three cases.}
    \label{2nd_derivation}
 \end{figure}
 
@@ -221,7 +221,7 @@ As shown in Tab. \ref{momentum excursion} the maximum relative momentum shift is
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \item Synchronous phase
 
-The rf frequency modulations make the synchronous phase deviate from the nominal value $0$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase $\phi_s$(t). It is calculated by substituting values into eq.~\ref{deriva_voltage}. For three cases, the synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous without any phase jumps and small than $\pm10^\circ$. Hence, all cases are applicable.
+The rf frequency modulations make the synchronous phase deviate from the nominal value $0$. Fig.~\ref{synch_phase} shows the changes in the synchronous phase $\phi_s$(t). It is calculated by substituting values into eq.~\ref{deriva_voltage}. For three cases, the synchronous phase $\Delta \phi_s(t)$ during the modulations are continuous without any phase jumps and smaller than $\pm6^\circ$, which is determined by the bucket size. Hence, all cases are applicable.
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{synch_phase.png}
@@ -260,7 +260,7 @@ Tab. ~\ref{bucket size} shows the minimum bucket area factor for three cases. Fo
 
 By substituting the values of $\phi_s(t)$, $\dot{\phi_s(t)}$ and $\omega_{s}$ into eq.~\ref{eq:derivation}, we get the adiabaticity parameter $\varepsilon$ for three cases, see Fig.~\ref{adiabaticity2}. 
 
-Tab. ~\ref{adiabaticity_param} shows the maximum adiabaticity parameter for three cases. For case (1), the maximum of $\varepsilon$ is 0.000030. For case (2), the maximum of $\varepsilon$ occurs at $1/6T$, $2/6T$, $4/6T$ and $5/6T$, when the change rate of the synchronous phase $\dot{\phi_s(t)}$ has a maximum, shown in Fig.~\ref{synch_phase}. For case (3), the maximum of $\varepsilon$ occurs at $1/4T$ and $3/4T$, when the change rate of the synchronous phase $\dot{\phi_s(t)}$ has a maximum. For all three cases, the adiabaticity parameter meets the requirement of the adiabaticity in Tab. ~\ref{dynamic_param}, so all three cases are applicable. 
+Tab. ~\ref{adiabaticity_param} shows the maximum adiabaticity parameter for three cases. For case (1), the maximum of $\varepsilon$ is 0.000030. For case (2), the maximum of $\varepsilon$ occurs at $1/6T$, $2/6T$, $4/6T$ and $5/6T$, when the change rate of the synchronous phase $\dot{\phi_s(t)}$ has a maximum, shown in Fig.~\ref{synch_phase}. For case (3), the maximum of $\varepsilon$ occurs at $1/4T$ and $3/4T$, when the change rate of the synchronous phase $\dot{\phi_s(t)}$ has a maximum. For all three cases, the adiabaticity parameter has the order of magnitude $10^{-4}$. The calculation of the criteria of the adiabaticity is beyond the scope of this dissertation. 
 
 \begin{figure}[H]
    \centering   
@@ -286,7 +286,7 @@ Tab. ~\ref{adiabaticity_param} shows the maximum adiabaticity parameter for thre
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Transverse Dynamics Analysis }
-For the SIS18, the chromaticity $Q^`_x$ and $Q^`_y$ of $U^\mathit{28+}$ is $-6.5$ and $-4.1$. Substituting the chromaticity and the maximum momentum shift (see. Tab. \ref{momentum excursion}) into eq. ~\ref{eq:chromaticity_x}. The chromatic \gls{glos:tune} shift $\Delta Q_x$ and $\Delta Q_y$ during rf modulations for three cases can be calculated. Because case (1), case (2) and case (3) have same maximum relative momentum shift, the chromatic tune shift is same for three rf frequency modulations.
+For the SIS18, the chromaticities $Q^`_x$ and $Q^`_y$ for $U^\mathit{28+}$ operation are $-6.5$ and $-4.1$. Substituting the chromaticity and the maximum momentum shift (see. Tab. \ref{momentum excursion}) into eq. ~\ref{eq:chromaticity_x}, the chromatic \gls{glos:tune} shifts $\Delta Q_x$ and $\Delta Q_y$ during rf modulations for three cases can be calculated. Because case (1), case (2) and case (3) have the same maximum relative momentum shift, the chromatic tune shifts are same for the three rf frequency modulations.
 
 \begin{equation}
 \Delta Q_x = -6.5\cdot 1.40\cdot 10^{-4}=-9.1 \cdot 10^{-4}
@@ -294,39 +294,32 @@ For the SIS18, the chromaticity $Q^`_x$ and $Q^`_y$ of $U^\mathit{28+}$ is $-6.5
 \begin{equation}
 \Delta Q_y = -4.1\cdot 1.40\cdot 10^{-4}=-5.74\cdot 10^{-4} 
 \end{equation}
-The percentage of the chromatic tune shift to the tune is
-\begin{equation}
-\frac{\Delta Q_x}{Q_x} = \frac{-9.1 \cdot 10^{-4}}{4.17}=-2.18 \cdot 10^{-4}
-\end{equation}
-\begin{equation}
-\frac{\Delta Q_y}{Q_y} = \frac{-5.74\cdot 10^{-4}}{3.4} =-1.69 \cdot 10^{-4}
-\end{equation}
+The chromatic tune shift for three cases are negligibly small enough.
 
-The percentage of the chromatic tune shift to the tune for three cases are significantly small, which could be neglected.
-
-Although all three cases meet the requirement of the parameters accompanying with the frequency adjustment, the case (1) of a sinusoidal modulation is the best one for the beam stability because of the smaller adiabaticity.  
+In a word, although all three cases meet the requirement of the parameters accompanying with the frequency adjustment, the case (1) of a sinusoidal modulation is the best one for the beam performance because of the smaller adiabaticity.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Beam Dynamics of Frequency Beating Method for $U^\mathit{28+}$} 
-In the case of the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency detune, namely $\Delta p = 0$. Hence, the frequency detune has influence only on the longitudinal dynamics.
+In the case of the frequency beating method, we guarantee the extraction and injection energy always match, which means that the momentum is not affected by the frequency detuning, namely $\Delta p = 0$. Hence, the frequency detuning has influence only on the longitudinal dynamics.
 
 \subsubsection{Longitudinal Dynamics Analysis}
-For the frequency beating method, the rf frequency detune is done during the SIS18 rf ramp or after the ramp. Due to the SIS18 $U^\mathit{28+}$ lattice, the SIS18 $U^\mathit{28+}$ accepted orbit excursion is~\cite{liebermann_fair_2013}
+For the frequency beating method, the rf frequency detuning is done during the SIS18 rf ramp or after the ramp. Due to the SIS18 $U^\mathit{28+}$ lattice, the SIS18 $U^\mathit{28+}$ accepted orbit excursion is~\cite{liebermann_fair_2013}
 \begin{equation}
 \frac{\Delta{R}}{R} = \pm 2.4 \cdot 10^{-4}
 %\gls{symb:radius} = \pm 2.4 \cdot 10^{-4}
 \end{equation}
-From eq. ~\ref{eq:eq4}, the tolerate rf frequency change for $U^{28+}$ at the extraction energy \SI{200}{MeV/u} is
+From eq. ~\ref{eq:eq4}, the tolerable rf frequency change for $U^{28+}$ at the extraction energy \SI{200}{MeV/u} is
 \begin{equation}
 \frac{\Delta{f}_\mathit{rf}}{f_\mathit{rf}} = \pm 2.4 \cdot 10^{-4}
 %\gls{symb:freq} = \pm 2.4 \cdot 10^{-4}
 \end{equation}
-where the maximum rf frequency detune approximates to \SI{370}{Hz} for the cavity rf frequency of \SI{1.572536}{MHz} of $U^{ 28+}$. Fig.~\ref{sis18_ramp} shows the rf frequency detune during the rf ramp. In the simulation, the rf frequency is detuned at \SI{0.2756}{s} with \SI{6.08}{Hz/us}, see blue rectangle in Fig.~\ref{sis18_ramp}. For the sake of simplicity, \SI{200}{Hz} is used as the frequency detune. The SIS18 needs approximate \SI{33}{\micro\second} to reach \SI{200}{Hz} with \SI{6.08}{Hz/us}.
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{sis18_ramp.png}
-   \caption{Frequency detune during the SIS18 $U^{28+}$ rf ramp.}
-   \label{sis18_ramp}
-\end{figure}
+where the maximum rf frequency detuning approximates to \SI{370}{Hz} for the cavity rf frequency of \SI{1.572536}{MHz} of $U^{ 28+}$.
+% Fig.~\ref{sis18_ramp} shows the rf frequency detuning during the rf ramp. In the simulation, the rf frequency is detuned at \SI{0.2756}{s} with \SI{6.08}{Hz/us}, see blue rectangle in Fig.~\ref{sis18_ramp}. For the sake of simplicity, \SI{200}{Hz} is used as the frequency detuning. The SIS18 needs approximate \SI{33}{\micro\second} to reach \SI{200}{Hz} with \SI{6.08}{Hz/us}.
+%\begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=150mm]{sis18_ramp.png}
+%   \caption{Frequency detune during the SIS18 $U^{28+}$ rf ramp.}
+%   \label{sis18_ramp}
+%\end{figure}
 
 %\begin{figure}[!htb]
 %   \centering   
@@ -361,7 +354,7 @@ Case (1)
 \end{center}
 \end{table}
 
-Compared with the acceptable range of the parameters in Tab. ~\ref{dynamic_param}, the synchronize phase ,the bucket size and the adiabaticity accompanying with the \SI{7}{ms} sinusoidal modulation are far beyond the acceptable range. Hence, a sinusoidal modulation with longer period must be used to guarantee these requirement. A sinusoidal modulation with $T=\SI{20}{ms}$ is used as the frequency modulation for the phase shift of $\pi$, we have the following parameters accompanying the modulation, see Tab. ~\ref{dynamic_param_H_20}. In this case, all parameters meet the requirement.
+Compared with the acceptable range of the parameters in Tab. ~\ref{dynamic_param}, the synchronous phase, the bucket size and the adiabaticity accompanying with the \SI{7}{ms} sinusoidal modulation are far beyond the acceptable range. Hence, a sinusoidal modulation with longer period must be used to guarantee these requirement. A sinusoidal modulation with $T=\SI{20}{ms}$ is used as the frequency modulation for the phase shift of $\pi$, we have the following parameters accompanying the modulation, see Tab. ~\ref{dynamic_param_H_20}. In this case, all parameters meet the requirement.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -376,7 +369,7 @@ Compared with the acceptable range of the parameters in Tab. ~\ref{dynamic_param
 \end{center}
 \end{table}
 
-For the frequency modulation of the SIS18 $H^+$ beam, a longer period sinusoidal modulation (e.g. \SI{20}{ms}) must be used for the beam stability consideration. 
+For the frequency modulation of the SIS18 $H^+$ beam, a longer period sinusoidal modulation (e.g. \SI{20}{ms}) must be used for the beam performance consideration. 
  
 	\subsubsection{Transverse Dynamics Analysis}
 
@@ -388,18 +381,10 @@ For the SIS18, the chromaticity $Q^`_x$ and $Q^`_y$ of $H^+$ is $-7.5$ and $-4.4
 \begin{equation}
 \Delta Q_y = -4.4\cdot 3.9\cdot 10^{-4}=-1.716\cdot 10^{-3} 
 \end{equation}
-The percentage of the chromatic tune shift to the tune is
-\begin{equation}
-\frac{\Delta Q_x}{Q_x} = \frac{-2.925 \cdot 10^{-3}}{4.17}=-7.01 \cdot 10^{-4}
-\end{equation}
-\begin{equation}
-\frac{\Delta Q_y}{Q_y} = \frac{-1.716\cdot 10^{-3}}{3.4} =-5.05 \cdot 10^{-4}
-\end{equation}
-
-The percentage of the chromatic tune shift to the tune for three cases are significantly small, which could be neglected.
+The chromatic tune shift to the tune for three cases are negligible small enough.
 
 \subsection{Beam Dynamics of Frequency Beating Method for $H^+$} 
-The frequency detune has influence only on the longitudinal dynamics because of $\Delta p = 0$ during the frequency detune process.
+The frequency detuning has influence only on the longitudinal dynamics because of $\Delta p = 0$ during the frequency detuning process.
 
 \subsubsection{Longitudinal Dynamics Analysis}
 Due to the SIS18 $H^+$ lattice, the SIS18 $H^+$ accepted orbit excursion is~\cite{liebermann_fair_2013}
@@ -407,12 +392,12 @@ Due to the SIS18 $H^+$ lattice, the SIS18 $H^+$ accepted orbit excursion is~\cit
 \frac{\Delta{R}}{R} = \pm 0.8 \cdot 10^{-4}
 %\gls{symb:radius} = \pm 2.4 \cdot 10^{-4}
 \end{equation}
-From eq. ~\ref{eq:eq4}, the tolerate rf frequency change for $H^+$ at the extraction energy \SI{4}{GeV/u} is
+From eq. ~\ref{eq:eq4}, the tolerable rf frequency change for $H^+$ at the extraction energy \SI{4}{GeV/u} is
 \begin{equation}
 \frac{\Delta{f}_\mathit{rf}}{f_\mathit{rf}} = \pm 0.8 \cdot 10^{-4}
 %\gls{symb:freq} = \pm 2.4 \cdot 10^{-4}
 \end{equation}
-where the maximum rf frequency detune approximates to \SI{108}{Hz} for the cavity rf frequency of \SI{1.359358}{MHz} of $H^+$.
+where the maximum rf frequency detuning approximates to \SI{108}{Hz} for the cavity rf frequency of \SI{1.36}{MHz} of $H^+$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GMT systematic Investigation}
 \label{real_timing}
@@ -862,7 +847,7 @@ For the B2B transfer system, the upper bound latency of the frames on the WR net
 \begin{itemize}
     \item B2B Broadcast
 
-		Here we calculate the tolerate layer of the WR switch between the B2B source \gls{SCU} and the B2B target SCU, between the B2B source SCU and the source Trigger SCU and between the B2B source SCU and the target Trigger SCU.  
+		Here we calculate the tolerable layer of the WR switch between the B2B source \gls{SCU} and the B2B target SCU, between the B2B source SCU and the source Trigger SCU and between the B2B source SCU and the target Trigger SCU.  
 		\begin{equation}
 		\begin{aligned}
 			\frac{\SI{500}{\us}-\SI{10}{\us}}{\SI{60}{\us/switch}}> 8
@@ -871,7 +856,7 @@ For the B2B transfer system, the upper bound latency of the frames on the WR net
 		\end{equation}
 	\item B2B Unicast
 
-		Here we calculate the tolerate layer of the WR switch between the B2B source SCU and the DM.
+		Here we calculate the tolerable layer of the WR switch between the B2B source SCU and the DM.
 		\begin{equation}
 		\begin{aligned}
 			\frac{\SI{500}{\us}-\SI{10}{\us}}{\SI{60}{\us/switch}}> 8
@@ -1003,7 +988,7 @@ Because some modules of the FAIR B2B transfer system are still under development
    \label{setup}
 \end{figure}
 
-Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two SRS MODEL DS345 Synthesized Function Generators\footnote{\url{http://www.thinksrs.com/downloads/PDFs/Manuals/DS345m.pdf}} (short: DS345) are used to simulate the phase measurement signals of the SIS18 and that of the SIS100, which are with the frequency accuracy of $\pm\SI{5}{ppm}$ (parts per million) of selected frequency. The DS345 of the SIS18 is synchronized to an internal \SI{10}{\MHz} clock, which works as an external reference clock for the DS345 of the SIS100. The B2B source SCU, the B2B target SCU and the Trigger SCU are connected to a WR switch, which connects to the timing network. A \gls{PC}\footnote{A Linux personal computer is installed with the standard TR tools and library. \newline\url{https://www-acc.gsi.de/wiki/Timing/TimingSystemNodesCurrentRelease}} is used as a DM to produce the B2B start timing frame \verb|CMD_B2B_START|. Besides, it monitors the status of the B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of two simulated phase measurement signals within the synchronization window provided by the Trigger SCU.   
+Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two SRS MODEL DS345 Synthesized Function Generators\footnote{\url{http://www.thinksrs.com/downloads/PDFs/Manuals/DS345m.pdf}} (short: DS345) are used to simulate the phase measurement signals of the SIS18 and that of the SIS100. The DS345 of the SIS18 is synchronized to an internal \SI{10}{\MHz} clock, which works as an external reference clock for the DS345 of the SIS100. The B2B source SCU, the B2B target SCU and the Trigger SCU are connected to a WR switch, which connects to the timing network. A \gls{PC}\footnote{A Linux personal computer is installed with the standard TR tools and library. \newline\url{https://www-acc.gsi.de/wiki/Timing/TimingSystemNodesCurrentRelease}} is used as a DM to produce the B2B start timing frame \verb|CMD_B2B_START|. Besides, it monitors the status of the B2B transfer programs in all SCUs. The oscilloscope is used to monitor the alignment of two simulated phase measurement signals within the synchronization window provided by the Trigger SCU.   
 
 Fig.~\ref{testsetup_text} shows the front view of the real test setup. The SIS18 DS345 produces \SI{1.572200}{\MHz} sine wave and the SIS100 DS345 produces \SI{1.572000}{\MHz} sine wave to the oscilloscope. The SIS18 DS345 produces a digital TTL signal for the B2B source SCU, whose rising edges are aligned with the positive zero-crossings of the sine wave of \SI{1.572200}{\MHz} and the SIS100 DS345 produces a digital TTL signal for the B2B target SCU, whose rising edges are synchronized to the positive zero-crossings of the sine wave of \SI{1.572000}{\MHz}. So the beating frequency is \SI{200}{\Hz} and the beating period is \SI{5}{\ms}. 
 %testsetup.odg
@@ -1047,10 +1032,10 @@ The firmware for the B2B source SCU is the core program of the B2B transfer syst
 % 		\item[-]Step 2. When it receives the timing frame CMD_START\_B2B, it collects the predicted phase and checks whether it is within a proper range of $0$ to $2\pi$. If not, it sends a timing frame TGM\_B2B\_ERROR to the WR network and goes back to the step 1, which indicates the data error.
  		\item[-]Step 2. When it receives the timing frame \verb|CMD_START_B2B|, the program reads the extrapolated phase and the phase deviation slope from the PAP module, as well as the corresponding timestamp .
 		\item[-]Step 3. The program waits for the \verb|TGM_PHASE_TIME| timing frame from the B2B target SCU, which contains the extrapolated phase, the corresponding timestamp and the slope of the phase deviation.
-		\item[-]Step 4. When the program receives the timing frame \verb|TGM_PHASE_TIME| within a specified timeout interval, it checks whether the timestamp of the extrapolated phase of the target synchrotron equals to that of the source synchrotron. When they are equal, the program calculates the synchronization window, the phase shift/jump value and the phase correction value. When the program doesn't receive the timing frame \verb|TGM_PHASE_TIME| within a specified timeout interval or two timestamp are not equal, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the timeout error of the frame. Besides, it checks whether the required phase shift is within the range of $-\pi$ to $\pi$ and whether the start of the synchronization window is in the safety margin. If at least one of them is not correct, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the calculation error. 
+		\item[-]Step 4. When the program receives the timing frame \verb|TGM_PHASE_TIME| within a specified timeout interval, it checks whether the timestamp of the extrapolated phase of the target synchrotron equals to that of the source synchrotron. When they are equal, the program calculates the synchronization window, the phase shift/jump value and the phase correction value. When the program doesn't receive the timing frame \verb|TGM_PHASE_TIME| within a specified timeout interval or two timestamp are not equal, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the timeout error of the frame. Besides, it checks whether the start of the synchronization window is within the safety margin. If the start of the synchronization window is out of the safety margin, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the calculation error. 
 		\item[-]Step 5. The program sends the timing frame \verb|TGM_SYNCH_WIN| and \verb|TGM_PHASE_CORRECTION| to the WR network. \verb|TGM_SYNCH_WIN| indicates the start of the synchronization window and \verb|TGM_PHASE_CORRECTION| is used for the Trigger SCUs for the reproduction of the bucket indication signal.
 		\item[-]Step 6. The program gives the phase correction and phase shift/jump values to corresponding modules.
-		\item[-]Step 7. The program waits for the timing frame \verb|TGM_KICKER_TIME_S| from the source Trigger SCU and \verb|TGM_KICKER_TIME_T| from the target Trigger SCU, which contains the extraction/injection kicker trigger and firing timestamp. When it does not receive the timing frames within a specified timeout interval, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the timeout error of the frame.
+		\item[-]Step 7. The program waits for the timing frame \verb|CMD_KICKER_TIME_S| from the source Trigger SCU and \verb|TGM_KICKER_TIME_T| from the target Trigger SCU, which contains the extraction/injection kicker trigger and firing timestamp. When it does not receive the timing frames within a specified timeout interval, it sends a timing frame \verb|TGM_B2B_ERROR| to the WR network and goes back to the step 1, which indicates the timeout error of the frame.
 		\item[-]Step 8. When the program receives the timing frames mentioned in the step 7 within a specified timeout interval, it checks the B2B transfer status and sends \verb|TGM_B2B_STATUS| to the WR network and goes to the step 1. The B2B transfer is successful, if all of the following checks are correct. Or the B2B transfer is failure. 
 \begin{itemize}
 	\item Trigger time $<$ firing time of the extraction kicker of the source synchrotron
@@ -1091,7 +1076,7 @@ Fig. ~\ref{flow_chart_trigger} shows the flow chart of the program of the source
 		\item[-]Step 1. The program waits for the \verb|CMD_START_B2B| timing frame.
 		\item[-]Step 2. The program waits for the \verb|TGM_PHASE_CORRECTION| timing frame.
 		\item[-]Step 3. The program gives the phase correction value to the corresponding SR module for the bucket indication signal reproduction.
- 		\item[-]Step 4. The program waits for the timing frame \verb|TGM_SYNCH_WIN| to indicate the synchronization window for the kicker trigger.
+ 		\item[-]Step 4. The program waits for the timing frame \verb|CMD_SYNCH_WIN| to indicate the synchronization window for the kicker trigger.
 		\item[-]Step 5. After the beam extraction, the program collects the trigger and firing timestamp. 
 		\item[-]Step 6. The program sends the \verb|TGM_KICKER_TIME_S| timing frame to the B2B source SCU and goes back to the step 1.
 	\end{itemize}
@@ -1101,7 +1086,7 @@ Fig. ~\ref{flow_chart_trigger} shows the flow chart of the program of the source
 \subsection{Time Constraints}
 For the FAIR B2B transfer system, the time constraints are very important and strict. Because beam feedback loops are switched off before the B2B transfer, the beam is stable only for a period of time. For FAIR, the upper bound B2B transfer time is \SI{10}{\ms}. 
 
-Fig. ~\ref{time_constraint} shows the time constraint of the system. The \verb|CMD_START_B2B| is executed at \gls{symb:t_b2b}. The PAP module needs \SI{500}{\us} for the phase extrapolation, so the B2B source and target SCUs collect the extrapolated phase and the slope from the PAP module at $t_\mathit{B2B} + \SI{500}{\us}$. The upper bound latency of the timing frame \verb|TGM_PHASE_TIME| transfer on the WR network from the B2B target SCU to the B2B source SCU is \SI{500}{\us}, so the B2B source SCU receives the timing frame \verb|TGM_PHASE_TIME| at around $t_\mathit{B2B} + \SI{500}{\us} + \SI{500}{\us} = t_\mathit{B2B} + \SI{1}{\ms}$. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frames \verb|TGM_SYNCH_WIN| and \verb|TGM_PHASE_CORRECTION| and the data transferring to the corresponding module. The timing frames \verb|TGM_SYNCH_WIN| and \verb|TGM_PHASE_CORRECTION| are sent by the B2B source SCU at around $t_\mathit{B2B} + \SI{1}{\ms} + \SI{100}{\us} = t_\mathit{B2B} + \SI{1.1}{\ms}$. The upper bound latency of the timing frame transfer on the WR network from the B2B source SCU to the Trigger SCUs is \SI{500}{\us}, so the Trigger SCUs receives \verb|TGM_PHASE_CORRECTION| and \verb|TGM_SYNCH_WIN| at around $t_\mathit{B2B} + \SI{1.1}{\ms} + \SI{500}{\us} = t_\mathit{B2B} + \SI{1.6}{\ms}$. The start of the synchronization window must be later than $t_\mathit{B2B} + \SI{1.1}{\ms} + 2\cdot\SI{500}{\us} = t_\mathit{B2B} + \SI{2.1}{\ms}$. Two upper bound latency of the WR network are caused by the timing frame \verb|TGM_SYNCH_WIN| transfer from the B2B source SCU back to the DM and further from the DM to the BI devices. After bunches are transferred into buckets, there is no hard real time requirement for the Trigger SCU to collect the trigger and firing timestamps and to send the timing frame \verb|TGM_KICKER_TIME_S|, so \SI{1}{\ms} is used for the source Trigger SCU to do this task and the source Trigger SCU sends \verb|TGM_KICKER_TIME_S| at around $t_\mathit{B2B} + \SI{10}{\ms} + \SI{1}{\ms} = t_\mathit{B2B} + \SI{11}{\ms}$. The same time constraints is also for the target Trigger SCU. The B2B source SCU receives \verb|TGM_KICKER_TIME_S| and \verb|TGM_KICKER_TIME_T| from the WR network at around $t_\mathit{B2B} + \SI{11}{\ms} + \SI{500}{\us} = t_\mathit{B2B} + \SI{11.5}{\ms}$. The B2B source SCU uses \SI{100}{\us} to check the B2B transfer status and sends \verb|TGM_B2B_STATUS| at around $t_\mathit{B2B} + \SI{11.5}{\ms} + \SI{100}{\us} = t_\mathit{B2B} + \SI{11.6}{\ms}$. The BI devices receives the timing frame \verb|TGM_B2B_STATUS| at around $t_\mathit{B2B} + \SI{11.6}{\ms} + 2\cdot\SI{500}{\us} = t_\mathit{B2B} + \SI{12.6}{\ms}$. $2\cdot\SI{500}{\us}$ is two upper bound latency of the WR network, which is caused by the timing frame \verb|TGM_B2B_STATUS| transfer from the B2B source SCU back to the DM and further from the DM to the BI devices.
+Fig. ~\ref{time_constraint} shows the time constraint of the system. The \verb|CMD_START_B2B| is executed at \gls{symb:t_b2b}. The PAP module needs \SI{500}{\us} for the phase extrapolation, so the B2B source and target SCUs collect the extrapolated phase and the slope from the PAP module at $t_\mathit{B2B} + \SI{500}{\us}$. The upper bound latency of the timing frame \verb|TGM_PHASE_TIME| transfer on the WR network from the B2B target SCU to the B2B source SCU is \SI{500}{\us}, so the B2B source SCU receives the timing frame \verb|TGM_PHASE_TIME| at around $t_\mathit{B2B} + \SI{500}{\us} + \SI{500}{\us} = t_\mathit{B2B} + \SI{1}{\ms}$. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frames \verb|TGM_SYNCH_WIN| and \verb|TGM_PHASE_CORRECTION| and the data transferring to the corresponding module. The timing frames \verb|TGM_SYNCH_WIN| and \verb|TGM_PHASE_CORRECTION| are sent by the B2B source SCU at around $t_\mathit{B2B} + \SI{1}{\ms} + \SI{100}{\us} = t_\mathit{B2B} + \SI{1.1}{\ms}$. The upper bound latency of the timing frame transfer on the WR network from the B2B source SCU to the Trigger SCUs is \SI{500}{\us}, so the Trigger SCUs receives \verb|TGM_PHASE_CORRECTION| and \verb|CMD_SYNCH_WIN| at around $t_\mathit{B2B} + \SI{1.1}{\ms} + \SI{500}{\us} = t_\mathit{B2B} + \SI{1.6}{\ms}$. The start of the synchronization window must be later than $t_\mathit{B2B} + \SI{1.1}{\ms} + 2\cdot\SI{500}{\us} = t_\mathit{B2B} + \SI{2.1}{\ms}$. Two upper bound latency of the WR network are caused by the timing frame \verb|TGM_SYNCH_WIN| transfer from the B2B source SCU back to the DM and by the timing frame \verb|CMD_SYNCH_WIN| transfer further from the DM to the BI devices. After bunches are transferred into buckets, there is no hard real time requirement for the Trigger SCU to collect the trigger and firing timestamps and to send the timing frame \verb|TGM_KICKER_TIME_S|, so \SI{1}{\ms} is used for the source Trigger SCU to do this task and the source Trigger SCU sends \verb|TGM_KICKER_TIME_S| at around $t_\mathit{B2B} + \SI{10}{\ms} + \SI{1}{\ms} = t_\mathit{B2B} + \SI{11}{\ms}$. The same time constraints is also for the target Trigger SCU. The B2B source SCU receives \verb|TGM_KICKER_TIME_S| and \verb|TGM_KICKER_TIME_T| from the WR network at around $t_\mathit{B2B} + \SI{11}{\ms} + \SI{500}{\us} = t_\mathit{B2B} + \SI{11.5}{\ms}$. The B2B source SCU uses \SI{100}{\us} to check the B2B transfer status and sends \verb|TGM_B2B_STATUS| at around $t_\mathit{B2B} + \SI{11.5}{\ms} + \SI{100}{\us} = t_\mathit{B2B} + \SI{11.6}{\ms}$. The BI devices receives the timing frame \verb|TGM_B2B_STATUS| at around $t_\mathit{B2B} + \SI{11.6}{\ms} + 2\cdot\SI{500}{\us} = t_\mathit{B2B} + \SI{12.6}{\ms}$. $2\cdot\SI{500}{\us}$ is two upper bound latency of the WR network, which is caused by the timing frame \verb|TGM_B2B_STATUS| transfer from the B2B source SCU back to the DM and further from the DM to the BI devices.
 
 %For the B2B transfer system, the time constraints are very important and strict. Fig. ~\ref{time_constraint} shows the time constraint of the system. The CMD\_START\_B2B is executed at \gls{symb:t_b2b}. The rf phase extrapolation needs \SI{500}{\us}, so the B2B source and target SCUs collect the phase data at $t_\mathit{B2B}$ + \SI{500}{\us} and need about \SI{450}{\ns} for the data collection. The B2B source SCU receives the timing frame TGM\_PHASE\_TIME at around $t_\mathit{B2B}$ + \SI{500}{\us} + \SI{450}{\ns} + \SI{500}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{1}{\ms}. The second \SI{500}{\us} is the upper bound latency of the WR network. After that, the B2B source SCU needs about \SI{100}{\us} for the calculation, the sending of the timing frame TGM\_SYNCH\_WIN and TGM\_PHASE\_CORRECTION and data transferring to the corresponding module. TGM\_SYNCH\_WIN is sent at around $t_\mathit{B2B}$ + \SI{1}{\ms} + \SI{100}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{1.1}{\ms}. The Trigger SCU receives TGM\_PHASE\_CORRECTION and TGM\_SYNCH\_WIN at around $t_\mathit{B2B}$ + \SI{1.1}{\ms} + \SI{500}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{1.6}{\ms}. The \SI{500}{\us} is the latency of the WR network. The start of the synchronization window must be later than $t_\mathit{B2B}$ + \SI{1.1}{\ms} + 2$\cdot$\SI{500}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{2.1}{\ms}, because the TGM\_SYNCH\_WIN must be transferred back to the DM and the DM transfers it further to the beam instrumentation devices via WR network. The upward to DM transfer needs maximum \SI{500}{\us} and the transfer from the DM to BI needs another \SI{500}{\us}.  The upper bound B2B transfer time is \SI{10}{\ms}, which is decided by the duration of the stable beam. There is no hard real time for the collection of the trigger and firing timestamps and timing frame TGM\_KICKER\_TIME\_S sending, we give \SI{1}{\ms} for the source Trigger SCU to do this task and the source Trigger SCU sends TGM\_KICKER\_TIME\_S at around $t_\mathit{B2B}$ + \SI{10}{\ms} + \SI{1}{\ms} $\approx$ $t_\mathit{B2B}$ + \SI{11}{\ms}. The same time constraints is also for the target Trigger SCU. The B2B source SCU receives TGM\_KICKER\_TIME\_S and TGM\_KICKER\_TIME\_T at around $t_\mathit{B2B}$ + \SI{11}{\ms} + \SI{500}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{11.5}{\ms}. The \SI{500}{\us} is the latency of the WR network. The B2B source SCU sends TGM\_B2B\_STATUS at around $t_\mathit{B2B}$ + \SI{11.5}{\ms} + \SI{100}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{11.6}{\ms}. The BI devices receives the timing frame TGM\_B2B\_STATUS at around $t_\mathit{B2B}$ + \SI{11.6}{\ms} + 2$\cdot$\SI{500}{\us} $\approx$ $t_\mathit{B2B}$ + \SI{12.6}{\ms}.
 

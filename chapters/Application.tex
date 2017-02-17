@@ -139,10 +139,10 @@ For the frequency beating method, two slightly different frequencies are chosen 
 %\begin{itemize}
 %	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) > \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$ 
 %
-%The frequency detune for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detune is preferred for the small synchrotron.
+%The frequency detuning for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detuning is preferred for the small synchrotron.
 %	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) < \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$
 %
-%The frequency detune for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detune is preferred for the large synchrotron.
+%The frequency detuning for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detuning is preferred for the large synchrotron.
 %\end{itemize}
 
 %For the phase shift method, the bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when the phase of the two rf systems are aligned. It indicates only the passing time of the first bucket, when it is phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_phase}.
@@ -346,10 +346,10 @@ The goal time difference between the SIS18 and SIS100 rf systems equals to $t_{v
 %\begin{itemize}
 %	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} > \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$ 
 %
-%The frequency detune for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detune is preferred for the small synchrotron.
+%The frequency detuning for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detuning is preferred for the small synchrotron.
 %	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} < \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$
 %
-%The frequency detune for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detune is preferred for the large synchrotron.
+%The frequency detuning for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detuning is preferred for the large synchrotron.
 %\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of $H^{+}$ B2B Transfer from SIS18 to SIS100}
@@ -765,37 +765,37 @@ The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/2
 \end{center}
 \end{table}
 There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the CR), which is beyond the scope of this dissertation. Detailed parameters of the $H^{+}$ B2B transfer from the SIS100 to the CR, please see Appendix \ref{100toCR}.
-
-Here we give another operation example for the B2B transfer from the SIS100 to the CR via the Pbar with the smaller bunch-to-bucket inject center mismatch, that the energy of the proton beam before the Pbar is \SI{8.6}{GeV/\atomicmassunit} and the antiproton energy after the Pbar is \SI{3}{GeV/\atomicmassunit} with $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
-\begin{equation} 
-\frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.8-0.001=\frac{m}{n}+ \lambda=\frac{24}{5}-0.001
-\end{equation}
-
-\begin{equation} 
-\frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.001\cdot 5}
-\end{equation}
-
-The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 24=24$ is 1, namely $Y=1$. The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton1}. 
-
-\begin{table}[!htb]
-\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to an recommended case of the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method}
-\label{tab:100tothe CRproton1}
-\begin{center}
-    \begin{tabular}{ | c | c | c| }
-    \hline
-	&  Small synchrotron (CR) is target synchrotron \\ \hline
-   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{54.866}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
-	\tabincell{c}{$\Delta f$} & \SI{241}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{18.226}{\micro\second}$ \\ \hline
-	\tabincell{c}{$\sigma_\mathit{rf}$}&$\pm18.9^\circ$\\ \hline
-
-    \end{tabular}
-\end{center}
-\end{table}
+%
+%Here we give another operation example for the B2B transfer from the SIS100 to the CR via the Pbar with the smaller bunch-to-bucket inject center mismatch, that the energy of the proton beam before the Pbar is \SI{8.6}{GeV/\atomicmassunit} and the antiproton energy after the Pbar is \SI{3}{GeV/\atomicmassunit} with $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
+%\begin{equation} 
+%\frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.8-0.001=\frac{m}{n}+ \lambda=\frac{24}{5}-0.001
+%\end{equation}
+%
+%\begin{equation} 
+%\frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.001\cdot 5}
+%\end{equation}
+%
+%The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 24=24$ is 1, namely $Y=1$. The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton1}. 
+%
+%\begin{table}[!htb]
+%\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%\caption{Parameters related to an recommended case of the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method}
+%\label{tab:100tothe CRproton1}
+%\begin{center}
+%    \begin{tabular}{ | c | c | c| }
+%    \hline
+%	&  Small synchrotron (CR) is target synchrotron \\ \hline
+%   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{54.866}{\kHz}$  \\ \hline
+%	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
+%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
+%	\tabincell{c}{$f_\mathit{ref}$} & \SI{100}{kHz} \\ \hline
+%	\tabincell{c}{$\Delta f$} & \SI{241}{\Hz}\\ \hline
+%	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{CR}=\SI{18.226}{\micro\second}$ \\ \hline
+%	\tabincell{c}{$\sigma_\mathit{rf}$}&$\pm18.9^\circ$\\ \hline
+%
+%    \end{tabular}
+%\end{center}
+%\end{table}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -915,33 +915,33 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR
 
 There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the ESR or the coasting beam injection), which is beyond the scope of this dissertation. More parameters about the B2B transfer from the SIS18 to the ESR via the FRS, please see Appendix \ref{sec:18toESRvithe FRS}.
 
-Here we give another operation example for the B2B transfer from the SIS18 to the ESR via the FRS with the smaller bunch-to-bucket inject center mismatch, that the energy of the heavy ion beam before the FRS is \SI{590}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit} with $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
-\begin{equation} 
-\frac{f_{\mathit{rev}}^{\mathit{ESR}}}{f_{\mathit{rev}}^{\mathit{SIS18}}}=1.8+0.006=\frac{m}{n}+ \lambda=\frac{9}{5}+0.006
-\end{equation}
-
-\begin{equation}
-\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.006\cdot 5}
-\end{equation}
-The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS1}.
-\begin{table}[!htb]
-\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to an recommended case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method}
-\label{18tothe ESRviaFRS1}
-\begin{center}
-    \begin{tabular}{ | c | c | }
-    \hline
-	&  Small synchrotron (ESR) is target synchrotron \\ \hline
-   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{219.642}{\kHz}$  \\ \hline
-	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
-	\tabincell{c}{$f_\mathit{ref}$} & \SI{200}{kHz} \\ \hline
-	\tabincell{c}{$\Delta f$} & \SI{730}{\Hz}\\ \hline
-	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{ESR}=\SI{4.553}{\micro\second}$ \\ \hline
-	\tabincell{c}{$\sigma_\mathit{rf}$}&$\pm5.4^\circ$\\ \hline
-    \end{tabular}
-\end{center}
-\end{table}
+%Here we give another operation example for the B2B transfer from the SIS18 to the ESR via the FRS with the smaller bunch-to-bucket inject center mismatch, that the energy of the heavy ion beam before the FRS is \SI{590}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit} with $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
+%\begin{equation} 
+%\frac{f_{\mathit{rev}}^{\mathit{ESR}}}{f_{\mathit{rev}}^{\mathit{SIS18}}}=1.8+0.006=\frac{m}{n}+ \lambda=\frac{9}{5}+0.006
+%\end{equation}
+%
+%\begin{equation}
+%\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.006\cdot 5}
+%\end{equation}
+%The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS1}.
+%\begin{table}[!htb]
+%\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%\caption{Parameters related to an recommended case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method}
+%\label{18tothe ESRviaFRS1}
+%\begin{center}
+%    \begin{tabular}{ | c | c | }
+%    \hline
+%	&  Small synchrotron (ESR) is target synchrotron \\ \hline
+%   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{219.642}{\kHz}$  \\ \hline
+%	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
+%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
+%	\tabincell{c}{$f_\mathit{ref}$} & \SI{200}{kHz} \\ \hline
+%	\tabincell{c}{$\Delta f$} & \SI{730}{\Hz}\\ \hline
+%	\tabincell{c}{$T_w$}& $T_{\mathit{syn}}^{ESR}=\SI{4.553}{\micro\second}$ \\ \hline
+%	\tabincell{c}{$\sigma_\mathit{rf}$}&$\pm5.4^\circ$\\ \hline
+%    \end{tabular}
+%\end{center}
+%\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary of Formulas related to B2B Transfer}

@@ -7,52 +7,50 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces The maximum average radial excursion of three cases\relax }}{67}{table.caption.48}
 \contentsline {table}{\numberline {5.3}{\ignorespaces The maximum relative momentum shift of three cases\relax }}{68}{table.caption.50}
 \contentsline {table}{\numberline {5.4}{\ignorespaces The minimum bucket area factor of three cases\relax }}{70}{table.caption.53}
-\contentsline {table}{\numberline {5.5}{\ignorespaces The maximum adiabaticity of three cases\relax }}{70}{table.caption.55}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Parameters accompanying with a \SI {7}{ms} sinusoidal modulation for the SIS18 $H^+$ beam\relax }}{72}{table.caption.57}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Parameters accompanying with a \SI {20}{ms} sinusoidal modulation for the SIS18 $H^+$ beam\relax }}{73}{table.caption.58}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Uncertainty of the phase alignment of all FAIR B2B use cases\relax }}{76}{table.caption.59}
-\contentsline {table}{\numberline {5.9}{\ignorespaces B2B transfer requirements on the WR network\relax }}{80}{table.caption.62}
-\contentsline {table}{\numberline {5.10}{\ignorespaces The connection between the traffic generator and WR switches\relax }}{81}{table.caption.64}
-\contentsline {table}{\numberline {5.11}{\ignorespaces The average latency and jitter of the B2B Broadcast frames\relax }}{83}{table.caption.67}
-\contentsline {table}{\numberline {5.12}{\ignorespaces The maximum latency and jitter of the B2B Broadcast frames\relax }}{83}{table.caption.69}
-\contentsline {table}{\numberline {5.13}{\ignorespaces The result of the WR network test for the B2B transfer\relax }}{85}{table.caption.72}
-\contentsline {table}{\numberline {5.14}{\ignorespaces The firing delay for SIS18 kicker magnets in two crates\relax }}{88}{table.caption.77}
-\contentsline {table}{\numberline {5.15}{\ignorespaces The delay for firing SIS00 injection kicker\relax }}{89}{table.caption.79}
+\contentsline {table}{\numberline {5.5}{\ignorespaces The maximum adiabaticity of three cases\relax }}{71}{table.caption.55}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Parameters accompanying with a \SI {7}{ms} sinusoidal modulation for the SIS18 $H^+$ beam\relax }}{72}{table.caption.56}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Parameters accompanying with a \SI {20}{ms} sinusoidal modulation for the SIS18 $H^+$ beam\relax }}{72}{table.caption.57}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Uncertainty of the phase alignment of all FAIR B2B use cases\relax }}{76}{table.caption.58}
+\contentsline {table}{\numberline {5.9}{\ignorespaces B2B transfer requirements on the WR network\relax }}{79}{table.caption.61}
+\contentsline {table}{\numberline {5.10}{\ignorespaces The connection between the traffic generator and WR switches\relax }}{81}{table.caption.63}
+\contentsline {table}{\numberline {5.11}{\ignorespaces The average latency and jitter of the B2B Broadcast frames\relax }}{82}{table.caption.66}
+\contentsline {table}{\numberline {5.12}{\ignorespaces The maximum latency and jitter of the B2B Broadcast frames\relax }}{83}{table.caption.68}
+\contentsline {table}{\numberline {5.13}{\ignorespaces The result of the WR network test for the B2B transfer\relax }}{84}{table.caption.71}
+\contentsline {table}{\numberline {5.14}{\ignorespaces The firing delay for SIS18 kicker magnets in two crates\relax }}{88}{table.caption.76}
+\contentsline {table}{\numberline {5.15}{\ignorespaces The delay for firing SIS00 injection kicker\relax }}{89}{table.caption.78}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces List of the FAIR B2B transfer use cases\relax }}{100}{table.caption.86}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is an integer and the large synchrotron is the target\relax }}{101}{table.caption.87}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is an integer and the small synchrotron is the target\relax }}{102}{table.caption.88}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method\relax }}{103}{table.caption.89}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method\relax }}{103}{table.caption.90}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is close to an integer and the large synchrotron is the target\relax }}{105}{table.caption.91}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is close to an integer and the small synchrotron is the target\relax }}{105}{table.caption.92}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Parameters related to the h=4 B2B transfer from the SIS18 to the ESR with the frequency beating method\relax }}{106}{table.caption.93}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Parameters related to the h=1 B2B transfer from the SIS18 to the ESR with the frequency beating method\relax }}{107}{table.caption.94}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Parameters related to the B2B transfer from the ESR to the CRYRING with the frequency beating method\relax }}{107}{table.caption.95}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the large synchrotron is the target\relax }}{109}{table.caption.96}
-\contentsline {table}{\numberline {6.12}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the small synchrotron is the target\relax }}{109}{table.caption.97}
-\contentsline {table}{\numberline {6.13}{\ignorespaces Parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method\relax }}{110}{table.caption.98}
-\contentsline {table}{\numberline {6.14}{\ignorespaces Parameters related to an recommended case of the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method\relax }}{110}{table.caption.99}
-\contentsline {table}{\numberline {6.15}{\ignorespaces Parameters related to the RIB B2B transfer from the SIS100 to the CR with the frequency beating method\relax }}{111}{table.caption.100}
-\contentsline {table}{\numberline {6.16}{\ignorespaces Parameters related to the B2B transfer from the CR to the HESR with the frequency beating method\relax }}{112}{table.caption.101}
-\contentsline {table}{\numberline {6.17}{\ignorespaces Parameters related to an applied case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method\relax }}{113}{table.caption.102}
-\contentsline {table}{\numberline {6.18}{\ignorespaces Parameters related to an recommended case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method\relax }}{114}{table.caption.103}
-\contentsline {table}{\numberline {6.19}{\ignorespaces Summary of the formulas related to the B2B transfer when the large synchrotron is the target\relax }}{115}{table.caption.104}
-\contentsline {table}{\numberline {6.20}{\ignorespaces Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is longer than the period of the synchronization frequency of the target synchrotron\relax }}{116}{table.caption.105}
-\contentsline {table}{\numberline {6.21}{\ignorespaces Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is shorter than the period of the synchronization frequency of the target synchrotron\relax }}{117}{table.caption.106}
+\contentsline {table}{\numberline {6.1}{\ignorespaces List of the FAIR B2B transfer use cases\relax }}{99}{table.caption.85}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is an integer and the large synchrotron is the target\relax }}{100}{table.caption.86}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is an integer and the small synchrotron is the target\relax }}{101}{table.caption.87}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method\relax }}{102}{table.caption.88}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method\relax }}{102}{table.caption.89}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is close to an integer and the large synchrotron is the target\relax }}{104}{table.caption.90}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is close to an integer and the small synchrotron is the target\relax }}{104}{table.caption.91}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Parameters related to the h=4 B2B transfer from the SIS18 to the ESR with the frequency beating method\relax }}{105}{table.caption.92}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Parameters related to the h=1 B2B transfer from the SIS18 to the ESR with the frequency beating method\relax }}{106}{table.caption.93}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Parameters related to the B2B transfer from the ESR to the CRYRING with the frequency beating method\relax }}{106}{table.caption.94}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the large synchrotron is the target\relax }}{108}{table.caption.95}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the small synchrotron is the target\relax }}{108}{table.caption.96}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method\relax }}{109}{table.caption.97}
+\contentsline {table}{\numberline {6.14}{\ignorespaces Parameters related to the RIB B2B transfer from the SIS100 to the CR with the frequency beating method\relax }}{110}{table.caption.98}
+\contentsline {table}{\numberline {6.15}{\ignorespaces Parameters related to the B2B transfer from the CR to the HESR with the frequency beating method\relax }}{111}{table.caption.99}
+\contentsline {table}{\numberline {6.16}{\ignorespaces Parameters related to an applied case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method\relax }}{111}{table.caption.100}
+\contentsline {table}{\numberline {6.17}{\ignorespaces Summary of the formulas related to the B2B transfer when the large synchrotron is the target\relax }}{113}{table.caption.101}
+\contentsline {table}{\numberline {6.18}{\ignorespaces Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is longer than the period of the synchronization frequency of the target synchrotron\relax }}{114}{table.caption.102}
+\contentsline {table}{\numberline {6.19}{\ignorespaces Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is shorter than the period of the synchronization frequency of the target synchrotron\relax }}{115}{table.caption.103}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces B2B timing frames\relax }}{137}{table.caption.113}
+\contentsline {table}{\numberline {B.1}{\ignorespaces B2B timing frames\relax }}{135}{table.caption.110}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the SIS100}}{140}{table.D.1}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the ESR}}{141}{table.D.2}
-\contentsline {table}{\numberline {D.3}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}}{142}{table.D.3}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Parameters related to the B2B transfer from the ESR to the CRYRING}}{143}{table.D.4}
-\contentsline {table}{\numberline {D.5}{\ignorespaces Parameters related to the B2B transfer from the CR to the HESR}}{144}{table.D.5}
-\contentsline {table}{\numberline {D.6}{\ignorespaces Parameters related to the B2B transfer from the SIS100 to the CR}}{145}{table.D.6}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the SIS100}}{138}{table.D.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the ESR}}{139}{table.D.2}
+\contentsline {table}{\numberline {D.3}{\ignorespaces Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}}{140}{table.D.3}
+\contentsline {table}{\numberline {D.4}{\ignorespaces Parameters related to the B2B transfer from the ESR to the CRYRING}}{141}{table.D.4}
+\contentsline {table}{\numberline {D.5}{\ignorespaces Parameters related to the B2B transfer from the CR to the HESR}}{142}{table.D.5}
+\contentsline {table}{\numberline {D.6}{\ignorespaces Parameters related to the B2B transfer from the SIS100 to the CR}}{143}{table.D.6}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {E.1}{\ignorespaces Parameters for the B2B transfer provided by SM\relax }}{147}{table.caption.115}
+\contentsline {table}{\numberline {E.1}{\ignorespaces Parameters for the B2B transfer provided by SM\relax }}{145}{table.caption.112}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Parameters of kicker magnets\relax }}{148}{table.caption.116}
+\contentsline {table}{\numberline {F.1}{\ignorespaces Parameters of kicker magnets\relax }}{146}{table.caption.113}

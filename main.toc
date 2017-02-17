@@ -58,56 +58,56 @@
 \contentsline {subsubsection}{\numberline {5.1.3.2}Transverse Dynamics Analysis}{73}{subsubsection.5.1.3.2}
 \contentsline {subsection}{\numberline {5.1.4}Beam Dynamics of Frequency Beating Method for $H^+$}{73}{subsection.5.1.4}
 \contentsline {subsubsection}{\numberline {5.1.4.1}Longitudinal Dynamics Analysis}{73}{subsubsection.5.1.4.1}
-\contentsline {section}{\numberline {5.2}GMT systematic Investigation}{74}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Calculation of the Start of the Synchronization Window}{74}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}GMT systematic Investigation}{73}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Calculation of the Start of the Synchronization Window}{73}{subsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.1.1}Uncertainty of Phase Alignment}{74}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Uncertainty of the Start of the Synchronization Window}{77}{subsubsection.5.2.1.2}
-\contentsline {subsubsection}{\numberline {5.2.1.3}Accuracy of the Start of the Synchronization Window}{78}{subsubsection.5.2.1.3}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Uncertainty of the Start of the Synchronization Window}{76}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}Accuracy of the Start of the Synchronization Window}{77}{subsubsection.5.2.1.3}
 \contentsline {subsection}{\numberline {5.2.2}Characterization of WR Network}{78}{subsection.5.2.2}
 \contentsline {subsubsection}{\numberline {5.2.2.1}WR Network Test Setup}{80}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Test Result of Frame Loss Rate }{81}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}Test Result of Latency and Jitter }{82}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Test Result of Frame Loss Rate }{80}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}Test Result of Latency and Jitter }{81}{subsubsection.5.2.2.3}
 \contentsline {subsubsection}{\numberline {5.2.2.4}Conclusion}{84}{subsubsection.5.2.2.4}
 \contentsline {section}{\numberline {5.3}Kicker systematic Investigation}{85}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}SIS18 Extraction Kicker}{87}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}SIS18 Extraction Kicker}{86}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}SIS100 Injection Kicker}{88}{subsection.5.3.2}
 \contentsline {section}{\numberline {5.4}Test Setup for Data Collection, Merging and Redistribution}{89}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Functionality of the Test Setup}{89}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Test Setup}{90}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Firmware}{92}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Time Constraints}{95}{subsection.5.4.4}
-\contentsline {subsection}{\numberline {5.4.5}Test Result}{98}{subsection.5.4.5}
-\contentsline {chapter}{\numberline {6}Application of FAIR B2B Transfer System to FAIR Accelerators}{99}{chapter.6}
-\contentsline {section}{\numberline {6.1}Circumference Ratio is an Integer}{100}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Use Case of $U^{28+}$ B2B Transfer from SIS18 to SIS100}{102}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Use Case of $H^{+}$ B2B Transfer from SIS18 to SIS100}{102}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Circumference Ratio is close to an Integer}{104}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Use Case of h=4 B2B Transfer from SIS18 to ESR}{105}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Use Case of h=1 B2B Transfer from SIS18 to ESR}{106}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Use Case of B2B transfer from ESR to CRYRING}{106}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Circumference Ratio is far away from an Integer}{108}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Use Case of $H^{+}$ B2B Transfer from SIS100 to CR}{108}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Use Case of RIB B2B Transfer from SIS100 to CR}{111}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Use Case of B2B Transfer from CR to HESR}{111}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Use Case of RIB B2B Transfer from SIS18 to ESR via the FRS}{112}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Summary of Formulas related to B2B Transfer}{114}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{118}{chapter.7}
-\contentsline {chapter}{\numberline {A}Glossaries, Abbreviations and Symbols}{121}{appendix.A}
-\contentsline {chapter}{Glossary}{122}{section*.107}
-\contentsline {chapter}{Abbreviations}{126}{section*.109}
-\contentsline {chapter}{Symbols}{130}{section*.111}
-\contentsline {chapter}{\numberline {B}FAIR B2B Transfer related Timing Frames}{136}{appendix.B}
-\contentsline {chapter}{\numberline {C}Timing Frames Transfer for FAIR B2B Transfer System}{138}{appendix.C}
-\contentsline {chapter}{\numberline {D}Parameters of FAIR Use Cases}{140}{appendix.D}
-\contentsline {section}{\numberline {D.1}Parameters related to the B2B transfer from the SIS18 to the SIS100}{140}{section.D.1}
-\contentsline {section}{\numberline {D.2}Parameters related to the B2B transfer from the SIS18 to the ESR}{141}{section.D.2}
-\contentsline {section}{\numberline {D.3}Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{142}{section.D.3}
-\contentsline {section}{\numberline {D.4}Parameters related to the B2B transfer from the ESR to the CRYRING}{143}{section.D.4}
-\contentsline {section}{\numberline {D.5}Parameters related to the B2B transfer from CR to HESR}{144}{section.D.5}
-\contentsline {section}{\numberline {D.6}Parameters related to the B2B transfer from the SIS100 to the CR}{145}{section.D.6}
-\contentsline {chapter}{\numberline {E}Parameters of FAIR B2B Transfer System from Settings Management}{146}{appendix.E}
-\contentsline {chapter}{\numberline {F}Parameters of kicker magnets}{148}{appendix.F}
-\contentsline {chapter}{Bibliography}{148}{table.caption.116}
-\contentsline {chapter}{List of Figures}{149}{table.caption.116}
-\contentsline {chapter}{List of Tables}{153}{appendix*.117}
-\contentsline {chapter}{Publications}{154}{appendix*.118}
+\contentsline {subsection}{\numberline {5.4.3}Firmware}{91}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Time Constraints}{94}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}Test Result}{97}{subsection.5.4.5}
+\contentsline {chapter}{\numberline {6}Application of FAIR B2B Transfer System to FAIR Accelerators}{98}{chapter.6}
+\contentsline {section}{\numberline {6.1}Circumference Ratio is an Integer}{99}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Use Case of $U^{28+}$ B2B Transfer from SIS18 to SIS100}{101}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Use Case of $H^{+}$ B2B Transfer from SIS18 to SIS100}{101}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Circumference Ratio is close to an Integer}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Use Case of h=4 B2B Transfer from SIS18 to ESR}{104}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Use Case of h=1 B2B Transfer from SIS18 to ESR}{105}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Use Case of B2B transfer from ESR to CRYRING}{105}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Circumference Ratio is far away from an Integer}{107}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Use Case of $H^{+}$ B2B Transfer from SIS100 to CR}{107}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Use Case of RIB B2B Transfer from SIS100 to CR}{109}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Use Case of B2B Transfer from CR to HESR}{109}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Use Case of RIB B2B Transfer from SIS18 to ESR via the FRS}{110}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Summary of Formulas related to B2B Transfer}{112}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{116}{chapter.7}
+\contentsline {chapter}{\numberline {A}Glossaries, Abbreviations and Symbols}{119}{appendix.A}
+\contentsline {chapter}{Glossary}{120}{section*.104}
+\contentsline {chapter}{Abbreviations}{124}{section*.106}
+\contentsline {chapter}{Symbols}{128}{section*.108}
+\contentsline {chapter}{\numberline {B}FAIR B2B Transfer related Timing Frames}{134}{appendix.B}
+\contentsline {chapter}{\numberline {C}Timing Frames Transfer for FAIR B2B Transfer System}{136}{appendix.C}
+\contentsline {chapter}{\numberline {D}Parameters of FAIR Use Cases}{138}{appendix.D}
+\contentsline {section}{\numberline {D.1}Parameters related to the B2B transfer from the SIS18 to the SIS100}{138}{section.D.1}
+\contentsline {section}{\numberline {D.2}Parameters related to the B2B transfer from the SIS18 to the ESR}{139}{section.D.2}
+\contentsline {section}{\numberline {D.3}Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{140}{section.D.3}
+\contentsline {section}{\numberline {D.4}Parameters related to the B2B transfer from the ESR to the CRYRING}{141}{section.D.4}
+\contentsline {section}{\numberline {D.5}Parameters related to the B2B transfer from CR to HESR}{142}{section.D.5}
+\contentsline {section}{\numberline {D.6}Parameters related to the B2B transfer from the SIS100 to the CR}{143}{section.D.6}
+\contentsline {chapter}{\numberline {E}Parameters of FAIR B2B Transfer System from Settings Management}{144}{appendix.E}
+\contentsline {chapter}{\numberline {F}Parameters of kicker magnets}{146}{appendix.F}
+\contentsline {chapter}{Bibliography}{146}{table.caption.113}
+\contentsline {chapter}{List of Figures}{147}{table.caption.113}
+\contentsline {chapter}{List of Tables}{151}{appendix*.114}
+\contentsline {chapter}{Publications}{152}{appendix*.115}
