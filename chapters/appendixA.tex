@@ -25,10 +25,10 @@
 
 \rowcolor[gray]{0.5}
 No&	\multicolumn{3}{c|}{Content}&\multicolumn{2}{c|}{Description}\\ \hline
-1&	\multicolumn{3}{c|}{64 bits timestamp} &\multicolumn{2}{c|}{Begin of the B2B transfer process}\\ \hline
+1&	\multicolumn{3}{c|}{64 bits timestamp(event execution) } &\multicolumn{2}{c|}{Begin of the B2B transfer process}\\ \hline
 2&	\multicolumn{3}{c|}{16 bits phase advance and 64 bits slop (param)}&	\multicolumn{2}{c|}{Transfer of the phase advance and the slop} \\ \hline
 3&	\multicolumn{3}{c|}{64 bits timestamp (param)}	&\multicolumn{2}{c|}{Transfer the start of the synchronization window}\\ \hline
-4&	\multicolumn{3}{c|}{64 bits timestamp} &	\multicolumn{2}{c|}{Indication the start of the synchronization window}\\ \hline
+4&	\multicolumn{3}{c|}{64 bits timestamp (event execution)} &	\multicolumn{2}{c|}{Indication the start of the synchronization window}\\ \hline
 5&	\multicolumn{3}{c|}{16 bits the expected jumped phase (param)} &	\multicolumn{2}{c|}{Indication the jumped phase for the empty target machine}\\ \hline
 6&	\multicolumn{3}{c|}{16 bits phase correction (param)} &	\multicolumn{2}{c|}{Target revolution frequency reproduction}\\ \hline
 
@@ -37,7 +37,7 @@ No&	\multicolumn{3}{c|}{Content}&\multicolumn{2}{c|}{Description}\\ \hline
 
 9&	\multicolumn{3}{c|}{64 bits timestamp + 1 bit (param)}&	\multicolumn{2}{c|}{The actual beam extraction time and the status of the B2B system}  \\ \hline
 
-10& \multicolumn{3}{c|}{64 bits timestamp + 1 bit}	&	\multicolumn{2}{c|}{The actual beam extraction time and the status of the B2B system} \\ \hline
+10& \multicolumn{3}{c|}{64 bits timestamp (param)}	&	\multicolumn{2}{c|}{The actual beam extraction time} \\ \hline
 
     \end{tabular}
 \end{center}

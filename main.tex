@@ -332,11 +332,15 @@ description={Velocity of particle},
 sort=symbollambda, type=symbolslist
 }
 
-
+\newglossaryentry{symb:length}{
+name=$L$,
+description={Orbit length},
+sort=symbollambda, type=symbolslist
+}
 
 \newglossaryentry{symb:R}{
 name=$R$,
-description={Orbit radius},
+description={Average orbit radius},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:P}{
@@ -484,7 +488,7 @@ sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:beating_time_phase}{
 name=$T_\mathit{wait}$,
-description={Waiting time for the phase match of the frequency beating method},
+description={Waiting time for the phase matching of the frequency beating method},
 sort=symbolpi, type=symbolslist
 }
 \newglossaryentry{symb:inital_phase}{
@@ -879,6 +883,10 @@ description={Timing Master},type=abbreslist
 name={FEC},
 description={Front End Controller},type=abbreslist
 } 
+\newglossaryentry{FER}{
+name={FER},
+description={Frame Error Rate},type=abbreslist
+} 
 
 \newglossaryentry{FESA}{
 name={FESA},
@@ -1234,7 +1242,7 @@ description={Shared synchronous reference signal at each supply room (same frequ
 }
 \newglossaryentry{glos:Syn_fre}{
 name={synchronization frequencies},
-description={An integral multiple of the derived rf frequency, which is the division of the revolution frequency. It is used for the phase alignment of the two rf systems}
+description={An integer multiple of the derived rf frequency, which is a fraction of the revolution frequency. It is used for the phase alignment of the two rf systems}
 }
 
 \newglossaryentry{glos:accuracy}{
@@ -1260,9 +1268,9 @@ description={First positive zero-crossings of BuTiS C2 clocks after every BuTiS 
 name={trueness of the start\\ of the synchronization window},
 description={Time closeness of agreement between the average actual start of the synchronization window of different timing notes and the best estimate start of the synchronization window}
 }
-\newglossaryentry{glos:frame_loss_rate}{
-name={frame loss rate},
-description={The ratio of the number of the lost Ethernet frames to the number of the theoretic received frames of a tested port}
+\newglossaryentry{glos:frame_error_rate}{
+name={frame error rate},
+description={The percentage of the sum of the lost frame, the misordered frame and payload error frames relative to the total number of transferred frames (Rx) during a studied time interval}
 }
 \newglossaryentry{glos:latency}{
 name={frame transfer latency},
@@ -1272,7 +1280,18 @@ description={The time interval between the frame reception and sending}
 name={frame transfer jitter},
 description={The time deviation between the transfer latencies of two consecutive frames}
 }
-
+\newglossaryentry{glos:pay_error}{
+name={payload error frame},
+description={The number of packets received that failed the frame check sequence}
+}
+\newglossaryentry{glos:misorder_error}{
+name={misordered frame},
+description={The number of misordered packets arriving out of sending sequence}
+}
+\newglossaryentry{glos:lost_error}{
+name={lost frame},
+description={The difference between the sent packets and the received packets}
+}
 \newglossaryentry{glos:broadcast}{
 name={broadcast},
 description={The frame is intended to be received and processed by every FEC on the WR network}

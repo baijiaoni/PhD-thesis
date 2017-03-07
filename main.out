@@ -64,50 +64,51 @@
 \BOOKMARK [3][-]{subsubsection.5.2.1.2}{Uncertainty of the Start of the Synchronization Window}{subsection.5.2.1}% 64
 \BOOKMARK [3][-]{subsubsection.5.2.1.3}{Accuracy of the Start of the Synchronization Window}{subsection.5.2.1}% 65
 \BOOKMARK [2][-]{subsection.5.2.2}{Characterization of WR Network}{section.5.2}% 66
-\BOOKMARK [3][-]{subsubsection.5.2.2.1}{WR Network Test Setup}{subsection.5.2.2}% 67
-\BOOKMARK [3][-]{subsubsection.5.2.2.2}{Test Result of Frame Loss Rate }{subsection.5.2.2}% 68
-\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Test Result of Latency and Jitter }{subsection.5.2.2}% 69
-\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Conclusion}{subsection.5.2.2}% 70
-\BOOKMARK [1][-]{section.5.3}{Kicker systematic Investigation}{chapter.5}% 71
-\BOOKMARK [2][-]{subsection.5.3.1}{SIS18 Extraction Kicker}{section.5.3}% 72
-\BOOKMARK [2][-]{subsection.5.3.2}{SIS100 Injection Kicker}{section.5.3}% 73
-\BOOKMARK [1][-]{section.5.4}{Test Setup for Data Collection, Merging and Redistribution}{chapter.5}% 74
-\BOOKMARK [2][-]{subsection.5.4.1}{Functionality of the Test Setup}{section.5.4}% 75
-\BOOKMARK [2][-]{subsection.5.4.2}{Test Setup}{section.5.4}% 76
-\BOOKMARK [2][-]{subsection.5.4.3}{Firmware}{section.5.4}% 77
-\BOOKMARK [2][-]{subsection.5.4.4}{Time Constraints}{section.5.4}% 78
-\BOOKMARK [2][-]{subsection.5.4.5}{Test Result}{section.5.4}% 79
-\BOOKMARK [0][-]{chapter.6}{Application of FAIR B2B Transfer System to FAIR Accelerators}{}% 80
-\BOOKMARK [1][-]{section.6.1}{Circumference Ratio is an Integer}{chapter.6}% 81
-\BOOKMARK [2][-]{subsection.6.1.1}{Use Case of U28+ B2B Transfer from SIS18 to SIS100}{section.6.1}% 82
-\BOOKMARK [2][-]{subsection.6.1.2}{Use Case of H+ B2B Transfer from SIS18 to SIS100}{section.6.1}% 83
-\BOOKMARK [1][-]{section.6.2}{Circumference Ratio is close to an Integer}{chapter.6}% 84
-\BOOKMARK [2][-]{subsection.6.2.1}{Use Case of h=4 B2B Transfer from SIS18 to ESR}{section.6.2}% 85
-\BOOKMARK [2][-]{subsection.6.2.2}{Use Case of h=1 B2B Transfer from SIS18 to ESR}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.3}{Use Case of B2B transfer from ESR to CRYRING}{section.6.2}% 87
-\BOOKMARK [1][-]{section.6.3}{Circumference Ratio is far away from an Integer}{chapter.6}% 88
-\BOOKMARK [2][-]{subsection.6.3.1}{Use Case of H+ B2B Transfer from SIS100 to CR}{section.6.3}% 89
-\BOOKMARK [2][-]{subsection.6.3.2}{Use Case of RIB B2B Transfer from SIS100 to CR}{section.6.3}% 90
-\BOOKMARK [2][-]{subsection.6.3.3}{Use Case of B2B Transfer from CR to HESR}{section.6.3}% 91
-\BOOKMARK [2][-]{subsection.6.3.4}{Use Case of RIB B2B Transfer from SIS18 to ESR via the FRS}{section.6.3}% 92
-\BOOKMARK [1][-]{section.6.4}{Summary of Formulas related to B2B Transfer}{chapter.6}% 93
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Outlook}{}% 94
-\BOOKMARK [0][-]{appendix.A}{Glossaries, Abbreviations and Symbols}{}% 95
-\BOOKMARK [0][-]{section*.104}{Glossary}{}% 96
-\BOOKMARK [0][-]{section*.106}{Abbreviations}{}% 97
-\BOOKMARK [0][-]{section*.108}{Symbols}{}% 98
-\BOOKMARK [0][-]{appendix.B}{FAIR B2B Transfer related Timing Frames}{}% 99
-\BOOKMARK [0][-]{appendix.C}{Timing Frames Transfer for FAIR B2B Transfer System}{}% 100
-\BOOKMARK [0][-]{appendix.D}{Parameters of FAIR Use Cases}{}% 101
-\BOOKMARK [1][-]{section.D.1}{Parameters related to the B2B transfer from the SIS18 to the SIS100}{appendix.D}% 102
-\BOOKMARK [1][-]{section.D.2}{Parameters related to the B2B transfer from the SIS18 to the ESR}{appendix.D}% 103
-\BOOKMARK [1][-]{section.D.3}{Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{appendix.D}% 104
-\BOOKMARK [1][-]{section.D.4}{Parameters related to the B2B transfer from the ESR to the CRYRING}{appendix.D}% 105
-\BOOKMARK [1][-]{section.D.5}{Parameters related to the B2B transfer from CR to HESR}{appendix.D}% 106
-\BOOKMARK [1][-]{section.D.6}{Parameters related to the B2B transfer from the SIS100 to the CR}{appendix.D}% 107
-\BOOKMARK [0][-]{appendix.E}{Parameters of FAIR B2B Transfer System from Settings Management}{}% 108
-\BOOKMARK [0][-]{appendix.F}{Parameters of kicker magnets}{}% 109
-\BOOKMARK [0][-]{table.caption.113}{Bibliography}{}% 110
-\BOOKMARK [0][-]{table.caption.113}{List of Figures}{}% 111
-\BOOKMARK [0][-]{appendix*.114}{List of Tables}{}% 112
-\BOOKMARK [0][-]{appendix*.115}{Publications}{}% 113
+\BOOKMARK [3][-]{subsubsection.5.2.2.1}{Requirement of B2B Traffic}{subsection.5.2.2}% 67
+\BOOKMARK [3][-]{subsubsection.5.2.2.2}{WR Network Test Setup}{subsection.5.2.2}% 68
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Test Result of Frame Error Rate }{subsection.5.2.2}% 69
+\BOOKMARK [3][-]{subsubsection.5.2.2.4}{Test Result of Frame Transfer Latency}{subsection.5.2.2}% 70
+\BOOKMARK [3][-]{subsubsection.5.2.2.5}{Conclusion}{subsection.5.2.2}% 71
+\BOOKMARK [1][-]{section.5.3}{Kicker systematic Investigation}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.3.1}{SIS18 Extraction Kicker}{section.5.3}% 73
+\BOOKMARK [2][-]{subsection.5.3.2}{SIS100 Injection Kicker}{section.5.3}% 74
+\BOOKMARK [1][-]{section.5.4}{Test Setup for Data Collection, Merging and Redistribution}{chapter.5}% 75
+\BOOKMARK [2][-]{subsection.5.4.1}{Functionality of the Test Setup}{section.5.4}% 76
+\BOOKMARK [2][-]{subsection.5.4.2}{Test Setup}{section.5.4}% 77
+\BOOKMARK [2][-]{subsection.5.4.3}{Firmware}{section.5.4}% 78
+\BOOKMARK [2][-]{subsection.5.4.4}{Time Constraints}{section.5.4}% 79
+\BOOKMARK [2][-]{subsection.5.4.5}{Test Result}{section.5.4}% 80
+\BOOKMARK [0][-]{chapter.6}{Application of FAIR B2B Transfer System to FAIR Accelerators}{}% 81
+\BOOKMARK [1][-]{section.6.1}{Circumference Ratio is an Integer}{chapter.6}% 82
+\BOOKMARK [2][-]{subsection.6.1.1}{Use Case of U28+ B2B Transfer from SIS18 to SIS100}{section.6.1}% 83
+\BOOKMARK [2][-]{subsection.6.1.2}{Use Case of H+ B2B Transfer from SIS18 to SIS100}{section.6.1}% 84
+\BOOKMARK [1][-]{section.6.2}{Circumference Ratio is close to an Integer}{chapter.6}% 85
+\BOOKMARK [2][-]{subsection.6.2.1}{Use Case of h=4 B2B Transfer from SIS18 to ESR}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.2}{Use Case of h=1 B2B Transfer from SIS18 to ESR}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.3}{Use Case of B2B transfer from ESR to CRYRING}{section.6.2}% 88
+\BOOKMARK [1][-]{section.6.3}{Circumference Ratio is far away from an Integer}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.3.1}{Use Case of H+ B2B Transfer from SIS100 to CR}{section.6.3}% 90
+\BOOKMARK [2][-]{subsection.6.3.2}{Use Case of RIB B2B Transfer from SIS100 to CR}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.3}{Use Case of B2B Transfer from CR to HESR}{section.6.3}% 92
+\BOOKMARK [2][-]{subsection.6.3.4}{Use Case of RIB B2B Transfer from SIS18 to ESR via the FRS}{section.6.3}% 93
+\BOOKMARK [1][-]{section.6.4}{Summary of Formulas related to B2B Transfer}{chapter.6}% 94
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Outlook}{}% 95
+\BOOKMARK [0][-]{appendix.A}{Glossaries, Abbreviations and Symbols}{}% 96
+\BOOKMARK [0][-]{section*.102}{Glossary}{}% 97
+\BOOKMARK [0][-]{section*.104}{Abbreviations}{}% 98
+\BOOKMARK [0][-]{section*.106}{Symbols}{}% 99
+\BOOKMARK [0][-]{appendix.B}{FAIR B2B Transfer related Timing Frames}{}% 100
+\BOOKMARK [0][-]{appendix.C}{Timing Frames Transfer for FAIR B2B Transfer System}{}% 101
+\BOOKMARK [0][-]{appendix.D}{Parameters of FAIR Use Cases}{}% 102
+\BOOKMARK [1][-]{section.D.1}{Parameters related to the B2B transfer from the SIS18 to the SIS100}{appendix.D}% 103
+\BOOKMARK [1][-]{section.D.2}{Parameters related to the B2B transfer from the SIS18 to the ESR}{appendix.D}% 104
+\BOOKMARK [1][-]{section.D.3}{Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{appendix.D}% 105
+\BOOKMARK [1][-]{section.D.4}{Parameters related to the B2B transfer from the ESR to the CRYRING}{appendix.D}% 106
+\BOOKMARK [1][-]{section.D.5}{Parameters related to the B2B transfer from CR to HESR}{appendix.D}% 107
+\BOOKMARK [1][-]{section.D.6}{Parameters related to the B2B transfer from the SIS100 to the CR}{appendix.D}% 108
+\BOOKMARK [0][-]{appendix.E}{Parameters of FAIR B2B Transfer System from Settings Management}{}% 109
+\BOOKMARK [0][-]{appendix.F}{Parameters of kicker magnets}{}% 110
+\BOOKMARK [0][-]{table.caption.111}{Bibliography}{}% 111
+\BOOKMARK [0][-]{table.caption.111}{List of Figures}{}% 112
+\BOOKMARK [0][-]{appendix*.112}{List of Tables}{}% 113
+\BOOKMARK [0][-]{appendix*.113}{Publications}{}% 114
