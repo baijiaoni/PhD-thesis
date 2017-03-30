@@ -66,7 +66,7 @@
 \BOOKMARK [2][-]{subsection.5.2.2}{Characterization of WR Network}{section.5.2}% 66
 \BOOKMARK [3][-]{subsubsection.5.2.2.1}{Requirement of B2B Traffic}{subsection.5.2.2}% 67
 \BOOKMARK [3][-]{subsubsection.5.2.2.2}{WR Network Test Setup}{subsection.5.2.2}% 68
-\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Test Result of Frame Error Rate }{subsection.5.2.2}% 69
+\BOOKMARK [3][-]{subsubsection.5.2.2.3}{Test Result of Bit Error Rate }{subsection.5.2.2}% 69
 \BOOKMARK [3][-]{subsubsection.5.2.2.4}{Test Result of Frame Transfer Latency}{subsection.5.2.2}% 70
 \BOOKMARK [3][-]{subsubsection.5.2.2.5}{Conclusion}{subsection.5.2.2}% 71
 \BOOKMARK [1][-]{section.5.3}{Kicker systematic Investigation}{chapter.5}% 72
@@ -94,21 +94,18 @@
 \BOOKMARK [1][-]{section.6.4}{Summary of Formulas related to B2B Transfer}{chapter.6}% 94
 \BOOKMARK [0][-]{chapter.7}{Conclusion and Outlook}{}% 95
 \BOOKMARK [0][-]{appendix.A}{Glossaries, Abbreviations and Symbols}{}% 96
-\BOOKMARK [0][-]{section*.102}{Glossary}{}% 97
-\BOOKMARK [0][-]{section*.104}{Abbreviations}{}% 98
-\BOOKMARK [0][-]{section*.106}{Symbols}{}% 99
-\BOOKMARK [0][-]{appendix.B}{FAIR B2B Transfer related Timing Frames}{}% 100
-\BOOKMARK [0][-]{appendix.C}{Timing Frames Transfer for FAIR B2B Transfer System}{}% 101
-\BOOKMARK [0][-]{appendix.D}{Parameters of FAIR Use Cases}{}% 102
-\BOOKMARK [1][-]{section.D.1}{Parameters related to the B2B transfer from the SIS18 to the SIS100}{appendix.D}% 103
-\BOOKMARK [1][-]{section.D.2}{Parameters related to the B2B transfer from the SIS18 to the ESR}{appendix.D}% 104
-\BOOKMARK [1][-]{section.D.3}{Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{appendix.D}% 105
-\BOOKMARK [1][-]{section.D.4}{Parameters related to the B2B transfer from the ESR to the CRYRING}{appendix.D}% 106
-\BOOKMARK [1][-]{section.D.5}{Parameters related to the B2B transfer from CR to HESR}{appendix.D}% 107
-\BOOKMARK [1][-]{section.D.6}{Parameters related to the B2B transfer from the SIS100 to the CR}{appendix.D}% 108
-\BOOKMARK [0][-]{appendix.E}{Parameters of FAIR B2B Transfer System from Settings Management}{}% 109
-\BOOKMARK [0][-]{appendix.F}{Parameters of kicker magnets}{}% 110
-\BOOKMARK [0][-]{table.caption.111}{Bibliography}{}% 111
-\BOOKMARK [0][-]{table.caption.111}{List of Figures}{}% 112
-\BOOKMARK [0][-]{appendix*.112}{List of Tables}{}% 113
-\BOOKMARK [0][-]{appendix*.113}{Publications}{}% 114
+\BOOKMARK [0][-]{appendix.B}{FAIR B2B Transfer related Timing Frames}{}% 97
+\BOOKMARK [0][-]{appendix.C}{Timing Frames Transfer for FAIR B2B Transfer System}{}% 98
+\BOOKMARK [0][-]{appendix.D}{Parameters of FAIR Use Cases}{}% 99
+\BOOKMARK [1][-]{section.D.1}{Parameters related to the B2B transfer from the SIS18 to the SIS100}{appendix.D}% 100
+\BOOKMARK [1][-]{section.D.2}{Parameters related to the B2B transfer from the SIS18 to the ESR}{appendix.D}% 101
+\BOOKMARK [1][-]{section.D.3}{Parameters related to the B2B transfer from the SIS18 to the ESR via the FRS}{appendix.D}% 102
+\BOOKMARK [1][-]{section.D.4}{Parameters related to the B2B transfer from the ESR to the CRYRING}{appendix.D}% 103
+\BOOKMARK [1][-]{section.D.5}{Parameters related to the B2B transfer from CR to HESR}{appendix.D}% 104
+\BOOKMARK [1][-]{section.D.6}{Parameters related to the B2B transfer from the SIS100 to the CR}{appendix.D}% 105
+\BOOKMARK [0][-]{appendix.E}{Parameters of FAIR B2B Transfer System from Settings Management}{}% 106
+\BOOKMARK [0][-]{appendix.F}{Parameters of kicker magnets}{}% 107
+\BOOKMARK [0][-]{table.caption.104}{Bibliography}{}% 108
+\BOOKMARK [0][-]{table.caption.104}{List of Figures}{}% 109
+\BOOKMARK [0][-]{appendix*.105}{List of Tables}{}% 110
+\BOOKMARK [0][-]{appendix*.106}{Publications}{}% 111

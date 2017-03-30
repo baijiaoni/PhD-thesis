@@ -34,6 +34,7 @@
 \usepackage[numbers,sort&compress]{natbib}
 \interfootnotelinepenalty=100
 
+
 % Generate the glossary
 \makenoidxglossaries
  
@@ -623,17 +624,17 @@ description={Bunch gap},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:L}{
-name=$d_\mathit{crt1L-crt2R}$,
+name=$d_\mathit{tank1L-tank2R}$,
 description={Distance from the leftmost to the rightmost of the SIS18 extraction/SIS100 injection kicker},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:d}{
-name=$d_\mathit{crt1R-crt2L}$,
+name=$d_\mathit{tank1R-tank2L}$,
 description={Distance between two crates of the SIS18 extraction kicker},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:D}{
-name=$d_\mathit{crt1R-crt2R}$,
+name=$d_\mathit{tank1R-tank2R}$,
 description={Distance between the rightmost of the $1^{st}$ crate and the rightmost of the $2^{nd}$ crate of the SIS18 extraction kicker},
 sort=symbollambda, type=symbolslist
 }
@@ -859,8 +860,8 @@ name={PBRF},
 description={Primary Beam Radio Frequency},type=abbreslist
 }
 \newglossaryentry{Pbar}{
-name={Pbar},
-description={Antiproton target},type=abbreslist
+name={pbar},
+description={antiproton bar},type=abbreslist
 }
 
 \newglossaryentry{SBES}{
@@ -1425,6 +1426,8 @@ description={Range within which the fine alignment lies because of the propagati
 
 \begin{document}
 
+
+
 \pagenumbering{roman}
 \begin{center}
 \thispagestyle{empty}
@@ -1436,7 +1439,7 @@ description={Range within which the fine alignment lies because of the propagati
 
 	{ \normalsize Vom Fachbereich\\
 	Institut für Angewandte Physik\\
-	der Goethe-Universit"at, Frankfurt am Main\\
+	der Goethe-Universit\"at, Frankfurt am Main\\
 	zur Erlangung des akademischen Grades\\
 	eines Doktor der Naturwissenschaften\\
 	genehmigte Dissertation\par}
@@ -1576,8 +1579,12 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \chapter{Parameters of kicker magnets}
 \input{chapters/appendix_kicker}
 
+
+
 \addcontentsline{toc}{chapter}{Bibliography}
 
+%\bibliographystyle{IEEEtran} 
+%\bibliography{IEEEabrv,reference}
 \bibliographystyle{unsrtnat}
 \bibliography{reference}
 

@@ -1,36 +1,36 @@
-For the FAIR B2B transfer system, both the phase shift and frequency beating methods are applicable. However, there is a constraint for many FAIR accelerator pairs to use the frequency beating method because of the non-integer ratio of the circumference between two ring accelerators. These pairs can also use the phase jump, a special phase shift without the adiabaticity consideration, on the target synchrotron to realize the synchronization, when there is no beam in the target synchrotron.  When the ratio of the circumference between two ring accelerators is an integer, the phase shift method is preferred. In this chapter all FAIR use cases with the frequency beating method will be discussed in details. Based on the circumference ratio, there are three scenarios of the B2B transfer for FAIR. 
+For the FAIR B2B transfer system, both the phase shift and frequency beating methods are applicable. However, there is a constraint for many FAIR accelerator pairs to use the frequency beating method because of the non-integer ratio of the circumference between two ring accelerators. These pairs can also use the phase jump, a special phase shift without the adiabaticity consideration, on the target accelerator to realize the synchronization, when there is no beam in the target accelerator.  When the ratio of the circumference between two ring accelerators is an integer, the phase shift method is preferred. In this chapter all FAIR use cases with the frequency beating method will be discussed in details. Based on the circumference ratio, there are three scenarios of the B2B transfer for FAIR. 
 \begin{itemize}
-	\item The \gls{glos:cir_ratio} between the large and small synchrotrons is an integer.
+	\item The \gls{glos:cir_ratio} between the large and small accelerators is an integer.
 		\begin{itemize}
 			\item	The B2B transfer from the SIS18 to the SIS100
 			%\item	The $U^{28+}$ B2B transfer from the SIS18 to the SIS100
 			%\item The $H^{+}$ B2B transfer from the SIS18 to the SIS100
 
 		\end{itemize}
-	\item The circumference ratio between the large and small synchrotrons is close to an integer.
+	\item The circumference ratio between the large and small accelerators is close to an integer.
 		\begin{itemize}
 			\item The B2B transfer from the SIS18 to the ESR\footnote{Injection orbit}
 			%\item The h=1 B2B transfer from the SIS18 to the ESR
 			\item The B2B transfer from the ESR\footnote{Extraction orbit} to the CRYRING
 		\end{itemize}
- 	\item The circumference ratio between the large and small synchrotrons is far away from an integer.
+ 	\item The circumference ratio between the large and small accelerators is far away from an integer.
 		\begin{itemize}
 			\item The B2B transfer from the CR to the HESR
 		\end{itemize}
 \end{itemize}
-Besides, FAIR has many use cases of B2B transfers that the extraction and injection beam have different energy because of targets installed between two ring accelerators (e.g. the Pbar target, the FRS and the Super FRS). Due to the energy loss at the target, the beam \gls{glos:rev_ratio} between the small and large synchrotrons is used instead of the circumference ratio between the large and small synchrotrons. The revolution frequency ratio takes the energy loss into consideration. For FAIR, there exists the following scenario.
+Besides, FAIR has many use cases of B2B transfers that the extraction and injection beam have different energy because of targets installed between two ring accelerators (e.g. the pbar target, the FRS and the Super FRS). Due to the energy loss at the target, the beam \gls{glos:rev_ratio} between the small and large accelerators is used instead of the circumference ratio between the large and small accelerators. The revolution frequency ratio takes the energy loss into consideration. For FAIR, there exists the following scenario.
 
 \begin{itemize}
 
- 	\item The revolution frequency ratio between the small and large synchrotrons is far away from an integer.
+ 	\item The revolution frequency ratio between the small and large accelerators is far away from an integer.
 		\begin{itemize}
-			%\item The $H^{+}$ B2B transfer from the SIS100 to the CR via the Pbar target
+			%\item The $H^{+}$ B2B transfer from the SIS100 to the CR via the pbar target
 			\item The B2B transfer from the SIS100 to the CR via the Super FRS
 			\item The B2B transfer from the SIS18 to the ESR via the FRS
 		\end{itemize}
 \end{itemize}
   
-%In this document, the circumference of the injection/extraction orbit of the synchrotron is denoted by $C^{X}$, the revolution frequency and rf cavity frequency by $f_{\mathit{\mathit{rev}}}^{X} $ and $f_{\mathit{\mathit{rf}}}^{X}$, the beating frequency by \gls{symb:beating_freq} and the harmonic number by $h^X_\mathit{rf}$. The superscript X could be either ``l`` or ``s`` denoting the large or small synchrotron. $\kappa$ is used to represent integers and $\lambda$ the decimal numbers.
+%In this document, the circumference of the injection/extraction orbit of the accelerator is denoted by $C^{X}$, the revolution frequency and rf cavity frequency by $f_{\mathit{\mathit{rev}}}^{X} $ and $f_{\mathit{\mathit{rf}}}^{X}$, the beating frequency by \gls{symb:beating_freq} and the harmonic number by $h^X_\mathit{rf}$. The superscript X could be either ``l`` or ``s`` denoting the large or small accelerator. $\kappa$ is used to represent integers and $\lambda$ the decimal numbers.
 
 Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and $\kappa$ are integers. 
 \begin{table}[!htb]
@@ -47,7 +47,7 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
      	\multirow{3}*{\tabincell{c}{$C^l/C^s=\kappa+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}=\kappa+ \lambda$\\close to an integer\\ ($|\lambda|\le 0.005$)}}&$2-0.003$& &\tabincell{c}{h=4 B2B transfer\\ from the SIS18 to the ESR\\ \\} \\ \cline{2-4}
  								  	  &$2-0.003$&&\tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR\\ \\}\\ \cline{2-4}				
 											&$2+0.003$ &&\tabincell{c}{B2B transfer \\from the ESR to the CRYRING} \\ \cline{1-4}	
-  	\multirow{4}*{\tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}$\\$=m/n+ \lambda$\\far away from \\an integer\\ ($|\lambda|\le 0.05$)}}&\tabincell{c}{not \\applicable}&arbitrary&\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via the Pbar target} \\ \cline{2-4}
+  	\multirow{4}*{\tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}$\\$=m/n+ \lambda$\\far away from \\an integer\\ ($|\lambda|\le 0.05$)}}&\tabincell{c}{not \\applicable}&arbitrary&\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via the pbar target} \\ \cline{2-4}
 &\tabincell{c}{not \\applicable}&arbitrary& \tabincell{c}{Rare isotope beams (\gls{RIB})\\ B2B transfer\\from the SIS100 to the CR \\ via the Super FRS}\\ \cline{2-4}
 
 &$2\frac{3}{5}-0.003$& &\tabincell{c}{B2B transfer \\from the CR to the HESR }\\ \cline{2-4}
@@ -92,7 +92,7 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
 %%%%%%%%%%%%%%%%%% Circumference Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Circumference Ratio is an Integer}
 \label{sec:integ}
-When the circumference ratio of the large synchrotron to that of the small synchrotron is an integer, there exists the following relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
+When the circumference ratio of the large accelerator to that of the small accelerator is an integer, there exists the following relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation}
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot \kappa}\label{cir_int_1}
 \end{equation}
@@ -105,7 +105,7 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}=\frac{Y
 \end{equation}
 $Y$ is the \gls{GCD} of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$. For more details, please see Sec. ~\ref{sec:cir_integer}.
 
-%If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is an integer, we have the following relation. 
+%If the ratio of the circumference of the injection/extraction orbit of the large accelerator to that of the small accelerator is an integer, we have the following relation. 
 %\begin{equation}
 %\frac{C^l}{C^s}=\kappa \label{circumference_ratio_int}
 %\end{equation}
@@ -131,21 +131,21 @@ $Y$ is the \gls{GCD} of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$. Fo
 %\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}= \frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y} 
 %\end{equation}
 %Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$,
-%$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchronization frequencies. The phase shift can be implemented either for the rf system of the large or small synchrotron, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. 
-For the frequency beating method, two slightly different frequencies are chosen based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning $\Delta f_\mathit{syn}$ on the rf system of the source synchrotron or that of the target synchrotron or that of both synchrotrons. Generally the rf system of the source synchrotron is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
+%$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchronization frequencies. The phase shift can be implemented either for the rf system of the large or small accelerator, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target accelerator is empty, the phase will be shifted for the target accelerator by the phase jump. 
+For the frequency beating method, two slightly different frequencies are chosen based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning $\Delta f_\mathit{syn}$ on the rf system of the source accelerator or that of the target accelerator or that of both accelerators. Generally the rf system of the source accelerator is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
 
 
-%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l_\mathit{rf}/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
+%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ of the large accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l_\mathit{rf}/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ of the small accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
 %\begin{itemize}
 %	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) > \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$ 
 %
-%The frequency detuning for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detuning is preferred for the small synchrotron.
+%The frequency detuning for the rf cavity frequency of the small accelerator is smaller than that of the large accelerator, so the frequency detuning is preferred for the small accelerator.
 %	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot (h^l_\mathit{rf}/Y) < \Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$
 %
-%The frequency detuning for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detuning is preferred for the large synchrotron.
+%The frequency detuning for the rf cavity frequency of the large accelerator is smaller than that of the small accelerator, so the frequency detuning is preferred for the large accelerator.
 %\end{itemize}
 
-%For the phase shift method, the bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when the phase of the two rf systems are aligned. It indicates only the passing time of the first bucket, when it is phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_phase}.
+%For the phase shift method, the bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target accelerator passes by the rf virtual cavity, nor all of the time ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when the phase of the two rf systems are aligned. It indicates only the passing time of the first bucket, when it is phase aligned with the rf system of the source accelerator, see Fig. ~\ref{bucket_label_phase}.
  
 %rev_or_subharmonic.docx
 %\begin{figure}[!htb]
@@ -157,16 +157,16 @@ For the frequency beating method, two slightly different frequencies are chosen 
 
 The frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{\mathit{trg}}$ and $f_{\mathit{rev}}^{\mathit{trg}}$, see Chap. ~\ref{concept}.
 %
-When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two phase measurement signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the synchronization reference signal $f_\mathit{ref}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\sigma_\mathit{rf}$ when the large synchrotron is the target. When the phase shift method is used, $\Delta f_\mathit{syn}=0$.
+When the large accelerator is the target, there exists $f_{\mathit{syn}}^{l}=Yf_{\mathit{rev}}^{l}\ge f_{\mathit{rev}}^{l}$. The revolution period is $Y$ times as long as the period of $f_{\mathit{syn}}^{l}$. The period of $f_{\mathit{syn}}^{l}$ is not long enough to contain all buckets. So $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$ and the length of the synchronization window $T_w=T_{\mathit{rev}}^{l}$ for this case. Tab.~\ref{Syn_rev_large} shows the formulas for the frequency of the bucket indication signal $f_\mathit{bucket}$, the synchronization frequencies $f_\mathit{syn}^\mathit{X}$, the frequencies of two phase measurement signals $f_\mathit{B2B}^\mathit{X}$, the frequency of the synchronization reference signal $f_\mathit{ref}$, the length of the synchronization window $T_w$ and the bunch and bucket injection center mismatch $\sigma_\mathit{rf}$ when the large accelerator is the target. When the phase shift method is used, $\Delta f_\mathit{syn}=0$.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is an integer and the large synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is an integer and the large accelerator is the target}
 \label{Syn_rev_large}
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Large synchrotron is target synchrotron \\ \hline
+	&  Large accelerator is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_\mathit{syn}^\mathit{s}+\Delta f_\mathit{syn}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}+\Delta f_\mathit{syn}=\frac{Y}{\kappa}f_\mathit{rev}^{s}+\Delta f_\mathit{syn}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^l_\mathit{rf}/Y}=Yf_\mathit{rev}^{l}$ \\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot (f_{\mathit{syn}}^{s}+\Delta f_\mathit{syn})=\frac{1}{\kappa}(f_{\mathit{rev}}^{s}+\frac{\kappa}{Y}\Delta f_\mathit{syn})$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
@@ -181,28 +181,28 @@ When the large synchrotron is the target, there exists $f_{\mathit{syn}}^{l}=Yf_
 %\begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=150mm]{bucket_label_phase_small.jpg}
-%   \caption{The frequency of the bucket indication signal for the phase shift method.}{Red dots represent buckets and blue ones bunches, black bars chosen by blue rectangles are used by the bucket indication signal. The phase matching of the two rf systems in this example is correct phase aligned with $\Delta\phi=0^\circ$. (a) The frequency of the bucket indication signal when $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ and the large synchrotron is the target. (b) The frequency of the bucket indication signal when $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$.}
+%   \caption{The frequency of the bucket indication signal for the phase shift method.}{Red dots represent buckets and blue ones bunches, black bars chosen by blue rectangles are used by the bucket indication signal. The phase matching of the two rf systems in this example is correct phase aligned with $\Delta\phi=0^\circ$. (a) The frequency of the bucket indication signal when $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ and the large accelerator is the target. (b) The frequency of the bucket indication signal when $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$.}
 %   \label{bucket_label_phase_small}
 %\end{figure}
 %\begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=150mm]{bucket_label_frequency_small.jpg}
-%   \caption{The frequency of the bucket indication signal for the frequency beating method.}{The red dots represent buckets and the blue ones bunches, the black bars chosen by blue rectangle are used by the bucket indication signal. The phase of the two rf systems in this example is correct phase aligned with $\Delta\phi=0^\circ$. (a) The frequency of the bucket indication signal when $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and the large synchrotron is the target. (b) The frequency of the bucket indication signal when $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.}
+%   \caption{The frequency of the bucket indication signal for the frequency beating method.}{The red dots represent buckets and the blue ones bunches, the black bars chosen by blue rectangle are used by the bucket indication signal. The phase of the two rf systems in this example is correct phase aligned with $\Delta\phi=0^\circ$. (a) The frequency of the bucket indication signal when $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and the large accelerator is the target. (b) The frequency of the bucket indication signal when $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.}
 %   \label{bucket_label_frequency_small}
 %\end{figure}
 
-When the small synchrotron is the target, the relation between $f_{\mathit{syn}}^{s}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}$ is not fixed. If $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}\ge 1$, the revolution period is $\frac{Y}{\kappa}$ times as long as the period of $f_{\mathit{syn}}^{s}$. Hence, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$ and $T_w=T_{\mathit{rev}}^{s}$ for this case.
+When the small accelerator is the target, the relation between $f_{\mathit{syn}}^{s}=\frac{Y}{\kappa}f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}$ is not fixed. If $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}\ge 1$, the revolution period is $\frac{Y}{\kappa}$ times as long as the period of $f_{\mathit{syn}}^{s}$. Hence, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$ and $T_w=T_{\mathit{rev}}^{s}$ for this case.
 %Fig. ~\ref{bucket_label_phase_small} (a) is the case with the phase shift method and Fig. ~\ref{bucket_label_frequency_small} (a) the case with the frequency beating method. 
-Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}<1$, the period of $f_{\mathit{syn}}^{s}$ is $\frac{\kappa}{Y}$ times as long as the revolution period. Hence, $f_\mathit{bucket}=f_{\mathit{syn}}^{s}$ and $T_w=T_{\mathit{syn}}^{s}$. Tab.~\ref{Sync_ratio_int} shows the formulas when the small synchrotron is the target. When the phase shift method is used, $\Delta f_\mathit{syn}=0$.
+Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\kappa}<1$, the period of $f_{\mathit{syn}}^{s}$ is $\frac{\kappa}{Y}$ times as long as the revolution period. Hence, $f_\mathit{bucket}=f_{\mathit{syn}}^{s}$ and $T_w=T_{\mathit{syn}}^{s}$. Tab.~\ref{Sync_ratio_int} shows the formulas when the small accelerator is the target. When the phase shift method is used, $\Delta f_\mathit{syn}=0$.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is an integer and the small synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is an integer and the small accelerator is the target}
 \label{Sync_ratio_int}
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
-	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
+	&  \multicolumn{2}{c|}{Small accelerator is target accelerator} \\ \hline
 	Case& (1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}\ge1$)  &(2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}<1$)  \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ & $f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_\mathit{syn}^\mathit{s}+\Delta f_\mathit{syn}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}+\Delta f_\mathit{syn}=\frac{Y}{\kappa}f_\mathit{rev}^{s}+\Delta f_\mathit{syn}$ and $f_\mathit{syn}^\mathit{l}=\frac{f_\mathit{rf}^\mathit{l}}{h^l_\mathit{rf}/Y}=Yf_\mathit{rev}^{l}$} \\ \hline
@@ -217,19 +217,19 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %Fig. ~\ref{bucket_label_phase_small} (b) is the case with the phase shift method and Fig. ~\ref{bucket_label_frequency_small} (b) the case with the frequency beating method. 
 %%rev_or_subharmonic1.docx
 
-%In fact,  synchronization frequencies could be a fraction (between $1/Y$ and $1$) times of $f_{\mathit{syn}}^{X}$. The bunch-to-bucket injection center mismatch is the mismatch between the cavity rf frequencies within the synchronization window, so it is $f_{\mathit{rf}}^{trg}/f_{\mathit{syn}}^{trg}$ times as large as the phase mismatch between two synchronization frequencies within the synchronization window. When we use one of two synchronization frequencies as the frequency of the bucket indication signal, the synchronization window is two times as long as the period of the synchronization frequency of the target synchrotron, so the phase mismatch between two synchronization frequencies within the synchronization window is a constant. The longer the synchronization window, namely the smaller the synchronization frequency, the larger the bunch-to-bucket injection center mismatch. When we use one of two revolution frequencies as the bucket indication signal, the length of the synchronization window is constant. Hence, the bunch-to-bucket injection center mismatch within the synchronization window is also constant. In conclusion, $f_{\mathit{syn}}^{X}$ is chosen as the synchronization frequencies.
+%In fact,  synchronization frequencies could be a fraction (between $1/Y$ and $1$) times of $f_{\mathit{syn}}^{X}$. The bunch-to-bucket injection center mismatch is the mismatch between the cavity rf frequencies within the synchronization window, so it is $f_{\mathit{rf}}^{trg}/f_{\mathit{syn}}^{trg}$ times as large as the phase mismatch between two synchronization frequencies within the synchronization window. When we use one of two synchronization frequencies as the frequency of the bucket indication signal, the synchronization window is two times as long as the period of the synchronization frequency of the target accelerator, so the phase mismatch between two synchronization frequencies within the synchronization window is a constant. The longer the synchronization window, namely the smaller the synchronization frequency, the larger the bunch-to-bucket injection center mismatch. When we use one of two revolution frequencies as the bucket indication signal, the length of the synchronization window is constant. Hence, the bunch-to-bucket injection center mismatch within the synchronization window is also constant. In conclusion, $f_{\mathit{syn}}^{X}$ is chosen as the synchronization frequencies.
 
 
 
-%For the frequency beating method, the bucket indication signal indicates the passing time of the first bucket of the target synchrontron, when it is correct phase aligned with the rf system of the source synchrotron, see Fig. ~\ref{bucket_label_frequency_small}. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a). When the small synchrotron is the target, the frequency of the bucket indication signal is depend on the relation between $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}\frac{Y}{\kappa}$ and $f_{\mathit{rev}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}}$. The rule is same as that for the phase shift method. When the large synchrotron is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a) and (b) are for cases $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.
+%For the frequency beating method, the bucket indication signal indicates the passing time of the first bucket of the target synchrontron, when it is correct phase aligned with the rf system of the source accelerator, see Fig. ~\ref{bucket_label_frequency_small}. When the large accelerator is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a). When the small accelerator is the target, the frequency of the bucket indication signal is depend on the relation between $f_{\mathit{syn}}^{s}=f_{\mathit{rev}}^{s}\frac{Y}{\kappa}$ and $f_{\mathit{rev}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}}$. The rule is same as that for the phase shift method. When the large accelerator is the target, the bucket indication signal is with the frequency of $f_{\mathit{rev}}^{l}$, see Fig. ~\ref{bucket_label_frequency_small} (a) and (b) are for cases $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}\ge f_{\mathit{rev}}^{s}$ and $f_{\mathit{rev}}^{s}\frac{Y}{\kappa}<f_{\mathit{rev}}^{s}$.
 %%rev_or_subharmonic1.docx
 
 
-%The bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target synchrotron passes by the rf virtual cavity, nor all of the time of the target synchrotron ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when two rf systems have a periodical phase difference. It indicates only the passing time of the first bucket, when it is correct aligned with the rf frequency ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$) of the source synchrotron.
+%The bucket indication signal indicates neither all of the time ($f_{\mathit{rev}}^{l}$ or $f_{\mathit{rev}}^{s}$), when the first bucket of the target accelerator passes by the rf virtual cavity, nor all of the time of the target accelerator ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$), when two rf systems have a periodical phase difference. It indicates only the passing time of the first bucket, when it is correct aligned with the rf frequency ($\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ or $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$) of the source accelerator.
  
 %Here we assume $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}<f_{\mathit{rev}}^{s}$, if $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}\ge f_{\mathit{rev}}^{s}$, the bucket indication is with $f_{\mathit{rev}}^{s}$, the $h^s_\mathit{rf}\cdot \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{s}$ is replaced by $f_{\mathit{rev}}^{s}$. We assume $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$, if $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the bucket indication is with $f_{\mathit{rev}}^{l}$ and the $h^l_\mathit{rf}/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{l}$ is replaced by $f_{\mathit{rev}}^{l}$.
 
-%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$ (the large synchrotron is the target), namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small synchrotron. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$.
+%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$ (the large accelerator is the target), namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small accelerator. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$.
 
 %\begin{table}[!htb]
 %\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -238,7 +238,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %\begin{center}
 %    \begin{tabular}{ | c | c | c |}
 %    \hline
-%	&  \tabincell{c}{Large synchrotron is\\target synchrotron}& \tabincell{c}{Small synchrotron is\\target synchrotron} \\ \hline
+%	&  \tabincell{c}{Large accelerator is\\target accelerator}& \tabincell{c}{Small accelerator is\\target accelerator} \\ \hline
 %   $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ & $f_{\mathit{rev}}^{s}$ \\ \hline
 %	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \multicolumn{2}{c|}{$\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}+\Delta f$ or $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}+\Delta f$ and $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$}\\ \hline
 %	\tabincell{c}{$T_w$}& $2\cdot T_{\mathit{rev}}^{l}$ & $2\cdot T_{\mathit{rev}}^{s}$\\ \hline
@@ -250,7 +250,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %%%%%%%%%%%%%%%%%% Harmonic = circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Harmonic ratio equals to the circumference ratio}
 %\label{sec:cir_no_int}
-%When the ratio of the harmonic number of the large synchrotron to that of the small synchrotron equals to the circumference ratio, we have the following relation.
+%When the ratio of the harmonic number of the large accelerator to that of the small accelerator equals to the circumference ratio, we have the following relation.
 %\begin{equation}
 %\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}=\frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_int}
 %\end{equation}
@@ -265,7 +265,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %%f_{\mathit{rf}}^{s}= f_{\mathit{rf}}^{l}\label{equ_rf_freq}
 %%\end{equation}
 %
-%In this scenario, the rf cavity frequencies of two ring accelerators are same. For the rf synchronization, both phase shift and frequency beating methods are applicable for the small or large synchrotrons. There is no difference of the implementation of two methods either on the large or small synchrotron, because they implement their species dependent rf frequency modulation profiles for a same required phase shift and same frequency dutune for the frequency beating method. Only when the target synchrotron is empty, the phase will be shifted for the target synchrotron by the phase jump. With the phase shift method, the phase advance between two ring accelerators is a constant, so the synchronization window is ideally infinitely long, within which two synchrotrons remain perfect synchronized. Bunches can be transferred at any time within the window.
+%In this scenario, the rf cavity frequencies of two ring accelerators are same. For the rf synchronization, both phase shift and frequency beating methods are applicable for the small or large accelerators. There is no difference of the implementation of two methods either on the large or small accelerator, because they implement their species dependent rf frequency modulation profiles for a same required phase shift and same frequency dutune for the frequency beating method. Only when the target accelerator is empty, the phase will be shifted for the target accelerator by the phase jump. With the phase shift method, the phase advance between two ring accelerators is a constant, so the synchronization window is ideally infinitely long, within which two accelerators remain perfect synchronized. Bunches can be transferred at any time within the window.
 %
 %There exists $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}$, so the formulas in Tab.~\ref{Syn_rev_ratio_int} is applicable.
 %%\begin{table}[!htb]
@@ -275,7 +275,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 %%\begin{center}
 %%    \begin{tabular}{ | c | c | c |}
 %%    \hline
-%%	&  \tabincell{c}{Large synchrotron is\\target synchrotron}& \tabincell{c}{Small synchrotron is\\target synchrotron} \\ \hline
+%%	&  \tabincell{c}{Large accelerator is\\target accelerator}& \tabincell{c}{Small accelerator is\\target accelerator} \\ \hline
 %%   $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ & $f_{\mathit{rev}}^{s}$  \\ \hline
 %%	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{rf}}^{l}$ and $f_{\mathit{rf}}^{s}+\Delta f$ or $f_{\mathit{rf}}^{l}+\Delta f and f_{\mathit{rf}}^{s}$}\\ \hline
 %%	\tabincell{c}{$T_w$}& $2\cdot T_{\mathit{rev}}^{l}$ & $2\cdot T_{\mathit{rev}}^{s}$\\ \hline
@@ -286,13 +286,13 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 
 \subsection{Use Case of $U^{28+}$ B2B Transfer from SIS18 to SIS100}
 \label{sec:cir_no_int}
-The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large synchrotron is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
+The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large accelerator is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
 The GCD of $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa=2\cdot 5=10$ is 10, namely $Y=10$. Substituting these values into eq.~\ref{cir_int_1}, we get
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}_\mathit{rf}}{h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa}= \frac{10}{2 \cdot 5}=\frac{10}{10}
 \end{equation}
 
-Because the SIS100 is the large synchrotron and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method}
@@ -300,7 +300,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X_\m
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
-	&  \tabincell{c}{Large synchrotron (SIS100) is target synchrotron} \\ \hline
+	&  \tabincell{c}{Large accelerator (SIS100) is target accelerator} \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{157.254}{kHz}$\tablefootnote{A Group DDS produces a given frequency with the \SI{}{mHz} order of magnitude precision}  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &  \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=2f_{\mathit{rev}}^{\mathit{SIS18}}=$\SI{1.572536}{MHz}+\SI{200}{Hz} \\and\\ $f_{\mathit{syn}}^{SIS100}=10 f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{1.572536}{MHz}}\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} &  \tabincell{c}{$f_\mathit{B2B}^\mathit{SIS18}=\frac{1}{5}(f_{\mathit{rev}}^{\mathit{SIS18}}+\frac{1}{2}\Delta f_\mathit{syn})=$\SI{157.254}{kHz}+\SI{20}{Hz} \\and\\ $f_\mathit{B2B}^\mathit{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{157.254}{kHz}}\\ \hline
@@ -316,7 +316,7 @@ The goal time difference between the SIS18 and SIS100 rf systems equals to $t_{v
 %%%%%%%%%%%%%%%%%% Harmonic != circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Harmonic ratio does not equal to the circumference ratio} 
 %\label
-%When the ratio of the harmonic number of the large synchrotron to that of the small synchrotron does not equal to the circumference ratio, we have the following relation.
+%When the ratio of the harmonic number of the large accelerator to that of the small accelerator does not equal to the circumference ratio, we have the following relation.
 %\begin{equation}
 %\frac {h^l_\mathit{rf}}{h^s_\mathit{rf}}\neq \frac {C^{l}}{C^{s}}= \kappa  \label{harmonic_1_noint}
 %\end{equation}
@@ -336,30 +336,30 @@ The goal time difference between the SIS18 and SIS100 rf systems equals to $t_{v
 %%\frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}= \frac{m}{n}
 %%\end{equation}
 %
-%In this scenario, the rf cavity frequency of one synchrotron is integer times of that of the other synchrotron for FAIR accelerators. Both phase shift and frequency beating methods are applicable for the rf synchronization. There is no difference of the implementation of the phase shift method either on the large or small synchrotron, because they implement their species dependent rf frequency modulation profiles for a same required phase shift. Only when the target synchrotron is empty, the phase jump is applied to the target synchrotron. With the phase shift method, we have an infinite synchronization window. 
+%In this scenario, the rf cavity frequency of one accelerator is integer times of that of the other accelerator for FAIR accelerators. Both phase shift and frequency beating methods are applicable for the rf synchronization. There is no difference of the implementation of the phase shift method either on the large or small accelerator, because they implement their species dependent rf frequency modulation profiles for a same required phase shift. Only when the target accelerator is empty, the phase jump is applied to the target accelerator. With the phase shift method, we have an infinite synchronization window. 
 %
 %For the frequency beating method, from eq.~\ref{rf_freq_ratio1}, we get
 %\begin{equation}
 %\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}= \frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} \cdot \kappa} 
 %\end{equation}
-%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}$ of the large synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot h^l_\mathit{rf}$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} \cdot \kappa}$ of the small synchrotron, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
+%If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}}$ of the large accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot h^l_\mathit{rf}$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} \cdot \kappa}$ of the small accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
 %\begin{itemize}
 %	\item $h^l_\mathit{rf} >h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} > \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$ 
 %
-%The frequency detuning for the rf cavity frequency of the small synchrotron is smaller than that of the large synchrotron, so the frequency detuning is preferred for the small synchrotron.
+%The frequency detuning for the rf cavity frequency of the small accelerator is smaller than that of the large accelerator, so the frequency detuning is preferred for the small accelerator.
 %	\item $h^l_\mathit{rf} <h^s_\mathit{rf} \cdot \kappa \rightarrow \Delta f \cdot h^l_\mathit{rf} < \Delta f \cdot (h^s_\mathit{rf} \cdot \kappa)$
 %
-%The frequency detuning for the rf cavity frequency of the large synchrotron is smaller than that of the small synchrotron, so the frequency detuning is preferred for the large synchrotron.
+%The frequency detuning for the rf cavity frequency of the large accelerator is smaller than that of the small accelerator, so the frequency detuning is preferred for the large accelerator.
 %\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of $H^{+}$ B2B Transfer from SIS18 to SIS100}
 \label{sec:cir_no_int1}
-Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continuous four out of ten buckets of the SIS100. Each batch consists of one bunch ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large synchrotron is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=1$. The GCD of $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa=1\cdot 5$ is 5, namely $Y=5$. Substituting these values into eq.~\ref{cir_int_1}, we get
+Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continuous four out of ten buckets of the SIS100. Each batch consists of one bunch ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large accelerator is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=1$. The GCD of $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa=1\cdot 5$ is 5, namely $Y=5$. Substituting these values into eq.~\ref{cir_int_1}, we get
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}_\mathit{rf}}{h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa}= \frac{10}{1 \cdot 5}=\frac{2}{1}
 \end{equation}
 
-Because the SIS100 is the large synchrotron and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
 
 %\begin{table}[[!htb]
 \begin{table}[!htb]
@@ -369,7 +369,7 @@ Because the SIS100 is the large synchrotron and the target, substituting $h^X_\m
 \begin{center}
     \begin{tabular}{ | c | c | c| }
     \hline
-	&  Large synchrotron (SIS100) is target synchrotron \\ \hline
+	&  Large accelerator (SIS100) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{SIS100}}=\SI{271.872}{kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} &   \tabincell{c}{$f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}$=\SI{1.359358}{MHz}+\SI{200}{Hz} \\and\\ $f_{\mathit{syn}}^{SIS100}=5f_{\mathit{rev}}^{\mathit{SIS100}}$=\SI{1.359358}{MHz}}\\ \hline
 
@@ -400,7 +400,7 @@ Detailed parameters of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, pl
 %%%%%%%%%%%%%%%%%% Circumference Not Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{ Circumference ratio is not an integer}
 %When the circumference ratio between two ring accelerators is not an integer, we have the relation between two rf frequencies, see. eq. ~\ref{close_to_interger_31}.
-%If the ratio of the circumference of the injection/extraction orbit of the large synchrotron to that of the small synchrotron is not an integer, $\kappa$ could be expressed as $\kappa + \lambda$ and we have the following relation.
+%If the ratio of the circumference of the injection/extraction orbit of the large accelerator to that of the small accelerator is not an integer, $\kappa$ could be expressed as $\kappa + \lambda$ and we have the following relation.
 %\begin{equation}
 %\frac{C^l}{C^s}=\kappa + \lambda \label{circumference_ratio_noint}
 %\end{equation}
@@ -425,7 +425,7 @@ Detailed parameters of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, pl
 %%%%%%%%%%%%%%%%%% Harmonic = circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Circumference Ratio is close to an Integer}
 \label{sec:close_to_int}
-When the circumference ratio of the large synchrotron to that of the small synchrotron is very close to an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
+When the circumference ratio of the large accelerator to that of the small accelerator is very close to an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation} 
 \label{ratio_close_int}
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot ( \kappa+ \lambda)}=\frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot  \kappa+h^s_\mathit{rf} \cdot \lambda}
@@ -444,9 +444,9 @@ When the circumference ratio of the large synchrotron to that of the small synch
 %\end{equation}
 
 
-%The slightly different frequencies are $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$. If the small synchrotron is the target, $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ works as for the bucket indication, or $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ works for the bucket indication. 
+%The slightly different frequencies are $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ and $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$. If the small accelerator is the target, $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ works as for the bucket indication, or $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ works for the bucket indication. 
 
-Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is close to an integer when the beam passes a target (e.g. the FRS, the Pbar target) between two ring accelerators. The ratio between two revolution frequencies can be expressed as
+Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large accelerators is close to an integer when the beam passes a target (e.g. the FRS, the pbar target) between two ring accelerators. The ratio between two revolution frequencies can be expressed as
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{s}}{f_{\mathit{rev}}^{l}}=\kappa+ \lambda\label{close_to_interger1}
 \end{equation}
@@ -461,16 +461,16 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\kappa/Y}=\frac{Y
 $Y$ is the GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$.
 %%%%%%%%%$$
 
-Two synchronization frequencies are beating automatically. The choice of the frequency for the bucket indication signal and the calculation of the synchronization window are similar as that of the integral circumference ratio scenario, see Sec. ~\ref{sec:integ}. Tab.~\ref{Syn_rev_large_close} shows the formulas related to the B2B transfer when the large synchrotron is the target and Tab.~\ref{Cir ratio close to integer} shows the formulas when the small synchrotron is the target. 
+Two synchronization frequencies are beating automatically. The choice of the frequency for the bucket indication signal and the calculation of the synchronization window are similar as that of the integral circumference ratio scenario, see Sec. ~\ref{sec:integ}. Tab.~\ref{Syn_rev_large_close} shows the formulas related to the B2B transfer when the large accelerator is the target and Tab.~\ref{Cir ratio close to integer} shows the formulas when the small accelerator is the target. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is close to an integer and the large synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is close to an integer and the large accelerator is the target}
 \label{Syn_rev_large_close}
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Large synchrotron is target synchrotron \\ \hline
+	&  Large accelerator is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$\\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}=\frac{Y}{\kappa}f_\mathit{rev}^{s}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}=Yf_\mathit{rev}^{l}$ \\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_\mathit{B2B}^\mathit{s}=\frac{h_{\mathit{rev}}^{l}}{h_{\mathit{syn}}^{l}}\cdot f_{\mathit{syn}}^{s}=\frac{1}{\kappa}f_{\mathit{rev}}^{s}$ and $f_\mathit{B2B}^\mathit{l}=f_{\mathit{rev}}^{l}$ \\ \hline
@@ -482,17 +482,17 @@ Two synchronization frequencies are beating automatically. The choice of the fre
 \end{center}
 \end{table}
 
-%When the small synchrotron is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket indication signal is $f_{\mathit{rev}}^{s}$. Or the bucket indication signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio close to integer} shows the formulas when the small synchrotron is the target.
+%When the small accelerator is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, the revolution period is longer than the period for the phase alignment. Hence, the frequency of the bucket indication signal is $f_{\mathit{rev}}^{s}$. Or the bucket indication signal with the frequency of $f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio close to integer} shows the formulas when the small accelerator is the target.
 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is close to an integer and the small synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is close to an integer and the small accelerator is the target}
 \label{Cir ratio close to integer}
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
-	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
+	&  \multicolumn{2}{c|}{Small accelerator is target accelerator} \\ \hline
 	Case& \tabincell{c}{ (1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{\kappa}\ge1$) } &\tabincell{c}{ (2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$  ($\frac{Y}{\kappa}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}=\frac{Y}{\kappa}f_\mathit{rev}^{s}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}=Yf_\mathit{rev}^{l}$} \\ \hline
@@ -514,7 +514,7 @@ Two synchronization frequencies are beating automatically. The choice of the fre
 
 \subsection{Use Case of h=4 B2B Transfer from SIS18 to ESR} 
 \label{sec:h4_18_ESR}
-Continuous two of four bunches are injected into two buckets of the injection orbit of the ESR ~\cite{steck_demonstration_2011}. The beam is accumulated in the ESR. The large synchrotron is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=4$ and $h^{\mathit{ESR}}_\mathit{rf}=2$. The circumference ratio between the SIS18 and the ESR injection orbit is
+Continuous two of four bunches are injected into two buckets of the injection orbit of the ESR ~\cite{steck_demonstration_2011}. The beam is accumulated in the ESR. The large accelerator is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=4$ and $h^{\mathit{ESR}}_\mathit{rf}=2$. The circumference ratio between the SIS18 and the ESR injection orbit is
 \begin{equation}
 \frac{C^l}{C^s}=\kappa + \lambda =2-0.003
 \end{equation}
@@ -523,7 +523,7 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}=4$ and $h^{\mathit{ESR}}_\mathit{rf}\
 \frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^{\mathit{SIS18}}_\mathit{rf}}{h^{\mathit{ESR}}_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {4}{2 \cdot(2-0.003)}
 \end{equation}
 
-The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
+The ESR is the small accelerator and the target and there exists $Y/\kappa>1$,so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
 
 
 \begin{table}[!htb]
@@ -533,7 +533,7 @@ The ESR is the small synchrotron and the target and there exists $Y/\kappa>1$,so
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Small synchrotron (ESR) is target synchrotron \\ \hline
+	&  Small accelerator (ESR) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{\kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=4f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{1.373201}{\MHz}$ and $f_{\mathit{syn}}^{ESR}=2f_{\mathit{rev}}^{\mathit{ESR}}=\SI{1.371302}{\MHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=2f_{\mathit{rev}}^{\mathit{SIS18}}= \SI{686.601}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{\kHz}$\\ \hline
@@ -553,7 +553,7 @@ The goal time difference between the SIS18 and ESR rf systems equals to $t_{v\_e
 %When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy dependent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{\mathit{rf}}^{\mathit{ESR}}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. For more details, please see Appendix \ref{sec:18tothe ESRviaFRS}. The 1/9 the ESR revolution frequency works for the bucket indication. After the synchronization, the phase difference between the 1/5 the SIS18 and 1/9 the ESR revolution frequency depends on the accumulation method. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of h=1 B2B Transfer from SIS18 to ESR} 
-One bunch is injected into one bucket of the injection orbit of the ESR. The beam is accumulated in the ESR. The large synchrotron is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The circumference ratio between the SIS18 and the ESR is
+One bunch is injected into one bucket of the injection orbit of the ESR. The beam is accumulated in the ESR. The large accelerator is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The circumference ratio between the SIS18 and the ESR is
 \begin{equation}
 \frac{C^l}{C^s}=\kappa + \lambda =2-0.003
 \end{equation}
@@ -571,7 +571,7 @@ The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathi
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Small synchrotron (ESR) is target synchrotron \\ \hline
+	&  Small accelerator (ESR) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{988.388}{\kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{989.756}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/2=\SI{988.388}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}=\SI{989.756}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/2=\SI{988.388}{\kHz}$\\ \hline
@@ -588,7 +588,7 @@ Detailed parameters of the $h=1$ B2B transfer from the SIS18 to the ESR, please 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of B2B transfer from ESR to CRYRING}
-Only one bunch is injected into one bucket of the CRYRING ~\cite{herfurth_low_2013, lestinsky_cryring_2015}. The large synchrotron is the ESR and the small one is the CRYRING. $h^{\mathit{ESR}}_\mathit{rf}=1$ and $h^{\mathit{CRYRING}}_\mathit{rf}=1$. The circumference ratio between the ESR and the CRYRING is
+Only one bunch is injected into one bucket of the CRYRING ~\cite{herfurth_low_2013, lestinsky_cryring_2015}. The large accelerator is the ESR and the small one is the CRYRING. $h^{\mathit{ESR}}_\mathit{rf}=1$ and $h^{\mathit{CRYRING}}_\mathit{rf}=1$. The circumference ratio between the ESR and the CRYRING is
 \begin{equation}
 \frac{C^l}{C^s}=\kappa + \lambda =2+0.003
 \end{equation}
@@ -606,7 +606,7 @@ The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X_\m
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Small synchrotron (CRYRING) is target synchrotron \\ \hline
+	&  Small accelerator (CRYRING) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CRYRING}=\SI{686.600}{kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{kHz}$ \\and \\$f_{\mathit{syn}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2$=\SI{686.600}{kHz}}\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & \tabincell{c}{$f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}=\SI{685.651}{kHz}$ \\and \\$f_{\mathit{B2B}}^{CRYRING}=f_{\mathit{rev}}^{\mathit{CRYRING}}/2=\SI{686.600}{kHz}$}\\ \hline
@@ -622,7 +622,7 @@ The CRYRING synchronization frequency works for the bucket indication. The goal 
 
 %%%%%%%%%%%%%%%%%% Harmonic != circumference ratio Integer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Circumference Ratio is far away from an Integer} 
-When the circumference ratio of the large synchrotron to that of the small synchrotron is far away from an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
+When the circumference ratio of the large accelerator to that of the small accelerator is far away from an integer, there exists the relation between two cavity rf frequencies, see Chap. ~\ref{background}. 
 \begin{equation}
 \label{ratio_away_int}
 \frac{f_{\mathit{rf}}^{l}}{f_{\mathit{rf}}^{s}}=\frac{h^l_\mathit{rf}\cdot n}{h^s_\mathit{rf} \cdot m+h^s_\mathit{rf} \cdot\lambda\cdot n}
@@ -643,7 +643,7 @@ When the circumference ratio of the large synchrotron to that of the small synch
 
 %With the frequency beating method, the slightly different frequencies are $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\cdot m}$ and the beating frequency is the difference between $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}\cdot n}$ and $\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}\cdot m}$.
 
-Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large synchrotrons is far away from an integer when the beam passes a target between two ring accelerators. The revolution frequency ratio can be expressed as
+Besides, it is also grouped to this scenario, that the revolution frequency ratio between the small and large accelerators is far away from an integer when the beam passes a target between two ring accelerators. The revolution frequency ratio can be expressed as
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{s}}{f_{\mathit{rev}}^{l}}=\frac{m}{n}+ \lambda\label{close_to_interger2}
 \end{equation}
@@ -657,16 +657,16 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}m/Y}=\frac{Y}{m}f
 
 $Y$ is the GCD of $h^l_\mathit{rf}\cdot n$ and $h^s_\mathit{rf} \cdot m$.
 
-Two synchronization frequencies are beating automatically. When the large synchrotron is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{l}$ and $f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}< f_{\mathit{rev}}^{l}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas related to the B2B transfer when the large synchrotron is the target.
+Two synchronization frequencies are beating automatically. When the large accelerator is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{l}$ and $f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}< f_{\mathit{rev}}^{l}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas related to the B2B transfer when the large accelerator is the target.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the large synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the large accelerator is the target}
 \label{Cir ratio far from integer large}
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
-	&  \multicolumn{2}{c|}{Large synchrotron is target synchrotron} \\ \hline
+	&  \multicolumn{2}{c|}{Large accelerator is target accelerator} \\ \hline
 	Case& \tabincell{c}{ (1) $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$ ($\frac{Y}{n}\ge1$) } &\tabincell{c}{(2)  $f_{\mathit{syn}}^{l}<f_{\mathit{rev}}^{l}$  ($\frac{Y}{n}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{l}$ &$f_{\mathit{syn}}^{l}$ \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}=\frac{Y}{m}f_{\mathit{rev}}^{s}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
@@ -679,17 +679,17 @@ Two synchronization frequencies are beating automatically. When the large synchr
     \end{tabular}
 \end{center}
 \end{table}
-When the small synchrotron is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, namely $\frac{Y}{m}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}< f_{\mathit{rev}}^{s}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio far from integer small} shows the formulas related to the B2B transfer when the small synchrotron is the target.
+When the small accelerator is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{s}$ and $f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$, namely $\frac{Y}{m}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{s}< f_{\mathit{rev}}^{s}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{s}$. Tab.~\ref{Cir ratio far from integer small} shows the formulas related to the B2B transfer when the small accelerator is the target.
 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the small synchrotron is the target}
+\caption{Parameters related to the B2B transfer when the circumference ratio is far away from an integer and the small accelerator is the target}
 \label{Cir ratio far from integer small}
 \begin{center}
     \begin{tabular}{ | c | c | c |}
     \hline
-	&  \multicolumn{2}{c|}{Small synchrotron is target synchrotron} \\ \hline
+	&  \multicolumn{2}{c|}{Small accelerator is target accelerator} \\ \hline
 	Case& \tabincell{c}{(1) $f_{\mathit{syn}}^{s}\ge f_{\mathit{rev}}^{s}$ ($\frac{Y}{m}\ge1$) } &\tabincell{c}{(2) $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$ ($\frac{Y}{m}<1$) } \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{rev}}^{s}$ &$f_{\mathit{syn}}^{s}$ \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & \multicolumn{2}{c|}{$f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot m)/Y}=\frac{Y}{m}f_{\mathit{rev}}^{s}$ and $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{(h^l_\mathit{rf}\cdot n)/Y}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}\\ \hline
@@ -734,7 +734,7 @@ When the small synchrotron is the target, the frequency of the bucket indication
 %Two frequencies are $\frac {f_{\mathit{rf}}^{s}}{h^s_\mathit{rf} m}$ and $\frac {f_{\mathit{rf}}^{l}}{h^l_\mathit{rf} n}$. The  beating frequency is $+\frac{\lambda f_{\mathit{rev}}^{l}}{m}$. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of $H^{+}$ B2B Transfer from SIS100 to CR} 
-After the injection into the SIS100, four bunches are merged into one by the harmonic 5. This bunch is extracted from the SIS100 and goes to the Pbar target, then antiprotons are produced and injected into one bucket of the CR ~\cite{steck_demonstration_2011}. The large synchrotron is the SIS100 and the small one is the CR, $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the proton energy before the Pbar is \SI{28.8}{GeV/\atomicmassunit} and the antiproton energy after the Pbar is \SI{3}{GeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
+After the injection into the SIS100, four bunches are merged into one by the harmonic 5. This bunch is extracted from the SIS100 and goes to the pbar target, then antiprotons are produced and injected into one bucket of the CR ~\cite{steck_demonstration_2011}. The large accelerator is the SIS100 and the small one is the CR, $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the proton energy before the pbar target is \SI{28.8}{GeV/\atomicmassunit} and the antiproton energy after the pbar target is \SI{3}{GeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.8-0.041=\frac{m}{n}+ \lambda=\frac{24}{5}-0.041
 \end{equation}
@@ -743,7 +743,7 @@ The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{C
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.041\cdot 5}
 \end{equation}
 
-The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton}.
+The CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton}.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -752,7 +752,7 @@ The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/2
 \begin{center}
     \begin{tabular}{ | c | c | c| }
     \hline
-	&  Small synchrotron (CR) is target synchrotron \\ \hline
+	&  Small accelerator (CR) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{54.866}{\kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.340}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.340}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
@@ -766,7 +766,7 @@ The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/2
 \end{table}
 There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the CR), which is beyond the scope of this dissertation. Detailed parameters of the $H^{+}$ B2B transfer from the SIS100 to the CR, please see Appendix \ref{100toCR}.
 %
-%Here we give another operation example for the B2B transfer from the SIS100 to the CR via the Pbar with the smaller bunch-to-bucket inject center mismatch, that the energy of the proton beam before the Pbar is \SI{8.6}{GeV/\atomicmassunit} and the antiproton energy after the Pbar is \SI{3}{GeV/\atomicmassunit} with $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
+%Here we give another operation example for the B2B transfer from the SIS100 to the CR via the pbar with the smaller bunch-to-bucket inject center mismatch, that the energy of the proton beam before the pbar is \SI{8.6}{GeV/\atomicmassunit} and the antiproton energy after the pbar is \SI{3}{GeV/\atomicmassunit} with $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
 %\begin{equation} 
 %\frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.8-0.001=\frac{m}{n}+ \lambda=\frac{24}{5}-0.001
 %\end{equation}
@@ -775,7 +775,7 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %\frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.001\cdot 5}
 %\end{equation}
 %
-%The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 24=24$ is 1, namely $Y=1$. The CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton1}. 
+%The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 24=24$ is 1, namely $Y=1$. The CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton1}. 
 %
 %\begin{table}[!htb]
 %\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -784,7 +784,7 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %\begin{center}
 %    \begin{tabular}{ | c | c | c| }
 %    \hline
-%	&  Small synchrotron (CR) is target synchrotron \\ \hline
+%	&  Small accelerator (CR) is target accelerator \\ \hline
 %   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{54.866}{\kHz}$  \\ \hline
 %	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
 %	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{55.107}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/24=\SI{54.866}{\kHz}$\\ \hline
@@ -801,7 +801,7 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of RIB B2B Transfer from SIS100 to CR} 
 \label{RIB_100_CR}
-After the injection into the SIS100, eight bunches are merged into one by the harmonic 2. This bunch is extracted from the SIS100 and goes to the Super FRS, then the RIB is produced and injected into one bucket of the CR. The large synchrotron is the SIS100 and the small one is the CR. $h^{\mathit{SIS100}}_\mathit{rf}=2$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the energy of the heavy ion beam before the Super FRS is \SI{1.5}{GeV/\atomicmassunit} and the RIB energy after the Super FRS is \SI{740}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
+After the injection into the SIS100, eight bunches are merged into one by the harmonic 2. This bunch is extracted from the SIS100 and goes to the Super FRS, then the RIB is produced and injected into one bucket of the CR. The large accelerator is the SIS100 and the small one is the CR. $h^{\mathit{SIS100}}_\mathit{rf}=2$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the energy of the heavy ion beam before the Super FRS is \SI{1.5}{GeV/\atomicmassunit} and the RIB energy after the Super FRS is \SI{740}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.4-0.0046=\frac{m}{n}+ \lambda=\frac{22}{5}-0.0046
 \end{equation}
@@ -811,7 +811,7 @@ Substituting $h^{\mathit{SIS100}}_\mathit{rf}$, $h^{\mathit{CR}}_\mathit{rf}$, m
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{2\cdot 5}{1 \cdot 22- 1 \cdot0.0046\cdot 5}
 \end{equation}
 
-The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small synchrotron and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRrib}.
+The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRrib}.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -820,7 +820,7 @@ The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{C
 \begin{center}
     \begin{tabular}{ | c | c | c| }
     \hline
-	& Small synchrotron (CR) is target synchrotron \\ \hline
+	& Small accelerator (CR) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{CR}=\SI{102.218}{\kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS100}=2f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{syn}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS100}=2f_{\mathit{rev}}^{\mathit{SIS100}}/5=\SI{102.326}{\kHz}$ and $f_{\mathit{B2B}}^{CR}=f_{\mathit{rev}}^{\mathit{CR}}/11=\SI{102.218}{\kHz}$\\ \hline
@@ -836,7 +836,7 @@ Detailed parameters of RIB B2B transfer from the SIS100 to the CR, please see Ap
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of B2B Transfer from CR to HESR} 
 \label{B2B_CR_HESR}
-One bunch of the CR is injected into one bucket of the HESR. The beam is accumulated in the HESR ~\cite{toelle_hesr_2007}. The large synchrotron is the HESR and the small one is the CR. $h^{\mathit{HESR}}_\mathit{rf}=1$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The circumference ratio between the HESR and the CR is
+One bunch of the CR is injected into one bucket of the HESR. The beam is accumulated in the HESR ~\cite{toelle_hesr_2007}. The large accelerator is the HESR and the small one is the CR. $h^{\mathit{HESR}}_\mathit{rf}=1$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The circumference ratio between the HESR and the CR is
 
 \begin{equation}
 \frac{C^{\mathit{HESR}}}{C^{\mathit{CR}}}=2.6-0.003=\frac{m}{n}+ \lambda = \frac{13}{5}-0.003
@@ -847,7 +847,7 @@ The GCD of $h^{\mathit{HESR}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{CR}}
 \frac{f_{\mathit{rf}}^{\mathit{HESR}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{HESR}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{HESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 13- 1 \cdot 0.003\cdot 5}
 \end{equation}
 
-The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR is obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
+The HESR is the large accelerator and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR is obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
 
 %The B2B transfer from the CR to the ESR is impossible to be achieved by the frequency beating method because there exist no slightly different frequencies between two cavity rf frequencies. Besides, the bunch is stochastic cooling by electrons in the CR. So only the phase shift for the ESR is the only synchronization method. 
 
@@ -858,7 +858,7 @@ The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1
 \begin{center}
     \begin{tabular}{ | c | c |  }
     \hline
-		&  Larger synchrotron (HESR) is target synchrotron \\ \hline
+		&  Larger accelerator (HESR) is target accelerator \\ \hline
 
 		\rowcolor[gray]{0.8}
 		&\SI{3}{GeV/\atomicmassunit} antiproton	\\ \hline
@@ -885,7 +885,7 @@ The HESR is the large synchrotron and the target and there exists $\frac{Y}{n}=1
 The goal time difference between the two rf systems depends on the accumulation method. Detailed parameter about the B2B transfer from the CR to the HESR, please see Appendix \ref{sec:CRtoHESR}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Use Case of RIB B2B Transfer from SIS18 to ESR via the FRS} 
-Only one bunch is extracted from the SIS18 and goes to the FRS, then a RIB is produced and injected into one bucket of the ESR. The large synchrotron is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. Here we take an applied case as an example, that the energy of the heavy ion beam before the FRS is \SI{550}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
+Only one bunch is extracted from the SIS18 and goes to the FRS, then a RIB is produced and injected into one bucket of the ESR. The large accelerator is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. Here we take an applied case as an example, that the energy of the heavy ion beam before the FRS is \SI{550}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{\mathit{ESR}}}{f_{\mathit{rev}}^{\mathit{SIS18}}}=1.8+0.036=\frac{m}{n}+ \lambda=\frac{9}{5}+0.036
 \end{equation}
@@ -893,7 +893,7 @@ Substituting $h^{\mathit{SIS18}}_\mathit{rf}$, $h^{\mathit{ESR}}_\mathit{rf}$, m
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.036\cdot 5}
 \end{equation}
-The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS}.
+The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small accelerator and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS}.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to an applied case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method}
@@ -901,7 +901,7 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR
 \begin{center}
     \begin{tabular}{ | c | c | }
     \hline
-	&  Small synchrotron (ESR) is target synchrotron \\ \hline
+	&  Small accelerator (ESR) is target accelerator \\ \hline
    $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{219.642}{\kHz}$  \\ \hline
 	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
 	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{215.393}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
@@ -913,7 +913,7 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR
 \end{center}
 \end{table}
 
-There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the ESR or the coasting beam injection), which is beyond the scope of this dissertation. More parameters about the B2B transfer from the SIS18 to the ESR via the FRS, please see Appendix \ref{sec:18toESRvithe FRS}.
+There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the ESR or the coasting beam injection), which is beyond the scope of this dissertation. More parameters about the B2B transfer from the SIS18 to the ESR via the FRS, please see Appendix \ref{sec:18toESRvia the FRS}.
 
 %Here we give another operation example for the B2B transfer from the SIS18 to the ESR via the FRS with the smaller bunch-to-bucket inject center mismatch, that the energy of the heavy ion beam before the FRS is \SI{590}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit} with $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
 %\begin{equation} 
@@ -923,7 +923,7 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %\begin{equation}
 %\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.006\cdot 5}
 %\end{equation}
-%The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small synchrotron and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS1}.
+%The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small accelerator and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS1}.
 %\begin{table}[!htb]
 %\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 %\caption{Parameters related to an recommended case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method}
@@ -931,7 +931,7 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %\begin{center}
 %    \begin{tabular}{ | c | c | }
 %    \hline
-%	&  Small synchrotron (ESR) is target synchrotron \\ \hline
+%	&  Small accelerator (ESR) is target accelerator \\ \hline
 %   $f_\mathit{bucket}$ & $f_{\mathit{syn}}^{ESR}=\SI{219.642}{\kHz}$  \\ \hline
 %	\tabincell{c}{$f_\mathit{syn}^\mathit{X}$} & $f_{\mathit{syn}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{syn}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
 %	\tabincell{c}{$f_\mathit{B2B}^\mathit{X}$} & $f_{\mathit{B2B}}^{SIS18}=f_{\mathit{rev}}^{\mathit{SIS18}}/5=\SI{218.912}{\kHz}$ and $f_{\mathit{B2B}}^{ESR}=f_{\mathit{rev}}^{\mathit{ESR}}/9=\SI{219.642}{\kHz}$\\ \hline
@@ -945,11 +945,11 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary of Formulas related to B2B Transfer}
-In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large synchrotron is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small synchrotron is the target and the revolution period is longer than the period of the synchronization frequency of the target synchrotron. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small synchrotron is the target and the revolution period is shorter than the period of the synchronization frequency of the target synchrotron.
+In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large accelerator is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator.
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Summary of the formulas related to the B2B transfer when the large synchrotron is the target}{}
+\caption{Summary of the formulas related to the B2B transfer when the large accelerator is the target}{}
 \label{B2B_transfer_rule}
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
@@ -976,7 +976,7 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is longer than the period of the synchronization frequency of the target synchrotron}{}
+\caption{Summary of the formulas related to the B2B transfer when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator}{}
 \label{B2B_transfer_rule1}
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
@@ -1008,7 +1008,7 @@ In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} 
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{Summary of the formulas related to the B2B transfer when the small synchrotron is the target and the revolution period is shorter than the period of the synchronization frequency of the target synchrotron}{}
+\caption{Summary of the formulas related to the B2B transfer when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator}{}
 \label{B2B_transfer_rule11}
 \begin{center}
     \begin{tabular}{| c | c | c | c | c | c | c | c|}
