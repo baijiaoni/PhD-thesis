@@ -187,7 +187,7 @@ The source accelerator generally accomplishes the phase alignment in case of the
 \label{cpt_func}
 This section describes the realization of the FAIR B2B transfer system based on the FAIR control system and LLRF system introduced in Chap. ~\ref{technical}.
 
-The phase alignment is based on the phase difference between two synchronization frequencies. Because it is not preferable to have a direct connection between two ring accelerators around such a big FAIR campus for a direct phase measurement based on the existing technical basis, a shared reference sinusoidal signal (which is called “\gls{glos:Syn_ref_signal}” and denoted as \gls{symb:syn_ref}) is used for the indirect phase difference measurement. The \gls{glos:Syn_ref_signal} has a fixed frequency and is always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges (which is called the ``\gls{glos:T0_incidents}``) ~\cite{ferrand_system_2014, ferrand_system_2015}. Thus, the synchronization reference signal is synchronous in different supply rooms by definition. The phase measurement of each rf system is based on the frequency beating between the synchronization frequency and the \gls{glos:Syn_ref_signal}, achieved by measuring the phase deviation between these two frequencies (denoted by \gls{symb:phase_diff1}), see Fig. ~\ref{phase_diffe_align}. 
+The phase alignment is based on the phase difference between two synchronization frequencies. Because it is not preferable to have a direct connection between two ring accelerators around such a big FAIR campus for a direct phase measurement based on the existing technical basis, a shared reference sinusoidal signal (which is called “\gls{glos:Syn_ref_signal}” and denoted as \gls{symb:syn_ref}) is used for the indirect phase difference measurement. The \gls{glos:Syn_ref_signal} has a fixed frequency and is always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges~\cite{ferrand_system_2014, ferrand_system_2015}. The first positive zero-crossings of C2 clocks after T0 edges is called the ``\gls{glos:T0_incidents}``. Thus, the synchronization reference signal is synchronous in different supply rooms by definition. The phase measurement of each rf system is based on the frequency beating between the synchronization frequency and the \gls{glos:Syn_ref_signal}, achieved by measuring the phase deviation between these two frequencies (denoted by \gls{symb:phase_diff1}), see Fig. ~\ref{phase_diffe_align}. 
 \begin{equation}
 \phi^X(t)= [2\pi(f_\mathit{syn}^{X}-f_\mathit{ref})t+\phi^X_0] \mod 2\pi - \pi
 %\varphi^X(nT_\mathit{sample})= k^\mathit{X}nT_\mathit{sample}+ \varphi^X_0
@@ -221,7 +221,7 @@ For the reproduction of the bucket indication signal at the source accelerator, 
 \end{equation}
 where $\varphi^\mathit{trg}_0$ is the initial value of the phase deviation between the bucket indication signal and the synchronization reference signal.
 
-The actual phase of the bucket indication signal is irrelevant to the synchronization reference signal. In order to get rid of the effect of the synchronization reference signal, the extrapolated phase deviation at T0 incidents, denoted as $\varphi^\mathit{trg}({T0})$, will be used for the reproduction of the bucket indication signal at the source accelerator, because the synchronization reference signal is a sinusoidal wave, whose phase is $0^\circ$ at T0 incidents. For the target accelerator, the extrapolated phase deviation between the synchronization frequency and the synchronization reference signal at T0 incidents, denoted as $\phi^\mathit{trg}({T0})$, can be deduced from $\varphi^\mathit{trg}({T0})$, because the phase of the high harmonic frequency can be deduced from that of the low harmonic frequency.
+The actual phase of the bucket indication signal is irrelevant to the synchronization reference signal. Because the phase of the synchronization reference signal is $0^\circ$ at T0 incidents, the extrapolated phase deviation at T0 incidents, denoted as $\varphi^\mathit{trg}({T0})$, is the actual phase of the bucket indication signal and will be used for the reproduction of the bucket indication signal at the source accelerator. For the target accelerator, the extrapolated phase deviation between the synchronization frequency and the synchronization reference signal at T0 incidents, denoted as $\phi^\mathit{trg}({T0})$, can be deduced from $\varphi^\mathit{trg}({T0})$, because the phase of the high harmonic frequency can be deduced from that of the low harmonic frequency.
 \begin{eqnarray}
 \phi^\mathit{trg}({T0})=
 \begin{cases}
@@ -285,7 +285,7 @@ The measurement and extrapolation of the phase deviation is based on the frequen
 %\item Trigger SCU provides trigger for the kickers in each accelerator.
 %\end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase measurement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Phase Measurement and corresponding Timestamp of each Rf System}
+\subsection{Phase Measurement and corresponding Timestamp of Each Rf System}
 The rf frequencies in the source and target accelerator need to be stable and constant during the B2B transfer process. The phase measurement of each rf system follows the principles as shown below.
 
 \begin{enumerate}
@@ -296,7 +296,7 @@ The rf frequencies in the source and target accelerator need to be stable and co
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- \subsubsection{Measurement of Actual Phase Values of each Rf System}
+ \subsubsection{Measurement of Actual Phase Values of Each Rf System}
 The phase measurement of each rf system is achieved by measuring the phase deviation between the phase measurement signal and the \gls{glos:Syn_ref_signal} of a accelerator. The phase deviation (denoted by \gls{symb:phase_diff}) has a linear relationship with time, whose range is from $-\pi$ to $+\pi$. 
 \begin{equation}
 \varphi^X(t)= [(k^\mathit{X}t+\varphi^X_0) \mod 2\pi] - \pi
@@ -314,7 +314,7 @@ where $k^\mathit{X}$ is the slope of the phase deviation, namely $k^\mathit{X}=2
    \label{phase_prediction}
 \end{figure}
 
-Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated accelerator. The red sinusoidal wave represents the synchronization reference signal (e.g \SI{200}{kHz}) in a supply room and the black wave the phase measurement signal (e.g. \SI{157.254}{kHz}) from the \gls{glos:group_DDS}. The phase deviation between the phase measurement signal and the synchronization reference signal is measured by the Phase Advance Measurement (\gls{PAM}) module at the source accelerators and at the target accelerator. The phase deviation measurement is performed synchronously to an internal clock, which is represented by the blue dots. This measurement is asynchronously to the BuTiS reference clock. The measured phase deviation can be expressed as
+Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a dedicated accelerator. The red sinusoidal wave represents the synchronization reference signal (e.g \SI{200}{kHz}) in a supply room and the black wave the phase measurement signal (e.g. \SI{157.254}{kHz}) from the \gls{glos:group_DDS}. The phase deviation between the phase measurement signal and the synchronization reference signal is measured by the Phase Advance Measurement (\gls{PAM}) module at the source accelerators and at the target accelerator. The phase deviation measurement is performed synchronously to an internal clock, which is represented by the blue dots. The measured phase deviation can be expressed as
 \begin{equation}
 \varphi^X(nT_\mathit{sample\_PAM})=[( k^\mathit{X}\cdot nT_\mathit{sample\_PAM}+\varphi^X_0) \mod 2\pi ]-\pi
 \end{equation}
@@ -322,7 +322,7 @@ where \gls{symb:sample_period_PAM} is the measurement sampling period of the pha
 
 For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase extrapolate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Phase Extrapolation of each Rf System}
+\subsubsection{Phase Extrapolation of Each Rf System}
 The phase deviation can be extrapolated due to the linear relationship between time and the phase deviation. 
 
 Based on a series of the measured samples of the phase deviation, the phase deviation at the T0 incidents (denoted by \gls{symb:phase_diff_T0} and called the ``extrapolated phase advance``) are extrapolated at the source and target accelerators by the Phase Advance Prediction (\gls{PAP}) Module.
@@ -340,13 +340,13 @@ The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at t
 \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Timestamp of Extrapolated Phase}
-The extrapolated phase advance is synchronized with T0 incidents by the PAP module, but it is not synchronized with the absolute time. This is one of the tasks of the multi-purpose B2B source and target SCUs ~\cite{beck_new_2012, thieme_scu_2013}, which are located in the source and target accelerators. The PAP module is a SCU slave \footnote{\url{https://en.wikipedia.org/wiki/Master/slave_(technology)}}, respectively integrated into the B2B source SCU and B2B target SCU, see Fig.~\ref{PAP}. Both the B2B source and target SCUs could get the timestamp of the T0 incidents. 
- \begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{PAP.png}
-   \caption{Integration of the Phase Advance Prediction Module into the B2B source SCU}
-   \label{PAP}
-\end{figure}
+The extrapolated phase advance is synchronized with T0 incidents by the PAP module, but it is not synchronized with the absolute time. This is one of the tasks of the multi-purpose B2B source and target SCUs ~\cite{beck_new_2012, thieme_scu_2013}, which are located in the source and target accelerators. The PAP module is a SCU slave \footnote{\url{https://en.wikipedia.org/wiki/Master/slave_(technology)}}, respectively integrated into the B2B source SCU and B2B target SCU. Both the B2B source and target SCUs could get the timestamp of the T0 incidents. 
+% \begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=150mm]{PAP.png}
+%   \caption{Integration of the Phase Advance Prediction Module into the B2B source SCU}
+%   \label{PAP}
+%\end{figure}
 
 Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. The DM broadcasts the timing frame of \verb|CMD_B2B_START| to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and the \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at a designated time (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). The timestamp of the start is an integer multiple of \SI{10}{\us}, the period of the T0 incident. They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules needs approximately \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every T0 incident. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to receive the extrapolated phase \gls{symb:phase_diff_time0} (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules, as well as the slope of the phase deviation \gls{symb:slope}. They also timestamp the T0 incidents \gls{symb:time_phase_diff_T0} which corresponds to the extrapolated phase. The B2B source SCU obtains $\psi^\mathit{src}_0$, $t_\psi^\mathit{src}$ and $k^\mathit{src}$ at the source accelerator and the B2B target SCU obtains $\psi^\mathit{trg}_0$, $t_\psi^\mathit{trg}$ and $k^\mathit{trg}$ at the target accelerator. In fact, $t_\psi^\mathit{src}=t_\psi^\mathit{trg}$.
  \begin{figure}[!htb]
@@ -444,7 +444,7 @@ A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for 
 f_{\mathit{actual}}(t)=\frac{\Delta \phi_\mathit{shift}}{\pi}f_{\mathit{normalized}}(t) \label{actual_profile}
 \end{equation}
 
-Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency  modulation profiles and the corresponding phase shift profiles. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $\pi$. The blue one is $1/2 f_{\mathit{normalized}}$ with the phase shift of $\pi/2$ and the green one is $1/3 f_{\mathit{normalized}}$ with $\pi/3$. 
+Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency modulation profiles and the corresponding phase shift profiles. A sinusoidal modulation is used as an example, which is best for the beam stability. For more details about the frequency modulation curves, please see Chap. ~\ref{realization}. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $\pi$. The blue one is $1/2 f_{\mathit{normalized}}$ with the phase shift of $\pi/2$ and the green one is $1/3 f_{\mathit{normalized}}$ with $\pi/3$. 
 
 \begin{figure}[!htb]
    \centering   
@@ -453,13 +453,14 @@ Fig.~\ref{normalized_profile} shows an example of a normalized and several actua
    \label{normalized_profile}
 \end{figure}  
 
-Fig.~\ref{PSM} shows the integration of the Phase Shift Module (PSM) into the B2B source SCU. The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the phase measurement signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed by the LLRF system to all the Group DDS of the accelerator. The Group DDS signals are routed to different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the accelerator. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.
-  \begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{PSM.png}
-   \caption{Integration of the Phase Shift Module into the B2B source SCU}
-   \label{PSM}
-\end{figure}                     
+%Fig.~\ref{PSM} shows the integration of the Phase Shift Module (PSM) into the B2B source SCU. 
+The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the phase measurement signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed by the LLRF system to all the Group DDS of the accelerator. The Group DDS signals are routed to different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the accelerator. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.
+%  \begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=150mm]{PSM.png}
+%   \caption{Integration of the Phase Shift Module into the B2B source SCU}
+%   \label{PSM}
+%\end{figure}                     
 
 A particular case of the B2B synchronization occurs, when the target accelerator is empty, i.e. it does not capture any bunch yet, the phase shift can be done for the target accelerator without adiabatical consideration (e.g. the phase jump is possible). In this case, the B2B source SCU sends the timing frame \verb|TGM_PHASE_JUMP| to the B2B target SCU, which contains the required phase shift. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS with the synchronization frequency of the target accelerator.
 
@@ -536,7 +537,7 @@ where the second term of $T_\mathit{wait}$, $n\cdot \frac{1}{|f_{\mathit{syn}}^\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bucket label %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bucket Label}
 \label{sec:bucket_label}
-The bucket label is realized based on the bucket indication signal for the first bucket plus a fixed delay for the indication of the correct buckets to be filled. 
+The bucket label is realized based on the bucket indication signal plus a fixed delay for the indication of the correct buckets to be filled. The bucket indication signal indicates the first bucket. 
 
 The evolution of the phase deviation between the phase measurement signal and the synchronization reference signal of the target accelerator is calculated for any T0 incidents (same as eq. ~\ref{advance_phase}).
 \begin{equation}
@@ -556,20 +557,20 @@ it is also called the ”reproduced signal”. The bucket indication signal can 
 
 
 
-The FAIR B2B transfer system needs the bucket indication not only at the rf flattop, but also during the whole acceleration cycle. The bucket indication at the rf flattop is used for the normal extraction and injection and the bucket indication during the whole acceleration cycle is used for the emergency dump. For the SIS100 emergency kick, the reproduced signal has always the same frequency and is always in phase with the SIS100 revolution signal, so it is called the ''real-time reproduced signal''. The bunch gap label is realized based on the real-time reproduced signal for the first bucket plus a variable delay for the indication of the bunch gap.
+The FAIR B2B transfer system needs the bucket indication not only at the rf flattop, but also during the whole acceleration cycle. The bucket indication at the rf flattop is used for the normal extraction and injection and the maximum bunch spacing indication during the whole acceleration cycle is used for the emergency dump. For the SIS100 emergency kick, the reproduced signal has always the same frequency and is always in phase with the SIS100 revolution signal, so it is called the ''real-time reproduced signal''. The bunch spacing label is realized based on the real-time reproduced signal for the first bucket plus a variable delay for the indication of the bunch spacing.
 
 
- \begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{PCM.png}
-   \caption{Integration of the Phase Correction Module into the Trigger SCU}
-   \label{PCM}
-\end{figure}
-The bucket label is realized by the Trigger SCU, the Signal Reproduction (SR) module and the Phase Correction Module (PCM), see Fig.~\ref{PCM}. The reproduced signal is produced by SR module. The Trigger SCU is responsible for the receipt of the phase correction value from the B2B source SCU and the transfer of this value to the PCM. The PCM module is used to correct the phase of the reproduced signal. The PCM module is a SCU slave in the Trigger SCU. The SR module produces the bucket indication signal marker in the format of the TTL signal, whose rising edges are aligned with the positive zero-crossings of the rf signal of the revolution frequency or the synchronization frequency. For more details about the implementation and realization of the PCM and the SR module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}. 
+% \begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=150mm]{PCM.png}
+%   \caption{Integration of the Phase Correction Module into the Trigger SCU}
+%   \label{PCM}
+%\end{figure}
+The bucket label is realized by the Trigger SCU, the Signal Reproduction (SR) module and the Phase Correction Module (PCM). The reproduced signal is produced by SR module. The Trigger SCU is responsible for the receipt of the phase correction value from the B2B source SCU and the transfer of this value to the PCM. The PCM module is used to correct the phase of the reproduced signal. The PCM module is a SCU slave in the Trigger SCU. The SR module produces the bucket indication signal marker in the format of the TTL signal, whose rising edges are aligned with the positive zero-crossings of the rf signal of the revolution frequency or the synchronization frequency. For more details about the implementation and realization of the PCM and the SR module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}. 
 
-\subsection{Bucket Label for the normal Extraction and Injection}
+\subsection{Bucket Label for the Normal Extraction and Injection}
 
-For the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the reproduction of the bucket label. Here the B2B transfer from the SIS18 to the SIS100 is taken as an example.
+To determine the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the reproduction of the bucket label. Here the B2B transfer from the SIS18 to the SIS100 is taken as an example.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bucket_normal_indication.pdf}
@@ -591,13 +592,13 @@ The reproduced signal must do the phase correction at a specified T0 incident. T
 The SM considers the bucket delay $t_{\mathit{bucket}}$ within the kicker delay compensation, see Sec. ~\ref{sec:compensation}. In Fig.~\ref{bucket_label}, the reproduced signal is with the SIS100 revolution frequency and the $3^{rd}$ and $4^{th}$ buckets of ten buckets will be filled with $t_{\mathit{bucket}}=1\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
 \end{itemize}
 
-\subsection{Bunch Gap Label for Emergency Extraction}
+\subsection{Maximum Bunch Spacing Label for Emergency Extraction}
 
-Only for the SIS100 emergency procedure, the bunch gap label is important during the whole acceleration cycle. There are two steps for the realization of the bunch gap label, see Fig.~\ref{Emergency_label}.
+Only for the SIS100 emergency procedure, the maximum bunch spacing label is important during the whole acceleration cycle, because the emergency kicker can be triggered only at the maximum bunch spacing. There are two steps for the realization of the maximum bunch spacing label, see Fig.~\ref{Emergency_label}.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bunch_gap_indication.pdf}
-   \caption{The realization of the bunch gap for the emergency extraction.}
+   \caption{The realization of the maximum bunch spacing label for the emergency extraction.}
    \label{Emergency_label}
 \end{figure} 
 
@@ -605,9 +606,9 @@ Only for the SIS100 emergency procedure, the bunch gap label is important during
 \item[-] Step 1. Reproduced signal synchronized with the phase measurement signal of the revolution frequency
 
 The real-time reproduced signal is directly distributed from the switch matrix, which synchronizes with the revolution frequency in frequency and phase.
-\item[-] Step 2. Bunch gap indication
+\item[-] Step 2. Maximum bunch spacing indication
 
-The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the real-time reproduced signal is with the SIS100 revolution frequency and the $9^{th}$ and $10^{th}$ buckets of ten buckets are taken as an example as the bunch gap. The $t_{\mathit{bucket}}=4\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$.
+The SM considers the bunch train length $t_{\mathit{bucket}}$ within the kicker delay compensation. In Fig.~\ref{Emergency_label}, the real-time reproduced signal is with the SIS100 revolution frequency and the eight of ten buckets (e.g. from the $1^{st}$ to $8^{th}$ buckets) will be injected by bunches. Hence, the maximum bunch spacing is composed of the empty $9^{th}$ and $10^{th}$ buckets and the bunch train length $t_{\mathit{bucket}}$ equals to $4\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$.
 
 \end{itemize}
 
@@ -617,20 +618,20 @@ The SM considers the bunch gap $t_{\mathit{bucket}}$ within the kicker delay com
 \subsection{Fine Synchronization of Extraction and Injection Kickers}
 After the synchronization of the rf systems between two ring accelerators, the TOF, all propagation and kicker preparation delays are compensated. Now, the extraction and injection kickers must be fired at the calculated trigger time within the bunch gap before the specific bunch or bucket passes the kickers.
  
-This is the task of the Trigger Decision (TD) module in the Trigger SCU. The TD receives the  synchronization window in the form of an enable signal. The \gls{glos:fine_syn} will be accomplished by the marker of the reproduced signal plus the extraction or injection kicker delay compensation from the SM. This achieves the fine synchronization of the B2B transfer. The TD transmits the kicker pulse directly to the kicker electronic.  
+This is the task of the Trigger Decision (TD) module in the Trigger SCU. The TD receives the synchronization window in the form of an enable signal. The \gls{glos:fine_syn} will be accomplished by the marker of the reproduced signal plus the extraction or injection kicker delay compensation from the SM. This achieves the fine synchronization of the B2B transfer. The TD transmits the kicker pulse directly to the kicker electronic.  
  
-In case of fatal errors, the emergency kicker must kick the beam immediately but within the bunch gap into the emergency dump.
+In case of fatal errors, the emergency kicker must kick the beam immediately into the emergency dump.
 
 %After the synchronization between the two rf systems, the exact TOF between two ring accelerators before a specific bucket passes the injection kicker, the extraction kicker must kick the bunch in the source accelerator. When there are in case of the fatal error or considerabel damage, the emergency kicker must kick the beam into the emergency dump as soon as possible. This achieves the ````.
 %
 %The first pulse of the reproduced signal within the synchronization window is selected. The triggers for the extraction and injection kicker are produced after the selected reproduced signal with the delay of the extraction and injection kicker delay compensation. When some emergency happens, the coming bunch gap label outputs to trigger the emergency kicker.
- \begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{TD.png}
-   \caption{Integration of the Trigger Decision module into the Trigger SCU}
-   \label{TD}
-\end{figure}
-Fig.~\ref{TD} shows the integration of the Trigger Decision (\gls{TD}) module into the Trigger SCU.  
+% \begin{figure}[!htb]
+%   \centering   
+%   \includegraphics*[width=150mm]{TD.png}
+%   \caption{Integration of the Trigger Decision module into the Trigger SCU}
+%   \label{TD}
+%\end{figure}
+%Fig.~\ref{TD} shows the integration of the Trigger Decision (\gls{TD}) module into the Trigger SCU.  
 %The extraction/injection kicker trigger signal is produced by the TD module, which selects the first reproduced signal within the synchronization window and adds the delay of the extraction /injection kicker delay compensation to the first reproduced signal. For the emergency kick, the TD module produces the bunch gap label by the delay of the bunch gap based on the real-time reproduced signal.   
 
 The kicker trigger is realized based on the first rising edge of the bucket indication signal marker within the synchronization window plus the kicker delay compensation. For the normal B2B extraction/injection, the synchronization window is received by the source and target Trigger SCUs from the WR network by \verb|CMD_SYNCH_WIN|. The extraction kick delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}}$ -(\gls{symb:two_TOF} +$ t_{v\_inj}$+ \gls{symb:ext_pre}) and the injection kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}}$ + $T_{\mathit{rev}}^{\mathit{SIS18}} - (t_{v\_inj}+$ \gls{symb:inj_pre}) in the example in Fig.~\ref{ext_inj_kicker}, when the bucket indication signal has the frequency of $f_{\mathit{rev}}^{\mathit{trg}}$. 
@@ -647,7 +648,7 @@ For some FAIR use cases, not in case of the B2B transfer from the SIS18 to the S
 
 Both extraction and injection kick delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. When the beam injection inhibit signal from the MPS is on, the TD module will block the extraction/injection trigger.
 
-For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{bucket} - (t_{v\_emg} + t_{emg})$, where \gls{symb:temg} is the time delay between the virtual rf cavity and the emergency extraction position, \gls{symb:Demg} the emergency kicker delay and $t_{bucket}$ always indicates the bunch gap. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the real-time reproduced signal by TD module. Only when the emergency dump signal from MPS is valid, the emergency kicker will be triggered by the TD module.
+For the SIS100 emergency kick, the extraction delay compensation is calculated by $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{bucket} - (t_{v\_emg} + t_{emg})$, where \gls{symb:temg} is the time delay between the virtual rf cavity and the emergency extraction position, \gls{symb:Demg} the emergency kicker delay and $t_{bucket}$ always indicates the bunch train length. The emergency extraction delay compensation values are preloaded from the SM to the Trigger SCU and the Trigger SCU gives these values to the TD module. The kicker delay compensation is applied to the real-time reproduced signal by TD module. Only when the emergency dump signal from MPS is valid, the emergency kicker will be triggered by the TD module.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

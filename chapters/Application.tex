@@ -132,7 +132,7 @@ $Y$ is the \gls{GCD} of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$. Fo
 %\end{equation}
 %Two rf frequencies, $f_{\mathit{syn}}^{l}=\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ and $f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}$,
 %$f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ are chosen for the phase shift method. There is a constant phase difference between two synchronization frequencies. The phase shift can be implemented either for the rf system of the large or small accelerator, because the rf frequency modulation only depends on the ion species and the required phase shift. Only when the target accelerator is empty, the phase will be shifted for the target accelerator by the phase jump. 
-For the frequency beating method, two slightly different frequencies are chosen based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning $\Delta f_\mathit{syn}$ on the rf system of the source accelerator or that of the target accelerator or that of both accelerators. Generally the rf system of the source accelerator is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
+For the frequency beating method, two slightly different frequencies are chosen based on $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ by detuning $\Delta f_\mathit{syn}$ on the rf system of the source accelerator or of the target accelerator or of both accelerators. Generally the rf system of the source accelerator is preferred to be detuned, which is easy to be achieved during or after the acceleration ramp. 
 
 
 %If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}$ of the large accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{l}$ must detune $\Delta f \cdot (h^l_\mathit{rf}/Y)$. If we detune $\Delta f$ for $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf} \cdot \kappa)/Y}$ of the small accelerator, the rf cavity frequency $ f_{\mathit{rf}}^{s}$ must detune $\Delta f \cdot [(h^s_\mathit{rf} \cdot \kappa)/Y]$. According to the relation between $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$, we have the following two cases.
@@ -286,7 +286,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
 
 \subsection{Use Case of $U^{28+}$ B2B Transfer from SIS18 to SIS100}
 \label{sec:cir_no_int}
-The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to this scenario. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large accelerator is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
+The use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 belongs to the scenario discussed above. Four batches of $U^{28+}$ at \SI{200}{MeV/\atomicmassunit} are injected into continuous eight out of ten buckets of the SIS100. Each batch consists of two bunches ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The large accelerator is the SIS100 and the small one the SIS18. $\kappa=5$, $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf}=2$. %, so it complies with eq.~\ref{harmonic_1_int}. 
 The GCD of $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa=2\cdot 5=10$ is 10, namely $Y=10$. Substituting these values into eq.~\ref{cir_int_1}, we get
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}_\mathit{rf}}{h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa}= \frac{10}{2 \cdot 5}=\frac{10}{10}
@@ -913,7 +913,7 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR
 \end{center}
 \end{table}
 
-There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the ESR or the coasting beam injection), which is beyond the scope of this dissertation. More parameters about the B2B transfer from the SIS18 to the ESR via the FRS, please see Appendix \ref{sec:18toESRvia the FRS}.
+There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the ESR or the barrier bucket injection), which is beyond the scope of this dissertation. More parameters about the B2B transfer from the SIS18 to the ESR via the FRS, please see Appendix \ref{sec:18toESRvia the FRS}.
 
 %Here we give another operation example for the B2B transfer from the SIS18 to the ESR via the FRS with the smaller bunch-to-bucket inject center mismatch, that the energy of the heavy ion beam before the FRS is \SI{590}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit} with $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
 %\begin{equation} 
@@ -944,8 +944,10 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary of Formulas related to B2B Transfer}
-In this section, all the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large accelerator is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator.
+\section{Summary}
+For all primary beam transfers of FAIR use cases, the B2B transfer system achieves the B2B transfer with the bunch-to-bucket injection center mismatch less than $\pm1^\circ$. It doesn't work properly for the FAIR use cases that secondary beams are generated by the pbar target, the FRS or the Super FRS, because the energy ratio between the primary and secondary beams is arbitrary. For the RIB B2B transfer from the SIS100 to the CR via the Super FRS with the \SI{1.5}{Gev/u} primary beam energy and the \SI{740}{Mev/u} secondary beam energy, the bunch-to-bucket injection center mismatch is only $\pm2.1^\circ$ by coincidence. For the antiproton B2B transfer from the SIS100 to the CR via the pbar target and the RIB B2B transfer form the SIS18 to the ESR via the FRS, the mismatch is as large as $\pm40^\circ$. For these two cases, the FAIR B2B transfer system must work together with specific beam accumulation methods, e.g. the barrier bucket or the unstable point accumulation.
+
+All the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large accelerator is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator.
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}

@@ -1,0 +1,56 @@
+\label{appendix_conf}
+The project is kept on Git repository \url{https://github.com/GSI-CS-CO/bel_projects/tree/lm32_B2B_merge}. In the test setup, the frame \verb|CMD_B2B_START| uses the eventID of \textit{0XDEADBEEF11111111} as an example and the frame \verb|TGM_PHASE_TIME| uses the eventID of \textit{0XDEADBEEF22222222} as an example and the frame \verb|TGM_SYNCH_WIN| uses the eventID of \textit{0XDEADBEEF33333333} as an example.
+
+\section{Configuration of the B2B source SCU}
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+Login the B2B source SCU
+# ssh root@scu_name.acc.gsi.de
+Configure the ECA queue to storage the B2B frames CMD_B2B_START and TGM_PHASE_TIME
+# saft-ecpu-ctl baseboard -c 0XDEADBEEF11111111 32 0 0
+# saft-ecpu-ctl baseboard -c 0XDEADBEEF22222222 32 0 0
+Configure one IO port as an input for the TTL signal of the SIS18 DS345
+# saft-io-ctl baseboard B2 -o 0
+Load the B2B source SCU firmware to the LM32
+# lm32-ctl
+# load B2B_main_src.elf
+\end{lstlisting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Configuration of the B2B target SCU}
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+Login the B2B target SCU
+# ssh root@scu_name.acc.gsi.de
+Configure the ECA queue to storage the B2B frames CMD_B2B_START
+# saft-ecpu-ctl baseboard -c 0XDEADBEEF11111111 32 0 0
+Configure one IO port as an input for the TTL signal of the SIS100 DS345
+# saft-io-ctl baseboard B2 -o 0
+Load the B2B target SCU firmware to the LM32
+# lm32-ctl
+# load B2B_main_trg.elf
+\end{lstlisting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Configuration of the Trigger SCU}
+\begin{lstlisting}[frame=single]  % Start your code-block
+
+Login the Trigger SCU
+# ssh root@scu_name.acc.gsi.de
+Configure the ECA queue to storage the B2B frames TGM_SYNCH_WIN
+# saft-ecpu-ctl baseboard -c 0XDEADBEEF33333333 32 0 0
+Configure one IO port as an output port
+# saft-io-ctl baseboard B2 -o 1
+Configure ECA to produce a TTL signal at the output port, when the frame TGM_SYNCH_WIN is executed
+# saft-B2B-triggerSCU baseboard 0XDEADBEEF33333333 B2
+Load the Trigger SCU firmware to the LM32
+# lm32-ctl
+# load B2B_main_trigger.elf
+\end{lstlisting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Configuration of the packETH}
+The configuration of the packETH is shown as follows. 
+\begin{figure}[!htb]
+   \centering   
+   \includegraphics*[width=150mm]{packeth.png}
+   \caption{The configuration of the packETH.}
+   \label{packeth}
+\end{figure}

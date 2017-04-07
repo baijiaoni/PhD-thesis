@@ -630,12 +630,27 @@ sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:d}{
 name=$d_\mathit{tank1R-tank2L}$,
-description={Distance between two crates of the SIS18 extraction kicker},
+description={Distance between two tanks of the SIS18 extraction kicker},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:D}{
 name=$d_\mathit{tank1R-tank2R}$,
-description={Distance between the rightmost of the $1^{st}$ crate and the rightmost of the $2^{nd}$ crate of the SIS18 extraction kicker},
+description={Distance between the rightmost of the $1^{st}$ tank and the rightmost of the $2^{nd}$ tank of the SIS18 extraction kicker},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:1st_tank}{
+name=$d_\mathit{tank1L-tank1R}$,
+description={Distance between the leftmost and the rightmost kicker magnets in the $1^{st}$ SIS18 tank},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:2nd_tank}{
+name=$d_\mathit{tank2L-tank2R}$,
+description={Distance between the leftmost and the rightmost kicker magnets in the $2^{nd}$ SIS18 tank},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:SIS100_tank}{
+name=$d_\mathit{tankL-tankR}$,
+description={Distance between the leftmost and the rightmost kicker magnets in the SIS100 tank},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:t_b2b}{
@@ -733,6 +748,11 @@ sort=symbollambda, type=symbolslist
 \newglossaryentry{symb:phase_diff_T0}{
 name=$\psi^X$,
 description={Extrapolated phase advance between the phase measurement signal and the synchronization reference signal of the synchrotron X},
+sort=symbollambda, type=symbolslist
+}
+\newglossaryentry{symb:kicker_rise}{
+name=$t_\mathit{rise}$,
+description={Kicker rise time.},
 sort=symbollambda, type=symbolslist
 }
 \newglossaryentry{symb:phase_diff_time0}{
@@ -887,6 +907,10 @@ description={Front End Controller},type=abbreslist
 \newglossaryentry{FER}{
 name={FER},
 description={Frame Error Rate},type=abbreslist
+} 
+\newglossaryentry{BER}{
+name={BER},
+description={Bit Error Rate},type=abbreslist
 } 
 
 \newglossaryentry{FESA}{
@@ -1578,7 +1602,8 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/appendixD}
 \chapter{Parameters of kicker magnets}
 \input{chapters/appendix_kicker}
-
+\chapter{Configuration for test setup}
+\input{chapters/appendix_config}
 
 
 \addcontentsline{toc}{chapter}{Bibliography}
