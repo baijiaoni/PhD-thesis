@@ -1,1122 +1,206 @@
-This is LuaTeX, Version 0.95.0 (MiKTeX 2.9 64-bit)  (format=luatex 2016.9.23)  1 MAR 2017 14:26
- restricted system commands enabled.
-**"F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/
-chapters/publication.bib"
-
-("F:/办公资料/GSI/Report/毕业论文材料/Disputation - Jbai/PhD-thesis/c
-hapters/publication.bib"
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.2 @inproceedings{bai_
-                     bunch_2015,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.9 	file = {[PDF] synchrotron.org.au:C\:
-                                       \\Users\\Gilgil\\AppData\\Roaming\\Zo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.9 ...TRANSFER SYSTEM FOR FAIR.pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.9 ...TRANSFER SYSTEM FOR FAIR.pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.9 ...TRANSFER SYSTEM FOR FAIR.pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.9 ...TRANSFER SYSTEM FOR FAIR.pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no ä (U+00E4) in font cmmi10!
-Missing character: There is no ä (U+00E4) in font cmmi10!
-
-Overfull \hbox (242.6635pt too wide) in paragraph at lines 2--9
-[]\tenrm @inproceedingsbai$[][]\teni unch[]\tenrm 015\teni ; title \tenrm = []\
-teni ; url \tenrm = []\teni ; urldate \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm i
-.\tenrm n
-.etc.
-
-
-Overfull \hbox (294.19446pt too wide) in paragraph at lines 2--9
-[]\teni ; booktitle \tenrm = []\teni ; author \tenrm = []\teni ; year \tenrm =|
-
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.44444+0.83333)x64.4444, direction TLT
-..\tenrm 2
-..\tenrm 0
-..\tenrm 1
-..\tenrm 6
-..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni b
-.\teni o
-.etc.
-
-! Too many }'s.
-l.10 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.12 @article{ferrand_
-                    system_2014,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.19 	file = {[PDF] gsi.de:C\:
-                            \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zoter...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.19 ...to-Bucket Transfer Betw.pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.19 ...to-Bucket Transfer Betw.pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.19 ...to-Bucket Transfer Betw.pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.19 ...to-Bucket Transfer Betw.pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (66.88681pt too wide) in paragraph at lines 12--19
-[]\tenrm @articleferrand$[][]\teni ystem[]\tenrm 014\teni ; title \tenrm = []\t
-eni ; url \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm a
-.\tenrm r
-.etc.
-
-
-Overfull \hbox (28.31433pt too wide) in paragraph at lines 12--19
-[]\teni ; urldate \tenrm = []\teni ; journal \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(7.5+2.5)x333.87424, direction TLT
-..\teni h
-..\teni t
-..\teni t
-..\teni p
-..\glue(\thickmuskip) 2.77771 plus 2.77771
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni u
-.\teni r
-.etc.
-
-! Too many }'s.
-l.20 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.22 @inproceedings{bai_
-                      first_2014,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.29 	file = {[PDF] cern.ch:C\:
-                             \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zote...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.29 ...UCKET TRANSFER FOR FAIR.pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.29 ...UCKET TRANSFER FOR FAIR.pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.29 ...UCKET TRANSFER FOR FAIR.pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.29 ...UCKET TRANSFER FOR FAIR.pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no ä (U+00E4) in font cmmi10!
-Missing character: There is no ä (U+00E4) in font cmmi10!
-
-Overfull \hbox (343.22482pt too wide) in paragraph at lines 22--29
-[]\tenrm @inproceedingsbai$[][]\teni irst[]\tenrm 014\teni ; title \tenrm = []\
-teni ; url \tenrm = []\teni ; urldate \tenrm =|
-
-\hbox(7.5+2.86108)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm i
-.\tenrm n
-.etc.
-
-
-Overfull \hbox (408.34138pt too wide) in paragraph at lines 22--29
-[]\teni ; booktitle \tenrm = []\teni ; author \tenrm = []\teni ; year \tenrm =|
-
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.44444+0.83333)x64.4444, direction TLT
-..\tenrm 2
-..\tenrm 0
-..\tenrm 1
-..\tenrm 6
-..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni b
-.\teni o
-.etc.
-
-! Too many }'s.
-l.30 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.32 @article{bai_
-                modified_2013,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.42 	file = {Snapshot:C\:
-                        \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\P...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.42 ...ero\\storage\\IEB9A7XZ\\meta.html:text/html}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.42 ...ero\\storage\\IEB9A7XZ\\meta.html:text/html}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.42 ...ero\\storage\\IEB9A7XZ\\meta.html:text/html}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.42 ...ero\\storage\\IEB9A7XZ\\meta.html:text/html}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (91.85243pt too wide) in paragraph at lines 32--42
-[]\tenrm @articlebai$[][]\teni odified[]\tenrm 013\teni ; title \tenrm = []\ten
-i ; volume \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm a
-.\tenrm r
-.etc.
-
-
-Overfull \hbox (18.24026pt too wide) in paragraph at lines 32--42
-[]\teni ; url \tenrm = []\teni ; number \tenrm = []\teni ; urldate \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(6.44444+0.0)x10.00003, direction TLT
-..\tenrm 3
-..\tenrm 7
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni u
-.\teni r
-.etc.
-
-
-Overfull \hbox (117.17296pt too wide) in paragraph at lines 32--42
-[]\teni ; journal \tenrm = []\teni ; author \tenrm = []\teni ; year \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.44444+0.83333)x64.4444, direction TLT
-..\tenrm 2
-..\tenrm 0
-..\tenrm 1
-..\tenrm 6
-..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni j
-.\kern0.57243
-.etc.
-
-! Too many }'s.
-l.43 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.45 @inproceedings{bai_
-                      development_2012,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.53 	file = {Full Text PDF:C\:
-                             \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zote...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.53 ...\\storage\\GIPXJ9UC\\1364282.html:text/html}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.53 ...\\storage\\GIPXJ9UC\\1364282.html:text/html}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.53 ...\\storage\\GIPXJ9UC\\1364282.html:text/html}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.53 ...\\storage\\GIPXJ9UC\\1364282.html:text/html}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (1773.02061pt too wide) in paragraph at lines 45--53
-[]\teni ; abstract \tenrm = []\teni ; urldate \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(7.5+2.5)x211.6162, direction TLT
-..\teni h
-..\teni t
-..\teni t
-..\teni p
-..\glue(\thickmuskip) 2.77771 plus 2.77771
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni a
-.\teni b
-.etc.
-
-! Too many }'s.
-l.54 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.56 @inproceedings{ferrand_
-                          system_2015,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.63 	file = {[PDF] cern.ch:C\:
-                             \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zote...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.63 ...NISTIC BUNCH-TO-BUCKET .pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.63 ...NISTIC BUNCH-TO-BUCKET .pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.63 ...NISTIC BUNCH-TO-BUCKET .pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.63 ...NISTIC BUNCH-TO-BUCKET .pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (50.3374pt too wide) in paragraph at lines 56--63
-[]\tenrm @inproceedingsferrand$[][]\teni ystem[]\tenrm 015\teni ; title \tenrm 
-= []\teni ; url \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm i
-.\tenrm n
-.etc.
-
-
-Overfull \hbox (40.68077pt too wide) in paragraph at lines 56--63
-[]\teni ; urldate \tenrm = []\teni ; booktitle \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(7.5+2.5)x342.75, direction TLT
-..\teni h
-..\teni t
-..\teni t
-..\teni p
-..\glue(\thickmuskip) 2.77771 plus 2.77771
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni u
-.\teni r
-.etc.
-
-! Too many }'s.
-l.64 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.66 @inproceedings{kreider_
-                          launching_2014,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.73 	file = {[PDF] cern.ch:C\:
-                             \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zote...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.73 ...ing system with CRYRING.pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.73 ...ing system with CRYRING.pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.73 ...ing system with CRYRING.pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.73 ...ing system with CRYRING.pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no ä (U+00E4) in font cmmi10!
-Missing character: There is no ä (U+00E4) in font cmmi10!
-
-Overfull \hbox (8.52339pt too wide) in paragraph at lines 66--73
-[]\tenrm @inproceedingskreider$[][]\teni aunching[]\tenrm 014\teni ; title \ten
-rm = []\teni ; url \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm i
-.\tenrm n
-.etc.
-
-
-Overfull \hbox (38.06175pt too wide) in paragraph at lines 66--73
-[]\teni ; urldate \tenrm = []\teni ; booktitle \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(7.5+2.5)x340.13098, direction TLT
-..\teni h
-..\teni t
-..\teni t
-..\teni p
-..\glue(\thickmuskip) 2.77771 plus 2.77771
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni u
-.\teni r
-.etc.
-
-
-Overfull \hbox (216.86543pt too wide) in paragraph at lines 66--73
-[]\teni ; author \tenrm = []\teni ; year \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.94444+1.94444)x79.49942, direction TLT
-..\teni P
-..\kern1.3889
-..\teni r
-..\kern0.27779
-..\teni o
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni a
-.\teni u
-.etc.
-
-! Too many }'s.
-l.74 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.76 @article{beck_
-                 paving_2013,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.83 	file = {[PDF] gsi.de:C\:
-                            \\Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zoter...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.83 ...ral Machine Timing Syst.pdf:application/pdf}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.83 ...ral Machine Timing Syst.pdf:application/pdf}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.83 ...ral Machine Timing Syst.pdf:application/pdf}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.83 ...ral Machine Timing Syst.pdf:application/pdf}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no ä (U+00E4) in font cmmi10!
-Missing character: There is no ä (U+00E4) in font cmmi10!
-Missing character: There is no ü (U+00FC) in font cmmi10!
-Missing character: There is no ü (U+00FC) in font cmmi10!
-
-Overfull \hbox (456.07785pt too wide) in paragraph at lines 76--83
-[]\tenrm @articlebeck$[][]\teni aving[]\tenrm 013\teni ; title \tenrm = []\teni
- ; url \tenrm = []\teni ; urldate \tenrm =|
-
-\hbox(7.5+2.86108)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm a
-.\tenrm r
-.etc.
-
-
-Overfull \hbox (599.41637pt too wide) in paragraph at lines 76--83
-[]\teni ; journal \tenrm = []\teni ; author \tenrm = []\teni ; year \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.44444+0.83333)x64.4444, direction TLT
-..\tenrm 2
-..\tenrm 0
-..\tenrm 1
-..\tenrm 6
-..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni j
-.\kern0.57243
-.etc.
-
-! Too many }'s.
-l.84 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-_
-l.86 @misc{kreider_
-                 receiver_????,
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.93 ...ption-v3.2 - GMT_TR_Description-v3.2.pdf:C\:
-                                                  \\Users\\Gilgil\\AppData\\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \\ has an extra }.
-<inserted text> 
-\par 
-<to be read again> 
-}
-l.93 ...8U6\\GMT_TR_Description-v3.2.html:text/html}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-Users\\Gilgil\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\y25mftub.d\ETC.
-! Paragraph ended before \\ was complete.
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.93 ...8U6\\GMT_TR_Description-v3.2.html:text/html}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.93 ...8U6\\GMT_TR_Description-v3.2.html:text/html}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-}
-<to be read again> 
-$
-<to be read again> 
-\par 
-<to be read again> 
-}
-l.93 ...8U6\\GMT_TR_Description-v3.2.html:text/html}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no ” (U+201D) in font cmr10!
-
-Overfull \hbox (44.12177pt too wide) in paragraph at lines 86--93
-[]\tenrm @misckreider$[][]\teni eceiver[]\tenrm ???\teni ; title \tenrm = []\te
-ni ; url \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\localpar
-..\localinterlinepenalty=0
-..\localbrokenpenalty=0
-..\localleftbox=null
-..\localrightbox=null
-.\hbox(0.0+0.0)x20.0, direction TLT
-.\tenrm @
-.\tenrm m
-.\tenrm i
-.etc.
-
-
-Overfull \hbox (50.16232pt too wide) in paragraph at lines 86--93
-[]\teni ; abstract \tenrm =|
-
-\hbox(7.5+2.5)x469.75499, direction TLT
-.\hbox(7.5+2.5)x469.0273, direction TLT
-..\teni h
-..\teni t
-..\teni t
-..\teni p
-..\teni s
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni a
-.\teni b
-.etc.
-
-
-Overfull \hbox (222.74957pt too wide) in paragraph at lines 86--93
-[]\teni ; urldate \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.94444+1.94444)x645.05199, direction TLT
-..\teni T
-..\kern1.3889
-..\teni h
-..\teni i
-..\teni s
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni u
-.\teni r
-.etc.
-
-
-Overfull \hbox (86.03088pt too wide) in paragraph at lines 86--93
-[]\teni ; author \tenrm = []\teni ; file \tenrm =|
-
-\hbox(6.94444+1.94444)x469.75499, direction TLT
-.\hbox(6.44444+0.83333)x64.4444, direction TLT
-..\tenrm 2
-..\tenrm 0
-..\tenrm 1
-..\tenrm 6
-..\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
-..etc.
-.\teni ;
-.\glue(\thinmuskip) 1.66663
-.\teni a
-.\teni u
-.etc.
-
-! Too many }'s.
-l.94 }
-    
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.25)  12 APR 2017 18:22
+entering extended mode
+**./publication.tex
+(publication.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-! Emergency stop.
-<*> ...on - Jbai/PhD-thesis/chapters/publication.bib"
-                                                  
-*** (job aborted, no legal \end found)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("D:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-!  ==> Fatal error occurred, no output PDF file produced!
+("D:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-def\pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count89
+)
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+("D:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("D:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("D:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
+\Gm@bindingoffset=\dimen105
+\Gm@wd@mp=\dimen106
+\Gm@odd@mp=\dimen107
+\Gm@even@mp=\dimen108
+\Gm@layoutwidth=\dimen109
+\Gm@layoutheight=\dimen110
+\Gm@layouthoffset=\dimen111
+\Gm@layoutvoffset=\dimen112
+\Gm@dimlist=\toks16
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+
+LaTeX Warning: File `publication.bib' already exists on the system.
+               Not generating it from this source.
+
+(publication.aux)
+\openout1 = `publication.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+
+(C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen114
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks18
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=624.25346pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=95.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(publication.bbl)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 127.
+Missing character: There is no � in font cmr12!
+Missing character: There is no � in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--143
+
+ []
+
+[1
+
+{C:/Users/Gilgil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(publication.aux) ) 
+Here is how much of TeX's memory you used:
+ 2333 strings out of 493334
+ 30624 string characters out of 3139249
+ 200662 words of memory out of 3000000
+ 5875 multiletter control sequences out of 15000+200000
+ 7636 words of font info for 27 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 24i,9n,35p,432b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on publication.pdf (1 page, 46283 bytes).
+PDF statistics:
+ 18 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

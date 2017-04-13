@@ -4,21 +4,27 @@
 J.~Bai, D.~Beck, R.~B\"ar, D.~Ondreka, T.~Ferrand, M.~Kreider, C.~Prados,
   S.~Rauch, W.~Terpstra, and M.~Zweig.
 \newblock First {Idea} on {Bunch} to {Bucket} {Transfer} for {FAIR}.
-\newblock In {\em Proc. of {PCaPAC}}, 2014.
+\newblock In {\em Proc. of {PCaPAC}}, Karlsruhe, Germany, 2014.
 
 \bibitem{bai_bunch_2015}
 J.~Bai, T.~Ferrand, D.~Beck, R.~B\"ar, O.~Kester, D.~Ondreka, C.~Prados, and
   W.~Terpstra.
 \newblock Bunch to {Bucket} {Transfer} {System} for {FAIR}.
-\newblock In {\em Proc. of {ICALEPCS}}, 2015.
+\newblock In {\em Proc. of {ICALEPCS}}, Melbourne, Australia, 2015.
 
 \bibitem{bai_development_2012}
 J.~Bai, S.~Xiao, T.~Xu, and L.~Zeng.
 \newblock The {Development} of {Timing} {Control} {System} for {RFQ}.
-\newblock In {\em Proc. of {LINAC}}, 2012.
+\newblock In {\em Proc. of {LINAC}}, Tel Aviv, Israel, 2012.
+
+\bibitem{bai_modified_2013}
+J.~Bai, L.~Zeng, B.~Wang, P.~Li, F.~Li, T.~Xu, and Z.~Li.
+\newblock Modified {Read}-out {System} of the {Beam} {Phase} {Measurement}
+  {System} for {CSNS}.
+\newblock {\em Chinese physics C}, 37(10):107004, 2013.
 
 \bibitem{beck_paving_2013}
-D.~Beck, J.~Adamczewski-Musch, J.~Bai, R.~B\"ar, J.~Fr\"uhauf, J.~Hoffmann,
+D.~Beck, J.~Adamczewski-Musch, J.~Bai, R.~B\"ar, J.~Frühauf, J.~Hoffmann,
   M.~Kreider, N.~Kurz, C.~Prados, S.~Rauch, S.~Voltz, and M.~Zweig.
 \newblock Paving the {Way} for the {General} {Machine} {Timing} {System}.
 \newblock {\em GSI Scientific Report}, 2013.
@@ -32,17 +38,18 @@ T.~Ferrand and J.~Bai.
 \bibitem{ferrand_system_2015}
 T.~Ferrand and J.~Bai.
 \newblock System {Design} for a deterministic {Bunch}-to-{Bucket} {Transfer}.
-\newblock In {\em Proc. of {IPAC}}, 2015.
+\newblock In {\em Proc. of {IPAC}}, Richmond, VA, USA, 2015.
 
 \bibitem{kreider_launching_2014}
-M.~Kreider, J.~Bai, R.~B\"ar, D.~Beck, A.~Hahn, C.~Prados, S.~Rauch,
-  W.~Terpstra, and M.~Zweig.
+M.~Kreider, J.~Bai, R.~B\"ar, D.~Beck, A.~Hahn, C.~Prados, S.~Rauch, W.~W.
+  Terpstra, and M.~Zweig.
 \newblock Launching the {FAIR} {Timing} {System} with {CRYRING}.
-\newblock In {\em Proc. of {PCaPAC}}, 2014.
+\newblock In {\em Proc. of {PCaPAC}}, Karlsruhe, Germany, 2014.
 
-\bibitem{kreider_receiver_????}
+\bibitem{kreider_receiver_2014}
 M.~Kreider, J.~Bai, D.~Beck, C.~Prados, W.~Terpstra, S.~Rauch, and M.~Zweig.
 \newblock Receiver {Nodes} of the {General} {Machine} {Timing} {System} for
   {FAIR} and {GSI}.
+\newblock {\em GSI Internal Document}, 2014.
 
 \end{thebibliography}

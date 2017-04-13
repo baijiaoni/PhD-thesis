@@ -14,7 +14,9 @@
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
+%\usepackage{breakurl}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{ulem}
@@ -25,6 +27,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{url}
+
 \usepackage{acronym}
 \usepackage{graphicx}
 \usepackage{pdfpages}
@@ -32,7 +35,11 @@
 \usepackage{tikz}
 
 \usepackage[numbers,sort&compress]{natbib}
+
 \interfootnotelinepenalty=100
+\usepackage{bookmark}
+\bookmarksetup{numbered}
+
 
 
 % Generate the glossary
@@ -1447,48 +1454,77 @@ description={Range within which the fine alignment lies because of the propagati
 \graphicspath{ {images/} }
 
 
-
 \begin{document}
 
 
 
-\pagenumbering{roman}
+
 \begin{center}
 \thispagestyle{empty}
 
-    \vspace{6cm}
-	 \LARGE \textbf{\uppercase{Development of the timing system for the Bunch-to-Bucket transfer between the FAIR accelerators }}
+	 \vspace* {2cm}
+	 \LARGE \textbf{Development of the Timing System for the Bunch-to-Bucket Transfer between the FAIR Accelerators }\par
 	 \vspace{2cm}
+    	 \vspace{2cm}
 	%Thesis title
 
-	{ \normalsize Vom Fachbereich\\
-	Institut für Angewandte Physik\\
-	der Goethe-Universit\"at, Frankfurt am Main\\
-	zur Erlangung des akademischen Grades\\
-	eines Doktor der Naturwissenschaften\\
-	genehmigte Dissertation\par}
+{ \normalsize  Dissertation\\
+	for attaining the doctoral degree\\
+	of Natural Sciences\par}
     \vspace{2cm}
-	%Author's name
-    {\normalsize Von \par}
-    \LARGE \textbf{ Jiaoni Bai}\\
-    {\normalsize geboren am 9. November 1986 in Taiyuan, Shanxi Province, China \par}
+
+{ \normalsize submitted to the Faculty of Physics\\
+	of the Johann Wolfgang Goethe University\"at\\
+	in Frankfurt am Main, Germany\par}
     \vspace{2cm}
+
+{ \normalsize by\\
+	Jiaoni Bai\\
+	born in Taiyuan, Shanxi Province, China\par}
+    \vspace{2cm}
+
+    \vspace{2cm}
+{ \normalsize Frankfurt am Main 2017\\
+	(D 30)\par}
+\end{center}
+
+\clearpage
+\thispagestyle{empty}
+\begin{flushleft}
+	 \vspace* {6cm}
+{ \normalsize accepted by the Faculty of Physics of the Johann Wolfgang Goethe University\\
+    \vspace{0.5cm}
+as a dissertation.}\par
+    \vspace{4cm}
+	
+
+
+%\normalsize
+%	% referent
+%		 Dean:   Prof. Dr. Oliver Kester \\
+%    \vspace{1cm}
+%		 Expert assessors:  Dr. David Ondreka\\
+%    \vspace{1cm}
+%					Dr. Dietrich Beck\\
+%    \vspace{1cm}
+%		 Date of disputation: 07. May. 2017\\
+		
 	\normalsize
 	% referent
 	\begin{align*}
-		 \text{Referent: }\:  &\text{Prof. Dr. }\\
-		 \text{Korreferent: }\: &\text{Prof. Dr.}\\
-		 \text{Tag der Einreichung: }\: &\text{Date. Month Year}\\
-		 \text{Tag der m"undlichen Pr"ufung: }\: &\text{Date. Month Year} \\
+		 &\text{Dean: }\:  &&\text{Prof. Dr. Oliver Kester }\\[0.5cm]
+		 &\text{Expert assessors:}\: &&\text{Dr. David Ondreka}\\[0.5cm]
+		 &						&&\text{Dr. Dietrich Beck}\\[0.5cm]
+		 &\text{Date of disputation:}\: &&\text{07. May. 2017} \\[0.5cm]
 \end{align*}
 	%Date
-    \vspace{2cm}
-    {\normalsize Darmstadt 2016}
-\end{center}
+\end{flushleft}    
+
 
 \renewcommand{\labelitemii}{$\bullet$}
 
 \clearpage
+\pagestyle{empty}
 \vspace*{\fill}
 \begin{center}
 \begin{minipage}{.8\textwidth}
@@ -1497,20 +1533,23 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \end{center}
 \vfill % equivalent to \vspace{\fill}
 \clearpage
-
+\pagenumbering{gobble}
+\thispagestyle{empty}
 \chapter*{Acknowledgement}
 \input{chapters/Acknowledgement}
-
 \chapter*{Abstract}
+\pagenumbering{roman}
 \addcontentsline{toc}{chapter}{Abstract}
 \input{chapters/Abstract}
 \chapter*{Kurzfassung}
 \input{chapters/Kurzfassung}
 
-
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
+\pagestyle{fancy}
+\thispagestyle{empty}
+\pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents
 
 
@@ -1559,6 +1598,8 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
+
+
 \pagenumbering{arabic}
 \chapter{Introduction}
 \input{chapters/1Introduction}
@@ -1608,17 +1649,21 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 
 \addcontentsline{toc}{chapter}{Bibliography}
 
+%\raggedright
+\sloppy
 %\bibliographystyle{IEEEtran} 
 %\bibliography{IEEEabrv,reference}
 \bibliographystyle{unsrtnat}
 \bibliography{reference}
 
+\chapter*{Zusammenfassung}
+\input{chapters/Zusammenfassung}
 
 \cleardoublepage
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures % Prints the list of figures
-\cleardoublepage
+\pagestyle{fancy}
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listtablename}
 \listoftables % Prints the list of tables
