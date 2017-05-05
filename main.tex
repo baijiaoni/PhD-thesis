@@ -915,6 +915,10 @@ description={Front End Controller},type=abbreslist
 name={FER},
 description={Frame Error Rate},type=abbreslist
 } 
+\newglossaryentry{FLR}{
+name={FLR},
+description={Frame Loss Rate},type=abbreslist
+} 
 \newglossaryentry{BER}{
 name={BER},
 description={Bit Error Rate},type=abbreslist
@@ -1617,14 +1621,18 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/Application}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
-\chapter{Conclusion and Outlook}
+\chapter*{Conclusion and Outlook}
+\addcontentsline{toc}{chapter}{Conclusion and Outlook}
 \input{chapters/7SummaryAusblick}
 
+\chapter*{Zusammenfassung}
+\addcontentsline{toc}{chapter}{Zusammenfassung}
+\input{chapters/Zusammenfassung}
 
 %\chapter{References}
 %\input{chapters/References}
 \appendix
-\chapter{Glossaries, Abbreviations and Symbols}
+\chapter*{Glossaries, Abbreviations and Symbols}
 %Glossary ausgeben
 \printnoidxglossary
 
@@ -1632,6 +1640,7 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \printnoidxglossary[type=abbreslist,style=long]
 %Symbole ausgeben 
 \printnoidxglossary[type=symbolslist,style=long]
+
 
 \chapter{FAIR B2B Transfer related Timing Frames}
 \input{chapters/appendixA}
@@ -1656,8 +1665,6 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \bibliographystyle{unsrtnat}
 \bibliography{reference}
 
-\chapter*{Zusammenfassung}
-\input{chapters/Zusammenfassung}
 
 \cleardoublepage
 % \phantomsection
