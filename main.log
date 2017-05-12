@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.25)  28 APR 2017 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.8.25)  12 MAY 2017 11:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -1600,20 +1600,20 @@ LaTeX Warning: Label `requirement' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1457.
-LaTeX Font Info:    ... okay on input line 1457.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1466.
+LaTeX Font Info:    ... okay on input line 1466.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1690,7 +1690,7 @@ Dictionary: translator-basic-dictionary, Language: English
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring OFF on input line 1457.
+Package hyperref Info: Link coloring OFF on input line 1466.
 ("D:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1699,9 +1699,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 1457.
-LaTeX Info: Redefining \pageref on input line 1457.
-LaTeX Info: Redefining \nameref on input line 1457.
+LaTeX Info: Redefining \ref on input line 1466.
+LaTeX Info: Redefining \pageref on input line 1466.
+LaTeX Info: Redefining \nameref on input line 1466.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -1799,49 +1799,41 @@ File: siunitx-abbreviations.cfg 2014/09/27 v2.6b siunitx: Abbreviated units
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1540 \chapter
-               *{Abstract} [2] (chapters/Abstract.tex [1
+l.1549 \chapter
+               *{Abstract} [2] (chapters/Abstract.tex
+Underfull \vbox (badness 1838) has occurred while \output is active []
 
-]) [2]
-(chapters/Kurzfassung.tex
-Overfull \hbox (0.84743pt too wide) in paragraph at lines 1--2
-\OT1/cmr/m/n/12 Bunch-to-Bucket (B2B) Trans-fer Sys-tems f[]ur die ge-plante FA
-IR-Beschleunigeranlage
- []
-
-
-Overfull \hbox (5.71344pt too wide) in paragraph at lines 7--8
-\OT1/cmr/m/n/12 Timing-Anforderungen ber[]uck-sichtigt. Danach wird eine sys-te
-m-a-tis-che Un-ter-suchung
- []
-
-
-Overfull \hbox (3.0697pt too wide) in paragraph at lines 9--11
-[]\OT1/cmr/m/n/12 Das FAIR B2B Trans-fer Sys-tem nutzt einen zweistu-fi-gen Syn
--chro-ni-sa-tion-sprozess,
- []
-
-[3
+ [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
- ("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
-) [4] (main.toc
-[5
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [2])
+[3] (chapters/Kurzfassung.tex
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
+ [4
 
 ]
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [5])
+[6] (main.toc [7
+
+]
+Overfull \hbox (3.01543pt too wide) in paragraph at lines 40--40
+ [][] [][]\OT1/cmr/m/n/12 Rf Syn-chro-niza-tion with the Fre-quency Beat-ing Me
+thod[] [][]  
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
-Overfull \hbox (0.33897pt too wide) in paragraph at lines 76--76
+[8]
+Overfull \hbox (0.33897pt too wide) in paragraph at lines 77--77
  [][] [][]\OT1/cmr/m/n/12 Simultaneous Trig-ger for Ex-trac-tion Kicker Mag-net
 s in a Com- 
  []
@@ -1852,7 +1844,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7])
+[9])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1863,7 +1855,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[10]
 Chapter 1.
 (chapters/1Introduction.tex
 
@@ -1874,7 +1866,7 @@ n input line 13.
 Package natbib Warning: Citation `moller_beam-residual_1999' on page 1 undefine
 d on input line 13.
 
-<images/B2B.jpg, id=322, 1048.91875pt x 501.875pt>
+<images/B2B.jpg, id=338, 1048.91875pt x 501.875pt>
 File: images/B2B.jpg Graphic file (type jpg)
  <use images/B2B.jpg>
 Package pdftex.def Info: images/B2B.jpg used on input line 36.
@@ -1999,7 +1991,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <images/dissertation_structure.jpg, id=366, 1127.21124pt x 720.6925pt>
+[5] <images/dissertation_structure.jpg, id=383, 1127.21124pt x 720.6925pt>
 File: images/dissertation_structure.jpg Graphic file (type jpg)
 
 <use images/dissertation_structure.jpg>
@@ -2029,14 +2021,14 @@ Chapter 2.
 Package natbib Warning: Citation `lee_accelerator_2011' on page 9 undefined on 
 input line 68.
 
-<images/phase_focusing.jpg, id=398, 796.9775pt x 405.515pt>
+<images/phase_focusing.jpg, id=414, 796.9775pt x 405.515pt>
 File: images/phase_focusing.jpg Graphic file (type jpg)
 
 <use images/phase_focusing.jpg>
 Package pdftex.def Info: images/phase_focusing.jpg used on input line 73.
 (pdftex.def)             Requested size: 341.43306pt x 173.72452pt.
 
-<images/phase_space.jpg, id=400, 796.9775pt x 405.515pt>
+<images/phase_space.jpg, id=416, 796.9775pt x 405.515pt>
 File: images/phase_space.jpg Graphic file (type jpg)
 
 <use images/phase_space.jpg>
@@ -2065,14 +2057,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `lee_accelerator_2011' on page 11 undefined on
  input line 88.
 
-<images/energy_deviation.jpg, id=427, 796.9775pt x 671.50874pt>
+<images/energy_deviation.jpg, id=444, 796.9775pt x 671.50874pt>
 File: images/energy_deviation.jpg Graphic file (type jpg)
 
 <use images/energy_deviation.jpg>
 Package pdftex.def Info: images/energy_deviation.jpg used on input line 91.
 (pdftex.def)             Requested size: 369.88582pt x 311.65405pt.
 
-<images/running_bucket.jpg, id=430, 796.9775pt x 595.22375pt>
+<images/running_bucket.jpg, id=447, 796.9775pt x 595.22375pt>
 File: images/running_bucket.jpg Graphic file (type jpg)
 
 <use images/running_bucket.jpg>
@@ -2102,7 +2094,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `barletta_lecture_nodate' on page 12 undefined
  on input line 127.
 
-<images/injection_error.jpg, id=441, 796.9775pt x 330.23375pt>
+<images/injection_error.jpg, id=458, 796.9775pt x 330.23375pt>
 File: images/injection_error.jpg Graphic file (type jpg)
 
 <use images/injection_error.jpg>
@@ -2150,7 +2142,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <images/exp_H_18_100.jpg, id=500, 988.44281pt x 316.93407pt>
+[16] <images/exp_H_18_100.jpg, id=517, 988.44281pt x 316.93407pt>
 File: images/exp_H_18_100.jpg Graphic file (type jpg)
 
 <use images/exp_H_18_100.jpg>
@@ -2164,7 +2156,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <./images/exp_H_18_100.jpg>]
-<images/cir_noint.jpg, id=534, 928.21782pt x 331.99031pt>
+<images/cir_noint.jpg, id=551, 928.21782pt x 331.99031pt>
 File: images/cir_noint.jpg Graphic file (type jpg)
 
 <use images/cir_noint.jpg>
@@ -2185,7 +2177,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <./images/cir_noint.jpg>]
-<images/cir_noint_far.jpg, id=573, 918.43124pt x 314.67563pt>
+<images/cir_noint_far.jpg, id=589, 918.43124pt x 314.67563pt>
 File: images/cir_noint_far.jpg Graphic file (type jpg)
 
 <use images/cir_noint_far.jpg>
@@ -2207,7 +2199,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <./images/cir_noint_far.jpg>]
-<images/phase_shift.png, id=583, 829.59938pt x 515.67656pt>
+<images/phase_shift.png, id=599, 829.59938pt x 515.67656pt>
 File: images/phase_shift.png Graphic file (type png)
 
 <use images/phase_shift.png>
@@ -2221,6 +2213,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./images/phase_shift.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 570.
+
+
+("D:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 570.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2248,17 +2249,35 @@ Package natbib Warning: Citation `holzer_introduction_2013' on page 24 undefine
 d on input line 769.
 
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 783.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24] <images/frequency_beating.png, id=647, 761.84625pt x 322.95656pt>
+[24] <images/frequency_beating.png, id=663, 761.84625pt x 322.95656pt>
 File: images/frequency_beating.png Graphic file (type png)
 
 <use images/frequency_beating.png>
 Package pdftex.def Info: images/frequency_beating.png used on input line 842.
 (pdftex.def)             Requested size: 426.79134pt x 180.91849pt.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 874.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 874.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 874.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 876.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 876.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2275,7 +2294,7 @@ ed on input line 993.
 Package natbib Warning: Citation `blell_injection_2014' on page 26 undefined on
  input line 993.
 
-<images/kicker_magnet.jpg, id=661, 1127.21124pt x 417.56pt>
+<images/kicker_magnet.jpg, id=677, 1127.21124pt x 417.56pt>
 File: images/kicker_magnet.jpg Graphic file (type jpg)
 
 <use images/kicker_magnet.jpg>
@@ -2288,7 +2307,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <images/ext_rise_flattop_fall.jpg, id=670, 1270.7475pt x 945.5325pt>
+[26] <images/ext_rise_flattop_fall.jpg, id=686, 1270.7475pt x 945.5325pt>
 File: images/ext_rise_flattop_fall.jpg Graphic file (type jpg)
 
 <use images/ext_rise_flattop_fall.jpg>
@@ -2296,7 +2315,7 @@ Package pdftex.def Info: images/ext_rise_flattop_fall.jpg used on input line 10
 13.
 (pdftex.def)             Requested size: 426.79134pt x 317.56691pt.
 
-<images/inj_rise_flattop_fall.jpg, id=673, 1240.635pt x 1011.78pt>
+<images/inj_rise_flattop_fall.jpg, id=689, 1240.635pt x 1011.78pt>
 File: images/inj_rise_flattop_fall.jpg Graphic file (type jpg)
 
 <use images/inj_rise_flattop_fall.jpg>
@@ -2397,7 +2416,7 @@ ined on input line 47.
 Package natbib Warning: Citation `klingbeil_new_2011' on page 32 undefined on i
 nput line 53.
 
-<images/ref_rf_dis.png, id=709, 715.17188pt x 697.10437pt>
+<images/ref_rf_dis.png, id=725, 715.17188pt x 697.10437pt>
 File: images/ref_rf_dis.png Graphic file (type png)
 
 <use images/ref_rf_dis.png>
@@ -2419,7 +2438,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `klingbeil_new_2011' on page 33 undefined on i
 nput line 67.
 
-<images/local_cavity_syn.png, id=722, 517.18219pt x 525.46312pt>
+<images/local_cavity_syn.png, id=738, 517.18219pt x 525.46312pt>
 File: images/local_cavity_syn.png Graphic file (type png)
 
 <use images/local_cavity_syn.png>
@@ -2461,10 +2480,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [35]
 Chapter 4.
-(chapters/4Concept.tex [36
+(chapters/4Concept.tex
 
-]
-<images/ext_inj_ill.pdf, id=756, 597.50786pt x 361.35pt>
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 25.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 25.
+
+[36
+
+] <images/ext_inj_ill.pdf, id=772, 597.50786pt x 361.35pt>
 File: images/ext_inj_ill.pdf Graphic file (type pdf)
 
 <use images/ext_inj_ill.pdf>
@@ -2489,6 +2514,30 @@ Package natbib Warning: Citation `liebermann_sis100_2013' on page 38 undefined
 on input line 37.
 
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 41.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 43.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 43.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 43.
+
+
 Overfull \hbox (6.3875pt too wide) in paragraph at lines 50--51
 []\OT1/cmr/m/n/12 The mea-sure-ment of the phase of the rf sys-tem and the cor-
 re-spond-ing timestamp
@@ -2502,7 +2551,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38
 
-] <images/bucket_label_occurrence.jpg, id=813, 870.25125pt x 349.305pt>
+] <images/bucket_label_occurrence.jpg, id=829, 870.25125pt x 349.305pt>
 File: images/bucket_label_occurrence.jpg Graphic file (type jpg)
 
 <use images/bucket_label_occurrence.jpg>
@@ -2510,7 +2559,7 @@ Package pdftex.def Info: images/bucket_label_occurrence.jpg used on input line
 96.
 (pdftex.def)             Requested size: 426.79134pt x 171.31018pt.
 
-<images/bucket_label_occurrence1.jpg, id=815, 996.72375pt x 432.11438pt>
+<images/bucket_label_occurrence1.jpg, id=831, 996.72375pt x 432.11438pt>
 File: images/bucket_label_occurrence1.jpg Graphic file (type jpg)
 
 <use images/bucket_label_occurrence1.jpg>
@@ -2526,6 +2575,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 119.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 119.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -2533,12 +2588,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [40 <./images/bucket_label_occurrence.jpg> <./images/bucket_label_occurrence1.j
 pg>]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 123.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 123.
+
+
 Overfull \hbox (1.59972pt too wide) in paragraph at lines 123--124
 \OT1/cmr/m/n/12 pen-sa-tion for the first bar of the SIS100 rev-o-lu-tion fre-q
 uency marker is $\OML/cmm/m/it/12 T[] \OT1/cmr/m/n/12 +
  []
 
-<images/2method.jpg, id=836, 960.58875pt x 1153.30875pt>
+<images/2method.jpg, id=853, 960.58875pt x 1153.30875pt>
 File: images/2method.jpg Graphic file (type jpg)
 
 <use images/2method.jpg>
@@ -2579,7 +2641,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `ferrand_development_nodate' on page 43 undefi
 ned on input line 196.
 
-<images/phase_beating.pdf, id=858, 597.50786pt x 398.3386pt>
+<images/phase_beating.pdf, id=874, 597.50786pt x 398.3386pt>
 File: images/phase_beating.pdf Graphic file (type pdf)
 
 <use images/phase_beating.pdf>
@@ -2608,13 +2670,19 @@ ned on input line 268.
 Package natbib Warning: Citation `ferrand_development_nodate' on page 45 undefi
 ned on input line 270.
 
-<images/phase_extrapolation.pdf, id=896, 597.50786pt x 341.43306pt>
+<images/phase_extrapolation.pdf, id=912, 597.50786pt x 341.43306pt>
 File: images/phase_extrapolation.pdf Graphic file (type pdf)
 
 <use images/phase_extrapolation.pdf>
 Package pdftex.def Info: images/phase_extrapolation.pdf used on input line 313.
 
 (pdftex.def)             Requested size: 426.79134pt x 243.88312pt.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 320.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 320.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2624,18 +2692,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [45]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 322.
+
+
 Package natbib Warning: Citation `ferrand_development_nodate' on page 46 undefi
 ned on input line 324.
 
 
-Package natbib Warning: Citation `ferrand_development_nodate' on page 46 undefi
-ned on input line 335.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 332.
 
-<images/phase_prediction.pdf, id=911, 597.50786pt x 369.88583pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 334.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 334.
+
+
+Package natbib Warning: Citation `ferrand_development_nodate' on page 46 undefi
+ned on input line 336.
+
+<images/phase_prediction.pdf, id=927, 597.50786pt x 369.88583pt>
 File: images/phase_prediction.pdf Graphic file (type pdf)
 
 <use images/phase_prediction.pdf>
-Package pdftex.def Info: images/phase_prediction.pdf used on input line 338.
+Package pdftex.def Info: images/phase_prediction.pdf used on input line 339.
 (pdftex.def)             Requested size: 426.79134pt x 264.20673pt.
 
 
@@ -2647,17 +2727,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [46 <./images/phase_extrapolation.pdf>]
 
 Package natbib Warning: Citation `beck_new_2012' on page 47 undefined on input 
-line 344.
+line 345.
 
 
 Package natbib Warning: Citation `thieme_scu_2013' on page 47 undefined on inpu
-t line 344.
+t line 345.
 
-<images/timestamp_phase.pdf, id=941, 604.04816pt x 374.97803pt>
+<images/timestamp_phase.pdf, id=958, 604.04816pt x 374.97803pt>
 File: images/timestamp_phase.pdf Graphic file (type pdf)
 
 <use images/timestamp_phase.pdf>
-Package pdftex.def Info: images/timestamp_phase.pdf used on input line 355.
+Package pdftex.def Info: images/timestamp_phase.pdf used on input line 356.
 (pdftex.def)             Requested size: 426.79134pt x 264.94316pt.
 
 
@@ -2668,14 +2748,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [47 <./images/phase_prediction.pdf>]
 
-Package natbib Warning: Citation `bai_f-tc-c-05_2016' on page 48 undefined on i
-nput line 371.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 364.
 
-<images/network_B2B.jpg, id=971, 808.52063pt x 415.5525pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 364.
+
+
+Package natbib Warning: Citation `bai_f-tc-c-05_2016' on page 48 undefined on i
+nput line 372.
+
+<images/network_B2B.jpg, id=987, 808.52063pt x 415.5525pt>
 File: images/network_B2B.jpg Graphic file (type jpg)
 
 <use images/network_B2B.jpg>
-Package pdftex.def Info: images/network_B2B.jpg used on input line 374.
+Package pdftex.def Info: images/network_B2B.jpg used on input line 375.
 (pdftex.def)             Requested size: 426.79134pt x 219.3604pt.
 
 
@@ -2686,22 +2772,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [48 <./images/timestamp_phase.pdf>]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 384.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 394.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 394.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 396.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 398.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 400.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [49 <./images/network_B2B.jpg>]
-<images/normalized_profile.png, id=1009, 909.3975pt x 514.92375pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 435.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 437.
+
+<images/normalized_profile.png, id=1024, 909.3975pt x 514.92375pt>
 File: images/normalized_profile.png Graphic file (type png)
 
 <use images/normalized_profile.png>
-Package pdftex.def Info: images/normalized_profile.png used on input line 452.
+Package pdftex.def Info: images/normalized_profile.png used on input line 453.
 (pdftex.def)             Requested size: 426.79134pt x 241.66061pt.
 
 
 Package natbib Warning: Citation `ferrand_development_nodate' on page 50 undefi
-ned on input line 458.
+ned on input line 459.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2717,11 +2833,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [51 <./images/normalized_profile.png>]
-<images/network_B2B1.jpg, id=1032, 1354.05875pt x 569.12625pt>
+<images/network_B2B1.jpg, id=1047, 1354.05875pt x 569.12625pt>
 File: images/network_B2B1.jpg Graphic file (type jpg)
 
 <use images/network_B2B1.jpg>
-Package pdftex.def Info: images/network_B2B1.jpg used on input line 512.
+Package pdftex.def Info: images/network_B2B1.jpg used on input line 513.
 (pdftex.def)             Requested size: 426.79134pt x 179.37993pt.
 
 
@@ -2732,15 +2848,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [52 <./images/network_B2B1.jpg>]
 
-Package natbib Warning: Citation `ferrand_development_nodate' on page 53 undefi
-ned on input line 570.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 546.
 
-<images/bucket_normal_indication.pdf, id=1046, 597.50786pt x 256.0748pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 546.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 550.
+
+
+Package natbib Warning: Citation `ferrand_development_nodate' on page 53 undefi
+ned on input line 571.
+
+<images/bucket_normal_indication.pdf, id=1062, 597.50786pt x 256.0748pt>
 File: images/bucket_normal_indication.pdf Graphic file (type pdf)
 
 <use images/bucket_normal_indication.pdf>
 Package pdftex.def Info: images/bucket_normal_indication.pdf used on input line
- 577.
+ 578.
 (pdftex.def)             Requested size: 426.79134pt x 182.91234pt.
 
 
@@ -2749,11 +2874,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53] <images/bunch_gap_indication.pdf, id=1058, 597.50786pt x 845.04686pt>
+[53] <images/bunch_gap_indication.pdf, id=1074, 597.50786pt x 845.04686pt>
 File: images/bunch_gap_indication.pdf Graphic file (type pdf)
 
 <use images/bunch_gap_indication.pdf>
-Package pdftex.def Info: images/bunch_gap_indication.pdf used on input line 601
+Package pdftex.def Info: images/bunch_gap_indication.pdf used on input line 602
 .
 (pdftex.def)             Requested size: 426.79134pt x 603.6108pt.
 
@@ -2774,17 +2899,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [55 <./images/bunch_gap_indication.pdf>]
-Overfull \hbox (3.23312pt too wide) in paragraph at lines 619--619
+Overfull \hbox (3.23312pt too wide) in paragraph at lines 620--620
  |[]\OT1/cmr/bx/n/14.4 Fine Syn-chro-niza-tion of Ex-trac-tion and In-jec-tion 
 Kick-
  []
 
-<images/ext_inj_ill2.pdf, id=1239, 597.50786pt x 256.0748pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 641.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 641.
+
+<images/ext_inj_ill2.pdf, id=1254, 597.50786pt x 256.0748pt>
 File: images/ext_inj_ill2.pdf Graphic file (type pdf)
 
 <use images/ext_inj_ill2.pdf>
-Package pdftex.def Info: images/ext_inj_ill2.pdf used on input line 643.
+Package pdftex.def Info: images/ext_inj_ill2.pdf used on input line 644.
 (pdftex.def)             Requested size: 426.79134pt x 182.91234pt.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 653.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 653.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2792,11 +2935,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56] <images/data_flow.jpg, id=1248, 1439.3775pt x 3312.375pt>
+[56] <images/data_flow.jpg, id=1263, 1439.3775pt x 3312.375pt>
 File: images/data_flow.jpg Graphic file (type jpg)
 
 <use images/data_flow.jpg>
-Package pdftex.def Info: images/data_flow.jpg used on input line 703.
+Package pdftex.def Info: images/data_flow.jpg used on input line 704.
 (pdftex.def)             Requested size: 298.75394pt x 687.48192pt.
 
 
@@ -2826,37 +2969,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [59 <./images/data_flow.jpg>]
-Overfull \hbox (19.95395pt too wide) in paragraph at lines 713--714
-\OT1/cmr/m/n/12 times-tamp $\OML/cmm/m/it/12 t[]$ \OT1/cmr/m/n/12 and the slope
- $\OML/cmm/m/it/12 k[]$ \OT1/cmr/m/n/12 in the for-mat of the tim-ing frame []\
-OT1/cmtt/m/n/12 TGM_PHASE_TIME
- []
-
-
-Overfull \hbox (21.76877pt too wide) in paragraph at lines 720--721
-[]\OT1/cmr/m/n/12 When the source and tar-get Trig-ger SCUs re-ceive the tim-in
-g frame []\OT1/cmtt/m/n/12 CMD_SYNCH_WIN\OT1/cmr/m/n/12 ,
- []
-
-
-Overfull \hbox (32.15578pt too wide) in paragraph at lines 722--723
-\OT1/cmr/m/n/12 the B2B source SCU in the for-mat of the tim-ing frame []\OT1/c
-mtt/m/n/12 TGM_KICKER_TRIGGER_TIME_S\OT1/cmr/m/n/12 .
- []
-
 
 Package natbib Warning: Citation `kainberger_pzs_2003' on page 60 undefined on 
-input line 731.
+input line 732.
 
 
 Package natbib Warning: Citation `krause_re-engineering_2001' on page 60 undefi
-ned on input line 731.
+ned on input line 732.
 
-<images/GSI_control_system.jpg, id=1295, 938.00438pt x 469.755pt>
+<images/GSI_control_system.jpg, id=1311, 938.00438pt x 469.755pt>
 File: images/GSI_control_system.jpg Graphic file (type jpg)
 
 <use images/GSI_control_system.jpg>
-Package pdftex.def Info: images/GSI_control_system.jpg used on input line 735.
+Package pdftex.def Info: images/GSI_control_system.jpg used on input line 736.
 (pdftex.def)             Requested size: 426.79134pt x 213.73169pt.
 
 
@@ -2882,16 +3007,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [62]
 Chapter 5.
 (chapters/5Realization.tex
+Overfull \hbox (2.3823pt too wide) in paragraph at lines 5--5
+ \OT1/cmr/bx/n/17.28 tion Meth-ods for the B2B Trans-fer from SIS18
+ []
+
 
 Package natbib Warning: Citation `lee_accelerator_2011' on page 63 undefined on
  input line 9.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 13.
 
 [63
 
 ]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 19.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 19.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 19.
+
+
 Package natbib Warning: Citation `liebermann_fair_2013' on page 64 undefined on
  input line 32.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 40.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 40.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 40.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 40.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 53.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 53.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 53.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 53.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2911,33 +3076,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64] <images/4case.png, id=1355, 1029.09468pt x 490.08093pt>
+[64]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 69.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 69.
+
+<images/4case.png, id=1371, 918.43124pt x 1014.79124pt>
 File: images/4case.png Graphic file (type png)
-
-<use images/4case.png>
+ <use images/4case.png>
 Package pdftex.def Info: images/4case.png used on input line 148.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[65 <./images/4case.png (PNG copy)>]
-<images/1st_derivation.png, id=1365, 1029.09468pt x 490.08093pt>
-File: images/1st_derivation.png Graphic file (type png)
-
-<use images/1st_derivation.png>
-Package pdftex.def Info: images/1st_derivation.png used on input line 186.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
-
-<images/2nd_derivation.png, id=1367, 1029.09468pt x 490.08093pt>
-File: images/2nd_derivation.png Graphic file (type png)
-
-<use images/2nd_derivation.png>
-Package pdftex.def Info: images/2nd_derivation.png used on input line 192.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
+(pdftex.def)             Requested size: 426.79134pt x 471.57886pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2948,21 +3098,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66 <./images/1st_derivation.png (PNG copy)>]
-<images/phase_shift_four_case.png, id=1381, 1029.09468pt x 490.08093pt>
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66 <./images/4case.png>]
+<images/1st_derivation.png, id=1388, 1029.09468pt x 490.08093pt>
+File: images/1st_derivation.png Graphic file (type png)
+
+<use images/1st_derivation.png>
+Package pdftex.def Info: images/1st_derivation.png used on input line 186.
+(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
+
+<images/2nd_derivation.png, id=1390, 1029.09468pt x 490.08093pt>
+File: images/2nd_derivation.png Graphic file (type png)
+
+<use images/2nd_derivation.png>
+Package pdftex.def Info: images/2nd_derivation.png used on input line 192.
+(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
+
+<images/phase_shift_four_case.png, id=1393, 921.4425pt x 1002.74625pt>
 File: images/phase_shift_four_case.png Graphic file (type png)
 
 <use images/phase_shift_four_case.png>
 Package pdftex.def Info: images/phase_shift_four_case.png used on input line 20
 0.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
-
-<images/radial.png, id=1385, 1029.09468pt x 490.08093pt>
-File: images/radial.png Graphic file (type png)
-
-<use images/radial.png>
-Package pdftex.def Info: images/radial.png used on input line 214.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
+(pdftex.def)             Requested size: 426.79134pt x 464.43611pt.
 
 Underfull \vbox (badness 1460) has occurred while \output is active []
 
@@ -2973,13 +3137,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67 <./images/2nd_derivation.png (PNG copy)> <./images/phase_shift_four_case.pn
-g (PNG copy)>] <images/moment.png, id=1399, 1029.09468pt x 490.08093pt>
-File: images/moment.png Graphic file (type png)
+[67 <./images/1st_derivation.png (PNG copy)> <./images/2nd_derivation.png (PNG 
+copy)>] <images/radial.png, id=1407, 925.95938pt x 981.6675pt>
+File: images/radial.png Graphic file (type png)
 
-<use images/moment.png>
-Package pdftex.def Info: images/moment.png used on input line 241.
-(pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
+<use images/radial.png>
+Package pdftex.def Info: images/radial.png used on input line 214.
+(pdftex.def)             Requested size: 426.79134pt x 452.47127pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2987,48 +3154,62 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68 <./images/radial.png (PNG copy)> <./images/moment.png (PNG copy)>]
-<images/synch_phase.png, id=1413, 1029.09468pt x 490.08093pt>
+[68 <./images/phase_shift_four_case.png>]
+<images/moment.png, id=1420, 942.52126pt x 1011.78pt>
+File: images/moment.png Graphic file (type png)
+ <use images/moment.png>
+Package pdftex.def Info: images/moment.png used on input line 241.
+(pdftex.def)             Requested size: 426.79134pt x 458.15291pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69 <./images/radial.png>]
+<images/synch_phase.png, id=1434, 1029.09468pt x 490.08093pt>
 File: images/synch_phase.png Graphic file (type png)
 
 <use images/synch_phase.png>
 Package pdftex.def Info: images/synch_phase.png used on input line 266.
 (pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
 
-<images/bucket_size.png, id=1417, 1029.09468pt x 490.08093pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70 <./images/moment.png>]
+<images/bucket_size.png, id=1447, 1029.09468pt x 490.08093pt>
 File: images/bucket_size.png Graphic file (type png)
 
 <use images/bucket_size.png>
 Package pdftex.def Info: images/bucket_size.png used on input line 277.
 (pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
 
-Underfull \vbox (badness 5288) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69 <./images/synch_phase.png (PNG copy)>]
-<images/adiabaticity2.png, id=1432, 1029.09468pt x 490.08093pt>
+[71 <./images/synch_phase.png (PNG copy)> <./images/bucket_size.png (PNG copy)>
+] <images/adiabaticity2.png, id=1462, 1029.09468pt x 490.08093pt>
 File: images/adiabaticity2.png Graphic file (type png)
 
 <use images/adiabaticity2.png>
 Package pdftex.def Info: images/adiabaticity2.png used on input line 306.
 (pdftex.def)             Requested size: 426.79134pt x 203.25267pt.
 
-Underfull \vbox (badness 7704) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70 <./images/bucket_size.png (PNG copy)>]
+[72 <./images/adiabaticity2.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 340.
@@ -3042,13 +3223,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 340.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[71 <./images/adiabaticity2.png (PNG copy)>]
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 372.
 
@@ -3061,61 +3235,54 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 372.
 
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 379.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 379.
+
+
+Overfull \hbox (11.87721pt too wide) in paragraph at lines 379--380
+[]\OT1/cmr/m/n/12 The max-i-mum rf fre-quency off-set $\OML/cmm/m/it/12 f[]$ \
+OT1/cmr/m/n/12 comes from the con-straint of $\OML/cmm/m/it/12 p=p[]$
+ []
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 426.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 426.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 426.
-
-
-Package natbib Warning: Citation `taylor_introduction_1982' on page 73 undefine
-d on input line 447.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [73]
 
-Package natbib Warning: Citation `klingbeil_detailed_2013' on page 74 undefined
- on input line 449.
-
-
-Package natbib Warning: Citation `ferrand_development_nodate' on page 74 undefi
-ned on input line 449.
-
-
-Package natbib Warning: Citation `moritz_f-cs-rf-14e_2012' on page 74 undefined
- on input line 450.
-
-
-Package natbib Warning: Citation `kreider_receiver_2014' on page 74 undefined o
-n input line 451.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [74]
-Overfull \hbox (43.20622pt too wide) in alignment at lines 529--535
- [][][] []
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 437.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 437.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 437.
+
+
+Package natbib Warning: Citation `taylor_introduction_1982' on page 75 undefine
+d on input line 458.
+
+
+Package natbib Warning: Citation `klingbeil_detailed_2013' on page 75 undefined
+ on input line 460.
+
+
+Package natbib Warning: Citation `ferrand_development_nodate' on page 75 undefi
+ned on input line 460.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3125,6 +3292,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [75]
 
+Package natbib Warning: Citation `moritz_f-cs-rf-14e_2012' on page 76 undefined
+ on input line 461.
+
+
+Package natbib Warning: Citation `kreider_receiver_2014' on page 76 undefined o
+n input line 462.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -3132,23 +3307,103 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [76]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 496.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 500.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 504.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 506.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 543.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 546.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77
+[77]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 586.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 586.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 590.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 591.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 604.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79
 
 ]
-Overfull \hbox (12.61884pt too wide) in alignment at lines 597--603
+Overfull \hbox (13.6188pt too wide) in alignment at lines 637--644
  [][][] []
  []
 
-<images/accuracy_syn_win.jpg, id=1524, 662.475pt x 205.5178pt>
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 647.
+
+<images/accuracy_syn_win.jpg, id=1560, 662.475pt x 205.5178pt>
 File: images/accuracy_syn_win.jpg Graphic file (type jpg)
 
 <use images/accuracy_syn_win.jpg>
-Package pdftex.def Info: images/accuracy_syn_win.jpg used on input line 609.
+Package pdftex.def Info: images/accuracy_syn_win.jpg used on input line 650.
 (pdftex.def)             Requested size: 426.79134pt x 132.40274pt.
 
 
@@ -3157,34 +3412,75 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78
+[80
 
 ]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 657.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 662.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 662.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 665.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 668.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 668.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 668.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 668.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 669.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 669.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 670.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 674.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79 <./images/accuracy_syn_win.jpg>]
-<images/accuracy_syn_win1.jpg, id=1546, 663.98062pt x 213.79875pt>
+[81 <./images/accuracy_syn_win.jpg>]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 682.
+
+<images/accuracy_syn_win1.jpg, id=1580, 666.23906pt x 216.81pt>
 File: images/accuracy_syn_win1.jpg Graphic file (type jpg)
 
 <use images/accuracy_syn_win1.jpg>
-Package pdftex.def Info: images/accuracy_syn_win1.jpg used on input line 646.
-(pdftex.def)             Requested size: 341.43306pt x 109.93956pt.
+Package pdftex.def Info: images/accuracy_syn_win1.jpg used on input line 687.
+(pdftex.def)             Requested size: 341.43306pt x 111.11087pt.
 
 
-Package natbib Warning: Citation `prados_notitle_nodate' on page 80 undefined o
-n input line 704.
+Package natbib Warning: Citation `prados_notitle_nodate' on page 82 undefined o
+n input line 746.
 
+<images/network_B2B2.jpg, id=1585, 1354.05875pt x 569.12625pt>
+File: images/network_B2B2.jpg Graphic file (type jpg)
 
-Package natbib Warning: Citation `prados_testing_2016' on page 80 undefined on 
-input line 704.
+<use images/network_B2B2.jpg>
+Package pdftex.def Info: images/network_B2B2.jpg used on input line 751.
+(pdftex.def)             Requested size: 426.79134pt x 179.37993pt.
 
+Underfull \vbox (badness 7759) has occurred while \output is active []
 
-Package natbib Warning: Citation `prados_testing_2016' on page 80 undefined on 
-input line 720.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3192,29 +3488,82 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80 <./images/accuracy_syn_win1.jpg>]
+[82 <./images/accuracy_syn_win1.jpg>]
 
-Package natbib Warning: Citation `liebermann_sis100_2013' on page 81 undefined 
-on input line 731.
+Package natbib Warning: Citation `prados_testing_2016' on page 83 undefined on 
+input line 771.
 
 
-Overfull \hbox (35.98595pt too wide) detected at line 735
-[]\OML/cmm/m/it/12 bandwidth \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12  []  []
+Package natbib Warning: Citation `liebermann_sis100_2013' on page 83 undefined 
+on input line 782.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[83 <./images/network_B2B2.jpg>]
+
+Package natbib Warning: Citation `prados_testing_2016' on page 84 undefined on 
+input line 800.
+
+
+Package natbib Warning: Citation `prados_white_2011' on page 84 undefined on in
+put line 808.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[84] <images/FER_2case.png, id=1615, 597.73312pt x 279.29344pt>
+File: images/FER_2case.png Graphic file (type png)
+
+<use images/FER_2case.png>
+Package pdftex.def Info: images/FER_2case.png used on input line 830.
+(pdftex.def)             Requested size: 426.79134pt x 199.42055pt.
+
+<images/GSI_use_case.pdf, id=1619, 542.025pt x 406.51875pt>
+File: images/GSI_use_case.pdf Graphic file (type pdf)
+
+<use images/GSI_use_case.pdf>
+Package pdftex.def Info: images/GSI_use_case.pdf used on input line 846.
+(pdftex.def)             Requested size: 426.79134pt x 320.10419pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[85 <./images/FER_2case.png>]
+Overfull \hbox (17.64148pt too wide) in paragraph at lines 859--883
+ [] 
  []
 
 
-Package natbib Warning: Citation `prados_testing_2016' on page 81 undefined on 
-input line 747.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-<images/GSI_use_case.png, id=1560, 542.025pt x 406.51875pt>
-File: images/GSI_use_case.png Graphic file (type png)
+[86 <./images/GSI_use_case.pdf>]
 
-<use images/GSI_use_case.png>
-Package pdftex.def Info: images/GSI_use_case.png used on input line 754.
-(pdftex.def)             Requested size: 426.79134pt x 320.10419pt.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-Underfull \vbox (badness 3199) has occurred while \output is active []
+[87]
+<images/Max_latency_jitter_unicast.png, id=1658, 544.28343pt x 335.00156pt>
+File: images/Max_latency_jitter_unicast.png Graphic file (type png)
 
+<use images/Max_latency_jitter_unicast.png>
+Package pdftex.def Info: images/Max_latency_jitter_unicast.png used on input li
+ne 935.
+(pdftex.def)             Requested size: 312.9803pt x 192.63461pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3222,25 +3571,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81]
+[88 <./images/Max_latency_jitter_unicast.png>]
+<images/Max_latency_jitter.png, id=1669, 737.75626pt x 560.0925pt>
+File: images/Max_latency_jitter.png Graphic file (type png)
 
-Package natbib Warning: Citation `prados_testing_2016' on page 82 undefined on 
-input line 759.
+<use images/Max_latency_jitter.png>
+Package pdftex.def Info: images/Max_latency_jitter.png used on input line 972.
+(pdftex.def)             Requested size: 369.88582pt x 280.80618pt.
 
-<images/packet_loss.png, id=1571, 1315.91624pt x 583.17876pt>
-File: images/packet_loss.png Graphic file (type png)
-
-<use images/packet_loss.png>
-Package pdftex.def Info: images/packet_loss.png used on input line 807.
-(pdftex.def)             Requested size: 426.79134pt x 189.13931pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[82 <./images/GSI_use_case.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3250,49 +3588,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83] <images/Max_latency_jitter.png, id=1588, 1311.90125pt x 600.2425pt>
-File: images/Max_latency_jitter.png Graphic file (type png)
+[89 <./images/Max_latency_jitter.png>]
 
-<use images/Max_latency_jitter.png>
-Package pdftex.def Info: images/Max_latency_jitter.png used on input line 850.
-(pdftex.def)             Requested size: 426.79134pt x 195.26883pt.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1008.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[84 <./images/packet_loss.png> <./images/Max_latency_jitter.png>]
-<images/Max_latency_jitter_unicast.png, id=1602, 1155.31625pt x 388.45125pt>
-File: images/Max_latency_jitter_unicast.png Graphic file (type png)
-
-<use images/Max_latency_jitter_unicast.png>
-Package pdftex.def Info: images/Max_latency_jitter_unicast.png used on input li
-ne 888.
-(pdftex.def)             Requested size: 426.79134pt x 143.49947pt.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1008.
 
 
-Package natbib Warning: Citation `prados_white_2011' on page 85 undefined on in
-put line 916.
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1008.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[85 <./images/Max_latency_jitter_unicast.png>]
-<images/FER_2case.png, id=1615, 597.73312pt x 279.29344pt>
-File: images/FER_2case.png Graphic file (type png)
-
-<use images/FER_2case.png>
-Package pdftex.def Info: images/FER_2case.png used on input line 931.
-(pdftex.def)             Requested size: 426.79134pt x 199.42055pt.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1009.
 
 
-Package natbib Warning: Citation `noauthor_calculating_2012' on page 86 undefin
-ed on input line 942.
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1009.
+
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1009.
+
+
+
+Package natbib Warning: Citation `noauthor_calculating_2012' on page 90 undefin
+ed on input line 1025.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1038.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3300,14 +3627,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[86 <./images/FER_2case.png>]
+[90]
 
-Package natbib Warning: Citation `prados_white_2011' on page 87 undefined on in
-put line 960.
+Package natbib Warning: Citation `prados_white_2011' on page 91 undefined on in
+put line 1043.
 
 
-Package natbib Warning: Citation `prados_white_2011' on page 87 undefined on in
-put line 971.
+Overfull \hbox (6.35347pt too wide) in paragraph at lines 1049--1063
+ [] 
+ []
+
+
+Package natbib Warning: Citation `prados_white_2011' on page 91 undefined on in
+put line 1076.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3315,16 +3647,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[87] <images/flow_chart_src.jpg, id=1634, 2086.79625pt x 1210.5225pt>
+[91] <images/flow_chart_src.jpg, id=1695, 2086.79625pt x 1210.5225pt>
 File: images/flow_chart_src.jpg Graphic file (type jpg)
 
 <use images/flow_chart_src.jpg>
-Package pdftex.def Info: images/flow_chart_src.jpg used on input line 1016.
+Package pdftex.def Info: images/flow_chart_src.jpg used on input line 1121.
 (pdftex.def)             Requested size: 426.79134pt x 247.56764pt.
 
-Overfull \hbox (80.93436pt too wide) in paragraph at lines 1030--1031
-[]\OT1/cmr/m/n/12 Step 5. The pro-gram sends the tim-ing frame []\OT1/cmtt/m/n/
-12 TGM_SYNCH_WIN \OT1/cmr/m/n/12 and []\OT1/cmtt/m/n/12 TGM_PHASE_CORRECTION
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[92 <./images/flow_chart_src.jpg>]
+<images/flow_chart_trg.jpg, id=1705, 569.12625pt x 528.47438pt>
+File: images/flow_chart_trg.jpg Graphic file (type jpg)
+
+<use images/flow_chart_trg.jpg>
+Package pdftex.def Info: images/flow_chart_trg.jpg used on input line 1153.
+(pdftex.def)             Requested size: 199.16928pt x 184.94461pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[93] <images/flow_chart_trigger.jpg, id=1713, 993.7125pt x 861.2175pt>
+File: images/flow_chart_trigger.jpg Graphic file (type jpg)
+
+<use images/flow_chart_trigger.jpg>
+Package pdftex.def Info: images/flow_chart_trigger.jpg used on input line 1168.
+
+(pdftex.def)             Requested size: 341.43306pt x 295.91138pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94 <./images/flow_chart_trg.jpg>]
+Overfull \hbox (4.64424pt too wide) in paragraph at lines 1173--1174
+\OT1/cmr/m/n/12 KICKER[] TRIG-GER[] TIME[] T. The pro-gram con-trols the fol-lo
+w-ing log-i-cal steps
  []
 
 
@@ -3333,47 +3706,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[88 <./images/flow_chart_src.jpg>]
-<images/flow_chart_trg.jpg, id=1643, 581.17125pt x 551.05875pt>
-File: images/flow_chart_trg.jpg Graphic file (type jpg)
-
-<use images/flow_chart_trg.jpg>
-Package pdftex.def Info: images/flow_chart_trg.jpg used on input line 1048.
-(pdftex.def)             Requested size: 199.16928pt x 188.84578pt.
-
-<images/flow_chart_trigger.jpg, id=1646, 993.7125pt x 858.20625pt>
-File: images/flow_chart_trigger.jpg Graphic file (type jpg)
-
-<use images/flow_chart_trigger.jpg>
-Package pdftex.def Info: images/flow_chart_trigger.jpg used on input line 1063.
-
-(pdftex.def)             Requested size: 227.62204pt x 196.57138pt.
-
+[95 <./images/flow_chart_trigger.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89 <./images/flow_chart_trg.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[90 <./images/flow_chart_trigger.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[91] <images/flow_chart_time.jpg, id=1668, 2238.3625pt x 1400.23125pt>
+[96] <images/flow_chart_time.jpg, id=1736, 2238.3625pt x 1400.23125pt>
 File: images/flow_chart_time.jpg Graphic file (type jpg)
 
 <use images/flow_chart_time.jpg>
-Package pdftex.def Info: images/flow_chart_time.jpg used on input line 1091.
+Package pdftex.def Info: images/flow_chart_time.jpg used on input line 1196.
 (pdftex.def)             Requested size: 597.50787pt x 373.77296pt.
 
 
@@ -3382,29 +3726,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92 <./images/flow_chart_time.jpg>]
-<images/SIS18_kicker.jpg, id=1676, 962.09438pt x 457.71pt>
+[97 <./images/flow_chart_time.jpg>]
+<images/SIS18_kicker.jpg, id=1744, 962.09438pt x 457.71pt>
 File: images/SIS18_kicker.jpg Graphic file (type jpg)
 
 <use images/SIS18_kicker.jpg>
-Package pdftex.def Info: images/SIS18_kicker.jpg used on input line 1105.
+Package pdftex.def Info: images/SIS18_kicker.jpg used on input line 1210.
 (pdftex.def)             Requested size: 426.79134pt x 203.04825pt.
 
 
-Package natbib Warning: Citation `blell_injection_2014' on page 93 undefined on
- input line 1110.
+Package natbib Warning: Citation `blell_injection_2014' on page 98 undefined on
+ input line 1215.
 
 
-Package natbib Warning: Citation `liebermann_sis100_2013' on page 93 undefined 
-on input line 1110.
+Package natbib Warning: Citation `liebermann_sis100_2013' on page 98 undefined 
+on input line 1215.
 
 
-Package natbib Warning: Citation `blell_f-ds-ie-03e_2014' on page 93 undefined 
-on input line 1117.
+Package natbib Warning: Citation `blell_f-ds-ie-03e_2014' on page 98 undefined 
+on input line 1222.
 
 
-Package natbib Warning: Citation `ros_sis18_2008' on page 93 undefined on input
- line 1117.
+Package natbib Warning: Citation `ros_sis18_2008' on page 98 undefined on input
+ line 1222.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3412,18 +3756,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93
+[98
 
 
  <./images/SIS18_kicker.jpg>]
-<images/kicker_SIS18.jpg, id=1686, 978.65625pt x 674.52pt>
+<images/kicker_SIS18.jpg, id=1754, 978.65625pt x 674.52pt>
 File: images/kicker_SIS18.jpg Graphic file (type jpg)
 
 <use images/kicker_SIS18.jpg>
-Package pdftex.def Info: images/kicker_SIS18.jpg used on input line 1128.
+Package pdftex.def Info: images/kicker_SIS18.jpg used on input line 1233.
 (pdftex.def)             Requested size: 426.79134pt x 294.16518pt.
 
-Overfull \hbox (10.22673pt too wide) in paragraph at lines 1139--1152
+Overfull \hbox (10.22673pt too wide) in paragraph at lines 1244--1257
  [] 
  []
 
@@ -3437,41 +3781,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[94 <./images/kicker_SIS18.jpg>]
-Overfull \hbox (6.87305pt too wide) in paragraph at lines 1158--1158
+[99 <./images/kicker_SIS18.jpg>]
+Overfull \hbox (6.87305pt too wide) in paragraph at lines 1263--1263
  |[]\OT1/cmr/bx/n/14.4 A Fixed Trig-ger De-lay be-tween Ex-trac-tion Kicker Mag
 -
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1158.
+(hyperref)                removing `math shift' on input line 1263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1158.
+(hyperref)                removing `superscript' on input line 1263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1158.
+(hyperref)                removing `math shift' on input line 1263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1158.
+(hyperref)                removing `math shift' on input line 1263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1158.
+(hyperref)                removing `superscript' on input line 1263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1158.
+(hyperref)                removing `math shift' on input line 1263.
 
-<images/kicker_18_1.jpg, id=1698, 980.16188pt x 532.99126pt>
+<images/kicker_18_1.jpg, id=1766, 980.16188pt x 532.99126pt>
 File: images/kicker_18_1.jpg Graphic file (type jpg)
 
 <use images/kicker_18_1.jpg>
-Package pdftex.def Info: images/kicker_18_1.jpg used on input line 1164.
+Package pdftex.def Info: images/kicker_18_1.jpg used on input line 1269.
 (pdftex.def)             Requested size: 426.79134pt x 232.07704pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3483,18 +3827,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[95] <images/kicker_18_2.jpg, id=1706, 981.6675pt x 284.56313pt>
+[100] <images/kicker_18_2.jpg, id=1775, 981.6675pt x 284.56313pt>
 File: images/kicker_18_2.jpg Graphic file (type jpg)
 
 <use images/kicker_18_2.jpg>
-Package pdftex.def Info: images/kicker_18_2.jpg used on input line 1172.
+Package pdftex.def Info: images/kicker_18_2.jpg used on input line 1277.
 (pdftex.def)             Requested size: 426.79134pt x 123.71448pt.
 
-<images/kicker_18_3.jpg, id=1709, 980.91469pt x 225.09094pt>
+<images/kicker_18_3.jpg, id=1778, 980.91469pt x 225.09094pt>
 File: images/kicker_18_3.jpg Graphic file (type jpg)
 
 <use images/kicker_18_3.jpg>
-Package pdftex.def Info: images/kicker_18_3.jpg used on input line 1179.
+Package pdftex.def Info: images/kicker_18_3.jpg used on input line 1284.
 (pdftex.def)             Requested size: 426.79134pt x 97.93437pt.
 
 
@@ -3503,22 +3847,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[96 <./images/kicker_18_1.jpg> <./images/kicker_18_2.jpg> <./images/kicker_18_3
-.jpg>]
-Overfull \hbox (2.91487pt too wide) in paragraph at lines 1217--1217
+[101 <./images/kicker_18_1.jpg> <./images/kicker_18_2.jpg> <./images/kicker_18_
+3.jpg>]
+Overfull \hbox (2.91487pt too wide) in paragraph at lines 1322--1322
  |[]\OT1/cmr/bx/n/14.4 Simultaneous Trig-ger for SIS100 In-jec-tion Kicker Mag-
 
  []
 
 
-Package natbib Warning: Citation `blell_f-ds-ie-03e_2014' on page 97 undefined 
-on input line 1218.
+Package natbib Warning: Citation `blell_f-ds-ie-03e_2014' on page 102 undefined
+ on input line 1323.
 
-<images/kicker_SIS100.jpg, id=1726, 981.6675pt x 597.73312pt>
+<images/kicker_SIS100.jpg, id=1794, 981.6675pt x 597.73312pt>
 File: images/kicker_SIS100.jpg Graphic file (type jpg)
 
 <use images/kicker_SIS100.jpg>
-Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 1222.
+Package pdftex.def Info: images/kicker_SIS100.jpg used on input line 1327.
 (pdftex.def)             Requested size: 426.79134pt x 259.86588pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3530,27 +3874,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[97]
+[102]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98 <./images/kicker_SIS100.jpg>]
-<images/schematic_setup.jpg, id=1746, 837.1275pt x 543.53062pt>
+[103 <./images/kicker_SIS100.jpg>]
+<images/schematic_setup.jpg, id=1815, 828.09375pt x 555.57562pt>
 File: images/schematic_setup.jpg Graphic file (type jpg)
 
 <use images/schematic_setup.jpg>
-Package pdftex.def Info: images/schematic_setup.jpg used on input line 1263.
-(pdftex.def)             Requested size: 426.79134pt x 277.10571pt.
+Package pdftex.def Info: images/schematic_setup.jpg used on input line 1367.
+(pdftex.def)             Requested size: 426.79134pt x 286.3408pt.
 
-<images/testsetup_text.jpg, id=1756, 730.98094pt x 597.73312pt>
+<images/testsetup_text.jpg, id=1823, 1211.52625pt x 1008.76875pt>
 File: images/testsetup_text.jpg Graphic file (type jpg)
 
 <use images/testsetup_text.jpg>
-Package pdftex.def Info: images/testsetup_text.jpg used on input line 1271.
-(pdftex.def)             Requested size: 341.43306pt x 279.19255pt.
+Package pdftex.def Info: images/testsetup_text.jpg used on input line 1375.
+(pdftex.def)             Requested size: 256.0748pt x 213.21762pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3558,40 +3902,49 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[99 <./images/schematic_setup.jpg>]
+[104 <./images/schematic_setup.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[100 <./images/testsetup_text.jpg>]
-Overfull \hbox (35.28299pt too wide) in paragraph at lines 1304--1309
-\OT1/cmr/m/n/12 (ECA) queue [][][] of the B2B source SCU to stor-age the B2B fr
-ames []\OT1/cmtt/m/n/12 CMD_B2B_START
- []
+[105 <./images/testsetup_text.jpg>]
+<images/finial_schematic.jpg, id=1846, 840.13875pt x 623.32875pt>
+File: images/finial_schematic.jpg Graphic file (type jpg)
+
+<use images/finial_schematic.jpg>
+Package pdftex.def Info: images/finial_schematic.jpg used on input line 1386.
+(pdftex.def)             Requested size: 341.43306pt x 253.3218pt.
 
 
-Package natbib Warning: Citation `terpstra_timing_2013' on page 101 undefined o
-n input line 1332.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-<images/test_flwochart_src.png, id=1785, 924.45375pt x 734.745pt>
+[106 <./images/finial_schematic.jpg>]
+
+Package natbib Warning: Citation `terpstra_timing_2013' on page 107 undefined o
+n input line 1447.
+
+<images/test_flwochart_src.png, id=1871, 924.45375pt x 734.745pt>
 File: images/test_flwochart_src.png Graphic file (type png)
 
 <use images/test_flwochart_src.png>
-Package pdftex.def Info: images/test_flwochart_src.png used on input line 1351.
+Package pdftex.def Info: images/test_flwochart_src.png used on input line 1466.
 
 (pdftex.def)             Requested size: 426.79134pt x 339.20883pt.
 
-<images/test_flwochart_trg.png, id=1787, 796.9775pt x 354.32375pt>
+<images/test_flwochart_trg.png, id=1873, 796.9775pt x 354.32375pt>
 File: images/test_flwochart_trg.png Graphic file (type png)
 
 <use images/test_flwochart_trg.png>
-Package pdftex.def Info: images/test_flwochart_trg.png used on input line 1357.
+Package pdftex.def Info: images/test_flwochart_trg.png used on input line 1472.
 
 (pdftex.def)             Requested size: 341.43306pt x 151.79396pt.
 
-Underfull \vbox (badness 4144) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -3600,12 +3953,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[101] <images/test_flwochart_trigger.png, id=1814, 734.745pt x 284.06125pt>
+[107] <images/test_flwochart_trigger.png, id=1896, 734.745pt x 284.06125pt>
 File: images/test_flwochart_trigger.png Graphic file (type png)
 
 <use images/test_flwochart_trigger.png>
 Package pdftex.def Info: images/test_flwochart_trigger.png used on input line 1
-363.
+478.
 (pdftex.def)             Requested size: 341.43306pt x 132.00475pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3617,7 +3970,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[102 <./images/test_flwochart_src.png (PNG copy)> <./images/test_flwochart_trg.
+[108 <./images/test_flwochart_src.png (PNG copy)> <./images/test_flwochart_trg.
 png (PNG copy)>]
 (C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -3625,33 +3978,25 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (C:\Users\Gilgil\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 1381
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1496
 .
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1381.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1496.
 
 
-Overfull \hbox (3.20985pt too wide) in paragraph at lines 1382--1384
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 1497--1499
 [][][][][] 
  []
 
-
-Overfull \hbox (3.20985pt too wide) in paragraph at lines 1400--1402
-[][][][][] 
- []
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1499.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[103 <./images/test_flwochart_trigger.png (PNG copy)>]
-Overfull \hbox (3.20985pt too wide) in paragraph at lines 1412--1414
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 1515--1517
 [][][][][] 
  []
 
@@ -3661,22 +4006,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[104]
-Overfull \hbox (9.56694pt too wide) in paragraph at lines 1452--1453
-\OT1/cmr/m/n/12 cu-la-tion time is max-i-mal [][] ([][]+[][]) and the send-ing 
-time of []\OT1/cmtt/m/n/12 TGM_SYNCH_WIN
+[109 <./images/test_flwochart_trigger.png (PNG copy)>]
+Overfull \hbox (3.20985pt too wide) in paragraph at lines 1527--1529
+[][][][][] 
  []
 
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[105]
+[110])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[111]
 Chapter 6.
-(chapters/Application.tex [106
+(chapters/Application.tex [112
 
 ]
 Overfull \vbox (28.99997pt too high) detected at line 47
@@ -3692,7 +4042,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[107]
+[113]
 Overfull \hbox (0.5041pt too wide) in paragraph at lines 167--178
  [] 
  []
@@ -3715,11 +4065,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 287.
 
 
-Package natbib Warning: Citation `liebermann_fair_2013' on page 108 undefined o
+Package natbib Warning: Citation `liebermann_fair_2013' on page 114 undefined o
 n input line 289.
 
 
-Package natbib Warning: Citation `liebermann_sis100_2013' on page 108 undefined
+Package natbib Warning: Citation `liebermann_sis100_2013' on page 114 undefined
  on input line 289.
 
 
@@ -3728,7 +4078,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108]
+[114]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 314.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 314.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 355.
@@ -3742,11 +4098,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 355.
 
 
-Package natbib Warning: Citation `liebermann_fair_2013' on page 109 undefined o
+Package natbib Warning: Citation `liebermann_fair_2013' on page 115 undefined o
 n input line 357.
 
 
-Package natbib Warning: Citation `liebermann_sis100_2013' on page 109 undefined
+Package natbib Warning: Citation `liebermann_sis100_2013' on page 115 undefined
  on input line 357.
 
 
@@ -3755,81 +4111,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[109]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[110]
-
-Package natbib Warning: Citation `steck_demonstration_2011' on page 111 undefin
-ed on input line 517.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[111]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[112]
-
-Package natbib Warning: Citation `herfurth_low_2013' on page 113 undefined on i
-nput line 591.
-
-
-Package natbib Warning: Citation `lestinsky_cryring_2015' on page 113 undefined
- on input line 591.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[113]
-Overfull \hbox (4.2651pt too wide) in paragraph at lines 620--621
-\OML/cmm/m/it/12 t[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 t[]$\OT1/cmr/m/n/12 . D
-e-tailed pa-ram-e-ters of the B2B trans-fer from the ESR to the CRYRING,
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[114]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [115]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 736.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 391.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 736.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 736.
-
-
-Package natbib Warning: Citation `steck_demonstration_2011' on page 116 undefin
-ed on input line 737.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 391.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3839,8 +4126,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [116]
 
-Package natbib Warning: Citation `toelle_hesr_2007' on page 117 undefined on in
-put line 839.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 394.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 394.
+
+
+Package natbib Warning: Citation `steck_demonstration_2011' on page 117 undefin
+ed on input line 517.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3850,6 +4143,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [117]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 550.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 550.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -3857,12 +4156,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [118]
 
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 587.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 587.
+
+
+Package natbib Warning: Citation `herfurth_low_2013' on page 119 undefined on i
+nput line 591.
+
+
+Package natbib Warning: Citation `lestinsky_cryring_2015' on page 119 undefined
+ on input line 591.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [119]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 620.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 620.
+
+
+Overfull \hbox (5.43503pt too wide) in paragraph at lines 620--621
+\OML/cmm/m/it/12 t[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 t[]$\OT1/cmr/m/n/12 . D
+e-tailed pa-ram-e-ters of the B2B trans-fer from the ESR to the CRYRING,
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3876,44 +4201,55 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[121
+[121]
 
-]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 736.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 736.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 736.
+
+
+Package natbib Warning: Citation `steck_demonstration_2011' on page 122 undefin
+ed on input line 737.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[122
+[122]
 
+Package natbib Warning: Citation `toelle_hesr_2007' on page 123 undefined on in
+put line 839.
 
-]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[123
-
-
-])
-Chapter 7.
-(chapters/7SummaryAusblick.tex
-Underfull \vbox (badness 3657) has occurred while \output is active []
-
- [124
-
-
-]
+[123]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[125])
+[124]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[125]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3921,13 +4257,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [126]
-Appendix A.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [127
 
 ]
-Underfull \hbox (badness 1377) in paragraph at lines 1630--1630
-[]\OT1/cmr/m/n/12 Maximum mo-men-tum de-vi-a-tion of the rf
- []
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [128
 
@@ -3939,17 +4282,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[129]
+[129
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[130]
-Underfull \hbox (badness 1320) in paragraph at lines 1630--1630
-[]\OT1/cmr/m/n/12 First pos-i-tive zero-crossings of BuTiS C2
- []
+]) (chapters/7SummaryAusblick.tex [130
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3958,24 +4299,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [131]
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1632
-[]|\OT1/cmr/m/n/12 GSI Helmholtzzen-trum f$[]$r Schw-e-ri-o-nen-
- []
 
-[132
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
+[132])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[133] (chapters/Zusammenfassung.tex [134
 
 ]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[133]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table A.1 on input line 1632.
+Package babel Warning: You haven't loaded the language german yet
+(babel)                I'll proceed, but expect unexpected results.
+(babel)                Reported on input line 24.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3983,40 +4326,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[134]
+[135])
+
+Package babel Warning: You haven't loaded the language german yet
+(babel)                I'll proceed, but expect unexpected results.
+(babel)                Reported on input line 1646.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[135] [136
+[136] [137
+
+]
+Underfull \hbox (badness 1377) in paragraph at lines 1649--1649
+[]\OT1/cmr/m/n/12 Maximum mo-men-tum de-vi-a-tion of the rf
+ []
+
+[138
 
 
 ]
-Underfull \hbox (badness 2680) in paragraph at lines 1634--1634
-[]|\OT1/cmr/m/n/12 Initial value of the phase de-vi-a-tion be-
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 1634--1634
-[]|\OT1/cmr/m/n/12 Extrapolated phase ad-vance be-tween the
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[137]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[138]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -4024,8 +4356,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [139]
-Underfull \hbox (badness 1259) in paragraph at lines 1634--1634
-[]|\OT1/cmr/m/n/12 Required phase ad-just-ment for the phase
+Overfull \hbox (2.23705pt too wide) in paragraph at lines 1649--1649
+[] 
  []
 
 
@@ -4035,9 +4367,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [140]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table A.2 on input line 1634.
+Underfull \hbox (badness 1320) in paragraph at lines 1649--1649
+[]\OT1/cmr/m/n/12 First pos-i-tive zero-crossings of BuTiS C2
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4046,8 +4378,135 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [141]
-Appendix B.
-(chapters/appendixA.tex [142
+Underfull \hbox (badness 10000) in paragraph at lines 1651--1651
+[]|\OT1/cmr/m/n/12 GSI Helmholtzzen-trum f$[]$r Schw-e-ri-o-nen-
+ []
+
+[142
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[143]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[144]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[145]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+[146
+
+
+]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 1653--1653
+[]|\OT1/cmr/m/n/12 Initial value of the phase de-vi-a-tion be-
+ []
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 1653--1653
+[]|\OT1/cmr/m/n/12 Extrapolated phase ad-vance be-tween the
+ []
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[147]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[148]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[149]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 1653--1653
+[]|\OT1/cmr/m/n/12 Required phase ad-just-ment for the phase
+ []
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 1653.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[150]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[151]
+Appendix A.
+(chapters/appendixA.tex [152
 
 ]
 
@@ -4056,15 +4515,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[143
+[153
 
 ])
-Appendix C.
-(chapters/appendixC.tex [144
+Appendix B.
+(chapters/appendixC.tex [154
 
 
 ]
-<images/Telegram_network.jpg, id=2155, 963.6pt x 456.20438pt>
+<images/Telegram_network.jpg, id=2251, 963.6pt x 456.20438pt>
 File: images/Telegram_network.jpg Graphic file (type jpg)
 
 <use images/Telegram_network.jpg>
@@ -4081,15 +4540,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[145
+[155
 
  <./images/Telegram_network.jpg>])
-Appendix D.
+Appendix C.
 (chapters/appendixB.tex
 Underfull \vbox (badness 10000) detected at line 27
  []
 
-[146
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [156
 
 
 ]
@@ -4102,27 +4564,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[147]
+[157]
 Underfull \vbox (badness 10000) detected at line 135
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
+ Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[148]
+[158]
 Underfull \vbox (badness 10000) detected at line 195
  []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
+ Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[149]
+[159]
 Underfull \vbox (badness 10000) detected at line 242
  []
 
@@ -4132,7 +4594,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[150]
+[160]
 Underfull \vbox (badness 10000) detected at line 283
  []
 
@@ -4143,11 +4605,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[151]
-Appendix E.
-(chapters/appendixD.tex [152
+[161]
+Appendix D.
+(chapters/appendixD.tex [162
 
 ]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 21.
+
 
 LaTeX Warning: Float too large for page by 6.25241pt on input line 28.
 
@@ -4157,33 +4622,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153])
-Appendix F.
-(chapters/appendix_kicker.tex) [154
+[163])
+Appendix E.
+(chapters/appendix_kicker.tex) [164
 
 
 
 ]
-Appendix G.
-(chapters/appendix_config.tex
-Overfull \hbox (19.48326pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/12 The project is kept on Git repos-i-tory []$\OT1/cmtt/m/n/12 htt
-ps : / / github . com / GSI -[] CS -[] CO / bel _ projects /
- []
+Appendix F.
+(chapters/appendix_config.tex [165
 
-
-Overfull \hbox (5.60077pt too wide) in paragraph at lines 2--3
-\OT1/cmr/m/n/12 the even-tID of \OT1/cmr/m/it/12 0XDEAD-BEEF22222222 \OT1/cmr/m
-/n/12 as an ex-am-ple and the frame []\OT1/cmtt/m/n/12 TGM_SYNCH_WIN
- []
-
-[155
-
-] <images/packeth.png, id=2234, 1445.4pt x 813.0375pt>
+]
+<images/packeth.png, id=2330, 1445.4pt x 813.0375pt>
 File: images/packeth.png Graphic file (type png)
-
-<use images/packeth.png>
-Package pdftex.def Info: images/packeth.png used on input line 53.
+ <use images/packeth.png>
+Package pdftex.def Info: images/packeth.png used on input line 55.
 (pdftex.def)             Requested size: 426.79134pt x 240.06729pt.
 )
 No file main.bbl.
@@ -4193,7 +4646,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[156 <./images/packeth.png>] (chapters/Zusammenfassung.tex) [157
+[166 <./images/packeth.png>] (main.lof [167
+
 
 ]
 
@@ -4202,18 +4656,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[158
-
-] (main.lof [159
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[160])
+[168])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -4224,106 +4667,106 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[161] (main.lot [162
+[169] (main.lot [170
 
 ])
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
 
-<chapters/publication.pdf, id=2434, 614.295pt x 794.97pt>
+<chapters/publication.pdf, id=2519, 614.295pt x 794.97pt>
 File: chapters/publication.pdf Graphic file (type pdf)
 
 <use chapters/publication.pdf>
-Package pdftex.def Info: chapters/publication.pdf used on input line 1676.
+Package pdftex.def Info: chapters/publication.pdf used on input line 1706.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: chapters/publication.pdf Graphic file (type pdf)
  <use chapters/publication.pdf>
-Package pdftex.def Info: chapters/publication.pdf used on input line 1676.
+Package pdftex.def Info: chapters/publication.pdf used on input line 1706.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [163]
-<chapters/publication.pdf, id=2459, page=1, 614.295pt x 794.97pt>
+ [171]
+<chapters/publication.pdf, id=2542, page=1, 614.295pt x 794.97pt>
 File: chapters/publication.pdf Graphic file (type pdf)
 
 <use chapters/publication.pdf, page 1>
-Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 167
+Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 170
 6.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: chapters/publication.pdf Graphic file (type pdf)
  <use chapters/publication.pdf, page 1>
-Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 167
+Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 170
 6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: chapters/publication.pdf Graphic file (type pdf)
 
 <use chapters/publication.pdf, page 1>
-Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 167
+Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 170
 6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: chapters/publication.pdf Graphic file (type pdf)
  <use chapters/publication.pdf, page 1>
-Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 167
+Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 170
 6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: chapters/publication.pdf Graphic file (type pdf)
 
 <use chapters/publication.pdf, page 1>
-Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 167
+Package pdftex.def Info: chapters/publication.pdf, page1 used on input line 170
 6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [164 <./chapters/publication.pdf>]
-<chapters/CV.pdf, id=2480, 597.50829pt x 845.0471pt>
+ [172 <./chapters/publication.pdf>]
+<chapters/CV.pdf, id=2564, 597.50829pt x 845.0471pt>
 File: chapters/CV.pdf Graphic file (type pdf)
  <use chapters/CV.pdf>
-Package pdftex.def Info: chapters/CV.pdf used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf used on input line 1710.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf>
-Package pdftex.def Info: chapters/CV.pdf used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf used on input line 1710.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
-<chapters/CV.pdf, id=2483, page=1, 597.50829pt x 845.0471pt>
+<chapters/CV.pdf, id=2567, page=1, 597.50829pt x 845.0471pt>
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf, page 1>
-Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1710.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: chapters/CV.pdf Graphic file (type pdf)
  <use chapters/CV.pdf, page 1>
-Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf, page 1>
-Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/CV.pdf Graphic file (type pdf)
  <use chapters/CV.pdf, page 1>
-Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf, page 1>
-Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page1 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [165 <./chapters/CV.pdf>]
-<chapters/CV.pdf, id=2534, page=2, 597.50829pt x 845.0471pt>
+ [173 <./chapters/CV.pdf>]
+<chapters/CV.pdf, id=2618, page=2, 597.50829pt x 845.0471pt>
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf, page 2>
-Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/CV.pdf Graphic file (type pdf)
  <use chapters/CV.pdf, page 2>
-Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/CV.pdf Graphic file (type pdf)
 
 <use chapters/CV.pdf, page 2>
-Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1680.
+Package pdftex.def Info: chapters/CV.pdf, page2 used on input line 1710.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [166 <./chapters/CV.pdf>]
+ [174 <./chapters/CV.pdf>]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 35.
 See the caption package documentation for explanation.
@@ -4331,79 +4774,55 @@ See the caption package documentation for explanation.
 
 Package natbib Warning: There were undefined citations.
 
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1683.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1683.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1713.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1713.
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1683.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1683.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1713.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1713.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44503 strings out of 493334
- 872058 string characters out of 3139249
- 981770 words of memory out of 3000000
- 46591 multiletter control sequences out of 15000+200000
+ 44584 strings out of 493334
+ 873124 string characters out of 3139249
+ 983293 words of memory out of 3000000
+ 46657 multiletter control sequences out of 15000+200000
  20932 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,25n,96p,10392b,1138s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.107} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.106} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.104} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.111} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.110} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.108} has been referenced but does no
-t exist, replaced by a fixed one
-
- <C:\Users\Gilgil\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\t
-crm1200.pk><C:/Users/Gilgil/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fonta
-wesome/FontAwesome.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex
-10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmti7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
-10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
-D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><D:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><D:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmss17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mssbx10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><D:/
-Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><D:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><D:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmsy10.pfb>
-Output written on main.pdf (179 pages, 9219616 bytes).
+ <C:\Users\Gilgil\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\tcrm1200.pk><C:/Users/Gilgil/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fon
+tawesome/FontAwesome.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><D
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmti7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti8.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><D:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><D:/Program Files/MiKTeX 2.9/font
+s/type1/public/lm/lmss17.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
+/lmssbx10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><D
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><D:/Program Files/
+MiKTeX 2.9/fonts/type1/public/lm/lmsso17.pfb><D:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmsy10.pfb>
+Output written on main.pdf (189 pages, 10171753 bytes).
 PDF statistics:
- 3135 PDF objects out of 3580 (max. 8388607)
- 715 named destinations out of 1000 (max. 500000)
- 1768 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3229 PDF objects out of 3580 (max. 8388607)
+ 729 named destinations out of 1000 (max. 500000)
+ 1795 words of extra memory for PDF output out of 10000 (max. 10000000)
 

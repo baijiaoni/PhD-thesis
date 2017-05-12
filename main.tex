@@ -35,6 +35,11 @@
 \usepackage{tikz}
 
 \usepackage[numbers,sort&compress]{natbib}
+%underscore hyphenation
+\renewcommand{\_}{%
+  \textunderscore\hspace{0pt}%
+}
+
 
 \interfootnotelinepenalty=100
 \usepackage{bookmark}
@@ -1371,11 +1376,11 @@ name={bunch gap},
 description={Area without any bunches in a batch}
 }
 \newglossaryentry{glos:best_align}{
-name={best estimate of alignment},
+name={best estimate time of alignment},
 description={Fine time for the alignment of two RF Reference Signals}
 }
 \newglossaryentry{glos:pro_align}{
-name={probable range of alignment},
+name={probable time range of alignment},
 description={Range within which the fine alignment lies because of the propagation of the uncertainty}
 }
 
@@ -1478,7 +1483,7 @@ description={Range within which the fine alignment lies because of the propagati
     \vspace{2cm}
 
 { \normalsize submitted to the Faculty of Physics\\
-	of the Johann Wolfgang Goethe University\"at\\
+	of the Johann Wolfgang Goethe Universit\"at\\
 	in Frankfurt am Main, Germany\par}
     \vspace{2cm}
 
@@ -1516,9 +1521,9 @@ as a dissertation.}\par
 	\normalsize
 	% referent
 	\begin{align*}
-		 &\text{Dean: }\:  &&\text{Prof. Dr. Oliver Kester }\\[0.5cm]
-		 &\text{Expert assessors:}\: &&\text{Dr. David Ondreka}\\[0.5cm]
-		 &						&&\text{Dr. Dietrich Beck}\\[0.5cm]
+		 &\text{Dekan: }\:  &&\text{Prof. Dr. Owe Philipsen}\\[0.5cm]
+		 &\text{Gutachter:}\: &&\text{Prof. Dr. Oliver Kester}\\[0.5cm]
+		 &						&&\text{Prof. Dr. Ulrich Ratzinger}\\[0.5cm]
 		 &\text{Date of disputation:}\: &&\text{07. May. 2017} \\[0.5cm]
 \end{align*}
 	%Date
@@ -1545,8 +1550,10 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \pagenumbering{roman}
 \addcontentsline{toc}{chapter}{Abstract}
 \input{chapters/Abstract}
+\selectlanguage{german}
 \chapter*{Kurzfassung}
 \input{chapters/Kurzfassung}
+\selectlanguage{english}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -1611,26 +1618,30 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/2Background}
 %\chapter{First idea on the B2B transfer system}
 %\input{chapters/3Firstconcept}
-\chapter{Technical Basis for FAIR B2B Transfer System}\label{technical}
+\chapter{Technical Basis for the FAIR B2B Transfer System}\label{technical}
 \input{chapters/3Technical_basis}
-\chapter{Concept of FAIR B2B Transfer System}\label{concept}
+\chapter{Concept of the FAIR B2B Transfer System}\label{concept}
 \input{chapters/4Concept}
-\chapter{Realization and systematic Investigation of FAIR B2B Transfer System}\label{realization}
+\chapter{Realization and Systematic Investigation of the FAIR B2B Transfer System}\label{realization}
 \input{chapters/5Realization}
-\chapter{Application of FAIR B2B Transfer System to FAIR Accelerators}\label{application}
+\chapter{Application of the FAIR B2B Transfer System to FAIR Accelerators}\label{application}
 \input{chapters/Application}
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
 \chapter*{Conclusion and Outlook}
+\markboth{Conclusion and Outlook}{}
 \addcontentsline{toc}{chapter}{Conclusion and Outlook}
 \input{chapters/7SummaryAusblick}
-
+\selectlanguage{german}
 \chapter*{Zusammenfassung}
+\markboth{Zusammenfassung}{}
 \addcontentsline{toc}{chapter}{Zusammenfassung}
 \input{chapters/Zusammenfassung}
-
+\selectlanguage{english}
 %\chapter{References}
 %\input{chapters/References}
+
+%\fancypagestyle{plain}{}
 \appendix
 \chapter*{Glossaries, Abbreviations and Symbols}
 %Glossary ausgeben
@@ -1642,17 +1653,26 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \printnoidxglossary[type=symbolslist,style=long]
 
 
-\chapter{FAIR B2B Transfer related Timing Frames}
+%\pagestyle{fancy}
+\chapter{FAIR B2B Transfer Related Timing Frames}
+%\markboth{Appendix A. FAIR B2B Transfer Related Timing Frames}{}
 \input{chapters/appendixA}
-\chapter{Timing Frames Transfer for FAIR B2B Transfer System}
+
+\chapter{Timing Frames Transfer for the FAIR B2B Transfer System}
+%\markboth{Appendix B. Timing Frames Transfer for the FAIR B2B Transfer System}{}
 \input{chapters/appendixC}
-\chapter{Parameters of FAIR Use Cases}
+
+%\markboth{Appendix C. Parameters of FAIR B2B Transfer Use Cases}{}
+\chapter{Parameters of FAIR B2B Transfer Use Cases}
 \input{chapters/appendixB}
-\chapter{Parameters of FAIR B2B Transfer System from Settings Management}
+\chapter{Parameters of the FAIR B2B Transfer System from Settings Management}
+%\markboth{Appendix D. Parameters of the FAIR B2B Transfer System from Settings Management}{}
 \input{chapters/appendixD}
-\chapter{Parameters of kicker magnets}
+\chapter{Parameters of FAIR Kicker Magnets}
+%\markboth{Appendix E. Parameters of FAIR Kicker Magnets}{}
 \input{chapters/appendix_kicker}
-\chapter{Configuration for test setup}
+\chapter{Configuration for the Test Setup}
+%\markboth{Appendix F. Configuration for the Test Setup}{}
 \input{chapters/appendix_config}
 
 
@@ -1663,16 +1683,19 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\bibliographystyle{IEEEtran} 
 %\bibliography{IEEEabrv,reference}
 \bibliographystyle{unsrtnat}
+
 \bibliography{reference}
 
 
 \cleardoublepage
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listfigurename}
+
 \listoffigures % Prints the list of figures
-\pagestyle{fancy}
+%\pagestyle{fancy}
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listtablename}
+
 \listoftables % Prints the list of tables
 
 

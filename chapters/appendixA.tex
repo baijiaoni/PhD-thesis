@@ -9,19 +9,20 @@
     \hline
 \rowcolor[gray]{0.5}
      	No & Frame Name & Event ID & Priority & Source & Destination \\ \hline
-1&	\verb|CMD_START_B2B|&	&7&	DM&	Source and B2B target SCU\\ \hline
-2&	\verb|TGM_PHASE_TIME|&	&6&	B2B target SCU&	B2B source SCU	\\ \hline
-3&	\verb|TGM_SYNCH_WIN|&	&6	&B2B source SCU&DM	\\ \hline
-4&	\verb|CMD_SYNCH_WIN|&	&7&	DM&	BI, source and target Trigger SCUs\\ \hline
-5	&	\verb|TGM_PHASE_JUMP|&&6&B2B source SCU&B2B target SCU\\ \hline
-6&	\verb|TGM_PHASE_CORRECTION|&&6&	B2B source SCU&	Source Trigger SCU	\\ \hline
+1&	CMD\_START\_B2B&	&7&	DM&B2B source and target SCUs\\ \hline
+2&	TGM\_PHASE\_TIME&	&6&	B2B target SCU&	B2B source SCU	\\ \hline
+3&	TGM\_SYNCH\_WIN&	&6	&B2B source SCU&DM	\\ \hline
+4&	CMD\_SYNCH\_WIN&	&7&	DM&	BI, source and target Trigger SCUs\\ \hline
+5	&	TGM\_PHASE\_JUMP&&6&B2B source SCU&B2B target SCU\\ \hline
+6&	TGM\_PHASE\_CORRECTION&&6&	B2B source SCU&	source Trigger SCU	\\ \hline
 
-7&	\verb|TGM_KICKER_TRIGGER_TIME_S|&&6&Source Trigger SCU	&B2B source SCU\\ \hline
-8&	\verb|TGM_KICKER_TRIGGER_TIME_T|&	&6&	Target Trigger SCU&	B2B source SCU\\ \hline
+7&	TGM\_KICKER\_TRIGGER\_TIME\_S&&6&source Trigger SCU	&B2B source SCU\\ \hline
+8&	TGM\_KICKER\_TRIGGER\_TIME\_T&	&6&	target Trigger SCU&	B2B source SCU\\ \hline
 
-9&	\verb|TGM_B2B_STATUS|&&6	&B2B source SCU&	DM	\\ \hline
+9&	TGM\_B2B\_STATUS&&6	&B2B source SCU&	DM	\\ \hline
 
-10&	\verb|CMD_B2B_STATUS|&	&7	&	DM	&BI \\ \hline
+10&	CMD\_B2B\_STATUS&	&7	&	DM	&BI \\ \hline
+11&	TGM\_B2B\_ERROR&	&7&	 B2B source SCU & DM	\\ \hline
 
 \rowcolor[gray]{0.5}
 No&	\multicolumn{3}{c|}{Content}&\multicolumn{2}{c|}{Description}\\ \hline
@@ -38,6 +39,7 @@ No&	\multicolumn{3}{c|}{Content}&\multicolumn{2}{c|}{Description}\\ \hline
 9&	\multicolumn{3}{c|}{64 bits timestamp + 1 bit (param)}&	\multicolumn{2}{c|}{The actual beam extraction time and the status of the B2B system}  \\ \hline
 
 10& \multicolumn{3}{c|}{64 bits timestamp (param)}	&	\multicolumn{2}{c|}{The actual beam extraction time} \\ \hline
+11& \multicolumn{3}{c|}{4 bits (param)}	&	\multicolumn{2}{c|}{The error information} \\ \hline
 
     \end{tabular}
 \end{center}

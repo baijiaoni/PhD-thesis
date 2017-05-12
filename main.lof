@@ -36,45 +36,44 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces The data flow of the B2B transfer system\relax }}{59}{figure.caption.36}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces The current realization of the bunch-to-bucket transfer between the SIS18 and the ESR with the GSI control system.\relax }}{61}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of rf frequency modulation.\relax }}{65}{figure.caption.40}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces First derivative of three cases.\relax }}{66}{figure.caption.41}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Examples of rf frequency modulation.\relax }}{66}{figure.caption.40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces First derivative of three cases.\relax }}{67}{figure.caption.41}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Second derivative of three cases.\relax }}{67}{figure.caption.42}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces The phase shift modulation of three cases.\relax }}{67}{figure.caption.43}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Maximum orbit length displacement of three cases.\relax }}{68}{figure.caption.44}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Relative momentum shift of three cases.\relax }}{68}{figure.caption.46}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Changes in synchronous phase of three cases.\relax }}{69}{figure.caption.48}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of three cases.\relax }}{70}{figure.caption.49}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Adiabaticity parameter of three cases.\relax }}{71}{figure.caption.51}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The rectification of the start of the synchronization window.\relax }}{79}{figure.caption.56}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces The accuracy of the start of the synchronization window.\relax }}{80}{figure.caption.57}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces The WR network test setup.\relax }}{82}{figure.caption.58}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Frame error rate for B2B Broadcast traffic.\relax }}{84}{figure.caption.60}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces The maximum frame transfer latency for B2B Broadcast frames.\relax }}{84}{figure.caption.61}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces The maximum frame transfer latency for B2B Unicast frames.\relax }}{85}{figure.caption.63}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces The relation between the FER and the fiber connections for B2B Unicast and Broadcast traffics.\relax }}{86}{figure.caption.65}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Flow chart of the firmware for the B2B source SCU.\relax }}{88}{figure.caption.66}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Flow chart of the firmware for the B2B target SCU.\relax }}{89}{figure.caption.67}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Flow chart of the firmware for the B2B Trigger SCU.\relax }}{90}{figure.caption.68}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{92}{figure.caption.69}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces The schematic diagram of the extraction kicker magnets in the SIS18 $2^{nd}$ tank.\relax }}{93}{figure.caption.70}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces SIS18 extraction kicker.\relax }}{94}{figure.caption.71}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces A possible triggering delay between extraction kicker magnets in the SIS18 two tanks.\relax }}{96}{figure.caption.73}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces The maximum triggering delay between extraction kicker magnets in the SIS18 two tanks.\relax }}{96}{figure.caption.74}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces The minimum triggering delay between extraction kicker magnets in two SIS18 tanks.\relax }}{96}{figure.caption.75}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces SIS100 injection kicker.\relax }}{98}{figure.caption.77}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Schematic of the test setup.\relax }}{99}{figure.caption.79}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces The front view of the test setup.\relax }}{100}{figure.caption.80}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces The flowchart of the firmware of the B2B source SCU for the test setup.\relax }}{102}{figure.caption.81}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces The flowchart of the firmware of the B2B target SCU for the test setup.\relax }}{102}{figure.caption.82}
-\contentsline {figure}{\numberline {5.31}{\ignorespaces The flowchart of the firmware of the Trigger SCU for the test setup.\relax }}{103}{figure.caption.83}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The phase shift modulation of three cases.\relax }}{68}{figure.caption.43}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Maximum orbit length displacement of three cases.\relax }}{69}{figure.caption.44}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Relative momentum shift of three cases.\relax }}{70}{figure.caption.46}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Changes in synchronous phase of three cases.\relax }}{71}{figure.caption.48}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Ratio of bucket areas of a running bucket to the stationary bucket of three cases.\relax }}{71}{figure.caption.49}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Adiabaticity parameter of three cases.\relax }}{72}{figure.caption.51}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The rectification of the start of the synchronization window.\relax }}{81}{figure.caption.56}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces The accuracy of the start of the synchronization window.\relax }}{82}{figure.caption.57}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces An overview of the Xena's Layer 2-3 test platform for the WR network.\relax }}{83}{figure.caption.58}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces The relation between the FER and the fiber connections for B2B Unicast and Broadcast traffics.\relax }}{85}{figure.caption.59}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces The connection between WR switches and the XenaBay of the test setup.\relax }}{86}{figure.caption.60}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces The maximum frame transfer latency for B2B Unicast frames.\relax }}{88}{figure.caption.62}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces The maximum frame transfer latency for B2B Broadcast frames.\relax }}{89}{figure.caption.63}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Logical steps of the B2B source SCU.\relax }}{92}{figure.caption.67}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Logical steps of the B2B target SCU.\relax }}{94}{figure.caption.68}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Logical steps of the B2B Trigger SCU.\relax }}{95}{figure.caption.69}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces The time constraints of the B2B transfer system.\relax }}{97}{figure.caption.70}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces The schematic diagram of the controls and pulse electronics of the extraction kicker magnets in the SIS18 $2^{nd}$ tank.\relax }}{98}{figure.caption.71}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces SIS18 extraction kicker.\relax }}{99}{figure.caption.72}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces A possible triggering delay between extraction kicker magnets in the SIS18 two tanks.\relax }}{101}{figure.caption.74}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces The maximum triggering delay between extraction kicker magnets in the SIS18 two tanks.\relax }}{101}{figure.caption.75}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces The minimum triggering delay between extraction kicker magnets in two SIS18 tanks.\relax }}{101}{figure.caption.76}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces SIS100 injection kicker.\relax }}{103}{figure.caption.78}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Schematic of the test setup.\relax }}{104}{figure.caption.80}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces The front view of the test setup.\relax }}{105}{figure.caption.81}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Schematic of the final setup.\relax }}{106}{figure.caption.82}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces The flowchart of the firmware of the B2B source SCU for the test setup.\relax }}{108}{figure.caption.83}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces The flowchart of the firmware of the B2B target SCU for the test setup.\relax }}{108}{figure.caption.84}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces The flowchart of the firmware of the Trigger SCU for the test setup.\relax }}{109}{figure.caption.85}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{155}{figure.caption.116}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Timing frames transfer for the B2B transfer\relax }}{145}{figure.caption.111}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces The configuration of the packETH.\relax }}{156}{figure.caption.114}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces The configuration of the packETH.\relax }}{166}{figure.caption.119}
