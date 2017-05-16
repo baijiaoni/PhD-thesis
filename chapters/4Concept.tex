@@ -29,7 +29,7 @@ Before the basic steps for the achievement of the phase alignment are discussed,
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=210mm]{ext_inj_ill.pdf}
-   \caption{The illustration of the B2B transfer from the SIS18 to the SIS100.}
+   \caption{Illustration of the B2B transfer from the SIS18 to the SIS100.}
 	\caption*{\textsl{\small{The blue dot represents a bunch, red ones buckets.}}}
    \label{ext_inj_kicker}
 \end{figure}
@@ -94,7 +94,7 @@ Fig. ~\ref{bucket_label_occurrence} shows one example when the frequency of the 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bucket_label_occurrence.jpg}
-   \caption{The frequency of the bucket indication signal equals to the revolution frequency of the target accelerator.}
+   \caption{Frequency of the bucket indication signal equals to the revolution frequency of the target accelerator.}
 	\caption*{\textsl{\small{Red dots represent buckets of the target accelerator and blue ones represent bunches of the source accelerator. This example is the FAIR use case of the $H^+$ B2B transfer from the SIS18 to the SIS100. The correct phase alignment of the two rf systems is assumed with $\Delta\phi_\mathit{syn}=0^\circ$ and only the buckets with the odd number (e.g. $\sharp1$, $\sharp3$ ) are to be filled in this example.}}}
    \label{bucket_label_occurrence}
 \end{figure}
@@ -102,7 +102,7 @@ Fig. ~\ref{bucket_label_occurrence} shows one example when the frequency of the 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bucket_label_occurrence1.jpg}
-   \caption{The frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator.}
+   \caption{Frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator.}
 	\caption*{\textsl{\small{Red dots represent buckets of the target accelerator and blue ones represent bunches of the source accelerator. This example is the FAIR use case of the B2B transfer from the CR to the HESR. }}}
    \label{bucket_label_occurrence1}
 \end{figure}
@@ -130,7 +130,7 @@ With the consideration of the \gls{glos:bucket_pattern}, the injection kicker de
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{2method.jpg}
-   \caption{The procedure for the B2B transfer within one acceleration cycle.}
+   \caption{Procedure for the B2B transfer within one acceleration cycle.}
     \caption*{\textsl{\small{Adapted from ``F-TC-C-05, Concept of the FAIR Bunch To Bucket Transfer System`` by J. Bai and T. Ferrand, 2016, FAIR Technical Concept. Adapted with permission.}}}
 	\caption*{\textsl{\small{As illustrated here the procedure with the frequency beating method (blue, top) and that with the phase shift method (green, bottom).}}}
    \label{2method}
@@ -197,7 +197,7 @@ where \gls{symb:init_pse} is the initial value of the phase deviation between th
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_beating.pdf}
-   \caption{The phase deviation between the synchronization frequency and the synchronization reference signal.}
+   \caption{Phase deviation between the synchronization frequency and the synchronization reference signal.}
    \label{phase_diffe_align}
 \end{figure}
 
@@ -311,7 +311,7 @@ where $k^\mathit{X}$ is the slope of the phase deviation, namely $k^\mathit{X}=2
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_extrapolation.pdf}
-   \caption{The realization of the phase deviation measurement at one accelerator}
+   \caption{Realization of the phase deviation measurement at one accelerator}
    \label{phase_prediction}
 \end{figure}
 
@@ -337,7 +337,7 @@ The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at t
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_prediction.pdf}
-   \caption{The realization of the phase advance extrapolation at one accelerator}
+   \caption{Realization of the phase advance extrapolation at one accelerator}
    \label{phase_prediction1}
 \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -354,7 +354,7 @@ Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolat
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{timestamp_phase.pdf}
-   \caption{The synchronization of the extrapolated phase to the timestamp in one accelerator}
+   \caption{Synchronization of the extrapolated phase to the timestamp in one accelerator}
    \label{phase_diff_syn_time}
 \end{figure}
 
@@ -373,7 +373,7 @@ For the simplicity, the B2B source SCU works as the B2B transfer master, so the 
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{network_B2B.jpg}
-   \caption{One example of the transfer path of the B2B timing frames in the WR network}
+   \caption{An example of the transfer path of the B2B timing frames in the WR network}
    \label{network_B2B}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% rf synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -451,7 +451,7 @@ Fig.~\ref{normalized_profile} shows an example of a normalized and several actua
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{normalized_profile.png}
-   \caption{The normalized frequency and phase modulation profile and the actual profiles}
+   \caption{Normalized frequency and phase modulation profile and the actual profiles}
    \label{normalized_profile}
 \end{figure}  
 
@@ -511,7 +511,7 @@ The B2B source SCU obtains the delay compensation for the TOF, all propagation d
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{network_B2B1.jpg}
-   \caption{The transfer delay of the start of the synchronization window on the WR network.}
+   \caption{Transfer delay of the start of the synchronization window on the WR network.}
    \label{network_B2B1}
 \end{figure}
 Fig. ~\ref{network_B2B1} shows the transfer delay of the start of the synchronization window on the WR network. The timestamp of the start of the synchronization window \gls{symb:win_start} is first of all transferred from the B2B source SCU to the DM (the orange transfer path) by the timing frame TGM\_SYNCH\_WIN. Then \gls{symb:win_start} is repackaged by the DM into a new timing frame CMD\_SYNCH\_WIN and CMD\_SYNCH\_WIN is transferred from the DM to the source and target Trigger SCUs  (the green transfer path with \textcircled{2}), as well as the BI (the green transfer path with \textcircled{1}) for the indication of the beam. The Trigger SCUs are used to produce the kicker trigger signals. The start of the synchronization window must be late enough to guarantee that the BI receives CMD\_SYNCH\_WIN and is activated before the start of the synchronization window. The start of the synchronization window must be at least \SI{1.6}{\ms} later than $t_\psi^\mathit{X}$. The time duration of \SI{1.6}{\ms} is the sum of the \SI{500}{\us} upper bound transfer delay of TGM\_PHASE\_TIME (the blue transfer path), that of TGM\_SYNCH\_WIN (the orange transfer path), that of CMD\_SYNCH\_WIN (the green transfer path) on the WR network and \SI{100}{\us} calculation time of the B2B source SCU. For more details of the time constraints, please see Chap. ~\ref{realization}.
@@ -576,7 +576,7 @@ To determine the bucket label for the normal extraction and injection, three ste
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bucket_normal_indication.pdf}
-   \caption{The realization of the bucket label for the normal extraction and injection.}
+   \caption{Realization of the bucket label for the normal extraction and injection.}
    \label{bucket_label}
 \end{figure}  
 \begin{itemize}
@@ -600,7 +600,7 @@ Only for the SIS100 emergency procedure, the maximum bunch spacing label is impo
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{bunch_gap_indication.pdf}
-   \caption{The realization of the maximum bunch spacing label for the emergency extraction.}
+   \caption{Realization of the maximum bunch spacing label for the emergency extraction.}
    \label{Emergency_label}
 \end{figure} 
 
@@ -642,7 +642,7 @@ For some FAIR use cases, not in case of the B2B transfer from the SIS18 to the S
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{ext_inj_ill2.pdf}
-   \caption{The illustration of the kicker delay compensation when the bucket indication signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$.}
+   \caption{Illustration of the kicker delay compensation when the bucket indication signal has the frequency of $f_{\mathit{syn}}^{\mathit{trg}}$.}
    \label{ext_inj_kicker1}
 \end{figure}
 
@@ -702,7 +702,7 @@ In this section, the procedure for the B2B transfer is explained from the perspe
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=105mm]{data_flow.jpg}
-   \caption{The data flow of the B2B transfer system}
+   \caption{Data flow of the B2B transfer system}
    \label{data_flow}
 \end{figure}  
 
@@ -734,7 +734,7 @@ The existing GSI control system realizes the B2B transfer from the SIS18 to the 
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{GSI_control_system.jpg}
-   \caption{The current realization of the bunch-to-bucket transfer between the SIS18 and the ESR with the GSI control system.}
+   \caption{Current realization of the bunch-to-bucket transfer between the SIS18 and the ESR with the GSI control system.}
 	\caption*{\textsl{\small{Gear sign represents the configuration from operators.}}}
    \label{GSI_control_system}
 \end{figure}

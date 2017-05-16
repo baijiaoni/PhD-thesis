@@ -1554,7 +1554,7 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \chapter*{Kurzfassung}
 \input{chapters/Kurzfassung}
 \selectlanguage{english}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
@@ -1611,23 +1611,24 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %----------------------------------------------------------------------------------------
 
 
-\pagenumbering{arabic}
-\chapter{Introduction}
-\input{chapters/1Introduction}
-\chapter{Theoretical Background}\label{background}
-\input{chapters/2Background}
-%\chapter{First idea on the B2B transfer system}
-%\input{chapters/3Firstconcept}
-\chapter{Technical Basis for the FAIR B2B Transfer System}\label{technical}
-\input{chapters/3Technical_basis}
-\chapter{Concept of the FAIR B2B Transfer System}\label{concept}
-\input{chapters/4Concept}
-\chapter{Realization and Systematic Investigation of the FAIR B2B Transfer System}\label{realization}
-\input{chapters/5Realization}
-\chapter{Application of the FAIR B2B Transfer System to FAIR Accelerators}\label{application}
-\input{chapters/Application}
-%\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
-%\input{chapters/6Existing}
+%\pagenumbering{arabic}
+%\chapter{Introduction}
+%\input{chapters/1Introduction}
+%\chapter{Theoretical Background}\label{background}
+%\input{chapters/2Background}
+%%\chapter{First idea on the B2B transfer system}
+%%\input{chapters/3Firstconcept}
+%\chapter{Technical Basis for the FAIR B2B Transfer System}\label{technical}
+%\input{chapters/3Technical_basis}
+%\chapter{Concept of the FAIR B2B Transfer System}\label{concept}
+%\input{chapters/4Concept}
+%\chapter{Realization and Systematic Investigation of the FAIR B2B Transfer System}\label{realization}
+%\input{chapters/5Realization}
+%\chapter{Application of the FAIR B2B Transfer System to FAIR Accelerators}\label{application}
+%\input{chapters/Application}
+%%\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
+%%\input{chapters/6Existing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Conclusion and Outlook}
 \markboth{Conclusion and Outlook}{}
 \addcontentsline{toc}{chapter}{Conclusion and Outlook}
@@ -1641,6 +1642,7 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\chapter{References}
 %\input{chapters/References}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\fancypagestyle{plain}{}
 \appendix
 \chapter*{Glossaries, Abbreviations and Symbols}
@@ -1687,23 +1689,24 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \bibliography{reference}
 
 
-\cleardoublepage
+%\cleardoublepage
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listfigurename}
-
 \listoffigures % Prints the list of figures
 %\pagestyle{fancy}
 % \phantomsection
 \addcontentsline{toc}{chapter}{\listtablename}
-
 \listoftables % Prints the list of tables
+%\pagestyle{fancy}
 
-
-
-\addcontentsline{toc}{chapter}{Publications}
-\renewcommand\chaptername{Publications}
+\cleardoublepage
 \pagestyle{empty}
-\includepdf[pages=-,pagecommand={}]{chapters/publication.pdf}
+%\chapter*{Publications}
+\addcontentsline{toc}{chapter}{Publications}
+%\renewcommand\chaptername{Publications}
+\includepdf[pages=1,pagecommand={}]{chapters/publication.pdf}
+%\hspace*{-4.5cm}\includegraphics{chapters/publication.pdf}
+
 
 \renewcommand\chaptername{}
 \pagestyle{empty}

@@ -1,6 +1,6 @@
 
 
-This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. ~\ref{real_dyn}, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic perspective. The characterization of the WR network is investigated for the B2B transfer, the calculation of the synchronization window, the logical steps of the B2B related SCUs and the timing constraints are presented in Sec. ~\ref{real_timing}. The B2B transfer system for FAIR focuses first of all on the transfer from the SIS18 to the SIS100, so the different trigger scenarios of the SIS18 extraction and SIS100 injection kickers are systematically investigated in Sec. ~\ref{real_kicker}. Besides, the test setup from the timing aspect is introduced and the test result is analyzed in Sec. ~\ref{real_test}. 
+This chapter concentrates on the realization and systematic investigation of the \gls{B2B} transfer system. In Sec. ~\ref{real_dyn}, both the phase shift and frequency beating synchronization methods are analyzed from the beam dynamic perspective. The characterization of the WR network is investigated for the B2B transfer, the calculation of the synchronization window, the flowcharts of the system and the corresponding timing constraints are presented in Sec. ~\ref{real_timing}. The B2B transfer system for FAIR focuses first of all on the transfer from the SIS18 to the SIS100, so the different trigger scenarios of the SIS18 extraction and SIS100 injection kickers are systematically investigated in Sec. ~\ref{real_kicker}. Besides, the test setup from the timing aspect is introduced and the test result is analyzed in Sec. ~\ref{real_test}. 
 
 \section{Beam Dynamic Analysis of two Synchronization Methods for the B2B Transfer from SIS18 to SIS100}
 \label{real_dyn}
@@ -198,7 +198,7 @@ Fig.~\ref{phase_shift_four_case} shows the corresponding phase shift modulation 
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{phase_shift_four_case.png}
-   \caption{The phase shift modulation of three cases.}
+   \caption{Phase shift modulation of three cases.}
    \label{phase_shift_four_case}
 \end{figure}
 
@@ -218,7 +218,7 @@ The orbit length displacement is calculated for the three cases by eq.~(\ref{eq:
 
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The maximum orbit length displacement of three cases}
+\caption{Maximum orbit length displacement of three cases}
 \label{radial excursion}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
@@ -244,7 +244,7 @@ The relative momentum shift is calculated for three cases by eq.~\ref{eq:phaseP1
 \end{figure}
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The maximum relative momentum shift of three cases}
+\caption{Maximum relative momentum shift of three cases}
 \label{momentum excursion}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
@@ -282,7 +282,7 @@ The bucket area factor \gls{symb:bucket_size} varies during rf frequency modulat
 Tab. ~\ref{bucket size} shows the minimum bucket area factor for three cases. For case (1) and (2), the bucket area factor is larger than 86$\%$, which is larger than that of the case (3). Hence, case (1) and (2) are preferred compared with the case (3). 
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The minimum bucket area factor of three cases}
+\caption{Minimum bucket area factor of three cases}
 \label{bucket size}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
@@ -311,7 +311,7 @@ Tab. ~\ref{adiabaticity_param} shows the maximum adiabaticity parameter for thre
 
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\caption{The maximum adiabaticity of three cases}
+\caption{Maximum adiabaticity of three cases}
 \label{adiabaticity_param}
 \begin{center}
     \begin{tabular}{ | c | c | c | c | c | c | }
@@ -452,7 +452,7 @@ where the maximum rf frequency detuning approximates to \SI{109}{Hz} for the cav
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{GMT Systematic Investigation}
 \label{real_timing}
-The B2B transfer system makes use of certain aspects of the GMT system to implement the data collection, merging and redistribution. The main task of the data merging is to calculate the start of the synchronization window, which is used for the selection of the bucket indication signal marker for the kicker trigger. The data collection and redistribution make use of the WR network, so the test and measurement of the WR network for the B2B transfer is important. In addition, the B2B transfer system has high timing requirement, therefore the control logical steps and the time constraints are also presented in this section.
+The B2B transfer system makes use of certain aspects of the GMT system to implement the data collection, merging and redistribution. The main task of the data merging is to calculate the start of the synchronization window, which is used for the selection of the bucket indication signal marker for the kicker trigger. The data collection and redistribution make use of the WR network, so the test and measurement of the WR network for the B2B transfer is important. In addition, the B2B transfer system has high timing requirement, therefore the flowcharts of the system and the corresponding time constraints are also presented in this section.
 
 \subsection{Calculation of the Start of the Synchronization Window}
 All calculations for the B2B transfer are based on the phase deviation measurement by the PAM module. With the help of the phase extrapolation by the PAP module and the timestamp for the extrapolated phase by the B2B source and target SCUs, the fine time point corresponding to the correct phase alignment between two synchronization frequencies is calculated, see Chap. ~\ref{concept}. This fine time point is called the ``\gls{glos:best_align}`` and denoted by $t_\mathit{align}$. There are some unavoidable uncertainties~\cite{taylor_introduction_1982} in the measurements. In this dissertation, the uncertainty analysis is based on the assumption that the rf frequency produced by DDS is exactly the same as the set value. There are three random measurement uncertainties, which need to be taken into consideration.  
@@ -648,7 +648,7 @@ The synchronization window is used to select the $1^\mathit{st}$ bucket indicati
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{accuracy_syn_win.jpg}
-   \caption{The rectification of the start of the synchronization window.}
+   \caption{Illustration of the rectification for the start of the synchronization window.}
    \label{accuracy_syn_win}
 \end{figure}
 
@@ -685,7 +685,7 @@ Accuracy\_requirement=\frac{\SI{1.017}{us}-\SI{5}{ns} \cdot 2}{2} \approx  \SI{5
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=120mm]{accuracy_syn_win1.jpg}
-   \caption{The accuracy of the start of the synchronization window.}
+   \caption{Illustration of the accuracy of the start of the synchronization window.}
    \label{accuracy_syn_win1}
 \end{figure}
 
@@ -745,7 +745,7 @@ Accuracy\_requirement=\frac{\SI{1.017}{us}-\SI{5}{ns} \cdot 2}{2} \approx  \SI{5
 \label{wr_network}
 This section is part of the results of the characterization of the WR Network of the FAIR General Machine Timing System. The scenario and test definition is done by C. Prados as part of his PhD thesis~\cite{prados_notitle_nodate}. I executed the test for the B2B scenario and discussed, evaluated and documented the results. 
 
-In the test, the Xena's Layer 2-3 test platform \footnote{Xena's Layer 2-3 test platform\\ \url{http://xenanetworks.com/layer-2-3-test-platform/}} was used to characterize the properties of the WR network for the B2B transfer. The Xena's Layer 2-3 test platform was used to configure and generate Ethernet traffic at the data link layer and network layer and then to analyze how WR network in response. The test platform used the 4U XenaBay chassis which was equipped with an extensive range of copper and optical Gigabit Ethernet test modules. In the test, the test modules used 18 AXGE-1254 transceivers, \SI{1.25}{Gbps} single fiber bidirectional small form-factor pluggable (SFP), to connect to ports of four WR switches via optical fibers. The chassis and test modules were controlled via Xena Manager-2G, a free Windows GUI client, which can be used to manage test equipment and execute test remotely. Fig. ~\ref{network_B2B2} shows an overview of the Xena's Layer 2-3 test platform for the WR network.
+In the test, the Xena's Layer 2-3 test platform \footnote{Xena's Layer 2-3 test platform\\ \url{http://xenanetworks.com/layer-2-3-test-platform/}} was used to characterize the properties of the WR network for the B2B transfer. The Xena's Layer 2-3 test platform was used to configure and generate Ethernet traffic at the data link layer and network layer and then to analyze how WR network in response. The test platform used the 4U XenaBay chassis which was equipped with an extensive range of copper and optical Gigabit Ethernet test modules. In the test, the test modules used 18 AXGE-1254 transceivers, \SI{1.25}{Gbps} single fiber bidirectional small form-factor pluggable (SFP), to connect to ports of four WR switches via single mode fibers \footnote{A G.652.B type single mode fiber is used for the 1310 and \SI{1550}{nm} wavelength region.}. The chassis and test modules were controlled via Xena Manager-2G, a free Windows GUI client, which can be used to manage test equipment and execute test remotely. Fig. ~\ref{network_B2B2} shows an overview of the Xena's Layer 2-3 test platform for the WR network.
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{network_B2B2.jpg}
@@ -828,7 +828,7 @@ In actual application of the B2B transfer system, there is only one frame recept
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{FER_2case.png}
-   \caption{The relation between the FER and the fiber connections for B2B Unicast and Broadcast traffics.}
+   \caption{Relation between the FER and the fiber connections for B2B Unicast and Broadcast traffics.}
 	%\caption*{\textsl{\small{(No forward error correction mechanism is used.)}}}
    \label{FER_2case}
 \end{figure}
@@ -844,7 +844,7 @@ In order to test the WR Network in the context of the B2B transfer, the followin
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{GSI_use_case.pdf}
-   \caption{The connection between WR switches and the XenaBay of the test setup.}
+   \caption{Connection between WR switches and the XenaBay of the test setup.}
     \caption*{\textsl{\small{Adapted from ``Testing the WR Network of the FAIR General Machine Timing System`` by C. Prados and J. Bai, 2016, GSI Internal Document. Adapted with permission.}}}
    \label{GSI_use_case.jpg}
 \end{figure}
@@ -933,7 +933,7 @@ For the B2B Unicast frames, the maximum frame transfer latency of \SI{23}{\us} f
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=110mm]{Max_latency_jitter_unicast.png}
-   \caption{The maximum frame transfer latency for B2B Unicast frames.}
+   \caption{Maximum frame transfer latency for B2B Unicast frames.}
    \label{Max_latency_jitter_unicast}
 \end{figure}
 
@@ -970,7 +970,7 @@ For the B2B Broadcast frames, the frame transfer latencies of the stream from th
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=130mm]{Max_latency_jitter.png}
-   \caption{The maximum frame transfer latency for B2B Broadcast frames.}
+   \caption{Maximum frame transfer latency for B2B Broadcast frames.}
    \label{Max_latency_jitter}
 \end{figure}
 The more WR switches frames pass through, the longer frame transfer latency will be. The maximum frame transfer latency and the number of switches have a nonlinear relationship, because there is a very low possibility for one frame to pass through more than two switches with the maximum transfer latency for each switch. Tab. \ref{max latency jitter} lists the maximum frame transfer latency of the B2B Broadcast frames for different number of WR switch layers. 
@@ -1110,21 +1110,21 @@ If specific forward error correction mechanisms are implemented in the B2B netwo
 %		\end{equation}
 %\end{itemize}
 
-\subsection{Logical Steps of SCUs}
+\subsection{Flowchart of the system for SCUs}
 \label{sec_firmware}
-The B2B source, B2B target and Trigger SCUs control different logical steps. The logical steps are activated by the B2B start timing frame, the CMD\_START\_B2B, which indicates the source and target synchrotrons of the B2B transfer. In the following, the logical steps of different SCUs are explained. An overview of the connections of the B2B related modules used for the data exchange is presented in Chap. ~\ref{concept}, see Fig. ~\ref{data_flow}.
+The B2B source, B2B target and Trigger SCUs control different flowcharts. In the following, the flowcharts of different SCUs are explained. An overview of the connections of the B2B related modules used for the data exchange is presented in Chap. ~\ref{concept}, see Fig. ~\ref{data_flow}.
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-\item Logical steps for the B2B source SCU
+\item The flowchart for the B2B source SCU
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{flow_chart_src.jpg}
-   \caption{Logical steps of the B2B source SCU.}
+   \caption{Flowchart of the B2B source SCU.}
    \caption*{\textsl{\small{``Step`` is represented as ``S`` in the figure.  }}}
    \label{flow_chart_src}
 \end{figure}
 
-Fig. ~\ref{flow_chart_src} shows the logical steps of the B2B source SCU. The B2B source SCU, the B2B transfer master, is responsible for the data collection, data calculation, date redistribution and status check. The program controls the following logical steps according to Fig. ~\ref{flow_chart_src}.
+Fig. ~\ref{flow_chart_src} shows the flowchart of the B2B source SCU. The B2B source SCU, the B2B transfer master, is responsible for the data collection, data calculation, date redistribution and status check. The flowchart controls the following logical steps according to Fig. ~\ref{flow_chart_src}.
 
  	\begin{itemize}
 		\item[-]Step 1. The program waits for the CMD\_START\_B2B timing frame.
@@ -1147,30 +1147,30 @@ Fig. ~\ref{flow_chart_src} shows the logical steps of the B2B source SCU. The B2
 
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%
-\item Logical steps for the B2B target SCU
+\item The flowchart for the B2B target SCU
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=70mm]{flow_chart_trg.jpg}
-   \caption{Logical steps of the B2B target SCU.}
+   \caption{Flowchart of the B2B target SCU.}
 	\caption*{\textsl{\small{``Step`` is represented as ``S`` in the figure. }}}
    \label{flow_chart_trg}
 \end{figure}
-Fig. ~\ref{flow_chart_trg} shows the logical steps of the B2B target SCU. The program controls the following logical steps according to Fig. ~\ref{flow_chart_trg}.
+Fig. ~\ref{flow_chart_trg} shows the flowchart of the B2B target SCU. The flowchart controls the following logical steps according to Fig. ~\ref{flow_chart_trg}.
  	\begin{itemize}
 		\item[-]Step 1. The program waits for the CMD\_START\_B2B timing frame.
  		\item[-]Step 2. When it receives the timing frame CMD\_START\_B2B, the program reads the extrapolated phase and the phase deviation slope from the PAP module, as well as the corresponding timestamp.
 		\item[-]Step 3. The program sends the TGM\_PHASE\_TIME timing frame to the B2B source SCU and goes back to the step 1.
 	\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%
-\item Logical steps for the Trigger SCU
+\item The flowchart for the Trigger SCU
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=120mm]{flow_chart_trigger.jpg}
-   \caption{Logical steps of the B2B Trigger SCU.}
+   \caption{Flowchart of the B2B Trigger SCU.}
 	\caption*{\textsl{\small{``Step`` is represented as ``S`` in the figure.}}}
    \label{flow_chart_trigger}
 \end{figure}
-Fig. ~\ref{flow_chart_trigger} shows the logical steps of the source Trigger SCU. For the target Trigger SCU, the logical steps are same only with the timing frame TGM\_KICKER\_TRIGGER\_TIME\_T. The program controls the following logical steps according to Fig. ~\ref{flow_chart_trigger}.
+Fig. ~\ref{flow_chart_trigger} shows the flowchart of the source Trigger SCU. For the target Trigger SCU, the logical steps are same only with the timing frame TGM\_KICKER\_TRIGGER\_TIME\_T. The flowchart controls the following logical steps according to Fig. ~\ref{flow_chart_trigger}.
  	\begin{itemize}
 		\item[-]Step 1. The program waits for the CMD\_START\_B2B timing frame. 
 		\item[-]Step 2. The program waits for the TGM\_PHASE\_CORRECTION timing frame. When it does not receive the timing frames within a specified timeout interval, it goes back to the step 1.
@@ -1194,7 +1194,7 @@ Fig. ~\ref{time_constraint} shows the time constraint of the system. The CMD\_ST
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=210mm]{flow_chart_time.jpg}
-   \caption{The time constraints of the B2B transfer system.}
+   \caption{Time constraints of the B2B transfer system.}
    \caption*{\textsl{\small{The sent and received timing frame pairs have the same color. (not drawn to accurate timescale) }}}
    \label{time_constraint}
 \end{figure}
@@ -1275,7 +1275,7 @@ Fig.~\ref{kicker_18_1} shows a possible triggering delay between kicker magnets 
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{kicker_18_2.jpg}
-   \caption{The maximum triggering delay between extraction kicker magnets in the SIS18 two tanks.}
+   \caption{Maximum triggering delay between extraction kicker magnets in the SIS18 two tanks.}
    \label{kicker_18_2}
 \end{figure}
 Fig.~\ref{kicker_18_2} shows the scenario of the maximum triggering delay between kicker magnets in the two tanks. The kicker magnets in the $1^{st}$ tank are triggered simultaneously when the tail of the bunch 1 passes by the $1^{st}$ tank completely. The kicker magnets in the $2^{nd}$ tank are simultaneously triggered \SI{90}{ns} before the head of the bunch 2 passes by it. The delay equals to $t_\mathit{gap}+d_\mathit{tank1R-tank2L}/\beta c-\SI{90}{ns}$.
@@ -1368,18 +1368,18 @@ From a functional perspective, the test setup simulates that the B2B source SCU 
    \caption{Schematic of the test setup.}
    \label{setup}
 \end{figure}
-Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two SRS MODEL DS345 Synthesized Function Generators\footnote{The DS345 Synthesized Function Generator is a full-featured \SI{30}{\MHz} synthesized function generator that uses an innovative Direct Digital Synthesis architecture. It generates many standard waveforms with excellent frequency resolution (1 $\mu$Hz) and has versatile modulation capabilities including AM, FM, Burst, PM and frequency sweeps.} (short: DS345) were used to simulate the rf systems of the SIS18 and SIS100. The two DS345s needed to be synchronized to a common reference clock. For simplicity, the DS345 of the SIS100 used a \SI{10}{\MHz} clock from the DS345 of the SIS18 as an external reference clock. The B2B source SCU, the B2B target SCU and the Trigger SCU were connected to a WR switch, which connected to the WR network. There was a SCU slave in the B2B source SCU, which simulated the PAP and PCM modules. A personal computer (\gls{PC}) was connected to the WR network, which was a Linux PC installed with the FEC tools \footnote{FEC tools include the etherbone tools, the saftlib tools and the Linux drivers. \\ \url{https://www-acc.gsi.de/wiki/Timing/TimingSystemHowConfigureEnvironment}}, the Altera's Quartus II software and the packETH software. The SCUs were connected to the PC via the Altera USB-Blaster Joint Test Action Group (JTAG) programmer. The PC was used to simulate the DM to produce the B2B start timing frame CMD\_START\_B2B. Besides, the PC monitored the status of the firmware in all SCUs and measured the running time of the firmware by the SignalTap II Logic Analyzer\footnote{The SignalTap II Logic Analyzer is a system-level debugging tool that captures and displays signals in circuits designed for implementation in Altera’s FPGAs.} feature within the Quartus II software . An oscilloscope was connected to the Trigger SCU. Fig.~\ref{testsetup_text} shows the front view of the test setup. 
+Fig.~\ref{setup} shows the schematic of the test setup. In this test setup, two SRS MODEL DS345 Synthesized Function Generators\footnote{The DS345 Synthesized Function Generator is a full-featured \SI{30}{\MHz} synthesized function generator that uses an innovative Direct Digital Synthesis architecture. It generates many standard waveforms with excellent frequency resolution (1 $\mu$Hz) and has versatile modulation capabilities including AM, FM, Burst, PM and frequency sweeps.} (short: DS345) were used to simulate the rf systems of the SIS18 and SIS100. The two DS345s needed to be synchronized to a common reference clock. For simplicity, the DS345 of the SIS100 used a \SI{10}{\MHz} clock from the DS345 of the SIS18 as an external reference clock. The B2B source SCU, the B2B target SCU and the Trigger SCU were connected to a WR switch via single mode fibers\footnote{A G.652.B type single mode fiber is used for the 1310 and \SI{1550}{nm} wavelength region.}, which connected to the WR network. There was a SCU slave in the B2B source SCU, which simulated the PAP and PCM modules. A personal computer (\gls{PC}) was connected to the WR network, which was a Linux PC installed with the FEC tools \footnote{FEC tools include the etherbone tools, the saftlib tools and the Linux drivers. \\ \url{https://www-acc.gsi.de/wiki/Timing/TimingSystemHowConfigureEnvironment}}, the Altera's Quartus II software and the packETH software. The SCUs were connected to the PC via the Altera USB-Blaster Joint Test Action Group (JTAG) programmer. The PC was used to simulate the DM to produce the B2B start timing frame CMD\_START\_B2B. Besides, the PC monitored the status of the firmware in all SCUs and measured the running time of the firmware by the SignalTap II Logic Analyzer\footnote{The SignalTap II Logic Analyzer is a system-level debugging tool that captures and displays signals in circuits designed for implementation in Altera’s FPGAs.} feature within the Quartus II software . An oscilloscope was connected to the Trigger SCU. Fig.~\ref{testsetup_text} shows the front view of the test setup. 
 %testsetup.odg
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=90mm]{testsetup_text.jpg}
-   \caption{The front view of the test setup.}
+   \caption{Front view of the test setup.}
    \label{testsetup_text}
 \end{figure}
 
 \subsection{Comparison between the Test Setup and the Final Setup}
 \label{sec:test_diff}
-Fig.~\ref{finial_schematic} shows the schematic of the final setup. Compared with the test setup, two DS345s will be replaced by the FAIR LLRF system. In addition, the B2B source/target SCU, the Trigger SCU and the Kicker SCU with their own slaves will be equipped at every ring. The SCU slaves will be connected to the LLRF system by the optical direct link\footnote{The optical direct link is }. The SCUs on the source ring will be connected to one WR switch and the SCUs on the target ring will be connected to another WR switch, both WR switches will be connected to the WR network. The PC will be replaced by the DM. The maximum number of the WR switch layers among the B2B related SCUs and the DM must comply with the analysis result of the WR network for the B2B transfer in Sec. ~\ref{wr_network}. For more details about the data communication among the B2B related SCUs and their slaves, please see Chap. ~\ref{concept}.   
+Fig.~\ref{finial_schematic} shows the schematic of the final setup. Compared with the test setup, two DS345s will be replaced by the FAIR LLRF system. In addition, the B2B source/target SCU, the Trigger SCU and the Kicker SCU with their own slaves will be equipped at every ring. The SCU slaves will be connected to the LLRF system by the optical direct link\footnote{The optical direct link is a multi-mode fiber with the bandwidth of \SI{40}{Mbit/s} up to \SI{100}{m}. It is used in the \SI{650}{nm} wavelength region.}. The SCUs on the source ring will be connected to one WR switch and the SCUs on the target ring will be connected to another WR switch, both WR switches will be connected to the WR network. The PC will be replaced by the DM. The maximum number of the WR switch layers among the B2B related SCUs and the DM must comply with the analysis result of the WR network for the B2B transfer in Sec. ~\ref{wr_network}. For more details about the data communication among the B2B related SCUs and their slaves, please see Chap. ~\ref{concept}.   
 
 \begin{figure}[!htb]
    \centering   
@@ -1460,23 +1460,23 @@ The test procedure which has be developed in the framework of this thesis is div
 %\item The firmware of the B2B source SCU writes the phase correction value to the SCU slave, which works as the SR module.
 %\item After receiving the frame, the firmware of the Trigger SCU produces a TTL signal indicating the start of the synchronization window. 
 
-More details of the configuration are shown in Appendix ~\ref{appendix_conf}. The flowchart of the firmware of the B2B source SCU and that of the B2B target SCU and that of the Trigger SCU are shown in Fig. ~\ref{test_flwochart}, Fig. ~\ref{test_flwochart1} and Fig. ~\ref{test_flwochart2}. The project is kept in the git repository \footnote{The B2B transfer system git repository \\ \url{https://github.com/GSI-CS-CO/bel_projects/tree/lm32_B2B_merge}}. The firmware of the test setup realizes partial function of the logical steps described in Sec. ~\ref{sec_firmware}.
+More details of the configuration are shown in Appendix ~\ref{appendix_conf}. The flowchart of the firmware of the B2B source SCU and that of the B2B target SCU and that of the Trigger SCU are shown in Fig. ~\ref{test_flwochart}, Fig. ~\ref{test_flwochart1} and Fig. ~\ref{test_flwochart2}. The project is kept in the git repository \footnote{The B2B transfer system git repository \\ \url{https://github.com/GSI-CS-CO/bel_projects/tree/lm32_B2B_merge}}. The firmware of the test setup realizes partial function of the flowcharts described in Sec. ~\ref{sec_firmware}.
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{test_flwochart_src.png}
-   \caption{The flowchart of the firmware of the B2B source SCU for the test setup.}
+   \caption{Flowchart of the firmware of the B2B source SCU for the test setup.}
    \label{test_flwochart}
 \end{figure}
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=120mm]{test_flwochart_trg.png}
-   \caption{The flowchart of the firmware of the B2B target SCU for the test setup.}
+   \caption{Flowchart of the firmware of the B2B target SCU for the test setup.}
    \label{test_flwochart1}
 \end{figure}
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=120mm]{test_flwochart_trigger.png}
-   \caption{The flowchart of the firmware of the Trigger SCU for the test setup.}
+   \caption{Flowchart of the firmware of the Trigger SCU for the test setup.}
    \label{test_flwochart2}
 \end{figure}
 
