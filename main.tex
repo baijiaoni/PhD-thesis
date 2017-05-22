@@ -56,6 +56,7 @@
 \setacronymstyle{long-short}
 
 %Ein eigenes Symbolverzeichnis erstellen
+\newglossary[slg]{termslist}{syi}{syg}{Terminology}
 \newglossary[slg]{abbreslist}{syi}{syg}{Abbreviations}
 \newglossary[slg]{symbolslist}{syi}{syg}{Symbols}
 
@@ -79,7 +80,7 @@ sort=symbolpi, type=symbolslist
 \newglossaryentry{symb:voltage}{
 name=$u$,
 description={Longitudinal accelerating voltage at rf cavity},
-sort=symbolpi, type=symbolslist
+sort=symbolpi, type=symbolslist  
 }
 \newglossaryentry{symb:amp_voltage}{
 name=$V_0$,
@@ -1155,233 +1156,233 @@ description={Graphical  User Interface},type=abbreslist
 
 \newglossaryentry{glos:bucket_pattern}{
 name={bucket pattern},
-description={Rules for the buckets to be filled}
+description={Rules for the buckets to be filled}, type={termslist}
 }
 \newglossaryentry{glos:cir_ratio}{
 name={circumference ratio},
-description={Ratio of the circumference for synchrotrons of different size}
+description={Ratio of the circumference for synchrotrons of different size}, type={termslist}
 }
 \newglossaryentry{glos:rev_ratio}{
 name={revolution frequency ratio},
-description={Ratio of the revolution frequencies for synchrotrons of different size}
+description={Ratio of the revolution frequencies for synchrotrons of different size}, type={termslist}
 }
 \newglossaryentry{glos:har_ratio}{
 name={harmonic ratio},
-description={Cavity harmonic ratio between two ring accelerators}
+description={Cavity harmonic ratio between two ring accelerators}, type={termslist}
 }
 \newglossaryentry{glos:bunch}{
 name={bunch},
-description={Collection of particles captured within one rf bucket}
+description={Collection of particles captured within one rf bucket}, type={termslist}
 }
 \newglossaryentry{glos:ext_kick}{
 name={extraction kicker},
-description={Diverts a circulating beam to leave a synchrotron}
+description={Diverts a circulating beam to leave a synchrotron}, type={termslist}
 }
 \newglossaryentry{glos:inj_kick}{
 name={injection kicker},
-description={Merges one beam into a circulating beam in a synchrotron }
+description={Merges one beam into a circulating beam in a synchrotron }, type={termslist}
 }
 \newglossaryentry{glos:rise_time}{
 name={kicker rise time},
-description={A period of time for kicker magnet to reach a stable magnetic field}
+description={A period of time for kicker magnet to reach a stable magnetic field}, type={termslist}
 }
 \newglossaryentry{glos:flat-top}{
 name={kicker flat-top},
-description={A period of time of kicker magnet with a stable magnetic field}
+description={A period of time of kicker magnet with a stable magnetic field}, type={termslist}
 }
 \newglossaryentry{glos:fall_time}{
 name={kicker fall time},
-description={A period of time of kicker magnet to reduce to zero magnetic field}
+description={A period of time of kicker magnet to reduce to zero magnetic field}, type={termslist}
 }
 \newglossaryentry{glos:stationary_bucket}{
 name={stationary rf bucket},
-description={Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together without energy gain/loss per turn (short: bucket)}
+description={Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together without energy gain/loss per turn (short: bucket)}, type={termslist}
 }
 \newglossaryentry{glos:adia}{
 name={adiabaticity},
-description={Rf frequency is changed slowly enough for the beam to follow}
+description={Rf frequency is changed slowly enough for the beam to follow}, type={termslist}
 }
 \newglossaryentry{glos:harmonic_number}{
 name={harmonic number},
-description={Integer ratio between the rf frequency and the revolution frequency}
+description={Integer ratio between the rf frequency and the revolution frequency}, type={termslist}
 }
 \newglossaryentry{glos:syn_motion}{
 name={synchrotron motion},
-description={Oscillation of asynchronous particles around the synchronous particle}
+description={Oscillation of asynchronous particles around the synchronous particle}, type={termslist}
 }
 \newglossaryentry{glos:bucket_size}{
 name={bucket size},
-description={Area in longitudinal phase space plane enclosed by the bucket}
+description={Area in longitudinal phase space plane enclosed by the bucket}, type={termslist}
 }
 \newglossaryentry{glos:bucket_height}{
 name={bucket height},
-description={Maximum momentum deviation of the rf bucket}
+description={Maximum momentum deviation of the rf bucket}, type={termslist}
 }
 \newglossaryentry{glos:long_emi}{
 name={longitudinal emittance},
-description={Area occupied by a bunch in the longitudinal phase space plane}
+description={Area occupied by a bunch in the longitudinal phase space plane}, type={termslist}
 }
 \newglossaryentry{glos:bucket_area_factor}{
 name={bucket area factor},
-description={Ratio of bucket size of a running bucket to a stationary bucket}
+description={Ratio of bucket size of a running bucket to a stationary bucket}, type={termslist}
 }
 \newglossaryentry{glos:running_bucket}{
 name={running rf bucket},
-description={Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together with energy gain/loss per turn}
+description={Rf system provides a region in the longitudinal phase space, within which all particles oscillate around the synchronous particle and stay together with energy gain/loss per turn}, type={termslist}
 }
 \newglossaryentry{glos:syn_particle}{
 name={synchronous particle},
-description={A particle who always sees a constant rf phase at the rf cavity}
+description={A particle who always sees a constant rf phase at the rf cavity}, type={termslist}
 }
 \newglossaryentry{glos:tune}{
 name={tune},
-description={Number of particle trajectory oscillations during one revolution in the ring (transverse and longitudinal)}
+description={Number of particle trajectory oscillations during one revolution in the ring (transverse and longitudinal)}, type={termslist}
 }
 
 \newglossaryentry{glos:uncertainty}{
 name={measurement uncertainty},
-description={A non-negative parameter characterizing the dispersion of the values attributed to a measured quantity}
+description={A non-negative parameter characterizing the dispersion of the values attributed to a measured quantity}, type={termslist}
 }
 \newglossaryentry{glos:error_pro}{
 name={uncertainty propagation},
-description={Uncertainties in the original measurements ``propagate`` through calculations to cause uncertainties in the calculated final answers}
+description={Uncertainties in the original measurements ``propagate`` through calculations to cause uncertainties in the calculated final answers}, type={termslist}
 }
 
 \newglossaryentry{glos:Rrf}{
 name={phase measurement signal},
-description={Harmonic or subharmonic signal generated by the Group DDS and transmitted to the individual rf station as a reference signal},
+description={Harmonic or subharmonic signal generated by the Group DDS and transmitted to the individual rf station as a reference signal}, type={termslist}
 }
 
 \newglossaryentry{glos:group_DDS}{
 name={Group DDS},
-description={DDS module that generates an phase measurement signal for a group of cavities}
+description={DDS module that generates an phase measurement signal for a group of cavities}, type={termslist}
 }
 \newglossaryentry{glos:cavity_DDS}{
 name={Cavity DDS},
-description={Cavity DDS provides rf signal for cavities}
+description={Cavity DDS provides rf signal for cavities}, type={termslist}
 }
 \newglossaryentry{glos:vit_DDS}{
 name={virtual rf cavity},
-description={A virtual position around the ring, to which the phase measurement signal corresponds}
+description={A virtual position around the ring, to which the phase measurement signal corresponds}, type={termslist}
 }
 \newglossaryentry{glos:timing_frame}{
 name={timing frame},
-description={A specific Ethernet frame with 110 byte frame length, which contains one timing message}
+description={A specific Ethernet frame with 110 byte frame length, which contains one timing message}, type={termslist}
 }
 \newglossaryentry{glos:coarse_syn}{
 name={coarse synchronization},
-description={Bunches are transferred into buckets with the bunch-to-bucket center mismatch smaller than the upper bound}
+description={Bunches are transferred into buckets with the bunch-to-bucket center mismatch smaller than the upper bound}, type={termslist}
 }
 \newglossaryentry{glos:fine_syn}{
 name={fine synchronization},
-description={Bunches are transferred into correct buckets}
+description={Bunches are transferred into correct buckets}, type={termslist}
 }
 
 \newglossaryentry{glos:Syn_ref_signal}{
 name={synchronization reference signal},
-description={Shared synchronous reference signal at each supply room (same frequency and in phase)}
+description={Shared synchronous reference signal at each supply room (same frequency and in phase)}, type={termslist}
 }
 \newglossaryentry{glos:Syn_fre}{
 name={synchronization frequencies},
-description={An integer multiple of the derived rf frequency, which is a fraction of the revolution frequency. It is used for the phase alignment of the two rf systems}
+description={An integer multiple of the derived rf frequency, which is a fraction of the revolution frequency. It is used for the phase alignment of the two rf systems}, type={termslist}
 }
 
 \newglossaryentry{glos:accuracy}{
 name={accuracy},
-description={Deviation between the theoretically calculated start time of the synchronization window and the actual observed start time}
+description={Deviation between the theoretically calculated start time of the synchronization window and the actual observed start time}, type={termslist}
 }
 
 \newglossaryentry{glos:precision}{
 name={precision of the start\\ of the synchronization window},
-description={Time closeness of agreement between the actual start of the synchronization window of different timing notes}
+description={Time closeness of agreement between the actual start of the synchronization window of different timing notes}, type={termslist}
 }
 \newglossaryentry{glos:bucket_label}{
 name={bucket indication signal},
-description={Time indication of a dedicated bucket passing on the virtual rf cavity of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection}
+description={Time indication of a dedicated bucket passing on the virtual rf cavity of the target synchrotron, when it is correct phase aligned with the rf system of the source synchrotron for the bunch-to-bucket injection}, type={termslist}
 }
 \newglossaryentry{glos:T0_incidents}{
 name={T0 incidents},
-description={First positive zero-crossings of BuTiS C2 clocks after every BuTiS T0 edge}
+description={First positive zero-crossings of BuTiS C2 clocks after every BuTiS T0 edge}, type={termslist}
 }
 
 
 \newglossaryentry{glos:trueness}{
 name={trueness of the start\\ of the synchronization window},
-description={Time closeness of agreement between the average actual start of the synchronization window of different timing notes and the best estimate start of the synchronization window}
+description={Time closeness of agreement between the average actual start of the synchronization window of different timing notes and the best estimate start of the synchronization window}, type={termslist}
 }
 \newglossaryentry{glos:frame_error_rate}{
 name={frame error rate},
-description={The percentage of the sum of the lost frame, the misordered frame and payload error frames relative to the total number of transferred frames (Rx) during a studied time interval}
+description={The percentage of the sum of the lost frame, the misordered frame and payload error frames relative to the total number of transferred frames (Rx) during a studied time interval}, type={termslist}
 }
 \newglossaryentry{glos:latency}{
 name={frame transfer latency},
-description={The time interval between the frame reception and sending}
+description={The time interval between the frame reception and sending}, type={termslist}
 }
 \newglossaryentry{glos:jitter}{
 name={frame transfer jitter},
-description={The time deviation between the transfer latencies of two consecutive frames}
+description={The time deviation between the transfer latencies of two consecutive frames}, type={termslist}
 }
 \newglossaryentry{glos:pay_error}{
 name={payload error frame},
-description={The number of packets received that failed the frame check sequence}
+description={The number of packets received that failed the frame check sequence}, type={termslist}
 }
 \newglossaryentry{glos:misorder_error}{
 name={misordered frame},
-description={The number of misordered packets arriving out of sending sequence}
+description={The number of misordered packets arriving out of sending sequence}, type={termslist}
 }
 \newglossaryentry{glos:lost_error}{
 name={lost frame},
-description={The difference between the sent packets and the received packets}
+description={The difference between the sent packets and the received packets}, type={termslist}
 }
 \newglossaryentry{glos:broadcast}{
 name={broadcast},
-description={The frame is intended to be received and processed by every FEC on the WR network}
+description={The frame is intended to be received and processed by every FEC on the WR network}, type={termslist}
 }
 \newglossaryentry{glos:unicast}{
 name={unicast},
-description={The frame is intended to be received and processed by a specified FEC on the WR network}
+description={The frame is intended to be received and processed by a specified FEC on the WR network}, type={termslist}
 }
 \newglossaryentry{glos:trigger_scu}{
 name={Trigger SCU},
-description={Production of the trigger signal for kicker electronics}
+description={Production of the trigger signal for kicker electronics}, type={termslist}
 }
 
 \newglossaryentry{glos:B2B_s_SCU}{
 name={B2B source SCU},
-description={Works as the B2B transfer master}
+description={Works as the B2B transfer master}, type={termslist}
 }
 
 \newglossaryentry{glos:B2B_master}{
 name={B2B transfer master},
-description={Responsible for the data collection of two ring accelerators, the data calculation, the data redistribution and the B2B transfer status check}
+description={Responsible for the data collection of two ring accelerators, the data calculation, the data redistribution and the B2B transfer status check}, type={termslist}
 }
 \newglossaryentry{glos:cavity_rf_freq}{
 name={cavity rf frequency},
-description={Frequency of the main harmonic, according to which the beam is bunched}
+description={Frequency of the main harmonic, according to which the beam is bunched}, type={termslist}
 }
 \newglossaryentry{glos:B2B_t_SCU}{
 name={B2B target SCU},
-description={Collects the predicted phase of the target synchrotron and transfers it to the source synchrotron}
+description={Collects the predicted phase of the target synchrotron and transfers it to the source synchrotron}, type={termslist}
 }
 \newglossaryentry{glos:machine_cycle}{
 name={machine cycle},
-description={One complete operation cycle of a machine, i.e. injection, ramp up, flattop, ejection and ramp down}
+description={One complete operation cycle of a machine, i.e. injection, ramp up, flattop, ejection and ramp down}, type={termslist}
 }
 \newglossaryentry{glos:batch}{
 name={batch},
-description={A train of bunches circulating along a synchrotron to be transferred to buckets}% E.g. SIS100 batch: Train of 4 $\cdot$ 2 $U^{28+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle. Or train of 4 $\cdot$ 1 $H^{+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle}
+description={A train of bunches circulating along a synchrotron to be transferred to buckets}, type={termslist}% E.g. SIS100 batch: Train of 4 $\cdot$ 2 $U^{28+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle. Or train of 4 $\cdot$ 1 $H^{+}$ bunches injected into SIS100 in one SIS18 to SIS100 super cycle}
 }
 \newglossaryentry{glos:bunch_gap}{
 name={bunch gap},
-description={Area without any bunches in a batch}
+description={Area without any bunches in a batch}, type={termslist}
 }
 \newglossaryentry{glos:best_align}{
 name={best estimate time of alignment},
-description={Fine time for the alignment of two RF Reference Signals}
+description={Fine time for the alignment of two RF Reference Signals}, type={termslist}
 }
 \newglossaryentry{glos:pro_align}{
 name={probable time range of alignment},
-description={Range within which the fine alignment lies because of the propagation of the uncertainty}
+description={Range within which the fine alignment lies because of the propagation of the uncertainty}, type={termslist}
 }
 
 \lstset{tabsize=4, %
@@ -1478,18 +1479,19 @@ description={Range within which the fine alignment lies because of the propagati
 	%Thesis title
 
 { \normalsize  Dissertation\\
-	for attaining the doctoral degree\\
-	of Natural Sciences\par}
+	zur Erlangung des Doktorgrades\\
+	der Naturwissenschaften
+\par}
     \vspace{2cm}
 
-{ \normalsize submitted to the Faculty of Physics\\
-	of the Johann Wolfgang Goethe Universit\"at\\
-	in Frankfurt am Main, Germany\par}
+{ \normalsize vorgelegt beim Fachbereich Physik\\
+der Goethe-Universit\"at\\
+in Frankfurt am Main\par}
     \vspace{2cm}
 
-{ \normalsize by\\
+{ \normalsize von\\
 	Jiaoni Bai\\
-	born in Taiyuan, Shanxi Province, China\par}
+	aus Taiyuan, Shanxi, China\par}
     \vspace{2cm}
 
     \vspace{2cm}
@@ -1501,9 +1503,9 @@ description={Range within which the fine alignment lies because of the propagati
 \thispagestyle{empty}
 \begin{flushleft}
 	 \vspace* {6cm}
-{ \normalsize accepted by the Faculty of Physics of the Johann Wolfgang Goethe University\\
+{ \normalsize vom Fachbereich Physik der Goethe-Universit\"at\\
     \vspace{0.5cm}
-as a dissertation.}\par
+	als Dissertation angenommen.}\par
     \vspace{4cm}
 	
 
@@ -1524,7 +1526,7 @@ as a dissertation.}\par
 		 &\text{Dekan: }\:  &&\text{Prof. Dr. Owe Philipsen}\\[0.5cm]
 		 &\text{Gutachter:}\: &&\text{Prof. Dr. Oliver Kester}\\[0.5cm]
 		 &						&&\text{Prof. Dr. Ulrich Ratzinger}\\[0.5cm]
-		 &\text{Date of disputation:}\: &&\text{07. May. 2017} \\[0.5cm]
+		 &\text{Datum der Disputation:}\: &&\text{} \\[0.5cm]
 \end{align*}
 	%Date
 \end{flushleft}    
@@ -1611,23 +1613,23 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %----------------------------------------------------------------------------------------
 
 
-%\pagenumbering{arabic}
-%\chapter{Introduction}
-%\input{chapters/1Introduction}
-%\chapter{Theoretical Background}\label{background}
-%\input{chapters/2Background}
-%%\chapter{First idea on the B2B transfer system}
-%%\input{chapters/3Firstconcept}
-%\chapter{Technical Basis for the FAIR B2B Transfer System}\label{technical}
-%\input{chapters/3Technical_basis}
-%\chapter{Concept of the FAIR B2B Transfer System}\label{concept}
-%\input{chapters/4Concept}
-%\chapter{Realization and Systematic Investigation of the FAIR B2B Transfer System}\label{realization}
-%\input{chapters/5Realization}
-%\chapter{Application of the FAIR B2B Transfer System to FAIR Accelerators}\label{application}
-%\input{chapters/Application}
-%%\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
-%%\input{chapters/6Existing}
+\pagenumbering{arabic}
+\chapter{Introduction}
+\input{chapters/1Introduction}
+\chapter{Theoretical Background}\label{background}
+\input{chapters/2Background}
+%\chapter{First idea on the B2B transfer system}
+%\input{chapters/3Firstconcept}
+\chapter{Technical Basis for the FAIR B2B Transfer System}\label{technical}
+\input{chapters/3Technical_basis}
+\chapter{Concept of the FAIR B2B Transfer System}\label{concept}
+\input{chapters/4Concept}
+\chapter{Realization and Systematic Investigation of the FAIR B2B Transfer System}\label{realization}
+\input{chapters/5Realization}
+\chapter{Application of the FAIR B2B Transfer System to FAIR Accelerators}\label{application}
+\input{chapters/Application}
+%\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
+%\input{chapters/6Existing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Conclusion and Outlook}
 \markboth{Conclusion and Outlook}{}
@@ -1649,7 +1651,8 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %Glossary ausgeben
 \printnoidxglossary
 
-%Abbreviation ausgeben
+%Abbreviation ausgebe
+\printnoidxglossary[type=termslist,style=long]
 \printnoidxglossary[type=abbreslist,style=long]
 %Symbole ausgeben 
 \printnoidxglossary[type=symbolslist,style=long]

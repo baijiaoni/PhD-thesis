@@ -570,7 +570,7 @@ The FAIR B2B transfer system needs the bucket indication not only at the rf flat
 %\end{figure}
 The bucket label is realized by the Trigger SCU, the Signal Reproduction (SR) module and the Phase Correction Module (PCM). The reproduced signal is produced by SR module. The Trigger SCU is responsible for the receipt of the phase correction value from the B2B source SCU and the transfer of this value to the PCM. The PCM module is used to correct the phase of the reproduced signal. The PCM module is a SCU slave in the Trigger SCU. The SR module produces the bucket indication signal marker in the format of the TTL signal, whose rising edges are aligned with the positive zero-crossings of the rf signal of the revolution frequency or the synchronization frequency. For more details about the implementation and realization of the PCM and the SR module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}. 
 
-\subsection{Bucket Label for the Normal Extraction and Injection}
+\subsubsection{Bucket Label for the Normal Extraction and Injection}
 
 To determine the bucket label for the normal extraction and injection, three steps are necessary. Fig.~\ref{bucket_label} shows these three steps for the reproduction of the bucket label. Here the B2B transfer from the SIS18 to the SIS100 is taken as an example.
 \begin{figure}[!htb]
@@ -594,7 +594,7 @@ The reproduced signal must do the phase correction at a specified T0 incident. T
 The SM considers the bucket delay $t_{\mathit{bucket}}$ within the kicker delay compensation, see Sec. ~\ref{sec:compensation}. In Fig.~\ref{bucket_label}, the reproduced signal is with the SIS100 revolution frequency and the $3^{rd}$ and $4^{th}$ buckets of ten buckets will be filled with $t_{\mathit{bucket}}=1\cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. 
 \end{itemize}
 
-\subsection{Maximum Bunch Spacing Label for the Emergency Extraction}
+\subsubsection{Maximum Bunch Spacing Label for the Emergency Extraction}
 
 Only for the SIS100 emergency procedure, the maximum bunch spacing label is important during the whole acceleration cycle, because the emergency kicker can be triggered only at the maximum bunch spacing. There are two steps for the realization of the maximum bunch spacing label, see Fig.~\ref{Emergency_label}.
 \begin{figure}[!htb]
