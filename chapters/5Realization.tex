@@ -25,11 +25,12 @@ The maximum tolerable relative bending magnetic field shift of the $H^{+}$ beam 
 -\alpha_p \cdot\frac{\Delta B}{B} & \textit{Frequency beating method}\cr
 \end{cases}
 \end{eqnarray}
+where \gls{symb:mom_factor} is the momentum compaction factor. $\alpha_p$ equals to 0.01 for the SIS18 $H^+$ beam and 0.03 for the SIS18 $U^\mathit{28+}$ beam \cite{liebermann_fair_2013}.  
 
+The reasonable bucket size of a running bucket is larger than $80\%$ of that of a stationary bucket, namely the bucket area factor $\alpha_b(\phi_{s})\ge 80\%$ (see Chap. ~\ref{background}). Due to the constraint of the bucket size, the synchronous phase must stay within the range between $-6.4^\circ$ and $+6.4^\circ$.
 
-The reasonable bucket size of a running bucket is larger than $80\%$ of that of a stationary bucket, namely $\alpha_b(\phi_{s})\ge 80\%$. Due to the constraint of the bucket size, the synchronous phase must stay within the range between $-6.4^\circ$ and $+6.4^\circ$.
+The acceptable range of the parameters accompanying with the frequency adjustment of the phase shift method for the SIS18 $H^{+}$ and $U^\mathit{28+}$ beams are summarized in Tab. ~\ref{dynamic_param} and that accompanying with the frequency adjustment of the frequency beating method are summarized in Tab. ~\ref{dynamic_param1}. 
 
-The acceptable range of the parameters accompanying with the frequency adjustment of the phase shift method for the SIS18 $H^{+}$ and $U^\mathit{28+}$ beams are summarized in Tab. ~\ref{dynamic_param} and that accompanying with the frequency adjustment of the frequency beating method are summarized in Tab. ~\ref{dynamic_param1}. $\alpha_p$ equals to 0.01 for the $H^+$ beam and 0.03 for the $U^\mathit{28+}$ beam \cite{liebermann_fair_2013}.  
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Acceptable range of the parameters accompanying with the frequency adjustment of the phase shift method for the SIS18 $H^{+}$ and $U^\mathit{28+}$ beams}
@@ -146,7 +147,7 @@ According to these criteria, some rf frequency modulations are obviously ruled o
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{4case.png}
-   \caption{Examples of rf frequency modulation.}
+   \caption{Examples of rf frequency modulations.}
    \label{4case}
 \end{figure}
 
@@ -743,7 +744,7 @@ Accuracy\_requirement=\frac{\SI{1.017}{us}-\SI{5}{ns} \cdot 2}{2} \approx  \SI{5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Characterization of the WR Network for the B2B Transfer}
 \label{wr_network}
-This section is part of the results of the characterization of the WR Network of the FAIR General Machine Timing System. The scenario and test definition is done by C. Prados as part of his PhD thesis~\cite{prados_notitle_nodate}. I executed the test for the B2B scenario and discussed, evaluated and documented the results. 
+This section is part of the results of the characterization of the WR Network of the FAIR General Machine Timing System. The scenario and test definition is done by Cesar Prados as part of his PhD thesis~\cite{prados_notitle_nodate}. Here the tests for the B2B scenario are discussed, evaluated and documented. 
 
 In the test, the Xena's Layer 2-3 test platform \footnote{Xena's Layer 2-3 test platform\\ \url{http://xenanetworks.com/layer-2-3-test-platform/}} was used to characterize the properties of the WR network for the B2B transfer. The Xena's Layer 2-3 test platform was used to configure and generate Ethernet traffic at the data link layer and network layer and then to analyze how WR network in response. The test platform used the 4U XenaBay chassis which was equipped with an extensive range of copper and optical Gigabit Ethernet test modules. In the test, the test modules used 18 AXGE-1254 transceivers, \SI{1.25}{Gbps} single fiber bidirectional small form-factor pluggable (SFP), to connect to ports of four WR switches via single mode fibers \footnote{A G.652.B type single mode fiber is used for the 1310 and \SI{1550}{nm} wavelength region.}. The chassis and test modules were controlled via Xena Manager-2G, a free Windows GUI client, which can be used to manage test equipment and execute test remotely. Fig. ~\ref{network_B2B2} shows an overview of the Xena's Layer 2-3 test platform for the WR network.
 \begin{figure}[H]
@@ -797,7 +798,7 @@ The B2B Broadcast traffic are frames exchanged among B2B related SCUs. Maximum 1
 The average bandwidth for the management traffic is \SI{10}{Mbit/s}. It broadcasts packets with random Ethernet frame length from 64 bytes to 1518 bytes. 
 \end{itemize}
 
-According to the importance of the network traffic, the prioritization of WR network traffic is implemented based on the VLAN technology. The DM Broadcast and Unicast traffic, the control messages, is the most importance traffic, which must be delivered  deterministically and with very low loss. Hence, it is assigned to the VLAN 7 with the highest priority. Besides, the B2B Unicast traffic is also assigned to the VLAN 7, which realizes the communication between the B2B source SCU and the DM. In order to reduce the network traffic, the B2B Broadcast traffic is only broadcasted among the B2B related SCUs, therefore the B2B Broadcast traffic is assigned to the VLAN 6 with the secondary priority. Finally, the Management traffic is assigned to the VLAN 5 with the lowest priority~\cite{prados_testing_2016}.
+According to the importance of the network traffic, the prioritization of WR network traffic is implemented based on the VLAN technology. The DM Broadcast and Unicast traffic, the control messages, is the most important traffic, which must be delivered  deterministically and with very low loss. Hence, it is assigned to the VLAN 7 with the highest priority. Besides, the B2B Unicast traffic is also assigned to the VLAN 7, which realizes the communication between the B2B source SCU and the DM. In order to reduce the network traffic, the B2B Broadcast traffic is only broadcasted among the B2B related SCUs, therefore the B2B Broadcast traffic is assigned to the VLAN 6 with the secondary priority. Finally, the Management traffic is assigned to the VLAN 5 with the lowest priority~\cite{prados_testing_2016}.
 
 %The test is used to measure the frame error rate, misordered frame on the WR network and the frame latency of every WR switch, in order to identify the tolerable number of WR switch layers for the B2B related traffic, including the number of WR switch layers between the B2B related SCUs and the number of WR switch layers between the B2B related SCUs and DM. 
 
@@ -824,7 +825,7 @@ The duration for the occurrence of one lost frame caused by a bit error is calcu
 	t=\frac{880}{FER}\cdot \frac{1}{bandwidth}
 \end{equation}
  
-In actual application of the B2B transfer system, there is only one frame reception FEC for the B2B Unicast traffic, namely $m=1$. For the B2B Broadcast traffic, there are total six ring accelerators (SIS18, SIS100, ESR, CR, HESR and CRYRING) and every ring needs three FECs for the data exchange, the B2B source/target SCU, the Trigger SCU and the Kicker SCU. Hence, there is one frame sending FEC and 17 frame reception FECs, namely $m=17$. Fig. ~\ref{FER_2case} shows the relation between the FER and the number of fiber connection for two traffics.   
+In the actual application of the B2B transfer system, there is only one frame reception FEC for the B2B Unicast traffic, namely $m=1$. For the B2B Broadcast traffic, there are total six ring accelerators (SIS18, SIS100, ESR, CR, HESR and CRYRING) and every ring needs three FECs for the data exchange, the B2B source/target SCU, the Trigger SCU and the Kicker SCU. Hence, there is one frame sending FEC and 17 frame reception FECs, namely $m=17$. Fig. ~\ref{FER_2case} shows the relation between the FER and the number of fiber connection for two traffics.   
 \begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{FER_2case.png}
@@ -973,7 +974,7 @@ For the B2B Broadcast frames, the frame transfer latencies of the stream from th
    \caption{Maximum frame transfer latency for B2B Broadcast frames.}
    \label{Max_latency_jitter}
 \end{figure}
-The more WR switches frames pass through, the longer frame transfer latency will be. The maximum frame transfer latency and the number of switches have a nonlinear relationship, because there is a very low possibility for one frame to pass through more than two switches with the maximum transfer latency for each switch. Tab. \ref{max latency jitter} lists the maximum frame transfer latency of the B2B Broadcast frames for different number of WR switch layers. 
+The more WR switches frames pass through, the longer the frame transfer latency will be. The maximum frame transfer latency and the number of switches have a nonlinear relationship, because there is a very low possibility for one frame to pass through more than two switches with the maximum transfer latency for each switch. Tab. \ref{max latency jitter} lists the maximum frame transfer latency of the B2B Broadcast frames for different number of WR switch layers. 
 \begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{The maximum frame transfer latency of the B2B Broadcast frames for different number of WR switch layers}
@@ -1059,6 +1060,7 @@ However, the more WR switch layers, the more fiber connections and the higher co
 	  \multicolumn{5}{|c|}{Forward error correction mechanisms are implemented}  \\ \hline 
 	 every 8 months	& \cellcolor{gray}9 	 & \cellcolor{gray}2   & 67 & 13            \\ \hline 
 	 every 18 months& \cellcolor{gray}4 	 & \cellcolor{gray}1   & 67 & 13            \\ \hline 
+\multicolumn{5}{|@{}l|}{\tabincell{c}{\\ * Values in the gray table cells are not applicable.}} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}

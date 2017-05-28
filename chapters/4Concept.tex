@@ -1,6 +1,6 @@
 
 
-In this Chapter, the basic idea of the FAIR B2B transfer system is presented in Sec. ~\ref{cpt_idea}. The standard procedure of the system is defined and described in Sec. ~\ref{cpt_proc}. Sec.  ~\ref{cpt_func} illustrates how the basic functionality of the system are realized. In Sec.  ~\ref{cpt_data}, the data flow of the system is described. In Sec.  ~\ref{cpt_comp} the FAIR B2B transfer system is compared with the current B2B transfer. 
+In this Chapter, the basic idea of the FAIR B2B transfer system is presented in Sec. ~\ref{cpt_idea}. The standard procedure of the system is defined and described in Sec. ~\ref{cpt_proc}. Sec.  ~\ref{cpt_func} illustrates how the basic functionality of the system is realized. In Sec.  ~\ref{cpt_data}, the data flow of the system is described. In Sec.  ~\ref{cpt_comp} the FAIR B2B transfer system is compared with the current B2B transfer. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%
 \section{Basic Idea} 
@@ -34,7 +34,7 @@ Before the basic steps for the achievement of the phase alignment are discussed,
    \label{ext_inj_kicker}
 \end{figure}
 \end{landscape}
-Fig.~\ref{ext_inj_kicker} illustrates the B2B transfer from the SIS18 to the SIS100. A super cycle is a sequence of cycles in a single machine within a beam pattern. The SIS18 $U^{28+}$ super cycle consists of four SIS18 cycles. Each cycle produces two $U^{28+}$ bunches. From the SIS18, four batches, each of two bunches, are injected into eight out of ten buckets of the SIS100. The SIS18 $H^{+}$ super cycle consists of four SIS18 cycles. Each cycle produces one $H^{+}$ bunch. From the SIS18, four batches, each of one bunch, are injected into four out of ten buckets of the SIS100 ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The SIS18 and SIS100 revolution frequency markers (black bars on the first time axis and bars on the second/third time axis in Fig.~\ref{ext_inj_kicker}) indicate the time when a bunch or the first bucket ($\sharp1$) pass by the virtual rf cavity. The extraction and injection kicker trigger have a delay with respect to the first bars of the SIS100 revolution frequency marker at the SIS18 and at the SIS100. This delay is called the ``extraction/injection kicker delay compensation``. The mentioned four instances of time are related to the second bars of the SIS100 revolution frequency marker. \gls{symb:period_rev} represents the revolution period of the accelerator X, e.g. the SIS18 revolution period is $T_{\mathit{rev}}^{\mathit{SIS18}}$. \gls{symb:period_rf} represents the period of the cavity rf frequency of the accelerator X, e.g. the SIS18 rf period of the cavity rf frequency is $T_{\mathit{rf}}^{\mathit{SIS18}}$. After the rf phase alignment, the time difference between the SIS18 and SIS100 synchronization frequency (denoted as \gls{symb:diff_sync}) for the $U^{28+}$ and $H^{+}$ odd bucket injection is
+Fig.~\ref{ext_inj_kicker} illustrates the B2B transfer from the SIS18 to the SIS100. A super cycle is a sequence of cycles in a single machine within a beam pattern. The SIS18 $U^{28+}$ super cycle consists of four SIS18 cycles. Each cycle produces two $U^{28+}$ bunches. From the SIS18, four batches, each of two bunches, are injected into eight out of ten buckets of the SIS100. The SIS18 $H^{+}$ super cycle consists of four SIS18 cycles. Each cycle produces one $H^{+}$ bunch. From the SIS18, four batches, each of one bunch, are injected into four out of ten buckets of the SIS100 ~\cite{liebermann_fair_2013, liebermann_sis100_2013}. The SIS18 and SIS100 revolution frequency markers (black bars on the first time axis and bars on the second/third time axis in Fig.~\ref{ext_inj_kicker}) indicate the time when a bunch or the first bucket ($\sharp1$) passes by the virtual rf cavity. The extraction and injection kicker triggers have a delay with respect to the first bars of the SIS100 revolution frequency marker at the SIS18 and at the SIS100. This delay is called the ``extraction/injection kicker delay compensation``. The mentioned four instances of time are related to the second bars of the SIS100 revolution frequency marker. \gls{symb:period_rev} represents the revolution period of the accelerator X, e.g. the SIS18 revolution period is $T_{\mathit{rev}}^{\mathit{SIS18}}$. \gls{symb:period_rf} represents the period of the cavity rf frequency of the accelerator X, e.g. the SIS18 rf period of the cavity rf frequency is $T_{\mathit{rf}}^{\mathit{SIS18}}$. After the rf phase alignment, the time difference between the SIS18 and SIS100 synchronization frequencies (denoted as \gls{symb:diff_sync}) for the $U^{28+}$ and $H^{+}$ odd bucket injection is
 \begin{equation}
 	t_{\mathit{diff\_sync}}=(t_{\mathit{v\_ext}}+t_{\mathit{TOF}}+t_{\mathit{v\_inj}}) \mod 1/f_\mathit{syn}^\mathit{trg}
 \end{equation}
@@ -59,13 +59,13 @@ For the phase alignment, the steps below must be carried out.
 For the proper B2B transfer, not only the relative position of bunches and buckets, but also the firing of the extraction and injection kickers must be precisely controlled. The extraction kicker must kick the bunch exactly the time-of-flight earlier before a specific bucket passes the injection kicker and the transition of the magnetic field must be carried out during the bunch gap. For the calculation of the trigger time for the extraction and injection kickers, the following steps must be processed. 
 %The kicker time contains the rise time, the flat-top and the fall time, see Sec. ~\ref{sec:kicker}. 
 \begin{enumerate}
-\item The kicker firing requires the bunch-to-bucket injection center phase mismatch within a upper bound, which defines a ``coarse synchronization``.
+\item The kicker firing requires the bunch-to-bucket injection center phase mismatch within an upper bound, which defines a ``coarse synchronization``.
 \item The bucket label requires the kicker firing based on a bucket indication signal for the first bucket (e.g. the SIS100 revolution frequency markers in Fig. ~\ref{ext_inj_kicker}) plus a
 fixed delay (the extraction/injection kicker delay compensation), for more details please see Sec. ~\ref{sec:bucket_label}. With the help of the bucket label, bunches are injected into correct buckets. This process is called the ``fine synchronization``.
 \end{enumerate}
 
 \subsubsection{Bucket Indication Signal}
-The bucket indication signal of the phase shift method or the frequency beating method indicates the passing time of the first bucket of the target accelerator, when the first bucket is correct or periodical phase aligned with a bunch of the source accelerator for the bunch-to-bucket injection. For FAIR use cases, we have $f_\mathit{syn}^{X}=Y\cdot f_\mathit{rev}^{X}/m$ and either $m/Y$ or $Y/m$ must be an integer, see Sec. ~\ref{match}. Either the revolution period is the integer times of the period of the synchronization frequency or the period of the synchronization frequency is the integer times of the revolution period. The first bucket of the target accelerator is indicated by $f_{\mathit{rev}}^{trg}$. The correct or periodical phase alignment of the rf system of the target accelerator with the rf system of the source accelerator is indicated by $f_{\mathit{syn}}^{trg}$. Hence, the frequency of the bucket indication signal (denoted as ``\gls{symb:bucket_freq}``) depends on the relation between the revolution frequency and the synchronization frequency of the target accelerator. When the synchronization frequency of the target accelerator is greater than or equal to the revolution frequency of the target accelerator, namely the period of the synchronization frequency is equal to or less than the revolution period, the period of the synchronization frequency is not long enough to include all buckets. In this case, the frequency of the bucket indication signal equals to the revolution frequency of the target accelerator and the length of the synchronization window equals to one revolution period. On the contrary, the frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator and the length of the synchronization window equals to the period of the synchronization frequency. The frequency of the bucket indication signal is expressed as
+The bucket indication signal of the phase shift method or the frequency beating method indicates the passing time point of the first bucket of the target accelerator, when the first bucket is correct or periodical phase aligned with a bunch of the source accelerator for the bunch-to-bucket injection. For FAIR use cases, we have $f_\mathit{syn}^{X}=Y\cdot f_\mathit{rev}^{X}/m$ and either $m/Y$ or $Y/m$ must be an integer, see Sec. ~\ref{match}. Either the revolution period is the integer times of the period of the synchronization frequency or the period of the synchronization frequency is the integer times of the revolution period. The first bucket of the target accelerator is indicated by $f_{\mathit{rev}}^{trg}$. The correct or periodical phase alignment of the rf system of the target accelerator with the rf system of the source accelerator is indicated by $f_{\mathit{syn}}^{trg}$. Hence, the frequency of the bucket indication signal (denoted as ``\gls{symb:bucket_freq}``) depends on the relation between the revolution frequency and the synchronization frequency of the target accelerator. When the synchronization frequency of the target accelerator is greater than or equal to the revolution frequency of the target accelerator, namely the period of the synchronization frequency is equal to or less than the revolution period, the period of the synchronization frequency is not long enough to include all buckets. In this case, the frequency of the bucket indication signal equals to the revolution frequency of the target accelerator and the length of the synchronization window equals to one revolution period. On the contrary, the frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator and the length of the synchronization window equals to the period of the synchronization frequency. The frequency of the bucket indication signal is expressed as
 \begin{eqnarray}
 \label{bucket_ind}
 f_\mathit{bucket}=
@@ -79,7 +79,7 @@ f_\mathit{syn}^\mathit{trg}
 
 The corresponding length of the synchronization window is expressed as
 \begin{eqnarray}
-T_\mathit{w}=\frac{1}{f_\mathit{bucket}}
+T_\mathit{w}=\frac{1}{f_\mathit{bucket}}=
 \begin{cases}
 T_\mathit{rev}^\mathit{trg} &f_{\mathit{syn}}^{trg}\ge f_{\mathit{rev}}^{trg}\cr
 
@@ -89,7 +89,7 @@ T_\mathit{syn}^\mathit{trg}
 \end{eqnarray}
 
 
-Fig. ~\ref{bucket_label_occurrence} shows one example when the frequency of the bucket indication signal equals to the revolution frequency of the target accelerator. Fig. ~\ref{bucket_label_occurrence1} shows one example when the frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator. 
+Fig. ~\ref{bucket_label_occurrence} shows an example when the frequency of the bucket indication signal equals to the revolution frequency of the target accelerator. Fig. ~\ref{bucket_label_occurrence1} shows an example when the frequency of the bucket indication signal equals to the synchronization frequency of the target accelerator. 
 %bucket_label_signal_choose.docx
 \begin{figure}[!htb]
    \centering   
@@ -114,11 +114,11 @@ The calculation of the extraction and injection kicker delay compensation is exp
 %The kicker magnet must have zero magnetic field when bunches pass by it and the kicker magnet only can be switched on during bunch gaps. Bunch gaps depend on the cavity rf frequency, the bucket pattern and the bunch length. 
 
 \begin{itemize}
-\item Extraction kick
+\item Extraction kicker delay compensation
 
 In order to inject into specific buckets, the extraction kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}}$, see Fig.~\ref{ext_inj_kicker}. For example, when two $U^{28+}$ bunches of the SIS18 are to be injected into buckets $\sharp3$ and $\sharp4$ of the SIS100, $t_{\mathit{bucket}} =1 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. The extraction kicker must be fired $t_{\mathit{v\_inj}}+t_{\mathit{TOF}}+t_{\mathit{ext}}$ earlier as the bucket passes the virtual rf cavity, so the extraction kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}} - (t_{\mathit{TOF}} + t_{\mathit{v\_inj}} + t_{\mathit{ext}})$. 
 
-\item Injection kick
+\item Injection kicker delay compensation 
 
 With the consideration of the \gls{glos:bucket_pattern}, the injection kicker delay compensation for the first bar of the SIS100 revolution frequency marker is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}}$, see Fig.~\ref{ext_inj_kicker}. The injection kicker must be fired $t_{\mathit{v\_inj}}+t_{\mathit{inj}}$ time earlier as the bucket passes the virtual rf cavity, so the injection kicker delay compensation is $T_{\mathit{rev}}^{\mathit{SIS100}} + t_{\mathit{bucket}} - (t_{\mathit{v\_inj}} + t_{\mathit{inj}})$.
 \end{itemize}
@@ -130,12 +130,12 @@ With the consideration of the \gls{glos:bucket_pattern}, the injection kicker de
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{2method.jpg}
-   \caption{Procedure for the B2B transfer within one acceleration cycle.}
+   \caption{Procedure of the B2B transfer within one acceleration cycle.}
     \caption*{\textsl{\small{Adapted from ``F-TC-C-05, Concept of the FAIR Bunch To Bucket Transfer System`` by J. Bai and T. Ferrand, 2016, FAIR Technical Concept. Adapted with permission.}}}
-	\caption*{\textsl{\small{As illustrated here the procedure with the frequency beating method (blue, top) and that with the phase shift method (green, bottom).}}}
+	\caption*{\textsl{\small{As illustrated here the procedure with the frequency beating method (blue, top) and that with the phase shift method (green, bottom).  }}}
    \label{2method}
 \end{figure}
-Fig.~\ref{2method} illustrates the basic procedure of the B2B transfer with two different synchronization scenarios. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kicker. %The emergency kickers can be triggered at any time during the acceleration cycle by the MPS.  
+Fig.~\ref{2method} illustrates the basic procedure of the B2B transfer with two different synchronization scenarios. The yellow region shows the synchronization window. The purple region shows the valid time for the emergency kick. %The emergency kickers can be triggered at any time during the acceleration cycle by the MPS.  
 
 
 The B2B transfer process basically needs to follow the six steps ~\cite{bai_bunch_2015}:
@@ -152,7 +152,7 @@ The source accelerator generally accomplishes the phase alignment in case of the
 \item[-] Besides, the \gls{glos:bucket_label} is reproduced at the source accelerator for the indication of the $1^\mathit{st}$ bucket.
 \end{enumerate}
 \item The trigger signals with the delay compensation are generated for the kickers.
-\item The kicker electronic fire the kickers. The extraction and injection kicker trigger and firing timestamp are sent to the source accelerator for the B2B status check. The actual beam injection timestamp and the B2B transfer status are send from the source accelerator to the DM and the DM sends them further to the BI.
+\item The kicker electronic fires the kickers. The extraction and injection kicker trigger and firing timestamps are sent to the source accelerator for the B2B status check. The actual beam injection timestamp and the B2B transfer status are send from the source accelerator to the DM and the DM sends them further to the BI.
 
 \end{enumerate}
 
@@ -186,14 +186,14 @@ The source accelerator generally accomplishes the phase alignment in case of the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Realization}
 \label{cpt_func}
-This section describes the realization of the FAIR B2B transfer system based on the FAIR control system and LLRF system introduced in Chap. ~\ref{technical}.
+This section describes the realization of the FAIR B2B transfer system based on the FAIR control system and the LLRF system introduced in Chap. ~\ref{technical}.
 
-The phase alignment is based on the phase difference between two synchronization frequencies. Because it is not preferable to have a direct connection between two ring accelerators around such a big FAIR campus for a direct phase measurement based on the existing technical basis, a shared reference sinusoidal signal (which is called “\gls{glos:Syn_ref_signal}” and denoted as \gls{symb:syn_ref}) is used for the indirect phase difference measurement. The \gls{glos:Syn_ref_signal} has a fixed frequency and is always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges~\cite{ferrand_system_2014, ferrand_system_2015}. The first positive zero-crossings of C2 clocks after T0 edges is called the ``\gls{glos:T0_incidents}``. Thus, the synchronization reference signal is synchronous in different supply rooms by definition. The phase measurement of each rf system is based on the frequency beating between the synchronization frequency and the \gls{glos:Syn_ref_signal}, achieved by measuring the phase deviation between these two frequencies (denoted by \gls{symb:phase_diff1}), see Fig. ~\ref{phase_diffe_align}. 
+The phase alignment is based on the phase difference between two synchronization frequencies. Because it is not preferable to have a direct connection between two ring accelerators around such a wide FAIR campus for a direct phase measurement based on the existing technical basis, a shared reference sinusoidal signal (which is called “\gls{glos:Syn_ref_signal}” and denoted as \gls{symb:syn_ref}) is used for the indirect phase difference measurement. The \gls{glos:Syn_ref_signal} has a fixed frequency and is always in phase in different supply rooms. It is a sinusoidal wave, whose frequency is a multiple of BuTiS T0 \SI{100}{kHz} and whose positive zero-crossings are always aligned with the first positive zero-crossings of C2 clocks after T0 edges~\cite{ferrand_system_2014, ferrand_system_2015}. The first positive zero-crossings of C2 clocks after T0 edges are called ``\gls{glos:T0_incidents}``. Thus, the synchronization reference signal is synchronous in different supply rooms by definition. The phase measurement of each rf system is based on the frequency beating between the synchronization frequency and the \gls{glos:Syn_ref_signal}, achieved by measuring the phase deviation between these two frequencies (denoted by \gls{symb:phase_diff1}), see Fig. ~\ref{phase_diffe_align}. 
 \begin{equation}
 \phi^X(t)= [2\pi(f_\mathit{syn}^{X}-f_\mathit{ref})t+\phi^X_0] \mod 2\pi - \pi
 %\varphi^X(nT_\mathit{sample})= k^\mathit{X}nT_\mathit{sample}+ \varphi^X_0
 \end{equation}
-where \gls{symb:init_pse} is the initial value of the phase deviation between the synchronization frequency and the synchronization reference signal. $\phi^X(t)$ is within the range between $-\pi$ and $\pi$, which is determined by the phase deviation measurement, for more details, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.
+where \gls{symb:init_pse} is the initial value of the phase deviation between the synchronization frequency and the synchronization reference signal. $\phi^X(t)$ is within the range between $-\pi$ and $\pi$, which is determined by the phase deviation measurement, for more details, please see ~\cite{ferrand_development_nodate}.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_beating.pdf}
@@ -235,7 +235,7 @@ The actual phase of the bucket indication signal is irrelevant to the synchroniz
 
 Hence, the measurement of the phase deviation between the bucket label signal and the synchronization reference signal at the target is enough for both the phase alignment and the reproduction of the bucket indication signal. It reduces the data transfer of the system and the transfer delay on the WR network. Besides, every phase deviation measurement and extrapolation process needs \SI{500}{\us}, so one phase deviation measurement is preferred due to the time constraints (see Chap. ~\ref{realization}). 
 
-The frequency used for the phase deviation measurement is called ``phase measurement signal`` and denoted as \gls{symb:B2B_ref}. For the target accelerator, the phase measurement signal is the bucket indication signal, namely 
+The frequency used for the phase deviation measurement is called ``\gls{glos:Rrf}`` and denoted as \gls{symb:B2B_ref}. For the target accelerator, the phase measurement signal is the bucket indication signal, namely 
 \begin{eqnarray}
 f_{\mathit{B2B}}^{trg}=f_{\mathit{bucket}}=
 \begin{cases}
@@ -265,9 +265,9 @@ The frequency of the synchronization reference signal \gls{symb:syn_ref} is dete
 	f_\mathit{ref}=\textit{round} (f_{\mathit{bucket}}/\SI{100}{kHz})\cdot \SI{100}{kHz}
 \end{equation}
 
-The function \textit{round} rounds $f_{\mathit{bucket}}/\SI{100}{kHz}$ up or down to an integer value, which is closest to $f_{\mathit{bucket}}/\SI{100}{kHz}$. e.g. $f_{\mathit{bucket}}=f_\mathit{rev}^{SIS100}=\SI{157.254}{kHz}$, $f_{\mathit{bucket}}/\SI{100}{kHz}=1.57$, so $\textit{round} (f_{\mathit{bucket}}/\SI{100}{kHz})=2$ and $f_\mathit{ref}=\SI{200}{kHz}$. This is the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, for more details, please see Chap. ~\ref{application}. When $|f_{\mathit{bucket}}/\SI{100}{kHz}|<1$, $f_\mathit{ref}=\SI{100}{kHz}$.  For the detailed realization of the synchronization reference signal, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.
+The function \textit{round} rounds $f_{\mathit{bucket}}/\SI{100}{kHz}$ up or down to an integer value, which is closest to $f_{\mathit{bucket}}/\SI{100}{kHz}$. e.g. $f_{\mathit{bucket}}=f_\mathit{rev}^{SIS100}=\SI{157.254}{kHz}$, $f_{\mathit{bucket}}/\SI{100}{kHz}=1.57$, so $\textit{round} (f_{\mathit{bucket}}/\SI{100}{kHz})=2$ and $f_\mathit{ref}=\SI{200}{kHz}$. This is the FAIR use case of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, for more details, please see Chap. ~\ref{application}. When $|f_{\mathit{bucket}}/\SI{100}{kHz}|<1$, $f_\mathit{ref}=\SI{100}{kHz}$.  For the detailed realization of the synchronization reference signal, please see ~\cite{ferrand_development_nodate}.
 
-The measurement and extrapolation of the phase deviation is based on the frequency beating between the phase measurement signal and the \gls{glos:Syn_ref_signal}, so the frequency difference between these two signals must not be too large. The extrapolation of the phase deviation requires at least two samples for every beating period and the sample time is \SI{3.22}{\us}~\cite{ferrand_development_nodate}, so the maximum beating frequency is approximately \SI{150}{kHz}. 
+The measurement and extrapolation of the phase deviation are based on the frequency beating between the phase measurement signal and the \gls{glos:Syn_ref_signal}, so the frequency difference between these two signals must not be too large. The extrapolation of the phase deviation requires at least two samples for every beating period and the sample time is \SI{3.22}{\us}~\cite{ferrand_development_nodate}, so the maximum beating frequency is approximately \SI{150}{kHz}. 
 
  
 %Fig.~\ref{Topology} shows the topology of the B2B transfer system ~\cite{bai_bunch_2015, bai_concept_2016}.
@@ -311,7 +311,7 @@ where $k^\mathit{X}$ is the slope of the phase deviation, namely $k^\mathit{X}=2
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_extrapolation.pdf}
-   \caption{Realization of the phase deviation measurement at one accelerator}
+   \caption{Realization of the phase deviation measurement at one accelerator.}
    \label{phase_prediction}
 \end{figure}
 
@@ -321,9 +321,9 @@ Fig.~\ref{phase_prediction} shows the phase measurement of the rf system at a de
 \end{equation}
 where \gls{symb:sample_period_PAM} is the measurement sampling period of the phase deviation by the PAM module.
 
-For more details about the implementation and realization of the PAM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}. 
+For more details about the implementation and realization of the PAM module, please see ~\cite{ferrand_development_nodate}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Phase extrapolate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Phase Extrapolation of Each Rf System}
+\subsubsection{Phase Extrapolation of Each RF System}
 The phase deviation can be extrapolated due to the linear relationship between time and the phase deviation. 
 
 Based on a series of the measured samples of the phase deviation, the phase deviation at the T0 incidents (denoted by \gls{symb:phase_diff_T0} and called the ``extrapolated phase advance``) are extrapolated at the source and target accelerators by the Phase Advance Prediction (\gls{PAP}) Module.
@@ -333,16 +333,16 @@ Based on a series of the measured samples of the phase deviation, the phase devi
 \end{equation}
 where \gls{symb:sample_period_PAP} is the extrapolation sampling period of the phase extrapolation by the PAP module, $T_\mathit{sample\_PAP}=1/\SI{100}{kHz}$.
 
-The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target accelerator, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance is extrapolated at the T0 incidents and the synchronization reference signal is zero phase aligned with the \gls{glos:T0_incidents}, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the phase measurement signals at the virtual rf cavities of two ring accelerators at the T0 incidents (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.   
+The extrapolated phase advance, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ at the source and target accelerator, is represented by red diamonds in Fig.~\ref{phase_prediction1}. Because the phase advance is extrapolated at the T0 incidents and the synchronization reference signal is zero phase aligned with the \gls{glos:T0_incidents}, $\psi^\mathit{src}$ and $\psi^\mathit{trg}$ are the phase of the phase measurement signals at the virtual rf cavities of two ring accelerators at the T0 incidents (represented as black dots in Fig.~\ref{phase_prediction1}). For more details about the implementation and realization of the PAP module, please see ~\cite{ferrand_development_nodate}.   
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{phase_prediction.pdf}
-   \caption{Realization of the phase advance extrapolation at one accelerator}
+   \caption{Realization of the phase advance extrapolation at one accelerator.}
    \label{phase_prediction1}
 \end{figure}
  %%%%%%%%%%%%%%%%%%%%%%Rf phase difference synchronous to the absolute time stamping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Timestamp of the Extrapolated Phase}
-The extrapolated phase advance is synchronized with T0 incidents by the PAP module, but it is not synchronized with the absolute time. This is one of the tasks of the multi-purpose B2B source and target SCUs ~\cite{beck_new_2012, thieme_scu_2013}, which are located in the source and target accelerators. The PAP module is a SCU slave \footnote{\url{https://en.wikipedia.org/wiki/Master/slave_(technology)}}, respectively integrated into the B2B source SCU and B2B target SCU. Both the B2B source and target SCUs could get the timestamp of the T0 incidents. 
+The extrapolated phase advance is synchronized with T0 incidents by the PAP module, but it is not synchronized with the absolute time. This is one of the tasks of the multi-purpose B2B source and target SCUs ~\cite{beck_new_2012, thieme_scu_2013}, which are located in the source and target accelerators. The PAP module is a SCU slave \footnote{\url{Master/slave model \\https://en.wikipedia.org/wiki/Master/slave_(technology)}}, respectively integrated into the B2B source SCU and the B2B target SCU. Both the B2B source and target SCUs could get the timestamp of T0 incidents. 
 % \begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=150mm]{PAP.png}
@@ -350,11 +350,11 @@ The extrapolated phase advance is synchronized with T0 incidents by the PAP modu
 %   \label{PAP}
 %\end{figure}
 
-Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. The DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and the \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at a designated time (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). The timestamp of the start is an integer multiple of \SI{10}{\us}, the period of the T0 incident. They need maximum \SI{1}{\us} to inform the PAP modules to start the phase advance extrapolation respectively. The PAP modules needs approximately \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every T0 incident. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to receive the extrapolated phase \gls{symb:phase_diff_time0} (represented as the red diamond in Fig.~\ref{phase_diff_syn_time}) from the PAP modules, as well as the slope of the phase deviation \gls{symb:slope}. They also timestamp the T0 incidents \gls{symb:time_phase_diff_T0} which corresponds to the extrapolated phase. The B2B source SCU obtains $\psi^\mathit{src}_0$, $t_\psi^\mathit{src}$ and $k^\mathit{src}$ at the source accelerator and the B2B target SCU obtains $\psi^\mathit{trg}_0$, $t_\psi^\mathit{trg}$ and $k^\mathit{trg}$ at the target accelerator. In fact, $t_\psi^\mathit{src}=t_\psi^\mathit{trg}$.
+Fig.~\ref{phase_diff_syn_time} illustrates the synchronization of the extrapolated phase to the timestamp. The DM broadcasts the timing frame of CMD\_START\_B2B to the WR network. This timing frame will be received by the \gls{glos:B2B_s_SCU} and the \gls{glos:B2B_t_SCU}. The B2B source and target SCUs start the B2B process at a designated time (represented as the pink dot in Fig.~\ref{phase_diff_syn_time}). The timestamp of the start is an integer multiple of \SI{10}{\us}, the period of the T0 incident. They need maximum \SI{1}{\us} to inform their own PAP module to start the phase advance extrapolation respectively. The PAP module needs approximately \SI{500}{\us} for the phase extrapolation and updates the extrapolated phase value every T0 incident. After \SI{500}{\us}, the B2B source and target SCUs need another maximum \SI{1}{\us} to receive the extrapolated phase \gls{symb:phase_diff_time0} (represented as the yellow dot in Fig.~\ref{phase_diff_syn_time}) from the PAP modules, as well as the slope of the phase deviation \gls{symb:slope}. They also timestamp the T0 incidents \gls{symb:time_phase_diff_T0} which corresponds to the extrapolated phase. The B2B source SCU obtains $\psi^\mathit{src}_0$, $t_\psi^\mathit{src}$ and $k^\mathit{src}$ at the source accelerator and the B2B target SCU obtains $\psi^\mathit{trg}_0$, $t_\psi^\mathit{trg}$ and $k^\mathit{trg}$ at the target accelerator. In fact, $t_\psi^\mathit{src}=t_\psi^\mathit{trg}$.
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{timestamp_phase.pdf}
-   \caption{Synchronization of the extrapolated phase to the timestamp in one accelerator}
+   \caption{Synchronization of the extrapolated phase to the timestamp in one accelerator.}
    \label{phase_diff_syn_time}
 \end{figure}
 
@@ -367,13 +367,13 @@ Because the phase deviation of the phase measurement signal complies with the li
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Exchage data %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Exchange of Measured Data}
 
-For the B2B transfer, there is a ``\gls{glos:B2B_master}``, which is responsible for the data collection of two ring accelerators, the data calculation, the data redistribution and the B2B transfer status check. The data of the source and target accelerator must be transferred to the B2B transfer master via the deterministic WR network in the format of the timing frame.
+For the B2B transfer, there is a ``\gls{glos:B2B_master}``, which is responsible for the data collection of two ring accelerators, the data calculation, the data redistribution and the B2B transfer status check. The data of the source and target accelerators must be transferred to the B2B transfer master via the deterministic WR network in the format of the timing frame.
  
-For the simplicity, the B2B source SCU works as the B2B transfer master, so the extrapolated phase $\psi^\mathit{trg}_0$, the corresponding timestamp $t_\psi^\mathit{trg}$ and the phase deviation slope $k^\mathit{trg}$ are transferred by the B2B target SCU to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME. The B2B transfer involves a certain amount of timing frames. For more details about the B2B timing frames, please see Appendix ~\ref{B2B_frame}. The timing frames are not sent via the DM in order to reduce the traffic of the WR network and reduce the timing frame transfer delay on the WR network ~\cite{bai_f-tc-c-05_2016}. Therefore a specific VLAN, the B2B \gls{VLAN}, is defined for the B2B timing frames. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frames in the WR network. The frames are transferred along the path with orange color instead of the path with blue color. The tests which has been done in the framework of this thesis for the transfer delay of the B2B timing frames on the WR network is explained in Chap. ~\ref{realization}.
+For the simplicity, the B2B source SCU works as the B2B transfer master, so the extrapolated phase $\psi^\mathit{trg}_0$, the corresponding timestamp $t_\psi^\mathit{trg}$ and the phase deviation slope $k^\mathit{trg}$ are transferred by the B2B target SCU to the B2B source SCU via the WR network. The transfer of the data is achieved by the \gls{glos:timing_frame} TGM\_PHASE\_TIME. The B2B transfer involves a certain amount of timing frames. For more details about the B2B related timing frames, please see Appendix ~\ref{B2B_frame}. The timing frames are not sent via the DM in order to reduce the traffic of the WR network and reduce the timing frame transfer delay on the WR network ~\cite{bai_f-tc-c-05_2016}. Therefore a specific VLAN, the B2B \gls{VLAN}, is defined for the B2B timing frames. All SCUs for the B2B transfer are assigned to the B2B VLAN. Fig.~\ref{network_B2B} illustrates an example of the transfer path of the B2B timing frames in the WR network. The frames are transferred along the path with orange color instead of the path with blue color. The test which has been done in the framework of this thesis for the transfer delay of the B2B timing frames on the WR network is explained in Chap. ~\ref{realization}.
  \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{network_B2B.jpg}
-   \caption{An example of the transfer path of the B2B timing frames in the WR network}
+   \caption{Example of the transfer path of the B2B timing frames on the WR network.}
    \label{network_B2B}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% rf synchronization %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -391,7 +391,7 @@ The FAIR B2B transfer system is available for both the phase shift and frequency
 \end{cases}
 \end{eqnarray}
 
-$\Delta \phi_\mathit{syn\_0}$ is within the range between $0$ and $2\pi$. The SM provides the goal time difference between the synchronization frequencies of the two rf systems $t_{\mathit{diff\_sync}}$, which considers the delay compensation for TOF, all propagation and the extra phase shift. The goal phase difference between two synchronization frequencies is denoted as \gls{symb:goal_phase} and calculated as 
+$\Delta \phi_\mathit{syn\_0}$ is within the range between $0$ and $2\pi$. The SM provides the goal time difference between the synchronization frequencies of the two rf systems $t_{\mathit{diff\_sync}}$, which considers the delay compensation for the TOF, all propagation and the extra phase shift. The goal phase difference between two synchronization frequencies is denoted as \gls{symb:goal_phase} and calculated as 
 \begin{equation}
 \Delta \phi_\mathit{goal}= t_{\mathit{diff\_sync}}  \cdot f_\mathit{syn}^\mathit{trg}\cdot 2\pi 
 \end{equation}
@@ -441,22 +441,22 @@ The required phase shift is implemented to the Group DDS with the revolution fre
 %\Delta \phi_\mathit{adjust}'= \frac{h_{\mathit{rev}}^{trg}}{h_{\mathit{syn}}^{trg}}(\Delta \phi_\mathit{syn}-t_{\mathit{diff\_sync}}  \cdot f_\mathit{syn}^\mathit{trg}\cdot 2\pi) \mod 2\pi 
 %\end{equation}
 
-A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $\pi$ must be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by \gls{symb:phase_shift_normalized} and \gls{symb:pha_shift_shift}, see eq.~\ref{actual_profile}. 
+A normalized frequency modulation profile \gls{symb:phase_shift_normalized} for $\pi$ must be precalculated, which guarantees the adiabaticity. The actual frequency modulation profile \gls{symb:phase_shift_actual} is decided by \gls{symb:phase_shift_normalized} and \gls{symb:pha_shift_shift}. 
 \begin{equation}
 f_{\mathit{actual}}(t)=\frac{\Delta \phi_\mathit{shift}}{\pi}f_{\mathit{normalized}}(t) \label{actual_profile}
 \end{equation}
 
-Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency modulation profiles and the corresponding phase shift profiles. A sinusoidal modulation is used as an example, which is best for the beam stability. For more details about the frequency modulation curves, please see Chap. ~\ref{realization}. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $\pi$. The blue one is $1/2 f_{\mathit{normalized}}$ with the phase shift of $\pi/2$ and the green one is $1/3 f_{\mathit{normalized}}$ with $\pi/3$. 
+Fig.~\ref{normalized_profile} shows an example of a normalized and several actual frequency modulation profiles and the corresponding phase shift profiles. A sinusoidal modulation is used as an example, which is best for the beam stability. For more details about the frequency modulation profiles, please see Chap. ~\ref{realization}. The magenta profile is the normalized profile $f_{normalized}$ with the phase shift of $\pi$. The blue one is $1/2 f_{\mathit{normalized}}$ with the phase shift of $\pi/2$ and the green one is $1/3 f_{\mathit{normalized}}$ with $\pi/3$. 
 
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{normalized_profile.png}
-   \caption{Normalized frequency and phase modulation profile and the actual profiles}
+   \caption{Example of normalized frequency and phase modulation profiles and the actual profiles.}
    \label{normalized_profile}
 \end{figure}  
 
 %Fig.~\ref{PSM} shows the integration of the Phase Shift Module (PSM) into the B2B source SCU. 
-The B2B source SCU sends the required phase shift to the \gls{PSM}, which controls the phase shift of the phase measurement signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed by the LLRF system to all the Group DDS of the accelerator. The Group DDS signals are routed to different cavity systems by a Switch Matrix to realize the phase shift of all cavities on the accelerator. For more details about the implementation and realization of the PSM module, please see ``Development of the LLRF system for a deterministic Bunch-to-Bucket transfer for FAIR`` ~\cite{ferrand_development_nodate}.
+The B2B source SCU sends the required phase shift to the Phase Shift Module (\gls{PSM}), which controls the phase shift of the phase measurement signal of Group DDS by means of either the frequency modulation (Fig.~\ref{normalized_profile} (a)) or the phase modulation (Fig.~\ref{normalized_profile} (b)). The required phase shift is distributed by the LLRF system to all the Group DDS of the accelerator. The Group DDS signals are routed to different cavity systems by a switch matrix to realize the phase shift of all cavities on the accelerator. For more details about the implementation and realization of the PSM module, please see ~\cite{ferrand_development_nodate}.
 %  \begin{figure}[!htb]
 %   \centering   
 %   \includegraphics*[width=150mm]{PSM.png}
@@ -464,7 +464,7 @@ The B2B source SCU sends the required phase shift to the \gls{PSM}, which contro
 %   \label{PSM}
 %\end{figure}                     
 
-A particular case of the B2B synchronization occurs, when the target accelerator is empty, i.e. it does not capture any bunch yet, the phase shift can be done for the target accelerator without adiabatical consideration (e.g. the phase jump is possible). In this case, the B2B source SCU sends the timing frame TGM\_PHASE\_JUMP to the B2B target SCU, which contains the required phase shift. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS with the synchronization frequency of the target accelerator.
+A particular case of the B2B synchronization occurs, when the target accelerator is empty, i.e. it does not capture any bunch yet, the phase shift can be done for the target accelerator without any adiabatical consideration (e.g. the phase jump is possible). In this case, the B2B source SCU sends the timing frame TGM\_PHASE\_JUMP to the B2B target SCU, which contains the required phase shift. After the B2B target SCU receives the timing frame, it sends the value to the PSM for the phase jump of the Group DDS with the synchronization frequency of the target accelerator.
 
 \subsubsection{Rf Synchronization with the Frequency Beating Method}
 

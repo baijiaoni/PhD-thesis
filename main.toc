@@ -1,7 +1,7 @@
 \contentsline {chapter}{Abstract}{i}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Bunch-to-Bucket Transfer worldwide}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objectives, Contribution and Structure of the Dissertation}{5}{section.1.2}
+\contentsline {section}{\numberline {1.2}Objectives, Contribution and Structure of the Dissertation}{6}{section.1.2}
 \contentsline {chapter}{\numberline {2}Theoretical Background}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Bunch and Bucket}{8}{section.2.1}
 \contentsline {section}{\numberline {2.2}Phase Difference}{14}{section.2.2}
@@ -12,113 +12,113 @@
 \contentsline {subsection}{\numberline {2.3.1}Phase Shift Method}{21}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Frequency Beating Method}{24}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Synchronization of Extraction and Injection Kicker Magnets}{26}{section.2.4}
-\contentsline {chapter}{\numberline {3}Technical Basis for the FAIR B2B Transfer System}{30}{chapter.3}
-\contentsline {section}{\numberline {3.1}FAIR Control System}{30}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Bunch Phase Timing System}{30}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}General Machine Timing System}{31}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Settings Management}{32}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}FESA}{32}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Low-Level RF System}{32}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Local Cavity Synchronization}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Longitudinal Feedback System}{34}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Machine Protection System}{35}{section.3.3}
-\contentsline {chapter}{\numberline {4}Concept of the FAIR B2B Transfer System}{36}{chapter.4}
-\contentsline {section}{\numberline {4.1}Basic Idea}{36}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Phase Alignment}{36}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Trigger of Extraction and Injection Kickers}{38}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Bucket Indication Signal}{39}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Extraction and Injection Kicker Delay Compensation}{40}{subsubsection.4.1.2.2}
-\contentsline {section}{\numberline {4.2}Basic Procedure}{41}{section.4.2}
-\contentsline {section}{\numberline {4.3}Realization}{42}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Phase Measurement and Corresponding Timestamp of Each Rf System}{45}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Measurement of Actual Phase Values of Each Rf System}{45}{subsubsection.4.3.1.1}
-\contentsline {subsubsection}{\numberline {4.3.1.2}Phase Extrapolation of Each Rf System}{46}{subsubsection.4.3.1.2}
-\contentsline {subsubsection}{\numberline {4.3.1.3}Timestamp of the Extrapolated Phase}{47}{subsubsection.4.3.1.3}
-\contentsline {subsection}{\numberline {4.3.2}Exchange of Measured Data}{48}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Rf Synchronization}{49}{subsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.1}Rf Synchronization with the Phase Shift Method}{50}{subsubsection.4.3.3.1}
+\contentsline {chapter}{\numberline {3}Technical Basis for the FAIR B2B Transfer System}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}FAIR Control System}{29}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Bunch Phase Timing System}{29}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}General Machine Timing System}{30}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Settings Management}{31}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}FESA}{31}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Low-Level RF System}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Local Cavity Synchronization}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Longitudinal Feedback System}{33}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Machine Protection System}{34}{section.3.3}
+\contentsline {chapter}{\numberline {4}Concept of the FAIR B2B Transfer System}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Basic Idea}{35}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Phase Alignment}{35}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Trigger of Extraction and Injection Kickers}{37}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Bucket Indication Signal}{38}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}Extraction and Injection Kicker Delay Compensation}{39}{subsubsection.4.1.2.2}
+\contentsline {section}{\numberline {4.2}Basic Procedure}{40}{section.4.2}
+\contentsline {section}{\numberline {4.3}Realization}{41}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Phase Measurement and Corresponding Timestamp of Each Rf System}{44}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Measurement of Actual Phase Values of Each Rf System}{44}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Phase Extrapolation of Each RF System}{45}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Timestamp of the Extrapolated Phase}{46}{subsubsection.4.3.1.3}
+\contentsline {subsection}{\numberline {4.3.2}Exchange of Measured Data}{47}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Rf Synchronization}{48}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}Rf Synchronization with the Phase Shift Method}{48}{subsubsection.4.3.3.1}
 \contentsline {subsubsection}{\numberline {4.3.3.2}Rf Synchronization with the Frequency Beating Method}{50}{subsubsection.4.3.3.2}
-\contentsline {subsection}{\numberline {4.3.4}Coarse Synchronization}{51}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Bucket Label}{53}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Bucket Label for the Normal Extraction and Injection}{54}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Maximum Bunch Spacing Label for the Emergency Extraction}{54}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}Fine Synchronization of Extraction and Injection Kickers}{56}{subsection.4.3.8}
-\contentsline {subsection}{\numberline {4.3.9}B2B Transfer Status Check}{57}{subsection.4.3.9}
-\contentsline {section}{\numberline {4.4}Data Flow}{57}{section.4.4}
-\contentsline {section}{\numberline {4.5}Comparison between the FAIR B2B Transfer System and Current B2B Transfer}{61}{section.4.5}
-\contentsline {chapter}{\numberline {5}Realization and Systematic Investigation of the FAIR B2B Transfer System}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Beam Dynamic Analysis of two Synchronization Methods for the B2B Transfer from SIS18 to SIS100}{63}{section.5.1}
+\contentsline {subsection}{\numberline {4.3.4}Coarse Synchronization}{50}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Bucket Label}{52}{subsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.5.1}Bucket Label for the Normal Extraction and Injection}{53}{subsubsection.4.3.5.1}
+\contentsline {subsubsection}{\numberline {4.3.5.2}Maximum Bunch Spacing Label for the Emergency Extraction}{53}{subsubsection.4.3.5.2}
+\contentsline {subsection}{\numberline {4.3.6}Fine Synchronization of Extraction and Injection Kickers}{55}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}B2B Transfer Status Check}{56}{subsection.4.3.7}
+\contentsline {section}{\numberline {4.4}Data Flow}{56}{section.4.4}
+\contentsline {section}{\numberline {4.5}Comparison between the FAIR B2B Transfer System and Current B2B Transfer}{60}{section.4.5}
+\contentsline {chapter}{\numberline {5}Realization and Systematic Investigation of the FAIR B2B Transfer System}{62}{chapter.5}
+\contentsline {section}{\numberline {5.1}Beam Dynamic Analysis of two Synchronization Methods for the B2B Transfer from SIS18 to SIS100}{62}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Beam Dynamics of the Phase Shift Method for $U^\mathit {28+}$}{64}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}Longitudinal Dynamic Analysis}{68}{subsubsection.5.1.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Transverse Dynamics Analysis }{73}{subsubsection.5.1.1.2}
-\contentsline {subsection}{\numberline {5.1.2}Beam Dynamics of the Frequency Beating Method for $U^\mathit {28+}$}{73}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}Longitudinal Dynamics Analysis}{73}{subsubsection.5.1.2.1}
-\contentsline {subsection}{\numberline {5.1.3}Beam Dynamics of the Phase Shift Method for $H^+$}{73}{subsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.3.1}Longitudinal Dynamics Analysis}{74}{subsubsection.5.1.3.1}
-\contentsline {subsubsection}{\numberline {5.1.3.2}Transverse Dynamics Analysis}{74}{subsubsection.5.1.3.2}
-\contentsline {subsection}{\numberline {5.1.4}Beam Dynamics of the Frequency Beating Method for $H^+$}{75}{subsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.4.1}Longitudinal Dynamics Analysis}{75}{subsubsection.5.1.4.1}
-\contentsline {section}{\numberline {5.2}GMT Systematic Investigation}{75}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Calculation of the Start of the Synchronization Window}{75}{subsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.1.1}Uncertainty of the Phase Alignment}{76}{subsubsection.5.2.1.1}
-\contentsline {subsubsection}{\numberline {5.2.1.2}Uncertainty of the Start of the Synchronization Window}{80}{subsubsection.5.2.1.2}
-\contentsline {subsubsection}{\numberline {5.2.1.3}Requirement of the Accuracy of the Start of the Synchronization Window}{81}{subsubsection.5.2.1.3}
-\contentsline {subsection}{\numberline {5.2.2}Characterization of the WR Network for the B2B Transfer}{82}{subsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.1}Traffic on the WR Network}{83}{subsubsection.5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Frame Loss of the WR Network for the B2B Transfer}{84}{subsubsection.5.2.2.2}
-\contentsline {subsubsection}{\numberline {5.2.2.3}WR Network Test Setup}{85}{subsubsection.5.2.2.3}
-\contentsline {subsubsection}{\numberline {5.2.2.4}Measurements}{88}{subsubsection.5.2.2.4}
-\contentsline {subsubsection}{\numberline {5.2.2.5}Measurements Result}{90}{subsubsection.5.2.2.5}
-\contentsline {subsubsection}{\numberline {5.2.2.6}Result Discussion}{90}{subsubsection.5.2.2.6}
-\contentsline {subsubsection}{\numberline {5.2.2.7}Conclusion of the Network Measurements}{91}{subsubsection.5.2.2.7}
-\contentsline {subsection}{\numberline {5.2.3}Flowchart of the system for SCUs}{92}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Time Constraints}{96}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Kicker Systematic Investigation}{98}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Simultaneous Trigger for Extraction Kicker Magnets in a Common SIS18 Tank}{98}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}A Fixed Trigger Delay between Extraction Kicker Magnets in the SIS18 $1^{st}$ and $2^{nd}$ Tanks}{100}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Simultaneous Trigger for SIS100 Injection Kicker Magnets}{102}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}A Test Setup for Timing Aspects}{104}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Test Setup}{104}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Comparison between the Test Setup and the Final Setup}{106}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Procedure}{106}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Functional Test Result}{109}{subsection.5.4.4}
-\contentsline {subsection}{\numberline {5.4.5}Measurement Result Discussion}{110}{subsection.5.4.5}
-\contentsline {chapter}{\numberline {6}Application of the FAIR B2B Transfer System to FAIR Accelerators}{112}{chapter.6}
-\contentsline {section}{\numberline {6.1}Circumference Ratio is an Integer}{113}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}$U^{28+}$ B2B Transfer from SIS18 to SIS100}{115}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}$H^{+}$ B2B Transfer from SIS18 to SIS100}{115}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Circumference Ratio is close to an Integer}{117}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}h=4 B2B Transfer from SIS18 to ESR}{117}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}h=1 B2B Transfer from SIS18 to ESR}{119}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}B2B transfer from ESR to CRYRING}{119}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Circumference Ratio is far away from an Integer}{121}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}$H^{+}$ B2B Transfer from SIS100 to CR}{122}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}RIB B2B Transfer from SIS100 to CR}{123}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}B2B Transfer from CR to HESR}{123}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}RIB B2B Transfer from SIS18 to ESR via the FRS}{124}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Summary}{126}{section.6.4}
-\contentsline {chapter}{Conclusion and Outlook}{130}{chapter*.106}
-\contentsline {chapter}{Zusammenfassung}{134}{chapter*.107}
-\contentsline {chapter}{Glossary}{139}{section*.109}
-\contentsline {chapter}{Abbreviations}{143}{section*.111}
-\contentsline {chapter}{Symbols}{147}{section*.113}
-\contentsline {chapter}{\numberline {A}FAIR B2B Transfer Related Timing Frames}{153}{appendix.A}
-\contentsline {chapter}{\numberline {B}Timing Frames Transfer for the FAIR B2B Transfer System}{155}{appendix.B}
-\contentsline {chapter}{\numberline {C}Parameters of FAIR B2B Transfer Use Cases}{157}{appendix.C}
-\contentsline {section}{\numberline {C.1}Parameters of the B2B Transfer from SIS18 to SIS100}{157}{section.C.1}
-\contentsline {section}{\numberline {C.2}Parameters of the B2B Transfer from SIS18 to ESR}{158}{section.C.2}
-\contentsline {section}{\numberline {C.3}Parameters of the B2B Transfer from SIS18 to ESR via the FRS}{159}{section.C.3}
-\contentsline {section}{\numberline {C.4}Parameters of the B2B Transfer from ESR to CRYRING}{160}{section.C.4}
-\contentsline {section}{\numberline {C.5}Parameters of the B2B Transfer from CR to HESR}{161}{section.C.5}
-\contentsline {section}{\numberline {C.6}Parameters of the B2B Transfer from SIS100 to CR}{162}{section.C.6}
-\contentsline {chapter}{\numberline {D}Parameters of the FAIR B2B Transfer System from Settings Management}{163}{appendix.D}
-\contentsline {chapter}{\numberline {E}Parameters of FAIR Kicker Magnets}{165}{appendix.E}
-\contentsline {chapter}{\numberline {F}Configuration for the Test Setup}{166}{appendix.F}
-\contentsline {section}{\numberline {F.1}Configuration of the B2B source SCU}{166}{section.F.1}
-\contentsline {section}{\numberline {F.2}Configuration of the B2B target SCU}{166}{section.F.2}
-\contentsline {section}{\numberline {F.3}Configuration of the Trigger SCU}{167}{section.F.3}
-\contentsline {section}{\numberline {F.4}Configuration of the packETH}{167}{section.F.4}
-\contentsline {chapter}{Bibliography}{167}{figure.caption.119}
-\contentsline {chapter}{List of Figures}{167}{figure.caption.119}
-\contentsline {chapter}{List of Tables}{170}{appendix*.120}
-\contentsline {chapter}{Publications}{173}{appendix*.121}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Longitudinal Dynamic Analysis}{67}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Transverse Dynamics Analysis }{72}{subsubsection.5.1.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Beam Dynamics of the Frequency Beating Method for $U^\mathit {28+}$}{72}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Longitudinal Dynamics Analysis}{72}{subsubsection.5.1.2.1}
+\contentsline {subsection}{\numberline {5.1.3}Beam Dynamics of the Phase Shift Method for $H^+$}{72}{subsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Longitudinal Dynamics Analysis}{73}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {5.1.3.2}Transverse Dynamics Analysis}{73}{subsubsection.5.1.3.2}
+\contentsline {subsection}{\numberline {5.1.4}Beam Dynamics of the Frequency Beating Method for $H^+$}{74}{subsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.4.1}Longitudinal Dynamics Analysis}{74}{subsubsection.5.1.4.1}
+\contentsline {section}{\numberline {5.2}GMT Systematic Investigation}{74}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Calculation of the Start of the Synchronization Window}{74}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Uncertainty of the Phase Alignment}{75}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Uncertainty of the Start of the Synchronization Window}{79}{subsubsection.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.1.3}Requirement of the Accuracy of the Start of the Synchronization Window}{80}{subsubsection.5.2.1.3}
+\contentsline {subsection}{\numberline {5.2.2}Characterization of the WR Network for the B2B Transfer}{81}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Traffic on the WR Network}{82}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Frame Loss of the WR Network for the B2B Transfer}{83}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}WR Network Test Setup}{84}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Measurements}{87}{subsubsection.5.2.2.4}
+\contentsline {subsubsection}{\numberline {5.2.2.5}Measurements Result}{89}{subsubsection.5.2.2.5}
+\contentsline {subsubsection}{\numberline {5.2.2.6}Result Discussion}{89}{subsubsection.5.2.2.6}
+\contentsline {subsubsection}{\numberline {5.2.2.7}Conclusion of the Network Measurements}{90}{subsubsection.5.2.2.7}
+\contentsline {subsection}{\numberline {5.2.3}Flowchart of the system for SCUs}{91}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Time Constraints}{95}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Kicker Systematic Investigation}{97}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Simultaneous Trigger for Extraction Kicker Magnets in a Common SIS18 Tank}{97}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}A Fixed Trigger Delay between Extraction Kicker Magnets in the SIS18 $1^{st}$ and $2^{nd}$ Tanks}{99}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Simultaneous Trigger for SIS100 Injection Kicker Magnets}{101}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}A Test Setup for Timing Aspects}{103}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Test Setup}{103}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Comparison between the Test Setup and the Final Setup}{105}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Procedure}{105}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Functional Test Result}{108}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}Measurement Result Discussion}{109}{subsection.5.4.5}
+\contentsline {chapter}{\numberline {6}Application of the FAIR B2B Transfer System to FAIR Accelerators}{111}{chapter.6}
+\contentsline {section}{\numberline {6.1}Circumference Ratio is an Integer}{112}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}$U^{28+}$ B2B Transfer from SIS18 to SIS100}{114}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}$H^{+}$ B2B Transfer from SIS18 to SIS100}{114}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Circumference Ratio is close to an Integer}{116}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}h=4 B2B Transfer from SIS18 to ESR}{116}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}h=1 B2B Transfer from SIS18 to ESR}{118}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}B2B transfer from ESR to CRYRING}{118}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Circumference Ratio is far away from an Integer}{120}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}$H^{+}$ B2B Transfer from SIS100 to CR}{121}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}RIB B2B Transfer from SIS100 to CR}{122}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}B2B Transfer from CR to HESR}{122}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}RIB B2B Transfer from SIS18 to ESR via the FRS}{123}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}Summary}{125}{section.6.4}
+\contentsline {chapter}{Conclusion and Outlook}{129}{chapter*.106}
+\contentsline {chapter}{Zusammenfassung}{134}{chapter*.108}
+\contentsline {chapter}{Terminology}{140}{section*.111}
+\contentsline {chapter}{Abbreviations}{144}{section*.113}
+\contentsline {chapter}{Symbols}{148}{section*.115}
+\contentsline {chapter}{\numberline {A}FAIR B2B Transfer Related Timing Frames}{154}{appendix.A}
+\contentsline {chapter}{\numberline {B}Timing Frames Transfer for the FAIR B2B Transfer System}{156}{appendix.B}
+\contentsline {chapter}{\numberline {C}Parameters of FAIR B2B Transfer Use Cases}{158}{appendix.C}
+\contentsline {section}{\numberline {C.1}Parameters of the B2B Transfer from SIS18 to SIS100}{158}{section.C.1}
+\contentsline {section}{\numberline {C.2}Parameters of the B2B Transfer from SIS18 to ESR}{159}{section.C.2}
+\contentsline {section}{\numberline {C.3}Parameters of the B2B Transfer from SIS18 to ESR via the FRS}{160}{section.C.3}
+\contentsline {section}{\numberline {C.4}Parameters of the B2B Transfer from ESR to CRYRING}{161}{section.C.4}
+\contentsline {section}{\numberline {C.5}Parameters of the B2B Transfer from CR to HESR}{162}{section.C.5}
+\contentsline {section}{\numberline {C.6}Parameters of the B2B Transfer from SIS100 to CR}{163}{section.C.6}
+\contentsline {chapter}{\numberline {D}Parameters of the FAIR B2B Transfer System from Settings Management}{164}{appendix.D}
+\contentsline {chapter}{\numberline {E}Parameters of FAIR Kicker Magnets}{166}{appendix.E}
+\contentsline {chapter}{\numberline {F}Configuration for the Test Setup}{167}{appendix.F}
+\contentsline {section}{\numberline {F.1}Configuration of the B2B source SCU}{167}{section.F.1}
+\contentsline {section}{\numberline {F.2}Configuration of the B2B target SCU}{167}{section.F.2}
+\contentsline {section}{\numberline {F.3}Configuration of the Trigger SCU}{168}{section.F.3}
+\contentsline {section}{\numberline {F.4}Configuration of the packETH}{168}{section.F.4}
+\contentsline {chapter}{Bibliography}{168}{figure.caption.121}
+\contentsline {chapter}{List of Figures}{168}{figure.caption.121}
+\contentsline {chapter}{List of Tables}{171}{appendix*.122}
+\contentsline {chapter}{Publications}{175}{appendix*.123}
