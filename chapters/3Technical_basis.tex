@@ -11,34 +11,7 @@ The GMT system is contained in the equipment layer. It synchronizes all Front En
 
 A timing message is sent across the WR network, so it must be contained in the Ethernet frame. An Ethernet frame including one timing message has a length of \SI{110}{bytes}, which is called ``timing frame`` in this dissertation. For more details about the B2B transfer related timing frames, please see Appendix ~\ref{B2B_frame}. A virtual LAN (VLAN) \footnote{\url{https://en.wikipedia.org/wiki/Virtual_LAN}} is a group of FECs in the WR network, which are logically segmented by the function or application, without regard to the physical locations of the FECs. All FECs in the WR network are assigned to the DM VLAN, within which the DM forwards broadcast timing frames downwards to all FECs. For a specific VLAN, a broadcast frame is sent from one FEC to all other FECs within the VLAN and a unicast frame is sent from one FEC to another FEC.
 
-%Fig. ~\ref{Timing_message} shows the format of the timing message . 
-%\begin{figure}[H]
-%   \centering   
-%   \includegraphics*[width=150mm]{Timing_message.jpg}
-%   \caption{The format of the timing message.}{~\cite{beck_timing_2015}}
-%   \label{Timing_message}
-%\end{figure}
-%The timing message contains 
-%\begin{itemize}
-%	\item WB Addr (\SI{32}{bit}): Wishbone address to which on the node the data shall be written.
-%	\item Payload (\SI{256}{bit})
-%		\begin{itemize}
-%			\item EventID (\SI{64}{bit}): Index of the schedule step.
-%		\begin{itemize}
-%			\item Format ID (FID) (\SI{4}{bit}): Serves to distinguish between different formats of the timing message.
-%			\item Group ID (GID)(\SI{12}{bit}): Identifies a group of equipment, such as a synchrotron or a transfer line.
-%			\item Event No (EVTNO) (\SI{12}{bit}): Specifies a command to be executed.
-%			\item Sequence ID (SID) (\SI{12}{bit}): A sequence is analogous to the concept of a ``virtual accelerator``. 
-%			\item Beam Process ID (BPID) (\SI{14}{bit}): A beam process defines a process which must not be interrupted, e.g. a acceleration ramp. 
-%			\item Reserved (\SI{10}{bit})
-%		\end{itemize}
-%			\item Param (\SI{64}{bit}): An additional parameter with event specific meaning.
-%			\item TEF (\SI{32}{bit}): Timing Extension Field containing fine delay information and other data.
-%			\item Reserved (\SI{32}{bit}): 
-%			\item Timestamp (\SI{64}{bit}): In units of \SI{8}{\ns} clock cycles since 1 January 1970.
-%		\end{itemize}
-%\end{itemize}
-%A timing message is sent across the WR network, so it must be contained in the Ethernet frame. An Ethernet frame including one timing message has a length of \SI{110}{byte}, which is called the timing frame in this document.
+
 \subsection{Settings Management}
 The \gls{SM} is based on a physics model for accelerator optics, parameter space and overall relations between parameters and between accelerators. It supports off-line generation of accelerator settings, sending these settings to all involved devices, and programming the schedule for the GMT system ~\cite{huhmann_fair_2013}. The core component of the SM is the LSA framework. A standardized  LSA-\gls{API} allows accessing data in a common way as basis for generic client applications for all accelerators. Using the LSA-API, applications can coherently modify settings ~\cite{huhmann_fair_2013}. E.g. the LSA generates timing constraints (e.g. the ramp curve) as well as the equipment's data settings (e.g. the current) for all devices derived from physics parameters (e.g. the beam energy). For FAIR, the LSA is extended to model the overall schedule of all accelerators. Beams are described as ``Beam Production Chains`` to allow a description from the beam source to the beam target for settings organization and data correlation.
 
@@ -46,20 +19,21 @@ The \gls{SM} is based on a physics model for accelerator optics, parameter space
 \subsection{FESA}
 The \gls{FESA} is a framework used to fully integrate the large amount of front-end equipment into the accelerator control system. FESA was developed by CERN and has already been implemented into the \gls{CERN} control system. Now it is developed further in collaboration with GSI for the FAIR project. For the FAIR project, the necessary interaction with the FECs is realized by the FESA. For a specific type of equipment, a FESA implementation accesses to the control interface of the equipment. The FESA class models the equipment as device, so the FESA output is called device class. The \gls{FEC} use the FESA to implement generic and equipment specific functions in form of the device classes. The FESA provides JAVA based graphical user interfaces (GUI) to design, deploy, instantiate and test the device classes. The interaction with the equipment is synchronized with the GMT system ~\cite{hoffmann_fesafront-end_2008}. 
 
-%For time multiplexed operation of the accelerators, the FESA supports defining multiplexed properties. Before an accelerator cycle is started, the setting properties of FESA classes are pre-supplied by LSA from SM for all scheduled beams with specific settings accordingly. At run time, FESA real time software actions are triggered by timing message, the actual beam specific data is then selected based on information carried by the timing message and send to the equipment. 
+
 
 \section{Low-Level RF System}
 \label{sec:LLRF}
 The \gls{LLRF} system will be used in the existing synchrotron SIS18 and \gls{ESR}, as well as in the FAIR synchrotron SIS100, the \gls{CR} and the HESR. It supports fast ramp rates and large frequency span for the acceleration of a variety of ion species, It supports different rf manipulations, including the operation at different harmonic numbers, the barrier bucket generation, the bunch compression and the longitudinal feedback. ~\cite{klingbeil_new_2011}. 
 
-\begin{figure}[!htb]
+
+Each rf supply room has a reference rf signal distribution system shown in Fig.~\ref{ref_rf_dis}. The reference rf signals in different supply rooms are synchronized by the BuTiS. The BuTiS 200MHz C2 and 100kHz T0 clock signals are generated by BuTiS receivers in different supply rooms in phase. In Fig.~\ref{ref_rf_dis}, a number of Group Direct Digital Synthesizer (DDS) units are located in each supply room, which are synchronized by the BuTiS local reference. The Group DDS signals can be routed to the different cavity systems by a switch matrix. All cavities in a circular accelerator could be provided with the same Group DDS signal. The cavities at different harmonic numbers could be realized by using Group DDS signals with different harmonic numbers and by adjusting the harmonic number at the Cavity DDS accordingly. The Group DDS concept allows to synchronize a variety of cavities in a very flexible way ~\cite{klingbeil_new_2011}. 
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=150mm]{ref_rf_dis.png}
    \caption{Reference rf signal distribution system}
-   \caption*{\textsl{\small{Adapted from ``New Digital Low-Level RF System for heavy-ion Synchrotrons`` by H. Klingbeil et al., 2011, Physical Review Special Topics - Accelerators and Beams, 14(10), 2011. ISSN 1098-4402. doi: 10.1103/PhysRevSTAB.14.102802. Adapted with permission.}}}
+   \caption*{\textsl{\small{Adapted from ``New Digital Low-Level RF System for heavy-ion Synchrotrons`` by H. Klingbeil et al., 2011, Physical Review Special Topics - Accelerators and Beams, 14(10), 2011. ISSN 1098-4402. doi: 10.1103/PhysRevSTAB.14.102802.}}}
    \label{ref_rf_dis}
 \end{figure}
-Each rf supply room has a reference rf signal distribution system shown in Fig.~\ref{ref_rf_dis}. The reference rf signals in different supply rooms are synchronized by the BuTiS. The BuTiS 200MHz C2 and 100kHz T0 clock signals are generated by BuTiS receivers in different supply rooms in phase. In Fig.~\ref{ref_rf_dis}, a number of Group Direct Digital Synthesizer (DDS) units are located in each supply room, which are synchronized by the BuTiS local reference. The Group DDS signals can be routed to the different cavity systems by a switch matrix. All cavities in a circular accelerator could be provided with the same Group DDS signal. The cavities at different harmonic numbers could be realized by using Group DDS signals with different harmonic numbers and by adjusting the harmonic number at the Cavity DDS accordingly. The Group DDS concept allows to synchronize a variety of cavities in a very flexible way ~\cite{klingbeil_new_2011}. 
 
 All the cavities of the SIS18 are driven from one supply room. The SIS100 cavities will be gathered in five acceleration sections, each of them is driven by a dedicated supply room. 
 
@@ -69,7 +43,7 @@ All rf cavities are driven by one of reference rf signals, which are generated i
    \centering   
    \includegraphics*[width=110mm]{local_cavity_syn.png}
    \caption{Local Cavity Synchronization}
-   \caption*{\textsl{\small{Adapted from ``New Digital Low-Level RF System for heavy-ion Synchrotrons`` by H. Klingbeil et al., 2011, Physical Review Special Topics - Accelerators and Beams, 14(10), 2011. ISSN 1098-4402. doi: 10.1103/PhysRevSTAB.14.102802. Adapted with permission.}}}
+   \caption*{\textsl{\small{Adapted from ``New Digital Low-Level RF System for heavy-ion Synchrotrons`` by H. Klingbeil et al., 2011, Physical Review Special Topics - Accelerators and Beams, 14(10), 2011. ISSN 1098-4402. doi: 10.1103/PhysRevSTAB.14.102802.}}}
    \label{local_cavity_syn}
 \end{figure}
 \subsection{Longitudinal Feedback System}
@@ -82,37 +56,6 @@ The SIS100 emergency dump signal indicates that the beam should be transferred t
 
 
 
-%The phase difference between two RF systems of the source and target synchrotrons is achieved based on a campus distributed reference signal with picosecond precision, which is synchronized with BuTiS C2 and T0. This campus distributed reference signal is called ``synchronization reference signal`` in this dissertation. The phase advance between the synchronization reference signal $\psi_{ref}$ and the RF system $\psi$ is measured and extrapolated at the source and target synchrotrons, see eq. ~\ref{diff1} and eq. ~\ref{diff2}. The extrapolation is synchronized to BuTiS C2 and T0. 
-%\begin{equation}
-%\Delta \varphi1= \psi1-\psi_{ref} \label{diff1}
-%\end{equation}
-%\begin{equation}
-%\Delta \varphi2= \psi2-\psi_{ref} \label{diff2}
-%\end{equation}
-%The extrapolated phase advance of one synchrotron is transferred to another synchrotron. The difference between the extrapolated phase advance of the source synchrotron and that of the target synchrotron is the phase difference between two RF systems $\psi1-\psi2$, see eq. ~\ref{diff3}.
-%\begin{equation}
-%\psi1-\psi2=\Delta \varphi1-\Delta \varphi2 \label{diff3}
-%\end{equation}
-%The existing B2B transfer system for CERN measures the phase difference between two ring accelerators by the direct cable transfer of the rf signal of one synchrotron to another synchrotron ~\cite{ferrand_synchronization_2015}. The phase measurement between the two rf systems of the B2B transfer system for FAIR is more stable, which is less influenced by the external environment, e.g. temperature influence on the direct cable connection. It does not constraint by the distance between two ring accelerators.
 
-
-
-  
-
-%\section{$U^{28+}$ beam from SIS18 to SIS100}
-%
-%In this document, we use $U^{28+}$ B2B transfer from SIS18 to SIS100 as an example. So the supercycle of $U^{28+}$ beam of SIS18 and stacking of $U^{28+}$ beam of SIS100 are introduced in this section. 
-%\begin{figure}[!htb]
-%   \centering   
-%   \includegraphics*[width=150mm]{SIS18-100-U28.jpg}
-%   \caption{$U^{28+}$ beam from SIS18 to SIS100}
-%   \label{SIS18-100-U28}
-%\end{figure}
-%
-%In Fig.~\ref{ref_rf_dis}, SIS100 is operated at harmonic number 10, it holds 10 buckets in total, indicated by the row of ellipses in the lower part of the figure. SIS18 is operated at harmonic number 2. The beam is accumulated using four consecutive injections of two bunches each from SIS18 into different buckets. These four consecutive cycles are called super cycle. When the injection from SIS18 is completed, 8 neighbour buckets in SIS100 are filled. The bucket pattern is defined as the rules of the bucket filling. After that the complete beam of SIS100 is compressed in a single bunch at harmonic number 2.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\bibliography{main}
-%\bibliographystyle{plain}
 
 

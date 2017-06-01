@@ -890,6 +890,10 @@ description={Universal Linear Accelerator at GSI},type=abbreslist
 name={FRS},
 description={Fragment Separator},type=abbreslist
 }
+\newglossaryentry{superFRS}{
+name={Super-FRS},
+description={Superconducting Fragment Separator},type=abbreslist
+}
 \newglossaryentry{PBHV}{
 name={PBHV},
 description={Primary Beam High Voltage},type=abbreslist
@@ -1023,6 +1027,10 @@ description={High Energy Storage Ring at GSI},type=abbreslist
 \newglossaryentry{LLRF}{
 name={LLRF},
 description={Low-level RF },type=abbreslist
+}
+\newglossaryentry{LM32}{
+name={LM32},
+description={LatticeMico32},type=abbreslist
 }
 \newglossaryentry{CSCO}{
 name={CSCO},
@@ -1554,7 +1562,9 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \clearpage
 \pagenumbering{gobble}
 \thispagestyle{empty}
-\chapter*{Acknowledgement}
+\chapter*{Acknowledgments}
+\markboth{Acknowledgments}{}
+\addcontentsline{toc}{chapter}{Acknowledgments}
 \input{chapters/Acknowledgement}
 \chapter*{Abstract}
 \pagenumbering{roman}
@@ -1562,6 +1572,8 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \input{chapters/Abstract}
 \selectlanguage{german}
 \chapter*{Kurzfassung}
+\markboth{Kurzfassung}{}
+\addcontentsline{toc}{chapter}{Kurzfassung}
 \input{chapters/Kurzfassung}
 \selectlanguage{english}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1639,18 +1651,18 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\chapter{Existing transfer system and the transfer system of the FAIR accelerators}
 %\input{chapters/6Existing}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\setcounter{table}{0}
+\renewcommand{\thetable}{\Roman{table}}
 \chapter*{Conclusion and Outlook}
 \markboth{Conclusion and Outlook}{}
 \addcontentsline{toc}{chapter}{Conclusion and Outlook}
-
-%\setcounter{table}{0}
-%\renewcommand{\thetable}{\Roman{table}}
 \input{chapters/7SummaryAusblick}
-\selectlanguage{german}
 
-%\setcounter{table}{0}
-%\renewcommand{\thetable}{\Roman{table}}
+
+\selectlanguage{german}
+\setcounter{table}{0}
+\renewcommand{\thetable}{\Roman{table}}
+\renewcommand{\tablename}{Tabelle}
 %\renewcaptionname{ngerman}{\listtablename}{Tabellen}
 \chapter*{Zusammenfassung}
 \markboth{Zusammenfassung}{}
@@ -1661,6 +1673,9 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 %\input{chapters/References}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{table}{0}
+\renewcommand{\thetable}{\Alph{chapter}.\arabic{table}}
+\renewcommand{\tablename}{Table}
 %\fancypagestyle{plain}{}
 \appendix
 \chapter*{Glossaries, Abbreviations and Symbols}
@@ -1721,9 +1736,10 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \cleardoublepage
 \pagestyle{empty}
 %\chapter*{Publications}
-\addcontentsline{toc}{chapter}{Publications}
+
 %\renewcommand\chaptername{Publications}
 \includepdf[pages=1,pagecommand={}]{chapters/publication.pdf}
+\addcontentsline{toc}{chapter}{Publications}
 %\hspace*{-4.5cm}\includegraphics{chapters/publication.pdf}
 
 
@@ -1731,6 +1747,7 @@ I would like to dedicate this dissertation to my dear parents,\\ loving husband 
 \pagestyle{empty}
 \includepdf[pages=-,pagecommand={}]{chapters/CV.pdf}
 %\includepdf{chapters/CV.pdf}
+
 
 \end{document}
 

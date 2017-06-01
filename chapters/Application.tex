@@ -18,14 +18,14 @@ For the FAIR B2B transfer system, both the phase shift and frequency beating met
 			\item The B2B transfer from the CR to the HESR
 		\end{itemize}
 \end{itemize}
-Besides, FAIR has many use cases of B2B transfers that the extraction and injection beam have different energy because of targets installed between two ring accelerators (e.g. the pbar target, the FRS and the Super FRS). Due to the energy loss at the target, the beam \gls{glos:rev_ratio} between the small and large accelerators is used instead of the circumference ratio between the large and small accelerators. The revolution frequency ratio takes the energy loss into consideration. For FAIR, there exists the following scenario.
+Besides, FAIR has many use cases of the B2B transfer that the extraction and injection beam have different energy because of targets installed between two ring accelerators (e.g. the pbar target, the FRS and the Super-FRS). Due to the energy loss at the target, the beam \gls{glos:rev_ratio} between the small and large accelerators is used instead of the circumference ratio between the large and small accelerators. The revolution frequency ratio takes the energy loss into consideration. For FAIR, there exists the following scenario.
 
 \begin{itemize}
 
  	\item The revolution frequency ratio between the small and large accelerators is far away from an integer.
 		\begin{itemize}
 			%\item The $H^{+}$ B2B transfer from the SIS100 to the CR via the pbar target
-			\item The B2B transfer from the SIS100 to the CR via the Super FRS
+			\item The B2B transfer from the SIS100 to the CR via the Super-FRS or the pbar target
 			\item The B2B transfer from the SIS18 to the ESR via the FRS
 		\end{itemize}
 \end{itemize}
@@ -48,7 +48,7 @@ Tab.~\ref{B2B_cases} lists all FAIR use cases of the B2B transfer. $m$, $n$ and 
  								  	  &$2-0.003$&&\tabincell{c}{h=1 B2B transfer\\ from the SIS18 to the ESR\\ \\}\\ \cline{2-4}				
 											&$2+0.003$ &&\tabincell{c}{B2B transfer \\from the ESR to the CRYRING} \\ \cline{1-4}	
   	\multirow{4}*{\tabincell{c}{$C^l/C^s=m/n+ \lambda$ \\ or \\ $f{\mathit{rev}}^{s}/f{\mathit{rev}}^{l}$\\$=m/n+ \lambda$\\far away from \\an integer\\ ($|\lambda|\le 0.05$)}}&\tabincell{c}{not \\applicable}&arbitrary&\tabincell{c}{$H^{+}$ B2B transfer \\from the SIS100 to the CR\\ via the pbar target} \\ \cline{2-4}
-&\tabincell{c}{not \\applicable}&arbitrary& \tabincell{c}{Rare isotope beams (\gls{RIB})\\ B2B transfer\\from the SIS100 to the CR \\ via the Super FRS}\\ \cline{2-4}
+&\tabincell{c}{not \\applicable}&arbitrary& \tabincell{c}{Rare isotope beams (\gls{RIB})\\ B2B transfer\\from the SIS100 to the CR \\ via the Super-FRS}\\ \cline{2-4}
 
 &$2\frac{3}{5}-0.003$& &\tabincell{c}{B2B transfer \\from the CR to the HESR }\\ \cline{2-4}
 
@@ -229,7 +229,7 @@ Oppositely,  if $f_{\mathit{syn}}^{s}<f_{\mathit{rev}}^{s}$, namely $\frac{Y}{\k
  
 %Here we assume $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}<f_{\mathit{rev}}^{s}$, if $\frac{f_{\mathit{rf}}^{s}}{(h^s_\mathit{rf}\cdot \kappa)/Y}\ge f_{\mathit{rev}}^{s}$, the bucket indication is with $f_{\mathit{rev}}^{s}$, the $h^s_\mathit{rf}\cdot \kappa)/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{s}$ is replaced by $f_{\mathit{rev}}^{s}$. We assume $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$, if $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the bucket indication is with $f_{\mathit{rev}}^{l}$ and the $h^l_\mathit{rf}/Y$ in Tab.~\ref{Cir ratio integer} is replaced by 1 and $f_{\mathit{rf}}^{l}$ is replaced by $f_{\mathit{rev}}^{l}$.
 
-%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$ (the large accelerator is the target), namly the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small accelerator. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$.
+%The formulas in Tab.~\ref{Sync_ratio_int} is based on the assumption that $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}<f_{\mathit{rev}}^{l}$ (the large accelerator is the target), namely the frequency for beating is smaller than the revolution frequency, so the period of the frequency for beating is long enough to indicate all buckets in one revolution period. If $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$, the period of the frequency for beating is shorter than the revolution period. Hence, the revolution period is used to indicated all buckets. So does for the small accelerator. The formulas in Tab.~\ref{Syn_rev_ratio_int} is with the assumption of $\frac{f_{\mathit{rf}}^{l}}{h^l_\mathit{rf}/Y}\ge f_{\mathit{rev}}^{l}$.
 
 %\begin{table}[!htb]
 %\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -291,9 +291,7 @@ The GCD of $h^{\mathit{SIS100}}_\mathit{rf}=10$ and $h^{\mathit{SIS18}}_\mathit{
 \begin{equation}
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}_\mathit{rf}}{h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa}= \frac{10}{2 \cdot 5}=\frac{10}{10}
 \end{equation}
-
-Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
-\begin{table}[!htb]
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 with the frequency beating method}
 \label{tab:U18to100}
@@ -310,6 +308,8 @@ Because the SIS100 is the large accelerator and the target, substituting $h^X_\m
     \end{tabular}
 \end{center}
 \end{table}
+Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $U^{28+}$ B2B transfer from the SIS18 to the SIS100 are obtained, see Tab.~\ref{tab:U18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+
 
 The goal time difference between the SIS18 and SIS100 rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}$, provided by the SM. The SIS100 revolution frequency works for the bucket indication. When the $1^{st}$ and $2^{nd}$ buckets are to be filled, $t_{pattern}=0$. When the $3^{rd}$ and $4^{th}$ buckets are to be filled, $t_{pattern}=T_{\mathit{rev}}^{\mathit{SIS18}}$. When the $5^{th}$ and $6^{th}$ buckets are to be filled, $t_{pattern}= 2 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. When the $7^{th}$ and $8^{th}$ buckets are to be filled, $t_{pattern}= 3 \cdot T_{\mathit{rev}}^{\mathit{SIS18}}$. Detailed parameters of the $U^{28+}$ B2B transfer from the SIS18 to the SIS100, please see Appendix \ref{sec:18to100}.
 
@@ -359,7 +359,7 @@ Four batches of $H^{+}$ at \SI{4}{GeV/\atomicmassunit} are injected into continu
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{SIS18}}}= \frac {h^{\mathit{SIS100}}_\mathit{rf}}{h^{\mathit{SIS18}}_\mathit{rf} \cdot \kappa}= \frac{10}{1 \cdot 5}=\frac{2}{1}
 \end{equation}
 
-Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 is obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
+Because the SIS100 is the large accelerator and the target, substituting $h^X_\mathit{rf}$, $\kappa$, $f_{\mathit{rf}}^{X}$, $f_{\mathit{rev}}^{X}$ and $Y$ into formulas in Tab.~\ref{Syn_rev_large}, the parameters related to the $H^{+}$ B2B transfer from the SIS18 to the SIS100 are obtained, see Tab.~\ref{tab:H18to100}. Here we assume that the SIS18 is detuned with \SI{200}{Hz} for the synchronization frequency $f_{\mathit{syn}}^{\mathit{SIS18}}$. 
 
 %\begin{table}[[!htb]
 \begin{table}[!htb]
@@ -518,12 +518,12 @@ Continuous two of four bunches are injected into two buckets of the injection or
 \begin{equation}
 \frac{C^l}{C^s}=\kappa + \lambda =2-0.003
 \end{equation}
-The GCD of $h^{\mathit{SIS18}}_\mathit{rf}=4$ and $h^{\mathit{ESR}}_\mathit{rf}\cdot \kappa=2\cdot 2=2$ is 4, namely $Y=4$. Substituting $h^{\mathit{SIS18}}_\mathit{rf}$, $h^{\mathit{ESR}}_\mathit{rf}$, $\kappa$ and $\lambda$ into eq.~\ref{ratio_close_int}, we get
+The GCD of $h^{\mathit{SIS18}}_\mathit{rf}=4$ and $h^{\mathit{ESR}}_\mathit{rf}\cdot \kappa=2\cdot 2=4$ is 4, namely $Y=4$. Substituting $h^{\mathit{SIS18}}_\mathit{rf}$, $h^{\mathit{ESR}}_\mathit{rf}$, $\kappa$ and $\lambda$ into eq.~\ref{ratio_close_int}, we get
 \begin{equation}
 \frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^{\mathit{SIS18}}_\mathit{rf}}{h^{\mathit{ESR}}_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {4}{2 \cdot(2-0.003)}
 \end{equation}
 
-The ESR is the small accelerator and the target and there exists $Y/\kappa>1$,so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
+The ESR is the small accelerator and the target and there exists $Y/\kappa>1$,so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (1) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=4 B2B transfer from the SIS18 to the ESR are obtained, see Tab.~\ref{tab:418tothe ESR}. Here we use the \SI{30}{MeV/\atomicmassunit} heavy ion B2B transfer as an example. 
 
 
 \begin{table}[!htb]
@@ -547,7 +547,7 @@ The ESR is the small accelerator and the target and there exists $Y/\kappa>1$,so
 
 Detailed parameters of the $h=4$ B2B transfer from the SIS18 to the ESR, please see Appendix \ref{sec:18toESR}.   
 %In the real operation, the ESR uses different methods, e.g. a barrier bucket or an unstable fixed point, to accumulate beam instead of normal bucket ~\cite{steck_demonstration_2011}.  Presently two general schemes of the particle accumulation are possible: moving or fixed barrier rf bucket ~\cite{smirnov_particle_2009}. In the scheme with moving barrier rf bucket, the bunch is injected in the longitudinal gap prepared by two barrier pulses. The injected beam becomes coasting after switching off the barrier voltages and merges with the previously stacked beam. The barrier voltages are switched on and moved away from each other to prepare the empty space for the next beam injection. In the fixed barrier bucket scheme, one prepares a stationary voltage distribution consisting of two barrier pulses of opposite sign. The resulting stretched rf potential separates the longitudinal phase space into a stable and an unstable region. After injection onto the unstable region (potential maximum), the particles circulate along all phases and cooling application leads to their capture in the stable region of the phase space (potential well). After some time of the beam cooling the unstable region is free for a next injection without losing of the stored beam. With the barrier bucket, the bunch should be injected into the longitudinal gap or the unstable region of the barrier bucket.
-The goal time difference between the SIS18 and ESR rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}-\frac{\theta}{2\pi}\frac{1}{f_\mathit{rf}^\mathit{ESR}}$, where $\theta$ depends on the accumulation method. E.g. $\theta=\pi$, when the unstable fixed point is used for the accumulation.
+The goal time difference between the SIS18 and ESR rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}-\frac{\theta}{2\pi}\frac{1}{f_\mathit{rf}^\mathit{ESR}}$, where $\theta$ depends on the accumulation method. For example $\theta=\pi$, when the unstable fixed point is used for the accumulation.
 
 %Put it to the next section!!!
 %When the heavy ion beam is transferred to a target, e.g. fragment separator (FRS), the energy of the RIB varies in a wide range. The slightly different frequencies are RIB energy dependent. Here we use an applied case as an example, the energy before the FRS is \SI{550}{MeV/\atomicmassunit} and after is \SI{400}{MeV/\atomicmassunit}. The different frequencies are   $\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{5}=\SI{223.891}{\kHz}$ and $\frac{f_{\mathit{rf}}^{\mathit{ESR}}}{9}=\SI{219.642}{\kHz}$ and the beating frequency is \SI{4.249}{\kHz}$. The length of the synchronization window is \SI{0.235}{\ms}$ and the mismatch between the bunch and bucket center is less than $\pm0.7^\circ$. For more details, please see Appendix \ref{sec:18tothe ESRviaFRS}. The 1/9 the ESR revolution frequency works for the bucket indication. After the synchronization, the phase difference between the 1/5 the SIS18 and 1/9 the ESR revolution frequency depends on the accumulation method. 
@@ -561,9 +561,6 @@ The GCD of $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}\
 \begin{equation}
 \frac {f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2-0.003)}
 \end{equation}
-
-The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=1 B2B transfer from the SIS18 to the ESR is obtained, see Tab.~\ref{tab:118tothe ESR}. Here we use the \SI{400}{MeV/\atomicmassunit} proton B2B transfer as an example. 
-
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the h=1 B2B transfer from the SIS18 to the ESR with the frequency beating method}
@@ -584,6 +581,10 @@ The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathi
 \end{center}
 \end{table}
 
+The ESR is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the h=1 B2B transfer from the SIS18 to the ESR are obtained, see Tab.~\ref{tab:118tothe ESR}. Here we use the \SI{400}{MeV/\atomicmassunit} proton B2B transfer as an example. 
+
+
+
 Detailed parameters of the $h=1$ B2B transfer from the SIS18 to the ESR, please see Appendix \ref{sec:18toESR}. The goal time difference between the SIS18 and ESR rf systems equals to $t_{v\_ext}+t_{v\_inj}+t_{TOF}-\frac{\theta}{2\pi}\frac{1}{f_\mathit{rf}^\mathit{ESR}}$, where $\theta$ depends on the accumulation method.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -597,7 +598,7 @@ The GCD of $h^{\mathit{ESR}}_\mathit{rf}=1$ and $h^{\mathit{CRYRING}}_\mathit{rf
 \frac {f_{\mathit{rf}}^{\mathit{ESR}}}{f_{\mathit{rf}}^{\mathit{CRYRING}}}= \frac{h^l_\mathit{rf}}{h^s_\mathit{rf} \cdot (\kappa+ \lambda)}=\frac {1}{1 \cdot(2+0.003)}
 \end{equation}
 
-The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the B2B transfer from the ESR to the CRYRING is obtained, see Tab.~\ref{tab:the ESRtothe CRYRING}. Here we use the \SI{30}{MeV/\atomicmassunit} proton B2B transfer as an example. 
+The CRYRING is the target and there exists $Y/\kappa<1$, so substituting $h^X_\mathit{rf}$, $\kappa$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio close to integer}, the parameters related to the B2B transfer from the ESR to the CRYRING are obtained, see Tab.~\ref{tab:the ESRtothe CRYRING}. Here we use the \SI{30}{MeV/\atomicmassunit} proton B2B transfer as an example. 
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -657,7 +658,7 @@ f_{\mathit{syn}}^{s}=\frac{f_{\mathit{rf}}^{s}}{h^s_\mathit{rf}m/Y}=\frac{Y}{m}f
 
 $Y$ is the GCD of $h^l_\mathit{rf}\cdot n$ and $h^s_\mathit{rf} \cdot m$.
 
-Two synchronization frequencies are beating automatically. When the large accelerator is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{l}$ and $f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{s}$. When $f_{\mathit{syn}}^{l}< f_{\mathit{rev}}^{l}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas related to the B2B transfer when the large accelerator is the target.
+Two synchronization frequencies are beating automatically. When the large accelerator is the target, the frequency of the bucket indication signal depends on the relation between $f_{\mathit{syn}}^{l}$ and $f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}\ge f_{\mathit{rev}}^{l}$, namely $\frac{Y}{n}\ge1$, $f_\mathit{bucket}=f_{\mathit{rev}}^{l}$. When $f_{\mathit{syn}}^{l}< f_{\mathit{rev}}^{l}$, $f_\mathit{bucket}=f_{\mathit{syn}}^{l}$. Tab.~\ref{Cir ratio far from integer large} shows the formulas related to the B2B transfer when the large accelerator is the target.
 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -743,8 +744,10 @@ The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=5\cdot5=25$ and $h^{\mathit{C
 \frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{5\cdot 5}{1 \cdot 24- 1 \cdot0.041\cdot 5}
 \end{equation}
 
-The CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRproton}.
+The CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/24<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR are obtained, see Tab.~\ref{tab:100tothe CRproton}.
 
+
+There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the CR), which is beyond the scope of this dissertation. Detailed parameters of the $H^{+}$ B2B transfer from the SIS100 to the CR, please see Appendix \ref{100toCR}.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the $H^{+}$ B2B transfer from the SIS100 to the CR with the frequency beating method}
@@ -764,7 +767,6 @@ The CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/2
     \end{tabular}
 \end{center}
 \end{table}
-There exists an inevitable big bunch-to-bucket injection center mismatch with the frequency beating method. Other B2B injection mechanism should be used for the transfer (e.g. the phase jump for the CR), which is beyond the scope of this dissertation. Detailed parameters of the $H^{+}$ B2B transfer from the SIS100 to the CR, please see Appendix \ref{100toCR}.
 %
 %Here we give another operation example for the B2B transfer from the SIS100 to the CR via the pbar with the smaller bunch-to-bucket inject center mismatch, that the energy of the proton beam before the pbar is \SI{8.6}{GeV/\atomicmassunit} and the antiproton energy after the pbar is \SI{3}{GeV/\atomicmassunit} with $h^{\mathit{SIS100}}_\mathit{rf}=5$ and $h^{\mathit{CR}}_\mathit{rf}=1$. The revolution frequency ratio and the cavity rf frequency ratio are
 %\begin{equation} 
@@ -801,19 +803,11 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RIB B2B Transfer from SIS100 to CR} 
 \label{RIB_100_CR}
-After the injection into the SIS100, eight bunches are merged into one by the harmonic 2. This bunch is extracted from the SIS100 and goes to the Super FRS, then the RIB is produced and injected into one bucket of the CR. The large accelerator is the SIS100 and the small one is the CR. $h^{\mathit{SIS100}}_\mathit{rf}=2$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the energy of the heavy ion beam before the Super FRS is \SI{1.5}{GeV/\atomicmassunit} and the RIB energy after the Super FRS is \SI{740}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
+After the injection into the SIS100, eight bunches are merged into one by the harmonic 2. This bunch is extracted from the SIS100 and goes to the Super-FRS, then the RIB is produced and injected into one bucket of the CR. The large accelerator is the SIS100 and the small one is the CR. $h^{\mathit{SIS100}}_\mathit{rf}=2$ and $h^{\mathit{CR}}_\mathit{rf}=1$. Here we take an example, that the energy of the heavy ion beam before the Super-FRS is \SI{1.5}{GeV/\atomicmassunit} and the RIB energy after the Super-FRS is \SI{740}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
 \begin{equation} 
 \frac{f_{\mathit{rev}}^{\mathit{CR}}}{f_{\mathit{rev}}^{\mathit{SIS100}}}=4.4-0.0046=\frac{m}{n}+ \lambda=\frac{22}{5}-0.0046
 \end{equation}
-
-Substituting $h^{\mathit{SIS100}}_\mathit{rf}$, $h^{\mathit{CR}}_\mathit{rf}$, m, n and $\lambda$ into eq.~\ref{ratio_away_int}, we get
-\begin{equation} 
-\frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{2\cdot 5}{1 \cdot 22- 1 \cdot0.0046\cdot 5}
-\end{equation}
-
-The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR is obtained, see Tab.~\ref{tab:100tothe CRrib}.
-
-\begin{table}[!htb]
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the RIB B2B transfer from the SIS100 to the CR with the frequency beating method}
 \label{tab:100tothe CRrib}
@@ -831,6 +825,15 @@ The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{C
     \end{tabular}
 \end{center}
 \end{table}
+
+Substituting $h^{\mathit{SIS100}}_\mathit{rf}$, $h^{\mathit{CR}}_\mathit{rf}$, m, n and $\lambda$ into eq.~\ref{ratio_away_int}, we get
+\begin{equation} 
+\frac{f_{\mathit{rf}}^{\mathit{SIS100}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{SIS100}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{CR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{2\cdot 5}{1 \cdot 22- 1 \cdot0.0046\cdot 5}
+\end{equation}
+
+The GCD of $h^{\mathit{SIS100}}_\mathit{rf}\cdot n=2\cdot5=10$ and $h^{\mathit{CR}}_\mathit{rf} \cdot m=1\cdot 22=22$ is 2, namely $Y=2$. the CR is the small accelerator and the target and there exists $\frac{Y}{m}=1/11<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related the RIB B2B transfer from the SIS100 to the CR are obtained, see Tab.~\ref{tab:100tothe CRrib}.
+
+
 Detailed parameters of RIB B2B transfer from the SIS100 to the CR, please see Appendix \ref{100toCR}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -847,11 +850,25 @@ The GCD of $h^{\mathit{HESR}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{CR}}
 \frac{f_{\mathit{rf}}^{\mathit{HESR}}}{f_{\mathit{rf}}^{\mathit{CR}}}=\frac{h^{\mathit{HESR}}_\mathit{rf}\cdot n}{h^{\mathit{CR}}_\mathit{rf} \cdot m+ h^{\mathit{HESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 13- 1 \cdot 0.003\cdot 5}
 \end{equation}
 
-The HESR is the large accelerator and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR is obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
+The HESR is the large accelerator and the target and there exists $\frac{Y}{n}=1/5<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer large}, the parameters related to the B2B transfer from the CR to the HESR are obtained. Tab.~\ref{tab:the CRtothe HESR} shows parameters of two operations, the antiproton and RIB B2B transfer.
 
 %The B2B transfer from the CR to the ESR is impossible to be achieved by the frequency beating method because there exist no slightly different frequencies between two cavity rf frequencies. Besides, the bunch is stochastic cooling by electrons in the CR. So only the phase shift for the ESR is the only synchronization method. 
 
-\begin{table}[!htb]
+
+
+The goal time difference between the two rf systems depends on the accumulation method. Detailed parameter about the B2B transfer from the CR to the HESR, please see Appendix \ref{sec:CRtoHESR}. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{RIB B2B Transfer from SIS18 to ESR via the FRS} 
+Only one bunch is extracted from the SIS18 and goes to the FRS, then a RIB is produced and injected into one bucket of the ESR. The large accelerator is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. Here we take an applied case as an example, that the energy of the heavy ion beam before the FRS is \SI{550}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
+\begin{equation} 
+\frac{f_{\mathit{rev}}^{\mathit{ESR}}}{f_{\mathit{rev}}^{\mathit{SIS18}}}=1.8+0.036=\frac{m}{n}+ \lambda=\frac{9}{5}+0.036
+\end{equation}
+Substituting $h^{\mathit{SIS18}}_\mathit{rf}$, $h^{\mathit{ESR}}_\mathit{rf}$, m, n and $\lambda$ into eq.~\ref{ratio_away_int}, we get
+\begin{equation}
+\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.036\cdot 5}
+\end{equation}
+The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small accelerator and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS are obtained, see Tab.~\ref{18tothe ESRviaFRS}.
+\begin{table}[H]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to the B2B transfer from the CR to the HESR with the frequency beating method}
 \label{tab:the CRtothe HESR}
@@ -881,19 +898,6 @@ The HESR is the large accelerator and the target and there exists $\frac{Y}{n}=1
     \end{tabular}
 \end{center}
 \end{table}
-
-The goal time difference between the two rf systems depends on the accumulation method. Detailed parameter about the B2B transfer from the CR to the HESR, please see Appendix \ref{sec:CRtoHESR}. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{RIB B2B Transfer from SIS18 to ESR via the FRS} 
-Only one bunch is extracted from the SIS18 and goes to the FRS, then a RIB is produced and injected into one bucket of the ESR. The large accelerator is the SIS18 and the small one is the ESR. $h^{\mathit{SIS18}}_\mathit{rf}=1$ and $h^{\mathit{ESR}}_\mathit{rf}=1$. Here we take an applied case as an example, that the energy of the heavy ion beam before the FRS is \SI{550}{MeV/\atomicmassunit} and the RIB energy after the FRS is \SI{400}{MeV/\atomicmassunit}. Substituting the extraction and injection revolution frequencies into eq.~\ref{close_to_interger2}, we get
-\begin{equation} 
-\frac{f_{\mathit{rev}}^{\mathit{ESR}}}{f_{\mathit{rev}}^{\mathit{SIS18}}}=1.8+0.036=\frac{m}{n}+ \lambda=\frac{9}{5}+0.036
-\end{equation}
-Substituting $h^{\mathit{SIS18}}_\mathit{rf}$, $h^{\mathit{ESR}}_\mathit{rf}$, m, n and $\lambda$ into eq.~\ref{ratio_away_int}, we get
-\begin{equation}
-\frac{f_{\mathit{rf}}^{\mathit{SIS18}}}{f_{\mathit{rf}}^{\mathit{ESR}}}=\frac{h^{\mathit{SIS18}}_\mathit{rf}\cdot n}{h^{\mathit{ESR}}_\mathit{rf} \cdot m+ h^{\mathit{ESR}}_\mathit{rf} \cdot\lambda\cdot n}=\frac{1\cdot 5}{1 \cdot 9+1 \cdot0.036\cdot 5}
-\end{equation}
-The GCD of $h^{\mathit{SIS18}}_\mathit{rf}\cdot n=1\cdot5=5$ and $h^{\mathit{ESR}}_\mathit{rf} \cdot m=1\cdot 9=9$ is 1, namely $Y=1$. The ESR is the small accelerator and the target and there exits $\frac{Y}{m}=1/9<1$, so substituting $h^X_\mathit{rf}$, $m$, $n$, $\lambda$, $f_{\mathit{rf}}^{X}$ and Y into formulas into formulas of the case (2) in Tab.~\ref{Cir ratio far from integer small}, the parameters related to the B2B transfer from the SIS18 to the ESR via the FRS is obtained, see Tab.~\ref{18tothe ESRviaFRS}.
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
 \caption{Parameters related to an applied case of the B2B transfer from the SIS18 to the ESR via the FRS with the frequency beating method}
@@ -945,9 +949,9 @@ There exists an inevitable big bunch-to-bucket injection center mismatch with th
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Summary}
-For all primary beam transfers of FAIR use cases, the B2B transfer system achieves the B2B transfer with the bunch-to-bucket injection center mismatch less than $\pm1^\circ$. It doesn't work properly for the FAIR use cases that secondary beams are generated by the pbar target, the FRS or the Super FRS, because the energy ratio between the primary and secondary beams is arbitrary. For the RIB B2B transfer from the SIS100 to the CR via the Super FRS with the \SI{1.5}{GeV/u} primary beam energy and the \SI{740}{MeV/u} secondary beam energy, the bunch-to-bucket injection center mismatch is only $\pm2.1^\circ$ by coincidence. For the antiproton B2B transfer from the SIS100 to the CR via the pbar target and the RIB B2B transfer form the SIS18 to the ESR via the FRS, the mismatch is as large as $\pm40^\circ$. For these two cases, the FAIR B2B transfer system must work together with specific beam accumulation methods, e.g. the barrier bucket or the unstable point accumulation.
+For all primary beam transfers of FAIR use cases, the B2B transfer system achieves the B2B transfer with the bunch-to-bucket injection center mismatch less than $\pm1^\circ$. It doesn't work properly for the FAIR use cases that secondary beams are generated by the pbar target, the FRS or the Super-FRS, because the energy ratio between the primary and secondary beams is arbitrary. For the RIB B2B transfer from the SIS100 to the CR via the \gls{superFRS} with the \SI{1.5}{GeV/u} primary beam energy and the \SI{740}{MeV/u} secondary beam energy, the bunch-to-bucket injection center mismatch is only $\pm2.1^\circ$ by coincidence. For the antiproton B2B transfer from the SIS100 to the CR via the pbar target and the RIB B2B transfer form the SIS18 to the ESR via the FRS, the mismatch is as large as $\pm40^\circ$. For these two cases, the FAIR B2B transfer system must work together with specific beam accumulation methods, e.g. the barrier bucket or the unstable fixed point accumulation.
 
-All the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large accelerator is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator.
+All the formulas are summarized here.  Tab.~\ref{B2B_transfer_rule} summarizes the formulas related to the B2B transfer when the large accelerator is the target. Tab.~\ref{B2B_transfer_rule1} summarizes the formulas when the small accelerator is the target and the revolution period is longer than the period of the synchronization frequency of the target accelerator. Tab.~\ref{B2B_transfer_rule11} summarizes the formulas when the small accelerator is the target and the revolution period is shorter than the period of the synchronization frequency of the target accelerator.
 \begin{landscape} 
 \begin{table}[!htb]
 \newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
@@ -967,7 +971,7 @@ All the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the fo
 
 &\tabincell{c}{$f_{\mathit{B2B}}^{s}=\frac{n}{m}f_{\mathit{rev}}^{s}$ \\and\\ $f_{\mathit{B2B}}^{l}=f_{\mathit{rev}}^{l}$ \\ \\ \color{red}{$f_{\mathit{B2B}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s}$}\\ \color{red}{and}\\ \color{red}{$f_{\mathit{B2B}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$}}\\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{trg}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{l}}{h_{\mathit{syn}}^\mathit{l}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{l}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{l}}{h_{\mathit{syn}}^\mathit{l}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -1001,7 +1005,7 @@ All the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the fo
 & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
 &\tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{m}{n}f_{\mathit{rev}}^{l}$ \\and\\ $f_\mathit{B2B}^\mathit{s}=f_{\mathit{rev}}^{s}$} \\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{trg}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}
@@ -1034,7 +1038,7 @@ All the formulas are summarized.  Tab.~\ref{B2B_transfer_rule} summarizes the fo
 & \tabincell{c}{$f_{\mathit{syn}}^{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$ \\and\\ $f_{\mathit{syn}}^{s}=\frac{Y}{m}f_{\mathit{rev}}^{s}$ \\ \\$ \Delta f=|f_{\mathit{syn}}^{l}-f_{\mathit{syn}}^{s}|$} 
 & \tabincell{c}{$f_\mathit{B2B}^\mathit{l}=\frac{Y}{n}f_{\mathit{rev}}^{l}$ \\and \\$f_\mathit{B2B}^\mathit{s}=\frac{Y}{m}f_{\mathit{rev}}^{s}$}  \\ \hline
 
-\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{trg}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
+\multicolumn{5}{|l|}{\textit{Note:} $f_\mathit{ref}=\textit{round} (f_\mathit{B2B}^{s}/\SI{100}{kHz})\cdot \SI{100}{kHz}$, $T_w=1/f_{\mathit{bucket}}$ and $\sigma_\mathit{rf}=\pm \frac{1}{2}\cdot 2\pi|f_{\mathit{syn}}^\mathit{s}-f_{\mathit{syn}}^\mathit{l}|\cdot T_\mathit{w} \cdot \frac{h_{\mathit{rf}}^\mathit{s}}{h_{\mathit{syn}}^\mathit{s}}$} \\ \hline
     \end{tabular}
 \end{center}
 \end{table}

@@ -68,7 +68,7 @@ The phase-slip factor \gls{symb:slip_fac} is defined as
 which gives the relationship between the revolution frequency and the momentum for a given accelerator. When particles are at low energy ($\eta > 0$), they run faster and arrive earlier at the rf cavity. When they are at high energy close to the speed of light ($\eta < 0$), they cannot run faster, but rather obtain more mass and are pushed to a dispersive orbit, resulting a late arrival at the rf cavity ~\cite{lee_accelerator_2011}. 
 
 A bunch of particles consists of particles with slightly different momentum as the synchronous particle, which are called ``asynchronous particles``. When $\eta > 0$, the longitudinal focusing of particles is explained in Fig. ~\ref{phase_focusing}. 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=120mm]{phase_focusing.jpg}
    \caption{Longitudinal focusing of particles by an rf voltage ($\eta > 0$).}
@@ -76,26 +76,28 @@ A bunch of particles consists of particles with slightly different momentum as t
    \label{phase_focusing}
 \end{figure}
 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
-   \includegraphics*[width=170mm]{phase_space.jpg}
+   \includegraphics*[width=120mm]{phase_space.jpg}
    \caption{Longitudinal motion of asynchronous particles in the longitudinal phase space plane ($\eta > 0$).}
 	\caption*{\textsl{\small{The red spot represents a particle with a higher energy, the blue spot a particle with a lower energy and the green dot the synchronous particle. The red arrow shows the trend of a particle with a higher energy and the blue arrow the trend of a particle with a lower energy.}}}
    \label{phase_space}
 \end{figure}
+
 The synchronous particle is indicated by the green spot in Fig. ~\ref{phase_focusing}. It will gain the energy of $qV_0\sin\phi_{\mathit{s}}$ per passage through an rf cavity, where \gls{symb:charge} is the charge of a particle.  When $\eta > 0$, a particle with a smaller energy (blue spot) than the synchronous particle will run slower and have a longer revolution period, arriving the same rf cavity later and seeing a higher accelerating voltage. This particle has a decreasing revolution period to the revolution period of the synchronous particle. During the decreasing process, the lack of energy is compensated step-by-step approaching to the energy of the synchronous particle. Oppositely for a particle with a higher energy. As it is faster than the synchronous particle and has a shorter revolution period, it will arrive at the rf cavity earlier, seeing a smaller accelerating voltage. This particle has an increasing revolution period to the revolution period of the synchronous particle. During the increasing process, the excess energy will be reduced step-by-step approaching to the synchronous particle. Asynchronous particles will oscillate longitudinally around the synchronous particle. This longitudinal motion is plotted in the longitudinal phase space plane, See Fig. ~\ref{phase_space}.
 
-All particles oscillate around the synchronous particle and stay together, forming a ``bunch``. The ``\gls{glos:bunch_gap}`` is the area without any particles. The area occupied by a bunch in the longitudinal phase space plane is called the ``\gls{glos:long_emi}``. First of all, we consider the synchronous particle with the synchronous phase $0^\circ$. In this scenario, particles with a small energy deviation follow an elliptical path inside the bunch. For a given rf system with a specific rf voltage and harmonic number, there exists a maximum energy deviation. For particles with energy deviations larger than the maximum energy deviation, they cannot be trapped around the synchronous particle. The trajectory of a particle with the maximum energy deviation in longitudinal phase space plane defines a region with a specific size and form. This region is called the ``rf bucket`` or ``\gls{glos:stationary_bucket}``, see Fig. ~\ref{energy_deviation}. The maximum momentum deviation of the rf bucket is called the ``\gls{glos:bucket_height}``. These buckets will exist as soon as the rf voltage is switched on and the number of circulating buckets is determined by the harmonic number and the bucket area and height are proportional to the square root of the rf voltage ~\cite{lee_accelerator_2011}. The order of buckets to be filled is called the ``bucket pattern``.
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
    \includegraphics*[width=130mm]{energy_deviation.jpg}
    \caption{Stationary rf bucket.}
 	\caption*{\textsl{\small{The green dot represents the synchronous particle (top), the blue path orbits of asynchronous particles and the black path the boundary of a stationary rf bucket (bottom).}}}
    \label{energy_deviation}
 \end{figure} 
+All particles oscillate around the synchronous particle and stay together, forming a ``bunch``. The ``\gls{glos:bunch_gap}`` is the area without any particles. The area occupied by a bunch in the longitudinal phase space plane is called the ``\gls{glos:long_emi}``. First of all, we consider the synchronous particle with the synchronous phase $0^\circ$. In this scenario, particles with a small energy deviation follow an elliptical path inside the bunch. For a given rf system with a specific rf voltage and harmonic number, there exists a maximum energy deviation. For particles with energy deviations larger than the maximum energy deviation, they cannot be trapped around the synchronous particle. The trajectory of a particle with the maximum energy deviation in longitudinal phase space plane defines a region with a specific size and form. This region is called the ``rf bucket`` or ``\gls{glos:stationary_bucket}``, see Fig. ~\ref{energy_deviation}. The maximum momentum deviation of the rf bucket is called the ``\gls{glos:bucket_height}``. These buckets will exist as soon as the rf voltage is switched on and the number of circulating buckets is determined by the harmonic number and the bucket area and height are proportional to the square root of the rf voltage ~\cite{lee_accelerator_2011}. The order of buckets to be filled is called the ``bucket pattern``.
+
 %%%%%%%%%%%%%%%%%%%%%%%%% running bucket%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-So far we give the definition of the bucket, when the synchronous particle sees no accelerating rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$ per passage through an rf cavity, it will gain the energy of $qV_0\sin\phi_{\mathit{s}}$. %Only particles which gain higher energy than the synchronous particle will run ring oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees an rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energy increasement, resulting in particles to move further away from the synchronous particle.
+So far we give the definition of the bucket, when the synchronous particle sees no accelerating rf voltage. When the synchronous particle is accelerated, seeing the synchronous phase $\phi_{\mathit{s}}$ per passage through an rf cavity, it will gain the energy of $qV_0\sin\phi_{\mathit{s}}$. %Only particles which gain higher energy than the synchronous particle will run ring oscillations around the synchronous particle, see Fig. ~\ref{running_bucket} Hence, particles must see a higher rf voltage than the synchronous particle. When a particle sees an rf voltage smaller than $V\sin\phi_{\mathit{s}}$, it will have a smaller energy increase, resulting in particles to move further away from the synchronous particle.
 Particles oscillate around the synchronous particle at $\phi_{\mathit{s}}$ with an elliptical orbit. The particle at $\pi-\phi_{\mathit{s}}$ traces a closed fish-shaped orbit, which defines a ``\gls{glos:running_bucket}``, see Fig. ~\ref{running_bucket}. Particles at bigger phase than $\pi-\phi_{\mathit{s}}$ cannot be captured by the bucket.
 \begin{figure}[!htb]
    \centering   
@@ -131,11 +133,11 @@ where \gls{symb:mgenet} is magnetic field, and \gls{symb:bending_rad} is the ben
 \end{equation}
 
 Bunches must be injected exactly in the center of buckets for the preservation of the longitudinal emittance, which requires the energy and phase matching between bunches and buckets. Besides, the shape of bunches to be transferred must match the shape of buckets to be injected in the longitudinal phase space plane. If the source and target rings have same cavity rf frequency, buckets of the source ring must have same size and height as that of the target ring. The voltage mismatch between bunches and buckets will cause an emittance blow-up. Fig. ~\ref{injection_error} illustrates a bunch-to-bucket injection with an energy, a phase or a voltage error. 
-\begin{figure}[!htb]
+\begin{figure}[H]
    \centering   
-   \includegraphics*[width=150mm]{injection_error.jpg}
+   \includegraphics*[width=130mm]{injection_error.jpg}
    \caption{Bunch-to-Bucket injection with a phase, energy or voltage error.}
-	\caption*{\textsl{\small{The blue area represents an injection without any error, the red area an injection with a phase error, the green an injection with a energy error and the yellow an injection with a voltage error (e.g. the rf voltage in the target Synchrotron is too high).}}}
+	\caption*{\textsl{\small{The blue area represents an injection without any error, the red area an injection with a phase error, the green an injection with an energy error and the yellow an injection with a voltage error (e.g. the rf voltage in the target Synchrotron is too high).}}}
    \label{injection_error}
 \end{figure} 
 
@@ -274,6 +276,9 @@ The cavity rf frequency of a ring is $h_{\mathit{rf}}^{X}/h_{\mathit{syn}}^{X}$ 
 %   \label{cir_int1}
 %\end{figure} 
 %phase_match.dox
+
+
+Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$, when $\kappa=5$, $h^s_\mathit{rf}=1$ and $h^l_\mathit{rf}=10$. The GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2=5f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/1=f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=2\Delta \phi_\mathit{syn}$.  The parameters are from the FAIR use case of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, which will be explained in Sec. ~\ref{sec:cir_no_int1}.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=150mm]{exp_H_18_100.jpg}
@@ -282,9 +287,6 @@ The cavity rf frequency of a ring is $h_{\mathit{rf}}^{X}/h_{\mathit{syn}}^{X}$ 
 	\caption*{\textsl{\small{Red planes represent the constant phase difference between two synchronization frequencies. The red sinusoidal waves in Fig. ~\ref{exp_H_18_100} are the individual synchronization frequencies. Black sinusoidal waves represent the individual cavity rf frequencies and the blue sinusoidal wave the revolution frequency. The red sinusoidal wave at the top time axis represents the synchronization frequency, the cavity rf frequency and the revolution frequency.}}}
    \label{exp_H_18_100}
 \end{figure} 
-
-Fig. ~\ref{exp_H_18_100} illustrates two synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$, when $\kappa=5$, $h^s_\mathit{rf}=1$ and $h^l_\mathit{rf}=10$. The GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$ is 5, namely $Y=5$, $f_{\mathit{rf}}^{l}/f_{\mathit{rf}}^{s}=2$, $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}/2=5f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}/1=f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=2\Delta \phi_\mathit{syn}$.  The parameters are from the FAIR use case of the $H^{+}$ B2B transfer from the SIS18 to the SIS100, which will be explained in Sec. ~\ref{sec:cir_no_int1}.
-
 
 %%%%%%%%%%%%%%%%%%%%%%close to an integer
 \subsection{Circumference Ratio is close to an Integer}
@@ -332,6 +334,13 @@ Eq. ~\ref{phase_diff_general2} shows that the phase difference is a periodic fun
 \begin{equation}
 \Delta \phi_\mathit{rf}=(\frac{h_{\mathit{rf}}^{trg}}{h_{\mathit{syn}}^{trg}}\Delta \phi_\mathit{syn}) \mod 2\pi 
 \end{equation}
+\begin{figure}[H]
+   \centering   
+   \includegraphics*[width=150mm]{cir_noint.jpg}
+   \caption{Periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s_\mathit{rf}=2$ and $h^l_\mathit{rf}=4$.}
+	\caption*{\textsl{\small{Red planes represent the periodical variable phase difference and red sinusoidal waves the synchronization frequencies and cavity rf frequencies and blue sinusoidal waves the revolution frequencies.}}}
+   \label{cir_noint}
+\end{figure} 
 
 Fig. ~\ref{cir_noint} shows the periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s_\mathit{rf}=2$ and $h^l_\mathit{rf}=4$. The GCD of $h^l_\mathit{rf}$ and $h^s_\mathit{rf} \cdot \kappa$ is 4, namely $Y=4$. Hence, according to eq. ~\ref{synch_freq11} and eq. ~\ref{synch_freq22}, two synchronization frequencies are $f_{\mathit{syn}}^{l}=f_{\mathit{rf}}^{l}=4f_{\mathit{rev}}^{l}$, $f_{\mathit{syn}}^{s}=f_{\mathit{rf}}^{s}=2f_{\mathit{rev}}^{s}$ and $\Delta \phi_\mathit{rf}=\Delta \phi_\mathit{syn}$.  The parameters are from the FAIR use case of the h=4 B2B transfer from the SIS18 to the ESR, which will be explained in Sec. ~\ref{sec:h4_18_ESR}. 
 
@@ -356,13 +365,7 @@ Fig. ~\ref{cir_noint} shows the periodically variable phase difference between t
 %Only $g$ is a variable in eq. ~\ref{phase_diff_cir_close_int1}, which is marked in red color. Eq. ~\ref{phase_diff_cir_close_int1} shows that the phase difference $\Delta \phi_{l\_s}$ occurs every $h^s_\mathit{rf}\kappa$ zero-crossing point of the rf system of the small synchrotron with the phase step growth of $\frac{h^l_\mathit{rf}h^s_\mathit{rf}\lambda}{h^s_\mathit{rf}\kappa+h^s_\mathit{rf}\lambda}2\pi$. $\frac{h^l_\mathit{rf}h^s_\mathit{rf}\lambda}{h^s_\mathit{rf}\kappa+h^s_\mathit{rf}\lambda}2\pi$ is much smaller than $2\pi$, because $h^l_\mathit{rf}h^s_\mathit{rf}\lambda$ is much smaller than $h^s_\mathit{rf}\kappa+h^s_\mathit{rf}\lambda$. The occurrence of every $h^s_\mathit{rf}\kappa$ positive zero-crossing point is at the frequency of $f_{\mathit{rf}}^{s}/(h^s_\mathit{rf}\kappa)$. The $1^{\mathit{st}}$ term in eq. ~\ref{phase_diff_cir_close_int1} shows that the step grown phase difference is based on the rf signal with the frequency of $f_{\mathit{rf}}^{l}/h^l_\mathit{rf}$ of the large synchrotron, see Fig. ~\ref{cir_noint}. Similarly, we can get these two rf frequencies for the phase difference between the small and large synchrotrons $\Delta \phi_{s\_l}$. Hence, $f_{\mathit{rf}}^{l}/h^l_\mathit{rf}$ and $f_{\mathit{rf}}^{s}/(h^s_\mathit{rf}\kappa)$ are the synchronization rf frequencies for the frequency beating method. In this scenario, the rf frequency can be detuned on one of rf systems.
 
 %phase_match.dox
-\begin{figure}[!htb]
-   \centering   
-   \includegraphics*[width=150mm]{cir_noint.jpg}
-   \caption{Periodically variable phase difference between two slightly different synchronization frequencies $f_{\mathit{syn}}^{l}$ and $f_{\mathit{syn}}^{s}$ when $\kappa=2$, $\lambda=-0.003$, $h^s_\mathit{rf}=2$ and $h^l_\mathit{rf}=4$.}
-	\caption*{\textsl{\small{Red planes represent the periodical variable phase difference and red sinusoidal waves the synchronization frequencies and cavity rf frequencies and blue sinusoidal waves the revolution frequencies.}}}
-   \label{cir_noint}
-\end{figure} 
+
 
 %In this scenario, the phase difference between the two rf systems varies periodically. The frequency of the phase variation is defined as the beating frequency $\Delta f$. There is one time of point within the beating period, when two rf systems match phase. The beating frequency is
 %\begin{equation} 
@@ -760,7 +763,7 @@ where $\omega_s$ is the angular synchrotron frequency with no frequency modulati
 %\label{eq:RtoF}
 %\end{equation}
 %
-%In order to guarantee the continuous synchronous phase, the $d\Delta f/dt$ of the rf frequency modulation must be continuous. Besides, eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. $d\Delta f_{\mathit{rf}}/dt$ must be small enough to guarantee the bucket size. Form the adiabaticity eq. ~\ref{eq:derivation}, $d\phi_{s}/dt$ must be small enough to gaurantee the adiabaticity. So $d\Delta f_{\mathit{rf}}/dt/dt$ must be small enough.
+%In order to guarantee the continuous synchronous phase, the $d\Delta f/dt$ of the rf frequency modulation must be continuous. Besides, eq. ~\ref{eq:buckt_area_factor} shows that the bucket area factor is in inverse proportion to the synchronous phase. $d\Delta f_{\mathit{rf}}/dt$ must be small enough to guarantee the bucket size. Form the adiabaticity eq. ~\ref{eq:derivation}, $d\phi_{s}/dt$ must be small enough to guarantee the adiabaticity. So $d\Delta f_{\mathit{rf}}/dt/dt$ must be small enough.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -881,7 +884,7 @@ T_{w\_max}=\frac{2|\sigma_\mathit{rf\_max}|\cdot\frac{h_\mathit{syn}^\mathit{trg
 
 %\begin{itemize}
 %\item
-%When only one bunch is needed to be injected into one bucket within the synchronization window, the bunch-to-bucket injection center mismatch is within the range between $0$ and the phase step growth \gls{symb:pha_step}, which is defined as the arithmetic increasing phase of the phase difference between two cavity rf freuqncies. We get the phase step growth by eq. ~\ref{step_growth}.
+%When only one bunch is needed to be injected into one bucket within the synchronization window, the bunch-to-bucket injection center mismatch is within the range between $0$ and the phase step growth \gls{symb:pha_step}, which is defined as the arithmetic increasing phase of the phase difference between two cavity rf frequencies. We get the phase step growth by eq. ~\ref{step_growth}.
 %
 %
 %\item 
@@ -990,17 +993,19 @@ where $\frac{\Delta{R}}{R}$ constrained by the accelerator lattice is used to ch
 
 The proper bunch-to-bucket transfer requires not only that two rf systems are synchronized with each other, but also that the extraction and injection kicker magnets are synchronized with the beam.
 
-A kicker magnet (or kicker) is a dipole magnet, which is used to rapidly switch particles between two paths. An \gls{glos:inj_kick} merges one beam into a circulating beam in a ring and an \gls{glos:ext_kick} diverts a circulating beam to leave a ring. Generally, the extraction or injection kicker is consisted of a certain number of kicker magnets instead of a single one. The B2B transfer needs a fast beam extraction and injection, which extracts and injects the beam in a single-turn. Hence, a pulsed kicker magnet must be used with rapid rise time and fall time and the variable pulse flat-top ~\cite{petzenhauser_concept_2016}. Fig. ~\ref{kicker_magnet} shows the schematic diagram of a kicker magnet. The energy storage module is charged with a high voltage power supply. It will be discharged via the transmission cable and the kicker magnet by using the pulse start switch. Before the increase of the magnetic field, there exist a preparation time for the kicker magnet. The magnet needs a certain period of time to increase from zero to a stable magnetic field, which is so-called a ``\gls{glos:rise_time}`` (short: rise time). The length of the ``\gls{glos:flat-top}`` can be modified by switching on the stop switch in correlation with the pulse start switch. When the pulse stop switch is switched off, the magnet needs a certain period of time to reduce to zero magnetic field. This period is so-called a ``\gls{glos:fall_time}`` (short: fall time) ~\cite{blell_injection_2014}. For the proper B2B transfer, the extraction and injection kickers must be synchronized with the ring rf signal. The start switch must be switched on the preparation time earlier before the tail of the circulating bunch passes the kicker, so that the transition of the kicker (the rise-up of the magnetic field) will be carried out during bunch gaps. The pulse stop switch must be switched off in time so that the transition of the kicker (the fall-down of the magnetic field) will not affect the head of the next coming bunch in the ring. The kicker control electronic produces the ignition signal to switch on/off two switches. Generally a preparation time of FAIR kickers is within the \SI{5}{}$~$\SI{10}{\micro\second} range. Compared with the FAIR rf frequency in the \SI{}{MHz} range, a preparation time is not negligible, which can cause an increase of the bunch-to-bucket injection center mismatch especially for the frequency beating method. The kicker control electronic must take the preparation time into consideration, igniting kickers in advance of the preparation time.
 \begin{figure}[!htb]
    \centering   
    \includegraphics*[width=130mm]{kicker_magnet.jpg}
    \caption{Schematic diagram of a kicker magnet.}
    \label{kicker_magnet}
 \end{figure}
+
+A kicker magnet (or kicker) is a dipole magnet, which is used to rapidly switch particles between two paths. An \gls{glos:inj_kick} merges one beam into a circulating beam in a ring and an \gls{glos:ext_kick} diverts a circulating beam to leave a ring. Generally, the extraction or injection kicker is consisted of a certain number of kicker magnets instead of a single one. The B2B transfer needs a fast beam extraction and injection, which extracts and injects the beam in a single-turn. Hence, a pulsed kicker magnet must be used with rapid rise time and fall time and the variable pulse flat-top ~\cite{petzenhauser_concept_2016}. Fig. ~\ref{kicker_magnet} shows the schematic diagram of a kicker magnet. The energy storage module is charged with a high voltage power supply. It will be discharged via the transmission cable and the kicker magnet by using the pulse start switch. Before the increase of the magnetic field, there exist a preparation time for the kicker magnet. The magnet needs a certain period of time to increase from zero to a stable magnetic field, which is so-called a ``\gls{glos:rise_time}`` (short: rise time). The length of the ``\gls{glos:flat-top}`` can be modified by switching on the stop switch in correlation with the pulse start switch. When the pulse stop switch is switched off, the magnet needs a certain period of time to reduce to zero magnetic field. This period is so-called a ``\gls{glos:fall_time}`` (short: fall time) ~\cite{blell_injection_2014}. For the proper B2B transfer, the extraction and injection kickers must be synchronized with the ring rf signal. The start switch must be switched on the preparation time earlier before the tail of the circulating bunch passes the kicker, so that the transition of the kicker (the rise-up of the magnetic field) will be carried out during bunch gaps. The pulse stop switch must be switched off in time so that the transition of the kicker (the fall-down of the magnetic field) will not affect the head of the next coming bunch in the ring. The kicker control electronic produces the ignition signal to switch on/off two switches. Generally a preparation time of FAIR kickers is within the \SI{5}{}$~$\SI{10}{\micro\second} range. Compared with the FAIR rf frequency in the \SI{}{MHz} range, a preparation time is not negligible, which can cause an increase of the bunch-to-bucket injection center mismatch especially for the frequency beating method. The kicker control electronic must take the preparation time into consideration, igniting kickers in advance of the preparation time.
+
  
 %Most commonly, an extraction kicker is used to eject all bunches. If all bucket of the synchrotron are filled with bunches, the rise time of the extraction kicker must be shorter than the bunch gap. If there is at least one empty rf bucket, the rise t could be achieved within the gap of the empty RF buckets. The flattop has at least the length of all bunches to be extracted and the fall time is not constrained. 
 %		  
-% As soon as the tail of the circulating bunch has passed the kicker, the magenetic field is switched on. The magnet must then be switched off in time in order not to affect the head of the next coming bunch in the synchrotron.
+% As soon as the tail of the circulating bunch has passed the kicker, the magnetic field is switched on. The magnet must then be switched off in time in order not to affect the head of the next coming bunch in the synchrotron.
 %
 %For multi-\gls{glos:batch} injection, the rise time of the injection kicker must be shorter than the \gls{glos:bunch_gap}. The flat-top is determined by the length of the bunches to be injected. If all buckets must be filled, the fall time must be shorter than the remaining time until the next circulating bunch passes the kicker. If the synchrotron needs only one time injection, the rise time is not constrained. The flat-top determined by the length of the bunches to be injected. The fall time must not exceed the bunch gap or the gap of the empty RF buckets. 
 
